@@ -26,6 +26,13 @@
 
   结果是 `false`, 因为 b 使用 `new` 关键字, 生成对象的地址在堆中, 而 a 则是字面量写法, 直接指向常量池
   
+- String、StringBuffer 和 StringBuilder 的区别
+
+  `可变与不可变:` String 不可变, StringBuffer 与StringBuilder 可变, 如果字符串修改频繁, 使用 StringBuffer
+  `拼接执行效率:` String最低下
+  `是否实现equals和hashCode方法:` StringBuffer 没有实现
+  `是否线程安全:` 单线程 StringBuilder 效率高, 但非线程安全, 多线程使用 StringBuffer 线程安全
+  
 ## 对象比较
 
 - equals() 和 == 的区别？
