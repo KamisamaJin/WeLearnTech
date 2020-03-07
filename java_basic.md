@@ -127,6 +127,11 @@
 
 设计类似`HashMap`, 使用`Segment`数组及`HashEntery`实现, `Segment` 继承于 `ReentrantLock`, 特点是使用16个分离锁增加多线程效率, 用`HashEntery`对象的不变性来降低执行读操作的线程在遍历链表期间对加锁需求, 通过`Volatile`变量来保证不同线程的内存可见性.
 
+- 讲讲`ArrayMap`的实现
+
+
+- 讲讲`SparseArray`的实现
+
 ## 四种引用类型
 
 - 强引用
