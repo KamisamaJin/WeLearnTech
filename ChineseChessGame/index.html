@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国象棋 - Premium</title>
+    <meta name="description" content="A premium web-based Chinese Chess game supporting two players.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>中国象棋</h1>
+            <div class="status-panel">
+                <div class="turn-indicator" id="turn-indicator">红方走</div>
+                <select id="game-mode" class="btn">
+                    <option value="pvp">双人对战</option>
+                    <option value="pve">人机对战 (AI)</option>
+                </select>
+                <button id="restart-btn" class="btn">重新开始</button>
+            </div>
+        </header>
+        
+        <main class="game-area">
+            <div class="board-container">
+                <!-- Board Background Lines (SVG) -->
+                <svg class="board-lines" width="100%" height="100%" viewBox="0 0 900 1000" preserveAspectRatio="none">
+                    <defs>
+                        <g id="cross">
+                            <path d="M -5,-15 L -5,-5 L -15,-5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                            <path d="M 5,-15 L 5,-5 L 15,-5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                            <path d="M -5,15 L -5,5 L -15,5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                            <path d="M 5,15 L 5,5 L 15,5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                        </g>
+                        <g id="cross-left">
+                            <path d="M 5,-15 L 5,-5 L 15,-5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                            <path d="M 5,15 L 5,5 L 15,5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                        </g>
+                        <g id="cross-right">
+                            <path d="M -5,-15 L -5,-5 L -15,-5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                            <path d="M -5,15 L -5,5 L -15,5" fill="none" stroke="#5a3a22" stroke-width="2"/>
+                        </g>
+                    </defs>
+
+                    <!-- Outer Box -->
+                    <rect x="50" y="50" width="800" height="900" fill="none" stroke="#5a3a22" stroke-width="6"/>
+                    
+                    <!-- Horizontal Lines -->
+                    <line x1="50" y1="150" x2="850" y2="150" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="50" y1="250" x2="850" y2="250" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="50" y1="350" x2="850" y2="350" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="50" y1="450" x2="850" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <!-- River gaps, so skip 550 inner -->
+                    <line x1="50" y1="550" x2="850" y2="550" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="50" y1="650" x2="850" y2="650" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="50" y1="750" x2="850" y2="750" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="50" y1="850" x2="850" y2="850" stroke="#5a3a22" stroke-width="2"/>
+                    
+                    <!-- Vertical Lines -->
+                    <line x1="150" y1="50" x2="150" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="150" y1="550" x2="150" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="250" y1="50" x2="250" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="250" y1="550" x2="250" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="350" y1="50" x2="350" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="350" y1="550" x2="350" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="450" y1="50" x2="450" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="450" y1="550" x2="450" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="550" y1="50" x2="550" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="550" y1="550" x2="550" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="650" y1="50" x2="650" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="650" y1="550" x2="650" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="750" y1="50" x2="750" y2="450" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="750" y1="550" x2="750" y2="950" stroke="#5a3a22" stroke-width="2"/>
+                    
+                    <!-- Palaces -->
+                    <line x1="350" y1="50" x2="550" y2="250" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="550" y1="50" x2="350" y2="250" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="350" y1="950" x2="550" y2="750" stroke="#5a3a22" stroke-width="2"/>
+                    <line x1="550" y1="950" x2="350" y2="750" stroke="#5a3a22" stroke-width="2"/>
+                    
+                    <!-- River Text -->
+                    <text x="250" y="520" font-family="'Ma Shan Zheng', cursive" font-size="60" fill="#5a3a22" text-anchor="middle">楚 河</text>
+                    <text x="650" y="520" font-family="'Ma Shan Zheng', cursive" font-size="60" fill="#5a3a22" text-anchor="middle">汉 界</text>
+
+                    <!-- Markers -->
+                    <use href="#cross" x="150" y="250"/>
+                    <use href="#cross" x="750" y="250"/>
+                    <use href="#cross" x="150" y="750"/>
+                    <use href="#cross" x="750" y="750"/>
+
+                    <use href="#cross-left" x="50" y="350"/>
+                    <use href="#cross" x="250" y="350"/>
+                    <use href="#cross" x="450" y="350"/>
+                    <use href="#cross" x="650" y="350"/>
+                    <use href="#cross-right" x="850" y="350"/>
+
+                    <use href="#cross-left" x="50" y="650"/>
+                    <use href="#cross" x="250" y="650"/>
+                    <use href="#cross" x="450" y="650"/>
+                    <use href="#cross" x="650" y="650"/>
+                    <use href="#cross-right" x="850" y="650"/>
+                </svg>
+                
+                <!-- The interactive grid -->
+                <div class="grid" id="game-grid"></div>
+            </div>
+        </main>
+        
+        <!-- Modal for game over -->
+        <div class="modal-overlay" id="game-over-modal">
+            <div class="modal-content">
+                <h2 id="winner-text">红方胜利！</h2>
+                <button id="modal-restart-btn" class="btn primary-btn">再来一局</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
