@@ -104,6 +104,17 @@ h1 {
     color: white;
 }
 
+select.btn {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: clamp(35px, 6vw, 45px); /* Extra space for arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23555" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right clamp(10px, 2vw, 15px) center;
+    background-size: clamp(16px, 4vw, 20px);
+}
+
 .board-container {
     position: relative;
     width: 100%;
