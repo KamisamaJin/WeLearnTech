@@ -31,7 +31,7 @@ let currentPlayer = 'r';
 let selectedCell = null;
 let validMovesForSelected = [];
 let gameOver = false;
-let gameMode = 'pvp';
+let gameMode = 'pve';
 
 function initGame() {
     board = JSON.parse(JSON.stringify(initialBoard));

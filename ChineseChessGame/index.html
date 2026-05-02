@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>中国象棋 - Premium</title>
     <meta name="description" content="A premium web-based Chinese Chess game supporting two players.">
     <link rel="stylesheet" href="style.css">
@@ -15,8 +15,8 @@
             <div class="status-panel">
                 <div class="turn-indicator" id="turn-indicator">红方走</div>
                 <select id="game-mode" class="btn">
+                    <option value="pve" selected>人机对战 (AI)</option>
                     <option value="pvp">双人对战</option>
-                    <option value="pve">人机对战 (AI)</option>
                 </select>
                 <button id="restart-btn" class="btn">重新开始</button>
             </div>
