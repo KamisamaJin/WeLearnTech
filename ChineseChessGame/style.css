@@ -115,6 +115,12 @@ select.btn {
     background-size: clamp(16px, 4vw, 20px);
 }
 
+.game-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .board-container {
     position: relative;
     width: 100%;
