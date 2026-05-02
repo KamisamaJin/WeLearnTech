@@ -32,6 +32,7 @@ let selectedCell = null;
 let validMovesForSelected = [];
 let gameOver = false;
 let gameMode = 'pve';
+let moveHistory = [];
 
 function initGame() {
     board = JSON.parse(JSON.stringify(initialBoard));
@@ -39,6 +40,7 @@ function initGame() {
     selectedCell = null;
     validMovesForSelected = [];
     gameOver = false;
+    moveHistory = [];
     
     const modeSelect = document.getElementById('game-mode');
     if (modeSelect) {
@@ -107,6 +109,12 @@ function handleCellClick(r, c) {
 }
 
 function movePiece(fromR, fromC, toR, toC) {
+    // Save state before move
+    moveHistory.push({
+        board: JSON.parse(JSON.stringify(board)),
+        currentPlayer: currentPlayer
+    });
+
     const targetPiece = board[toR][toC];
     board[toR][toC] = board[fromR][fromC];
     board[fromR][fromC] = '';
@@ -340,6 +348,40 @@ function endGame(winnerColor) {
     modal.classList.add('active');
 }
 
+function undoMove() {
+    if (gameMode === 'pve' && currentPlayer === 'b' && !gameOver) return;
+
+    if (gameMode === 'pve') {
+        if (moveHistory.length >= 2) {
+            moveHistory.pop(); // discard AI's move
+            const previousState = moveHistory.pop();
+            board = JSON.parse(JSON.stringify(previousState.board));
+            currentPlayer = previousState.currentPlayer;
+        } else if (moveHistory.length === 1) {
+            const previousState = moveHistory.pop();
+            board = JSON.parse(JSON.stringify(previousState.board));
+            currentPlayer = previousState.currentPlayer;
+        } else {
+            return;
+        }
+    } else {
+        if (moveHistory.length >= 1) {
+            const previousState = moveHistory.pop();
+            board = JSON.parse(JSON.stringify(previousState.board));
+            currentPlayer = previousState.currentPlayer;
+        } else {
+            return;
+        }
+    }
+
+    selectedCell = null;
+    validMovesForSelected = [];
+    gameOver = false;
+    document.getElementById('game-over-modal').classList.remove('active');
+    updateTurnIndicator();
+    renderBoard();
+}
+
 // AI Logic
 
 function evaluateBoard() {
@@ -524,6 +566,7 @@ function minimax(depth, alpha, beta, isMaximizing) {
 }
 
 document.getElementById('restart-btn').addEventListener('click', initGame);
+document.getElementById('undo-btn').addEventListener('click', undoMove);
 document.getElementById('modal-restart-btn').addEventListener('click', initGame);
 document.getElementById('game-mode').addEventListener('change', (e) => {
     gameMode = e.target.value;
