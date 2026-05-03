@@ -200,10 +200,57 @@
             text-align: center;
         }
         .empty-state h2 { color: var(--primary); }
+
+        /* Mobile Responsive */
+        .mobile-header {
+            display: none;
+            padding: 15px 20px;
+            background: var(--panel-bg);
+            border-bottom: 1px solid var(--border);
+            align-items: center;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+        .mobile-header h1 { margin: 0; font-size: 1.2rem; color: var(--primary); flex: 1; }
+        .menu-toggle {
+            background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0;
+        }
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.05), transparent 50%);
+        }
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 150;
+            backdrop-filter: blur(3px);
+        }
+        @media (max-width: 768px) {
+            .mobile-header { display: flex; }
+            .sidebar {
+                position: fixed;
+                top: 0; left: 0; bottom: 0;
+                width: 280px;
+                z-index: 200;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.open { transform: translateX(0); }
+            .sidebar-overlay.open { display: block; }
+            .main-content { padding: 20px; background: transparent; }
+            .sidebar-header h1 { display: none; }
+            .sidebar-header { padding-top: 25px; }
+        }
     </style>
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMenu()"></div>
+    <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <h1>Grammar Wiki</h1>
             <input type="text" id="search" class="search-box" placeholder="Search grammar...">
@@ -219,10 +266,17 @@
             <!-- Populated via JS -->
         </ul>
     </div>
-    <div class="main-content" id="main-content">
-        <div class="empty-state">
-            <h2>K-Lingo Grammar Encyclopedia</h2>
-            <p>Select a grammar point from the menu to deep dive.</p>
+    
+    <div class="content-wrapper">
+        <div class="mobile-header">
+            <h1>K-Lingo Grammar Wiki</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="empty-state">
+                <h2>K-Lingo Grammar Encyclopedia</h2>
+                <p>Select a grammar point from the menu to deep dive.</p>
+            </div>
         </div>
     </div>
 
@@ -231,7 +285,14 @@
         const navList = document.getElementById('nav-list');
         const mainContent = document.getElementById('main-content');
         const searchInput = document.getElementById('search');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
         let currentLevel = 'all';
+
+        function toggleMenu() {
+            sidebar.classList.toggle('open');
+            sidebarOverlay.classList.toggle('open');
+        }
 
         function setLevelFilter(level) {
             currentLevel = level;
@@ -277,6 +338,9 @@
                             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
                             li.classList.add('active');
                             renderContent(item);
+                            if (window.innerWidth <= 768) {
+                                toggleMenu(); // auto-close on mobile
+                            }
                         };
                         navList.appendChild(li);
                     });
