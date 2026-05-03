@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Lingo Odyssey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background Effects -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+
+        <div class="game-wrapper glass-panel">
+            
+            <header class="game-header">
+                <div class="header-left" id="btn-home" style="cursor: pointer;">
+                    <h1 class="logo">K-Lingo <span class="accent">Odyssey</span></h1>
+                    <div class="mode-badge" id="current-mode-badge">Main Menu</div>
+                </div>
+                <div class="header-right">
+                    <select id="level-selector" class="level-dropdown">
+                        <option value="L0">KIIP Level 0 (기초)</option>
+                        <option value="L1" selected>KIIP Level 1 (초급1)</option>
+                        <option value="L2">KIIP Level 2 (초급2)</option>
+                        <option value="L3">KIIP Level 3 (중급1)</option>
+                        <option value="L4">KIIP Level 4 (중급2)</option>
+                        <option value="L5">KIIP Level 5 (한국사회)</option>
+                    </select>
+                    <div class="score-container">
+                        <span class="score-label" id="ui-global-score">Total EXP</span>
+                        <span class="score-value" id="global-score">0</span>
+                    </div>
+                    <button id="wiki-btn" class="btn-icon" title="Grammar Wiki" onclick="window.open('grammar_wiki.html', '_blank')">
+                        📚
+                    </button>
+                    <button id="lang-toggle" class="btn-icon" title="Toggle Language">
+                        <span id="current-lang-text">EN</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <main class="content-area">
+                
+                <!-- MAIN MENU -->
+                <div id="screen-menu" class="screen active">
+                    <h2 class="menu-title" id="ui-menu-title">Select a Challenge</h2>
+                    <div class="menu-grid">
+                        <div class="menu-card" data-mode="wordPop">
+                            <div class="card-icon">🎯</div>
+                            <h3 id="ui-mode-word">Word Pop</h3>
+                            <p id="ui-desc-word">Speed vocab matching</p>
+                        </div>
+                        <div class="menu-card" data-mode="sonicCatch">
+                            <div class="card-icon">🎧</div>
+                            <h3 id="ui-mode-sonic">Sonic Catch</h3>
+                            <p id="ui-desc-sonic">Listen and identify</p>
+                        </div>
+                        <div class="menu-card" data-mode="sentenceBuilder">
+                            <div class="card-icon">🧩</div>
+                            <h3 id="ui-mode-sentence">Sentence Builder</h3>
+                            <p id="ui-desc-sentence">Fix Korean grammar</p>
+                        </div>
+                        <div class="menu-card boss-card" data-mode="survival">
+                            <div class="card-icon">🐉</div>
+                            <h3 id="ui-mode-survival">Boss Survival</h3>
+                            <p id="ui-desc-survival">Endless challenge!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GAMEPLAY SCREEN (Shared for Word Pop & Sonic Catch) -->
+                <div id="screen-gameplay" class="screen">
+                    <div class="game-info-bar">
+                        <div class="hp-bar hidden" id="boss-hp-container">
+                            <div class="hp-fill" id="boss-hp-fill"></div>
+                            <span class="hp-text">Boss HP</span>
+                        </div>
+                        <div class="life-container hidden" id="player-life">❤️❤️❤️</div>
+                    </div>
+
+                    <!-- Area for falling words or sound buttons -->
+                    <div class="play-area" id="play-area">
+                        <!-- Word Pop: Bubbles fall here -->
+                        <!-- Sonic Catch: Speaker icon sits here -->
+                    </div>
+
+                    <!-- Options for WordPop, SonicCatch, Survival -->
+                    <div class="controls-area" id="game-controls">
+                        <div class="options-grid" id="options-grid"></div>
+                    </div>
+                </div>
+
+                <!-- SENTENCE BUILDER SCREEN -->
+                <div id="screen-sentence" class="screen">
+                    <div class="sentence-target">
+                        <p class="translation-hint" id="sentence-hint">Translation</p>
+                    </div>
+                    
+                    <div class="builder-slots" id="builder-slots">
+                        <!-- Slots where words should go -->
+                    </div>
+
+                    <div class="available-words" id="available-words">
+                        <!-- Words to click/drag -->
+                    </div>
+                </div>
+
+                <!-- OVERLAYS (Start / Game Over) -->
+                <div class="overlay hidden" id="overlay-start">
+                    <div class="overlay-content">
+                        <div class="hero-icon" id="start-icon">🎮</div>
+                        <h2 id="start-title">Ready?</h2>
+                        <p id="start-desc">Description</p>
+                        <button id="btn-start" class="btn-primary glow-effect">
+                            <span id="ui-btn-start">Start Game</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="overlay hidden" id="overlay-gameover">
+                    <div class="overlay-content">
+                        <div class="hero-icon" id="go-icon">💥</div>
+                        <h2 id="go-title">Game Over!</h2>
+                        <p class="final-score-text"><span id="ui-score-text">Score</span>: <span id="final-score" class="accent">0</span></p>
+                        <button id="btn-restart" class="btn-primary glow-effect">
+                            <span id="ui-btn-restart">Play Again</span>
+                        </button>
+                        <button id="btn-back-menu" class="btn-secondary" style="margin-top: 15px;">
+                            <span id="ui-btn-menu">Back to Menu</span>
+                        </button>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
