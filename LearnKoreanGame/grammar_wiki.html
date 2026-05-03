@@ -75,11 +75,14 @@
             margin-top: 10px;
         }
         .nav-item {
-            padding: 12px 20px;
+            padding: 10px 20px;
             cursor: pointer;
             transition: all 0.2s;
             font-size: 1rem;
             border-left: 3px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .nav-item:hover {
             background: rgba(255, 255, 255, 0.05);
@@ -91,6 +94,21 @@
             color: var(--primary);
             font-weight: 600;
         }
+        .nav-level {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            flex-shrink: 0;
+            min-width: 24px;
+            text-align: center;
+        }
+        .nav-level.l1 { background: rgba(52,211,153,0.2); color: #34d399; }
+        .nav-level.l2 { background: rgba(56,189,248,0.2); color: #38bdf8; }
+        .nav-level.l3 { background: rgba(251,191,36,0.2); color: #fbbf24; }
+        .nav-level.l4 { background: rgba(244,114,182,0.2); color: #f472b6; }
+        .nav-title { flex: 1; }
         .main-content {
             flex: 1;
             padding: 40px;
@@ -109,14 +127,16 @@
         }
         .badge-level {
             display: inline-block;
-            padding: 4px 10px;
-            background: rgba(244, 114, 182, 0.2);
-            color: var(--accent);
+            padding: 4px 12px;
             border-radius: 4px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: bold;
-            margin-right: 10px;
+            margin-bottom: 8px;
         }
+        .badge-level.l1 { background: rgba(52,211,153,0.2); color: #34d399; }
+        .badge-level.l2 { background: rgba(56,189,248,0.2); color: #38bdf8; }
+        .badge-level.l3 { background: rgba(251,191,36,0.2); color: #fbbf24; }
+        .badge-level.l4 { background: rgba(244,114,182,0.2); color: #f472b6; }
         .grammar-section {
             margin-bottom: 30px;
             background: var(--panel-bg);
@@ -141,7 +161,35 @@
         .ex-ko { font-size: 1.2rem; font-weight: 600; margin: 0 0 5px 0; }
         .ex-en { color: var(--text-muted); margin: 0 0 5px 0; font-size: 0.95rem; }
         .ex-zh { color: #cbd5e1; margin: 0; font-size: 0.95rem; }
-        
+        .level-filters {
+            display: flex;
+            gap: 6px;
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .level-filter-btn {
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .level-filter-btn:hover { border-color: var(--primary); color: var(--text-main); }
+        .level-filter-btn.active { border-color: transparent; color: #fff; }
+        .level-filter-btn.active[data-level='all'] { background: var(--secondary); }
+        .level-filter-btn.active[data-level='L1'] { background: rgba(52,211,153,0.5); color: #fff; }
+        .level-filter-btn.active[data-level='L2'] { background: rgba(56,189,248,0.5); color: #fff; }
+        .level-filter-btn.active[data-level='L3'] { background: rgba(251,191,36,0.5); color: #fff; }
+        .level-filter-btn.active[data-level='L4'] { background: rgba(244,114,182,0.5); color: #fff; }
+        .rule-item { margin-bottom: 6px; }
+        .rule-zh { font-size: 0.95rem; }
+        .rule-en { font-size: 0.85rem; color: var(--text-muted); }
         .empty-state {
             display: flex;
             flex-direction: column;
@@ -160,6 +208,13 @@
             <h1>Grammar Wiki</h1>
             <input type="text" id="search" class="search-box" placeholder="Search grammar...">
         </div>
+        <div class="level-filters" id="level-filters">
+            <button class="level-filter-btn active" data-level="all" onclick="setLevelFilter('all')">All</button>
+            <button class="level-filter-btn" data-level="L1" onclick="setLevelFilter('L1')">L1 초급1</button>
+            <button class="level-filter-btn" data-level="L2" onclick="setLevelFilter('L2')">L2 초급2</button>
+            <button class="level-filter-btn" data-level="L3" onclick="setLevelFilter('L3')">L3 중급1</button>
+            <button class="level-filter-btn" data-level="L4" onclick="setLevelFilter('L4')">L4 중급2</button>
+        </div>
         <ul class="nav-list" id="nav-list">
             <!-- Populated via JS -->
         </ul>
@@ -176,33 +231,48 @@
         const navList = document.getElementById('nav-list');
         const mainContent = document.getElementById('main-content');
         const searchInput = document.getElementById('search');
+        let currentLevel = 'all';
+
+        function setLevelFilter(level) {
+            currentLevel = level;
+            document.querySelectorAll('.level-filter-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`.level-filter-btn[data-level="${level}"]`).classList.add('active');
+            renderNav(searchInput.value);
+        }
 
         function renderNav(query = '') {
             navList.innerHTML = '';
-            
+            const q = query.toLowerCase();
             const categories = {};
             grammarDB.forEach(item => {
+                if (currentLevel !== 'all' && item.level !== currentLevel) return;
                 if (!categories[item.category]) categories[item.category] = [];
                 categories[item.category].push(item);
             });
 
             for (const [cat, items] of Object.entries(categories)) {
                 const filtered = items.filter(i => 
-                    i.title.toLowerCase().includes(query.toLowerCase()) || 
-                    i.desc.toLowerCase().includes(query.toLowerCase()) ||
-                    i.meaning_zh.includes(query)
+                    i.title.toLowerCase().includes(q) || 
+                    i.desc.toLowerCase().includes(q) ||
+                    i.meaning_zh.includes(query) ||
+                    i.meaning_en.toLowerCase().includes(q)
                 );
-                
                 if (filtered.length > 0) {
                     const catEl = document.createElement('li');
                     catEl.className = 'nav-category';
                     catEl.textContent = cat;
                     navList.appendChild(catEl);
-
                     filtered.forEach(item => {
                         const li = document.createElement('li');
                         li.className = 'nav-item';
-                        li.textContent = item.title;
+                        const lvSpan = document.createElement('span');
+                        lvSpan.className = 'nav-level ' + item.level.toLowerCase();
+                        lvSpan.textContent = item.level;
+                        const titleSpan = document.createElement('span');
+                        titleSpan.className = 'nav-title';
+                        titleSpan.textContent = item.title;
+                        li.appendChild(lvSpan);
+                        li.appendChild(titleSpan);
                         li.onclick = () => {
                             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
                             li.classList.add('active');
@@ -223,9 +293,16 @@
                 </div>
             `).join('');
 
+            let rulesHtml = item.rules.map(r => {
+                if (typeof r === 'object' && r.zh) {
+                    return `<li class="rule-item"><span class="rule-zh">${r.zh}</span><br><span class="rule-en">${r.en}</span></li>`;
+                }
+                return `<li>${r}</li>`;
+            }).join('');
+
             mainContent.innerHTML = `
                 <div class="grammar-header">
-                    <span class="badge-level">${item.level}</span>
+                    <span class="badge-level ${item.level.toLowerCase()}">${item.level}</span>
                     <h2 class="grammar-title">${item.title}</h2>
                     <p style="font-size: 1.2rem; color: #cbd5e1;">${item.desc}</p>
                 </div>
@@ -238,9 +315,7 @@
 
                 <div class="grammar-section">
                     <h3>Rules (结合规则)</h3>
-                    <ul style="line-height: 1.8;">
-                        ${item.rules.map(r => `<li>${r}</li>`).join('')}
-                    </ul>
+                    <ul style="line-height: 2;">${rulesHtml}</ul>
                 </div>
 
                 <div class="grammar-section">
