@@ -2643,7 +2643,7 @@ const grammarDB = [
     },
     {
         "id": "l3_010",
-        "category": "L3 - 5과: 직업과 직장",
+        "category": "L3 - 5과: 소비와 절약",
         "level": "L3",
         "title": "명-(이)나 / 밖에",
         "desc": "Nothing but / Only",
