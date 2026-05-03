@@ -30,7 +30,7 @@ const grammarDB = [
                 "zh": "我的名字是Jaya。"
             }
         ],
-        "notes": "⚠ 话题标记。用于对比(A는 X, B는 Y)或引入新话题。注意与主语标记이/가区分。\n💡 Tips: Topic marker. Used for contrast (A는 X, B는 Y) or introducing a new topic. Do not confuse with subject marker 이/가."
+        "notes": "⚠ 核心考点解析：\n• 话题标记。\n• 用于对比(A는 X, B는 Y)或引入新话题。\n• 注意与主语标记이/가区分。\n\n💡 Deep Dive Tips:\n- Topic marker.\n- Used for contrast (A는 X, B는 Y) or introducing a new topic.\n- Do not confuse with subject marker 이/가."
     },
     {
         "id": "l1_002",
@@ -62,13 +62,13 @@ const grammarDB = [
                 "zh": "是美华的朋友。"
             }
         ],
-        "notes": "⚠ 名词有收音接이에요，无收音接예요。常见错误：학생예요(✗) → 학생이에요(✓)。\n💡 Tips: Noun with batchim takes 이에요, without batchim takes 예요. Common mistake: 학생예요(✗) → 학생이에요(✓)."
+        "notes": "⚠ 核心考点解析：\n• 名词有收音接이에요，无收音接예요。\n• 常见错误：학생예요(✗) → 학생이에요(✓)。\n\n💡 Deep Dive Tips:\n- Noun with batchim takes 이에요, without batchim takes 예요.\n- Common mistake: 학생예요(✗) → 학생이에요(✓)."
     },
     {
         "title": "~에 있어요/없어요",
         "level": "L1",
         "category": "L1 - 2과: 방에 책상이 있어요",
-        "notes": "⚠ 核心方位句型。用于表达人或事物的存在与否及所在位置。\n💡 Tips: Used to express existence or location of a subject at a specific place.",
+        "notes": "⚠ 核心考点解析：\n• 核心方位句型。\n• 用于表达人或事物的存在与否及所在位置。\n\n💡 Deep Dive Tips:\n- Used to express existence or location of a subject at a specific place.",
         "id": "l1_003",
         "desc": "Is / Is not at (a place)",
         "meaning_zh": "在 / 不在（某处）",
@@ -117,7 +117,7 @@ const grammarDB = [
                 "zh": "谁来了？"
             }
         ],
-        "notes": "⚠ 主语标记。强调'谁/什么'做了动作，用于提供新信息：비가 와요 (下雨了 - 新信息)。\n💡 Tips: Subject marker. Emphasizes 'who/what', used for NEW info: 비가 와요 (It is raining - new info)."
+        "notes": "⚠ 核心考点解析：\n• 主语标记。\n• 强调'谁/什么'做了动作，用于提供新信息：비가 와요 (下雨了 - 新信息)。\n\n💡 Deep Dive Tips:\n- Subject marker.\n- Emphasizes 'who/what', used for NEW info: 비가 와요 (It is raining - new info)."
     },
     {
         "id": "l1_005",
@@ -153,7 +153,7 @@ const grammarDB = [
                 "zh": "你在做什么？"
             }
         ],
-        "notes": "⚠ 最常用的非格式体敬语。阳性元音(ㅏ,ㅗ)接아요，其他接어요。하다变为해요。\n💡 Tips: Most common polite ending. Bright vowels (ㅏ,ㅗ) take 아요, others take 어요. 하다 becomes 해요."
+        "notes": "⚠ 核心考点解析：\n• 最常用的非格式体敬语。\n• 阳性元音(ㅏ,ㅗ)接아요，其他接어요。\n• 하다变为해요。\n\n💡 Deep Dive Tips:\n- Most common polite ending.\n- Bright vowels (ㅏ,ㅗ) take 아요, others take 어요.\n- 하다 becomes 해요."
     },
     {
         "id": "l1_006",
@@ -185,13 +185,13 @@ const grammarDB = [
                 "zh": "看电影。"
             }
         ],
-        "notes": "⚠ 宾语标记。口语中经常省略(밥 먹어요)，但在书面语和正式讲话中不能省。\n💡 Tips: Object marker. Often dropped in casual speech (밥 먹어요), but MUST be kept in writing and formal speech."
+        "notes": "⚠ 核心考点解析：\n• 宾语标记。\n• 口语中经常省略(밥 먹어요)，但在书面语和正式讲话中不能省。\n\n💡 Deep Dive Tips:\n- Object marker.\n- Often dropped in casual speech (밥 먹어요), but MUST be kept in writing and formal speech."
     },
     {
         "title": "~에 가다/오다",
         "level": "L1",
         "category": "L1 - 4과: 라흐만 씨가 식당에 가요",
-        "notes": "⚠ 方向助词。连接目的地，表示移动的方向或终点。\n💡 Tips: Indicates the destination of a movement.",
+        "notes": "⚠ 核心考点解析：\n• 方向助词。\n• 连接目的地，表示移动的方向或终点。\n\n💡 Deep Dive Tips:\n- Indicates the destination of a movement.",
         "id": "l1_007",
         "desc": "Go to / Come to (a place)",
         "meaning_zh": "去 / 来（某处）",
@@ -236,7 +236,7 @@ const grammarDB = [
                 "zh": "从中国来。"
             }
         ],
-        "notes": "⚠ 表示动作发生的场所。和에(静态存在)区分：학교에 있다(在学校) vs 학교에서 공부하다(在学校学习)。也可表示'来自'(오다/나오다)。\n💡 Tips: Location of ACTION. Compare: 학교에 있다(Exist at school) vs 학교에서 공부하다(Study at school). Also means 'from' with 오다/나오다."
+        "notes": "⚠ 核心考点解析：\n• 表示动作发生的场所。\n• 和에(静态存在)区分：학교에 있다(在学校) vs 학교에서 공부하다(在学校学习)。\n• 也可表示'来自'(오다/나오다)。\n\n💡 Deep Dive Tips:\n- Location of ACTION.\n- Compare: 학교에 있다(Exist at school) vs 학교에서 공부하다(Study at school).\n- Also means 'from' with 오다/나오다."
     },
     {
         "id": "l1_009",
@@ -268,7 +268,7 @@ const grammarDB = [
                 "zh": "从早到晚工作了。"
             }
         ],
-        "notes": "⚠ 可用于空间(从A到B)也可用于时间(从X到Y)。时间范围常与부터~까지混用。\n💡 Tips: Works for both space (from A to B) and time (from X to Y). For time ranges, 부터~까지 is also commonly used."
+        "notes": "⚠ 核心考点解析：\n• 可用于空间(从A到B)也可用于时间(从X到Y)。\n• 时间范围常与부터~까지混用。\n\n💡 Deep Dive Tips:\n- Works for both space (from A to B) and time (from X to Y).\n- For time ranges, 부터~까지 is also commonly used."
     },
     {
         "id": "l1_010",
@@ -296,13 +296,13 @@ const grammarDB = [
                 "zh": "3点见。"
             }
         ],
-        "notes": "⚠ 表示时间或地点(存在/方向)。注意：어제/오늘/내일/지금 后面不加에。\n💡 Tips: Indicates time or location (existence/direction). Note: Do NOT attach 에 after 어제/오늘/내일/지금."
+        "notes": "⚠ 核心考点解析：\n• 表示时间或地点(存在/方向)。\n• 注意：어제/오늘/내일/지금 后面不加에。\n\n💡 Deep Dive Tips:\n- Indicates time or location (existence/direction).\n- Note: Do NOT attach 에 after 어제/오늘/내일/지금."
     },
     {
         "title": "~이/가 아니다",
         "level": "L1",
         "category": "L1 - 5과: 오늘은 5월 5일이에요",
-        "notes": "⚠ 否定断定句。是 '~이다' 的反义词，前面必须用主格助词 이/가。\n💡 Tips: The negative form of ~이다. '학생이 아니에요' (I am not a student).",
+        "notes": "⚠ 核心考点解析：\n• 否定断定句。\n• 是 '~이다' 的反义词，前面必须用主格助词 이/가。\n\n💡 Deep Dive Tips:\n- The negative form of ~이다.\n- '학생이 아니에요' (I am not a student).",
         "id": "l1_011",
         "desc": "Is not...",
         "meaning_zh": "不是...",
@@ -325,7 +325,7 @@ const grammarDB = [
         "title": "~부터 ~까지",
         "level": "L1",
         "category": "L1 - 6과: 9시부터 6시까지 일해요",
-        "notes": "⚠ 时间范围标记。表示动作或状态从某个时间点开始，到另一个时间点结束。\n💡 Tips: Used to indicate the starting and ending points of time.",
+        "notes": "⚠ 核心考点解析：\n• 时间范围标记。\n• 表示动作或状态从某个时间点开始，到另一个时间点结束。\n\n💡 Deep Dive Tips:\n- Used to indicate the starting and ending points of time.",
         "id": "l1_012",
         "desc": "From... to... (Time)",
         "meaning_zh": "从... 到... (时间)",
@@ -370,7 +370,7 @@ const grammarDB = [
                 "zh": "那部电影没意思。"
             }
         ],
-        "notes": "⚠ 比'안'更正式的否定方式，多用于书面语。对所有的动词/形容词都适用，没有位置限制。\n💡 Tips: More formal negation than '안', often used in writing. Works with ALL verbs/adjectives without placement restrictions."
+        "notes": "⚠ 核心考点解析：\n• 比'안'更正式的否定方式，多用于书面语。\n• 对所有的动词/形容词都适用，没有位置限制。\n\n💡 Deep Dive Tips:\n- More formal negation than '안', often used in writing.\n- Works with ALL verbs/adjectives without placement restrictions."
     },
     {
         "id": "l1_014",
@@ -398,7 +398,7 @@ const grammarDB = [
                 "zh": "今天不忙。"
             }
         ],
-        "notes": "⚠ 主观否定。放在动词前面。注意：名词+하다动词中，안必须放在하다前面(공부 안 하다)。\n💡 Tips: Subjective negation (do not / will not). For Noun+하다 verbs, 안 MUST be placed right before 하다 (공부 안 하다)."
+        "notes": "⚠ 核心考点解析：\n• 主观否定。\n• 放在动词前面。\n• 注意：名词+하다动词中，안必须放在하다前面(공부 안 하다)。\n\n💡 Deep Dive Tips:\n- Subjective negation (do not / will not).\n- For Noun+하다 verbs, 안 MUST be placed right before 하다 (공부 안 하다)."
     },
     {
         "id": "l1_015",
@@ -430,7 +430,7 @@ const grammarDB = [
                 "zh": "请这边走。"
             }
         ],
-        "notes": "⚠ 具有双重功能：①尊敬陈述句(老师来了) ②礼貌命令句(请坐)。靠语境区分。\n💡 Tips: Dual function: ① Honorific statement (The teacher is coming) ② Polite command (Please sit). Determined by context."
+        "notes": "⚠ 核心考点解析：\n• 具有双重功能：①尊敬陈述句(老师来了) ②礼貌命令句(请坐)。\n• 靠语境区分。\n\n💡 Deep Dive Tips:\n- Dual function: ① Honorific statement (The teacher is coming) ② Polite command (Please sit).\n- Determined by context."
     },
     {
         "id": "l1_016",
@@ -458,7 +458,7 @@ const grammarDB = [
                 "zh": "您住在哪里？"
             }
         ],
-        "notes": "⚠ 格式体尊敬语(습니다/십니다)，最正式的级别。主要用于新闻、演讲、军队、面试等场合。\n💡 Tips: Formal honorifics (습니다/십니다). The most formal speech level. Used in news, presentations, military, and interviews."
+        "notes": "⚠ 核心考点解析：\n• 格式体尊敬语(습니다/십니다)，最正式的级别。\n• 主要用于新闻、演讲、军队、面试等场合。\n\n💡 Deep Dive Tips:\n- Formal honorifics (습니다/십니다).\n- The most formal speech level.\n- Used in news, presentations, military, and interviews."
     },
     {
         "id": "l1_017",
@@ -486,13 +486,13 @@ const grammarDB = [
                 "zh": "想吃好吃的。"
             }
         ],
-        "notes": "⚠ 表示愿望。陈述句只能用于第一人称(我想...)。第三人称要用'고 싶어하다'。问句可用于第二人称。\n💡 Tips: Expresses desire. Statements only for 1st person (I want...). Use 고 싶어하다 for 3rd person. Questions work for 2nd person."
+        "notes": "⚠ 核心考点解析：\n• 表示愿望。\n• 陈述句只能用于第一人称(我想...)。\n• 第三人称要用'고 싶어하다'。\n• 问句可用于第二人称。\n\n💡 Deep Dive Tips:\n- Expresses desire.\n- Statements only for 1st person (I want..).\n- Use 고 싶어하다 for 3rd person.\n- Questions work for 2nd person."
     },
     {
         "title": "~습니다/습니까?",
         "level": "L1",
         "category": "L1 - 8과: 칫솔하고 치약을 삽니다",
-        "notes": "⚠ 最高级敬语（格式体）。常用于正式场合、新闻播报或对长辈/上级汇报时。\n💡 Tips: Highly formal and polite ending, often used in public speaking, news, and business.",
+        "notes": "⚠ 核心考点解析：\n• 最高级敬语（格式体）。\n• 常用于正式场合、新闻播报或对长辈/上级汇报时。\n\n💡 Deep Dive Tips:\n- Highly formal and polite ending, often used in public speaking, news, and business.",
         "id": "l1_018",
         "desc": "Formal polite statement/question ending",
         "meaning_zh": "正式尊称陈述/疑问尾缀",
@@ -537,7 +537,7 @@ const grammarDB = [
                 "zh": "和朋友一起去了。"
             }
         ],
-        "notes": "⚠ 表示'和/与'。和와/과一样，但하고最口语化。不论有无收音都可以直接接하고。\n💡 Tips: Means 'and/with'. Like 와/과 but more casual. Can be attached regardless of batchim, unlike 와/과."
+        "notes": "⚠ 核心考点解析：\n• 表示'和/与'。\n• 和와/과一样，但하고最口语化。\n• 不论有无收音都可以直接接하고。\n\n💡 Deep Dive Tips:\n- Means 'and/with'.\n- Like 와/과 but more casual.\n- Can be attached regardless of batchim, unlike 와/과."
     },
     {
         "id": "l1_020",
@@ -565,7 +565,7 @@ const grammarDB = [
                 "zh": "这个也请给我。"
             }
         ],
-        "notes": "⚠ 表示'也'。替换掉은/는、이/가、을/를，不能叠加使用：나도(✓) 나는도(✗)。但可以和에/에서叠加：에도/에서도。\n💡 Tips: Means 'also/too'. REPLACES 은/는, 이/가, 을/를 (나는도 ✗, 나도 ✓). But CAN stack with 에/에서 (에도/에서도)."
+        "notes": "⚠ 核心考点解析：\n• 表示'也'。\n• 替换掉은/는、이/가、을/를，不能叠加使用：나도(✓) 나는도(✗)。\n• 但可以和에/에서叠加：에도/에서도。\n\n💡 Deep Dive Tips:\n- Means 'also/too'.\n- REPLACES 은/는, 이/가, 을/를 (나는도 ✗, 나도 ✓).\n- But CAN stack with 에/에서 (에도/에서도)."
     },
     {
         "id": "l1_021",
@@ -601,13 +601,13 @@ const grammarDB = [
                 "zh": "今天走了很多路。"
             }
         ],
-        "notes": "⚠ 过去时标记。注意特殊缩写：가+았→갔, 오+았→왔, 마시+었→마셨, 하+았→했。\n💡 Tips: Past tense marker. Note common contractions: 가+았→갔, 오+았→왔, 마시+었→마셨, 하+았→했."
+        "notes": "⚠ 核心考点解析：\n• 过去时标记。\n• 注意特殊缩写：가+았→갔, 오+았→왔, 마시+었→마셨, 하+았→했。\n\n💡 Deep Dive Tips:\n- Past tense marker.\n- Note common contractions: 가+았→갔, 오+았→왔, 마시+었→마셨, 하+았→했."
     },
     {
         "title": "~(으)시-",
         "level": "L1",
         "category": "L1 - 10과: 아버지는 요리를 잘하세요",
-        "notes": "⚠ 主体尊称词缀。插入到动词或形容词干后，用于表达对句子主语（通常是长辈或上级）的尊敬。\n💡 Tips: Inserted into the verb/adjective to show respect to the subject of the sentence.",
+        "notes": "⚠ 核心考点解析：\n• 主体尊称词缀。\n• 插入到动词或形容词干后，用于表达对句子主语（通常是长辈或上级）的尊敬。\n\n💡 Deep Dive Tips:\n- Inserted into the verb/adjective to show respect to the subject of the sentence.",
         "id": "l1_022",
         "desc": "Honorific infix",
         "meaning_zh": "尊称中缀",
@@ -652,7 +652,7 @@ const grammarDB = [
                 "zh": "社长说了。"
             }
         ],
-        "notes": "⚠ 께서只用于需要尊敬的长辈/上级，必须搭配尊敬词尾-(으)시-。例如：할머니께서 오셨어요(✓)。\n💡 Tips: Honorific marker. MUST be paired with honorific ending -(으)시-. Example: 할머니께서 오셨어요(✓)."
+        "notes": "⚠ 核心考点解析：\n• 께서只用于需要尊敬的长辈/上级，必须搭配尊敬词尾-(으)시-。\n• 例如：할머니께서 오셨어요(✓)。\n\n💡 Deep Dive Tips:\n- Honorific marker.\n- MUST be paired with honorific ending -(으)시-.\n- Example: 할머니께서 오셨어요(✓)."
     },
     {
         "id": "l1_024",
@@ -680,7 +680,7 @@ const grammarDB = [
                 "zh": "虽小但温馨。"
             }
         ],
-        "notes": "⚠ 强烈的转折'虽然...但是'。前面可以接过去时(했지만)，对比 는데(较柔和)。\n💡 Tips: Strong contrast 'but / although'. Can take past tense before it (했지만). Stronger contrast than the softer 는데."
+        "notes": "⚠ 核心考点解析：\n• 强烈的转折'虽然...但是'。\n• 前面可以接过去时(했지만)，对比 는데(较柔和)。\n\n💡 Deep Dive Tips:\n- Strong contrast 'but / although'.\n- Can take past tense before it (했지만).\n- Stronger contrast than the softer 는데."
     },
     {
         "id": "l1_025",
@@ -708,7 +708,7 @@ const grammarDB = [
                 "zh": "请慢慢说。"
             }
         ],
-        "notes": "⚠ 委婉请求：'请为我做...'。比命令句(으)세요更有礼貌、更柔和。\n💡 Tips: Polite request: 'Please do... for me'. Softer and more polite than the direct command (으)세요."
+        "notes": "⚠ 核心考点解析：\n• 委婉请求：'请为我做...'。\n• 比命令句(으)세요更有礼貌、更柔和。\n\n💡 Deep Dive Tips:\n- Polite request: 'Please do..\n- for me'.\n- Softer and more polite than the direct command (으)세요."
     },
     {
         "id": "l1_026",
@@ -736,7 +736,7 @@ const grammarDB = [
                 "zh": "给父母打了电话。"
             }
         ],
-        "notes": "⚠ 表示'给(某人)'。에게(一般)、한테(口语)、께(尊敬)。只用于人/动物，地点请用에。\n💡 Tips: Means 'to (someone)'. 에게(standard), 한테(casual), 께(honorific). Only for people/animals, use 에 for places."
+        "notes": "⚠ 核心考点解析：\n• 表示'给(某人)'。\n• 에게(一般)、한테(口语)、께(尊敬)。\n• 只用于人/动物，地点请用에。\n\n💡 Deep Dive Tips:\n- Means 'to (someone)'.\n- 에게(standard), 한테(casual), 께(honorific).\n- Only for people/animals, use 에 for places."
     },
     {
         "id": "l1_027",
@@ -768,7 +768,7 @@ const grammarDB = [
                 "zh": "周末打算休息。"
             }
         ],
-        "notes": "⚠ 将来时/推测。第一人称表示自己的计划(갈 거예요)，第二/三人称表示推测(올 거예요)。\n💡 Tips: Future/Guess. 1st person expresses one's own plan (I will go), 2nd/3rd person expresses a guess (They will probably come)."
+        "notes": "⚠ 核心考点解析：\n• 将来时/推测。\n• 第一人称表示自己的计划(갈 거예요)，第二/三人称表示推测(올 거예요)。\n\n💡 Deep Dive Tips:\n- Future/Guess.\n- 1st person expresses one's own plan (I will go), 2nd/3rd person expresses a guess (They will probably come)."
     },
     {
         "id": "l1_028",
@@ -796,7 +796,7 @@ const grammarDB = [
                 "zh": "咖啡又便宜又好喝。"
             }
         ],
-        "notes": "⚠ 动作的并列或先后顺序'和/然后'。前后句没有因果关系。如果是因果请用 아/어서。\n💡 Tips: Simple 'and / then'. Sequential or parallel actions with NO causal relationship. For cause-effect, use 아/어서."
+        "notes": "⚠ 核心考点解析：\n• 动作的并列或先后顺序'和/然后'。\n• 前后句没有因果关系。\n• 如果是因果请用 아/어서。\n\n💡 Deep Dive Tips:\n- Simple 'and / then'.\n- Sequential or parallel actions with NO causal relationship.\n- For cause-effect, use 아/어서."
     },
     {
         "id": "l1_029",
@@ -828,7 +828,7 @@ const grammarDB = [
                 "zh": "去图书馆借书了。"
             }
         ],
-        "notes": "⚠ 表示移动的目的'去/来做某事'。只能和移动动词(가다/오다/다니다)搭配！\n💡 Tips: Purpose of movement 'going/coming to do...'. ONLY pairs with movement verbs (가다/오다/다니다)!"
+        "notes": "⚠ 核心考点解析：\n• 表示移动的目的'去/来做某事'。\n• 只能和移动动词(가다/오다/다니다)搭配！\n\n💡 Deep Dive Tips:\n- Purpose of movement 'going/coming to do..'.\n- ONLY pairs with movement verbs (가다/오다/다니다)!."
     },
     {
         "id": "l1_030",
@@ -860,7 +860,7 @@ const grammarDB = [
                 "zh": "请往右边走。"
             }
         ],
-        "notes": "⚠ 多功能助词：①方向(왼쪽으로) ②工具/手段(버스로) ③原因(감기로)。ㄹ收音后直接用로(서울로)。\n💡 Tips: Multi-use: ①Direction (왼쪽으로) ②Tool/Means (버스로) ③Cause (감기로). After ㄹ batchim, use 로 instead of 으로 (서울로)."
+        "notes": "⚠ 核心考点解析：\n• 多功能助词：①方向(왼쪽으로) ②工具/手段(버스로) ③原因(감기로)。\n• ㄹ收音后直接用로(서울로)。\n\n💡 Deep Dive Tips:\n- Multi-use: ①Direction (왼쪽으로) ②Tool/Means (버스로) ③Cause (감기로).\n- After ㄹ batchim, use 로 instead of 으로 (서울로)."
     },
     {
         "id": "l1_031",
@@ -892,7 +892,7 @@ const grammarDB = [
                 "zh": "要不要我开窗？"
             }
         ],
-        "notes": "⚠ 两种用法：①第一人称提议(같이 갈까요? = 一起去吗？) ②询问/猜测意见(비가 올까요? = 会下雨吗？)。\n💡 Tips: Two uses: ① 1st person suggestion (Shall we go?) ② Wondering/guessing (Will it rain?)."
+        "notes": "⚠ 核心考点解析：\n• 两种用法：①第一人称提议(같이 갈까요? = 一起去吗？) ②询问/猜测意见(비가 올까요? = 会下雨吗？)。\n\n💡 Deep Dive Tips:\n- Two uses: ① 1st person suggestion (Shall we go?) ② Wondering/guessing (Will it rain?)."
     },
     {
         "id": "l1_032",
@@ -924,7 +924,7 @@ const grammarDB = [
                 "zh": "没时间没能去。"
             }
         ],
-        "notes": "⚠ 表示客观能力不足(不能/没能)。区分：못(能力不足无法做) vs 안(主观意愿不想做)。\n💡 Tips: Objective inability (cannot / could not). Crucial difference: 못 = inability (can't), 안 = lack of will (won't)."
+        "notes": "⚠ 核心考点解析：\n• 表示客观能力不足(不能/没能)。\n• 区分：못(能力不足无法做) vs 안(主观意愿不想做)。\n\n💡 Deep Dive Tips:\n- Objective inability (cannot / could not).\n- Crucial difference: 못 = inability (can't), 안 = lack of will (won't)."
     },
     {
         "id": "l1_033",
@@ -952,7 +952,7 @@ const grammarDB = [
                 "zh": "这蛋糕真好吃呀！"
             }
         ],
-        "notes": "⚠ 亲身经历的第一手感叹。表示说话人刚刚发现某事：맛있네요!(真好吃!-刚吃出味道)。不能用于已知信息。\n💡 Tips: First-hand exclamation of surprise. Used when you JUST realized/noticed something: 맛있네요!(Wow it's good!-just tasted it). Not for old info."
+        "notes": "⚠ 核心考点解析：\n• 亲身经历的第一手感叹。\n• 表示说话人刚刚发现某事：맛있네요!(真好吃!-刚吃出味道)。\n• 不能用于已知信息。\n\n💡 Deep Dive Tips:\n- First-hand exclamation of surprise.\n- Used when you JUST realized/noticed something: 맛있네요!(Wow it's good!-just tasted it).\n- Not for old info."
     },
     {
         "id": "l1_034",
@@ -980,13 +980,13 @@ const grammarDB = [
                 "zh": "比起夏天更喜欢冬天。"
             }
         ],
-        "notes": "⚠ 보다后面通常搭配더(更)或덜(没那么)使用。比较句型：A보다 B가 더 ~ (比起A，B更~)。\n💡 Tips: Usually paired with 더(more) or 덜(less). Pattern: A보다 B가 더 ~ (Compared to A, B is more ~)."
+        "notes": "⚠ 核心考点解析：\n• 보다后面通常搭配더(更)或덜(没那么)使用。\n• 比较句型：A보다 B가 더 ~ (比起A，B更~)。\n\n💡 Deep Dive Tips:\n- Usually paired with 더(more) or 덜(less).\n- Pattern: A보다 B가 더 ~ (Compared to A, B is more ~)."
     },
     {
         "title": "~는 것",
         "level": "L1",
         "category": "L1 - 16과: 배가 아파서 병원에 가요",
-        "notes": "⚠ 动名词化。将动词转化为名词词组，使其可以在句中作主语或宾语。\n💡 Tips: Turns an action into a noun phrase, similar to '-ing' in English.",
+        "notes": "⚠ 核心考点解析：\n• 动名词化。\n• 将动词转化为名词词组，使其可以在句中作主语或宾语。\n\n💡 Deep Dive Tips:\n- Turns an action into a noun phrase, similar to '-ing' in English.",
         "id": "l1_035",
         "desc": "Gerund (the act of...)",
         "meaning_zh": "将动词转化为名词（...的事情）",
@@ -1039,13 +1039,13 @@ const grammarDB = [
                 "zh": "肚子疼所以去了医院。"
             }
         ],
-        "notes": "⚠ 表示原因'因为'，或动作先后顺序。注意：后面绝对不能接命令句或共动句(如세요/ㅂ시다)。\n💡 Tips: Indicates reason 'because', or sequential actions. Note: CANNOT be followed by commands or suggestions (like 세요/ㅂ시다)."
+        "notes": "⚠ 核心考点解析：\n• 表示原因'因为'，或动作先后顺序。\n• 注意：后面绝对不能接命令句或共动句(如세요/ㅂ시다)。\n\n💡 Deep Dive Tips:\n- Indicates reason 'because', or sequential actions.\n- Note: CANNOT be followed by commands or suggestions (like 세요/ㅂ시다)."
     },
     {
         "title": "~(으)로 (방향)",
         "level": "L1",
         "category": "L1 - 17과: 사진을 찍지 마세요",
-        "notes": "⚠ 方向助词。强调移动的朝向或路径（如向左、向右、向前）。\n💡 Tips: Indicates the direction of movement. e.g., '오른쪽으로 가세요' (Go to the right).",
+        "notes": "⚠ 核心考点解析：\n• 方向助词。\n• 强调移动的朝向或路径（如向左、向右、向前）。\n\n💡 Deep Dive Tips:\n- Indicates the direction of movement.\n- e.g., '오른쪽으로 가세요' (Go to the right).",
         "id": "l1_037",
         "desc": "Toward (direction)",
         "meaning_zh": "向，朝 (方向)",
@@ -1090,7 +1090,7 @@ const grammarDB = [
                 "zh": "请不要在这里拍照。"
             }
         ],
-        "notes": "⚠ 否定命令句，表示'别做/请勿做...'。只能用于命令/共动句，不能用于陈述句。\n💡 Tips: Negative imperative meaning 'Don't do...'. ONLY used in commands/suggestions. Cannot be used in plain statements."
+        "notes": "⚠ 核心考点解析：\n• 否定命令句，表示'别做/请勿做...'。\n• 只能用于命令/共动句，不能用于陈述句。\n\n💡 Deep Dive Tips:\n- Negative imperative meaning 'Don't do..'.\n- ONLY used in commands/suggestions.\n- Cannot be used in plain statements."
     },
     {
         "id": "l1_039",
@@ -1122,7 +1122,7 @@ const grammarDB = [
                 "zh": "有时间，一起去吧。"
             }
         ],
-        "notes": "⚠ 韩语最万能的连接词！三大用法：①背景铺垫(시간이 있는데...) ②轻微转折(좋은데 비싸요) ③引出话题。\n💡 Tips: The most versatile connector! Uses: ① Background info (시간이 있는데...), ② Soft contrast (좋은데 비싸요), ③ Topic introduction."
+        "notes": "⚠ 核心考点解析：\n• 韩语最万能的连接词！\n• 三大用法：①背景铺垫(시간이 있는데...) ②轻微转折(좋은데 비싸요) ③引出话题。\n\n💡 Deep Dive Tips:\n- The most versatile connector! Uses: ① Background info (시간이 있는데..), ② Soft contrast (좋은데 비싸요), ③ Topic introduction."
     },
     {
         "id": "l1_040",
@@ -1150,7 +1150,7 @@ const grammarDB = [
                 "zh": "今天是周五对吧？"
             }
         ],
-        "notes": "⚠ 寻求对方同意或确认双方都知道的事实。口语中常缩写为죠：맛있지요? → 맛있죠?\n💡 Tips: Seeking agreement or confirming shared knowledge. Shortened to 죠 in casual speech: 맛있지요? → 맛있죠?"
+        "notes": "⚠ 核心考点解析：\n• 寻求对方同意或确认双方都知道的事实。\n• 口语中常缩写为죠：맛있지요? → 맛있죠?\n\n💡 Deep Dive Tips:\n- Seeking agreement or confirming shared knowledge.\n- Shortened to 죠 in casual speech: 맛있지요? → 맛있죠?."
     },
     {
         "id": "l1_041",
@@ -1182,7 +1182,7 @@ const grammarDB = [
                 "zh": "明天再见吧。"
             }
         ],
-        "notes": "⚠ 第一人称复数共动句(我们一起...)。不能对长辈使用，对长辈提议请用 ~(으)ㄹ까요?。\n💡 Tips: 1st person plural suggestion (Let's...). CANNOT be used towards elders/superiors. Use ~(으)ㄹ까요? instead for polite suggestions."
+        "notes": "⚠ 核心考点解析：\n• 第一人称复数共动句(我们一起...)。\n• 不能对长辈使用，对长辈提议请用 ~(으)ㄹ까요?。\n\n💡 Deep Dive Tips:\n- 1st person plural suggestion (Let's..).\n- CANNOT be used towards elders/superiors.\n- Use ~(으)ㄹ까요? instead for polite suggestions."
     },
     {
         "id": "l1_042",
@@ -1210,7 +1210,7 @@ const grammarDB = [
                 "zh": "每天学习韩语。"
             }
         ],
-        "notes": "⚠ 表示'每'。直接接在名词后，不需要其他助词：날마다(每天)，사람마다(每个人)。\n💡 Tips: Means 'every/each'. Attaches directly to nouns without other particles: 날마다(every day), 사람마다(each person)."
+        "notes": "⚠ 核心考点解析：\n• 表示'每'。\n• 直接接在名词后，不需要其他助词：날마다(每天)，사람마다(每个人)。\n\n💡 Deep Dive Tips:\n- Means 'every/each'.\n- Attaches directly to nouns without other particles: 날마다(every day), 사람마다(each person)."
     },
     {
         "id": "l1_043",
@@ -1238,7 +1238,7 @@ const grammarDB = [
                 "zh": "只喝了咖啡。"
             }
         ],
-        "notes": "⚠ 替换을/를和이/가，但可以和에、에서叠加(에만/에서만)。强调排他性：커피만 마셔요(只喝咖啡)。\n💡 Tips: Replaces 을/를 and 이/가, but stacks with 에/에서 (에만/에서만). Emphasizes exclusivity: 커피만 마셔요(Drink ONLY coffee)."
+        "notes": "⚠ 核心考点解析：\n• 替换을/를和이/가，但可以和에、에서叠加(에만/에서만)。\n• 强调排他性：커피만 마셔요(只喝咖啡)。\n\n💡 Deep Dive Tips:\n- Replaces 을/를 and 이/가, but stacks with 에/에서 (에만/에서만).\n- Emphasizes exclusivity: 커피만 마셔요(Drink ONLY coffee)."
     },
     {
         "id": "l2_001",
@@ -1270,13 +1270,13 @@ const grammarDB = [
                 "zh": "昨天吃的食物"
             }
         ],
-        "notes": "⚠ 双重身份：①形容词现在时(예쁜 꽃 = 漂亮的花) ②动词过去时(먹은 음식 = 吃过的食物)。\n💡 Tips: Dual role: ① Adjective present (예쁜 꽃 = pretty flower), ② Verb past (먹은 음식 = food I ate)."
+        "notes": "⚠ 核心考点解析：\n• 双重身份：①形容词现在时(예쁜 꽃 = 漂亮的花) ②动词过去时(먹은 음식 = 吃过的食物)。\n\n💡 Deep Dive Tips:\n- Dual role: ① Adjective present (예쁜 꽃 = pretty flower), ② Verb past (먹은 음식 = food I ate)."
     },
     {
         "title": "명-(이)라고 하다",
         "level": "L2",
         "category": "L2 - 1과: 제 고향은 경치가 아름다운 곳이에요",
-        "notes": "⚠ 间接引语基础形式。常用于自我介绍或介绍特定事物的名称（“被叫做...”）。\n💡 Tips: Used to introduce the name of a person or a place.",
+        "notes": "⚠ 核心考点解析：\n• 间接引语基础形式。\n• 常用于自我介绍或介绍特定事物的名称（“被叫做...”）。\n\n💡 Deep Dive Tips:\n- Used to introduce the name of a person or a place.",
         "id": "l2_002",
         "desc": "Is called... (naming)",
         "meaning_zh": "叫做... (介绍名称)",
@@ -1299,7 +1299,7 @@ const grammarDB = [
         "title": "~(으)ㄴ 다음에",
         "level": "L2",
         "category": "L2 - 2과: 쓰레기는 내가 버릴게요",
-        "notes": "⚠ 时间顺序连词。强调前一个动作彻底完成后，再进行后一个动作。\n💡 Tips: Indicates that the action in the following clause happens after the action in the first clause.",
+        "notes": "⚠ 核心考点解析：\n• 时间顺序连词。\n• 强调前一个动作彻底完成后，再进行后一个动作。\n\n💡 Deep Dive Tips:\n- Indicates that the action in the following clause happens after the action in the first clause.",
         "id": "l2_003",
         "desc": "After doing...",
         "meaning_zh": "做完...之后",
@@ -1348,7 +1348,7 @@ const grammarDB = [
                 "zh": "明天再打电话给你。"
             }
         ],
-        "notes": "⚠ 第一人称专属！表示向对方做出承诺/表决心：제가 할게요(我来做)。不能用于第三人称。\n💡 Tips: 1st person ONLY! Expresses a promise/commitment to the listener: 제가 할게요 (I will do it). Cannot be used for others."
+        "notes": "⚠ 核心考点解析：\n• 第一人称专属！\n• 表示向对方做出承诺/表决心：제가 할게요(我来做)。\n• 不能用于第三人称。\n\n💡 Deep Dive Tips:\n- 1st person ONLY! Expresses a promise/commitment to the listener: 제가 할게요 (I will do it).\n- Cannot be used for others."
     },
     {
         "id": "l2_005",
@@ -1376,7 +1376,7 @@ const grammarDB = [
                 "zh": "等了整整两个小时。"
             }
         ],
-        "notes": "⚠ 两个含义：①选择 '或' (커피나 차) ②强调数量大 (3시간이나 기다렸어요! = 等了整整3个小时！)。\n💡 Tips: Two meanings: ① Choice 'or' (커피나 차), ② Emphasis on large quantity (3시간이나 기다렸어요! = Waited a whole 3 hours!)."
+        "notes": "⚠ 核心考点解析：\n• 两个含义：①选择 '或' (커피나 차) ②强调数量大 (3시간이나 기다렸어요! = 等了整整3个小时！\n• )。\n\n💡 Deep Dive Tips:\n- Two meanings: ① Choice 'or' (커피나 차), ② Emphasis on large quantity (3시간이나 기다렸어요! = Waited a whole 3 hours!)."
     },
     {
         "id": "l2_006",
@@ -1404,7 +1404,7 @@ const grammarDB = [
                 "zh": "你吃过泡菜吗？"
             }
         ],
-        "notes": "⚠ 两种含义：①尝试(먹어 보세요=请尝尝) ②经历(가 봤어요=去过)。过去时(봤다)常表示经验。\n💡 Tips: Two meanings: ① Try doing (먹어 보세요 = try eating), ② Experience (가 봤어요 = have gone). Past tense (봤다) means experience."
+        "notes": "⚠ 核心考点解析：\n• 两种含义：①尝试(먹어 보세요=请尝尝) ②经历(가 봤어요=去过)。\n• 过去时(봤다)常表示经验。\n\n💡 Deep Dive Tips:\n- Two meanings: ① Try doing (먹어 보세요 = try eating), ② Experience (가 봤어요 = have gone).\n- Past tense (봤다) means experience."
     },
     {
         "id": "l2_007",
@@ -1436,13 +1436,13 @@ const grammarDB = [
                 "zh": "不能吃辣的食物。"
             }
         ],
-        "notes": "⚠ 能力/可能性'能/不能'。수是依存名词，必须和前面的词分写：할 수 있다(✓), 할수있다(✗)。\n💡 Tips: Ability/Possibility 'can / cannot'. 수 is a bound noun and MUST have a space before it: 할 수 있다(✓)."
+        "notes": "⚠ 核心考点解析：\n• 能力/可能性'能/不能'。\n• 수是依存名词，必须和前面的词分写：할 수 있다(✓), 할수있다(✗)。\n\n💡 Deep Dive Tips:\n- Ability/Possibility 'can / cannot'.\n- 수 is a bound noun and MUST have a space before it: 할 수 있다(✓)."
     },
     {
         "title": "반말 (Casual Speech)",
         "level": "L2",
         "category": "L2 - 4과: 지금 통화할 수 있어요?",
-        "notes": "⚠ 平阶/非敬语。仅限于亲密朋友、同辈或对晚辈使用，绝对不能对初次见面的人或长辈使用。\n💡 Tips: Used with close friends, younger people, or subordinates.",
+        "notes": "⚠ 核心考点解析：\n• 平阶/非敬语。\n• 仅限于亲密朋友、同辈或对晚辈使用，绝对不能对初次见面的人或长辈使用。\n\n💡 Deep Dive Tips:\n- Used with close friends, younger people, or subordinates.",
         "id": "l2_008",
         "desc": "Casual/informal speech",
         "meaning_zh": "非敬语 / 平语",
@@ -1491,13 +1491,13 @@ const grammarDB = [
                 "zh": "有时间的话来玩。"
             }
         ],
-        "notes": "⚠ 假设条件'如果...'。后半句如果是过去时，前面就不能用(으)면。\n💡 Tips: Conditional 'if'. If the main clause is an already happened past event, you cannot use (으)면."
+        "notes": "⚠ 核心考点解析：\n• 假设条件'如果...'。\n• 后半句如果是过去时，前面就不能用(으)면。\n\n💡 Deep Dive Tips:\n- Conditional 'if'.\n- If the main clause is an already happened past event, you cannot use (으)면."
     },
     {
         "title": "~아/어서 (순차)",
         "level": "L2",
         "category": "L2 - 5과: 많이 아프면 이 약을 드세요",
-        "notes": "⚠ 动作的先后顺序。前后动作具有强烈的连贯性和逻辑关系，不能随意调换顺序。\n💡 Tips: Connects two actions where the first action is a prerequisite or leads into the second action.",
+        "notes": "⚠ 核心考点解析：\n• 动作的先后顺序。\n• 前后动作具有强烈的连贯性和逻辑关系，不能随意调换顺序。\n\n💡 Deep Dive Tips:\n- Connects two actions where the first action is a prerequisite or leads into the second action.",
         "id": "l2_010",
         "desc": "And then (sequential)",
         "meaning_zh": "然后 (先后顺序)",
@@ -1546,13 +1546,13 @@ const grammarDB = [
                 "zh": "小时候住在韩国。"
             }
         ],
-        "notes": "⚠ 表示时间'在...时候'。前面可接各种时态的定语形：은/ㄴ 때(过去), 는 때(现在), 을/ㄹ 때(将来)。\n💡 Tips: Time 'when'. Can be preceded by any tense modifier: 은/ㄴ 때 (past), 는 때 (present), 을/ㄹ 때 (future)."
+        "notes": "⚠ 核心考点解析：\n• 表示时间'在...时候'。\n• 前面可接各种时态的定语形：은/ㄴ 때(过去), 는 때(现在), 을/ㄹ 때(将来)。\n\n💡 Deep Dive Tips:\n- Time 'when'.\n- Can be preceded by any tense modifier: 은/ㄴ 때 (past), 는 때 (present), 을/ㄹ 때 (future)."
     },
     {
         "title": "~겠-",
         "level": "L2",
         "category": "L2 - 6과: 맛있는 음식을 먹을 때 행복해요",
-        "notes": "⚠ 意志与推测。主语是第一人称时表示坚定的意志（“我一定会”），第三人称时表示推测（“应该会”）。\n💡 Tips: Used to express the speaker's firm intention (I will) or to make a guess based on the situation.",
+        "notes": "⚠ 核心考点解析：\n• 意志与推测。\n• 主语是第一人称时表示坚定的意志（“我一定会”），第三人称时表示推测（“应该会”）。\n\n💡 Deep Dive Tips:\n- Used to express the speaker's firm intention (I will) or to make a guess based on the situation.",
         "id": "l2_012",
         "desc": "Intention / Guess",
         "meaning_zh": "打算 / 猜测",
@@ -1597,7 +1597,7 @@ const grammarDB = [
                 "zh": "我想待在家里。"
             }
         ],
-        "notes": "⚠ 轻松的口语意愿表达(我想...)。第一人称表意愿，第二人称表询问。比겠어요更随意。\n💡 Tips: Casual 'wanna / intend to'. 1st person for intention, 2nd person for asking preference. More casual than 겠어요."
+        "notes": "⚠ 核心考点解析：\n• 轻松的口语意愿表达(我想...)。\n• 第一人称表意愿，第二人称表询问。\n• 比겠어요更随意。\n\n💡 Deep Dive Tips:\n- Casual 'wanna / intend to'.\n- 1st person for intention, 2nd person for asking preference.\n- More casual than 겠어요."
     },
     {
         "id": "l2_014",
@@ -1629,7 +1629,7 @@ const grammarDB = [
                 "zh": "没时间了，请快走。"
             }
         ],
-        "notes": "⚠ 强调主观原因'因为'。与아/어서不同，它可以完美接命令句和共动句(추우니까 문 닫으세요)。\n💡 Tips: Subjective reason. Unlike 아/어서, it CAN and OFTEN IS followed by commands/suggestions (추우니까 문 닫으세요)."
+        "notes": "⚠ 核心考点解析：\n• 强调主观原因'因为'。\n• 与아/어서不同，它可以完美接命令句和共动句(추우니까 문 닫으세요)。\n\n💡 Deep Dive Tips:\n- Subjective reason.\n- Unlike 아/어서, it CAN and OFTEN IS followed by commands/suggestions (추우니까 문 닫으세요)."
     },
     {
         "id": "l2_015",
@@ -1661,7 +1661,7 @@ const grammarDB = [
                 "zh": "运动完之后洗澡。"
             }
         ],
-        "notes": "⚠ 时间顺序：V+ㄴ 후에(之后) / V+기 전에(之前)。注意定语形不要搞反。\n💡 Tips: Time sequence: V+ㄴ 후에 (after doing) / V+기 전에 (before doing). Make sure not to mix up the modifiers."
+        "notes": "⚠ 核心考点解析：\n• 时间顺序：V+ㄴ 후에(之后) / V+기 전에(之前)。\n• 注意定语形不要搞反。\n\n💡 Deep Dive Tips:\n- Time sequence: V+ㄴ 후에 (after doing) / V+기 전에 (before doing).\n- Make sure not to mix up the modifiers."
     },
     {
         "id": "l2_016",
@@ -1689,7 +1689,7 @@ const grammarDB = [
                 "zh": "约好了明天见面。"
             }
         ],
-        "notes": "⚠ 表示正式的决定，常用于商量好的结果(决定做...)。通常用过去时 기로 했다。\n💡 Tips: Firm decision, often a mutual agreement (decided to do...). Usually used in past tense: 기로 했다."
+        "notes": "⚠ 核心考点解析：\n• 表示正式的决定，常用于商量好的结果(决定做...)。\n• 通常用过去时 기로 했다。\n\n💡 Deep Dive Tips:\n- Firm decision, often a mutual agreement (decided to do..).\n- Usually used in past tense: 기로 했다."
     },
     {
         "id": "l2_017",
@@ -1717,7 +1717,7 @@ const grammarDB = [
                 "zh": "明天天气好像会不错。"
             }
         ],
-        "notes": "⚠ 最通用的推测表达。三种时态都能用：과거(ㄴ/은 것 같다)、현재(는 것 같다)、미래(ㄹ 것 같다)。\n💡 Tips: Most versatile guess expression. Supports all 3 tenses: Past (ㄴ/은 것 같다), Present (는 것 같다), Future (ㄹ 것 같다)."
+        "notes": "⚠ 核心考点解析：\n• 最通用的推测表达。\n• 三种时态都能用：과거(ㄴ/은 것 같다)、현재(는 것 같다)、미래(ㄹ 것 같다)。\n\n💡 Deep Dive Tips:\n- Most versatile guess expression.\n- Supports all 3 tenses: Past (ㄴ/은 것 같다), Present (는 것 같다), Future (ㄹ 것 같다)."
     },
     {
         "id": "l2_018",
@@ -1745,13 +1745,13 @@ const grammarDB = [
                 "zh": "是我喜欢的歌。"
             }
         ],
-        "notes": "⚠ 现在时定语后缀。只能接在动词后面(먹는 사람)。形容词请用 ㄴ/은。\n💡 Tips: Present tense noun modifier. Attaches ONLY to verbs (먹는 사람 = person eating). For adjectives, use ㄴ/은."
+        "notes": "⚠ 核心考点解析：\n• 现在时定语后缀。\n• 只能接在动词后面(먹는 사람)。\n• 形容词请用 ㄴ/은。\n\n💡 Deep Dive Tips:\n- Present tense noun modifier.\n- Attaches ONLY to verbs (먹는 사람 = person eating).\n- For adjectives, use ㄴ/은."
     },
     {
         "title": "~(으)ㄴ/는데 (배경)",
         "level": "L2",
         "category": "L2 - 10과: 시청 옆에 있는데 가까워요",
-        "notes": "⚠ 提示背景。在提出建议、请求或问题之前，先铺垫相关的背景信息。\n💡 Tips: Provides background context before making a suggestion, asking a question, or giving a command.",
+        "notes": "⚠ 核心考点解析：\n• 提示背景。\n• 在提出建议、请求或问题之前，先铺垫相关的背景信息。\n\n💡 Deep Dive Tips:\n- Provides background context before making a suggestion, asking a question, or giving a command.",
         "id": "l2_019",
         "desc": "Background information",
         "meaning_zh": "引出话题的背景",
@@ -1800,7 +1800,7 @@ const grammarDB = [
                 "zh": "因为忙不能见面。"
             }
         ],
-        "notes": "⚠ 强调客观原因'由于/因为'。名词+때문에，动/形+기 때문에。可搭配命令句。\n💡 Tips: Emphasizes objective reason 'due to'. Noun+때문에, Verb/Adj+기 때문에. Can be used with commands, unlike 아/어서."
+        "notes": "⚠ 核心考点解析：\n• 强调客观原因'由于/因为'。\n• 名词+때문에，动/形+기 때문에。\n• 可搭配命令句。\n\n💡 Deep Dive Tips:\n- Emphasizes objective reason 'due to'.\n- Noun+때문에, Verb/Adj+기 때문에.\n- Can be used with commands, unlike 아/어서."
     },
     {
         "id": "l2_021",
@@ -1832,13 +1832,13 @@ const grammarDB = [
                 "zh": "一边吃饭一边聊天。"
             }
         ],
-        "notes": "⚠ 表示两个动作同时进行'一边...一边...'。核心规则：前后主语必须是同一个人！\n💡 Tips: Simultaneous actions 'while'. Core rule: The subject of both clauses MUST be the exactly same person!"
+        "notes": "⚠ 核心考点解析：\n• 表示两个动作同时进行'一边...一边...'。\n• 核心规则：前后主语必须是同一个人！\n\n💡 Deep Dive Tips:\n- Simultaneous actions 'while'.\n- Core rule: The subject of both clauses MUST be the exactly same person!."
     },
     {
         "title": "~게 (부사화)",
         "level": "L2",
         "category": "L2 - 11과: 보름달을 보면서 소원을 빌어요",
-        "notes": "⚠ 状态修饰。将形容词转化为副词，用来修饰后面的动词（如“穿得暖和”）。\n💡 Tips: Turns an adjective into an adverb to modify a following verb.",
+        "notes": "⚠ 核心考点解析：\n• 状态修饰。\n• 将形容词转化为副词，用来修饰后面的动词（如“穿得暖和”）。\n\n💡 Deep Dive Tips:\n- Turns an adjective into an adverb to modify a following verb.",
         "id": "l2_022",
         "desc": "Adverbial suffix (-ly)",
         "meaning_zh": "地 (副词化)",
@@ -1883,13 +1883,13 @@ const grammarDB = [
                 "zh": "没有滑过雪。"
             }
         ],
-        "notes": "⚠ 表示经验(曾经做过/没做过)。必须搭配过去定语形ㄴ/은：먹은 적(✓), 먹는 적(✗)。\n💡 Tips: Past experience (have done / haven't done). MUST use past modifier ㄴ/은: 먹은 적(✓), 먹는 적(✗)."
+        "notes": "⚠ 核心考点解析：\n• 表示经验(曾经做过/没做过)。\n• 必须搭配过去定语形ㄴ/은：먹은 적(✓), 먹는 적(✗)。\n\n💡 Deep Dive Tips:\n- Past experience (have done / haven't done).\n- MUST use past modifier ㄴ/은: 먹은 적(✓), 먹는 적(✗)."
     },
     {
         "title": "~는 편이다",
         "level": "L2",
         "category": "L2 - 12과: 실수를 자주 하는 편이에요",
-        "notes": "⚠ 委婉表达。不作绝对断定，而是表示“某种程度上倾向于...”，语气更加柔和。\n💡 Tips: Used to state a characteristic or tendency gently rather than making an absolute statement.",
+        "notes": "⚠ 核心考点解析：\n• 委婉表达。\n• 不作绝对断定，而是表示“某种程度上倾向于...”，语气更加柔和。\n\n💡 Deep Dive Tips:\n- Used to state a characteristic or tendency gently rather than making an absolute statement.",
         "id": "l2_024",
         "desc": "Tend to / On the ... side",
         "meaning_zh": "算是...的一边 / 偏向于...",
@@ -1938,7 +1938,7 @@ const grammarDB = [
                 "zh": "为了变健康每天运动。"
             }
         ],
-        "notes": "⚠ 表示目的'为了...'。核心限制：后面绝对不能接命令句或共动句(세요/ㅂ시다)！\n💡 Tips: Purpose 'in order to'. Strict limitation: CANNOT be followed by commands or suggestions (세요/ㅂ시다)!"
+        "notes": "⚠ 核心考点解析：\n• 表示目的'为了...'。\n• 核心限制：后面绝对不能接命令句或共动句(세요/ㅂ시다)！\n\n💡 Deep Dive Tips:\n- Purpose 'in order to'.\n- Strict limitation: CANNOT be followed by commands or suggestions (세요/ㅂ시다)!."
     },
     {
         "id": "l2_026",
@@ -1970,7 +1970,7 @@ const grammarDB = [
                 "zh": "打算周末去旅行。"
             }
         ],
-        "notes": "⚠ 表示打算/意图，还没有行动。比기로 하다更不确定。也可表示'正打算...'：가려고 했는데 (正打算去但...)。\n💡 Tips: Intent/plan, not yet executed. Less certain than 기로 하다. Also implies 'was about to': 가려고 했는데 (I was about to go but...)."
+        "notes": "⚠ 核心考点解析：\n• 表示打算/意图，还没有行动。\n• 比기로 하다更不确定。\n• 也可表示'正打算...'：가려고 했는데 (正打算去但...)。\n\n💡 Deep Dive Tips:\n- Intent/plan, not yet executed.\n- Less certain than 기로 하다.\n- Also implies 'was about to': 가려고 했는데 (I was about to go but..)."
     },
     {
         "id": "l2_027",
@@ -2002,7 +2002,7 @@ const grammarDB = [
                 "zh": "必须9点之前来。"
             }
         ],
-        "notes": "⚠ 义务要求'必须/应该'。되다和하다可以互换， 되다更偏口语。否定是：안 해도 되다(不用做)。\n💡 Tips: Obligation 'must / have to'. 되다 and 하다 are interchangeable. Negation is 안 해도 되다 (don't have to)."
+        "notes": "⚠ 核心考点解析：\n• 义务要求'必须/应该'。\n• 되다和하다可以互换， 되다更偏口语。\n• 否定是：안 해도 되다(不用做)。\n\n💡 Deep Dive Tips:\n- Obligation 'must / have to'.\n- 되다 and 하다 are interchangeable.\n- Negation is 안 해도 되다 (don't have to)."
     },
     {
         "id": "l2_028",
@@ -2030,7 +2030,7 @@ const grammarDB = [
                 "zh": "想要健康就得好好吃。"
             }
         ],
-        "notes": "⚠ 条件假设'如果想要...'。是 ~(으)려고 하면 的缩写。后面通常接必须满足的条件或建议。\n💡 Tips: Intention condition 'if you intend to...'. Short for ~(으)려고 하면. Usually followed by necessary conditions or advice."
+        "notes": "⚠ 核心考点解析：\n• 条件假设'如果想要...'。\n• 是 ~(으)려고 하면 的缩写。\n• 后面通常接必须满足的条件或建议。\n\n💡 Deep Dive Tips:\n- Intention condition 'if you intend to..'.\n- Short for ~(으)려고 하면.\n- Usually followed by necessary conditions or advice."
     },
     {
         "id": "l2_029",
@@ -2058,13 +2058,13 @@ const grammarDB = [
                 "zh": "可以拍照吗？"
             }
         ],
-        "notes": "⚠ 许可'可以做...'。提问：해도 돼요?(可以吗?)。禁止回答：(으)면 안 돼요(不可以)，而不是 아/어도 안 돼요。\n💡 Tips: Permission 'may / allowed to'. To forbid, use (으)면 안 돼요 (you may not), NOT 아/어도 안 돼요."
+        "notes": "⚠ 核心考点解析：\n• 许可'可以做...'。\n• 提问：해도 돼요?(可以吗?)。\n• 禁止回答：(으)면 안 돼요(不可以)，而不是 아/어도 안 돼요。\n\n💡 Deep Dive Tips:\n- Permission 'may / allowed to'.\n- To forbid, use (으)면 안 돼요 (you may not), NOT 아/어도 안 돼요."
     },
     {
         "title": "~(으)ㄴ (과거 관형형)",
         "level": "L2",
         "category": "L2 - 15과: 무역 회사에서 번역 일을 하고 있어요",
-        "notes": "⚠ 过去时定语。用于修饰名词，表示该动作已经在过去发生或完成。\n💡 Tips: Modifies a noun with an action that occurred in the past (e.g., 어제 먹은 빵).",
+        "notes": "⚠ 核心考点解析：\n• 过去时定语。\n• 用于修饰名词，表示该动作已经在过去发生或完成。\n\n💡 Deep Dive Tips:\n- Modifies a noun with an action that occurred in the past (e.g., 어제 먹은 빵).",
         "id": "l2_030",
         "desc": "Noun modifier (Past tense)",
         "meaning_zh": "修饰名词 (过去时)",
@@ -2109,7 +2109,7 @@ const grammarDB = [
                 "zh": "现在正在学韩语。"
             }
         ],
-        "notes": "⚠ 动作正在进行中。注意与 아/어 있다(结果状态保持)区分。앉고 있다(正坐下去) vs 앉아 있다(正坐着)。\n💡 Tips: Action in progress. Do not confuse with 아/어 있다 (resulting state). 앉고 있다 (in the act of sitting) vs 앉아 있다 (currently seated)."
+        "notes": "⚠ 核心考点解析：\n• 动作正在进行中。\n• 注意与 아/어 있다(结果状态保持)区分。\n• 앉고 있다(正坐下去) vs 앉아 있다(正坐着)。\n\n💡 Deep Dive Tips:\n- Action in progress.\n- Do not confuse with 아/어 있다 (resulting state).\n- 앉고 있다 (in the act of sitting) vs 앉아 있다 (currently seated)."
     },
     {
         "id": "l2_032",
@@ -2141,7 +2141,7 @@ const grammarDB = [
                 "zh": "要看的书很多。"
             }
         ],
-        "notes": "⚠ 将来时定语后缀。不仅表示将来，还可表示推测或意图(올 사람 = 可能会来的人 / 할 일 = 要做的事)。\n💡 Tips: Future modifier. Also expresses guess or intention (올 사람 = person who'll come / 할 일 = things to do)."
+        "notes": "⚠ 核心考点解析：\n• 将来时定语后缀。\n• 不仅表示将来，还可表示推测或意图(올 사람 = 可能会来的人 / 할 일 = 要做的事)。\n\n💡 Deep Dive Tips:\n- Future modifier.\n- Also expresses guess or intention (올 사람 = person who'll come / 할 일 = things to do)."
     },
     {
         "id": "l2_033",
@@ -2169,13 +2169,13 @@ const grammarDB = [
                 "zh": "明天忙。因为有考试。"
             }
         ],
-        "notes": "⚠ 用于在句末补充说明原因(因为...)。通常放在第二句话，绝不用于段落开头。\n💡 Tips: Provides a reason as an afterthought. Always sentence-final (못 가요. 바쁘거든요 = Can't go. Because I'm busy). Never starts a paragraph."
+        "notes": "⚠ 核心考点解析：\n• 用于在句末补充说明原因(因为...)。\n• 通常放在第二句话，绝不用于段落开头。\n\n💡 Deep Dive Tips:\n- Provides a reason as an afterthought.\n- Always sentence-final (못 가요.\n- 바쁘거든요 = Can't go.\n- Because I'm busy).\n- Never starts a paragraph."
     },
     {
         "title": "~았/었으면 좋겠다",
         "level": "L2",
         "category": "L2 - 17과: 잠을 푹 자면 좋겠어요",
-        "notes": "⚠ 强烈愿望。表达希望某事发生或某状态实现的期盼。\n💡 Tips: Expresses a strong desire, hope, or wish for something to happen.",
+        "notes": "⚠ 核心考点解析：\n• 强烈愿望。\n• 表达希望某事发生或某状态实现的期盼。\n\n💡 Deep Dive Tips:\n- Expresses a strong desire, hope, or wish for something to happen.",
         "id": "l2_034",
         "desc": "I wish / It would be great if...",
         "meaning_zh": "要是...就好了 (希望)",
@@ -2198,7 +2198,7 @@ const grammarDB = [
         "title": "~에 (단위/기준)",
         "level": "L2",
         "category": "L2 - 17과: 잠을 푹 자면 좋겠어요",
-        "notes": "⚠ 计量基准助词。通常与表示频率或价格的词连用（如“一天三次”、“一个多少钱”）。\n💡 Tips: Used with quantity or frequency to mean 'per' or 'a' (e.g., 일주일에 두 번 - twice a week).",
+        "notes": "⚠ 核心考点解析：\n• 计量基准助词。\n• 通常与表示频率或价格的词连用（如“一天三次”、“一个多少钱”）。\n\n💡 Deep Dive Tips:\n- Used with quantity or frequency to mean 'per' or 'a' (e.g., 일주일에 두 번 - twice a week).",
         "id": "l2_035",
         "desc": "Per / For every (Unit)",
         "meaning_zh": "每... (计算单位)",
@@ -2221,7 +2221,7 @@ const grammarDB = [
         "title": "~는 게 어때요?",
         "level": "L2",
         "category": "L2 - 18과: 이 수업을 신청하는 게 어때요?",
-        "notes": "⚠ 委婉建议。用询问对方意见的方式提出自己的建议，比直接命令更礼貌。\n💡 Tips: A soft and polite way to suggest an action to someone.",
+        "notes": "⚠ 核心考点解析：\n• 委婉建议。\n• 用询问对方意见的方式提出自己的建议，比直接命令更礼貌。\n\n💡 Deep Dive Tips:\n- A soft and polite way to suggest an action to someone.",
         "id": "l2_036",
         "desc": "How about doing...?",
         "meaning_zh": "做...怎么样？(建议)",
@@ -2244,7 +2244,7 @@ const grammarDB = [
         "title": "~아/어 보이다",
         "level": "L2",
         "category": "L2 - 18과: 이 수업을 신청하는 게 어때요?",
-        "notes": "⚠ 视觉推测。基于眼睛看到的外观或状态进行主观推断（“看起来...”）。\n💡 Tips: Expresses the speaker's feeling or guess upon seeing something or someone.",
+        "notes": "⚠ 核心考点解析：\n• 视觉推测。\n• 基于眼睛看到的外观或状态进行主观推断（“看起来...”）。\n\n💡 Deep Dive Tips:\n- Expresses the speaker's feeling or guess upon seeing something or someone.",
         "id": "l2_037",
         "desc": "Looks / Appears to be...",
         "meaning_zh": "看起来...",
@@ -2289,7 +2289,7 @@ const grammarDB = [
                 "zh": "结婚已经10年了。"
             }
         ],
-        "notes": "⚠ 表示做某事过去了多久'自从...以来'。固定搭配：V+ㄴ 지 + 时间量词 + 되다/지나다/넘다。\n💡 Tips: Time elapsed 'since...'. Fixed pattern: V+ㄴ 지 + time span + 되다/지나다/넘다 (e.g., 온 지 3년 됐어요 = 3 years since coming)."
+        "notes": "⚠ 核心考点解析：\n• 表示做某事过去了多久'自从...以来'。\n• 固定搭配：V+ㄴ 지 + 时间量词 + 되다/지나다/넘다。\n\n💡 Deep Dive Tips:\n- Time elapsed 'since..'.\n- Fixed pattern: V+ㄴ 지 + time span + 되다/지나다/넘다 (e.g., 온 지 3년 됐어요 = 3 years since coming)."
     },
     {
         "id": "l2_039",
@@ -2317,7 +2317,7 @@ const grammarDB = [
                 "zh": "读书或者写字。"
             }
         ],
-        "notes": "⚠ 选择关系'或者'。用于动词/形容词，连接的两个选项没有优先级。名词之间的选择用 (이)나。\n💡 Tips: Choice 'or'. Used for Verbs/Adjectives, indicates equal alternatives. For Nouns, use (이)나."
+        "notes": "⚠ 核心考点解析：\n• 选择关系'或者'。\n• 用于动词/形容词，连接的两个选项没有优先级。\n• 名词之间的选择用 (이)나。\n\n💡 Deep Dive Tips:\n- Choice 'or'.\n- Used for Verbs/Adjectives, indicates equal alternatives.\n- For Nouns, use (이)나."
     },
     {
         "id": "l2_040",
@@ -2345,7 +2345,7 @@ const grammarDB = [
                 "zh": "妈妈做饭的时候孩子在玩。"
             }
         ],
-        "notes": "⚠ '在...期间'。前面必须是动词现在时定语形(는)，绝对不能用过去时。\n💡 Tips: 'During / while'. Must ALWAYS use the present modifier (는), NEVER the past tense modifier."
+        "notes": "⚠ 核心考点解析：\n• '在...期间'。\n• 前面必须是动词现在时定语形(는)，绝对不能用过去时。\n\n💡 Deep Dive Tips:\n- 'During / while'.\n- Must ALWAYS use the present modifier (는), NEVER the past tense modifier."
     },
     {
         "id": "l2_041",
@@ -2377,7 +2377,7 @@ const grammarDB = [
                 "zh": "正在开会，请稍后打电话。"
             }
         ],
-        "notes": "💡 Tips: Cannot be used with adjectives or natural phenomena (비가 오는 중이다 ✗ -> 비가 오고 있다 ✓).\n⚠ 限制：不能与形容词或自然现象搭配（如下雨）。名词后可直接加 중이다（如 공사 중 = 施工中）。"
+        "notes": "⚠ 核心考点解析：\n\n\n💡 Deep Dive Tips:\n- Cannot be used with adjectives or natural phenomena (비가 오는 중이다 ✗ -> 비가 오고 있다 ✓).\n⚠ 限制：不能与形容词或自然现象搭配（如下雨）。名词后可直接加 중이다（如 공사 중 = 施工中）。."
     },
     {
         "id": "l3_001",
@@ -2405,13 +2405,13 @@ const grammarDB = [
                 "zh": "坐巴士坐3站就可以了。"
             }
         ],
-        "notes": "⚠ 极简条件：通常搭配 ~만(只) 一起使用，构成 '만 ~(으)면 되다'，强调完成某事的条件非常简单（只要做...就行了，其他都不需要）。常见于指路、说明书或回答别人的求助。注意不要和表示必须的 '아/어야 되다' 混淆。\n💡 Tips: Often paired with ~만 (only) to emphasize how simple the required condition is (만 ~(으)면 되다). It implies that nothing else is needed beyond this single condition."
+        "notes": "⚠ 核心考点解析：\n• 极简条件：通常搭配 ~만(只) 一起使用，构成 '만 ~(으)면 되다'，强调完成某事的条件非常简单（只要做...就行了，其他都不需要）。\n• 常见于指路、说明书或回答别人的求助。\n• 注意不要和表示必须的 '아/어야 되다' 混淆。\n\n💡 Deep Dive Tips:\n- Often paired with ~만 (only) to emphasize how simple the required condition is (만 ~(으)면 되다).\n- It implies that nothing else is needed beyond this single condition."
     },
     {
         "title": "~고 해서",
         "level": "L3",
         "category": "L3 - 1과: 대인 관계",
-        "notes": "⚠ 部分原因陈述。暗示还有其他很多原因，但说话人只挑出一个具有代表性的原因来说明。常用于委婉地拒绝别人（因为太忙等原因），显得不那么直接。\n💡 Tips: Implies there are multiple reasons for an action, but the speaker is mentioning the primary one to be polite or indirect, especially when declining offers.",
+        "notes": "⚠ 核心考点解析：\n• 部分原因陈述。\n• 暗示还有其他很多原因，但说话人只挑出一个具有代表性的原因来说明。\n• 常用于委婉地拒绝别人（因为太忙等原因），显得不那么直接。\n\n💡 Deep Dive Tips:\n- Implies there are multiple reasons for an action, but the speaker is mentioning the primary one to be polite or indirect, especially when declining offers.",
         "id": "l3_002",
         "desc": "Because of ... and other reasons",
         "meaning_zh": "因为...等原因 (列举部分原因)",
@@ -2464,7 +2464,7 @@ const grammarDB = [
                 "zh": "这件衣服虽然贵，但相对的质量很好。"
             }
         ],
-        "notes": "⚠ 代替与补偿：有两个主要用法。①直接替代：“用B代替A”（比如用周末加班代替平时加班）。②事物的两面性补偿：“虽然价格贵，但作为补偿质量很好”。前后小句的主语必须一致。\n💡 Tips: Often shortened to ~는 대신. Can mean a direct replacement (A instead of B) or a trade-off/compensation (expensive BUT good quality)."
+        "notes": "⚠ 核心考点解析：\n• 代替与补偿：有两个主要用法。\n• ①直接替代：“用B代替A”（比如用周末加班代替平时加班）。\n• ②事物的两面性补偿：“虽然价格贵，但作为补偿质量很好”。\n• 前后小句的主语必须一致。\n\n💡 Deep Dive Tips:\n- Often shortened to ~는 대신.\n- Can mean a direct replacement (A instead of B) or a trade-off/compensation (expensive BUT good quality)."
     },
     {
         "id": "l3_004",
@@ -2492,7 +2492,7 @@ const grammarDB = [
                 "zh": "开始喜欢韩语了。"
             }
         ],
-        "notes": "⚠ 状态变化的绝对核心。表示状态随时间发生变化(变得...)。必须且只能接【形容词】。例如：예뻐지다(变漂亮)、좋아지다(变好)。如果想表示【动词】的变化（变得会做某事），必须使用 '게 되다'。\n💡 Tips: Change of state (become...). strictly ONLY for adjectives: 예뻐지다(become pretty). For verbs, use 게 되다."
+        "notes": "⚠ 核心考点解析：\n• 状态变化的绝对核心。\n• 表示状态随时间发生变化(变得...)。\n• 必须且只能接【形容词】。\n• 例如：예뻐지다(变漂亮)、좋아지다(变好)。\n• 如果想表示【动词】的变化（变得会做某事），必须使用 '게 되다'。\n\n💡 Deep Dive Tips:\n- Change of state (become..).\n- strictly ONLY for adjectives: 예뻐지다(become pretty).\n- For verbs, use 게 되다."
     },
     {
         "id": "l3_005",
@@ -2524,7 +2524,7 @@ const grammarDB = [
                 "zh": "不知道那个人是谁。"
             }
         ],
-        "notes": "⚠ 间接疑问句核心句型。表示“不知道/知道某事”。通常句子里会带有疑问词（누구, 언제, 어디, 무엇 等）。动词用 는지，形容词用 (으)ㄴ지，过去时用 았/었는지。\n💡 Tips: Core indirect question pattern. Often used with WH-words (뭐/어디/누구): 어디에 사는지 알아요? (Do you know where they live?). Tense matters here."
+        "notes": "⚠ 核心考点解析：\n• 间接疑问句核心句型。\n• 表示“不知道/知道某事”。\n• 通常句子里会带有疑问词（누구, 언제, 어디, 무엇 等）。\n• 动词用 는지，形容词用 (으)ㄴ지，过去时用 았/었는지。\n\n💡 Deep Dive Tips:\n- Core indirect question pattern.\n- Often used with WH-words (뭐/어디/누구): 어디에 사는지 알아요? (Do you know where they live?).\n- Tense matters here."
     },
     {
         "id": "l3_006",
@@ -2552,7 +2552,7 @@ const grammarDB = [
                 "zh": "看电视看着就睡着了。"
             }
         ],
-        "notes": "⚠ 动作中断与转换。表示前一个动作在进行的中途突然停止，转而发生了后面的动作（'做着做着突然...'）。最核心的规则：前后小句的【主语必须完全一致】！（我走着走着摔倒了 ✓，我走着走着天黑了 ✗）。\n💡 Tips: Interruption/switch mid-action. Subjects MUST be identical! (걷다가 넘어졌어요 = Fell while walking)."
+        "notes": "⚠ 核心考点解析：\n• 动作中断与转换。\n• 表示前一个动作在进行的中途突然停止，转而发生了后面的动作（'做着做着突然...'）。\n• 最核心的规则：前后小句的【主语必须完全一致】！\n• （我走着走着摔倒了 ✓，我走着走着天黑了 ✗）。\n\n💡 Deep Dive Tips:\n- Interruption/switch mid-action.\n- Subjects MUST be identical! (걷다가 넘어졌어요 = Fell while walking)."
     },
     {
         "id": "l3_007",
@@ -2580,13 +2580,13 @@ const grammarDB = [
                 "zh": "是值得去一次的地方。"
             }
         ],
-        "notes": "⚠ 价值评估。两种核心含义：①强烈推荐“值得做”（이 영화는 볼 만해요 = 这电影值得一看）。②退而求其次“勉强能接受/还能忍受”（아프지만 참을 만해요 = 虽然疼但还能忍）。\n💡 Tips: Two meanings: ① Highly recommended/Worth doing (볼 만하다 = worth watching), ② Bearable/acceptable despite flaws (참을 만하다 = bearable)."
+        "notes": "⚠ 核心考点解析：\n• 价值评估。\n• 两种核心含义：①强烈推荐“值得做”（이 영화는 볼 만해요 = 这电影值得一看）。\n• ②退而求其次“勉强能接受/还能忍受”（아프지만 참을 만해요 = 虽然疼但还能忍）。\n\n💡 Deep Dive Tips:\n- Two meanings: ① Highly recommended/Worth doing (볼 만하다 = worth watching), ② Bearable/acceptable despite flaws (참을 만하다 = bearable)."
     },
     {
         "title": "~아/어 가지고",
         "level": "L3",
         "category": "L3 - 4과: 교환과 환불",
-        "notes": "⚠ 极度口语化的原因/先后顺序连接词。功能与 아/어서 基本完全相同，但更加随意，几乎只出现在口语对话中，绝不能用于正式的书面语或演讲中。\n💡 Tips: Highly colloquial form replacing 아/어서 for reason or sequential action. Do not use in formal writing or tests like TOPIK writing.",
+        "notes": "⚠ 核心考点解析：\n• 极度口语化的原因/先后顺序连接词。\n• 功能与 아/어서 基本完全相同，但更加随意，几乎只出现在口语对话中，绝不能用于正式的书面语或演讲中。\n\n💡 Deep Dive Tips:\n- Highly colloquial form replacing 아/어서 for reason or sequential action.\n- Do not use in formal writing or tests like TOPIK writing.",
         "id": "l3_008",
         "desc": "Because / After doing... (conversational)",
         "meaning_zh": "因为... / 做了...然后",
@@ -2639,7 +2639,7 @@ const grammarDB = [
                 "zh": "老师说有考试。"
             }
         ],
-        "notes": "⚠ 间接陈述句的标准化格式。当转述别人陈述的事实时使用。难点在于词性的区分：动词必须加 ㄴ/는다고，形容词直接加 다고，名词加 (이)라고。过去时统一加 았/었다고。\n💡 Tips: Core indirect statement. Verb + ㄴ/는다고, Adj + 다고, Noun + (이)라고. Past tense always takes 았/었다고 regardless of part of speech."
+        "notes": "⚠ 核心考点解析：\n• 间接陈述句的标准化格式。\n• 当转述别人陈述的事实时使用。\n• 难点在于词性的区分：动词必须加 ㄴ/는다고，形容词直接加 다고，名词加 (이)라고。\n• 过去时统一加 았/었다고。\n\n💡 Deep Dive Tips:\n- Core indirect statement.\n- Verb + ㄴ/는다고, Adj + 다고, Noun + (이)라고.\n- Past tense always takes 았/었다고 regardless of part of speech."
     },
     {
         "id": "l3_010",
@@ -2671,7 +2671,7 @@ const grammarDB = [
                 "zh": "只来了1个朋友。"
             }
         ],
-        "notes": "⚠ 数量的主观情绪对比。这两个总是成对考察。~(이)나 表示数量多于说话人的预期（居然有...那么多！），~밖에 表示数量少于预期且后面【必须】跟否定词（只有.../除了...之外都没有）。\n💡 Tips: ~(이)나 expresses surprise at a unexpectedly large amount. ~밖에 expresses disappointment at a small amount and requires a negative verb following it."
+        "notes": "⚠ 核心考点解析：\n• 数量的主观情绪对比。\n• 这两个总是成对考察。\n• ~(이)나 表示数量多于说话人的预期（居然有...那么多！\n• ），~밖에 表示数量少于预期且后面【必须】跟否定词（只有.../除了...之外都没有）。\n\n💡 Deep Dive Tips:\n- ~(이)나 expresses surprise at a unexpectedly large amount.\n- ~밖에 expresses disappointment at a small amount and requires a negative verb following it."
     },
     {
         "id": "l3_011",
@@ -2699,7 +2699,7 @@ const grammarDB = [
                 "zh": "提议一起吃午饭。"
             }
         ],
-        "notes": "⚠ 间接共动句。当原句是“我们一起做某事吧（(으)ㅂ시다 / 자）”时，转述时必须变成 자고 하다。这是间接引语四大句型之一。\n💡 Tips: Indirect suggestion. Converts propositive endings like (으)ㅂ시다 (Let's...) into 자고 하다."
+        "notes": "⚠ 核心考点解析：\n• 间接共动句。\n• 当原句是“我们一起做某事吧（(으)ㅂ시다 / 자）”时，转述时必须变成 자고 하다。\n• 这是间接引语四大句型之一。\n\n💡 Deep Dive Tips:\n- Indirect suggestion.\n- Converts propositive endings like (으)ㅂ시다 (Let's..) into 자고 하다."
     },
     {
         "id": "l3_012",
@@ -2739,7 +2739,7 @@ const grammarDB = [
                 "zh": "小偷被警察抓住了。"
             }
         ],
-        "notes": "⚠ 被动语态核心。韩语被动后缀主要有四个(이/히/리/기)，没有任何固定规律，必须死记硬背每个词的对应形态。高频词：보이다(被看到), 들리다(被听到), 잡히다(被抓), 열리다(被打开)。\n💡 Tips: Four passive suffixes (이/히/리/기). No phonetic rules apply, must be individually memorized. Common: 보이다(be seen), 들리다(be heard), 잡히다(be caught)."
+        "notes": "⚠ 核心考点解析：\n• 被动语态核心。\n• 韩语被动后缀主要有四个(이/히/리/기)，没有任何固定规律，必须死记硬背每个词的对应形态。\n• 高频词：보이다(被看到), 들리다(被听到), 잡히다(被抓), 열리다(被打开)。\n\n💡 Deep Dive Tips:\n- Four passive suffixes (이/히/리/기).\n- No phonetic rules apply, must be individually memorized.\n- Common: 보이다(be seen), 들리다(be heard), 잡히다(be caught)."
     },
     {
         "id": "l3_013",
@@ -2767,7 +2767,7 @@ const grammarDB = [
                 "zh": "妈妈让快点过来。"
             }
         ],
-        "notes": "⚠ 间接命令句。原句是祈使句（(으)세요 / (으)십시오）时，转述用 (으)라고 하다。如果是禁止别人做某事（지 마세요），则转述为 지 말라고 하다。\n💡 Tips: Indirect command. Converts imperative endings (으)세요 into (으)라고. For negative commands, always use 지 말라고 하다."
+        "notes": "⚠ 核心考点解析：\n• 间接命令句。\n• 原句是祈使句（(으)세요 / (으)십시오）时，转述用 (으)라고 하다。\n• 如果是禁止别人做某事（지 마세요），则转述为 지 말라고 하다。\n\n💡 Deep Dive Tips:\n- Indirect command.\n- Converts imperative endings (으)세요 into (으)라고.\n- For negative commands, always use 지 말라고 하다."
     },
     {
         "id": "l3_014",
@@ -2795,13 +2795,13 @@ const grammarDB = [
                 "zh": "问了几点出发。"
             }
         ],
-        "notes": "⚠ 间接疑问句。当原句是问号结尾（아/어요? / 습니까?）时，转述为 냐고 하다。现代口语中动词和形容词都可以直接接 냐고 하다。\n💡 Tips: Indirect question. Converts a direct question into a reported statement using 냐고/느냐고."
+        "notes": "⚠ 核心考点解析：\n• 间接疑问句。\n• 当原句是问号结尾（아/어요? / 습니까?）时，转述为 냐고 하다。\n• 现代口语中动词和形容词都可以直接接 냐고 하다。\n\n💡 Deep Dive Tips:\n- Indirect question.\n- Converts a direct question into a reported statement using 냐고/느냐고."
     },
     {
         "title": "~만큼",
         "level": "L3",
         "category": "L3 - 7과: 문화생활",
-        "notes": "⚠ 程度等同。表示前后两者在数量、大小或程度上达到了完全同等的水平（像...一样多/好）。通常搭配名词或动词的定语形使用。\n💡 Tips: Indicates absolute equivalence in size, amount, or degree (as much as / to the extent that).",
+        "notes": "⚠ 核心考点解析：\n• 程度等同。\n• 表示前后两者在数量、大小或程度上达到了完全同等的水平（像...一样多/好）。\n• 通常搭配名词或动词的定语形使用。\n\n💡 Deep Dive Tips:\n- Indicates absolute equivalence in size, amount, or degree (as much as / to the extent that).",
         "id": "l3_015",
         "desc": "As much as / To the extent that",
         "meaning_zh": "像...一样多 / 到...的程度",
@@ -2858,7 +2858,7 @@ const grammarDB = [
                 "zh": "早上叫孩子起床。"
             }
         ],
-        "notes": "⚠ 使役语态核心。表示“主语让/强迫某人做某事”。后缀有六个(이/히/리/기/우/추)，必须单独记忆。高频词：먹이다(喂), 깨우다(叫醒), 입히다(给...穿上)。\n💡 Tips: Six causative suffixes (이/히/리/기/우/추) meaning 'make/let someone do'. Must be memorized. Common: 먹이다(feed), 깨우다(wake up)."
+        "notes": "⚠ 核心考点解析：\n• 使役语态核心。\n• 表示“主语让/强迫某人做某事”。\n• 后缀有六个(이/히/리/기/우/추)，必须单独记忆。\n• 高频词：먹이다(喂), 깨우다(叫醒), 입히다(给...穿上)。\n\n💡 Deep Dive Tips:\n- Six causative suffixes (이/히/리/기/우/추) meaning 'make/let someone do'.\n- Must be memorized.\n- Common: 먹이다(feed), 깨우다(wake up)."
     },
     {
         "id": "l3_017",
@@ -2890,13 +2890,13 @@ const grammarDB = [
                 "zh": "这趟公交去首尔站吗？"
             }
         ],
-        "notes": "⚠ 柔和委婉的提问方式。比直接用 아/어요? 显得更温柔、更礼貌，不会给对方压迫感。非常适合用于面试、初次见面、或向陌生人询问情况时。\n💡 Tips: Soft and polite questioning form. Less direct and aggressive than 아/어요? questions. Highly recommended for interviews or polite inquiries."
+        "notes": "⚠ 核心考点解析：\n• 柔和委婉的提问方式。\n• 比直接用 아/어요? 显得更温柔、更礼貌，不会给对方压迫感。\n• 非常适合用于面试、初次见面、或向陌生人询问情况时。\n\n💡 Deep Dive Tips:\n- Soft and polite questioning form.\n- Less direct and aggressive than 아/어요? questions.\n- Highly recommended for interviews or polite inquiries."
     },
     {
         "title": "~아/어서 그런지",
         "level": "L3",
         "category": "L3 - 9과: 고장과 수리",
-        "notes": "⚠ 模糊推测。表示说话人主观上认为前面可能是导致后面结果的原因，但并不完全确定（也许是因为...所以才...吧）。不能用于明确的因果关系。\n💡 Tips: Expresses a vague guess about the reason for a certain result ('Maybe because of..., this happened'). Not used for certain facts.",
+        "notes": "⚠ 核心考点解析：\n• 模糊推测。\n• 表示说话人主观上认为前面可能是导致后面结果的原因，但并不完全确定（也许是因为...所以才...吧）。\n• 不能用于明确的因果关系。\n\n💡 Deep Dive Tips:\n- Expresses a vague guess about the reason for a certain result ('Maybe because of.., this happened').\n- Not used for certain facts.",
         "id": "l3_018",
         "desc": "Maybe because...",
         "meaning_zh": "不知道是不是因为...",
@@ -2941,7 +2941,7 @@ const grammarDB = [
                 "zh": "为了通过考试努力学习。"
             }
         ],
-        "notes": "⚠ 正式的目的表达。明确表示“为了某个目的”。与 (으)려고 相比，它更加正式和书面化。另一个重要区别是：它允许前后小句的主语不一致。\n💡 Tips: Purpose 'for the sake of / in order to'. More formal/written than (으)려고. Unlike (으)려고, it allows different subjects in the two clauses."
+        "notes": "⚠ 核心考点解析：\n• 正式的目的表达。\n• 明确表示“为了某个目的”。\n• 与 (으)려고 相比，它更加正式和书面化。\n• 另一个重要区别是：它允许前后小句的主语不一致。\n\n💡 Deep Dive Tips:\n- Purpose 'for the sake of / in order to'.\n- More formal/written than (으)려고.\n- Unlike (으)려고, it allows different subjects in the two clauses."
     },
     {
         "id": "l3_020",
@@ -2969,7 +2969,7 @@ const grammarDB = [
                 "zh": "提前做好了饭菜。"
             }
         ],
-        "notes": "⚠ 状态保持。表示动作完成之后，不再去管它，任由其保持那个状态。与 아/어 두다 极为相似，但 놓다 更强调动作结束后的“放置/撒手不管”，而 두다 更强调“保留/为了以后备用”。\n💡 Tips: Action completed and left as is. Similar to 아/어 두다, but 놓다 emphasizes 'leaving it alone', while 두다 emphasizes 'keeping it for future use'."
+        "notes": "⚠ 核心考点解析：\n• 状态保持。\n• 表示动作完成之后，不再去管它，任由其保持那个状态。\n• 与 아/어 두다 极为相似，但 놓다 更强调动作结束后的“放置/撒手不管”，而 두다 更强调“保留/为了以后备用”。\n\n💡 Deep Dive Tips:\n- Action completed and left as is.\n- Similar to 아/어 두다, but 놓다 emphasizes 'leaving it alone', while 두다 emphasizes 'keeping it for future use'."
     },
     {
         "id": "l3_021",
@@ -3001,13 +3001,13 @@ const grammarDB = [
                 "zh": "不仅漂亮而且善良。"
             }
         ],
-        "notes": "⚠ 递进叠加。表示“再加上/而且”。核心做题规则：前后的评价必须是同方向的！如果是夸奖，前后都得是夸奖；如果是贬低，前后都得是贬低。绝对不能一好一坏。\n💡 Tips: Addition 'on top of that / plus'. Core exam rule: Both clauses must go in the identical logical direction (both positive OR both negative)."
+        "notes": "⚠ 核心考点解析：\n• 递进叠加。\n• 表示“再加上/而且”。\n• 核心做题规则：前后的评价必须是同方向的！\n• 如果是夸奖，前后都得是夸奖；如果是贬低，前后都得是贬低。\n• 绝对不能一好一坏。\n\n💡 Deep Dive Tips:\n- Addition 'on top of that / plus'.\n- Core exam rule: Both clauses must go in the identical logical direction (both positive OR both negative)."
     },
     {
         "title": "~는/ㄴ다 (서술체)",
         "level": "L3",
         "category": "L3 - 11과: 부동산",
-        "notes": "⚠ 书面叙述体（基本阶）。这是极其重要的体裁！TOPIK大作文、日记、新闻报道、客观事实陈述必须用这个结尾。而在口语中，它被用作关系极好的朋友之间的半语（平语）。\n💡 Tips: Mandatory ending for formal writing (TOPIK essays, diaries, articles). Also doubles as casual speech (banmal) between close friends.",
+        "notes": "⚠ 核心考点解析：\n• 书面叙述体（基本阶）。\n• 这是极其重要的体裁！\n• TOPIK大作文、日记、新闻报道、客观事实陈述必须用这个结尾。\n• 而在口语中，它被用作关系极好的朋友之间的半语（平语）。\n\n💡 Deep Dive Tips:\n- Mandatory ending for formal writing (TOPIK essays, diaries, articles).\n- Also doubles as casual speech (banmal) between close friends.",
         "id": "l3_022",
         "desc": "Plain form (Written/Diary style)",
         "meaning_zh": "书面基本阶叙述体",
@@ -3052,7 +3052,7 @@ const grammarDB = [
                 "zh": "变得在首尔住了。"
             }
         ],
-        "notes": "⚠ 被动状态的变化。表示由于外部原因或环境变化，导致出现了某种新的情况（变得...了）。强调非主观意愿：한국 음식을 좋아하게 됐어요 (在韩国住久了，自然而然变得喜欢吃韩国菜了)。\n💡 Tips: Change caused by external factors, not own will (came to do/be...). 좋아하게 됐어요 (circumstances made me come to like it naturally)."
+        "notes": "⚠ 核心考点解析：\n• 被动状态的变化。\n• 表示由于外部原因或环境变化，导致出现了某种新的情况（变得...了）。\n• 强调非主观意愿：한국 음식을 좋아하게 됐어요 (在韩国住久了，自然而然变得喜欢吃韩国菜了)。\n\n💡 Deep Dive Tips:\n- Change caused by external factors, not own will (came to do/be..).\n- 좋아하게 됐어요 (circumstances made me come to like it naturally)."
     },
     {
         "id": "l3_024",
@@ -3080,7 +3080,7 @@ const grammarDB = [
                 "zh": "吃很多也不会胖。"
             }
         ],
-        "notes": "⚠ 假设与让步。表示“即使...也 / 就算...也”。经常与副词 아무리（无论怎么） 搭配形成黄金组合：아무리 먹어도 안 쪄요 （无论怎么吃都不会胖）。\n💡 Tips: Concession 'even if / even though'. Often paired with 아무리 (no matter how): 아무리 먹어도 (no matter how much I eat)."
+        "notes": "⚠ 核心考点解析：\n• 假设与让步。\n• 表示“即使...也 / 就算...也”。\n• 经常与副词 아무리（无论怎么） 搭配形成黄金组合：아무리 먹어도 안 쪄요 （无论怎么吃都不会胖）。\n\n💡 Deep Dive Tips:\n- Concession 'even if / even though'.\n- Often paired with 아무리 (no matter how): 아무리 먹어도 (no matter how much I eat)."
     },
     {
         "id": "l3_025",
@@ -3108,13 +3108,13 @@ const grammarDB = [
                 "zh": "老师让学生们安静。"
             }
         ],
-        "notes": "⚠ 万能使役句型。表示主观上“让/叫某人做某事”。当一个动词没有专用的사동사(使役动词)后缀时，一律使用 게 하다 来表达使役含义。\n💡 Tips: Universal causative pattern (make someone do). Used productively when a verb does not have a specific short-form causative suffix."
+        "notes": "⚠ 核心考点解析：\n• 万能使役句型。\n• 表示主观上“让/叫某人做某事”。\n• 当一个动词没有专用的사동사(使役动词)后缀时，一律使用 게 하다 来表达使役含义。\n\n💡 Deep Dive Tips:\n- Universal causative pattern (make someone do).\n- Used productively when a verb does not have a specific short-form causative suffix."
     },
     {
         "title": "~아/어 가다/오다",
         "level": "L3",
         "category": "L3 - 13과: 직장 생활",
-        "notes": "⚠ 状态的持续演变。表示一个状态不断发展。方向性很重要：아/어 가다 表示从现在一直持续到未来（以后也会继续...）；아/어 오다 表示从过去一直持续到了现在。\n💡 Tips: Continuous progression of an action. 가다 = from present into the future. 오다 = from the past up to the present.",
+        "notes": "⚠ 核心考点解析：\n• 状态的持续演变。\n• 表示一个状态不断发展。\n• 方向性很重要：아/어 가다 表示从现在一直持续到未来（以后也会继续...）；아/어 오다 表示从过去一直持续到了现在。\n\n💡 Deep Dive Tips:\n- Continuous progression of an action.\n- 가다 = from present into the future.\n- 오다 = from the past up to the present.",
         "id": "l3_026",
         "desc": "Keep doing... / Have been doing...",
         "meaning_zh": "不断地...下去 / 一直...过来",
@@ -3137,7 +3137,7 @@ const grammarDB = [
         "title": "~아/어야 (필수조건)",
         "level": "L3",
         "category": "L3 - 14과: 인터넷과 스마트폰",
-        "notes": "⚠ 绝对的先决条件。语气非常强，表示前面的动作或状态是后面结果发生的“唯一或必须的前提”（必须要...才...）。如果前面不成立，后面绝对不可能发生。\n💡 Tips: Sets a strict mandatory condition. Implies that without the first clause, the second clause is absolutely impossible.",
+        "notes": "⚠ 核心考点解析：\n• 绝对的先决条件。\n• 语气非常强，表示前面的动作或状态是后面结果发生的“唯一或必须的前提”（必须要...才...）。\n• 如果前面不成立，后面绝对不可能发生。\n\n💡 Deep Dive Tips:\n- Sets a strict mandatory condition.\n- Implies that without the first clause, the second clause is absolutely impossible.",
         "id": "l3_027",
         "desc": "Only if / Must do... to...",
         "meaning_zh": "只有...才能...",
@@ -3182,7 +3182,7 @@ const grammarDB = [
                 "zh": "不是冬天嘛。"
             }
         ],
-        "notes": "⚠ 事实确认。用来提醒对方一个你们俩都知道的事实：“你不是知道嘛 / 不是...嘛”。注意：对长辈或上级使用时，容易显得你在教训对方，因此要慎用。\n💡 Tips: Reminding listener of a known fact: 'As you know... / Isn't it that...'. Can sound slightly pushy, arrogant or impolite to elders if used wrongly."
+        "notes": "⚠ 核心考点解析：\n• 事实确认。\n• 用来提醒对方一个你们俩都知道的事实：“你不是知道嘛 / 不是...嘛”。\n• 注意：对长辈或上级使用时，容易显得你在教训对方，因此要慎用。\n\n💡 Deep Dive Tips:\n- Reminding listener of a known fact: 'As you know..\n- / Isn't it that..'.\n- Can sound slightly pushy, arrogant or impolite to elders if used wrongly."
     },
     {
         "id": "l3_029",
@@ -3210,7 +3210,7 @@ const grammarDB = [
                 "zh": "正要出门呢。"
             }
         ],
-        "notes": "⚠ 巧合的时机。含有“正要...”的意思，强调就在你打算做某事的瞬间，碰巧发生了相关的另一件事。常用来表达巧合：我正要给你打电话，你就打来了。\n💡 Tips: 'Was just about to...'. Perfect for expressing coincidence or exact timing (e.g., I was just about to call you, and you called)."
+        "notes": "⚠ 核心考点解析：\n• 巧合的时机。\n• 含有“正要...”的意思，强调就在你打算做某事的瞬间，碰巧发生了相关的另一件事。\n• 常用来表达巧合：我正要给你打电话，你就打来了。\n\n💡 Deep Dive Tips:\n- 'Was just about to..'.\n- Perfect for expressing coincidence or exact timing (e.g., I was just about to call you, and you called)."
     },
     {
         "id": "l3_030",
@@ -3238,7 +3238,7 @@ const grammarDB = [
                 "zh": "一接到电话就跑出去了。"
             }
         ],
-        "notes": "⚠ 无缝衔接。表示“一...就...”，前一个动作结束的瞬间，后一个动作立刻发生，中间几乎没有时间间隔。注意：不能用于描述反复的、习惯性的日常动作。\n💡 Tips: 'As soon as'. Immediate sequence with almost zero time gap between the two actions. Not used for daily habitual routines."
+        "notes": "⚠ 核心考点解析：\n• 无缝衔接。\n• 表示“一...就...”，前一个动作结束的瞬间，后一个动作立刻发生，中间几乎没有时间间隔。\n• 注意：不能用于描述反复的、习惯性的日常动作。\n\n💡 Deep Dive Tips:\n- 'As soon as'.\n- Immediate sequence with almost zero time gap between the two actions.\n- Not used for daily habitual routines."
     },
     {
         "id": "l3_031",
@@ -3266,7 +3266,7 @@ const grammarDB = [
                 "zh": "应该累了，休息吧。"
             }
         ],
-        "notes": "⚠ 推测与担忧的结合。前半句是说话人的强烈推测，后半句通常给出建议或表达遗憾/担忧：피곤할 텐데 쉬세요 (推测你应该很累了，建议你去休息吧)。非常体现韩国人的情商。\n💡 Tips: Guess + concern/regret. Shows empathy towards the listener: 피곤할 텐데 쉬세요 (You must be tired, so please rest)."
+        "notes": "⚠ 核心考点解析：\n• 推测与担忧的结合。\n• 前半句是说话人的强烈推测，后半句通常给出建议或表达遗憾/担忧：피곤할 텐데 쉬세요 (推测你应该很累了，建议你去休息吧)。\n• 非常体现韩国人的情商。\n\n💡 Deep Dive Tips:\n- Guess + concern/regret.\n- Shows empathy towards the listener: 피곤할 텐데 쉬세요 (You must be tired, so please rest)."
     },
     {
         "id": "l3_032",
@@ -3294,7 +3294,7 @@ const grammarDB = [
                 "zh": "窗户开着呢。"
             }
         ],
-        "notes": "⚠ 结果状态的持续。极其容易和 고 있다 混淆！고 있다 表示动作“正在进行”（衣服正在被穿上），而 아/어 있다 表示动作已经结束，但“结果状态一直保持着”（衣服一直穿在身上）。\n💡 Tips: State resulting from a completed action. Compare: 입고 있다 (action of putting clothes on is in progress) vs 입어 있다 (is wearing them right now)."
+        "notes": "⚠ 核心考点解析：\n• 结果状态的持续。\n• 极其容易和 고 있다 混淆！\n• 고 있다 表示动作“正在进行”（衣服正在被穿上），而 아/어 있다 表示动作已经结束，但“结果状态一直保持着”（衣服一直穿在身上）。\n\n💡 Deep Dive Tips:\n- State resulting from a completed action.\n- Compare: 입고 있다 (action of putting clothes on is in progress) vs 입어 있다 (is wearing them right now)."
     },
     {
         "id": "l3_033",
@@ -3322,7 +3322,7 @@ const grammarDB = [
                 "zh": "开着灯就睡着了。"
             }
         ],
-        "notes": "⚠ 维持原有状态。表示“在保持着...状态的情况下”做了另一件事。前面必须使用过去定语形(ㄴ/은)。常用来描述某种不正常、不应该或无意中维持的状态（比如：穿着鞋进屋了）。\n💡 Tips: 'While remaining in the state of...'. Takes past modifier (ㄴ/은). Often implies an unusual or unintended maintained state (e.g., sleeping with the lights on)."
+        "notes": "⚠ 核心考点解析：\n• 维持原有状态。\n• 表示“在保持着...状态的情况下”做了另一件事。\n• 前面必须使用过去定语形(ㄴ/은)。\n• 常用来描述某种不正常、不应该或无意中维持的状态（比如：穿着鞋进屋了）。\n\n💡 Deep Dive Tips:\n- 'While remaining in the state of..'.\n- Takes past modifier (ㄴ/은).\n- Often implies an unusual or unintended maintained state (e.g., sleeping with the lights on)."
     },
     {
         "id": "l3_034",
@@ -3350,7 +3350,7 @@ const grammarDB = [
                 "zh": "会下雨的，带伞吧。"
             }
         ],
-        "notes": "⚠ 意图或推测的依据。有两种完全不同的用法。如果主语是第一人称：表示“我的意图”（我打算...所以你...）；如果主语是其他人称：表示“我的推测”（我推测他会...所以...）。\n💡 Tips: Dual usage: 1st person = my intention... so you should...; 2nd/3rd person = my guess about them is... so you should..."
+        "notes": "⚠ 核心考点解析：\n• 意图或推测的依据。\n• 有两种完全不同的用法。\n• 如果主语是第一人称：表示“我的意图”（我打算...所以你...）；如果主语是其他人称：表示“我的推测”（我推测他会...所以...）。\n\n💡 Deep Dive Tips:\n- Dual usage: 1st person = my intention..\n- so you should..; 2nd/3rd person = my guess about them is..\n- so you should.."
     },
     {
         "id": "l3_035",
@@ -3378,7 +3378,7 @@ const grammarDB = [
                 "zh": "哪怕喝杯水也好。"
             }
         ],
-        "notes": "⚠ 退而求其次。表示在没有最佳选项时，选择了次优项（“哪怕是...也好 / 即使不是最好但也行”）。有时带有一点妥协或委曲求全的语气。\n💡 Tips: Indicates the next best choice, meaning 'even if just / at least'. Implies settling for less than the ideal option."
+        "notes": "⚠ 核心考点解析：\n• 退而求其次。\n• 表示在没有最佳选项时，选择了次优项（“哪怕是...也好 / 即使不是最好但也行”）。\n• 有时带有一点妥协或委曲求全的语气。\n\n💡 Deep Dive Tips:\n- Indicates the next best choice, meaning 'even if just / at least'.\n- Implies settling for less than the ideal option."
     },
     {
         "id": "l3_036",
@@ -3406,7 +3406,7 @@ const grammarDB = [
                 "zh": "课一结束就跑出去了。"
             }
         ],
-        "notes": "⚠ 极速衔接。夸张地强调速度极快（“一...就立刻...”）。在语气上比 자마자 更加强烈和戏剧化，多用于生动地叙述某人动作飞快。\n💡 Tips: Emphasizes immediate sequence. More dramatic and exaggerated than 자마자. Often used for vivid storytelling about fast reactions."
+        "notes": "⚠ 核心考点解析：\n• 极速衔接。\n• 夸张地强调速度极快（“一...就立刻...”）。\n• 在语气上比 자마자 更加强烈和戏剧化，多用于生动地叙述某人动作飞快。\n\n💡 Deep Dive Tips:\n- Emphasizes immediate sequence.\n- More dramatic and exaggerated than 자마자.\n- Often used for vivid storytelling about fast reactions."
     },
     {
         "id": "l3_037",
@@ -3434,7 +3434,7 @@ const grammarDB = [
                 "zh": "漂亮什么呀，还差得远呢。"
             }
         ],
-        "notes": "⚠ 极致的谦虚。当别人夸奖你时，用来委婉地否认，表示“哪里哪里”。在韩国文化中，用这个句型回应赞美，比干巴巴地说 아니에요 要地道和自然得多。\n💡 Tips: Used to humbly deny a compliment ('Not at all'). Sounds much more natural, native, and polite than a simple 아니에요."
+        "notes": "⚠ 核心考点解析：\n• 极致的谦虚。\n• 当别人夸奖你时，用来委婉地否认，表示“哪里哪里”。\n• 在韩国文化中，用这个句型回应赞美，比干巴巴地说 아니에요 要地道和自然得多。\n\n💡 Deep Dive Tips:\n- Used to humbly deny a compliment ('Not at all').\n- Sounds much more natural, native, and polite than a simple 아니에요."
     },
     {
         "id": "l3_038",
@@ -3462,7 +3462,7 @@ const grammarDB = [
                 "zh": "看起来好吃就买了。"
             }
         ],
-        "notes": "⚠ 基于发现的行动。表示说话人亲自发现、观察到了某个客观事实（前句），因此自己采取了相应的行动（后句）。后半句的主语必须是第一人称（我）。\n💡 Tips: Discovered an objective reason → took action. Used ONLY to explain why the 1st person subject decided to take an action based on what they saw."
+        "notes": "⚠ 核心考点解析：\n• 基于发现的行动。\n• 表示说话人亲自发现、观察到了某个客观事实（前句），因此自己采取了相应的行动（后句）。\n• 后半句的主语必须是第一人称（我）。\n\n💡 Deep Dive Tips:\n- Discovered an objective reason → took action.\n- Used ONLY to explain why the 1st person subject decided to take an action based on what they saw."
     },
     {
         "id": "l3_039",
@@ -3498,7 +3498,7 @@ const grammarDB = [
                 "zh": "听说明天没有会议。"
             }
         ],
-        "notes": "⚠ 间接引语的口语大缩写。在日常对话中，人们极少说完整的间接引语。对应规则：다고 해요→대요(陈述), 라고 해요→래요(名词), 자고 해요→재요(共动), 냐고 해요→냬요(疑问)。必考考点！\n💡 Tips: Casual contraction of reported speech. Used constantly in daily conversation. 다고 해요→대요, 라고 해요→래요, 자고 해요→재요, 냐고 해요→냬요."
+        "notes": "⚠ 核心考点解析：\n• 间接引语的口语大缩写。\n• 在日常对话中，人们极少说完整的间接引语。\n• 对应规则：다고 해요→대요(陈述), 라고 해요→래요(名词), 자고 해요→재요(共动), 냐고 해요→냬요(疑问)。\n• 必考考点！\n\n💡 Deep Dive Tips:\n- Casual contraction of reported speech.\n- Used constantly in daily conversation.\n- 다고 해요→대요, 라고 해요→래요, 자고 해요→재요, 냐고 해요→냬요."
     },
     {
         "id": "l3_040",
@@ -3526,7 +3526,7 @@ const grammarDB = [
                 "zh": "济州岛真的很美（我亲身感受到的）。"
             }
         ],
-        "notes": "⚠ 亲身经历的回忆。用来向别人讲述自己亲眼看到、亲身体验过的事实。绝对不能用于转述从别人那里听来的传闻或自己没经历过的事！\n💡 Tips: Recalling and stating something you personally experienced/witnessed. CANNOT be used for hearsay or things you didn't see yourself."
+        "notes": "⚠ 核心考点解析：\n• 亲身经历的回忆。\n• 用来向别人讲述自己亲眼看到、亲身体验过的事实。\n• 绝对不能用于转述从别人那里听来的传闻或自己没经历过的事！\n\n💡 Deep Dive Tips:\n- Recalling and stating something you personally experienced/witnessed.\n- CANNOT be used for hearsay or things you didn't see yourself."
     },
     {
         "id": "l3_041",
@@ -3554,7 +3554,7 @@ const grammarDB = [
                 "zh": "把作业彻底忘了。"
             }
         ],
-        "notes": "⚠ 动作的彻底完结与情感宣泄。表示某事已经彻底做完，且通常伴随强烈的感情。根据语境有两种相反情绪：①痛快/释怀（终于全干完了！） ②遗憾/惋惜（不小心全忘光了...）。\n💡 Tips: Action completely finished. Conveys two opposite emotions based on context: ① Relief/satisfaction, or ② Regret/disappointment."
+        "notes": "⚠ 核心考点解析：\n• 动作的彻底完结与情感宣泄。\n• 表示某事已经彻底做完，且通常伴随强烈的感情。\n• 根据语境有两种相反情绪：①痛快/释怀（终于全干完了！\n• ） ②遗憾/惋惜（不小心全忘光了...）。\n\n💡 Deep Dive Tips:\n- Action completely finished.\n- Conveys two opposite emotions based on context: ① Relief/satisfaction, or ② Regret/disappointment."
     },
     {
         "id": "l3_042",
@@ -3582,7 +3582,7 @@ const grammarDB = [
                 "zh": "小时候住过的小区"
             }
         ],
-        "notes": "⚠ 彻底终结的过去。用来回忆过去发生过，但现在已经彻底结束、不再继续的事情。与单纯的 던 相比，它更强调“断层感”，即过去的状态与现在完全切断了。\n💡 Tips: Emphasizes a past action that was completely finished/closed. Stronger sense of completion and disconnection from the present than simply using 던."
+        "notes": "⚠ 核心考点解析：\n• 彻底终结的过去。\n• 用来回忆过去发生过，但现在已经彻底结束、不再继续的事情。\n• 与单纯的 던 相比，它更强调“断层感”，即过去的状态与现在完全切断了。\n\n💡 Deep Dive Tips:\n- Emphasizes a past action that was completely finished/closed.\n- Stronger sense of completion and disconnection from the present than simply using 던."
     },
     {
         "id": "l4_001",
@@ -3610,7 +3610,7 @@ const grammarDB = [
                 "zh": "越想越生气。"
             }
         ],
-        "notes": "⚠ 递进规律。表示“越...越...”。核心考点：如果前后动词/形容词相同，前面必须加上 (으)면，即“V-(으)면 V-(으)ㄹ수록”。例如：보면 볼수록 (越看越...)。也可以搭配 갈수록 (越来越/随着时间的推移)。\n💡 Tips: Progressive relation: 'The more... the more...'. For repeating verbs, use the (으)면 (으)ㄹ수록 format (e.g. 보면 볼수록 = the more you look at it)."
+        "notes": "⚠ 核心考点解析：\n• 递进规律。\n• 表示“越...越...”。\n• 核心考点：如果前后动词/形容词相同，前面必须加上 (으)면，即“V-(으)면 V-(으)ㄹ수록”。\n• 例如：보면 볼수록 (越看越...)。\n• 也可以搭配 갈수록 (越来越/随着时间的推移)。\n\n💡 Deep Dive Tips:\n- Progressive relation: 'The more..\n- the more..'.\n- For repeating verbs, use the (으)면 (으)ㄹ수록 format (e.g.\n- 보면 볼수록 = the more you look at it)."
     },
     {
         "id": "l4_002",
@@ -3638,7 +3638,7 @@ const grammarDB = [
                 "zh": "因为玩游戏没写作业。"
             }
         ],
-        "notes": "⚠ 耗时耗力的原因。表示因为做前面这件事（花费了大量时间/精力），导致了后面的结果。三大铁律考点：①前后主语必须一致！②不能接命令/共动句！③结果通常是负面的（没能做.../迟到了等）。\n💡 Tips: 'Because of doing...'. Three strict rules: ① Same subject required, ② No commands allowed, ③ Result is usually negative, indicating a missed opportunity or delay."
+        "notes": "⚠ 核心考点解析：\n• 耗时耗力的原因。\n• 表示因为做前面这件事（花费了大量时间/精力），导致了后面的结果。\n• 三大铁律考点：①前后主语必须一致！\n• ②不能接命令/共动句！\n• ③结果通常是负面的（没能做.../迟到了等）。\n\n💡 Deep Dive Tips:\n- 'Because of doing..'.\n- Three strict rules: ① Same subject required, ② No commands allowed, ③ Result is usually negative, indicating a missed opportunity or delay."
     },
     {
         "id": "l4_003",
@@ -3666,7 +3666,7 @@ const grammarDB = [
                 "zh": "不仅便宜而且好吃。"
             }
         ],
-        "notes": "⚠ 并列递进句型。表示“不仅A，而且B也...”。如果是名词，直接加 뿐만 아니라。核心特征：后半句通常必须要带助词 '도(也)'。前后小句的逻辑方向必须一致（同好或同坏）。\n💡 Tips: Progressive pattern: 'Not only A, but also B'. The second clause strongly prefers the particle 도 (also). Logic must be consistent."
+        "notes": "⚠ 核心考点解析：\n• 并列递进句型。\n• 表示“不仅A，而且B也...”。\n• 如果是名词，直接加 뿐만 아니라。\n• 核心特征：后半句通常必须要带助词 '도(也)'。\n• 前后小句的逻辑方向必须一致（同好或同坏）。\n\n💡 Deep Dive Tips:\n- Progressive pattern: 'Not only A, but also B'.\n- The second clause strongly prefers the particle 도 (also).\n- Logic must be consistent."
     },
     {
         "id": "l4_004",
@@ -3694,7 +3694,7 @@ const grammarDB = [
                 "zh": "只能等着了。"
             }
         ],
-        "notes": "⚠ 唯一的无奈选择。表示“除了这样做，别无他法/不得不...”。比 '아/어야 하다(必须)' 语气更重，强调的是在当前客观环境下【没有其他退路】的无奈感。\n💡 Tips: Meaning 'have no choice but to...'. Stronger than 아/어야 하다, emphasizing objective lack of alternatives or a desperate lack of options."
+        "notes": "⚠ 核心考点解析：\n• 唯一的无奈选择。\n• 表示“除了这样做，别无他法/不得不...”。\n• 比 '아/어야 하다(必须)' 语气更重，强调的是在当前客观环境下【没有其他退路】的无奈感。\n\n💡 Deep Dive Tips:\n- Meaning 'have no choice but to..'.\n- Stronger than 아/어야 하다, emphasizing objective lack of alternatives or a desperate lack of options."
     },
     {
         "id": "l4_005",
@@ -3722,7 +3722,7 @@ const grammarDB = [
                 "zh": "没想到已经毕业了。"
             }
         ],
-        "notes": "⚠ 极易混淆考点！两者含义完全相反！\n~(으)ㄹ 줄 몰랐다 = “真没想到会...”（表示事情发生了，我很意外）。\n~(으)ㄹ 줄 알았다 = “我本以为会...”（表示事情没发生，我的预想是错的）。\n💡 Tips: Opposite meanings! 몰랐다 = Didn't expect (you did it, I'm surprised), 알았다 = Thought it was (you didn't do it, my assumption was wrong)."
+        "notes": "⚠ 核心考点解析：\n• 极易混淆考点！\n• 两者含义完全相反！\n• ~(으)ㄹ 줄 몰랐다 = “真没想到会...”（表示事情发生了，我很意外）。\n• ~(으)ㄹ 줄 알았다 = “我本以为会...”（表示事情没发生，我的预想是错的）。\n\n💡 Deep Dive Tips:\n- Opposite meanings! 몰랐다 = Didn't expect (you did it, I'm surprised), 알았다 = Thought it was (you didn't do it, my assumption was wrong)."
     },
     {
         "id": "l4_006",
@@ -3750,13 +3750,13 @@ const grammarDB = [
                 "zh": "学生时代经常去图书馆。"
             }
         ],
-        "notes": "⚠ 过去的习惯与怀旧。表示过去常常做某事（规律性的习惯），但【现在已经绝对不再做了】。常带有一种回忆、怀念或者沧海桑田的语气。不能用于只发生过一次的事。\n💡 Tips: Represents a past habitual action that is no longer done. Often carries a strong tone of nostalgia or reminiscing about the old days."
+        "notes": "⚠ 核心考点解析：\n• 过去的习惯与怀旧。\n• 表示过去常常做某事（规律性的习惯），但【现在已经绝对不再做了】。\n• 常带有一种回忆、怀念或者沧海桑田的语气。\n• 不能用于只发生过一次的事。\n\n💡 Deep Dive Tips:\n- Represents a past habitual action that is no longer done.\n- Often carries a strong tone of nostalgia or reminiscing about the old days."
     },
     {
         "title": "~(으)ㄴ 나머지",
         "level": "L4",
         "category": "L4 - 4과: 한국의 의례",
-        "notes": "⚠ 极端导致的结果。因为前面的程度过于极端（通常带有感情色彩如：太激动、太害怕、太累），导致了后面（通常是消极或出乎意料失控）的结果。\n💡 Tips: Describes a sudden or unintended result caused by an excessive degree of an action or emotion (e.g., too nervous so I fainted).",
+        "notes": "⚠ 核心考点解析：\n• 极端导致的结果。\n• 因为前面的程度过于极端（通常带有感情色彩如：太激动、太害怕、太累），导致了后面（通常是消极或出乎意料失控）的结果。\n\n💡 Deep Dive Tips:\n- Describes a sudden or unintended result caused by an excessive degree of an action or emotion (e.g., too nervous so I fainted).",
         "id": "l4_007",
         "desc": "As a result of being too...",
         "meaning_zh": "过度...以至于 / 因为太...",
@@ -3801,7 +3801,7 @@ const grammarDB = [
                 "zh": "下着雨然后突然停了。"
             }
         ],
-        "notes": "⚠ 观察与对比的转折。两大考点用法：①描述别人的变化（我看到他昨天还生病，今天就好了）。②描述过去与现在的状态对比。绝不能用于第一人称的主观行为（不能说“我昨天学了，今天玩了”）。\n💡 Tips: Two uses: ① Observed change in someone else, ② Past vs present contrast. CANNOT be used for 1st person subjective actions."
+        "notes": "⚠ 核心考点解析：\n• 观察与对比的转折。\n• 两大考点用法：①描述别人的变化（我看到他昨天还生病，今天就好了）。\n• ②描述过去与现在的状态对比。\n• 绝不能用于第一人称的主观行为（不能说“我昨天学了，今天玩了”）。\n\n💡 Deep Dive Tips:\n- Two uses: ① Observed change in someone else, ② Past vs present contrast.\n- CANNOT be used for 1st person subjective actions."
     },
     {
         "id": "l4_009",
@@ -3829,7 +3829,7 @@ const grammarDB = [
                 "zh": "吃什么都无所谓。"
             }
         ],
-        "notes": "⚠ 全面包容的选择。表示“无论是A还是B（都无所谓）”。当它与疑问词搭配时，立刻变成万能副词：뭐든지(不管什么都), 어디든지(不管哪里都), 누구든지(不管谁都)。\n💡 Tips: Meaning 'whether A or B'. When combined with WH-words, it creates universal pronouns: 뭐든지(whatever), 어디든지(wherever)."
+        "notes": "⚠ 核心考点解析：\n• 全面包容的选择。\n• 表示“无论是A还是B（都无所谓）”。\n• 当它与疑问词搭配时，立刻变成万能副词：뭐든지(不管什么都), 어디든지(不管哪里都), 누구든지(不管谁都)。\n\n💡 Deep Dive Tips:\n- Meaning 'whether A or B'.\n- When combined with WH-words, it creates universal pronouns: 뭐든지(whatever), 어디든지(wherever)."
     },
     {
         "id": "l4_010",
@@ -3857,7 +3857,7 @@ const grammarDB = [
                 "zh": "你不知道我有多想你。"
             }
         ],
-        "notes": "⚠ 程度极深的感叹。固定句型搭配，强烈强调程度：“你根本不知道有多...！”。前面必须搭配 얼마나 (多么)，后面必须是 는지 모르다 (不知道)。常用于向别人夸张地描述某个经历。\n💡 Tips: Fixed exclamation pattern emphasizing extreme degree: 'You have no idea how...!'. 얼마나 and 는지 모르다 MUST strictly be paired together."
+        "notes": "⚠ 核心考点解析：\n• 程度极深的感叹。\n• 固定句型搭配，强烈强调程度：“你根本不知道有多...！\n• ”。\n• 前面必须搭配 얼마나 (多么)，后面必须是 는지 모르다 (不知道)。\n• 常用于向别人夸张地描述某个经历。\n\n💡 Deep Dive Tips:\n- Fixed exclamation pattern emphasizing extreme degree: 'You have no idea how..!'.\n- 얼마나 and 는지 모르다 MUST strictly be paired together."
     },
     {
         "id": "l4_011",
@@ -3885,7 +3885,7 @@ const grammarDB = [
                 "zh": "说得快到听不懂的程度。"
             }
         ],
-        "notes": "⚠ 夸张的程度比喻。表示“到了...的程度”。常常用一个极端的假想情况来形容真实的程度（例如：疼得【像要死了一样】的程度）。意思类似 만큼，但 정도로 偏向正式书面语。\n💡 Tips: Emphasizes extreme extent (to the point of...). Often uses an exaggerated metaphor. Similar to 만큼, but 정도로 is more formal/written."
+        "notes": "⚠ 核心考点解析：\n• 夸张的程度比喻。\n• 表示“到了...的程度”。\n• 常常用一个极端的假想情况来形容真实的程度（例如：疼得【像要死了一样】的程度）。\n• 意思类似 만큼，但 정도로 偏向正式书面语。\n\n💡 Deep Dive Tips:\n- Emphasizes extreme extent (to the point of..).\n- Often uses an exaggerated metaphor.\n- Similar to 만큼, but 정도로 is more formal/written."
     },
     {
         "id": "l4_012",
@@ -3913,13 +3913,13 @@ const grammarDB = [
                 "zh": "正在喝的咖啡凉了。"
             }
         ],
-        "notes": "⚠ 回忆的断崖。表示过去未完成或反复发生的动作（“过去常常...但没做完”/“当时正在...”）。核心考点：如果说 입던 옷，表示“过去常穿（但现在不穿）”或“穿了一半还没脱”的衣服。\n💡 Tips: Recalling an incomplete, interrupted or habitual past action. Contrast with 았/었던, which implies total completion and closure."
+        "notes": "⚠ 核心考点解析：\n• 回忆的断崖。\n• 表示过去未完成或反复发生的动作（“过去常常...但没做完”/“当时正在...”）。\n• 核心考点：如果说 입던 옷，表示“过去常穿（但现在不穿）”或“穿了一半还没脱”的衣服。\n\n💡 Deep Dive Tips:\n- Recalling an incomplete, interrupted or habitual past action.\n- Contrast with 았/었던, which implies total completion and closure."
     },
     {
         "title": "~되",
         "level": "L4",
         "category": "L4 - 7과: 현대인의 질병",
-        "notes": "⚠ 批准与附加限制。用于让步或许可。意思是“前面的事情我承认/允许，但是...（必须遵守后面的限制条件）”。常用于公文、规定或长辈对晚辈的教导中。\n💡 Tips: Concedes or permits the first clause, but strictly adds a restriction or condition in the second clause. Common in formal rules.",
+        "notes": "⚠ 核心考点解析：\n• 批准与附加限制。\n• 用于让步或许可。\n• 意思是“前面的事情我承认/允许，但是...（必须遵守后面的限制条件）”。\n• 常用于公文、规定或长辈对晚辈的教导中。\n\n💡 Deep Dive Tips:\n- Concedes or permits the first clause, but strictly adds a restriction or condition in the second clause.\n- Common in formal rules.",
         "id": "l4_013",
         "desc": "Do it, but... / Admitting X, but requesting Y",
         "meaning_zh": "虽然...但是... / 允许做...但是要注意...",
@@ -3964,7 +3964,7 @@ const grammarDB = [
                 "zh": "运动完之后心情好。"
             }
         ],
-        "notes": "⚠ 第一视角的发现。两大核心用法：①主语是我：我做了某事后，突然发现了后面的结果。②主语是别人：我观察到别人做了某事，导致了后面的变化。不能用于“我打算做某事”。\n💡 Tips: Two uses: ① 1st person: I did something → realized an unexpected result. ② 2nd/3rd person: I observed someone do something → saw the change."
+        "notes": "⚠ 核心考点解析：\n• 第一视角的发现。\n• 两大核心用法：①主语是我：我做了某事后，突然发现了后面的结果。\n• ②主语是别人：我观察到别人做了某事，导致了后面的变化。\n• 不能用于“我打算做某事”。\n\n💡 Deep Dive Tips:\n- Two uses: ① 1st person: I did something → realized an unexpected result.\n- ② 2nd/3rd person: I observed someone do something → saw the change."
     },
     {
         "id": "l4_015",
@@ -3992,7 +3992,7 @@ const grammarDB = [
                 "zh": "顺便运动走过来了。"
             }
         ],
-        "notes": "⚠ 一箭双雕的兼顾。表示“顺便/兼顾”。做一个动作，同时满足两个目的。通常前面加 도，构成 A 도 할 겸 B 도 할 겸，非常有节奏感。\n💡 Tips: Combining purposes 'while doing this, also doing that'. One action serves two birds. Often used as ~도 할 겸 to list the dual purposes."
+        "notes": "⚠ 核心考点解析：\n• 一箭双雕的兼顾。\n• 表示“顺便/兼顾”。\n• 做一个动作，同时满足两个目的。\n• 通常前面加 도，构成 A 도 할 겸 B 도 할 겸，非常有节奏感。\n\n💡 Deep Dive Tips:\n- Combining purposes 'while doing this, also doing that'.\n- One action serves two birds.\n- Often used as ~도 할 겸 to list the dual purposes."
     },
     {
         "id": "l4_016",
@@ -4024,7 +4024,7 @@ const grammarDB = [
                 "zh": "听说你搬家了？搬去哪？"
             }
         ],
-        "notes": "⚠ 带着求知欲的确认。当你从别人那里听到了某个八卦或消息，去向当事人确认时使用：“听说你...是真的吗？”。语气中多多少少带有一点好奇或惊讶。\n💡 Tips: Used to confirm hearsay with the listener: 'I heard that..., is it true?'. Carries a distinct tone of curiosity, surprise, or gossiping."
+        "notes": "⚠ 核心考点解析：\n• 带着求知欲的确认。\n• 当你从别人那里听到了某个八卦或消息，去向当事人确认时使用：“听说你...是真的吗？”。\n• 语气中多多少少带有一点好奇或惊讶。\n\n💡 Deep Dive Tips:\n- Used to confirm hearsay with the listener: 'I heard that.., is it true?'.\n- Carries a distinct tone of curiosity, surprise, or gossiping."
     },
     {
         "id": "l4_017",
@@ -4052,7 +4052,7 @@ const grammarDB = [
                 "zh": "差点被车撞到。"
             }
         ],
-        "notes": "⚠ 惊险的避让。表示“差一点点就发生了（但庆幸的是并没有发生）”。时态铁律：只能而且必须使用过去时（ㄹ 뻔했다）！通常搭配 하마터면（差点）使用。\n💡 Tips: 'Almost happened (but thankfully didn't)'. Tense rule: Can ONLY be used in past tense (ㄹ 뻔했다). Often paired with 하마터면."
+        "notes": "⚠ 核心考点解析：\n• 惊险的避让。\n• 表示“差一点点就发生了（但庆幸的是并没有发生）”。\n• 时态铁律：只能而且必须使用过去时（ㄹ 뻔했다）！\n• 通常搭配 하마터면（差点）使用。\n\n💡 Deep Dive Tips:\n- 'Almost happened (but thankfully didn't)'.\n- Tense rule: Can ONLY be used in past tense (ㄹ 뻔했다).\n- Often paired with 하마터면."
     },
     {
         "id": "l4_018",
@@ -4080,7 +4080,7 @@ const grammarDB = [
                 "zh": "由于事故道路被堵了。"
             }
         ],
-        "notes": "⚠ 严肃的因果归结。表示原因“由于/因为...”。极其正式的书面语！常用于新闻报道、官方事故调查报告、学术论文中。如果日常聊天用这个，会显得像在播报新闻。\n💡 Tips: Means 'due to'. Highly formal/written expression reserved for news broadcasting, accident reports, and essays. In speech, use 때문에."
+        "notes": "⚠ 核心考点解析：\n• 严肃的因果归结。\n• 表示原因“由于/因为...”。\n• 极其正式的书面语！\n• 常用于新闻报道、官方事故调查报告、学术论文中。\n• 如果日常聊天用这个，会显得像在播报新闻。\n\n💡 Deep Dive Tips:\n- Means 'due to'.\n- Highly formal/written expression reserved for news broadcasting, accident reports, and essays.\n- In speech, use 때문에."
     },
     {
         "id": "l4_019",
@@ -4112,13 +4112,13 @@ const grammarDB = [
                 "zh": "假装不疼。"
             }
         ],
-        "notes": "⚠ 虚伪的伪装。表示“明明不是那样，却假装成那样”。时态匹配是唯一的难点：动词现在假装(는 척)、形容词假装(ㄴ/은 척)、假装过去做过(ㄴ/은 척)。\n💡 Tips: 'Pretend to'. Match the modifier exactly to the tense: Verb present (는 척), Adjective (ㄴ/은 척), Past action (ㄴ/은 척)."
+        "notes": "⚠ 核心考点解析：\n• 虚伪的伪装。\n• 表示“明明不是那样，却假装成那样”。\n• 时态匹配是唯一的难点：动词现在假装(는 척)、形容词假装(ㄴ/은 척)、假装过去做过(ㄴ/은 척)。\n\n💡 Deep Dive Tips:\n- 'Pretend to'.\n- Match the modifier exactly to the tense: Verb present (는 척), Adjective (ㄴ/은 척), Past action (ㄴ/은 척)."
     },
     {
         "title": "~고 말다",
         "level": "L4",
         "category": "L4 - 10과: 언어생활",
-        "notes": "⚠ 无法挽回的结局。表示事情最终发展成了非本意的结果（“最终还是...”）。通常带有非常浓厚的惋惜、后悔、失望或无可奈何的感情色彩。\n💡 Tips: Expresses that an action was completed unintentionally or inevitably, heavily laden with feelings of regret, disappointment or helplessness.",
+        "notes": "⚠ 核心考点解析：\n• 无法挽回的结局。\n• 表示事情最终发展成了非本意的结果（“最终还是...”）。\n• 通常带有非常浓厚的惋惜、后悔、失望或无可奈何的感情色彩。\n\n💡 Deep Dive Tips:\n- Expresses that an action was completed unintentionally or inevitably, heavily laden with feelings of regret, disappointment or helplessness.",
         "id": "l4_020",
         "desc": "Ended up doing... (unintended/regretful)",
         "meaning_zh": "最终还是...了 (遗憾/无奈)",
@@ -4163,13 +4163,13 @@ const grammarDB = [
                 "zh": "努力的话好结果是必然的。"
             }
         ],
-        "notes": "⚠ 不可抗拒的真理。表示某个结果是自然规律、人性本能或必然发生的事（“肯定是会...的”）。不能用于随机发生或偶然的个人事件。\n💡 Tips: Expresses natural law, human nature, or inevitability: 'Bound to happen / It is natural that...'. Cannot be used for random events."
+        "notes": "⚠ 核心考点解析：\n• 不可抗拒的真理。\n• 表示某个结果是自然规律、人性本能或必然发生的事（“肯定是会...的”）。\n• 不能用于随机发生或偶然的个人事件。\n\n💡 Deep Dive Tips:\n- Expresses natural law, human nature, or inevitability: 'Bound to happen / It is natural that..'.\n- Cannot be used for random events."
     },
     {
         "title": "~조차",
         "level": "L4",
         "category": "L4 - 11과: 교육 제도",
-        "notes": "⚠ 底线的突破。极端的包含助词。意思是“竟然连最基础、最理所当然的那个也/都...”。通常预示着情况已经糟糕到了极点，比 마저/까지 的否定感更深。\n💡 Tips: Used to express an extreme, unexpected negative situation ('Even the most basic thing...'). Similar to 마저 but with a darker tone.",
+        "notes": "⚠ 核心考点解析：\n• 底线的突破。\n• 极端的包含助词。\n• 意思是“竟然连最基础、最理所当然的那个也/都...”。\n• 通常预示着情况已经糟糕到了极点，比 마저/까지 的否定感更深。\n\n💡 Deep Dive Tips:\n- Used to express an extreme, unexpected negative situation ('Even the most basic thing..').\n- Similar to 마저 but with a darker tone.",
         "id": "l4_022",
         "desc": "Even... (extreme case)",
         "meaning_zh": "甚至连... / 居然...",
@@ -4214,7 +4214,7 @@ const grammarDB = [
                 "zh": "健康才是最宝贵的。"
             }
         ],
-        "notes": "⚠ 聚光灯般的强调。是主格助词 이/가 的究极加强版，意思是“唯有这个才是 / 正是这个！”。后面经常接最高级的评价（최고/가장/진짜）。\n💡 Tips: Emphatic marker meaning 'THE very / indeed'. It spotlights the noun. Often paired with superlatives like 최고, 가장, 진짜."
+        "notes": "⚠ 核心考点解析：\n• 聚光灯般的强调。\n• 是主格助词 이/가 的究极加强版，意思是“唯有这个才是 / 正是这个！\n• ”。\n• 后面经常接最高级的评价（최고/가장/진짜）。\n\n💡 Deep Dive Tips:\n- Emphatic marker meaning 'THE very / indeed'.\n- It spotlights the noun.\n- Often paired with superlatives like 최고, 가장, 진짜."
     },
     {
         "id": "l4_024",
@@ -4246,13 +4246,13 @@ const grammarDB = [
                 "zh": "看来吃了很多。"
             }
         ],
-        "notes": "⚠ 有理有据的推测。表示基于自己亲眼看到、听到的【客观线索】做出的推测（“看来是...啊”）。它的可信度远远高于完全凭空瞎猜的 것 같다。\n💡 Tips: Evidence-based guess (judging after seeing/hearing a clue). Stronger factual basis than 것 같다. E.g. Seeing wet roads -> 비가 왔나 보다."
+        "notes": "⚠ 核心考点解析：\n• 有理有据的推测。\n• 表示基于自己亲眼看到、听到的【客观线索】做出的推测（“看来是...啊”）。\n• 它的可信度远远高于完全凭空瞎猜的 것 같다。\n\n💡 Deep Dive Tips:\n- Evidence-based guess (judging after seeing/hearing a clue).\n- Stronger factual basis than 것 같다.\n- E.g.\n- Seeing wet roads -> 비가 왔나 보다."
     },
     {
         "title": "~는 한",
         "level": "L4",
         "category": "L4 - 13과: 환경 보호",
-        "notes": "⚠ 苛刻的前提锁。表示“只要保持前面的状态或条件不改变，后面的情况就会一直有效”。带有一种斩钉截铁的语气（“只要我还活着一天，就不允许发生这种事”）。\n💡 Tips: Indicates that as long as the exact condition in the first clause is maintained, the second clause remains true. Very assertive tone.",
+        "notes": "⚠ 核心考点解析：\n• 苛刻的前提锁。\n• 表示“只要保持前面的状态或条件不改变，后面的情况就会一直有效”。\n• 带有一种斩钉截铁的语气（“只要我还活着一天，就不允许发生这种事”）。\n\n💡 Deep Dive Tips:\n- Indicates that as long as the exact condition in the first clause is maintained, the second clause remains true.\n- Very assertive tone.",
         "id": "l4_025",
         "desc": "As long as...",
         "meaning_zh": "只要...就...",
@@ -4297,13 +4297,13 @@ const grammarDB = [
                 "zh": "为了不忘记请写下来。"
             }
         ],
-        "notes": "⚠ 目的与极限。考试必考的两个用法：①表示目的：“为了使...发生”（前面常接否定词，如 안 늦도록 = 为了不迟到）。②表示生理极限：“到了...地步”（如 눈물이 나도록 = 到了流泪的地步）。\n💡 Tips: Two massive usages: ① Purpose 'so that...' (안 늦도록 = so as not to be late) ② Extent 'to the point of...' (눈물이 나도록)."
+        "notes": "⚠ 核心考点解析：\n• 目的与极限。\n• 考试必考的两个用法：①表示目的：“为了使...发生”（前面常接否定词，如 안 늦도록 = 为了不迟到）。\n• ②表示生理极限：“到了...地步”（如 눈물이 나도록 = 到了流泪的地步）。\n\n💡 Deep Dive Tips:\n- Two massive usages: ① Purpose 'so that..' (안 늦도록 = so as not to be late) ② Extent 'to the point of..' (눈물이 나도록)."
     },
     {
         "title": "~(으)므로",
         "level": "L4",
         "category": "L4 - 14과: 생활과 경제",
-        "notes": "⚠ 官腔十足的原因。表示原因的极其正式的书面表达。你在日常生活中听不到它，它永远出现在公文、新闻简报、法律条文或正式演讲稿中。等同于 (으)니까/기 때문에。\n💡 Tips: A highly formal, rigid written expression indicating a logical cause. Equivalent to 기 때문에 but used in official documents.",
+        "notes": "⚠ 核心考点解析：\n• 官腔十足的原因。\n• 表示原因的极其正式的书面表达。\n• 你在日常生活中听不到它，它永远出现在公文、新闻简报、法律条文或正式演讲稿中。\n• 等同于 (으)니까/기 때문에。\n\n💡 Deep Dive Tips:\n- A highly formal, rigid written expression indicating a logical cause.\n- Equivalent to 기 때문에 but used in official documents.",
         "id": "l4_027",
         "desc": "Because / Therefore (formal/written)",
         "meaning_zh": "因为... / 由于... (书面)",
@@ -4326,7 +4326,7 @@ const grammarDB = [
         "title": "~은/는커녕",
         "level": "L4",
         "category": "L4 - 14과: 생활과 경제",
-        "notes": "⚠ 降维打击的否定。强烈的递进否定：“别说是A了，就连最基础的B都做不到/没有”。前面是奢望，后面是残酷的现实。例如：别说吃肉了，连粥都没得喝。\n💡 Tips: Emphasizes that even a basic expectation wasn't met, let alone a much higher one ('Let alone A, even B is impossible').",
+        "notes": "⚠ 核心考点解析：\n• 降维打击的否定。\n• 强烈的递进否定：“别说是A了，就连最基础的B都做不到/没有”。\n• 前面是奢望，后面是残酷的现实。\n• 例如：别说吃肉了，连粥都没得喝。\n\n💡 Deep Dive Tips:\n- Emphasizes that even a basic expectation wasn't met, let alone a much higher one ('Let alone A, even B is impossible').",
         "id": "l4_028",
         "desc": "Let alone... not even...",
         "meaning_zh": "别说...就连...也(没)",
@@ -4349,7 +4349,7 @@ const grammarDB = [
         "title": "~는 법이다",
         "level": "L4",
         "category": "L4 - 15과: 법과 질서",
-        "notes": "⚠ 世间万物的法则。表示阐述某种世间真理或普遍规律（“...是理所当然的事”）。语气老成，常用于讲大道理或安慰别人（如：人终有一死）。\n💡 Tips: Expresses a natural law, inevitable outcome, or general truth of life. Often used when giving profound advice or comforting someone.",
+        "notes": "⚠ 核心考点解析：\n• 世间万物的法则。\n• 表示阐述某种世间真理或普遍规律（“...是理所当然的事”）。\n• 语气老成，常用于讲大道理或安慰别人（如：人终有一死）。\n\n💡 Deep Dive Tips:\n- Expresses a natural law, inevitable outcome, or general truth of life.\n- Often used when giving profound advice or comforting someone.",
         "id": "l4_029",
         "desc": "It is a rule that... / Bound to...",
         "meaning_zh": "理所当然会... / 必然规律",
@@ -4372,7 +4372,7 @@ const grammarDB = [
         "title": "~다시피",
         "level": "L4",
         "category": "L4 - 15과: 법과 질서",
-        "notes": "⚠ 共享信息的确认。意思是“正如你所...的那样”。几乎固定搭配感官动词：알다(知道)、보다(看)、듣다(听)、느끼다(感受)。用于拉近距离或建立共识。\n💡 Tips: Used with perception verbs like 알다, 보다, 듣다 to confirm shared knowledge ('As you already know/see/hear...').",
+        "notes": "⚠ 核心考点解析：\n• 共享信息的确认。\n• 意思是“正如你所...的那样”。\n• 几乎固定搭配感官动词：알다(知道)、보다(看)、듣다(听)、느끼다(感受)。\n• 用于拉近距离或建立共识。\n\n💡 Deep Dive Tips:\n- Used with perception verbs like 알다, 보다, 듣다 to confirm shared knowledge ('As you already know/see/hear..').",
         "id": "l4_030",
         "desc": "As you (know/see/hear)...",
         "meaning_zh": "正如你所... (看/听/知)",
@@ -4417,7 +4417,7 @@ const grammarDB = [
                 "zh": "那个人说不定会来。"
             }
         ],
-        "notes": "⚠ 微乎其微的可能性。表示一种非常不确定的推测：“也许/说不定会发生...”。它所暗示的可能性比 것 같다 低得多。通常用于提醒对方小心防范未知的危险。\n💡 Tips: Less certain guess, 'might/perhaps...'. Lower probability than 것 같다. Often used to warn someone to prepare for a slight chance."
+        "notes": "⚠ 核心考点解析：\n• 微乎其微的可能性。\n• 表示一种非常不确定的推测：“也许/说不定会发生...”。\n• 它所暗示的可能性比 것 같다 低得多。\n• 通常用于提醒对方小心防范未知的危险。\n\n💡 Deep Dive Tips:\n- Less certain guess, 'might/perhaps..'.\n- Lower probability than 것 같다.\n- Often used to warn someone to prepare for a slight chance."
     },
     {
         "id": "l4_032",
@@ -4445,7 +4445,7 @@ const grammarDB = [
                 "zh": "作为韩国人居然不喜欢泡菜。"
             }
         ],
-        "notes": "⚠ 打破刻板印象的评价。表示“作为...来说，居然...”。后面必须要接出乎意料的评价。比如：作为外国人来说，韩语真是说得太好了！（正面）；作为冬天来说，这天居然一点也不冷！（反常）。\n💡 Tips: Meaning 'considering it's a...'. Always followed by an unexpected evaluation defying the stereotype, whether surprisingly good or bad."
+        "notes": "⚠ 核心考点解析：\n• 打破刻板印象的评价。\n• 表示“作为...来说，居然...”。\n• 后面必须要接出乎意料的评价。\n• 比如：作为外国人来说，韩语真是说得太好了！\n• （正面）；作为冬天来说，这天居然一点也不冷！\n• （反常）。\n\n💡 Deep Dive Tips:\n- Meaning 'considering it's a..'.\n- Always followed by an unexpected evaluation defying the stereotype, whether surprisingly good or bad."
     },
     {
         "id": "l4_033",
@@ -4477,7 +4477,7 @@ const grammarDB = [
                 "zh": "算是差不多结束了。"
             }
         ],
-        "notes": "⚠ 算账式的四舍五入。表示虽然不是 100% 精确，但根据实际情况来看，“基本上就等同于/算是...了”。（例如：100个人的班级来了98个，就相当于全来了）。\n💡 Tips: Approximation, meaning 'It is practically/more or less...'. Not computationally exact, but functionally/virtually equivalent."
+        "notes": "⚠ 核心考点解析：\n• 算账式的四舍五入。\n• 表示虽然不是 100% 精确，但根据实际情况来看，“基本上就等同于/算是...了”。\n• （例如：100个人的班级来了98个，就相当于全来了）。\n\n💡 Deep Dive Tips:\n- Approximation, meaning 'It is practically/more or less..'.\n- Not computationally exact, but functionally/virtually equivalent."
     },
     {
         "id": "l4_034",
@@ -4509,7 +4509,7 @@ const grammarDB = [
                 "zh": "都怪起晚了所以迟到了。"
             }
         ],
-        "notes": "⚠ 推卸责任的怪罪。非常明确的感情色彩：“都怪...”。【只能】用于导致负面、糟糕结果的原因。如果你想表达感恩的积极原因，绝对要用 덕분에（多亏了）。\n💡 Tips: 'Blame to / solely because of'. Strictly used ONLY for negative results. If the result is positive, using this is grammatically fatal; use 덕분에."
+        "notes": "⚠ 核心考点解析：\n• 推卸责任的怪罪。\n• 非常明确的感情色彩：“都怪...”。\n• 【只能】用于导致负面、糟糕结果的原因。\n• 如果你想表达感恩的积极原因，绝对要用 덕분에（多亏了）。\n\n💡 Deep Dive Tips:\n- 'Blame to / solely because of'.\n- Strictly used ONLY for negative results.\n- If the result is positive, using this is grammatically fatal; use 덕분에."
     },
     {
         "id": "l4_035",
@@ -4541,7 +4541,7 @@ const grammarDB = [
                 "zh": "吃了药还是没好。"
             }
         ],
-        "notes": "⚠ 充满怨气的转折。是 는데 和 도 的加强结合版。表示“明明前面是这样，结果后面却依然...”。转折语气极度强烈，通常带有很多不可思议、惊讶或抱怨的感情。\n💡 Tips: Strong concession 'despite the glaring fact that...'. Stronger contrast than 지만, heavily implies surprise, frustration or complaining."
+        "notes": "⚠ 核心考点解析：\n• 充满怨气的转折。\n• 是 는데 和 도 的加强结合版。\n• 表示“明明前面是这样，结果后面却依然...”。\n• 转折语气极度强烈，通常带有很多不可思议、惊讶或抱怨的感情。\n\n💡 Deep Dive Tips:\n- Strong concession 'despite the glaring fact that..'.\n- Stronger contrast than 지만, heavily implies surprise, frustration or complaining."
     },
     {
         "id": "l4_036",
@@ -4569,7 +4569,7 @@ const grammarDB = [
                 "zh": "早知道就打车了。"
             }
         ],
-        "notes": "⚠ 拍大腿的马后炮。表示强烈的后悔：“哎呀，早知道当时就应该做...了！”。如果是后悔做了某事，就要用它的否定形式：지 말 걸 그랬다（早知道就不做了！）。\n💡 Tips: Deep regret over a missed past action: 'I really should have done...'. Negative form is crucial: 지 말 걸 그랬다 (I shouldn't have...)."
+        "notes": "⚠ 核心考点解析：\n• 拍大腿的马后炮。\n• 表示强烈的后悔：“哎呀，早知道当时就应该做...了！\n• ”。\n• 如果是后悔做了某事，就要用它的否定形式：지 말 걸 그랬다（早知道就不做了！\n• ）。\n\n💡 Deep Dive Tips:\n- Deep regret over a missed past action: 'I really should have done..'.\n- Negative form is crucial: 지 말 걸 그랬다 (I shouldn't have..)."
     },
     {
         "id": "l4_037",
@@ -4597,7 +4597,7 @@ const grammarDB = [
                 "zh": "不可能犯那种错。"
             }
         ],
-        "notes": "⚠ 铁齿铜牙的否认。极其强烈的否定推测，表示“绝对不可能！/ 没这个理儿！”。当你听到一个离谱的谣言或指控时，用来强势反驳对方。\n💡 Tips: Strongest negative supposition, meaning 'It's absolutely impossible! / No way!'. Great for vehemently refuting ridiculous claims."
+        "notes": "⚠ 核心考点解析：\n• 铁齿铜牙的否认。\n• 极其强烈的否定推测，表示“绝对不可能！\n• / 没这个理儿！\n• ”。\n• 当你听到一个离谱的谣言或指控时，用来强势反驳对方。\n\n💡 Deep Dive Tips:\n- Strongest negative supposition, meaning 'It's absolutely impossible! / No way!'.\n- Great for vehemently refuting ridiculous claims."
     },
     {
         "id": "l4_038",
@@ -4625,7 +4625,7 @@ const grammarDB = [
                 "zh": "怕迟到所以打了车。"
             }
         ],
-        "notes": "⚠ 杞人忧天的防备。表示“担心某事发生（所以采取了某个防范措施）”。考点限制：绝对不能用于过去已经发生的事情！因为你不能“担心”一个已经结束的动作。\n💡 Tips: Worrying something might happen, usually followed directly by a preventive action. Strict rule: Cannot be used for events already in the past."
+        "notes": "⚠ 核心考点解析：\n• 杞人忧天的防备。\n• 表示“担心某事发生（所以采取了某个防范措施）”。\n• 考点限制：绝对不能用于过去已经发生的事情！\n• 因为你不能“担心”一个已经结束的动作。\n\n💡 Deep Dive Tips:\n- Worrying something might happen, usually followed directly by a preventive action.\n- Strict rule: Cannot be used for events already in the past."
     },
     {
         "id": "l4_039",
@@ -4653,7 +4653,7 @@ const grammarDB = [
                 "zh": "想忘也忘不了。"
             }
         ],
-        "notes": "⚠ 铜墙铁壁的不可能。表示“就算我想...也绝对做不到”。句型结构非常特殊且固定：前后必须重复使用【同一个】动词。例如：잊을래야 잊을 수 없다 (想忘也忘不掉)。\n💡 Tips: Absolute impossibility 'cannot... even if one tries hard'. The exact same verb MUST be repeated before and after: 잊을래야 잊을 수 없다."
+        "notes": "⚠ 核心考点解析：\n• 铜墙铁壁的不可能。\n• 表示“就算我想...也绝对做不到”。\n• 句型结构非常特殊且固定：前后必须重复使用【同一个】动词。\n• 例如：잊을래야 잊을 수 없다 (想忘也忘不掉)。\n\n💡 Deep Dive Tips:\n- Absolute impossibility 'cannot..\n- even if one tries hard'.\n- The exact same verb MUST be repeated before and after: 잊을래야 잊을 수 없다."
     },
     {
         "id": "l4_040",
@@ -4681,7 +4681,7 @@ const grammarDB = [
                 "zh": "听不听都一样。"
             }
         ],
-        "notes": "⚠ 摆烂的虚无主义。表示“这事做也是白做，不做也一样，反正结果都注定了”。带有极其消极、放弃治疗或鄙视的语气。（例如：考前一秒才看书，看不看都一样）。\n💡 Tips: Meaning 'pointless to do / doing it makes zero difference'. Implies that the outcome won't change regardless. Very pessimistic/cynical tone."
+        "notes": "⚠ 核心考点解析：\n• 摆烂的虚无主义。\n• 表示“这事做也是白做，不做也一样，反正结果都注定了”。\n• 带有极其消极、放弃治疗或鄙视的语气。\n• （例如：考前一秒才看书，看不看都一样）。\n\n💡 Deep Dive Tips:\n- Meaning 'pointless to do / doing it makes zero difference'.\n- Implies that the outcome won't change regardless.\n- Very pessimistic/cynical tone."
     },
     {
         "id": "l4_041",
@@ -4713,7 +4713,7 @@ const grammarDB = [
                 "zh": "如果有时间一起去吧。"
             }
         ],
-        "notes": "⚠ 极小概率的假想。这是比 (으)면 更加极端的假设。通常用于假设那些现实中极不可能发生的事情（“万一 / 如果真的有一天...”）。例如：如果我中了100亿彩票。\n💡 Tips: Stronger hypothetical than (으)면. Used for highly unlikely or dream scenarios: 'If by some miracle...' (e.g., If I win the lottery)."
+        "notes": "⚠ 核心考点解析：\n• 极小概率的假想。\n• 这是比 (으)면 更加极端的假设。\n• 通常用于假设那些现实中极不可能发生的事情（“万一 / 如果真的有一天...”）。\n• 例如：如果我中了100亿彩票。\n\n💡 Deep Dive Tips:\n- Stronger hypothetical than (으)면.\n- Used for highly unlikely or dream scenarios: 'If by some miracle..' (e.g., If I win the lottery)."
     },
     {
         "id": "l4_042",
@@ -4745,7 +4745,7 @@ const grammarDB = [
                 "zh": "朋友要是拜托我，我当然会帮忙。"
             }
         ],
-        "notes": "⚠ 热情洋溢的绝对赞同。在对话中用来极其积极地回应对方：“那是当然的啦！”。比干巴巴的说 네 要生动100倍。通常会重复对方提问的词（好吃吗？ -> 好吃得不得了！）。\n💡 Tips: A highly enthusiastic conversational way to say 'Absolutely! / Of course!'. Often repeats the main verb/adjective used in the preceding question."
+        "notes": "⚠ 核心考点解析：\n• 热情洋溢的绝对赞同。\n• 在对话中用来极其积极地回应对方：“那是当然的啦！\n• ”。\n• 比干巴巴的说 네 要生动100倍。\n• 通常会重复对方提问的词（好吃吗？ -> 好吃得不得了！\n• ）。\n\n💡 Deep Dive Tips:\n- A highly enthusiastic conversational way to say 'Absolutely! / Of course!'.\n- Often repeats the main verb/adjective used in the preceding question."
     },
     {
         "id": "l4_043",
@@ -4773,7 +4773,7 @@ const grammarDB = [
                 "zh": "这双鞋爬山的话不舒服。"
             }
         ],
-        "notes": "⚠ 尺寸与标准的丈量。用来评估某个行为或物品是否合适：“对于做某事来说，它太...了”。比如：这件衣服对于出门穿来说太华丽了 / 这个量对于一个人吃来说太大了。\n💡 Tips: Used to evaluate suitability against a standard: 'For doing [action], it is too good/bad/big/small'. Evaluates if something fits the criteria."
+        "notes": "⚠ 核心考点解析：\n• 尺寸与标准的丈量。\n• 用来评估某个行为或物品是否合适：“对于做某事来说，它太...了”。\n• 比如：这件衣服对于出门穿来说太华丽了 / 这个量对于一个人吃来说太大了。\n\n💡 Deep Dive Tips:\n- Used to evaluate suitability against a standard: 'For doing [action], it is too good/bad/big/small'.\n- Evaluates if something fits the criteria."
     },
     {
         "id": "l4_044",
@@ -4801,7 +4801,7 @@ const grammarDB = [
                 "zh": "与其坐公交不如走路。"
             }
         ],
-        "notes": "⚠ 毒药二选一的抉择。表示极度极端的比较：“与其A，我宁愿去B”。 느니 前面的选项通常是你极度厌恶、打死也不想选的。차라리 后面则是两害相权取其轻的无奈之选。\n💡 Tips: Choice comparison: 'Rather B than A'. The clause before 느니 is the absolutely undesirable option, the one after 차라리 is preferred out of desperation."
+        "notes": "⚠ 核心考点解析：\n• 毒药二选一的抉择。\n• 表示极度极端的比较：“与其A，我宁愿去B”。\n• 느니 前面的选项通常是你极度厌恶、打死也不想选的。\n• 차라리 后面则是两害相权取其轻的无奈之选。\n\n💡 Deep Dive Tips:\n- Choice comparison: 'Rather B than A'.\n- The clause before 느니 is the absolutely undesirable option, the one after 차라리 is preferred out of desperation."
     },
     {
         "id": "l4_045",
@@ -4829,7 +4829,7 @@ const grammarDB = [
                 "zh": "趁打扫的机会也洗了衣服。"
             }
         ],
-        "notes": "⚠ 顺手牵羊的动作。表示“既然都已经开始做A了，干脆顺便把B也做了吧”。第一个动作是你本来计划好的正事，第二个动作是临时起意、顺便搭便车完成的。\n💡 Tips: 'While you're at it / taking the opportunity'. The first action is the primary planned mission, the second is a spontaneous secondary task."
+        "notes": "⚠ 核心考点解析：\n• 顺手牵羊的动作。\n• 表示“既然都已经开始做A了，干脆顺便把B也做了吧”。\n• 第一个动作是你本来计划好的正事，第二个动作是临时起意、顺便搭便车完成的。\n\n💡 Deep Dive Tips:\n- 'While you're at it / taking the opportunity'.\n- The first action is the primary planned mission, the second is a spontaneous secondary task."
     },
     {
         "id": "l4_046",
@@ -4865,7 +4865,7 @@ const grammarDB = [
                 "zh": "看到餐厅里没人，似乎不好吃。"
             }
         ],
-        "notes": "⚠ 讲究证据的客观推测。意思是“看来/似乎是...”。核心考点：前半句必须带有让你产生这种推测的【客观依据】（比如看到地湿了，推测刚下过雨）。绝不能用于推断自己的行为！\n💡 Tips: Evidence-based guess. Often preceded by ~(으)ㄴ/는 걸 보니까 (Seeing that...). Rule: Cannot be used for your own actions or internal feelings."
+        "notes": "⚠ 核心考点解析：\n• 讲究证据的客观推测。\n• 意思是“看来/似乎是...”。\n• 核心考点：前半句必须带有让你产生这种推测的【客观依据】（比如看到地湿了，推测刚下过雨）。\n• 绝不能用于推断自己的行为！\n\n💡 Deep Dive Tips:\n- Evidence-based guess.\n- Often preceded by ~(으)ㄴ/는 걸 보니까 (Seeing that..).\n- Rule: Cannot be used for your own actions or internal feelings."
     },
     {
         "id": "l4_047",
@@ -4893,7 +4893,7 @@ const grammarDB = [
                 "zh": "因为闹钟没响所以迟到了。"
             }
         ],
-        "notes": "⚠ 突发背锅侠。表示原因“由于...”。两大终极考点限制：①必须是因为突发、不可控的意外事件。②导致的结果必须、一定、绝对是【负面的糟糕结果】。\n💡 Tips: 'Due to (a sudden/unexpected event)'. Strict exam rules: Used ONLY for past sudden events, and the result MUST always be negative."
+        "notes": "⚠ 核心考点解析：\n• 突发背锅侠。\n• 表示原因“由于...”。\n• 两大终极考点限制：①必须是因为突发、不可控的意外事件。\n• ②导致的结果必须、一定、绝对是【负面的糟糕结果】。\n\n💡 Deep Dive Tips:\n- 'Due to (a sudden/unexpected event)'.\n- Strict exam rules: Used ONLY for past sudden events, and the result MUST always be negative."
     },
     {
         "id": "l4_048",
@@ -4921,7 +4921,7 @@ const grammarDB = [
                 "zh": "每天见面，不知不觉就产生了感情。"
             }
         ],
-        "notes": "⚠ 量变引起质变。表示“随着某个动作不断持续、反复进行，最终自然而然地发现了某个事实或养成了习惯”。只能接【动词】，绝对不能接形容词！\n💡 Tips: Only attaches to verbs. Focuses heavily on the continuous repetition of a past action slowly leading to a new realization, habit or result."
+        "notes": "⚠ 核心考点解析：\n• 量变引起质变。\n• 表示“随着某个动作不断持续、反复进行，最终自然而然地发现了某个事实或养成了习惯”。\n• 只能接【动词】，绝对不能接形容词！\n\n💡 Deep Dive Tips:\n- Only attaches to verbs.\n- Focuses heavily on the continuous repetition of a past action slowly leading to a new realization, habit or result."
     },
     {
         "id": "l4_049",
@@ -4949,7 +4949,7 @@ const grammarDB = [
                 "zh": "如果一直玩游戏的话考试会落榜的，真让人担心。"
             }
         ],
-        "notes": "⚠ 死亡预言家。这是一个带有强烈警告意味的假设：“如果一直这么下去的话，早晚会完蛋的”。后半句【必定接不好的结果】，且通常搭配将来时或推测语气（(으)ㄹ 거예요）。\n💡 Tips: Warning! Always predicts a NEGATIVE outcome. The second clause often uses future tense or guessing forms to predict a disaster if the behavior continues."
+        "notes": "⚠ 核心考点解析：\n• 死亡预言家。\n• 这是一个带有强烈警告意味的假设：“如果一直这么下去的话，早晚会完蛋的”。\n• 后半句【必定接不好的结果】，且通常搭配将来时或推测语气（(으)ㄹ 거예요）。\n\n💡 Deep Dive Tips:\n- Warning! Always predicts a NEGATIVE outcome.\n- The second clause often uses future tense or guessing forms to predict a disaster if the behavior continues."
     },
     {
         "id": "l4_050",
@@ -4981,7 +4981,7 @@ const grammarDB = [
                 "zh": "我说了我真的不知道！"
             }
         ],
-        "notes": "⚠ 不耐烦的重申。口语中用来极其强调自己说过的话：“我都说了...啦！”。因为带有强烈的执念和重复感，如果对长辈使用会显得非常不礼貌、不耐烦。\n💡 Tips: Insistent repetition, meaning 'I TOLD you...!'. Often used when frustrated that the listener didn't get it. Can sound highly impatient."
+        "notes": "⚠ 核心考点解析：\n• 不耐烦的重申。\n• 口语中用来极其强调自己说过的话：“我都说了...啦！\n• ”。\n• 因为带有强烈的执念和重复感，如果对长辈使用会显得非常不礼貌、不耐烦。\n\n💡 Deep Dive Tips:\n- Insistent repetition, meaning 'I TOLD you..!'.\n- Often used when frustrated that the listener didn't get it.\n- Can sound highly impatient."
     },
     {
         "id": "l4_051",
@@ -5013,7 +5013,7 @@ const grammarDB = [
                 "zh": "朋友让我帮他开一下门。"
             }
         ],
-        "notes": "⚠ 索要福利的间接引语。这是全韩语最容易错的语法！如果原本说话的人是为【自己】索要东西，转述时必须把 주다 变成 달라고 하다。如果是给第三人，则用 주라고 하다。\n💡 Tips: Crucial exam distinction! Use 달라고 하다 when the requested action benefits the ORIGINAL requester (Ask to give it to ME)."
+        "notes": "⚠ 核心考点解析：\n• 索要福利的间接引语。\n• 这是全韩语最容易错的语法！\n• 如果原本说话的人是为【自己】索要东西，转述时必须把 주다 变成 달라고 하다。\n• 如果是给第三人，则用 주라고 하다。\n\n💡 Deep Dive Tips:\n- Crucial exam distinction! Use 달라고 하다 when the requested action benefits the ORIGINAL requester (Ask to give it to ME)."
     },
     {
         "id": "l4_052",
@@ -5041,7 +5041,7 @@ const grammarDB = [
                 "zh": "即使下雨也要去。"
             }
         ],
-        "notes": "⚠ 最硬核的假设性让步。表示“就算天塌下来我也要...”。它所假设的事情发生的概率极低（甚至还没发生），比 아도/어도 包含的“哪怕”意味更强烈、更决绝。\n💡 Tips: The strongest hypothetical concession 'even if (something extreme/unlikely happens)'. Much more hypothetical and resilient than 아도/어도."
+        "notes": "⚠ 核心考点解析：\n• 最硬核的假设性让步。\n• 表示“就算天塌下来我也要...”。\n• 它所假设的事情发生的概率极低（甚至还没发生），比 아도/어도 包含的“哪怕”意味更强烈、更决绝。\n\n💡 Deep Dive Tips:\n- The strongest hypothetical concession 'even if (something extreme/unlikely happens)'.\n- Much more hypothetical and resilient than 아도/어도."
     },
     {
         "id": "l4_053",
@@ -5073,7 +5073,7 @@ const grammarDB = [
                 "zh": "妈妈叫我帮一下弟弟。"
             }
         ],
-        "notes": "⚠ 借花献佛的间接引语。与 달라고 하다 相对立！如果原本说话的人，是要求听话人去帮助或给予【第三个人】福利，转述时必须保留 주라고 하다。\n💡 Tips: The action benefits a THIRD party. If the teacher told you to give the book to Minsu, use 주라고 하다 (Ask to give it to SOMEONE ELSE)."
+        "notes": "⚠ 核心考点解析：\n• 借花献佛的间接引语。\n• 与 달라고 하다 相对立！\n• 如果原本说话的人，是要求听话人去帮助或给予【第三个人】福利，转述时必须保留 주라고 하다。\n\n💡 Deep Dive Tips:\n- The action benefits a THIRD party.\n- If the teacher told you to give the book to Minsu, use 주라고 하다 (Ask to give it to SOMEONE ELSE)."
     },
     {
         "id": "l4_054",
@@ -5101,7 +5101,7 @@ const grammarDB = [
                 "zh": "就这点实力能找得到工作吗？（反问：必须要更好才行）"
             }
         ],
-        "notes": "⚠ 苛刻的及格线。表示条件极其难以满足，“必须要直到...地步，才勉强能...”。后面常常带有很多反问语气：“这点能力能找到工作吗？”（搭配 ~되겠어요?）。\n💡 Tips: Used to emphasize extreme lateness or strict difficulty. Often paired with rhetorical questions ending in ~겠어요? or ~되겠어요?."
+        "notes": "⚠ 核心考点解析：\n• 苛刻的及格线。\n• 表示条件极其难以满足，“必须要直到...地步，才勉强能...”。\n• 后面常常带有很多反问语气：“这点能力能找到工作吗？”（搭配 ~되겠어요?）。\n\n💡 Deep Dive Tips:\n- Used to emphasize extreme lateness or strict difficulty.\n- Often paired with rhetorical questions ending in ~겠어요? or ~되겠어요?."
     },
     {
         "id": "l4_055",
@@ -5129,6 +5129,6 @@ const grammarDB = [
                 "zh": "如果早出发的话就不会迟到了。"
             }
         ],
-        "notes": "⚠ 穿越时空的悔恨。对过去完全不可能改变的事情进行虚假的假设：“如果当时做了...（但实际没做）的话，现在就会...”。后半句必须配上过去的推测（았/었을 거예요）。\n💡 Tips: Impossible past hypothetical: 'If I had done... (but I didn't)'. MUST be followed by a past guess/regret: 았/었을 거예요 (I would have...)."
+        "notes": "⚠ 核心考点解析：\n• 穿越时空的悔恨。\n• 对过去完全不可能改变的事情进行虚假的假设：“如果当时做了...（但实际没做）的话，现在就会...”。\n• 后半句必须配上过去的推测（았/었을 거예요）。\n\n💡 Deep Dive Tips:\n- Impossible past hypothetical: 'If I had done..\n- (but I didn't)'.\n- MUST be followed by a past guess/regret: 았/었을 거예요 (I would have..)."
     }
 ];

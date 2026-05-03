@@ -430,14 +430,23 @@
             let notesHtml = '';
             if (item.notes) {
                 let lines = item.notes.split('\n');
-                if (lines.length === 2 && lines[0].includes('⚠') && lines[1].includes('💡')) {
-                    lines = [lines[1], lines[0]]; // Swap EN and ZH
-                }
+                
+                let currentLang = '';
                 notesHtml = lines.map(line => {
                     let cls = 'note-line';
-                    if (line.includes('💡')) cls += ' note-en';
-                    if (line.includes('⚠')) cls += ' note-zh';
-                    return `<p class="${cls}">${line}</p>`;
+                    if (line.includes('💡')) currentLang = 'en';
+                    if (line.includes('⚠')) currentLang = 'zh';
+                    
+                    if (currentLang === 'en') cls += ' note-en';
+                    if (currentLang === 'zh') cls += ' note-zh';
+                    
+                    // Add indentation for bullet points
+                    let style = line.trim().startsWith('•') || line.trim().startsWith('-') ? 'margin-left: 1.2rem; margin-bottom: 8px;' : 'margin-bottom: 8px;';
+                    if(line.includes('⚠') || line.includes('💡')) {
+                        style = 'margin-bottom: 12px; font-weight: bold; font-size: 1rem;';
+                    }
+                    
+                    return `<p class="${cls}" style="${style}">${line}</p>`;
                 }).join('');
             }
 
