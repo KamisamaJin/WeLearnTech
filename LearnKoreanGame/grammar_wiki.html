@@ -120,9 +120,15 @@
             border-bottom: 1px solid var(--border);
             padding-bottom: 20px;
         }
+        .title-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
         .grammar-title {
             font-size: 2.5rem;
-            margin: 0 0 10px 0;
+            margin: 0;
             color: #fff;
         }
         .badge-level {
@@ -131,7 +137,6 @@
             border-radius: 4px;
             font-size: 0.85rem;
             font-weight: bold;
-            margin-bottom: 8px;
         }
         .badge-level.l1 { background: rgba(52,211,153,0.2); color: #34d399; }
         .badge-level.l2 { background: rgba(56,189,248,0.2); color: #38bdf8; }
@@ -438,9 +443,11 @@
 
             mainContent.innerHTML = `
                 <div class="grammar-header">
-                    <span class="badge-level ${item.level.toLowerCase()}">${item.level}</span>
-                    <h2 class="grammar-title">${item.title}</h2>
-                    <p style="font-size: 1.2rem; color: #cbd5e1;">${item.desc}</p>
+                    <div class="title-row">
+                        <span class="badge-level ${item.level.toLowerCase()}">${item.level}</span>
+                        <h2 class="grammar-title">${item.title}</h2>
+                    </div>
+                    <p style="font-size: 1.2rem; color: #cbd5e1; margin-top: 5px;">${item.desc}</p>
                 </div>
                 
                 <div class="grammar-section">
