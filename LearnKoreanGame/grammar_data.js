@@ -376,7 +376,7 @@ const grammarDB = [
     "id": "l1_014",
     "category": "L1 - 6과: 9시부터 6시까지 일해요",
     "level": "L1",
-    "title": "안 + V/A",
+    "title": "안 + Verb/Adj",
     "desc": "Negation",
     "meaning_zh": "否定副词，不做某事",
     "meaning_en": "Negation adverb 'not'",
@@ -937,7 +937,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+네요",
-        "en": "V/A + 네요"
+        "en": "Verb/Adj + 네요"
       }
     ],
     "examples": [
@@ -1702,7 +1702,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ/ㄴ/는 것 같다",
-        "en": "V/A + (으)ㄹ/ㄴ/는 것 같다"
+        "en": "Verb/Adj + (으)ㄹ/ㄴ/는 것 같다"
       }
     ],
     "examples": [
@@ -1785,7 +1785,7 @@ const grammarDB = [
       },
       {
         "zh": "动/形+기 때문에",
-        "en": "V/A + 기 때문에"
+        "en": "Verb/Adj + 기 때문에"
       }
     ],
     "examples": [
@@ -1800,7 +1800,7 @@ const grammarDB = [
         "zh": "因为忙不能见面。"
       }
     ],
-    "notes": "⚠ 强调客观原因'由于/因为'。名词+때문에，动/形+기 때문에。可搭配命令句。\n💡 Tips: Emphasizes objective reason 'due to'. Noun+때문에, V/A+기 때문에. Can be used with commands, unlike 아/어서."
+    "notes": "⚠ 强调客观原因'由于/因为'。名词+때문에，动/形+기 때문에。可搭配命令句。\n💡 Tips: Emphasizes objective reason 'due to'. Noun+때문에, Verb/Adj+기 때문에. Can be used with commands, unlike 아/어서."
   },
   {
     "id": "l2_021",
@@ -2154,7 +2154,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+거든요",
-        "en": "V/A + 거든요"
+        "en": "Verb/Adj + 거든요"
       }
     ],
     "examples": [
@@ -2302,7 +2302,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动词/形容词+거나",
-        "en": "V/A + 거나"
+        "en": "Verb/Adj + 거나"
       }
     ],
     "examples": [
@@ -2418,7 +2418,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)면 되다",
-        "en": "V/A + (으)면 되다"
+        "en": "Verb/Adj + (으)면 되다"
       }
     ],
     "examples": [
@@ -2776,7 +2776,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+냐고 하다",
-        "en": "V/A + 냐고 하다"
+        "en": "Verb/Adj + 냐고 하다"
       }
     ],
     "examples": [
@@ -3033,7 +3033,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+게 되다",
-        "en": "V/A + 게 되다"
+        "en": "Verb/Adj + 게 되다"
       }
     ],
     "examples": [
@@ -3061,7 +3061,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+아도/어도",
-        "en": "V/A + 아도/어도"
+        "en": "Verb/Adj + 아도/어도"
       }
     ],
     "examples": [
@@ -3163,7 +3163,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+잖아요",
-        "en": "V/A + 잖아요"
+        "en": "Verb/Adj + 잖아요"
       }
     ],
     "examples": [
@@ -3247,7 +3247,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ 텐데",
-        "en": "V/A + (으)ㄹ 텐데"
+        "en": "Verb/Adj + (으)ㄹ 텐데"
       }
     ],
     "examples": [
@@ -3331,7 +3331,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ 테니까",
-        "en": "V/A + (으)ㄹ 테니까"
+        "en": "Verb/Adj + (으)ㄹ 테니까"
       }
     ],
     "examples": [
@@ -3415,7 +3415,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+기는요",
-        "en": "V/A + 기는요"
+        "en": "Verb/Adj + 기는요"
       }
     ],
     "examples": [
@@ -3443,7 +3443,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+길래",
-        "en": "V/A + 길래"
+        "en": "Verb/Adj + 길래"
       }
     ],
     "examples": [
@@ -3507,7 +3507,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+더라고요",
-        "en": "V/A + 더라고요"
+        "en": "Verb/Adj + 더라고요"
       }
     ],
     "examples": [
@@ -3591,7 +3591,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ수록",
-        "en": "V/A + (으)ㄹ수록"
+        "en": "Verb/Adj + (으)ㄹ수록"
       }
     ],
     "examples": [
@@ -3647,7 +3647,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ 뿐만 아니라",
-        "en": "V/A + (으)ㄹ 뿐만 아니라"
+        "en": "Verb/Adj + (으)ㄹ 뿐만 아니라"
       }
     ],
     "examples": [
@@ -3703,7 +3703,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ 줄 몰랐다",
-        "en": "V/A + (으)ㄹ 줄 몰랐다"
+        "en": "Verb/Adj + (으)ㄹ 줄 몰랐다"
       }
     ],
     "examples": [
@@ -3782,7 +3782,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+더니",
-        "en": "V/A + 더니"
+        "en": "Verb/Adj + 더니"
       }
     ],
     "examples": [
@@ -3810,7 +3810,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+든지",
-        "en": "V/A + 든지"
+        "en": "Verb/Adj + 든지"
       }
     ],
     "examples": [
@@ -3838,7 +3838,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "얼마나+动/形+는지/ㄴ지 모르다",
-        "en": "얼마나 + V/A + 는지/ㄴ지 모르다"
+        "en": "얼마나 + Verb/Adj + 는지/ㄴ지 모르다"
       }
     ],
     "examples": [
@@ -3866,7 +3866,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ 정도로",
-        "en": "V/A + (으)ㄹ 정도로"
+        "en": "Verb/Adj + (으)ㄹ 정도로"
       }
     ],
     "examples": [
@@ -3894,7 +3894,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+던",
-        "en": "V/A + 던"
+        "en": "Verb/Adj + 던"
       }
     ],
     "examples": [
@@ -4144,7 +4144,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+기 마련이다",
-        "en": "V/A + 기 마련이다"
+        "en": "Verb/Adj + 기 마련이다"
       }
     ],
     "examples": [
@@ -4398,7 +4398,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ지도 모르다",
-        "en": "V/A + (으)ㄹ지도 모르다"
+        "en": "Verb/Adj + (으)ㄹ지도 모르다"
       }
     ],
     "examples": [
@@ -4578,7 +4578,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+(으)ㄹ 리가 없다",
-        "en": "V/A + (으)ㄹ 리가 없다"
+        "en": "Verb/Adj + (으)ㄹ 리가 없다"
       }
     ],
     "examples": [
@@ -4722,7 +4722,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+고말고요",
-        "en": "V/A + 고말고요"
+        "en": "Verb/Adj + 고말고요"
       },
       {
         "zh": "名词+(이)고말고요",
@@ -4754,7 +4754,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+기에(는)",
-        "en": "V/A + 기에(는)"
+        "en": "Verb/Adj + 기에(는)"
       }
     ],
     "examples": [
@@ -5022,7 +5022,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+더라도",
-        "en": "V/A + 더라도"
+        "en": "Verb/Adj + 더라도"
       }
     ],
     "examples": [
@@ -5082,7 +5082,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "动/形+아/어서야",
-        "en": "V/A + 아/어서야"
+        "en": "Verb/Adj + 아/어서야"
       }
     ],
     "examples": [
