@@ -507,6 +507,36 @@
 
         searchInput.addEventListener('input', (e) => renderNav(e.target.value));
         renderNav();
+
+        // Mobile swipe gesture logic
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, {passive: true});
+
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, {passive: true});
+
+        function handleSwipe() {
+            const swipeDistance = touchEndX - touchStartX;
+            const threshold = 50; // minimum swipe distance
+            const isMobile = window.innerWidth <= 768;
+            
+            if (!isMobile) return;
+
+            // Swipe right from left edge to open menu
+            if (swipeDistance > threshold && touchStartX < 80) {
+                if (!sidebar.classList.contains('open')) toggleMenu();
+            } 
+            // Swipe left to close menu
+            else if (swipeDistance < -threshold) {
+                if (sidebar.classList.contains('open')) toggleMenu();
+            }
+        }
     </script>
 </body>
 </html>
