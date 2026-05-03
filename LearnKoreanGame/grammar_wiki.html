@@ -151,16 +151,24 @@
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
         }
-        .example-box {
-            background: rgba(0,0,0,0.3);
-            border-left: 4px solid var(--primary);
-            padding: 15px;
+        .examples-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
             margin-top: 15px;
-            border-radius: 4px;
         }
-        .ex-ko { font-size: 1.2rem; font-weight: 600; margin: 0 0 5px 0; }
-        .ex-en { color: var(--text-muted); margin: 0 0 5px 0; font-size: 0.95rem; }
-        .ex-zh { color: #cbd5e1; margin: 0; font-size: 0.95rem; }
+        .example-box {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 12px 18px;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .ex-ko { font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0; }
+        .ex-en { color: var(--text-muted); margin: 0; font-size: 0.95rem; }
+        .ex-zh { color: var(--text-muted); margin: 0; font-size: 0.85rem; }
         .level-filters {
             display: flex;
             gap: 6px;
@@ -187,9 +195,51 @@
         .level-filter-btn.active[data-level='L2'] { background: rgba(56,189,248,0.5); color: #fff; }
         .level-filter-btn.active[data-level='L3'] { background: rgba(251,191,36,0.5); color: #fff; }
         .level-filter-btn.active[data-level='L4'] { background: rgba(244,114,182,0.5); color: #fff; }
-        .rule-item { margin-bottom: 6px; }
-        .rule-zh { font-size: 0.95rem; }
-        .rule-en { font-size: 0.85rem; color: var(--text-muted); }
+        .meaning-box {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .meaning-en {
+            font-size: 1.15rem;
+            color: #fff;
+            font-weight: 500;
+        }
+        .meaning-zh {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+        .rules-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .rule-card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 12px 18px;
+            border-radius: 6px;
+            border-left: 3px solid var(--primary);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .rule-en { font-size: 1.05rem; font-weight: 700; color: #fff; font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
+        .rule-zh { font-size: 0.85rem; color: var(--text-muted); font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
+        .note-line {
+            margin: 0 0 12px 0;
+            line-height: 1.6;
+        }
+        .note-en {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+        }
+        .note-zh {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .note-line:last-child { margin-bottom: 0; }
         .empty-state {
             display: flex;
             flex-direction: column;
@@ -359,10 +409,24 @@
 
             let rulesHtml = item.rules.map(r => {
                 if (typeof r === 'object' && r.zh) {
-                    return `<li class="rule-item"><span class="rule-zh">${r.zh}</span><br><span class="rule-en">${r.en}</span></li>`;
+                    return `<div class="rule-card"><span class="rule-en">${r.en}</span><span class="rule-zh">${r.zh}</span></div>`;
                 }
-                return `<li>${r}</li>`;
+                return `<div class="rule-card"><span class="rule-en">${r}</span></div>`;
             }).join('');
+
+            let notesHtml = '';
+            if (item.notes) {
+                let lines = item.notes.split('\n');
+                if (lines.length === 2 && lines[0].includes('⚠') && lines[1].includes('💡')) {
+                    lines = [lines[1], lines[0]]; // Swap EN and ZH
+                }
+                notesHtml = lines.map(line => {
+                    let cls = 'note-line';
+                    if (line.includes('💡')) cls += ' note-en';
+                    if (line.includes('⚠')) cls += ' note-zh';
+                    return `<p class="${cls}">${line}</p>`;
+                }).join('');
+            }
 
             mainContent.innerHTML = `
                 <div class="grammar-header">
@@ -372,25 +436,28 @@
                 </div>
                 
                 <div class="grammar-section">
-                    <h3>Meaning & Usage (含义与用法)</h3>
-                    <p>${item.meaning_zh}</p>
-                    <p style="color: var(--text-muted);">${item.meaning_en}</p>
-                </div>
+                    <h3>Meaning & Rules (含义与结合规则)</h3>
+                    <div class="meaning-box">
+                        <span class="meaning-en">${item.meaning_en}</span>
+                        <span class="meaning-zh">${item.meaning_zh}</span>
+                    </div>
 
-                <div class="grammar-section">
-                    <h3>Rules (结合规则)</h3>
-                    <ul style="line-height: 2;">${rulesHtml}</ul>
+                    <div class="rules-container">
+                        ${rulesHtml}
+                    </div>
                 </div>
 
                 <div class="grammar-section">
                     <h3>Examples (例句)</h3>
-                    ${examplesHtml}
+                    <div class="examples-container">
+                        ${examplesHtml}
+                    </div>
                 </div>
                 
                 ${item.notes ? `
                 <div class="grammar-section" style="border-color: var(--accent);">
                     <h3 style="color: var(--accent);">Deep Dive Notes (深入解析)</h3>
-                    <p style="white-space: pre-wrap; line-height: 1.6;">${item.notes}</p>
+                    ${notesHtml}
                 </div>
                 ` : ''}
             `;
