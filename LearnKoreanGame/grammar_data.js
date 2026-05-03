@@ -38,7 +38,7 @@ const grammarDB = [
     "meaning_en": "Honorific subject particle",
     "rules": [
       {
-        "zh": "어른+께서",
+        "zh": "长辈/长者+께서",
         "en": "Elder/senior + 께서"
       }
     ],
@@ -538,7 +538,7 @@ const grammarDB = [
     "meaning_en": "Intend/plan to do",
     "rules": [
       {
-        "zh": "무收音+려고 하다",
+        "zh": "无收音+려고 하다",
         "en": "No batchim + 려고 하다"
       },
       {
@@ -710,11 +710,11 @@ const grammarDB = [
     "meaning_en": "Know/don't know whether",
     "rules": [
       {
-        "zh": "동+는지",
+        "zh": "动词+는지",
         "en": "Verb + 는지"
       },
       {
-        "zh": "형+ㄴ/은지",
+        "zh": "形容词+ㄴ/은지",
         "en": "Adj + ㄴ/은지"
       }
     ],
@@ -826,11 +826,11 @@ const grammarDB = [
     "meaning_en": "Practically, is in effect",
     "rules": [
       {
-        "zh": "동+는 셈이다",
+        "zh": "动词+는 셈이다",
         "en": "Verb + 는 셈이다"
       },
       {
-        "zh": "형+ㄴ/은 셈이다",
+        "zh": "形容词+ㄴ/은 셈이다",
         "en": "Adj + ㄴ/은 셈이다"
       }
     ],
@@ -886,11 +886,11 @@ const grammarDB = [
     "meaning_en": "Guess based on evidence",
     "rules": [
       {
-        "zh": "동+나 보다",
+        "zh": "动词+나 보다",
         "en": "Verb + 나 보다"
       },
       {
-        "zh": "형+ㄴ가 보다",
+        "zh": "形容词+ㄴ가 보다",
         "en": "Adj + ㄴ가 보다"
       }
     ],
@@ -918,16 +918,16 @@ const grammarDB = [
     "meaning_en": "Indirect quotation (statement)",
     "rules": [
       {
-        "zh": "동: ㄴ/는다고",
-        "en": "Verb: ㄴ/는다고"
+        "zh": "动词+ㄴ/는다고",
+        "en": "Verb + ㄴ/는다고"
       },
       {
-        "zh": "형: 다고",
-        "en": "Adj: 다고"
+        "zh": "形容词+다고",
+        "en": "Adj + 다고"
       },
       {
-        "zh": "명: (이)라고",
-        "en": "Noun: (이)라고"
+        "zh": "名词+(이)라고",
+        "en": "Noun + (이)라고"
       }
     ],
     "examples": [
@@ -1038,12 +1038,12 @@ const grammarDB = [
     "meaning_en": "Insisting/repeating what was said",
     "rules": [
       {
-        "zh": "동: ㄴ/는다니까",
-        "en": "Verb: ㄴ/는다니까"
+        "zh": "动词+ㄴ/는다니까",
+        "en": "Verb + ㄴ/는다니까"
       },
       {
-        "zh": "형: 다니까",
-        "en": "Adj: 다니까"
+        "zh": "形容词+다니까",
+        "en": "Adj + 다니까"
       }
     ],
     "examples": [
@@ -1134,7 +1134,7 @@ const grammarDB = [
     "meaning_en": "Become (change of state)",
     "rules": [
       {
-        "zh": "형+아/어지다",
+        "zh": "形容词+아/어지다",
         "en": "Adj + 아/어지다"
       }
     ],
@@ -1858,11 +1858,11 @@ const grammarDB = [
     "meaning_en": "Pretend to be/do",
     "rules": [
       {
-        "zh": "동+는 척하다",
+        "zh": "动词+는 척하다",
         "en": "Verb + 는 척하다"
       },
       {
-        "zh": "형+ㄴ/은 척하다",
+        "zh": "形容词+ㄴ/은 척하다",
         "en": "Adj + ㄴ/은 척하다"
       }
     ],
@@ -2002,12 +2002,12 @@ const grammarDB = [
     "meaning_en": "Hypothetical if",
     "rules": [
       {
-        "zh": "동: ㄴ/는다면",
-        "en": "Verb: ㄴ/는다면"
+        "zh": "动词+ㄴ/는다면",
+        "en": "Verb + ㄴ/는다면"
       },
       {
-        "zh": "형: 다면",
-        "en": "Adj: 다면"
+        "zh": "形容词+다면",
+        "en": "Adj + 다면"
       }
     ],
     "examples": [
@@ -2490,11 +2490,11 @@ const grammarDB = [
     "meaning_en": "Soft/indirect question",
     "rules": [
       {
-        "zh": "동+나요",
+        "zh": "动词+나요",
         "en": "Verb + 나요"
       },
       {
-        "zh": "형+ㄴ/은가요",
+        "zh": "形容词+ㄴ/은가요",
         "en": "Adj + ㄴ/은가요"
       }
     ],
@@ -2998,11 +2998,11 @@ const grammarDB = [
     "meaning_en": "Blaming a negative result",
     "rules": [
       {
-        "zh": "동+는 탓에",
+        "zh": "动词+는 탓에",
         "en": "Verb + 는 탓에"
       },
       {
-        "zh": "형+ㄴ/은 탓에",
+        "zh": "形容词+ㄴ/은 탓에",
         "en": "Adj + ㄴ/은 탓에"
       }
     ],
@@ -3146,11 +3146,11 @@ const grammarDB = [
     "meaning_en": "Despite, even though",
     "rules": [
       {
-        "zh": "동+는데도",
+        "zh": "动词+는데도",
         "en": "Verb + 는데도"
       },
       {
-        "zh": "형+ㄴ/은데도",
+        "zh": "形容词+ㄴ/은데도",
         "en": "Adj + ㄴ/은데도"
       }
     ],
@@ -3262,7 +3262,7 @@ const grammarDB = [
     "meaning_en": "When, at the time of",
     "rules": [
       {
-        "zh": "무收音+ㄹ 때",
+        "zh": "无收音+ㄹ 때",
         "en": "No batchim + ㄹ 때"
       },
       {
@@ -3294,7 +3294,7 @@ const grammarDB = [
     "meaning_en": "Or (connects verbs/adj)",
     "rules": [
       {
-        "zh": "动词/형+거나",
+        "zh": "动词/形容词+거나",
         "en": "V/A + 거나"
       }
     ],
@@ -3414,11 +3414,11 @@ const grammarDB = [
     "meaning_en": "In addition to, on top of",
     "rules": [
       {
-        "zh": "동+는 데다가",
+        "zh": "动词+는 데다가",
         "en": "Verb + 는 데다가"
       },
       {
-        "zh": "형+ㄴ/은 데다가",
+        "zh": "形容词+ㄴ/은 데다가",
         "en": "Adj + ㄴ/은 데다가"
       }
     ],
@@ -3530,12 +3530,12 @@ const grammarDB = [
     "meaning_en": "Confirming hearsay",
     "rules": [
       {
-        "zh": "동: ㄴ/는다면서요",
-        "en": "Verb: ㄴ/는다면서요"
+        "zh": "动词+ㄴ/는다면서요",
+        "en": "Verb + ㄴ/는다면서요"
       },
       {
-        "zh": "형: 다면서요",
-        "en": "Adj: 다면서요"
+        "zh": "形容词+다면서요",
+        "en": "Adj + 다면서요"
       }
     ],
     "examples": [
@@ -3622,7 +3622,7 @@ const grammarDB = [
     "meaning_en": "In order to",
     "rules": [
       {
-        "zh": "무收音+려고",
+        "zh": "无收音+려고",
         "en": "No batchim + 려고"
       },
       {
