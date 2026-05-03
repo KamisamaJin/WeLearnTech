@@ -474,7 +474,7 @@
                         <span class="badge-level ${item.level.toLowerCase()}">${item.level}</span>
                         <h2 class="grammar-title">${item.title}</h2>
                     </div>
-                    <p style="font-size: 1.2rem; color: #cbd5e1; margin-top: 5px;">${item.desc}</p>
+                    <p style="font-size: 1.2rem; color: #cbd5e1; margin-top: 5px;">${item.desc} ${item.desc_zh ? `<span style="font-size: 1rem; color: rgba(203, 213, 225, 0.6); margin-left: 8px;">(${item.desc_zh})</span>` : ''}</p>
                 </div>
                 
                 <div class="grammar-section">
