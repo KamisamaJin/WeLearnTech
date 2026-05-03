@@ -382,7 +382,7 @@ const grammarDB = [
     "meaning_en": "Negation adverb 'not'",
     "rules": [
       {
-        "zh": "안+动词/形容词ective",
+        "zh": "안+动词/形容词",
         "en": "안 + Verb/Adjective"
       }
     ],
@@ -1645,7 +1645,7 @@ const grammarDB = [
         "en": "Verb(past) + ㄴ/은 후에"
       },
       {
-        "zh": "动词+기 전에 (before)",
+        "zh": "动词+기 전에",
         "en": "Verb + 기 전에 (before)"
       }
     ],
