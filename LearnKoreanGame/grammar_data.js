@@ -2396,34 +2396,6 @@ const grammarDB = [
     "id": "l3_016",
     "category": "L3 - 11과: 부동산",
     "level": "L3",
-    "title": "~(으)ㄴ 채(로)",
-    "desc": "In the state of",
-    "meaning_zh": "保持某个状态不变",
-    "meaning_en": "While remaining in a state",
-    "rules": [
-      {
-        "zh": "动词+(으)ㄴ 채로",
-        "en": "Verb + (으)ㄴ 채로"
-      }
-    ],
-    "examples": [
-      {
-        "ko": "신발을 신은 채로 들어왔어요.",
-        "en": "Came in with shoes on.",
-        "zh": "穿着鞋就进来了。"
-      },
-      {
-        "ko": "불을 켠 채로 잠들었어요.",
-        "en": "Fell asleep with the light on.",
-        "zh": "开着灯就睡着了。"
-      }
-    ],
-    "notes": "⚠ '保持着...的状态'。前面必须是过去定语形(ㄴ/은)，常表示某种不正常或无意中维持的状态。\n💡 Tips: 'While remaining in the state of...'. Takes past modifier (ㄴ/은). Often implies an unusual or unintended maintained state."
-  },
-  {
-    "id": "l3_017",
-    "category": "L3 - 11과: 부동산",
-    "level": "L3",
     "title": "~(으)ㄴ/는 데다가",
     "desc": "On top of that",
     "meaning_zh": "再加上(雪上加霜/锦上添花)",
@@ -2453,7 +2425,7 @@ const grammarDB = [
     "notes": "⚠ 递进叠加'再加上/而且'。核心规则：前后的评价必须是同方向的(要么都好，要么都坏)。\n💡 Tips: Addition 'on top of that / plus'. Core rule: Both clauses must go in the same direction (both positive OR both negative)."
   },
   {
-    "id": "l3_018",
+    "id": "l3_017",
     "category": "L3 - 12과: 전통 명절",
     "level": "L3",
     "title": "~게 되다",
@@ -2481,7 +2453,7 @@ const grammarDB = [
     "notes": "⚠ 表示外部原因或环境导致的变化(变得...)，非主观意愿：좋아하게 됐어요(变得喜欢了)。\n💡 Tips: Change caused by external factors, not own will (came to...). 좋아하게 됐어요(came to like it naturally)."
   },
   {
-    "id": "l3_019",
+    "id": "l3_018",
     "category": "L3 - 12과: 전통 명절",
     "level": "L3",
     "title": "~아도/어도",
@@ -2509,7 +2481,7 @@ const grammarDB = [
     "notes": "⚠ 假设/让步'即使...也'。常与 아무리(无论怎么) 搭配：아무리 먹어도 안 쪄요 (怎么吃都不胖)。\n💡 Tips: Concession 'even if / even though'. Often paired with 아무리 (no matter how): 아무리 먹어도 (no matter how much I eat)."
   },
   {
-    "id": "l3_020",
+    "id": "l3_019",
     "category": "L3 - 13과: 직장 생활",
     "level": "L3",
     "title": "~게 하다",
@@ -2537,7 +2509,7 @@ const grammarDB = [
     "notes": "⚠ 万能使役句型(让某人做某事)。当动词没有对应的사동사后缀时，一律用게 하다。\n💡 Tips: Universal causative pattern (make someone do). Used when a verb does not have a specific causative suffix."
   },
   {
-    "id": "l3_021",
+    "id": "l3_020",
     "category": "L3 - 14과: 인터넷과 스마트폰",
     "level": "L3",
     "title": "~잖아요",
@@ -2565,7 +2537,7 @@ const grammarDB = [
     "notes": "⚠ 提醒对方已知的事实：'你不是知道嘛/不是...嘛'。对长辈使用可能显得不礼貌。\n💡 Tips: Reminding listener of a known fact: 'As you know... / Isn't it that...'. Can sound slightly pushy or impolite to elders."
   },
   {
-    "id": "l3_022",
+    "id": "l3_021",
     "category": "L3 - 15과: 고민과 상담",
     "level": "L3",
     "title": "~(으)려던 참이다",
@@ -2593,7 +2565,7 @@ const grammarDB = [
     "notes": "⚠ 参=瞬间。表示'恰好/正要...'那个时刻，常用于巧合的场景。\n💡 Tips: 'Was just about to...'. Perfect for expressing coincidence or exact timing."
   },
   {
-    "id": "l3_023",
+    "id": "l3_022",
     "category": "L3 - 15과: 고민과 상담",
     "level": "L3",
     "title": "~자마자",
@@ -2621,7 +2593,7 @@ const grammarDB = [
     "notes": "⚠ '一...就...'。两个动作紧接着发生，中间几乎没有时间间隔。不能用于反复的习惯性动作。\n💡 Tips: 'As soon as'. Immediate sequence with almost no time gap between the two actions. Not for habitual actions."
   },
   {
-    "id": "l3_024",
+    "id": "l3_023",
     "category": "L3 - 16과: 기후와 날씨",
     "level": "L3",
     "title": "~(으)ㄹ 텐데",
@@ -2649,7 +2621,7 @@ const grammarDB = [
     "notes": "⚠ 推测+担忧/遗憾。通常表示对听者的同情或设身处地：피곤할 텐데 쉬세요 (应该很累了，休息吧)。\n💡 Tips: Guess + concern/regret. Shows empathy towards the listener: 피곤할 텐데 쉬세요 (You must be tired, please rest)."
   },
   {
-    "id": "l3_025",
+    "id": "l3_024",
     "category": "L3 - 16과: 기후와 날씨",
     "level": "L3",
     "title": "~아/어 있다",
@@ -2675,6 +2647,34 @@ const grammarDB = [
       }
     ],
     "notes": "⚠ 表示动作完成后的结果状态持续。区分：고 있다(动作正在进行) vs 아/어 있다(结果状态保持)。\n💡 Tips: State resulting from a completed action. Compare: 고 있다 (action in progress) vs 아/어 있다 (resulting state remains)."
+  },
+  {
+    "id": "l3_025",
+    "category": "L3 - 추가 문법 (Extra Grammar)",
+    "level": "L3",
+    "title": "~(으)ㄴ 채(로)",
+    "desc": "In the state of",
+    "meaning_zh": "保持某个状态不变",
+    "meaning_en": "While remaining in a state",
+    "rules": [
+      {
+        "zh": "动词+(으)ㄴ 채로",
+        "en": "Verb + (으)ㄴ 채로"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "신발을 신은 채로 들어왔어요.",
+        "en": "Came in with shoes on.",
+        "zh": "穿着鞋就进来了。"
+      },
+      {
+        "ko": "불을 켠 채로 잠들었어요.",
+        "en": "Fell asleep with the light on.",
+        "zh": "开着灯就睡着了。"
+      }
+    ],
+    "notes": "⚠ '保持着...的状态'。前面必须是过去定语形(ㄴ/은)，常表示某种不正常或无意中维持的状态。\n💡 Tips: 'While remaining in the state of...'. Takes past modifier (ㄴ/은). Often implies an unusual or unintended maintained state."
   },
   {
     "id": "l3_026",
