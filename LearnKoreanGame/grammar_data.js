@@ -2707,19 +2707,19 @@ const grammarDB = [
     "meaning_en": "Passive voice verbs",
     "rules": [
       {
-        "zh": "보다 → 보이다",
+        "zh": "보다 → 보이다 (看 → 被看)",
         "en": "보다→보이다(see→be seen)"
       },
       {
-        "zh": "잡다 → 잡히다",
+        "zh": "잡다 → 잡히다 (抓 → 被抓)",
         "en": "잡다→잡히다(catch→be caught)"
       },
       {
-        "zh": "열다 → 열리다",
+        "zh": "열다 → 열리다 (开 → 被打开)",
         "en": "열다→열리다(open→be opened)"
       },
       {
-        "zh": "끊다 → 끊기다",
+        "zh": "끊다 → 끊기다 (切断 → 被切断)",
         "en": "끊다→끊기다(cut→be cut)"
       }
     ],
@@ -2826,19 +2826,19 @@ const grammarDB = [
     "meaning_en": "Causative verb suffixes",
     "rules": [
       {
-        "zh": "먹이다",
+        "zh": "먹이다 (喂食/让吃)",
         "en": "먹이다 (to feed)"
       },
       {
-        "zh": "읽히다",
+        "zh": "읽히다 (让...读)",
         "en": "읽히다 (to make read)"
       },
       {
-        "zh": "울리다",
+        "zh": "울리다 (弄哭)",
         "en": "울리다 (to make cry)"
       },
       {
-        "zh": "깨우다",
+        "zh": "깨우다 (叫醒)",
         "en": "깨우다 (to wake up)"
       }
     ],
