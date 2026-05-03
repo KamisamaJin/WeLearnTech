@@ -429,24 +429,42 @@
 
             let notesHtml = '';
             if (item.notes) {
-                let lines = item.notes.split('\n');
+                let blocks = item.notes.split('\n\n');
+                let enBlock = blocks.find(b => b.includes('💡'));
+                let zhBlock = blocks.find(b => b.includes('⚠'));
                 
-                let currentLang = '';
-                notesHtml = lines.map(line => {
-                    let cls = 'note-line';
-                    if (line.includes('💡')) currentLang = 'en';
-                    if (line.includes('⚠')) currentLang = 'zh';
+                let orderedBlocks = [];
+                if (enBlock) orderedBlocks.push(enBlock);
+                if (zhBlock) orderedBlocks.push(zhBlock);
+                
+                notesHtml = orderedBlocks.map(block => {
+                    let lines = block.split('\n');
+                    let isEn = block.includes('💡');
+                    let cls = isEn ? 'note-en' : 'note-zh';
                     
-                    if (currentLang === 'en') cls += ' note-en';
-                    if (currentLang === 'zh') cls += ' note-zh';
+                    let html = '';
+                    let inList = false;
                     
-                    // Add indentation for bullet points
-                    let style = line.trim().startsWith('•') || line.trim().startsWith('-') ? 'margin-left: 1.2rem; margin-bottom: 8px;' : 'margin-bottom: 8px;';
-                    if(line.includes('⚠') || line.includes('💡')) {
-                        style = 'margin-bottom: 12px; font-weight: bold; font-size: 1rem;';
-                    }
+                    lines.forEach(line => {
+                        let trimmed = line.trim();
+                        if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
+                            if (!inList) {
+                                html += `<ul class="${cls}" style="margin-top: 5px; margin-bottom: 15px; padding-left: 25px;">`;
+                                inList = true;
+                            }
+                            html += `<li style="margin-bottom: 8px; line-height: 1.6;">${trimmed.substring(1).trim()}</li>`;
+                        } else {
+                            if (inList) {
+                                html += `</ul>`;
+                                inList = false;
+                            }
+                            html += `<p class="${cls}" style="margin-bottom: 10px; font-weight: bold; font-size: 1.05rem;">${trimmed}</p>`;
+                        }
+                    });
                     
-                    return `<p class="${cls}" style="${style}">${line}</p>`;
+                    if (inList) html += `</ul>`;
+                    
+                    return html;
                 }).join('');
             }
 
