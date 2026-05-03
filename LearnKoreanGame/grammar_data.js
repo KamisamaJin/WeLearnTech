@@ -41,7 +41,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "어른+께서",
-        "en": "어른+께서"
+        "en": "Elder/senior + 께서"
       }
     ],
     "examples": [
@@ -485,7 +485,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "명사+(으)로 인해서",
-        "en": "명사+(으)로 인해서"
+        "en": "Noun + (으)로 인해서"
       }
     ],
     "examples": [
@@ -601,7 +601,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)려던 참이다",
-        "en": "동사+(으)려던 참이다"
+        "en": "Verb + (으)려던 참이다"
       }
     ],
     "examples": [
@@ -657,7 +657,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ 테니까",
-        "en": "동/형+(으)ㄹ 테니까"
+        "en": "V/A + (으)ㄹ 테니까"
       }
     ],
     "examples": [
@@ -685,7 +685,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ까 봐",
-        "en": "동사+(으)ㄹ까 봐"
+        "en": "Verb + (으)ㄹ까 봐"
       }
     ],
     "examples": [
@@ -713,11 +713,11 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동+는지",
-        "en": "동+는지"
+        "en": "Verb + 는지"
       },
       {
         "zh": "형+ㄴ/은지",
-        "en": "형+ㄴ/은지"
+        "en": "Adj + ㄴ/은지"
       }
     ],
     "examples": [
@@ -745,7 +745,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ 텐데",
-        "en": "동/형+(으)ㄹ 텐데"
+        "en": "V/A + (으)ㄹ 텐데"
       }
     ],
     "examples": [
@@ -773,7 +773,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ 리가 없다",
-        "en": "동/형+(으)ㄹ 리가 없다"
+        "en": "V/A + (으)ㄹ 리가 없다"
       }
     ],
     "examples": [
@@ -801,7 +801,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ지도 모르다",
-        "en": "동/형+(으)ㄹ지도 모르다"
+        "en": "V/A + (으)ㄹ지도 모르다"
       }
     ],
     "examples": [
@@ -861,7 +861,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ 줄 몰랐다",
-        "en": "동/형+(으)ㄹ 줄 몰랐다"
+        "en": "V/A + (으)ㄹ 줄 몰랐다"
       }
     ],
     "examples": [
@@ -985,7 +985,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)라고 하다",
-        "en": "동사+(으)라고 하다"
+        "en": "Verb + (으)라고 하다"
       }
     ],
     "examples": [
@@ -1221,7 +1221,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+았/었더니",
-        "en": "동사+았/었더니"
+        "en": "Verb + 았/었더니"
       }
     ],
     "examples": [
@@ -1277,7 +1277,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+더니",
-        "en": "동/형+더니"
+        "en": "V/A + 더니"
       }
     ],
     "examples": [
@@ -1373,19 +1373,19 @@ const grammarDB = [
     "rules": [
       {
         "zh": "먹이다(feed)",
-        "en": "먹이다(feed)"
+        "en": "먹이다 (to feed)"
       },
       {
         "zh": "읽히다(make read)",
-        "en": "읽히다(make read)"
+        "en": "읽히다 (to make read)"
       },
       {
         "zh": "울리다(make cry)",
-        "en": "울리다(make cry)"
+        "en": "울리다 (to make cry)"
       },
       {
         "zh": "깨우다(wake up)",
-        "en": "깨우다(wake up)"
+        "en": "깨우다 (to wake up)"
       }
     ],
     "examples": [
@@ -1441,7 +1441,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ 정도로",
-        "en": "동/형+(으)ㄹ 정도로"
+        "en": "V/A + (으)ㄹ 정도로"
       }
     ],
     "examples": [
@@ -1497,7 +1497,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ 만하다",
-        "en": "동사+(으)ㄹ 만하다"
+        "en": "Verb + (으)ㄹ 만하다"
       }
     ],
     "examples": [
@@ -1525,7 +1525,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "명사+치고",
-        "en": "명사+치고"
+        "en": "Noun + 치고"
       }
     ],
     "examples": [
@@ -1553,7 +1553,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)나 마나",
-        "en": "동사+(으)나 마나"
+        "en": "Verb + (으)나 마나"
       }
     ],
     "examples": [
@@ -1581,7 +1581,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ 뿐만 아니라",
-        "en": "동/형+(으)ㄹ 뿐만 아니라"
+        "en": "V/A + (으)ㄹ 뿐만 아니라"
       }
     ],
     "examples": [
@@ -1609,7 +1609,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+기에(는)",
-        "en": "동/형+기에(는)"
+        "en": "V/A + 기에(는)"
       }
     ],
     "examples": [
@@ -1637,7 +1637,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+기 마련이다",
-        "en": "동/형+기 마련이다"
+        "en": "V/A + 기 마련이다"
       }
     ],
     "examples": [
@@ -1721,7 +1721,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+(으)ㄹ수록",
-        "en": "동/형+(으)ㄹ수록"
+        "en": "V/A + (으)ㄹ수록"
       }
     ],
     "examples": [
@@ -1893,7 +1893,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ 뻔하다",
-        "en": "동사+(으)ㄹ 뻔하다"
+        "en": "Verb + (으)ㄹ 뻔하다"
       }
     ],
     "examples": [
@@ -1949,7 +1949,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ 걸 그랬다",
-        "en": "동사+(으)ㄹ 걸 그랬다"
+        "en": "Verb + (으)ㄹ 걸 그랬다"
       }
     ],
     "examples": [
@@ -1977,7 +1977,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+았/었더라면",
-        "en": "동사+았/었더라면"
+        "en": "Verb + 았/었더라면"
       }
     ],
     "examples": [
@@ -2261,7 +2261,7 @@ const grammarDB = [
       },
       {
         "zh": "하다→했",
-        "en": "하다→했"
+        "en": "하다 → 했 (하다 verb)"
       }
     ],
     "examples": [
@@ -2465,7 +2465,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ래요",
-        "en": "동사+(으)ㄹ래요"
+        "en": "Verb + (으)ㄹ래요"
       }
     ],
     "examples": [
@@ -2761,7 +2761,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+던",
-        "en": "동/형+던"
+        "en": "V/A + 던"
       }
     ],
     "examples": [
@@ -2789,7 +2789,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+았/었던",
-        "en": "동사+았/었던"
+        "en": "Verb + 았/었던"
       }
     ],
     "examples": [
@@ -2825,7 +2825,7 @@ const grammarDB = [
       },
       {
         "zh": "하→해서",
-        "en": "하→해서"
+        "en": "하다 → 해서 (하다 verb)"
       }
     ],
     "examples": [
@@ -2973,7 +2973,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동/형+길래",
-        "en": "동/형+길래"
+        "en": "V/A + 길래"
       }
     ],
     "examples": [
@@ -3149,11 +3149,11 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동+는데도",
-        "en": "동+는데도"
+        "en": "Verb + 는데도"
       },
       {
         "zh": "형+ㄴ/은데도",
-        "en": "형+ㄴ/은데도"
+        "en": "Adj + ㄴ/은데도"
       }
     ],
     "examples": [
@@ -3265,11 +3265,11 @@ const grammarDB = [
     "rules": [
       {
         "zh": "무받침+ㄹ 때",
-        "en": "무받침+ㄹ 때"
+        "en": "No batchim + ㄹ 때"
       },
       {
         "zh": "받침+을 때",
-        "en": "받침+을 때"
+        "en": "Batchim + 을 때"
       }
     ],
     "examples": [
@@ -3297,7 +3297,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사/형+거나",
-        "en": "동사/형+거나"
+        "en": "V/A + 거나"
       }
     ],
     "examples": [
@@ -3717,7 +3717,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ 겸",
-        "en": "동사+(으)ㄹ 겸"
+        "en": "Verb + (으)ㄹ 겸"
       }
     ],
     "examples": [
@@ -3745,7 +3745,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)려면",
-        "en": "동사+(으)려면"
+        "en": "Verb + (으)려면"
       }
     ],
     "examples": [
@@ -3893,7 +3893,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ 수밖에 없다",
-        "en": "동사+(으)ㄹ 수밖에 없다"
+        "en": "Verb + (으)ㄹ 수밖에 없다"
       }
     ],
     "examples": [
@@ -3921,7 +3921,7 @@ const grammarDB = [
     "rules": [
       {
         "zh": "동사+(으)ㄹ래야 (으)ㄹ 수 없다",
-        "en": "동사+(으)ㄹ래야 (으)ㄹ 수 없다"
+        "en": "Verb + (으)ㄹ래야 (으)ㄹ 수 없다"
       }
     ],
     "examples": [
