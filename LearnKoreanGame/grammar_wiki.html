@@ -511,30 +511,39 @@
         // Mobile swipe gesture logic
         let touchStartX = 0;
         let touchEndX = 0;
+        let touchStartY = 0;
+        let touchEndY = 0;
 
         document.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
         }, {passive: true});
 
         document.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
             handleSwipe();
         }, {passive: true});
 
         function handleSwipe() {
-            const swipeDistance = touchEndX - touchStartX;
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
             const threshold = 50; // minimum swipe distance
             const isMobile = window.innerWidth <= 768;
             
             if (!isMobile) return;
 
-            // Swipe right from anywhere to open menu
-            if (swipeDistance > threshold) {
-                if (!sidebar.classList.contains('open')) toggleMenu();
-            } 
-            // Swipe left to close menu
-            else if (swipeDistance < -threshold) {
-                if (sidebar.classList.contains('open')) toggleMenu();
+            // Only trigger if horizontal movement is significantly greater than vertical movement
+            // This prevents vertical scrolling from accidentally triggering the sidebar
+            if (Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
+                // Swipe right to open menu
+                if (deltaX > threshold) {
+                    if (!sidebar.classList.contains('open')) toggleMenu();
+                } 
+                // Swipe left to close menu
+                else if (deltaX < -threshold) {
+                    if (sidebar.classList.contains('open')) toggleMenu();
+                }
             }
         }
     </script>
