@@ -2460,7 +2460,7 @@ const grammarDB = [
                 "zh": "正在开会，请稍后打电话。"
             }
         ],
-        "notes": "⚠ 核心考点解析：\n\n\n💡 Deep Dive Tips:\n- Cannot be used with adjectives or natural phenomena (비가 오는 중이다 ✗ -> 비가 오고 있다 ✓).\n⚠ 限制：不能与形容词或自然现象搭配（如下雨）。名词后可直接加 중이다（如 공사 중 = 施工中）。.",
+        "notes": "💡 Deep Dive Tips:\n- Cannot be used with adjectives or natural phenomena (비가 오는 중이다 ✗ -> 비가 오고 있다 ✓).\n\n⚠ 核心考点解析：\n• 限制：不能与形容词或自然现象搭配（如下雨）。\n• 名词后可直接加 중이다（如 공사 중 = 施工中）。",
         "desc_zh": "正在..."
     },
     {
