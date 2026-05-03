@@ -528,8 +528,8 @@
             
             if (!isMobile) return;
 
-            // Swipe right from left edge to open menu
-            if (swipeDistance > threshold && touchStartX < 80) {
+            // Swipe right from anywhere to open menu
+            if (swipeDistance > threshold) {
                 if (!sidebar.classList.contains('open')) toggleMenu();
             } 
             // Swipe left to close menu
