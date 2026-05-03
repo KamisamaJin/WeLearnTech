@@ -68,16 +68,24 @@ const grammarDB = [
     "title": "~에 있어요/없어요",
     "level": "L1",
     "category": "L1 - 2과: 방에 책상이 있어요",
-    "meaning": {
-      "zh": "在 / 不在（某处）",
-      "en": "Is / Is not at (a place)"
-    },
-    "rule": {
-      "zh": "名词 + 에 있어요/없어요",
-      "en": "Noun + 에 있어요/없어요"
-    },
     "notes": "💡 Tips: Used to express existence or location of a subject at a specific place.",
-    "id": "l1_003"
+    "id": "l1_003",
+    "desc": "Is / Is not at (a place)",
+    "meaning_zh": "在 / 不在（某处）",
+    "meaning_en": "Is / Is not at (a place)",
+    "rules": [
+      {
+        "en": "Noun + 에 있어요/없어요",
+        "zh": "名词 + 에 있어요/없어요"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "책상 위에 책이 있어요.",
+        "en": "There is a book on the desk.",
+        "zh": "书桌上有书。"
+      }
+    ]
   },
   {
     "id": "l1_004",
@@ -183,16 +191,24 @@ const grammarDB = [
     "title": "~에 가다/오다",
     "level": "L1",
     "category": "L1 - 4과: 라흐만 씨가 식당에 가요",
-    "meaning": {
-      "zh": "去 / 来（某处）",
-      "en": "Go to / Come to (a place)"
-    },
-    "rule": {
-      "zh": "名词 + 에 가다/오다",
-      "en": "Noun + 에 가다/오다"
-    },
     "notes": "💡 Tips: Indicates the destination of a movement.",
-    "id": "l1_007"
+    "id": "l1_007",
+    "desc": "Go to / Come to (a place)",
+    "meaning_zh": "去 / 来（某处）",
+    "meaning_en": "Go to / Come to (a place)",
+    "rules": [
+      {
+        "en": "Noun + 에 가다/오다",
+        "zh": "名词 + 에 가다/오다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "내일 학교에 가요.",
+        "en": "I go to school tomorrow.",
+        "zh": "明天去学校。"
+      }
+    ]
   },
   {
     "id": "l1_008",
@@ -286,31 +302,47 @@ const grammarDB = [
     "title": "~이/가 아니다",
     "level": "L1",
     "category": "L1 - 5과: 오늘은 5월 5일이에요",
-    "meaning": {
-      "zh": "不是...",
-      "en": "Is not..."
-    },
-    "rule": {
-      "zh": "名词(有收音) + 이 아니다 / 名词(无收音) + 가 아니다",
-      "en": "Noun + 이/가 아니다"
-    },
     "notes": "💡 Tips: The negative form of ~이다. '학생이 아니에요' (I am not a student).",
-    "id": "l1_011"
+    "id": "l1_011",
+    "desc": "Is not...",
+    "meaning_zh": "不是...",
+    "meaning_en": "Is not...",
+    "rules": [
+      {
+        "en": "Noun + 이/가 아니다",
+        "zh": "名词(有收音) + 이 아니다 / 名词(无收音) + 가 아니다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "저는 학생이 아니에요.",
+        "en": "I am not a student.",
+        "zh": "我不是学生。"
+      }
+    ]
   },
   {
     "title": "~부터 ~까지",
     "level": "L1",
     "category": "L1 - 6과: 9시부터 6시까지 일해요",
-    "meaning": {
-      "zh": "从... 到... (时间)",
-      "en": "From... to... (Time)"
-    },
-    "rule": {
-      "zh": "时间名词 + 부터 ~ 시간名词 + 까지",
-      "en": "Time Noun + 부터 ~ Time Noun + 까지"
-    },
     "notes": "💡 Tips: Used to indicate the starting and ending points of time.",
-    "id": "l1_012"
+    "id": "l1_012",
+    "desc": "From... to... (Time)",
+    "meaning_zh": "从... 到... (时间)",
+    "meaning_en": "From... to... (Time)",
+    "rules": [
+      {
+        "en": "Time Noun + 부터 ~ Time Noun + 까지",
+        "zh": "时间名词 + 부터 ~ 시간名词 + 까지"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "9시부터 6시까지 일해요.",
+        "en": "I work from 9 AM to 6 PM.",
+        "zh": "从九点工作到六点。"
+      }
+    ]
   },
   {
     "id": "l1_013",
@@ -460,16 +492,24 @@ const grammarDB = [
     "title": "~습니다/습니까?",
     "level": "L1",
     "category": "L1 - 8과: 칫솔하고 치약을 삽니다",
-    "meaning": {
-      "zh": "正式尊称陈述/疑问尾缀",
-      "en": "Formal polite statement/question ending"
-    },
-    "rule": {
-      "zh": "动词/形容词干 + 습니다/습니까",
-      "en": "Verb/Adj + 습니다/습니까"
-    },
     "notes": "💡 Tips: Highly formal and polite ending, often used in public speaking, news, and business.",
-    "id": "l1_018"
+    "id": "l1_018",
+    "desc": "Formal polite statement/question ending",
+    "meaning_zh": "正式尊称陈述/疑问尾缀",
+    "meaning_en": "Formal polite statement/question ending",
+    "rules": [
+      {
+        "en": "Verb/Adj + 습니다/습니까",
+        "zh": "动词/形容词干 + 습니다/습니까"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "이 책을 읽습니다.",
+        "en": "I read this book.",
+        "zh": "读这本书。"
+      }
+    ]
   },
   {
     "id": "l1_019",
@@ -567,16 +607,24 @@ const grammarDB = [
     "title": "~(으)시-",
     "level": "L1",
     "category": "L1 - 10과: 아버지는 요리를 잘하세요",
-    "meaning": {
-      "zh": "尊称中缀",
-      "en": "Honorific infix"
-    },
-    "rule": {
-      "zh": "动词/形容词干 + (으)시",
-      "en": "Verb/Adj + (으)시"
-    },
     "notes": "💡 Tips: Inserted into the verb/adjective to show respect to the subject of the sentence.",
-    "id": "l1_022"
+    "id": "l1_022",
+    "desc": "Honorific infix",
+    "meaning_zh": "尊称中缀",
+    "meaning_en": "Honorific infix",
+    "rules": [
+      {
+        "en": "Verb/Adj + (으)시",
+        "zh": "动词/形容词干 + (으)시"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "아버지는 신문을 읽으십니다.",
+        "en": "Father reads the newspaper.",
+        "zh": "爸爸在读报纸。"
+      }
+    ]
   },
   {
     "id": "l1_023",
@@ -938,16 +986,24 @@ const grammarDB = [
     "title": "~는 것",
     "level": "L1",
     "category": "L1 - 16과: 배가 아파서 병원에 가요",
-    "meaning": {
-      "zh": "将动词转化为名词（...的事情）",
-      "en": "Gerund (the act of...)"
-    },
-    "rule": {
-      "zh": "动词 + 는 것",
-      "en": "Verb + 는 것"
-    },
     "notes": "💡 Tips: Turns an action into a noun phrase, similar to '-ing' in English.",
-    "id": "l1_035"
+    "id": "l1_035",
+    "desc": "Gerund (the act of...)",
+    "meaning_zh": "将动词转化为名词（...的事情）",
+    "meaning_en": "Gerund (the act of...)",
+    "rules": [
+      {
+        "en": "Verb + 는 것",
+        "zh": "动词 + 는 것"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "제 취미는 영화를 보는 것이에요.",
+        "en": "My hobby is watching movies.",
+        "zh": "我的爱好是看电影。"
+      }
+    ]
   },
   {
     "id": "l1_036",
@@ -989,16 +1045,24 @@ const grammarDB = [
     "title": "~(으)로 (방향)",
     "level": "L1",
     "category": "L1 - 17과: 사진을 찍지 마세요",
-    "meaning": {
-      "zh": "向，朝 (方向)",
-      "en": "Toward (direction)"
-    },
-    "rule": {
-      "zh": "方向名词 + (으)로",
-      "en": "Direction Noun + (으)로"
-    },
     "notes": "💡 Tips: Indicates the direction of movement. e.g., '오른쪽으로 가세요' (Go to the right).",
-    "id": "l1_037"
+    "id": "l1_037",
+    "desc": "Toward (direction)",
+    "meaning_zh": "向，朝 (方向)",
+    "meaning_en": "Toward (direction)",
+    "rules": [
+      {
+        "en": "Direction Noun + (으)로",
+        "zh": "方向名词 + (으)로"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "오른쪽으로 가세요.",
+        "en": "Please go to the right.",
+        "zh": "请往右边走。"
+      }
+    ]
   },
   {
     "id": "l1_038",
@@ -1212,31 +1276,47 @@ const grammarDB = [
     "title": "명-(이)라고 하다",
     "level": "L2",
     "category": "L2 - 1과: 제 고향은 경치가 아름다운 곳이에요",
-    "meaning": {
-      "zh": "叫做... (介绍名称)",
-      "en": "Is called... (naming)"
-    },
-    "rule": {
-      "zh": "名词 + (이)라고 하다",
-      "en": "Noun + (이)라고 하다"
-    },
     "notes": "💡 Tips: Used to introduce the name of a person or a place.",
-    "id": "l2_002"
+    "id": "l2_002",
+    "desc": "Is called... (naming)",
+    "meaning_zh": "叫做... (介绍名称)",
+    "meaning_en": "Is called... (naming)",
+    "rules": [
+      {
+        "en": "Noun + (이)라고 하다",
+        "zh": "名词 + (이)라고 하다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "저는 안나라고 합니다.",
+        "en": "I am called Anna.",
+        "zh": "我叫安娜。"
+      }
+    ]
   },
   {
     "title": "~(으)ㄴ 다음에",
     "level": "L2",
     "category": "L2 - 2과: 쓰레기는 내가 버릴게요",
-    "meaning": {
-      "zh": "做完...之后",
-      "en": "After doing..."
-    },
-    "rule": {
-      "zh": "动词 + (으)ㄴ 다음에",
-      "en": "Verb + (으)ㄴ 다음에"
-    },
     "notes": "💡 Tips: Indicates that the action in the following clause happens after the action in the first clause.",
-    "id": "l2_003"
+    "id": "l2_003",
+    "desc": "After doing...",
+    "meaning_zh": "做完...之后",
+    "meaning_en": "After doing...",
+    "rules": [
+      {
+        "en": "Verb + (으)ㄴ 다음에",
+        "zh": "动词 + (으)ㄴ 다음에"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "숙제를 한 다음에 밥을 먹어요.",
+        "en": "I eat after doing my homework.",
+        "zh": "做完作业后再吃饭。"
+      }
+    ]
   },
   {
     "id": "l2_004",
@@ -1362,16 +1442,24 @@ const grammarDB = [
     "title": "반말 (Casual Speech)",
     "level": "L2",
     "category": "L2 - 4과: 지금 통화할 수 있어요?",
-    "meaning": {
-      "zh": "非敬语 / 平语",
-      "en": "Casual/informal speech"
-    },
-    "rule": {
-      "zh": "去掉요，或使用专用平语词汇",
-      "en": "Drop '요' or use specific casual vocabulary"
-    },
     "notes": "💡 Tips: Used with close friends, younger people, or subordinates.",
-    "id": "l2_008"
+    "id": "l2_008",
+    "desc": "Casual/informal speech",
+    "meaning_zh": "非敬语 / 平语",
+    "meaning_en": "Casual/informal speech",
+    "rules": [
+      {
+        "en": "Drop '요' or use specific casual vocabulary",
+        "zh": "去掉요，或使用专用平语词汇"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "밥 먹었어?",
+        "en": "Did you eat? (Casual)",
+        "zh": "吃饭了吗？(非敬语)"
+      }
+    ]
   },
   {
     "id": "l2_009",
@@ -1409,16 +1497,24 @@ const grammarDB = [
     "title": "~아/어서 (순차)",
     "level": "L2",
     "category": "L2 - 5과: 많이 아프면 이 약을 드세요",
-    "meaning": {
-      "zh": "然后 (先后顺序)",
-      "en": "And then (sequential)"
-    },
-    "rule": {
-      "zh": "动词 + 아/어서",
-      "en": "Verb + 아/어서"
-    },
     "notes": "💡 Tips: Connects two actions where the first action is a prerequisite or leads into the second action.",
-    "id": "l2_010"
+    "id": "l2_010",
+    "desc": "And then (sequential)",
+    "meaning_zh": "然后 (先后顺序)",
+    "meaning_en": "And then (sequential)",
+    "rules": [
+      {
+        "en": "Verb + 아/어서",
+        "zh": "动词 + 아/어서"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "친구를 만나서 영화를 봤어요.",
+        "en": "I met a friend and (then) watched a movie.",
+        "zh": "见了朋友然后看了电影。"
+      }
+    ]
   },
   {
     "id": "l2_011",
@@ -1456,16 +1552,24 @@ const grammarDB = [
     "title": "~겠-",
     "level": "L2",
     "category": "L2 - 6과: 맛있는 음식을 먹을 때 행복해요",
-    "meaning": {
-      "zh": "打算 / 猜测",
-      "en": "Intention / Guess"
-    },
-    "rule": {
-      "zh": "动词/形容词干 + 겠",
-      "en": "Verb/Adj + 겠"
-    },
     "notes": "💡 Tips: Used to express the speaker's firm intention (I will) or to make a guess based on the situation.",
-    "id": "l2_012"
+    "id": "l2_012",
+    "desc": "Intention / Guess",
+    "meaning_zh": "打算 / 猜测",
+    "meaning_en": "Intention / Guess",
+    "rules": [
+      {
+        "en": "Verb/Adj + 겠",
+        "zh": "动词/形容词干 + 겠"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "내일 비가 오겠습니다.",
+        "en": "It will probably rain tomorrow.",
+        "zh": "明天应该会下雨。"
+      }
+    ]
   },
   {
     "id": "l2_013",
@@ -1647,16 +1751,24 @@ const grammarDB = [
     "title": "~(으)ㄴ/는데 (배경)",
     "level": "L2",
     "category": "L2 - 10과: 시청 옆에 있는데 가까워요",
-    "meaning": {
-      "zh": "引出话题的背景",
-      "en": "Background information"
-    },
-    "rule": {
-      "zh": "动词+는데 / 形容词+(으)ㄴ데",
-      "en": "Verb + 는데 / Adj + (으)ㄴ데"
-    },
     "notes": "💡 Tips: Provides background context before making a suggestion, asking a question, or giving a command.",
-    "id": "l2_019"
+    "id": "l2_019",
+    "desc": "Background information",
+    "meaning_zh": "引出话题的背景",
+    "meaning_en": "Background information",
+    "rules": [
+      {
+        "en": "Verb + 는데 / Adj + (으)ㄴ데",
+        "zh": "动词+는데 / 形容词+(으)ㄴ데"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "시청 옆에 있는데 가까워요.",
+        "en": "It's next to City Hall, so it's close.",
+        "zh": "在市政厅旁边，很近。"
+      }
+    ]
   },
   {
     "id": "l2_020",
@@ -1726,16 +1838,24 @@ const grammarDB = [
     "title": "~게 (부사화)",
     "level": "L2",
     "category": "L2 - 11과: 보름달을 보면서 소원을 빌어요",
-    "meaning": {
-      "zh": "地 (副词化)",
-      "en": "Adverbial suffix (-ly)"
-    },
-    "rule": {
-      "zh": "形容词 + 게",
-      "en": "Adj + 게"
-    },
     "notes": "💡 Tips: Turns an adjective into an adverb to modify a following verb.",
-    "id": "l2_022"
+    "id": "l2_022",
+    "desc": "Adverbial suffix (-ly)",
+    "meaning_zh": "地 (副词化)",
+    "meaning_en": "Adverbial suffix (-ly)",
+    "rules": [
+      {
+        "en": "Adj + 게",
+        "zh": "形容词 + 게"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "옷을 따뜻하게 입으세요.",
+        "en": "Please dress warmly.",
+        "zh": "请穿暖和一点。"
+      }
+    ]
   },
   {
     "id": "l2_023",
@@ -1769,16 +1889,24 @@ const grammarDB = [
     "title": "~는 편이다",
     "level": "L2",
     "category": "L2 - 12과: 실수를 자주 하는 편이에요",
-    "meaning": {
-      "zh": "算是...的一边 / 偏向于...",
-      "en": "Tend to / On the ... side"
-    },
-    "rule": {
-      "zh": "动词+는 편이다 / 形容词+(으)ㄴ 편이다",
-      "en": "Verb + 는 편이다 / Adj + (으)ㄴ 편이다"
-    },
     "notes": "💡 Tips: Used to state a characteristic or tendency gently rather than making an absolute statement.",
-    "id": "l2_024"
+    "id": "l2_024",
+    "desc": "Tend to / On the ... side",
+    "meaning_zh": "算是...的一边 / 偏向于...",
+    "meaning_en": "Tend to / On the ... side",
+    "rules": [
+      {
+        "en": "Verb + 는 편이다 / Adj + (으)ㄴ 편이다",
+        "zh": "动词+는 편이다 / 形容词+(으)ㄴ 편이다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "저는 실수를 자주 하는 편이에요.",
+        "en": "I tend to make mistakes often.",
+        "zh": "我算是经常犯错的类型。"
+      }
+    ]
   },
   {
     "id": "l2_025",
@@ -1936,16 +2064,24 @@ const grammarDB = [
     "title": "~(으)ㄴ (과거 관형형)",
     "level": "L2",
     "category": "L2 - 15과: 무역 회사에서 번역 일을 하고 있어요",
-    "meaning": {
-      "zh": "修饰名词 (过去时)",
-      "en": "Noun modifier (Past tense)"
-    },
-    "rule": {
-      "zh": "动词 + (으)ㄴ + 名词",
-      "en": "Verb + (으)ㄴ + Noun"
-    },
     "notes": "💡 Tips: Modifies a noun with an action that occurred in the past (e.g., 어제 먹은 빵).",
-    "id": "l2_030"
+    "id": "l2_030",
+    "desc": "Noun modifier (Past tense)",
+    "meaning_zh": "修饰名词 (过去时)",
+    "meaning_en": "Noun modifier (Past tense)",
+    "rules": [
+      {
+        "en": "Verb + (으)ㄴ + Noun",
+        "zh": "动词 + (으)ㄴ + 名词"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "어제 본 영화가 재미있었어요.",
+        "en": "The movie I watched yesterday was interesting.",
+        "zh": "昨天看的电影很有趣。"
+      }
+    ]
   },
   {
     "id": "l2_031",
@@ -2039,61 +2175,93 @@ const grammarDB = [
     "title": "~았/었으면 좋겠다",
     "level": "L2",
     "category": "L2 - 17과: 잠을 푹 자면 좋겠어요",
-    "meaning": {
-      "zh": "要是...就好了 (希望)",
-      "en": "I wish / It would be great if..."
-    },
-    "rule": {
-      "zh": "动词/形容词 + 았/었으면 좋겠다",
-      "en": "Verb/Adj + 았/었으면 좋겠다"
-    },
     "notes": "💡 Tips: Expresses a strong desire, hope, or wish for something to happen.",
-    "id": "l2_034"
+    "id": "l2_034",
+    "desc": "I wish / It would be great if...",
+    "meaning_zh": "要是...就好了 (希望)",
+    "meaning_en": "I wish / It would be great if...",
+    "rules": [
+      {
+        "en": "Verb/Adj + 았/었으면 좋겠다",
+        "zh": "动词/形容词 + 았/었으면 좋겠다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "내일 날씨가 좋았으면 좋겠어요.",
+        "en": "I hope the weather is good tomorrow.",
+        "zh": "希望明天天气好。"
+      }
+    ]
   },
   {
     "title": "~에 (단위/기준)",
     "level": "L2",
     "category": "L2 - 17과: 잠을 푹 자면 좋겠어요",
-    "meaning": {
-      "zh": "每... (计算单位)",
-      "en": "Per / For every (Unit)"
-    },
-    "rule": {
-      "zh": "量词名词 + 에",
-      "en": "Unit Noun + 에"
-    },
     "notes": "💡 Tips: Used with quantity or frequency to mean 'per' or 'a' (e.g., 일주일에 두 번 - twice a week).",
-    "id": "l2_035"
+    "id": "l2_035",
+    "desc": "Per / For every (Unit)",
+    "meaning_zh": "每... (计算单位)",
+    "meaning_en": "Per / For every (Unit)",
+    "rules": [
+      {
+        "en": "Unit Noun + 에",
+        "zh": "量词名词 + 에"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "일주일에 한 번 운동해요.",
+        "en": "I exercise once a week.",
+        "zh": "一周运动一次。"
+      }
+    ]
   },
   {
     "title": "~는 게 어때요?",
     "level": "L2",
     "category": "L2 - 18과: 이 수업을 신청하는 게 어때요?",
-    "meaning": {
-      "zh": "做...怎么样？(建议)",
-      "en": "How about doing...?"
-    },
-    "rule": {
-      "zh": "动词 + 는 게 어때요?",
-      "en": "Verb + 는 게 어때요?"
-    },
     "notes": "💡 Tips: A soft and polite way to suggest an action to someone.",
-    "id": "l2_036"
+    "id": "l2_036",
+    "desc": "How about doing...?",
+    "meaning_zh": "做...怎么样？(建议)",
+    "meaning_en": "How about doing...?",
+    "rules": [
+      {
+        "en": "Verb + 는 게 어때요?",
+        "zh": "动词 + 는 게 어때요?"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "이 수업을 신청하는 게 어때요?",
+        "en": "How about registering for this class?",
+        "zh": "申请这门课怎么样？"
+      }
+    ]
   },
   {
     "title": "~아/어 보이다",
     "level": "L2",
     "category": "L2 - 18과: 이 수업을 신청하는 게 어때요?",
-    "meaning": {
-      "zh": "看起来...",
-      "en": "Looks / Appears to be..."
-    },
-    "rule": {
-      "zh": "形容词 + 아/어 보이다",
-      "en": "Adj + 아/어 보이다"
-    },
     "notes": "💡 Tips: Expresses the speaker's feeling or guess upon seeing something or someone.",
-    "id": "l2_037"
+    "id": "l2_037",
+    "desc": "Looks / Appears to be...",
+    "meaning_zh": "看起来...",
+    "meaning_en": "Looks / Appears to be...",
+    "rules": [
+      {
+        "en": "Adj + 아/어 보이다",
+        "zh": "形容词 + 아/어 보이다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "옷이 좀 작아 보여요.",
+        "en": "The clothes look a bit small.",
+        "zh": "衣服看起来有点小。"
+      }
+    ]
   },
   {
     "id": "l2_038",
@@ -2271,16 +2439,24 @@ const grammarDB = [
     "title": "~고 해서",
     "level": "L3",
     "category": "L3 - 1과: 대인 관계",
-    "meaning": {
-      "zh": "因为...等原因 (列举部分原因)",
-      "en": "Because of ... and other reasons"
-    },
-    "rule": {
-      "zh": "动词/形容词 + 고 해서",
-      "en": "Verb/Adj + 고 해서"
-    },
     "notes": "💡 Tips: Implies there are multiple reasons for an action, but the speaker is mentioning the primary one.",
-    "id": "l3_002"
+    "id": "l3_002",
+    "desc": "Because of ... and other reasons",
+    "meaning_zh": "因为...等原因 (列举部分原因)",
+    "meaning_en": "Because of ... and other reasons",
+    "rules": [
+      {
+        "en": "Verb/Adj + 고 해서",
+        "zh": "动词/形容词 + 고 해서"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "피곤하고 해서 일찍 잤어요.",
+        "en": "I was tired (among other reasons), so I slept early.",
+        "zh": "因为有点累等原因，就早睡了。"
+      }
+    ]
   },
   {
     "id": "l3_003",
@@ -2438,16 +2614,24 @@ const grammarDB = [
     "title": "~아/어 가지고",
     "level": "L3",
     "category": "L3 - 4과: 교환과 환불",
-    "meaning": {
-      "zh": "因为... / 做了...然后",
-      "en": "Because / After doing... (conversational)"
-    },
-    "rule": {
-      "zh": "动词/形容词 + 아/어 가지고",
-      "en": "Verb/Adj + 아/어 가지고"
-    },
     "notes": "💡 Tips: Highly colloquial form replacing 아/어서 for reason or sequential action.",
-    "id": "l3_008"
+    "id": "l3_008",
+    "desc": "Because / After doing... (conversational)",
+    "meaning_zh": "因为... / 做了...然后",
+    "meaning_en": "Because / After doing... (conversational)",
+    "rules": [
+      {
+        "en": "Verb/Adj + 아/어 가지고",
+        "zh": "动词/形容词 + 아/어 가지고"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "바빠 가지고 연락을 못 했어요.",
+        "en": "I was so busy that I couldn't contact you.",
+        "zh": "因为太忙了没能联系你。"
+      }
+    ]
   },
   {
     "id": "l3_009",
@@ -2613,16 +2797,24 @@ const grammarDB = [
     "title": "~만큼",
     "level": "L3",
     "category": "L3 - 7과: 문화생활",
-    "meaning": {
-      "zh": "像...一样多 / 到...的程度",
-      "en": "As much as / To the extent that"
-    },
-    "rule": {
-      "zh": "名词 + 만큼 / 动词+(으)ㄹ/ㄴ 만큼",
-      "en": "Noun + 만큼 / Verb + modifier + 만큼"
-    },
     "notes": "💡 Tips: Indicates equivalence in size, amount, or degree.",
-    "id": "l3_014"
+    "id": "l3_014",
+    "desc": "As much as / To the extent that",
+    "meaning_zh": "像...一样多 / 到...的程度",
+    "meaning_en": "As much as / To the extent that",
+    "rules": [
+      {
+        "en": "Noun + 만큼 / Verb + modifier + 만큼",
+        "zh": "名词 + 만큼 / 动词+(으)ㄹ/ㄴ 만큼"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "저는 형만큼 키가 크지 않아요.",
+        "en": "I am not as tall as my older brother.",
+        "zh": "我没有哥哥那么高。"
+      }
+    ]
   },
   {
     "id": "l3_015",
@@ -2700,16 +2892,24 @@ const grammarDB = [
     "title": "~아/어서 그런지",
     "level": "L3",
     "category": "L3 - 9과: 고장과 수리",
-    "meaning": {
-      "zh": "不知道是不是因为...",
-      "en": "Maybe because..."
-    },
-    "rule": {
-      "zh": "动词/形容词 + 아/어서 그런지",
-      "en": "Verb/Adj + 아/어서 그런지"
-    },
     "notes": "💡 Tips: Expresses a vague guess about the reason for a certain result.",
-    "id": "l3_017"
+    "id": "l3_017",
+    "desc": "Maybe because...",
+    "meaning_zh": "不知道是不是因为...",
+    "meaning_en": "Maybe because...",
+    "rules": [
+      {
+        "en": "Verb/Adj + 아/어서 그런지",
+        "zh": "动词/形容词 + 아/어서 그런지"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "주말이라서 그런지 사람이 많아요.",
+        "en": "Maybe because it's the weekend, there are a lot of people.",
+        "zh": "可能是因为周末吧，人很多。"
+      }
+    ]
   },
   {
     "id": "l3_018",
@@ -2803,16 +3003,24 @@ const grammarDB = [
     "title": "~는/ㄴ다 (서술체)",
     "level": "L3",
     "category": "L3 - 11과: 부동산",
-    "meaning": {
-      "zh": "书面基本阶叙述体",
-      "en": "Plain form (Written/Diary style)"
-    },
-    "rule": {
-      "zh": "动词 + 는/ㄴ다, 形容词 + 다, 名词 + (이)다",
-      "en": "Verb + 는/ㄴ다, Adj + 다"
-    },
     "notes": "💡 Tips: Used in diaries, articles, essays, and objective writing. Also used as casual speech.",
-    "id": "l3_021"
+    "id": "l3_021",
+    "desc": "Plain form (Written/Diary style)",
+    "meaning_zh": "书面基本阶叙述体",
+    "meaning_en": "Plain form (Written/Diary style)",
+    "rules": [
+      {
+        "en": "Verb + 는/ㄴ다, Adj + 다",
+        "zh": "动词 + 는/ㄴ다, 形容词 + 다, 名词 + (이)다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "나는 매일 아침 운동을 한다.",
+        "en": "I exercise every morning.",
+        "zh": "我每天早上运动。"
+      }
+    ]
   },
   {
     "id": "l3_022",
@@ -2902,31 +3110,47 @@ const grammarDB = [
     "title": "~아/어 가다/오다",
     "level": "L3",
     "category": "L3 - 13과: 직장 생활",
-    "meaning": {
-      "zh": "不断地...下去 / 一直...过来",
-      "en": "Keep doing... / Have been doing..."
-    },
-    "rule": {
-      "zh": "动词 + 아/어 가다/오다",
-      "en": "Verb + 아/어 가다/오다"
-    },
     "notes": "💡 Tips: Indicates a continuous progression of an action into the future (가다) or from the past to present (오다).",
-    "id": "l3_025"
+    "id": "l3_025",
+    "desc": "Keep doing... / Have been doing...",
+    "meaning_zh": "不断地...下去 / 一直...过来",
+    "meaning_en": "Keep doing... / Have been doing...",
+    "rules": [
+      {
+        "en": "Verb + 아/어 가다/오다",
+        "zh": "动词 + 아/어 가다/오다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "일이 다 끝나 가요.",
+        "en": "The work is almost finishing up.",
+        "zh": "事情快做完了。"
+      }
+    ]
   },
   {
     "title": "~아/어야 (필수조건)",
     "level": "L3",
     "category": "L3 - 14과: 인터넷과 스마트폰",
-    "meaning": {
-      "zh": "只有...才能...",
-      "en": "Only if / Must do... to..."
-    },
-    "rule": {
-      "zh": "动词/形容词 + 아/어야",
-      "en": "Verb/Adj + 아/어야"
-    },
     "notes": "💡 Tips: Sets a mandatory condition for the following clause to happen.",
-    "id": "l3_026"
+    "id": "l3_026",
+    "desc": "Only if / Must do... to...",
+    "meaning_zh": "只有...才能...",
+    "meaning_en": "Only if / Must do... to...",
+    "rules": [
+      {
+        "en": "Verb/Adj + 아/어야",
+        "zh": "动词/形容词 + 아/어야"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "비밀번호를 입력해야 문이 열려요.",
+        "en": "The door opens only if you enter the password.",
+        "zh": "只有输入密码门才会开。"
+      }
+    ]
   },
   {
     "id": "l3_027",
@@ -3528,16 +3752,24 @@ const grammarDB = [
     "title": "~(으)ㄴ 나머지",
     "level": "L4",
     "category": "L4 - 4과: 한국의 의례",
-    "meaning": {
-      "zh": "过度...以至于 / 因为太...",
-      "en": "As a result of being too..."
-    },
-    "rule": {
-      "zh": "动词/形容词 + (으)ㄴ 나머지",
-      "en": "Verb/Adj + (으)ㄴ 나머지"
-    },
     "notes": "💡 Tips: Describes a negative or extreme result caused by an excessive degree of action or emotion.",
-    "id": "l4_007"
+    "id": "l4_007",
+    "desc": "As a result of being too...",
+    "meaning_zh": "过度...以至于 / 因为太...",
+    "meaning_en": "As a result of being too...",
+    "rules": [
+      {
+        "en": "Verb/Adj + (으)ㄴ 나머지",
+        "zh": "动词/形容词 + (으)ㄴ 나머지"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "너무 놀란 나머지 아무 말도 못 했어요.",
+        "en": "I was so surprised that I couldn't say anything.",
+        "zh": "因为太惊讶了，以至于什么话都没说出来。"
+      }
+    ]
   },
   {
     "id": "l4_008",
@@ -3683,16 +3915,24 @@ const grammarDB = [
     "title": "~되",
     "level": "L4",
     "category": "L4 - 7과: 현대인의 질병",
-    "meaning": {
-      "zh": "虽然...但是... / 允许做...但是要注意...",
-      "en": "Do it, but... / Admitting X, but requesting Y"
-    },
-    "rule": {
-      "zh": "动词 + 되",
-      "en": "Verb + 되"
-    },
     "notes": "💡 Tips: Concedes or permits the first clause, but adds a restriction or condition in the second clause.",
-    "id": "l4_013"
+    "id": "l4_013",
+    "desc": "Do it, but... / Admitting X, but requesting Y",
+    "meaning_zh": "虽然...但是... / 允许做...但是要注意...",
+    "meaning_en": "Do it, but... / Admitting X, but requesting Y",
+    "rules": [
+      {
+        "en": "Verb + 되",
+        "zh": "动词 + 되"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "음식을 먹되 남기지 마세요.",
+        "en": "You may eat the food, but do not leave leftovers.",
+        "zh": "吃可以，但不要剩下。"
+      }
+    ]
   },
   {
     "id": "l4_014",
@@ -3874,16 +4114,24 @@ const grammarDB = [
     "title": "~고 말다",
     "level": "L4",
     "category": "L4 - 10과: 언어생활",
-    "meaning": {
-      "zh": "最终还是...了 (遗憾/无奈)",
-      "en": "Ended up doing... (unintended/regretful)"
-    },
-    "rule": {
-      "zh": "动词 + 고 말다",
-      "en": "Verb + 고 말다"
-    },
     "notes": "💡 Tips: Expresses that an action was completed unintentionally, often with a feeling of regret.",
-    "id": "l4_020"
+    "id": "l4_020",
+    "desc": "Ended up doing... (unintended/regretful)",
+    "meaning_zh": "最终还是...了 (遗憾/无奈)",
+    "meaning_en": "Ended up doing... (unintended/regretful)",
+    "rules": [
+      {
+        "en": "Verb + 고 말다",
+        "zh": "动词 + 고 말다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "결국 울음을 터뜨리고 말았어요.",
+        "en": "I eventually ended up bursting into tears.",
+        "zh": "最终还是没忍住哭了出来。"
+      }
+    ]
   },
   {
     "id": "l4_021",
@@ -3917,16 +4165,24 @@ const grammarDB = [
     "title": "~조차",
     "level": "L4",
     "category": "L4 - 11과: 교육 제도",
-    "meaning": {
-      "zh": "甚至连... / 居然...",
-      "en": "Even... (extreme case)"
-    },
-    "rule": {
-      "zh": "名词 + 조차",
-      "en": "Noun + 조차"
-    },
     "notes": "💡 Tips: Used to express an extreme, unexpected negative situation, similar to '마저' or '까지'.",
-    "id": "l4_022"
+    "id": "l4_022",
+    "desc": "Even... (extreme case)",
+    "meaning_zh": "甚至连... / 居然...",
+    "meaning_en": "Even... (extreme case)",
+    "rules": [
+      {
+        "en": "Noun + 조차",
+        "zh": "名词 + 조차"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "너무 아파서 물조차 마실 수 없어요.",
+        "en": "I'm so sick that I can't even drink water.",
+        "zh": "因为太疼了，甚至连水都喝不了。"
+      }
+    ]
   },
   {
     "id": "l4_023",
@@ -3992,16 +4248,24 @@ const grammarDB = [
     "title": "~는 한",
     "level": "L4",
     "category": "L4 - 13과: 환경 보호",
-    "meaning": {
-      "zh": "只要...就...",
-      "en": "As long as..."
-    },
-    "rule": {
-      "zh": "动词 + 는 한",
-      "en": "Verb + 는 한"
-    },
     "notes": "💡 Tips: Indicates that as long as the condition in the first clause is maintained, the second clause remains true.",
-    "id": "l4_025"
+    "id": "l4_025",
+    "desc": "As long as...",
+    "meaning_zh": "只要...就...",
+    "meaning_en": "As long as...",
+    "rules": [
+      {
+        "en": "Verb + 는 한",
+        "zh": "动词 + 는 한"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "제가 여기에 있는 한 걱정하지 마세요.",
+        "en": "As long as I am here, do not worry.",
+        "zh": "只要有我在，你就不用担心。"
+      }
+    ]
   },
   {
     "id": "l4_026",
@@ -4035,61 +4299,93 @@ const grammarDB = [
     "title": "~(으)므로",
     "level": "L4",
     "category": "L4 - 14과: 생활과 경제",
-    "meaning": {
-      "zh": "因为... / 由于... (书面)",
-      "en": "Because / Therefore (formal/written)"
-    },
-    "rule": {
-      "zh": "动词/形容词 + (으)므로",
-      "en": "Verb/Adj + (으)므로"
-    },
     "notes": "💡 Tips: A highly formal, written expression indicating a logical cause or reason.",
-    "id": "l4_027"
+    "id": "l4_027",
+    "desc": "Because / Therefore (formal/written)",
+    "meaning_zh": "因为... / 由于... (书面)",
+    "meaning_en": "Because / Therefore (formal/written)",
+    "rules": [
+      {
+        "en": "Verb/Adj + (으)므로",
+        "zh": "动词/形容词 + (으)므로"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "이곳은 위험하므로 들어가지 마십시오.",
+        "en": "It is dangerous here, therefore do not enter.",
+        "zh": "此处危险，请勿进入。"
+      }
+    ]
   },
   {
     "title": "~은/는커녕",
     "level": "L4",
     "category": "L4 - 14과: 생활과 경제",
-    "meaning": {
-      "zh": "别说...就连...也(没)",
-      "en": "Let alone... not even..."
-    },
-    "rule": {
-      "zh": "名词 + 은/는커녕",
-      "en": "Noun + 은/는커녕"
-    },
     "notes": "💡 Tips: Emphasizes that even a basic expectation wasn't met, let alone a higher one.",
-    "id": "l4_028"
+    "id": "l4_028",
+    "desc": "Let alone... not even...",
+    "meaning_zh": "别说...就连...也(没)",
+    "meaning_en": "Let alone... not even...",
+    "rules": [
+      {
+        "en": "Noun + 은/는커녕",
+        "zh": "名词 + 은/는커녕"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "밥은커녕 물도 못 마셨어요.",
+        "en": "I couldn't even drink water, let alone eat food.",
+        "zh": "别说吃饭了，连水都没喝上。"
+      }
+    ]
   },
   {
     "title": "~는 법이다",
     "level": "L4",
     "category": "L4 - 15과: 법과 질서",
-    "meaning": {
-      "zh": "理所当然会... / 必然规律",
-      "en": "It is a rule that... / Bound to..."
-    },
-    "rule": {
-      "zh": "动词 + 는 법이다",
-      "en": "Verb + 는 법이다"
-    },
     "notes": "💡 Tips: Expresses a natural law, inevitable outcome, or general truth.",
-    "id": "l4_029"
+    "id": "l4_029",
+    "desc": "It is a rule that... / Bound to...",
+    "meaning_zh": "理所当然会... / 必然规律",
+    "meaning_en": "It is a rule that... / Bound to...",
+    "rules": [
+      {
+        "en": "Verb + 는 법이다",
+        "zh": "动词 + 는 법이다"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "노력하면 성공하는 법입니다.",
+        "en": "It is a rule that if you work hard, you succeed.",
+        "zh": "只要努力就必然会成功。"
+      }
+    ]
   },
   {
     "title": "~다시피",
     "level": "L4",
     "category": "L4 - 15과: 법과 질서",
-    "meaning": {
-      "zh": "正如你所... (看/听/知)",
-      "en": "As you (know/see/hear)..."
-    },
-    "rule": {
-      "zh": "动词 + 다시피",
-      "en": "Verb + 다시피"
-    },
     "notes": "💡 Tips: Used with perception verbs like 알다, 보다, 듣다 to confirm shared knowledge.",
-    "id": "l4_030"
+    "id": "l4_030",
+    "desc": "As you (know/see/hear)...",
+    "meaning_zh": "正如你所... (看/听/知)",
+    "meaning_en": "As you (know/see/hear)...",
+    "rules": [
+      {
+        "en": "Verb + 다시피",
+        "zh": "动词 + 다시피"
+      }
+    ],
+    "examples": [
+      {
+        "ko": "아시다시피 내일은 회의가 없습니다.",
+        "en": "As you know, there is no meeting tomorrow.",
+        "zh": "正如您所知，明天没有会议。"
+      }
+    ]
   },
   {
     "id": "l4_031",
