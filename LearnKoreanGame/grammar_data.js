@@ -482,7 +482,7 @@ const grammarDB = [
     "meaning_en": "Due to (formal cause)",
     "rules": [
       {
-        "zh": "명사+(으)로 인해서",
+        "zh": "名词+(으)로 인해서",
         "en": "Noun + (으)로 인해서"
       }
     ],
@@ -538,11 +538,11 @@ const grammarDB = [
     "meaning_en": "Intend/plan to do",
     "rules": [
       {
-        "zh": "무받침+려고 하다",
+        "zh": "무收音+려고 하다",
         "en": "No batchim + 려고 하다"
       },
       {
-        "zh": "받침+으려고 하다",
+        "zh": "收音+으려고 하다",
         "en": "Batchim + 으려고 하다"
       }
     ],
@@ -570,7 +570,7 @@ const grammarDB = [
     "meaning_en": "Decide to do",
     "rules": [
       {
-        "zh": "동사+기로 하다",
+        "zh": "动词+기로 하다",
         "en": "Verb + 기로 하다"
       }
     ],
@@ -598,7 +598,7 @@ const grammarDB = [
     "meaning_en": "Was just about to do",
     "rules": [
       {
-        "zh": "동사+(으)려던 참이다",
+        "zh": "动词+(으)려던 참이다",
         "en": "Verb + (으)려던 참이다"
       }
     ],
@@ -654,7 +654,7 @@ const grammarDB = [
     "meaning_en": "My intention, so you should...",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ 테니까",
+        "zh": "动/形+(으)ㄹ 테니까",
         "en": "V/A + (으)ㄹ 테니까"
       }
     ],
@@ -682,7 +682,7 @@ const grammarDB = [
     "meaning_en": "Worried/afraid that",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ까 봐",
+        "zh": "动词+(으)ㄹ까 봐",
         "en": "Verb + (으)ㄹ까 봐"
       }
     ],
@@ -742,7 +742,7 @@ const grammarDB = [
     "meaning_en": "Expected situation with concern",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ 텐데",
+        "zh": "动/形+(으)ㄹ 텐데",
         "en": "V/A + (으)ㄹ 텐데"
       }
     ],
@@ -770,7 +770,7 @@ const grammarDB = [
     "meaning_en": "No way, impossible",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ 리가 없다",
+        "zh": "动/形+(으)ㄹ 리가 없다",
         "en": "V/A + (으)ㄹ 리가 없다"
       }
     ],
@@ -798,7 +798,7 @@ const grammarDB = [
     "meaning_en": "Might, perhaps",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ지도 모르다",
+        "zh": "动/形+(으)ㄹ지도 모르다",
         "en": "V/A + (으)ㄹ지도 모르다"
       }
     ],
@@ -858,7 +858,7 @@ const grammarDB = [
     "meaning_en": "Unexpected/expected outcome",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ 줄 몰랐다",
+        "zh": "动/形+(으)ㄹ 줄 몰랐다",
         "en": "V/A + (으)ㄹ 줄 몰랐다"
       }
     ],
@@ -954,7 +954,7 @@ const grammarDB = [
     "meaning_en": "Indirect quotation (question)",
     "rules": [
       {
-        "zh": "동/형+냐고 하다",
+        "zh": "动/形+냐고 하다",
         "en": "V/A + 냐고 하다"
       }
     ],
@@ -982,7 +982,7 @@ const grammarDB = [
     "meaning_en": "Indirect quotation (command)",
     "rules": [
       {
-        "zh": "동사+(으)라고 하다",
+        "zh": "动词+(으)라고 하다",
         "en": "Verb + (으)라고 하다"
       }
     ],
@@ -1010,7 +1010,7 @@ const grammarDB = [
     "meaning_en": "Indirect quotation (suggestion)",
     "rules": [
       {
-        "zh": "동사+자고 하다",
+        "zh": "动词+자고 하다",
         "en": "Verb + 자고 하다"
       }
     ],
@@ -1106,7 +1106,7 @@ const grammarDB = [
     "meaning_en": "Try doing; have experienced",
     "rules": [
       {
-        "zh": "동사+아/어 보다",
+        "zh": "动词+아/어 보다",
         "en": "Verb + 아/어 보다"
       }
     ],
@@ -1162,7 +1162,7 @@ const grammarDB = [
     "meaning_en": "Come to, end up",
     "rules": [
       {
-        "zh": "동/형+게 되다",
+        "zh": "动/形+게 되다",
         "en": "V/A + 게 되다"
       }
     ],
@@ -1190,7 +1190,7 @@ const grammarDB = [
     "meaning_en": "Have/haven't experienced",
     "rules": [
       {
-        "zh": "동사+ㄴ/은 적이 있다",
+        "zh": "动词+ㄴ/은 적이 있다",
         "en": "Verb + ㄴ/은 적이 있다"
       }
     ],
@@ -1218,7 +1218,7 @@ const grammarDB = [
     "meaning_en": "After doing, the result was",
     "rules": [
       {
-        "zh": "동사+았/었더니",
+        "zh": "动词+았/었더니",
         "en": "Verb + 았/었더니"
       }
     ],
@@ -1246,7 +1246,7 @@ const grammarDB = [
     "meaning_en": "Used to do regularly",
     "rules": [
       {
-        "zh": "동사+곤 하다",
+        "zh": "动词+곤 하다",
         "en": "Verb + 곤 하다"
       }
     ],
@@ -1274,7 +1274,7 @@ const grammarDB = [
     "meaning_en": "Observed change or contrast",
     "rules": [
       {
-        "zh": "동/형+더니",
+        "zh": "动/形+더니",
         "en": "V/A + 더니"
       }
     ],
@@ -1342,7 +1342,7 @@ const grammarDB = [
     "meaning_en": "Causative (make someone do)",
     "rules": [
       {
-        "zh": "동사+게 하다",
+        "zh": "动词+게 하다",
         "en": "Verb + 게 하다"
       }
     ],
@@ -1438,7 +1438,7 @@ const grammarDB = [
     "meaning_en": "To the extent/degree that",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ 정도로",
+        "zh": "动/形+(으)ㄹ 정도로",
         "en": "V/A + (으)ㄹ 정도로"
       }
     ],
@@ -1466,7 +1466,7 @@ const grammarDB = [
     "meaning_en": "No sooner than",
     "rules": [
       {
-        "zh": "동사+기가 무섭게",
+        "zh": "动词+기가 무섭게",
         "en": "Verb + 기가 무섭게"
       }
     ],
@@ -1494,7 +1494,7 @@ const grammarDB = [
     "meaning_en": "Worth doing, deserving of",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ 만하다",
+        "zh": "动词+(으)ㄹ 만하다",
         "en": "Verb + (으)ㄹ 만하다"
       }
     ],
@@ -1522,7 +1522,7 @@ const grammarDB = [
     "meaning_en": "For a (surprisingly good/bad)",
     "rules": [
       {
-        "zh": "명사+치고",
+        "zh": "名词+치고",
         "en": "Noun + 치고"
       }
     ],
@@ -1550,7 +1550,7 @@ const grammarDB = [
     "meaning_en": "Pointless whether done or not",
     "rules": [
       {
-        "zh": "동사+(으)나 마나",
+        "zh": "动词+(으)나 마나",
         "en": "Verb + (으)나 마나"
       }
     ],
@@ -1578,7 +1578,7 @@ const grammarDB = [
     "meaning_en": "Not only A but also B",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ 뿐만 아니라",
+        "zh": "动/形+(으)ㄹ 뿐만 아니라",
         "en": "V/A + (으)ㄹ 뿐만 아니라"
       }
     ],
@@ -1606,7 +1606,7 @@ const grammarDB = [
     "meaning_en": "Considering the action",
     "rules": [
       {
-        "zh": "동/형+기에(는)",
+        "zh": "动/形+기에(는)",
         "en": "V/A + 기에(는)"
       }
     ],
@@ -1634,7 +1634,7 @@ const grammarDB = [
     "meaning_en": "Naturally bound to happen",
     "rules": [
       {
-        "zh": "동/형+기 마련이다",
+        "zh": "动/形+기 마련이다",
         "en": "V/A + 기 마련이다"
       }
     ],
@@ -1690,7 +1690,7 @@ const grammarDB = [
     "meaning_en": "Emphasizes degree (you can't imagine how much)",
     "rules": [
       {
-        "zh": "얼마나+동/형+는지/ㄴ지 모르다",
+        "zh": "얼마나+动/形+는지/ㄴ지 모르다",
         "en": "얼마나 + V/A + 는지/ㄴ지 모르다"
       }
     ],
@@ -1718,7 +1718,7 @@ const grammarDB = [
     "meaning_en": "The more ~ the more",
     "rules": [
       {
-        "zh": "동/형+(으)ㄹ수록",
+        "zh": "动/形+(으)ㄹ수록",
         "en": "V/A + (으)ㄹ수록"
       }
     ],
@@ -1746,7 +1746,7 @@ const grammarDB = [
     "meaning_en": "Whether A or B",
     "rules": [
       {
-        "zh": "동/형+든지",
+        "zh": "动/形+든지",
         "en": "V/A + 든지"
       }
     ],
@@ -1774,7 +1774,7 @@ const grammarDB = [
     "meaning_en": "Rather than",
     "rules": [
       {
-        "zh": "동사+느니 차라리",
+        "zh": "动词+느니 차라리",
         "en": "Verb + 느니 차라리"
       }
     ],
@@ -1802,7 +1802,7 @@ const grammarDB = [
     "meaning_en": "Do in advance and maintain",
     "rules": [
       {
-        "zh": "동사+아/어 놓다",
+        "zh": "动词+아/어 놓다",
         "en": "Verb + 아/어 놓다"
       }
     ],
@@ -1830,7 +1830,7 @@ const grammarDB = [
     "meaning_en": "Resultant state (be in a state of)",
     "rules": [
       {
-        "zh": "동사+아/어 있다",
+        "zh": "动词+아/어 있다",
         "en": "Verb + 아/어 있다"
       }
     ],
@@ -1890,7 +1890,7 @@ const grammarDB = [
     "meaning_en": "Almost happened",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ 뻔하다",
+        "zh": "动词+(으)ㄹ 뻔하다",
         "en": "Verb + (으)ㄹ 뻔하다"
       }
     ],
@@ -1918,7 +1918,7 @@ const grammarDB = [
     "meaning_en": "Completely finished (with emotion)",
     "rules": [
       {
-        "zh": "동사+아/어 버리다",
+        "zh": "动词+아/어 버리다",
         "en": "Verb + 아/어 버리다"
       }
     ],
@@ -1946,7 +1946,7 @@ const grammarDB = [
     "meaning_en": "Regret not doing",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ 걸 그랬다",
+        "zh": "动词+(으)ㄹ 걸 그랬다",
         "en": "Verb + (으)ㄹ 걸 그랬다"
       }
     ],
@@ -1974,7 +1974,7 @@ const grammarDB = [
     "meaning_en": "Hypothetical past (if I had...)",
     "rules": [
       {
-        "zh": "동사+았/었더라면",
+        "zh": "动词+았/었더라면",
         "en": "Verb + 았/었더라면"
       }
     ],
@@ -2318,7 +2318,7 @@ const grammarDB = [
     "meaning_en": "Present progressive",
     "rules": [
       {
-        "zh": "동사+고 있다",
+        "zh": "动词+고 있다",
         "en": "Verb + 고 있다"
       }
     ],
@@ -2346,7 +2346,7 @@ const grammarDB = [
     "meaning_en": "Exclamation of surprise",
     "rules": [
       {
-        "zh": "동/형+네요",
+        "zh": "动/形+네요",
         "en": "V/A + 네요"
       }
     ],
@@ -2406,7 +2406,7 @@ const grammarDB = [
     "meaning_en": "Stating a fact the listener knows",
     "rules": [
       {
-        "zh": "동/형+잖아요",
+        "zh": "动/形+잖아요",
         "en": "V/A + 잖아요"
       }
     ],
@@ -2434,7 +2434,7 @@ const grammarDB = [
     "meaning_en": "Modest denial or disagreement",
     "rules": [
       {
-        "zh": "동/형+기는요",
+        "zh": "动/形+기는요",
         "en": "V/A + 기는요"
       }
     ],
@@ -2462,7 +2462,7 @@ const grammarDB = [
     "meaning_en": "Casual intention",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ래요",
+        "zh": "动词+(으)ㄹ래요",
         "en": "Verb + (으)ㄹ래요"
       }
     ],
@@ -2522,7 +2522,7 @@ const grammarDB = [
     "meaning_en": "Recalling personal observation",
     "rules": [
       {
-        "zh": "동/형+더라고요",
+        "zh": "动/形+더라고요",
         "en": "V/A + 더라고요"
       }
     ],
@@ -2758,7 +2758,7 @@ const grammarDB = [
     "meaning_en": "Past modifier (recall)",
     "rules": [
       {
-        "zh": "동/형+던",
+        "zh": "动/形+던",
         "en": "V/A + 던"
       }
     ],
@@ -2786,7 +2786,7 @@ const grammarDB = [
     "meaning_en": "Past experience modifier",
     "rules": [
       {
-        "zh": "동사+았/었던",
+        "zh": "动词+았/었던",
         "en": "Verb + 았/었던"
       }
     ],
@@ -2882,7 +2882,7 @@ const grammarDB = [
     "meaning_en": "Giving reason/explanation",
     "rules": [
       {
-        "zh": "동/형+거든요",
+        "zh": "动/形+거든요",
         "en": "V/A + 거든요"
       }
     ],
@@ -2942,7 +2942,7 @@ const grammarDB = [
     "meaning_en": "Excuse for negative result",
     "rules": [
       {
-        "zh": "동사+느라고",
+        "zh": "动词+느라고",
         "en": "Verb + 느라고"
       }
     ],
@@ -2970,7 +2970,7 @@ const grammarDB = [
     "meaning_en": "Because (I discovered that)",
     "rules": [
       {
-        "zh": "동/형+길래",
+        "zh": "动/形+길래",
         "en": "V/A + 길래"
       }
     ],
@@ -3030,7 +3030,7 @@ const grammarDB = [
     "meaning_en": "Due to an unexpected event (negative)",
     "rules": [
       {
-        "zh": "동사+는 바람에",
+        "zh": "动词+는 바람에",
         "en": "Verb + 는 바람에"
       }
     ],
@@ -3118,7 +3118,7 @@ const grammarDB = [
     "meaning_en": "Even if, although",
     "rules": [
       {
-        "zh": "동/형+아도/어도",
+        "zh": "动/形+아도/어도",
         "en": "V/A + 아도/어도"
       }
     ],
@@ -3178,7 +3178,7 @@ const grammarDB = [
     "meaning_en": "Even if (hypothetical concession)",
     "rules": [
       {
-        "zh": "동/형+더라도",
+        "zh": "动/形+더라도",
         "en": "V/A + 더라도"
       }
     ],
@@ -3234,7 +3234,7 @@ const grammarDB = [
     "meaning_en": "Switching actions midway",
     "rules": [
       {
-        "zh": "동사+다가",
+        "zh": "动词+다가",
         "en": "Verb + 다가"
       }
     ],
@@ -3262,11 +3262,11 @@ const grammarDB = [
     "meaning_en": "When, at the time of",
     "rules": [
       {
-        "zh": "무받침+ㄹ 때",
+        "zh": "무收音+ㄹ 때",
         "en": "No batchim + ㄹ 때"
       },
       {
-        "zh": "받침+을 때",
+        "zh": "收音+을 때",
         "en": "Batchim + 을 때"
       }
     ],
@@ -3294,7 +3294,7 @@ const grammarDB = [
     "meaning_en": "Or (connects verbs/adj)",
     "rules": [
       {
-        "zh": "동사/형+거나",
+        "zh": "动词/형+거나",
         "en": "V/A + 거나"
       }
     ],
@@ -3322,7 +3322,7 @@ const grammarDB = [
     "meaning_en": "Time since doing",
     "rules": [
       {
-        "zh": "동사+ㄴ/은 지",
+        "zh": "动词+ㄴ/은 지",
         "en": "Verb + ㄴ/은 지"
       }
     ],
@@ -3386,7 +3386,7 @@ const grammarDB = [
         "en": "Verb(past) + ㄴ/은 후에"
       },
       {
-        "zh": "동사+기 전에",
+        "zh": "动词+기 전에",
         "en": "Verb + 기 전에 (before)"
       }
     ],
@@ -3446,7 +3446,7 @@ const grammarDB = [
     "meaning_en": "During the time of",
     "rules": [
       {
-        "zh": "동사+는 동안",
+        "zh": "动词+는 동안",
         "en": "Verb + 는 동안"
       }
     ],
@@ -3474,7 +3474,7 @@ const grammarDB = [
     "meaning_en": "As soon as",
     "rules": [
       {
-        "zh": "동사+자마자",
+        "zh": "动词+자마자",
         "en": "Verb + 자마자"
       }
     ],
@@ -3502,7 +3502,7 @@ const grammarDB = [
     "meaning_en": "While remaining in a state",
     "rules": [
       {
-        "zh": "동사+(으)ㄴ 채로",
+        "zh": "动词+(으)ㄴ 채로",
         "en": "Verb + (으)ㄴ 채로"
       }
     ],
@@ -3562,7 +3562,7 @@ const grammarDB = [
     "meaning_en": "While you're at it",
     "rules": [
       {
-        "zh": "동사+는 김에",
+        "zh": "动词+는 김에",
         "en": "Verb + 는 김에"
       }
     ],
@@ -3622,11 +3622,11 @@ const grammarDB = [
     "meaning_en": "In order to",
     "rules": [
       {
-        "zh": "무받침+려고",
+        "zh": "무收音+려고",
         "en": "No batchim + 려고"
       },
       {
-        "zh": "받침+으려고",
+        "zh": "收音+으려고",
         "en": "Batchim + 으려고"
       }
     ],
@@ -3686,7 +3686,7 @@ const grammarDB = [
     "meaning_en": "In order to (purpose)",
     "rules": [
       {
-        "zh": "동사+기 위해서",
+        "zh": "动词+기 위해서",
         "en": "Verb + 기 위해서"
       }
     ],
@@ -3714,7 +3714,7 @@ const grammarDB = [
     "meaning_en": "While at it, also for",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ 겸",
+        "zh": "动词+(으)ㄹ 겸",
         "en": "Verb + (으)ㄹ 겸"
       }
     ],
@@ -3742,7 +3742,7 @@ const grammarDB = [
     "meaning_en": "If one intends to",
     "rules": [
       {
-        "zh": "동사+(으)려면",
+        "zh": "动词+(으)려면",
         "en": "Verb + (으)려면"
       }
     ],
@@ -3770,7 +3770,7 @@ const grammarDB = [
     "meaning_en": "So that, until",
     "rules": [
       {
-        "zh": "동사+도록",
+        "zh": "动词+도록",
         "en": "Verb + 도록"
       }
     ],
@@ -3830,7 +3830,7 @@ const grammarDB = [
     "meaning_en": "Permission (may/can)",
     "rules": [
       {
-        "zh": "동사+아/어도 되다",
+        "zh": "动词+아/어도 되다",
         "en": "Verb + 아/어도 되다"
       }
     ],
@@ -3890,7 +3890,7 @@ const grammarDB = [
     "meaning_en": "Have no choice but to",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ 수밖에 없다",
+        "zh": "动词+(으)ㄹ 수밖에 없다",
         "en": "Verb + (으)ㄹ 수밖에 없다"
       }
     ],
@@ -3918,7 +3918,7 @@ const grammarDB = [
     "meaning_en": "Can't even if one tries",
     "rules": [
       {
-        "zh": "동사+(으)ㄹ래야 (으)ㄹ 수 없다",
+        "zh": "动词+(으)ㄹ래야 (으)ㄹ 수 없다",
         "en": "Verb + (으)ㄹ래야 (으)ㄹ 수 없다"
       }
     ],
@@ -3946,11 +3946,11 @@ const grammarDB = [
     "meaning_en": "Indicates that an action is currently in progress. Often emphasizes being in the middle of doing something right now.",
     "rules": [
       {
-        "zh": "동사+는 중이다",
+        "zh": "动词+는 중이다",
         "en": "Verb + 는 중이다"
       },
       {
-        "zh": "명사+중이다",
+        "zh": "名词+중이다",
         "en": "Noun + 중이다"
       }
     ],
@@ -3978,7 +3978,7 @@ const grammarDB = [
     "meaning_en": "Means 'only' or 'nothing but'. MUST be followed by a negative form (안, 못, 없다, 모르다, etc.).",
     "rules": [
       {
-        "zh": "명사+밖에",
+        "zh": "名词+밖에",
         "en": "Noun + 밖에"
       }
     ],
@@ -4006,15 +4006,15 @@ const grammarDB = [
     "meaning_en": "Means 'instead of' or 'in return/exchange for'. Used to show replacement or compensation for an action.",
     "rules": [
       {
-        "zh": "동사+는 대신에",
+        "zh": "动词+는 대신에",
         "en": "Verb + 는 대신에"
       },
       {
-        "zh": "형용사+(으)ㄴ 대신에",
+        "zh": "形容词+(으)ㄴ 대신에",
         "en": "Adj + (으)ㄴ 대신에"
       },
       {
-        "zh": "명사+대신에",
+        "zh": "名词+대신에",
         "en": "Noun + 대신에"
       }
     ],
@@ -4042,7 +4042,7 @@ const grammarDB = [
     "meaning_en": "Indicates that meeting a certain condition is sufficient. 'All you have to do is...' or 'It is enough if...'",
     "rules": [
       {
-        "zh": "동/형+(으)면 되다",
+        "zh": "动/形+(으)면 되다",
         "en": "V/A + (으)면 되다"
       }
     ],
@@ -4070,15 +4070,15 @@ const grammarDB = [
     "meaning_en": "An objective guess based on a situation or observation (It appears/looks like...). Cannot be used for one's own actions.",
     "rules": [
       {
-        "zh": "동사+는 모양이다",
+        "zh": "动词+는 모양이다",
         "en": "Verb + 는 모양이다"
       },
       {
-        "zh": "형용사+(으)ㄴ 모양이다",
+        "zh": "形容词+(으)ㄴ 모양이다",
         "en": "Adj + (으)ㄴ 모양이다"
       },
       {
-        "zh": "명사+인 모양이다",
+        "zh": "名词+인 모양이다",
         "en": "Noun + 인 모양이다"
       }
     ],
@@ -4106,7 +4106,7 @@ const grammarDB = [
     "meaning_en": "Indicates that while continuously doing an action, one realizes a new fact or a certain result naturally occurs.",
     "rules": [
       {
-        "zh": "동사+다 보니(까)",
+        "zh": "动词+다 보니(까)",
         "en": "Verb + 다 보니(까)"
       }
     ],
@@ -4134,7 +4134,7 @@ const grammarDB = [
     "meaning_en": "Warns that if an action/state continues as it is, a negative consequence will inevitably follow.",
     "rules": [
       {
-        "zh": "동사+다가는",
+        "zh": "动词+다가는",
         "en": "Verb + 다가는"
       }
     ],
@@ -4162,7 +4162,7 @@ const grammarDB = [
     "meaning_en": "Means 'only after' doing something or 'not until' a certain point. Emphasizes that the condition is strict or late.",
     "rules": [
       {
-        "zh": "동/형+아/어서야",
+        "zh": "动/形+아/어서야",
         "en": "V/A + 아/어서야"
       }
     ],
@@ -4190,11 +4190,11 @@ const grammarDB = [
     "meaning_en": "Used to strongly agree with the listener or confirm that something is an absolute certainty ('Of course I will/it is').",
     "rules": [
       {
-        "zh": "동/형+고말고요",
+        "zh": "动/形+고말고요",
         "en": "V/A + 고말고요"
       },
       {
-        "zh": "명사+(이)고말고요",
+        "zh": "名词+(이)고말고요",
         "en": "Noun + (이)고말고요"
       }
     ],
@@ -4222,11 +4222,11 @@ const grammarDB = [
     "meaning_en": "Indirect request. Used when quoting someone asking to give something TO THEMSELVES (the original speaker).",
     "rules": [
       {
-        "zh": "명사+달라고 하다",
+        "zh": "名词+달라고 하다",
         "en": "Noun + 달라고 하다"
       },
       {
-        "zh": "동사+아/어 달라고 하다",
+        "zh": "动词+아/어 달라고 하다",
         "en": "Verb + 아/어 달라고 하다"
       }
     ],
@@ -4254,11 +4254,11 @@ const grammarDB = [
     "meaning_en": "Indirect request. Used when quoting someone asking to give something to a THIRD PARTY (not the speaker).",
     "rules": [
       {
-        "zh": "명사+주라고 하다",
+        "zh": "名词+주라고 하다",
         "en": "Noun + 주라고 하다"
       },
       {
-        "zh": "동사+아/어 주라고 하다",
+        "zh": "动词+아/어 주라고 하다",
         "en": "Verb + 아/어 주라고 하다"
       }
     ],
