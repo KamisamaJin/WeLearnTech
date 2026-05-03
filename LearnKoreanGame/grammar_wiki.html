@@ -150,6 +150,14 @@
             color: var(--secondary);
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
+            display: flex;
+            align-items: baseline;
+        }
+        .header-zh {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-left: 8px;
+            font-weight: 500;
         }
         .examples-container {
             display: flex;
@@ -436,7 +444,7 @@
                 </div>
                 
                 <div class="grammar-section">
-                    <h3>Meaning & Rules (含义与结合规则)</h3>
+                    <h3>Meaning & Rules <span class="header-zh">(含义与结合规则)</span></h3>
                     <div class="meaning-box">
                         <span class="meaning-en">${item.meaning_en}</span>
                         <span class="meaning-zh">${item.meaning_zh}</span>
@@ -448,7 +456,7 @@
                 </div>
 
                 <div class="grammar-section">
-                    <h3>Examples (例句)</h3>
+                    <h3>Examples <span class="header-zh">(例句)</span></h3>
                     <div class="examples-container">
                         ${examplesHtml}
                     </div>
@@ -456,7 +464,7 @@
                 
                 ${item.notes ? `
                 <div class="grammar-section" style="border-color: var(--accent);">
-                    <h3 style="color: var(--accent);">Deep Dive Notes (深入解析)</h3>
+                    <h3 style="color: var(--accent);">Deep Dive Notes <span class="header-zh" style="color: rgba(244,114,182,0.7);">(深入解析)</span></h3>
                     ${notesHtml}
                 </div>
                 ` : ''}
