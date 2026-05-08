@@ -23,7 +23,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            height: 100vh;
+            height: 100vh;       /* fallback for older browsers */
+            height: 100dvh;      /* dvh = real visible height, adjusts when browser toolbar shows/hides */
             overflow: hidden;
         }
         .sidebar {
