@@ -323,7 +323,39 @@
             backdrop-filter: blur(10px);
             z-index: 100;
         }
-        .mobile-header h1 { margin: 0; font-size: 1.2rem; color: var(--primary); flex: 1; }
+        .mobile-header-title {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .mobile-title-brand {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 800;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .mobile-title-detail {
+            display: none;
+            min-width: 0;
+            align-items: center;
+            gap: 8px;
+        }
+        .mobile-header.show-detail-title .mobile-title-brand { display: none; }
+        .mobile-header.show-detail-title .mobile-title-detail { display: flex; }
+        .mobile-detail-text {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 800;
+        }
         .menu-toggle {
             background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0;
         }
@@ -380,8 +412,14 @@
     </div>
     
     <div class="content-wrapper">
-        <div class="mobile-header">
-            <h1>K-Lingo Grammar Wiki</h1>
+        <div class="mobile-header" id="mobile-header">
+            <div class="mobile-header-title">
+                <span class="mobile-title-brand">K-Lingo Grammar Wiki</span>
+                <span class="mobile-title-detail">
+                    <span class="badge-level" id="mobile-detail-level"></span>
+                    <span class="mobile-detail-text" id="mobile-detail-text"></span>
+                </span>
+            </div>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         </div>
         <div class="main-content" id="main-content">
@@ -410,8 +448,12 @@
         const searchInput = document.getElementById('search');
         const sidebar = document.getElementById('sidebar');
         const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const mobileHeader = document.getElementById('mobile-header');
+        const mobileDetailLevel = document.getElementById('mobile-detail-level');
+        const mobileDetailText = document.getElementById('mobile-detail-text');
         let currentLevel = 'all';
         let currentItemId = null;
+        let detailTitleObserver = null;
 
         function getFilteredItems() {
             const q = searchInput.value.toLowerCase();
@@ -477,6 +519,50 @@
                 btnNext.classList.add('disabled');
                 nextLabel.textContent = 'Next';
             }
+        }
+
+        function setMobileHeaderDetail(item, showDetail) {
+            mobileDetailLevel.className = 'badge-level ' + item.level.toLowerCase();
+            mobileDetailLevel.textContent = item.level;
+            mobileDetailText.textContent = item.title;
+            mobileHeader.classList.toggle('show-detail-title', showDetail && window.innerWidth <= 768);
+        }
+
+        function resetMobileHeaderTitle() {
+            mobileHeader.classList.remove('show-detail-title');
+            mobileDetailLevel.className = 'badge-level';
+            mobileDetailLevel.textContent = '';
+            mobileDetailText.textContent = '';
+        }
+
+        function watchDetailTitle(item) {
+            if (detailTitleObserver) {
+                detailTitleObserver.disconnect();
+                detailTitleObserver = null;
+            }
+
+            const detailHeader = mainContent.querySelector('.grammar-header');
+            if (!detailHeader) {
+                resetMobileHeaderTitle();
+                return;
+            }
+
+            setMobileHeaderDetail(item, false);
+
+            if (!('IntersectionObserver' in window)) {
+                return;
+            }
+
+            detailTitleObserver = new IntersectionObserver(entries => {
+                const isHeaderVisible = entries[0].isIntersecting;
+                const isScrolledPastHeader = mainContent.scrollTop > detailHeader.offsetTop;
+                setMobileHeaderDetail(item, !isHeaderVisible && isScrolledPastHeader);
+            }, {
+                root: mainContent,
+                threshold: 0
+            });
+
+            detailTitleObserver.observe(detailHeader);
         }
 
         function toggleMenu() {
@@ -634,9 +720,15 @@
                 ` : ''}
             `;
             updateNavButtons();
+            watchDetailTitle(item);
         }
 
         searchInput.addEventListener('input', (e) => renderNav(e.target.value));
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                mobileHeader.classList.remove('show-detail-title');
+            }
+        });
         renderNav();
 
         // Mobile swipe gesture logic
