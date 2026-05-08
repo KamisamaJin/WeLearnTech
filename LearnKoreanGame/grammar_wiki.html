@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>K-Lingo Grammar Wiki</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
@@ -112,6 +112,7 @@
         .main-content {
             flex: 1;
             padding: 20px 24px;
+            padding-bottom: max(80px, calc(20px + env(safe-area-inset-bottom)));
             overflow-y: auto;
             background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.05), transparent 50%);
         }
