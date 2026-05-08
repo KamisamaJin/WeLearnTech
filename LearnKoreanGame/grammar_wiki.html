@@ -272,27 +272,29 @@
             gap: 6px;
             padding: 10px 16px;
             border-radius: 50px;
-            border: 1px solid rgba(255,255,255,0.15);
-            background: rgba(15, 23, 42, 0.65);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            color: var(--text-main);
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(15, 23, 42, 0.35);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            color: rgba(248, 250, 252, 0.75);
             font-family: inherit;
             font-size: 0.85rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
             letter-spacing: 0.3px;
+            outline: none;
         }
         .nav-float-btn:hover {
-            background: rgba(56, 189, 248, 0.18);
-            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.15);
+            border-color: rgba(56, 189, 248, 0.4);
             color: var(--primary);
             transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 8px 28px rgba(56, 189, 248, 0.15);
         }
         .nav-float-btn:active { transform: translateY(0); }
+        .nav-float-btn:focus { outline: none; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
         .nav-float-btn.disabled {
             opacity: 0.3;
             pointer-events: none;
@@ -390,11 +392,11 @@
         </div>
         <!-- Floating prev/next navigation -->
         <div class="nav-float-btns" id="nav-float-btns">
-            <button class="nav-float-btn" id="btn-prev" onclick="navigateDelta(-1)">
+            <button class="nav-float-btn" id="btn-prev" onclick="navigateDelta(-1); this.blur();">
                 <span class="btn-icon">←</span>
                 <span class="btn-label" id="prev-label">Prev</span>
             </button>
-            <button class="nav-float-btn" id="btn-next" onclick="navigateDelta(1)">
+            <button class="nav-float-btn" id="btn-next" onclick="navigateDelta(1); this.blur();">
                 <span class="btn-label" id="next-label">Next</span>
                 <span class="btn-icon">→</span>
             </button>
