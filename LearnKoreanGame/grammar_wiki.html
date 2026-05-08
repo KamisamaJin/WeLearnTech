@@ -509,14 +509,17 @@
         renderNav();
 
         // Mobile swipe gesture logic
+        const levels = ['all', 'L1', 'L2', 'L3', 'L4'];
         let touchStartX = 0;
         let touchEndX = 0;
         let touchStartY = 0;
         let touchEndY = 0;
+        let touchStartTarget = null;
 
         document.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
             touchStartY = e.changedTouches[0].screenY;
+            touchStartTarget = e.target;
         }, {passive: true});
 
         document.addEventListener('touchend', e => {
@@ -528,20 +531,33 @@
         function handleSwipe() {
             const deltaX = touchEndX - touchStartX;
             const deltaY = touchEndY - touchStartY;
-            const threshold = 50; // minimum swipe distance
+            const threshold = 50;
             const isMobile = window.innerWidth <= 768;
-            
+
             if (!isMobile) return;
 
-            // Only trigger if horizontal movement is significantly greater than vertical movement
-            // This prevents vertical scrolling from accidentally triggering the sidebar
-            if (Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
-                // Swipe right to open menu
+            // Only trigger for clearly horizontal swipes
+            if (Math.abs(deltaX) <= Math.abs(deltaY) * 1.5) return;
+
+            const insideSidebar = sidebar.contains(touchStartTarget);
+
+            if (insideSidebar && sidebar.classList.contains('open')) {
+                // Swipe inside sidebar → cycle level tabs
+                const currentIndex = levels.indexOf(currentLevel);
+                if (deltaX < -threshold) {
+                    // Swipe left → next level
+                    const nextIndex = (currentIndex + 1) % levels.length;
+                    setLevelFilter(levels[nextIndex]);
+                } else if (deltaX > threshold) {
+                    // Swipe right → previous level
+                    const prevIndex = (currentIndex - 1 + levels.length) % levels.length;
+                    setLevelFilter(levels[prevIndex]);
+                }
+            } else {
+                // Swipe on main content → open/close sidebar
                 if (deltaX > threshold) {
                     if (!sidebar.classList.contains('open')) toggleMenu();
-                } 
-                // Swipe left to close menu
-                else if (deltaX < -threshold) {
+                } else if (deltaX < -threshold) {
                     if (sidebar.classList.contains('open')) toggleMenu();
                 }
             }
