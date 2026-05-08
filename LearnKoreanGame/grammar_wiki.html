@@ -255,6 +255,51 @@
             color: var(--text-muted);
         }
         .note-line:last-child { margin-bottom: 0; }
+        /* Floating prev/next nav buttons */
+        .nav-float-btns {
+            position: fixed;
+            bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+            right: 20px;
+            display: none;
+            gap: 8px;
+            z-index: 100;
+            align-items: center;
+        }
+        .nav-float-btns.visible { display: flex; }
+        .nav-float-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+            letter-spacing: 0.3px;
+        }
+        .nav-float-btn:hover {
+            background: rgba(56, 189, 248, 0.18);
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(56, 189, 248, 0.2);
+        }
+        .nav-float-btn:active { transform: translateY(0); }
+        .nav-float-btn.disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .nav-float-btn .btn-icon { font-size: 1rem; }
+        .nav-float-btn .btn-label { max-width: 90px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
         .empty-state {
             display: flex;
             flex-direction: column;
@@ -343,6 +388,17 @@
                 <p>Select a grammar point from the menu to deep dive.</p>
             </div>
         </div>
+        <!-- Floating prev/next navigation -->
+        <div class="nav-float-btns" id="nav-float-btns">
+            <button class="nav-float-btn" id="btn-prev" onclick="navigateDelta(-1)">
+                <span class="btn-icon">←</span>
+                <span class="btn-label" id="prev-label">Prev</span>
+            </button>
+            <button class="nav-float-btn" id="btn-next" onclick="navigateDelta(1)">
+                <span class="btn-label" id="next-label">Next</span>
+                <span class="btn-icon">→</span>
+            </button>
+        </div>
     </div>
 
     <script src="grammar_data.js"></script>
@@ -353,6 +409,73 @@
         const sidebar = document.getElementById('sidebar');
         const sidebarOverlay = document.getElementById('sidebar-overlay');
         let currentLevel = 'all';
+        let currentItemId = null;
+
+        function getFilteredItems() {
+            const q = searchInput.value.toLowerCase();
+            return grammarDB.filter(i => {
+                if (currentLevel !== 'all' && i.level !== currentLevel) return false;
+                if (!q) return true;
+                return i.title.toLowerCase().includes(q) ||
+                       i.desc.toLowerCase().includes(q) ||
+                       i.meaning_zh.includes(searchInput.value) ||
+                       i.meaning_en.toLowerCase().includes(q);
+            });
+        }
+
+        function navigateDelta(delta) {
+            const items = getFilteredItems();
+            const idx = items.findIndex(i => i.id === currentItemId);
+            if (idx === -1) return;
+            const next = items[idx + delta];
+            if (!next) return;
+            // Sync sidebar active state
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            const navItems = navList.querySelectorAll('.nav-item');
+            navItems.forEach(el => {
+                if (el.querySelector('.nav-title') && el.querySelector('.nav-title').textContent === next.title) {
+                    el.classList.add('active');
+                    el.scrollIntoView({ block: 'nearest' });
+                }
+            });
+            renderContent(next);
+        }
+
+        function updateNavButtons() {
+            const items = getFilteredItems();
+            const idx = items.findIndex(i => i.id === currentItemId);
+            const floatBtns = document.getElementById('nav-float-btns');
+            const btnPrev = document.getElementById('btn-prev');
+            const btnNext = document.getElementById('btn-next');
+            const prevLabel = document.getElementById('prev-label');
+            const nextLabel = document.getElementById('next-label');
+
+            if (currentItemId && items.length > 1) {
+                floatBtns.classList.add('visible');
+            } else {
+                floatBtns.classList.remove('visible');
+                return;
+            }
+
+            const prevItem = items[idx - 1];
+            const nextItem = items[idx + 1];
+
+            if (prevItem) {
+                btnPrev.classList.remove('disabled');
+                prevLabel.textContent = prevItem.title;
+            } else {
+                btnPrev.classList.add('disabled');
+                prevLabel.textContent = 'Prev';
+            }
+
+            if (nextItem) {
+                btnNext.classList.remove('disabled');
+                nextLabel.textContent = nextItem.title;
+            } else {
+                btnNext.classList.add('disabled');
+                nextLabel.textContent = 'Next';
+            }
+        }
 
         function toggleMenu() {
             sidebar.classList.toggle('open');
@@ -414,6 +537,9 @@
         }
 
         function renderContent(item) {
+            currentItemId = item.id;
+            // Scroll to top
+            document.getElementById('main-content').scrollTo({ top: 0, behavior: 'smooth' });
             let examplesHtml = item.examples.map(ex => `
                 <div class="example-box">
                     <p class="ex-ko">${ex.ko}</p>
@@ -505,6 +631,7 @@
                 </div>
                 ` : ''}
             `;
+            updateNavButtons();
         }
 
         searchInput.addEventListener('input', (e) => renderNav(e.target.value));
