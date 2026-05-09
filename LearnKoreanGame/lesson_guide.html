@@ -566,6 +566,17 @@
             line-height: 1.3;
         }
 
+        .word-pron {
+            color: var(--muted);
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 800;
+            line-height: 1.3;
+            max-width: 100%;
+            overflow-wrap: anywhere;
+            word-break: keep-all;
+        }
+
         .speak-btn {
             display: inline-grid;
             place-items: center;
@@ -1570,6 +1581,193 @@
                 .trim();
         }
 
+        const hangulBase = 0xac00;
+        const hangulLast = 0xd7a3;
+        const hangulInitials = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+        const hangulMedials = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"];
+        const hangulFinals = ["", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+        const hangulInitialIndex = Object.fromEntries(hangulInitials.map((letter, index) => [letter, index]));
+        const hangulFinalIndex = Object.fromEntries(hangulFinals.map((letter, index) => [letter, index]));
+        const liaisonFinals = {
+            "ㄱ": ["", "ㄱ"],
+            "ㄲ": ["", "ㄲ"],
+            "ㄴ": ["", "ㄴ"],
+            "ㄷ": ["", "ㄷ"],
+            "ㄹ": ["", "ㄹ"],
+            "ㅁ": ["", "ㅁ"],
+            "ㅂ": ["", "ㅂ"],
+            "ㅅ": ["", "ㅅ"],
+            "ㅆ": ["", "ㅆ"],
+            "ㅈ": ["", "ㅈ"],
+            "ㅊ": ["", "ㅊ"],
+            "ㅋ": ["", "ㅋ"],
+            "ㅌ": ["", "ㅌ"],
+            "ㅍ": ["", "ㅍ"],
+            "ㄳ": ["ㄱ", "ㅅ"],
+            "ㄵ": ["ㄴ", "ㅈ"],
+            "ㄺ": ["ㄹ", "ㄱ"],
+            "ㄻ": ["ㄹ", "ㅁ"],
+            "ㄼ": ["ㄹ", "ㅂ"],
+            "ㄽ": ["ㄹ", "ㅅ"],
+            "ㄾ": ["ㄹ", "ㅌ"],
+            "ㄿ": ["ㄹ", "ㅍ"],
+            "ㅄ": ["ㅂ", "ㅅ"]
+        };
+        const neutralFinals = {
+            "ㄲ": "ㄱ",
+            "ㅋ": "ㄱ",
+            "ㄳ": "ㄱ",
+            "ㅅ": "ㄷ",
+            "ㅆ": "ㄷ",
+            "ㅈ": "ㄷ",
+            "ㅊ": "ㄷ",
+            "ㅌ": "ㄷ",
+            "ㅎ": "ㄷ",
+            "ㄵ": "ㄴ",
+            "ㄶ": "ㄴ",
+            "ㄺ": "ㄱ",
+            "ㄻ": "ㅁ",
+            "ㄼ": "ㄹ",
+            "ㄽ": "ㄹ",
+            "ㄾ": "ㄹ",
+            "ㅀ": "ㄹ",
+            "ㄿ": "ㅂ",
+            "ㅄ": "ㅂ",
+            "ㅍ": "ㅂ"
+        };
+        const aspiratedInitials = {
+            "ㄱ": "ㅋ",
+            "ㄷ": "ㅌ",
+            "ㅂ": "ㅍ",
+            "ㅈ": "ㅊ"
+        };
+        const tenseInitials = {
+            "ㄱ": "ㄲ",
+            "ㄷ": "ㄸ",
+            "ㅂ": "ㅃ",
+            "ㅅ": "ㅆ",
+            "ㅈ": "ㅉ"
+        };
+
+        function decomposeHangul(char) {
+            const code = char.charCodeAt(0);
+            if (code < hangulBase || code > hangulLast) return null;
+            const syllableIndex = code - hangulBase;
+            const finalIndex = syllableIndex % 28;
+            const medialIndex = Math.floor(syllableIndex / 28) % 21;
+            const initialIndex = Math.floor(syllableIndex / 588);
+
+            return {
+                initial: hangulInitials[initialIndex],
+                medial: hangulMedials[medialIndex],
+                final: hangulFinals[finalIndex]
+            };
+        }
+
+        function composeHangul({ initial, medial, final = "" }) {
+            const initialIndex = hangulInitialIndex[initial];
+            const medialIndex = hangulMedials.indexOf(medial);
+            const finalIndex = hangulFinalIndex[final] ?? 0;
+            if (initialIndex === undefined || medialIndex < 0) return "";
+
+            return String.fromCharCode(hangulBase + ((initialIndex * 21 + medialIndex) * 28) + finalIndex);
+        }
+
+        function pronounceHangulRun(run) {
+            const syllables = Array.from(run).map(decomposeHangul).filter(Boolean);
+
+            for (let index = 0; index < syllables.length - 1; index += 1) {
+                const current = syllables[index];
+                const next = syllables[index + 1];
+
+                if (current.final === "ㅎ" && aspiratedInitials[next.initial]) {
+                    current.final = "";
+                    next.initial = aspiratedInitials[next.initial];
+                    continue;
+                }
+
+                if ((current.final === "ㄶ" || current.final === "ㅀ") && aspiratedInitials[next.initial]) {
+                    current.final = current.final === "ㄶ" ? "ㄴ" : "ㄹ";
+                    next.initial = aspiratedInitials[next.initial];
+                    continue;
+                }
+
+                if (aspiratedInitials[current.final] && next.initial === "ㅎ") {
+                    next.initial = aspiratedInitials[current.final];
+                    current.final = "";
+                }
+            }
+
+            for (let index = 0; index < syllables.length - 1; index += 1) {
+                const current = syllables[index];
+                const next = syllables[index + 1];
+                if (!current.final || next.initial !== "ㅇ") continue;
+
+                if ((current.final === "ㄷ" || current.final === "ㅌ") && next.medial === "ㅣ") {
+                    next.initial = current.final === "ㄷ" ? "ㅈ" : "ㅊ";
+                    current.final = "";
+                    continue;
+                }
+
+                if (current.final === "ㅇ") continue;
+                if (current.final === "ㅎ") {
+                    current.final = "";
+                    continue;
+                }
+                if (current.final === "ㄶ" || current.final === "ㅀ") {
+                    current.final = current.final === "ㄶ" ? "ㄴ" : "ㄹ";
+                    continue;
+                }
+
+                const moved = liaisonFinals[current.final];
+                if (!moved) continue;
+                current.final = moved[0];
+                next.initial = moved[1];
+            }
+
+            syllables.forEach(syllable => {
+                syllable.final = neutralFinals[syllable.final] || syllable.final;
+            });
+
+            for (let index = 0; index < syllables.length - 1; index += 1) {
+                const current = syllables[index];
+                const next = syllables[index + 1];
+
+                if (["ㄱ", "ㄷ", "ㅂ"].includes(current.final) && ["ㄴ", "ㅁ"].includes(next.initial)) {
+                    current.final = { "ㄱ": "ㅇ", "ㄷ": "ㄴ", "ㅂ": "ㅁ" }[current.final];
+                }
+
+                if (["ㄱ", "ㄷ", "ㅂ"].includes(current.final) && next.initial === "ㄹ") {
+                    current.final = { "ㄱ": "ㅇ", "ㄷ": "ㄴ", "ㅂ": "ㅁ" }[current.final];
+                    next.initial = "ㄴ";
+                }
+
+                if (["ㅁ", "ㅇ"].includes(current.final) && next.initial === "ㄹ") {
+                    next.initial = "ㄴ";
+                }
+
+                if (current.final === "ㄴ" && next.initial === "ㄹ") {
+                    current.final = "ㄹ";
+                    next.initial = "ㄹ";
+                } else if (current.final === "ㄹ" && next.initial === "ㄴ") {
+                    next.initial = "ㄹ";
+                }
+
+                if (["ㄱ", "ㄷ", "ㅂ", "ㄹ"].includes(current.final) && tenseInitials[next.initial]) {
+                    next.initial = tenseInitials[next.initial];
+                }
+            }
+
+            return syllables.map(composeHangul).join("");
+        }
+
+        function koreanPronunciation(value) {
+            const normalized = normalizeKoreanSpeechText(value);
+            if (!hasHangul(normalized)) return "";
+
+            return normalized.replace(/[가-힣]+/g, pronounceHangulRun);
+        }
+
         let speechRunId = 0;
         let preferredKoreanVoice = null;
         let koreanVoicePromise = null;
@@ -1981,6 +2179,7 @@
                             <div class="word-top">
                                 <div class="word-title-line">
                                     <div class="word-ko">${escapeHtml(item.ko)}</div>
+                                    ${hasHangul(item.ko) ? `<span class="word-pron">발음 [${escapeHtml(koreanPronunciation(item.ko))}]</span>` : ""}
                                 </div>
                                 ${hasHangul(item.ko) ? `<button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="${escapeHtml(koreanSpeechLabel(item.ko))}" title="${escapeHtml(koreanSpeechLabel(item.ko))}">
                                     <svg viewBox="0 0 24 24" aria-hidden="true">
