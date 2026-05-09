@@ -938,6 +938,9 @@
     <script src="lesson_data_l3.js"></script>
     <script>
         const lessons = lessonGuideL3.lessons;
+        const lessonCache = new Map();
+        const lessonLoadPromises = new Map();
+        const loadedLessonScripts = new Set();
         const tabs = [
             { id: "overview", label: "总览" },
             { id: "vocabulary", label: "单词" },
@@ -957,6 +960,7 @@
         let activeLessonId = lessons[0].id;
         let activeTab = "overview";
         let showChinese = true;
+        let renderRunId = 0;
         const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
         const tabSwipeState = {
             tracking: false,
@@ -981,8 +985,81 @@
             return "来源待补";
         }
 
-        function getActiveLesson() {
-            return lessons.find(lesson => lesson.id === activeLessonId) || lessons[0];
+        function normalizeLesson(lesson) {
+            return {
+                goals: [],
+                grammar: [],
+                vocabulary: [],
+                dialogues: [],
+                culture: null,
+                practice: [],
+                ...lesson
+            };
+        }
+
+        function getLessonStats(lesson) {
+            return {
+                vocabulary: lesson.vocabulary?.length || lesson.stats?.vocabulary || 0,
+                dialogues: lesson.dialogues?.length || lesson.stats?.dialogues || 0,
+                culture: lesson.culture ? 1 : lesson.stats?.culture || 0,
+                practice: lesson.practice?.length || lesson.stats?.practice || 0
+            };
+        }
+
+        function getLessonMeta(lessonId = activeLessonId) {
+            return lessons.find(lesson => lesson.id === lessonId) || lessons[0];
+        }
+
+        function loadScript(src) {
+            const absoluteSrc = new URL(src, window.location.href).href;
+            if (loadedLessonScripts.has(absoluteSrc)) return Promise.resolve();
+
+            return new Promise((resolve, reject) => {
+                const script = document.createElement("script");
+                script.src = src;
+                script.async = true;
+                script.onload = () => {
+                    loadedLessonScripts.add(absoluteSrc);
+                    resolve();
+                };
+                script.onerror = () => reject(new Error(`课程数据加载失败：${src}`));
+                document.head.appendChild(script);
+            });
+        }
+
+        async function loadLesson(lessonId) {
+            const meta = getLessonMeta(lessonId);
+            if (lessonCache.has(meta.id)) return lessonCache.get(meta.id);
+
+            if (!meta.chunk) {
+                const lesson = normalizeLesson(meta);
+                lessonCache.set(meta.id, lesson);
+                return lesson;
+            }
+
+            if (!lessonLoadPromises.has(meta.id)) {
+                lessonLoadPromises.set(meta.id, (async () => {
+                    await loadScript(meta.chunk);
+                    const chunk = window.lessonGuideL3LessonChunks?.[meta.id];
+                    if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
+
+                    const lesson = normalizeLesson({
+                        ...meta,
+                        ...chunk
+                    });
+                    lessonCache.set(meta.id, lesson);
+                    return lesson;
+                })());
+            }
+
+            return lessonLoadPromises.get(meta.id);
+        }
+
+        function preloadNextLesson(lessonId) {
+            const currentIndex = lessons.findIndex(lesson => lesson.id === lessonId);
+            const next = lessons[currentIndex + 1];
+            if (!next?.chunk || lessonCache.has(next.id) || lessonLoadPromises.has(next.id)) return;
+            loadLesson(next.id).catch(() => {});
         }
 
         function statusLabel(status) {
@@ -991,14 +1068,16 @@
 
         function lessonMatches(lesson, query) {
             if (!query) return true;
+            const searchableLesson = lessonCache.get(lesson.id) || lesson;
             const haystack = [
-                lesson.titleKo,
-                lesson.titleZh,
-                lesson.number,
-                ...(lesson.goals || []),
-                ...(lesson.grammar || []).map(item => `${item.pattern} ${item.zh} ${item.guide}`),
-                ...(lesson.vocabulary || []).map(item => `${item.ko} ${item.zh} ${item.guide}`),
-                ...(lesson.dialogues || []).flatMap(dialogue => [
+                searchableLesson.titleKo,
+                searchableLesson.titleZh,
+                searchableLesson.number,
+                searchableLesson.searchText,
+                ...(searchableLesson.goals || []),
+                ...(searchableLesson.grammar || []).map(item => `${item.pattern} ${item.zh} ${item.guide}`),
+                ...(searchableLesson.vocabulary || []).map(item => `${item.ko} ${item.zh} ${item.guide}`),
+                ...(searchableLesson.dialogues || []).flatMap(dialogue => [
                     dialogue.title,
                     dialogue.focus,
                     dialogue.source,
@@ -1008,12 +1087,12 @@
                     ...(dialogue.rolePlays || []).map(item => `${item.title} ${item.promptZh} ${item.answerKo}`),
                     ...(dialogue.drills || []).map(item => `${item.promptZh} ${item.answerKo} ${item.pattern}`)
                 ]),
-                lesson.culture ? [
-                    lesson.culture.titleKo,
-                    lesson.culture.titleZh,
-                    lesson.culture.summaryZh,
-                    ...(lesson.culture.paragraphs || []).map(paragraph => `${paragraph.ko} ${paragraph.zh} ${paragraph.guide}`),
-                    ...(lesson.culture.keyTerms || []).map(term => `${term.ko} ${term.zh}`)
+                searchableLesson.culture ? [
+                    searchableLesson.culture.titleKo,
+                    searchableLesson.culture.titleZh,
+                    searchableLesson.culture.summaryZh,
+                    ...(searchableLesson.culture.paragraphs || []).map(paragraph => `${paragraph.ko} ${paragraph.zh} ${paragraph.guide}`),
+                    ...(searchableLesson.culture.keyTerms || []).map(term => `${term.ko} ${term.zh}`)
                 ].join(" ") : ""
             ].join(" ").toLowerCase();
             return haystack.includes(query.toLowerCase());
@@ -1055,18 +1134,20 @@
         }
 
         function renderOverview(lesson) {
+            const stats = getLessonStats(lesson);
+
             return `
                 <div class="section-grid">
                     <button class="stat-card" type="button" data-tab="vocabulary">
-                        <div class="stat-value">${lesson.vocabulary?.length || 0}</div>
+                        <div class="stat-value">${stats.vocabulary}</div>
                         <div class="stat-label">单词与表达</div>
                     </button>
                     <button class="stat-card" type="button" data-tab="dialogue">
-                        <div class="stat-value">${lesson.dialogues?.length || 0}</div>
+                        <div class="stat-value">${stats.dialogues}</div>
                         <div class="stat-label">对话练习</div>
                     </button>
                     <button class="stat-card" type="button" data-tab="culture">
-                        <div class="stat-value">${lesson.culture ? 1 : 0}</div>
+                        <div class="stat-value">${stats.culture}</div>
                         <div class="stat-label">文化文章</div>
                     </button>
                 </div>
@@ -1283,6 +1364,28 @@
             `;
         }
 
+        function renderLoading(lesson) {
+            return `
+                <div class="todo-panel">
+                    <div>
+                        <h2>正在加载课程数据</h2>
+                        <p>${escapeHtml(lesson.titleKo)} · ${escapeHtml(lesson.titleZh)}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderLoadError(lesson) {
+            return `
+                <div class="todo-panel">
+                    <div>
+                        <h2>课程数据加载失败</h2>
+                        <p>${escapeHtml(lesson.titleKo)} 的分片文件没有加载成功，请刷新页面后再试。</p>
+                    </div>
+                </div>
+            `;
+        }
+
         function renderActiveTab(lesson) {
             if (activeTab === "vocabulary") return renderVocabulary(lesson);
             if (activeTab === "dialogue") return renderDialogue(lesson);
@@ -1318,12 +1421,39 @@
             }
         }
 
-        function renderMain(options = {}) {
-            const { scrollTarget = "top" } = options;
-            const lesson = getActiveLesson();
+        function renderLoadedLesson(lesson, scrollTarget) {
             mobileTitle.textContent = `L3-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
             mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
             scrollMainContent(scrollTarget);
+        }
+
+        async function renderMain(options = {}) {
+            const { scrollTarget = "top" } = options;
+            const lessonMeta = getLessonMeta();
+            const runId = ++renderRunId;
+
+            if (lessonCache.has(lessonMeta.id) || !lessonMeta.chunk) {
+                const lesson = await loadLesson(lessonMeta.id);
+                if (runId !== renderRunId || lesson.id !== activeLessonId) return;
+                renderLoadedLesson(lesson, scrollTarget);
+                preloadNextLesson(lesson.id);
+                return;
+            }
+
+            mobileTitle.textContent = `L3-${String(lessonMeta.number).padStart(2, "0")} ${lessonMeta.titleKo}`;
+            mainContent.innerHTML = renderHero(lessonMeta) + renderLoading(lessonMeta);
+            scrollMainContent(scrollTarget);
+
+            try {
+                const lesson = await loadLesson(lessonMeta.id);
+                if (runId !== renderRunId || lesson.id !== activeLessonId) return;
+                renderLoadedLesson(lesson, scrollTarget);
+                preloadNextLesson(lesson.id);
+            } catch (error) {
+                if (runId !== renderRunId) return;
+                mainContent.innerHTML = renderHero(lessonMeta) + renderLoadError(lessonMeta);
+                scrollMainContent(scrollTarget);
+            }
         }
 
         function switchTab(tabId, options = {}) {
