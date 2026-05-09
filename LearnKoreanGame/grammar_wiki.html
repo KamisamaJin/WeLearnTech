@@ -42,7 +42,7 @@
         .sidebar-header-top {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             gap: 12px;
         }
         .sidebar-header h1 {
@@ -52,18 +52,74 @@
             text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
         }
         .guide-link {
-            flex-shrink: 0;
-            padding: 6px 9px;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 14px;
+            padding: 10px 11px;
+            border: 1px solid rgba(56, 189, 248, 0.24);
+            border-radius: 10px;
+            background:
+                linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(129, 140, 248, 0.08)),
+                rgba(15, 23, 42, 0.28);
+            color: var(--text-main);
             text-decoration: none;
-            font-size: 0.78rem;
-            font-weight: 800;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
         }
         .guide-link:hover {
+            color: var(--text-main);
+            border-color: rgba(56, 189, 248, 0.55);
+            background:
+                linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.12)),
+                rgba(15, 23, 42, 0.42);
+            box-shadow: 0 10px 24px rgba(56, 189, 248, 0.12), inset 0 1px 0 rgba(255,255,255,0.08);
+            transform: translateY(-1px);
+        }
+        .guide-link:active {
+            transform: translateY(0);
+        }
+        .guide-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+            border: 1px solid rgba(56, 189, 248, 0.32);
+            border-radius: 8px;
+            background: rgba(56, 189, 248, 0.16);
             color: var(--primary);
-            border-color: var(--primary);
+            font-size: 0.78rem;
+            font-weight: 900;
+        }
+        .guide-copy {
+            display: grid;
+            gap: 2px;
+            min-width: 0;
+            flex: 1;
+        }
+        .guide-copy strong {
+            color: #fff;
+            font-size: 0.9rem;
+            line-height: 1.2;
+        }
+        .guide-copy small {
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .guide-arrow {
+            flex-shrink: 0;
+            color: var(--primary);
+            font-weight: 900;
+            transition: transform 0.2s ease;
+        }
+        .guide-link:hover .guide-arrow {
+            transform: translateX(2px);
         }
         .search-box {
             width: 100%;
@@ -379,16 +435,43 @@
         .mobile-guide-link {
             width: 36px;
             height: 36px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
+            padding: 0;
+            margin-right: 10px;
+            box-sizing: border-box;
+            border-radius: 9px;
+            border: 1px solid rgba(56, 189, 248, 0.28);
+            background: rgba(56, 189, 248, 0.12);
             display: inline-flex;
             align-items: center;
             justify-content: center;
             color: var(--primary);
             text-decoration: none;
             font-weight: 900;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+        .mobile-guide-link svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            stroke-width: 2.2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+        .mobile-guide-link:hover {
+            border-color: rgba(56, 189, 248, 0.55);
+            background: rgba(56, 189, 248, 0.18);
         }
         .menu-toggle {
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
             background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0;
         }
         .content-wrapper {
@@ -422,6 +505,11 @@
             .sidebar-header h1 { display: none; }
             .sidebar-header { padding-top: 25px; }
         }
+        @media (max-width: 420px) {
+            .mobile-guide-link {
+                margin-right: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -430,8 +518,15 @@
         <div class="sidebar-header">
             <div class="sidebar-header-top">
                 <h1>Grammar Wiki</h1>
-                <a class="guide-link" href="lesson_guide.html" target="_blank">Lesson Guide</a>
             </div>
+            <a class="guide-link" href="lesson_guide.html" aria-label="Open L3 Lesson Guide">
+                <span class="guide-badge">L3</span>
+                <span class="guide-copy">
+                    <strong>Lesson Guide</strong>
+                    <small>单词 · 对话 · 文化</small>
+                </span>
+                <span class="guide-arrow">→</span>
+            </a>
             <input type="text" id="search" class="search-box" placeholder="Search grammar...">
         </div>
         <div class="level-filters" id="level-filters">
@@ -455,7 +550,13 @@
                     <span class="mobile-detail-text" id="mobile-detail-text"></span>
                 </span>
             </div>
-            <a class="mobile-guide-link" href="lesson_guide.html" target="_blank" title="L3 Lesson Guide">课</a>
+            <a class="mobile-guide-link" href="lesson_guide.html" title="L3 Lesson Guide" aria-label="Open L3 Lesson Guide">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 7v14"></path>
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H12V5H6.5A2.5 2.5 0 0 0 4 7.5v12Z"></path>
+                    <path d="M20 19.5A2.5 2.5 0 0 0 17.5 17H12V5h5.5A2.5 2.5 0 0 1 20 7.5v12Z"></path>
+                </svg>
+            </a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         </div>
         <div class="main-content" id="main-content">

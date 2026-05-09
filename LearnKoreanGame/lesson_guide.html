@@ -219,7 +219,7 @@
 
         .hero {
             display: grid;
-            grid-template-columns: 1fr auto;
+            grid-template-columns: 1fr;
             gap: 18px;
             align-items: start;
             padding-bottom: 18px;
@@ -267,17 +267,6 @@
             margin: 8px 0 0;
             color: var(--soft);
             font-size: 1.05rem;
-        }
-
-        .source-box {
-            max-width: 300px;
-            padding: 12px;
-            border: 1px solid rgba(251, 191, 36, 0.35);
-            border-radius: 8px;
-            background: rgba(251, 191, 36, 0.08);
-            color: #f8ddb0;
-            font-size: 0.8rem;
-            line-height: 1.45;
         }
 
         .tabs {
@@ -417,7 +406,8 @@
         }
 
         .word-card {
-            padding: 15px;
+            position: relative;
+            padding: 15px 15px 56px;
         }
 
         .word-top {
@@ -445,6 +435,10 @@
         }
 
         .word-meta {
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            left: 14px;
             display: flex;
             justify-content: flex-end;
             flex-wrap: wrap;
@@ -771,10 +765,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .source-box {
-                max-width: none;
-            }
-
             .section-grid {
                 grid-template-columns: 1fr;
             }
@@ -920,10 +910,6 @@
         }
 
         function renderHero(lesson) {
-            const vocabCount = lesson.vocabulary?.length || 0;
-            const dialogueCount = lesson.dialogues?.length || 0;
-            const cultureCount = lesson.culture ? 1 : 0;
-
             return `
                 <section class="hero">
                     <div>
@@ -931,14 +917,9 @@
                             <span class="level-badge">KIIP L3-${String(lesson.number).padStart(2, "0")}</span>
                             ${lesson.pages ? `<span class="page-badge">PDF ${escapeHtml(lesson.pages)}页</span>` : ""}
                             <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
-                        </section>
+                        </div>
                         <h1>${escapeHtml(lesson.titleKo)}</h1>
                         <p class="hero-zh">${escapeHtml(lesson.titleZh)}</p>
-                    </div>
-                    <div class="source-box">
-                        来源：${escapeHtml(lessonGuideL3.source.file)}<br>
-                        状态：${escapeHtml(lessonGuideL3.source.extraction)}<br>
-                        内容统计：${vocabCount} 个单词 / ${dialogueCount} 段对话 / ${cultureCount} 篇文化
                     </div>
                 </section>
                 <nav class="tabs">
@@ -1010,15 +991,15 @@
                         <article class="word-card">
                             <div class="word-top">
                                 <div class="word-ko">${escapeHtml(item.ko)}</div>
-                                <div class="word-meta">
-                                    <span class="word-source">${escapeHtml(formatWordSource(item))}</span>
-                                    <span class="word-pos">${escapeHtml(item.pos)}</span>
-                                </div>
                             </div>
                             ${showChinese ? `<div class="word-zh">${escapeHtml(item.zh)}</div>` : ""}
                             <p class="word-guide">${escapeHtml(item.guide)}</p>
                             <div class="example-ko">${escapeHtml(item.exampleKo)}</div>
                             ${showChinese ? `<div class="example-zh">${escapeHtml(item.exampleZh)}</div>` : ""}
+                            <div class="word-meta">
+                                <span class="word-source">${escapeHtml(formatWordSource(item))}</span>
+                                <span class="word-pos">${escapeHtml(item.pos)}</span>
+                            </div>
                         </article>
                     `).join("")}
                 </div>
