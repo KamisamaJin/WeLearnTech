@@ -301,6 +301,7 @@
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 12px;
+            margin-bottom: 14px;
         }
 
         .stat-card,
@@ -315,7 +316,30 @@
         }
 
         .stat-card {
+            appearance: none;
+            width: 100%;
             padding: 15px;
+            color: inherit;
+            text-align: left;
+            font: inherit;
+            cursor: pointer;
+            transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(41, 217, 194, 0.42);
+            background: rgba(41, 217, 194, 0.07);
+            box-shadow: 0 14px 30px rgba(41, 217, 194, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .stat-card:active {
+            transform: translateY(0);
+        }
+
+        .stat-card:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 2px;
         }
 
         .stat-value {
@@ -455,32 +479,6 @@
             white-space: nowrap;
         }
 
-        .source-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            gap: 10px;
-        }
-
-        .source-chip {
-            display: grid;
-            gap: 4px;
-            padding: 10px 12px;
-            border: 1px solid rgba(41, 217, 194, 0.22);
-            border-radius: 8px;
-            background: rgba(41, 217, 194, 0.07);
-        }
-
-        .source-chip strong {
-            color: var(--teal);
-            font-size: 0.88rem;
-        }
-
-        .source-chip span {
-            color: var(--muted);
-            font-size: 0.82rem;
-            line-height: 1.45;
-        }
-
         .word-zh {
             margin-top: 7px;
             color: var(--teal);
@@ -503,24 +501,33 @@
             line-height: 1.55;
         }
 
+        .dialogue-card {
+            padding: 0;
+            overflow: hidden;
+        }
+
         .dialogue-header {
-            display: flex;
+            display: grid;
             gap: 10px;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin-bottom: 12px;
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--line);
+            background: rgba(255,255,255,0.025);
         }
 
         .dialogue-title {
-            display: grid;
-            gap: 8px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 14px;
         }
 
         .dialogue-title h2 {
             margin: 0;
+            line-height: 1.25;
         }
 
-        .dialogue-meta {
+        .dialogue-meta,
+        .speaker-list {
             display: flex;
             gap: 6px;
             flex-wrap: wrap;
@@ -528,44 +535,19 @@
         }
 
         .dialogue-focus {
-            color: var(--amber);
+            display: inline-flex;
+            align-items: center;
+            min-height: 24px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            color: #211505;
+            background: var(--amber);
+            font-size: 0.72rem;
             font-weight: 900;
+            white-space: nowrap;
         }
 
-        .dialogue-scene {
-            margin-bottom: 12px;
-            padding: 12px;
-            border: 1px solid rgba(244, 114, 182, 0.26);
-            border-radius: 8px;
-            color: #ffd5e7;
-            background: rgba(244, 114, 182, 0.07);
-            line-height: 1.55;
-        }
-
-        .dialogue-points {
-            display: grid;
-            gap: 8px;
-            margin: 0 0 14px;
-            padding: 0;
-            list-style: none;
-        }
-
-        .dialogue-points li {
-            padding: 9px 11px;
-            border-radius: 8px;
-            color: var(--soft);
-            background: rgba(255,255,255,0.05);
-            line-height: 1.5;
-        }
-
-        .dialogue-roles {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-            margin-bottom: 12px;
-        }
-
-        .role-chip {
+        .speaker-chip {
             padding: 5px 7px;
             border-radius: 6px;
             color: #160b10;
@@ -574,12 +556,82 @@
             font-weight: 900;
         }
 
+        .dialogue-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.45fr) minmax(270px, 0.75fr);
+            min-height: 0;
+        }
+
+        .dialogue-transcript {
+            padding: 18px 20px 20px;
+        }
+
+        .dialogue-panel-title {
+            margin-bottom: 10px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 900;
+        }
+
+        .dialogue-side {
+            display: grid;
+            align-content: start;
+            gap: 12px;
+            padding: 16px;
+            border-left: 1px solid var(--line);
+            background: rgba(0,0,0,0.12);
+        }
+
+        .dialogue-mini-panel {
+            padding: 12px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.04);
+        }
+
+        .dialogue-side details {
+            margin-top: 0;
+        }
+
+        .dialogue-mini-panel h3 {
+            margin: 0 0 8px;
+            color: var(--teal);
+            font-size: 0.95rem;
+        }
+
+        .dialogue-scene {
+            margin: 0;
+            max-width: 820px;
+            color: var(--soft);
+            line-height: 1.55;
+        }
+
+        .dialogue-points {
+            display: grid;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .dialogue-points li {
+            color: var(--soft);
+            line-height: 1.5;
+        }
+
         .line-card {
             display: grid;
-            grid-template-columns: 34px 82px 1fr;
+            grid-template-columns: 32px minmax(0, 1fr);
             gap: 12px;
             padding: 14px;
             margin-bottom: 10px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.045);
+        }
+
+        .line-card:last-child {
+            margin-bottom: 0;
         }
 
         .line-index {
@@ -592,6 +644,14 @@
             background: var(--teal);
             font-size: 0.78rem;
             font-weight: 900;
+        }
+
+        .line-body {
+            min-width: 0;
+        }
+
+        .line-speaker-row {
+            margin-bottom: 5px;
         }
 
         .speaker {
@@ -611,6 +671,12 @@
             color: var(--teal);
             font-weight: 700;
             line-height: 1.5;
+        }
+
+        .line-guide {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255,255,255,0.08);
         }
 
         details {
@@ -639,13 +705,13 @@
 
         .role-task-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 10px;
+            grid-template-columns: 1fr;
+            gap: 8px;
             margin-top: 10px;
         }
 
         .role-task {
-            padding: 12px;
+            padding: 10px;
             border-radius: 8px;
             background: rgba(255,255,255,0.05);
         }
@@ -765,8 +831,13 @@
                 grid-template-columns: 1fr;
             }
 
-            .section-grid {
+            .dialogue-layout {
                 grid-template-columns: 1fr;
+            }
+
+            .dialogue-side {
+                border-left: none;
+                border-top: 1px solid var(--line);
             }
         }
 
@@ -780,8 +851,37 @@
                 font-size: 2rem;
             }
 
+            .section-grid {
+                gap: 8px;
+            }
+
+            .stat-card {
+                padding: 11px 9px;
+            }
+
+            .stat-value {
+                font-size: 1.45rem;
+            }
+
+            .stat-label {
+                font-size: 0.76rem;
+                line-height: 1.25;
+            }
+
+            .dialogue-header,
+            .dialogue-transcript,
+            .dialogue-side {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            .dialogue-title {
+                display: grid;
+            }
+
             .line-card {
-                grid-template-columns: 1fr;
+                grid-template-columns: 28px minmax(0, 1fr);
+                gap: 10px;
             }
 
             .toolbar {
@@ -931,33 +1031,19 @@
         function renderOverview(lesson) {
             return `
                 <div class="section-grid">
-                    <div class="stat-card">
+                    <button class="stat-card" type="button" data-tab="vocabulary">
                         <div class="stat-value">${lesson.vocabulary?.length || 0}</div>
                         <div class="stat-label">单词与表达</div>
-                    </div>
-                    <div class="stat-card">
+                    </button>
+                    <button class="stat-card" type="button" data-tab="dialogue">
                         <div class="stat-value">${lesson.dialogues?.length || 0}</div>
                         <div class="stat-label">对话练习</div>
-                    </div>
-                    <div class="stat-card">
+                    </button>
+                    <button class="stat-card" type="button" data-tab="culture">
                         <div class="stat-value">${lesson.culture ? 1 : 0}</div>
                         <div class="stat-label">文化文章</div>
-                    </div>
+                    </button>
                 </div>
-
-                ${lesson.vocabularySources?.length ? `
-                    <section class="content-card">
-                        <h2>词汇来源覆盖</h2>
-                        <div class="source-list">
-                            ${lesson.vocabularySources.map(source => `
-                                <div class="source-chip">
-                                    <strong>p.${escapeHtml(source.page)} · ${escapeHtml(source.label)}</strong>
-                                    <span>${escapeHtml(source.note)}</span>
-                                </div>
-                            `).join("")}
-                        </div>
-                    </section>
-                ` : ""}
 
                 <section class="content-card">
                     <h2>学习目标</h2>
@@ -1013,14 +1099,14 @@
 
             return `
                 <div class="toolbar">
-                    <div class="muted">${lesson.dialogues.length} 段对话 / ${lineCount} 句台词，可按角色朗读和替换练习。</div>
+                    <div class="muted">${lesson.dialogues.length} 段对话 / ${lineCount} 句台词</div>
                     <button class="tool-btn" data-toggle-zh>${showChinese ? "隐藏中文" : "显示中文"}</button>
                 </div>
                 ${lesson.dialogues.map(dialogue => {
                     const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
 
                     return `
-                        <section class="content-card">
+                        <section class="content-card dialogue-card">
                             <div class="dialogue-header">
                                 <div class="dialogue-title">
                                     <h2>${escapeHtml(dialogue.title)}</h2>
@@ -1030,56 +1116,68 @@
                                         ${dialogue.source ? `<span class="word-source">${escapeHtml(dialogue.source)}</span>` : ""}
                                     </div>
                                 </div>
+                                ${speakers.length ? `
+                                    <div class="speaker-list">
+                                        ${speakers.map(speaker => `<span class="speaker-chip">${escapeHtml(speaker)}</span>`).join("")}
+                                    </div>
+                                ` : ""}
+                                ${dialogue.sceneZh && showChinese ? `<p class="dialogue-scene">${escapeHtml(dialogue.sceneZh)}</p>` : ""}
                             </div>
-                            ${dialogue.sceneZh && showChinese ? `<div class="dialogue-scene">${escapeHtml(dialogue.sceneZh)}</div>` : ""}
-                            ${dialogue.learningPoints?.length && showChinese ? `
-                                <ul class="dialogue-points">
-                                    ${dialogue.learningPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
-                                </ul>
-                            ` : ""}
-                            ${speakers.length ? `
-                                <div class="dialogue-roles">
-                                    ${speakers.map(speaker => `<span class="role-chip">${escapeHtml(speaker)}</span>`).join("")}
-                                </div>
-                            ` : ""}
-                            ${(dialogue.lines || []).map((line, index) => `
-                                <div class="line-card">
-                                    <div class="line-index">${index + 1}</div>
-                                    <div class="speaker">${escapeHtml(line.speaker)}</div>
-                                    <div>
-                                        <div class="line-ko">${escapeHtml(line.ko)}</div>
-                                        ${showChinese ? `<div class="line-zh">${escapeHtml(line.zh)}</div>` : ""}
-                                        ${showChinese ? `<div class="line-guide">${escapeHtml(line.guide)}</div>` : ""}
-                                    </div>
-                                </div>
-                            `).join("")}
-                            ${dialogue.rolePlays?.length ? `
-                                <details open>
-                                    <summary>角色练习</summary>
-                                    <div class="role-task-grid">
-                                        ${dialogue.rolePlays.map(task => `
-                                            <div class="role-task">
-                                                <h3>${escapeHtml(task.title)}</h3>
-                                                ${showChinese ? `<div class="muted">${escapeHtml(task.promptZh)}</div>` : ""}
-                                                <div class="drill-answer">${escapeHtml(task.answerKo)}</div>
+                            <div class="dialogue-layout">
+                                <div class="dialogue-transcript">
+                                    <div class="dialogue-panel-title">对话正文</div>
+                                    ${(dialogue.lines || []).map((line, index) => `
+                                        <div class="line-card">
+                                            <div class="line-index">${index + 1}</div>
+                                            <div class="line-body">
+                                                <div class="line-speaker-row">
+                                                    <span class="speaker">${escapeHtml(line.speaker)}</span>
+                                                </div>
+                                                <div class="line-ko">${escapeHtml(line.ko)}</div>
+                                                ${showChinese ? `<div class="line-zh">${escapeHtml(line.zh)}</div>` : ""}
+                                                ${showChinese ? `<div class="line-guide">${escapeHtml(line.guide)}</div>` : ""}
                                             </div>
-                                        `).join("")}
-                                    </div>
-                                </details>
-                            ` : ""}
-                            ${dialogue.drills?.length ? `
-                                <details>
-                                    <summary>替换练习</summary>
-                                    ${(dialogue.drills || []).map(drill => `
-                                        <div class="drill">
-                                            ${showChinese ? `<div>${escapeHtml(drill.promptZh)}</div>` : ""}
-                                            <div class="muted">句型：${escapeHtml(drill.pattern)}</div>
-                                            <div class="drill-answer">${escapeHtml(drill.answerKo)}</div>
                                         </div>
                                     `).join("")}
-                                </details>
-                            ` : ""}
-                        </div>
+                                </div>
+                                <aside class="dialogue-side">
+                                    ${dialogue.learningPoints?.length && showChinese ? `
+                                        <section class="dialogue-mini-panel">
+                                            <h3>读法提示</h3>
+                                            <ul class="dialogue-points">
+                                                ${dialogue.learningPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
+                                            </ul>
+                                        </section>
+                                    ` : ""}
+                                    ${dialogue.rolePlays?.length ? `
+                                        <details class="dialogue-mini-panel" open>
+                                            <summary>角色练习</summary>
+                                            <div class="role-task-grid">
+                                                ${dialogue.rolePlays.map(task => `
+                                                    <div class="role-task">
+                                                        <h3>${escapeHtml(task.title)}</h3>
+                                                        ${showChinese ? `<div class="muted">${escapeHtml(task.promptZh)}</div>` : ""}
+                                                        <div class="drill-answer">${escapeHtml(task.answerKo)}</div>
+                                                    </div>
+                                                `).join("")}
+                                            </div>
+                                        </details>
+                                    ` : ""}
+                                    ${dialogue.drills?.length ? `
+                                        <details class="dialogue-mini-panel">
+                                            <summary>替换练习</summary>
+                                            ${(dialogue.drills || []).map(drill => `
+                                                <div class="drill">
+                                                    ${showChinese ? `<div>${escapeHtml(drill.promptZh)}</div>` : ""}
+                                                    <div class="muted">句型：${escapeHtml(drill.pattern)}</div>
+                                                    <div class="drill-answer">${escapeHtml(drill.answerKo)}</div>
+                                                </div>
+                                            `).join("")}
+                                        </details>
+                                    ` : ""}
+                                </aside>
+                            </div>
+                        </section>
                     `;
                 }).join("")}
             `;
