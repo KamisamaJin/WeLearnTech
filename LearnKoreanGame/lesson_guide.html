@@ -446,10 +446,18 @@
         }
 
         .word-top {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 30px;
+            align-items: center;
             gap: 10px;
+        }
+
+        .word-title-line {
+            display: flex;
+            align-items: baseline;
+            gap: 6px 10px;
+            flex-wrap: wrap;
+            min-width: 0;
         }
 
         .word-ko {
@@ -458,6 +466,42 @@
             font-size: 1.2rem;
             font-weight: 900;
             line-height: 1.3;
+        }
+
+        .word-pron {
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0;
+        }
+
+        .speak-btn {
+            display: inline-grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(41, 217, 194, 0.34);
+            border-radius: 8px;
+            color: var(--teal);
+            background: rgba(41, 217, 194, 0.1);
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+
+        .speak-btn svg {
+            width: 15px;
+            height: 15px;
+            fill: currentColor;
+        }
+
+        .speak-btn:active {
+            transform: translateY(1px);
+        }
+
+        .speak-btn.speaking {
+            color: #071312;
+            background: var(--teal);
+            border-color: var(--teal);
         }
 
         .word-pos {
@@ -668,6 +712,13 @@
         .speaker {
             color: var(--rose);
             font-weight: 900;
+        }
+
+        .line-ko-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 30px;
+            align-items: start;
+            gap: 10px;
         }
 
         .line-ko {
@@ -1012,6 +1063,98 @@
                 .join("/");
         }
 
+        function romanizeKorean(value) {
+            const initials = ["g", "kk", "n", "d", "tt", "r", "m", "b", "pp", "s", "ss", "", "j", "jj", "ch", "k", "t", "p", "h"];
+            const vowels = ["a", "ae", "ya", "yae", "eo", "e", "yeo", "ye", "o", "wa", "wae", "oe", "yo", "u", "wo", "we", "wi", "yu", "eu", "ui", "i"];
+            const finals = ["", "k", "k", "ks", "n", "nj", "nh", "t", "l", "lk", "lm", "lb", "ls", "lt", "lp", "lh", "m", "p", "ps", "t", "t", "ng", "t", "t", "k", "t", "p", "t"];
+            let result = "";
+            let previousWasHangul = false;
+
+            for (const char of String(value || "")) {
+                const code = char.charCodeAt(0);
+                if (code >= 0xac00 && code <= 0xd7a3) {
+                    const offset = code - 0xac00;
+                    const initial = Math.floor(offset / 588);
+                    const vowel = Math.floor((offset % 588) / 28);
+                    const final = offset % 28;
+                    if (previousWasHangul && !result.endsWith("-")) result += "-";
+                    result += `${initials[initial]}${vowels[vowel]}${finals[final]}`;
+                    previousWasHangul = true;
+                } else {
+                    result += char;
+                    previousWasHangul = false;
+                }
+            }
+
+            return result.replace(/\s*-\s*/g, "-").replace(/\s+/g, " ").trim();
+        }
+
+        let speechRunId = 0;
+
+        function getKoreanVoice() {
+            if (!("speechSynthesis" in window)) return null;
+            const voices = window.speechSynthesis.getVoices?.() || [];
+            const koreanVoices = voices.filter(voice => voice.lang?.toLowerCase().startsWith("ko"));
+            if (!koreanVoices.length) return null;
+
+            const preferredHints = ["natural", "neural", "online", "google", "yuna", "sora", "sunhi", "heami", "hyunsu"];
+            return koreanVoices
+                .map(voice => {
+                    const name = voice.name.toLowerCase();
+                    const hintScore = preferredHints.reduce((score, hint, index) => score + (name.includes(hint) ? 100 - index : 0), 0);
+                    const koKrScore = voice.lang.toLowerCase() === "ko-kr" ? 20 : 0;
+                    return { voice, score: hintScore + koKrScore };
+                })
+                .sort((a, b) => b.score - a.score)[0].voice;
+        }
+
+        function splitKoreanSpeech(text, mode) {
+            const normalized = String(text || "").replace(/\s+/g, " ").trim();
+            if (!normalized || mode === "word" || normalized.length < 24) return [normalized].filter(Boolean);
+
+            const protectedText = normalized.replace(/([.?!])\s+/g, "$1|");
+            const chunks = protectedText.split("|").flatMap(part => {
+                if (part.length < 30) return [part];
+                return part
+                    .replace(/(는데|은데|인데|지만|면서|으면|고)\s+/g, "$1|")
+                    .split("|");
+            });
+
+            return chunks.map(chunk => chunk.trim()).filter(Boolean);
+        }
+
+        function speakKorean(text, options = {}) {
+            if (!("speechSynthesis" in window) || !text) return;
+
+            const mode = options.mode || "word";
+            const chunks = splitKoreanSpeech(text, mode);
+            const voice = getKoreanVoice();
+            const runId = ++speechRunId;
+            window.speechSynthesis.cancel();
+
+            document.querySelectorAll(".speak-btn.speaking").forEach(button => button.classList.remove("speaking"));
+            options.button?.classList.add("speaking");
+
+            const speakChunk = index => {
+                if (runId !== speechRunId || index >= chunks.length) {
+                    options.button?.classList.remove("speaking");
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(chunks[index]);
+                utterance.lang = "ko-KR";
+                utterance.rate = mode === "sentence" ? 0.78 : 0.82;
+                utterance.pitch = mode === "sentence" ? 0.92 : 0.98;
+                utterance.volume = 1;
+                if (voice) utterance.voice = voice;
+                utterance.onend = () => window.setTimeout(() => speakChunk(index + 1), mode === "sentence" ? 90 : 0);
+                utterance.onerror = () => options.button?.classList.remove("speaking");
+                window.speechSynthesis.speak(utterance);
+            };
+
+            speakChunk(0);
+        }
+
         function normalizeLesson(lesson) {
             return {
                 goals: [],
@@ -1210,7 +1353,15 @@
                     ${lesson.vocabulary.map(item => `
                         <article class="word-card">
                             <div class="word-top">
-                                <div class="word-ko">${escapeHtml(item.ko)}</div>
+                                <div class="word-title-line">
+                                    <div class="word-ko">${escapeHtml(item.ko)}</div>
+                                    <span class="word-pron">${escapeHtml(romanizeKorean(item.ko))}</span>
+                                </div>
+                                <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="播放 ${escapeHtml(item.ko)} 发音" title="播放发音">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M8 5v14l11-7z"></path>
+                                    </svg>
+                                </button>
                             </div>
                             ${showChinese ? `<div class="word-zh">${escapeHtml(item.zh)}</div>` : ""}
                             <p class="word-guide">${escapeHtml(item.guide)}</p>
@@ -1267,7 +1418,14 @@
                                                 <div class="line-speaker-row">
                                                     <span class="speaker">${escapeHtml(line.speaker)}</span>
                                                 </div>
-                                                <div class="line-ko">${escapeHtml(line.ko)}</div>
+                                                <div class="line-ko-row">
+                                                    <div class="line-ko">${escapeHtml(line.ko)}</div>
+                                                    <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(line.ko)}" data-speak-mode="sentence" aria-label="播放 ${escapeHtml(line.ko)} 发音" title="播放发音">
+                                                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                                                            <path d="M8 5v14l11-7z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
                                                 ${showChinese ? `<div class="line-zh">${escapeHtml(line.zh)}</div>` : ""}
                                                 ${showChinese ? `<div class="line-guide">${escapeHtml(line.guide)}</div>` : ""}
                                             </div>
@@ -1521,6 +1679,15 @@
             if (tabButton) {
                 switchTab(tabButton.dataset.tab, {
                     keepSticky: Boolean(tabButton.closest(".tabs")) && mobileSwipeQuery.matches
+                });
+                return;
+            }
+
+            const speakButton = event.target.closest("[data-speak-ko]");
+            if (speakButton) {
+                speakKorean(speakButton.dataset.speakKo, {
+                    mode: speakButton.dataset.speakMode,
+                    button: speakButton
                 });
                 return;
             }

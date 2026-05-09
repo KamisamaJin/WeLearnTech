@@ -1422,7 +1422,7 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
         },
         {
             "id": "l3-11-d2",
-            "title": "客观书面体로 집 설명하기",
+            "title": "객관적인 글로 집 설명하기",
             "page": 146,
             "source": "문법 2 연습",
             "focus": "동/형-는다/다",

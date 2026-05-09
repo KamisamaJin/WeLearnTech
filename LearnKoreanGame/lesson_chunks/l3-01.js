@@ -1166,7 +1166,7 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
         },
         {
             "id": "dialogue-02",
-            "title": "和同事相处的方法",
+            "title": "동료들과 가깝게 지내는 방법",
             "page": 16,
             "source": "문법 대화",
             "focus": "~(으)면 되다",
