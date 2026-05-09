@@ -566,13 +566,6 @@
             line-height: 1.3;
         }
 
-        .word-pron {
-            color: var(--muted);
-            font-size: 0.78rem;
-            font-weight: 800;
-            letter-spacing: 0;
-        }
-
         .speak-btn {
             display: inline-grid;
             place-items: center;
@@ -1093,22 +1086,24 @@
     <script>
         const lessons = lessonGuideL3.lessons;
         const lessonTranslationPacks = window.lessonGuideL3Translations || {};
+        const lessonTranslationChunkPaths = {
+            en: Object.fromEntries(lessons.map(lesson => [lesson.id, `lesson_translations/en/${lesson.id}.js`]))
+        };
         const lessonCache = new Map();
         const lessonLoadPromises = new Map();
+        const lessonTranslationLoadPromises = new Map();
         const loadedLessonScripts = new Set();
         const localeStorageKeys = {
+            language: "lessonGuideLocale",
             ui: "lessonGuideUiLocale",
             translation: "lessonGuideTranslationLocale",
             showTranslation: "lessonGuideShowTranslation"
         };
         const localeNames = {
             "zh-CN": "中文",
-            en: "English",
-            ja: "日本語",
-            vi: "Tiếng Việt"
+            en: "English"
         };
-        const uiLocales = ["zh-CN", "en"];
-        const translationLocales = ["zh-CN", "en", "ja", "vi"];
+        const appLocales = ["zh-CN", "en"];
         const messages = {
             "zh-CN": {
                 appTitle: "L3 Lesson Guide",
@@ -1116,8 +1111,7 @@
                 searchPlaceholder: "搜索课文、单词或中文...",
                 openLessonMenu: "打开课程菜单",
                 languageSettings: "语言设置",
-                interfaceLanguage: "界面语言",
-                translationLanguage: "翻译语言",
+                languageLabel: "语言",
                 draft: "草稿",
                 todo: "待抽取",
                 noResults: "没有匹配的课文",
@@ -1160,8 +1154,7 @@
                 answer: "参考答案",
                 loadingTitle: "正在加载课程数据",
                 loadErrorTitle: "课程数据加载失败",
-                loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。",
-                playPronunciation: "播放 {text} 发音"
+                loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。"
             },
             en: {
                 appTitle: "L3 Lesson Guide",
@@ -1169,8 +1162,7 @@
                 searchPlaceholder: "Search lessons, words, or translations...",
                 openLessonMenu: "Open lesson menu",
                 languageSettings: "Language settings",
-                interfaceLanguage: "Interface language",
-                translationLanguage: "Translation language",
+                languageLabel: "Language",
                 draft: "Draft",
                 todo: "To extract",
                 noResults: "No matching lessons",
@@ -1213,8 +1205,7 @@
                 answer: "Answer",
                 loadingTitle: "Loading lesson data",
                 loadErrorTitle: "Lesson data failed to load",
-                loadErrorBody: "{title}'s chunk file did not load. Please refresh and try again.",
-                playPronunciation: "Play pronunciation for {text}"
+                loadErrorBody: "{title}'s chunk file did not load. Please refresh and try again."
             }
         };
         const wordPosLabels = {
@@ -1339,8 +1330,18 @@
 
         let activeLessonId = lessons[0].id;
         let activeTab = "overview";
-        let uiLocale = uiLocales.includes(localStorage.getItem(localeStorageKeys.ui)) ? localStorage.getItem(localeStorageKeys.ui) : "zh-CN";
-        let translationLocale = translationLocales.includes(localStorage.getItem(localeStorageKeys.translation)) ? localStorage.getItem(localeStorageKeys.translation) : "zh-CN";
+        const storedLocale = localStorage.getItem(localeStorageKeys.language);
+        const legacyTranslationLocale = localStorage.getItem(localeStorageKeys.translation);
+        const legacyUiLocale = localStorage.getItem(localeStorageKeys.ui);
+        const initialLocale = appLocales.includes(storedLocale)
+            ? storedLocale
+            : appLocales.includes(legacyTranslationLocale)
+                ? legacyTranslationLocale
+                : appLocales.includes(legacyUiLocale)
+                    ? legacyUiLocale
+                    : "zh-CN";
+        let uiLocale = initialLocale;
+        let translationLocale = initialLocale;
         let showChinese = localStorage.getItem(localeStorageKeys.showTranslation) !== "false";
         let renderRunId = 0;
         const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
@@ -1440,40 +1441,48 @@
             });
         }
 
+        function applyLessonTranslationPatch(lesson, locale, patch) {
+            if (!patch) return;
+
+            mergeLocaleFields(lesson, locale, {
+                title: patch.title,
+                goals: patch.goals
+            });
+            mergeArrayLocaleFields(lesson.grammar, locale, patch.grammar);
+            mergeArrayLocaleFields(lesson.vocabulary, locale, patch.vocabulary);
+            mergeArrayLocaleFields(lesson.practice, locale, patch.practice);
+
+            (patch.dialogues || []).forEach((dialoguePatch, index) => {
+                const dialogue = lesson.dialogues?.[index];
+                if (!dialogue) return;
+                mergeLocaleFields(dialogue, locale, {
+                    scene: dialoguePatch.scene,
+                    learningPoints: dialoguePatch.learningPoints
+                });
+                mergeArrayLocaleFields(dialogue.lines, locale, dialoguePatch.lines);
+                mergeArrayLocaleFields(dialogue.rolePlays, locale, dialoguePatch.rolePlays);
+                mergeArrayLocaleFields(dialogue.drills, locale, dialoguePatch.drills);
+            });
+
+            if (lesson.culture && patch.culture) {
+                mergeLocaleFields(lesson.culture, locale, {
+                    title: patch.culture.title,
+                    summary: patch.culture.summary
+                });
+                mergeArrayLocaleFields(lesson.culture.paragraphs, locale, patch.culture.paragraphs);
+                mergeArrayLocaleFields(lesson.culture.keyTerms, locale, patch.culture.keyTerms);
+                mergeArrayLocaleFields(lesson.culture.questions, locale, patch.culture.questions);
+            }
+        }
+
+        function getLessonTranslationChunk(locale, lessonId) {
+            return window.lessonGuideL3TranslationChunks?.[locale]?.[lessonId];
+        }
+
         function applyLessonTranslationPacks(lesson) {
             Object.entries(lessonTranslationPacks).forEach(([locale, pack]) => {
-                const patch = pack?.lessons?.[lesson.id];
-                if (!patch) return;
-
-                mergeLocaleFields(lesson, locale, {
-                    title: patch.title,
-                    goals: patch.goals
-                });
-                mergeArrayLocaleFields(lesson.grammar, locale, patch.grammar);
-                mergeArrayLocaleFields(lesson.vocabulary, locale, patch.vocabulary);
-                mergeArrayLocaleFields(lesson.practice, locale, patch.practice);
-
-                (patch.dialogues || []).forEach((dialoguePatch, index) => {
-                    const dialogue = lesson.dialogues?.[index];
-                    if (!dialogue) return;
-                    mergeLocaleFields(dialogue, locale, {
-                        scene: dialoguePatch.scene,
-                        learningPoints: dialoguePatch.learningPoints
-                    });
-                    mergeArrayLocaleFields(dialogue.lines, locale, dialoguePatch.lines);
-                    mergeArrayLocaleFields(dialogue.rolePlays, locale, dialoguePatch.rolePlays);
-                    mergeArrayLocaleFields(dialogue.drills, locale, dialoguePatch.drills);
-                });
-
-                if (lesson.culture && patch.culture) {
-                    mergeLocaleFields(lesson.culture, locale, {
-                        title: patch.culture.title,
-                        summary: patch.culture.summary
-                    });
-                    mergeArrayLocaleFields(lesson.culture.paragraphs, locale, patch.culture.paragraphs);
-                    mergeArrayLocaleFields(lesson.culture.keyTerms, locale, patch.culture.keyTerms);
-                    mergeArrayLocaleFields(lesson.culture.questions, locale, patch.culture.questions);
-                }
+                applyLessonTranslationPatch(lesson, locale, pack?.lessons?.[lesson.id]);
+                applyLessonTranslationPatch(lesson, locale, getLessonTranslationChunk(locale, lesson.id));
             });
 
             return lesson;
@@ -1546,49 +1555,82 @@
             return typeMap[label] || label || t("practiceFallback");
         }
 
-        function romanizeKorean(value) {
-            const initials = ["g", "kk", "n", "d", "tt", "r", "m", "b", "pp", "s", "ss", "", "j", "jj", "ch", "k", "t", "p", "h"];
-            const vowels = ["a", "ae", "ya", "yae", "eo", "e", "yeo", "ye", "o", "wa", "wae", "oe", "yo", "u", "wo", "we", "wi", "yu", "eu", "ui", "i"];
-            const finals = ["", "k", "k", "ks", "n", "nj", "nh", "t", "l", "lk", "lm", "lb", "ls", "lt", "lp", "lh", "m", "p", "ps", "t", "t", "ng", "t", "t", "k", "t", "p", "t"];
-            let result = "";
-            let previousWasHangul = false;
+        function hasHangul(value) {
+            return /[가-힣]/.test(String(value || ""));
+        }
 
-            for (const char of String(value || "")) {
-                const code = char.charCodeAt(0);
-                if (code >= 0xac00 && code <= 0xd7a3) {
-                    const offset = code - 0xac00;
-                    const initial = Math.floor(offset / 588);
-                    const vowel = Math.floor((offset % 588) / 28);
-                    const final = offset % 28;
-                    if (previousWasHangul && !result.endsWith("-")) result += "-";
-                    result += `${initials[initial]}${vowels[vowel]}${finals[final]}`;
-                    previousWasHangul = true;
-                } else {
-                    result += char;
-                    previousWasHangul = false;
-                }
-            }
+        function koreanSpeechLabel(text) {
+            return `한국어 발음 재생: ${text}`;
+        }
 
-            return result.replace(/\s*-\s*/g, "-").replace(/\s+/g, " ").trim();
+        function normalizeKoreanSpeechText(value) {
+            return String(value || "")
+                .split(/\s+\/\s+/)[0]
+                .replace(/\s+/g, " ")
+                .trim();
         }
 
         let speechRunId = 0;
+        let preferredKoreanVoice = null;
+        let koreanVoicePromise = null;
 
-        function getKoreanVoice() {
+        function scoreKoreanVoice(voice) {
+            const name = voice.name.toLowerCase();
+            const lang = voice.lang?.toLowerCase() || "";
+            const femaleHints = ["sora", "yuna", "sunhi", "heami", "nara", "kyuri", "jimin", "ji-min", "female", "여성"];
+            const naturalHints = ["natural", "neural", "premium", "enhanced", "online", "google", "microsoft"];
+            const roboticHints = ["compact", "male", "hyunsu", "injoon", "hoon", "minjun", "남성"];
+            const femaleScore = femaleHints.reduce((score, hint, index) => score + (name.includes(hint) ? 120 - index : 0), 0);
+            const naturalScore = naturalHints.reduce((score, hint, index) => score + (name.includes(hint) ? 70 - index : 0), 0);
+            const roboticPenalty = roboticHints.reduce((score, hint) => score + (name.includes(hint) ? 80 : 0), 0);
+            const koKrScore = lang === "ko-kr" ? 30 : 0;
+            return femaleScore + naturalScore + koKrScore - roboticPenalty;
+        }
+
+        function pickKoreanVoice() {
             if (!("speechSynthesis" in window)) return null;
             const voices = window.speechSynthesis.getVoices?.() || [];
             const koreanVoices = voices.filter(voice => voice.lang?.toLowerCase().startsWith("ko"));
             if (!koreanVoices.length) return null;
 
-            const preferredHints = ["natural", "neural", "online", "google", "yuna", "sora", "sunhi", "heami", "hyunsu"];
-            return koreanVoices
-                .map(voice => {
-                    const name = voice.name.toLowerCase();
-                    const hintScore = preferredHints.reduce((score, hint, index) => score + (name.includes(hint) ? 100 - index : 0), 0);
-                    const koKrScore = voice.lang.toLowerCase() === "ko-kr" ? 20 : 0;
-                    return { voice, score: hintScore + koKrScore };
-                })
-                .sort((a, b) => b.score - a.score)[0].voice;
+            const rankedVoices = koreanVoices
+                .map(voice => ({ voice, score: scoreKoreanVoice(voice) }))
+                .sort((a, b) => b.score - a.score);
+            preferredKoreanVoice = rankedVoices[0].score > 35
+                ? rankedVoices[0].voice
+                : koreanVoices[1] || rankedVoices[0].voice;
+            return preferredKoreanVoice;
+        }
+
+        function waitForKoreanVoice() {
+            if (!("speechSynthesis" in window)) return Promise.resolve(null);
+            const readyVoice = preferredKoreanVoice || pickKoreanVoice();
+            if (readyVoice) return Promise.resolve(readyVoice);
+            if (koreanVoicePromise) return koreanVoicePromise;
+
+            koreanVoicePromise = new Promise(resolve => {
+                const finish = () => {
+                    const voice = pickKoreanVoice();
+                    if (!voice) return;
+                    cleanup();
+                    resolve(voice);
+                };
+                const cleanup = () => {
+                    window.clearTimeout(timeoutId);
+                    window.speechSynthesis.removeEventListener?.("voiceschanged", finish);
+                };
+                const timeoutId = window.setTimeout(() => {
+                    cleanup();
+                    resolve(pickKoreanVoice());
+                }, 1600);
+
+                window.speechSynthesis.addEventListener?.("voiceschanged", finish);
+                window.speechSynthesis.getVoices?.();
+            }).finally(() => {
+                koreanVoicePromise = null;
+            });
+
+            return koreanVoicePromise;
         }
 
         function splitKoreanSpeech(text, mode) {
@@ -1606,17 +1648,30 @@
             return chunks.map(chunk => chunk.trim()).filter(Boolean);
         }
 
-        function speakKorean(text, options = {}) {
+        async function speakKorean(text, options = {}) {
             if (!("speechSynthesis" in window) || !text) return;
 
             const mode = options.mode || "word";
-            const chunks = splitKoreanSpeech(text, mode);
-            const voice = getKoreanVoice();
+            const normalizedText = normalizeKoreanSpeechText(text);
+            if (!hasHangul(normalizedText)) return;
+
             const runId = ++speechRunId;
             window.speechSynthesis.cancel();
 
             document.querySelectorAll(".speak-btn.speaking").forEach(button => button.classList.remove("speaking"));
             options.button?.classList.add("speaking");
+
+            const voice = await waitForKoreanVoice();
+            if (runId !== speechRunId) {
+                options.button?.classList.remove("speaking");
+                return;
+            }
+            if (!voice) {
+                options.button?.classList.remove("speaking");
+                return;
+            }
+
+            const chunks = splitKoreanSpeech(normalizedText, mode);
 
             const speakChunk = index => {
                 if (runId !== speechRunId || index >= chunks.length) {
@@ -1629,7 +1684,7 @@
                 utterance.rate = mode === "sentence" ? 0.78 : 0.82;
                 utterance.pitch = mode === "sentence" ? 0.92 : 0.98;
                 utterance.volume = 1;
-                if (voice) utterance.voice = voice;
+                utterance.voice = voice;
                 utterance.onend = () => window.setTimeout(() => speakChunk(index + 1), mode === "sentence" ? 90 : 0);
                 utterance.onerror = () => options.button?.classList.remove("speaking");
                 window.speechSynthesis.speak(utterance);
@@ -1680,11 +1735,31 @@
             });
         }
 
+        async function loadLessonTranslation(locale, lessonId) {
+            if (locale === "zh-CN" || getLessonTranslationChunk(locale, lessonId)) return;
+
+            const src = lessonTranslationChunkPaths[locale]?.[lessonId];
+            if (!src) return;
+
+            const promiseKey = `${locale}:${lessonId}`;
+            if (!lessonTranslationLoadPromises.has(promiseKey)) {
+                lessonTranslationLoadPromises.set(promiseKey, loadScript(src).catch(error => {
+                    console.warn(error);
+                }));
+            }
+
+            await lessonTranslationLoadPromises.get(promiseKey);
+        }
+
         async function loadLesson(lessonId) {
             const meta = getLessonMeta(lessonId);
-            if (lessonCache.has(meta.id)) return lessonCache.get(meta.id);
+            if (lessonCache.has(meta.id)) {
+                await loadLessonTranslation(translationLocale, meta.id);
+                return applyLessonTranslationPacks(lessonCache.get(meta.id));
+            }
 
             if (!meta.chunk) {
+                await loadLessonTranslation(translationLocale, meta.id);
                 const lesson = applyLessonTranslationPacks(normalizeLesson(meta));
                 lessonCache.set(meta.id, lesson);
                 return lesson;
@@ -1693,6 +1768,7 @@
             if (!lessonLoadPromises.has(meta.id)) {
                 lessonLoadPromises.set(meta.id, (async () => {
                     await loadScript(meta.chunk);
+                    await loadLessonTranslation(translationLocale, meta.id);
                     const chunk = window.lessonGuideL3LessonChunks?.[meta.id];
                     if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
 
@@ -1739,17 +1815,9 @@
                     </button>
                     <div class="language-menu" data-language-menu ${isOpen ? "" : "hidden"}>
                         <div class="language-section">
-                            <p class="language-section-title">${escapeHtml(t("interfaceLanguage"))}</p>
-                            ${uiLocales.map(locale => `
-                                <button class="language-option ${locale === uiLocale ? "active" : ""}" type="button" data-locale-kind="ui" data-locale-value="${escapeHtml(locale)}">
-                                    ${escapeHtml(localeNames[locale])}
-                                </button>
-                            `).join("")}
-                        </div>
-                        <div class="language-section">
-                            <p class="language-section-title">${escapeHtml(t("translationLanguage"))}</p>
-                            ${translationLocales.map(locale => `
-                                <button class="language-option ${locale === translationLocale ? "active" : ""}" type="button" data-locale-kind="translation" data-locale-value="${escapeHtml(locale)}">
+                            <p class="language-section-title">${escapeHtml(t("languageLabel"))}</p>
+                            ${appLocales.map(locale => `
+                                <button class="language-option ${locale === translationLocale ? "active" : ""}" type="button" data-locale-value="${escapeHtml(locale)}">
                                     ${escapeHtml(localeNames[locale])}
                                 </button>
                             `).join("")}
@@ -1776,17 +1844,16 @@
             renderLanguageSwitchers();
         }
 
-        function setLocale(kind, locale) {
-            if (kind === "ui" && uiLocales.includes(locale)) {
-                uiLocale = locale;
-                localStorage.setItem(localeStorageKeys.ui, uiLocale);
-            }
-            if (kind === "translation" && translationLocales.includes(locale)) {
-                translationLocale = locale;
-                localStorage.setItem(localeStorageKeys.translation, translationLocale);
-                showChinese = true;
-                localStorage.setItem(localeStorageKeys.showTranslation, "true");
-            }
+        function setLocale(locale) {
+            if (!appLocales.includes(locale)) return;
+
+            uiLocale = locale;
+            translationLocale = locale;
+            showChinese = true;
+            localStorage.setItem(localeStorageKeys.language, locale);
+            localStorage.setItem(localeStorageKeys.ui, locale);
+            localStorage.setItem(localeStorageKeys.translation, locale);
+            localStorage.setItem(localeStorageKeys.showTranslation, "true");
 
             applyStaticLocale();
             renderLessonList();
@@ -1914,13 +1981,12 @@
                             <div class="word-top">
                                 <div class="word-title-line">
                                     <div class="word-ko">${escapeHtml(item.ko)}</div>
-                                    <span class="word-pron">${escapeHtml(romanizeKorean(item.ko))}</span>
                                 </div>
-                                <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="${escapeHtml(tf("playPronunciation", { text: item.ko }))}" title="${escapeHtml(tf("playPronunciation", { text: item.ko }))}">
+                                ${hasHangul(item.ko) ? `<button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="${escapeHtml(koreanSpeechLabel(item.ko))}" title="${escapeHtml(koreanSpeechLabel(item.ko))}">
                                     <svg viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M8 5v14l11-7z"></path>
                                     </svg>
-                                </button>
+                                </button>` : ""}
                             </div>
                             ${showChinese ? `<div class="word-zh">${escapeHtml(wordMeaning(item))}</div>` : ""}
                             <p class="word-guide">${escapeHtml(wordGuide(item))}</p>
@@ -1981,11 +2047,11 @@
                                                 </div>
                                                 <div class="line-ko-row">
                                                     <div class="line-ko">${escapeHtml(line.ko)}</div>
-                                                    <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(line.ko)}" data-speak-mode="sentence" aria-label="${escapeHtml(tf("playPronunciation", { text: line.ko }))}" title="${escapeHtml(tf("playPronunciation", { text: line.ko }))}">
+                                                    ${hasHangul(line.ko) ? `<button class="speak-btn" type="button" data-speak-ko="${escapeHtml(line.ko)}" data-speak-mode="sentence" aria-label="${escapeHtml(koreanSpeechLabel(line.ko))}" title="${escapeHtml(koreanSpeechLabel(line.ko))}">
                                                         <svg viewBox="0 0 24 24" aria-hidden="true">
                                                             <path d="M8 5v14l11-7z"></path>
                                                         </svg>
-                                                    </button>
+                                                    </button>` : ""}
                                                 </div>
                                                 ${showChinese ? `<div class="line-zh">${escapeHtml(lineTranslation(line))}</div>` : ""}
                                                 ${showChinese ? `<div class="line-guide">${escapeHtml(lineGuide(line))}</div>` : ""}
@@ -2327,9 +2393,9 @@
                 return;
             }
 
-            const localeOption = event.target.closest("[data-locale-kind][data-locale-value]");
+            const localeOption = event.target.closest("[data-locale-value]");
             if (localeOption) {
-                setLocale(localeOption.dataset.localeKind, localeOption.dataset.localeValue);
+                setLocale(localeOption.dataset.localeValue);
                 closeLanguageMenus();
                 event.stopPropagation();
                 return;
