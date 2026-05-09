@@ -141,7 +141,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 178,
             "source": "단원 제목",
-            "guide": "本课主题词，后面常接 으로 表示通过互联网。",
+            "guide": "名词，意思是“互联网”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "인터넷으로 정보를 검색해요.",
             "exampleZh": "我用互联网搜索信息。"
         },
@@ -151,7 +151,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 178,
             "source": "단원 제목",
-            "guide": "스마트폰으로 表示“用智能手机”。",
+            "guide": "名词，意思是“智能手机”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰으로 사진을 촬영해요.",
             "exampleZh": "我用智能手机拍照。"
         },
@@ -161,7 +161,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 178,
             "source": "문화와 정보",
-            "guide": "개통하다 表示开通通信服务。",
+            "guide": "名词，意思是“开通手机”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "휴대폰을 개통하려면 신분증이 필요해요.",
             "exampleZh": "开通手机需要身份证件。"
         },
@@ -171,7 +171,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "검색하다 前面常接 정보를。",
+            "guide": "动词表达，意思是“搜索信息”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "저는 보통 인터넷으로 정보를 검색해요.",
             "exampleZh": "我通常用互联网搜索信息。"
         },
@@ -181,7 +181,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "银行业务在线办理时使用。",
+            "guide": "动词表达，意思是“使用网上银行”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "인터넷 뱅킹으로 송금했어요.",
             "exampleZh": "我通过网上银行转账了。"
         },
@@ -191,7 +191,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "인터넷으로 물건을 사다 的常用说法。",
+            "guide": "动词表达，意思是“网购”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "주말에 인터넷 쇼핑을 했어요.",
             "exampleZh": "周末我网购了。"
         },
@@ -201,7 +201,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "이메일을 쓰다/보내다 都常用。",
+            "guide": "动词表达，意思是“发送电子邮件”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "회사에 이메일을 보냈어요.",
             "exampleZh": "我给公司发了邮件。"
         },
@@ -211,7 +211,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "강의는 보다보다 듣다 更自然。",
+            "guide": "动词表达，意思是“听网课”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국어 인터넷 강의를 들어요.",
             "exampleZh": "我听韩语网课。"
         },
@@ -221,7 +221,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "보다보다正式，强调观看欣赏。",
+            "guide": "动词表达，意思是“欣赏电影”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "스마트폰으로 영화를 감상했어요.",
             "exampleZh": "我用智能手机看了电影。"
         },
@@ -231,7 +231,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "SNS 활동 전체를 말할 때 쓴다.",
+            "guide": "动词表达，意思是“使用社交网络”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구들과 에스엔에스를 해요.",
             "exampleZh": "我和朋友使用社交网络。"
         },
@@ -241,7 +241,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "인터넷 글이나 영상 아래에 의견을 남길 때 사용。",
+            "guide": "动词表达，意思是“留言、发表评论”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "영상에 댓글을 남겼어요.",
             "exampleZh": "我在视频下面留言了。"
         },
@@ -251,7 +251,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "유튜브는 보통 보다와 함께 쓴다.",
+            "guide": "动词表达，意思是“看 YouTube”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "저녁마다 유튜브를 봐요.",
             "exampleZh": "我每天晚上看 YouTube。"
         },
@@ -261,7 +261,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "찍다보다正式。",
+            "guide": "动词表达，意思是“拍摄照片”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "풍경 사진을 촬영했어요.",
             "exampleZh": "我拍摄了风景照片。"
         },
@@ -271,7 +271,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "视频拍摄时使用。",
+            "guide": "动词表达，意思是“拍摄视频”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이의 동영상을 촬영했어요.",
             "exampleZh": "我拍了孩子的视频。"
         },
@@ -281,7 +281,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "远程和家人朋友联系时常用。",
+            "guide": "动词表达，意思是“视频通话”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "부모님과 영상 통화를 했어요.",
             "exampleZh": "我和父母视频通话了。"
         },
@@ -291,7 +291,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "카카오톡과 달리 문자 메시지를 말할 수 있다.",
+            "guide": "动词表达，意思是“发短信”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구에게 문자를 보냈어요.",
             "exampleZh": "我给朋友发了短信。"
         },
@@ -301,7 +301,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "学习语言时查单词意思。",
+            "guide": "动词表达，意思是“查词义”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "모르는 어휘 뜻을 찾았어요.",
             "exampleZh": "我查了不认识的词义。"
         },
@@ -311,7 +311,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "手机用途之一。",
+            "guide": "动词表达，意思是“玩游戏”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "버스에서 게임을 했어요.",
             "exampleZh": "我在公交车上玩了游戏。"
         },
@@ -321,7 +321,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 180,
             "source": "어휘",
-            "guide": "手机里装软件时使用。",
+            "guide": "动词表达，意思是“安装应用程序”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국어 어휘 앱을 설치했어요.",
             "exampleZh": "我安装了韩语词汇 App。"
         },
@@ -331,7 +331,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "관형사/명사",
             "page": 181,
             "source": "문법 예문",
-            "guide": "최신 스마트폰처럼名词前修饰。",
+            "guide": "修饰词，意思是“最新”。通常放在名词前面，用来限定后面的对象。",
             "exampleKo": "최신 스마트폰으로 찍었어요.",
             "exampleZh": "用最新智能手机拍的。"
         },
@@ -341,7 +341,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 181,
             "source": "문법 대화",
-            "guide": "衣服鞋子大小。",
+            "guide": "名词，意思是“尺码、尺寸”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "사이즈가 잘 맞아요.",
             "exampleZh": "尺码很合适。"
         },
@@ -351,7 +351,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 181,
             "source": "문법 대화",
-            "guide": "직접 가서 사는 장소。",
+            "guide": "名词，意思是“卖场、门店”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "매장에서 신어 보고 샀어요.",
             "exampleZh": "在门店试穿后买了。"
         },
@@ -361,7 +361,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 181,
             "source": "문법 대화",
-            "guide": "别人代替不了时使用。",
+            "guide": "副词，意思是“亲自、直接”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "직접 확인해 보세요.",
             "exampleZh": "请亲自确认一下。"
         },
@@ -371,7 +371,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 181,
             "source": "문법 예문",
-            "guide": "높임 표현 계시다를 함께 익힌다。",
+            "guide": "固定表达，意思是“在老家、住在故乡”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고향에 계신 부모님이 보고 싶어요.",
             "exampleZh": "想念在老家的父母。"
         },
@@ -381,7 +381,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 181,
             "source": "문법 예문",
-            "guide": "부모님/선생님 등에게 쓰는 공손한 표현。",
+            "guide": "动词表达，意思是“联系、给……联系（敬语）”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "부모님께 자주 연락드리세요.",
             "exampleZh": "请经常联系父母。"
         },
@@ -391,7 +391,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 182,
             "source": "문법 대화",
-            "guide": "网站或 App 注册。",
+            "guide": "名词，意思是“会员注册”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "홈페이지에서 회원 가입을 했어요.",
             "exampleZh": "我在网站注册了会员。"
         },
@@ -401,7 +401,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 182,
             "source": "문법 대화",
-            "guide": "实名验证、手机认证时使用。",
+            "guide": "名词，意思是“本人认证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "본인 확인을 해야 가입이 돼요.",
             "exampleZh": "必须本人认证才能注册。"
         },
@@ -411,7 +411,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 182,
             "source": "문법 연습",
-            "guide": "인터넷이나 와이파이에 연결할 때 사용。",
+            "guide": "动词表达，意思是“连接、访问”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "와이파이에 접속했어요.",
             "exampleZh": "连接了 Wi-Fi。"
         },
@@ -421,7 +421,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 182,
             "source": "문법 연습",
-            "guide": "와이파이/账号密码。",
+            "guide": "名词，意思是“密码”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비밀번호를 입력해야 해요.",
             "exampleZh": "必须输入密码。"
         },
@@ -431,7 +431,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 182,
             "source": "문법 연습",
-            "guide": "键入信息。",
+            "guide": "动词表达，意思是“输入”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "휴대폰 번호를 입력하세요.",
             "exampleZh": "请输入手机号。"
         },
@@ -441,7 +441,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "형용사",
             "page": 182,
             "source": "문법 연습",
-            "guide": "语言表达自然顺畅。",
+            "guide": "形容词，意思是“流利”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "한국어가 유창해야 취직할 수 있어요.",
             "exampleZh": "韩语流利才能就业。"
         },
@@ -451,7 +451,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 182,
             "source": "문법 연습",
-            "guide": "找路应用。",
+            "guide": "名词，意思是“导航 App”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "길찾기 앱을 설치해야 해요.",
             "exampleZh": "需要安装导航 App。"
         },
@@ -461,7 +461,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "형용사",
             "page": 183,
             "source": "말하기",
-            "guide": "심심할 때마다 表示每当无聊时。",
+            "guide": "形容词，意思是“无聊”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "심심할 때마다 어휘를 공부해요.",
             "exampleZh": "每当无聊时就学习词汇。"
         },
@@ -471,7 +471,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 183,
             "source": "말하기",
-            "guide": "询问具体应用名称的表达。",
+            "guide": "固定表达，意思是“告诉我是什么 App”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "필요하면 무슨 앱인지 알려 줄게요.",
             "exampleZh": "需要的话我告诉你是什么 App。"
         },
@@ -481,7 +481,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 183,
             "source": "말하기 활동",
-            "guide": "拍照相关应用。",
+            "guide": "名词，意思是“美颜 App”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "뷰티 앱으로 사진을 찍었어요.",
             "exampleZh": "用美颜 App 拍了照片。"
         },
@@ -491,7 +491,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 183,
             "source": "말하기 활동",
-            "guide": "健康管理应用。",
+            "guide": "名词，意思是“计步 App”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "만보기 앱으로 건강을 관리해요.",
             "exampleZh": "用计步 App 管理健康。"
         },
@@ -501,7 +501,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 183,
             "source": "말하기 활동",
-            "guide": "保持健康的管理行为。",
+            "guide": "名词，意思是“健康管理”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰으로 건강 관리를 해요.",
             "exampleZh": "用智能手机进行健康管理。"
         },
@@ -511,7 +511,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 184,
             "source": "듣기 전 어휘",
-            "guide": "好内容、商品推荐。",
+            "guide": "动词表达，意思是“推荐”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "좋은 영상을 추천해 주세요.",
             "exampleZh": "请推荐好的视频。"
         },
@@ -521,7 +521,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 184,
             "source": "듣기 전 어휘",
-            "guide": "동영상/화면内容。",
+            "guide": "名词，意思是“影像、视频”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요리 영상을 자주 봐요.",
             "exampleZh": "经常看料理视频。"
         },
@@ -531,7 +531,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 184,
             "source": "듣기",
-            "guide": "视频被观看的次数。",
+            "guide": "名词，意思是“播放量、点击量”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 영상은 조회수가 높아요.",
             "exampleZh": "这个视频播放量很高。"
         },
@@ -541,7 +541,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 184,
             "source": "듣기",
-            "guide": "YouTube 个人频道。",
+            "guide": "名词，意思是“个人频道”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "개인 채널을 만들었어요.",
             "exampleZh": "创建了个人频道。"
         },
@@ -551,7 +551,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 184,
             "source": "듣기",
-            "guide": "教做饭的视频。",
+            "guide": "名词，意思是“料理视频”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국 요리 영상을 봐요.",
             "exampleZh": "看韩国料理视频。"
         },
@@ -561,7 +561,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "문법 표현",
             "page": 184,
             "source": "발음",
-            "guide": "발음은 [어렵짜나요]로 익힌다。",
+            "guide": "语法型表达，意思是“不是很难嘛”。不要逐词硬译，要按整句语气理解。",
             "exampleKo": "요리는 혼자 배우기 어렵잖아요.",
             "exampleZh": "料理一个人学不是很难嘛。"
         },
@@ -571,7 +571,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "孤立、隔绝的感觉。",
+            "guide": "名词，意思是“社会孤立感”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰이 고립감 해소에 도움이 돼요.",
             "exampleZh": "智能手机有助于缓解孤立感。"
         },
@@ -581,7 +581,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "问题、压力、孤立感减少。",
+            "guide": "名词，意思是“解除、缓解”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스트레스를 해소했어요.",
             "exampleZh": "缓解了压力。"
         },
@@ -591,7 +591,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "普通人广泛使用。",
+            "guide": "名词，意思是“大众化、普及”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰의 대중화가 빠르게 진행됐어요.",
             "exampleZh": "智能手机普及很快。"
         },
@@ -601,7 +601,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "个人制作并发布内容。",
+            "guide": "名词，意思是“个人媒体”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "1인 미디어 시대가 되었어요.",
             "exampleZh": "进入了个人媒体时代。"
         },
@@ -611,7 +611,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "医疗、事故等紧急事件。",
+            "guide": "名词，意思是“紧急情况”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "응급 상황에는 병원을 찾아야 해요.",
             "exampleZh": "紧急情况要找医院。"
         },
@@ -621,7 +621,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "医院、诊所等。",
+            "guide": "名词，意思是“医疗机构”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가까운 의료 기관을 검색했어요.",
             "exampleZh": "搜索了附近的医疗机构。"
         },
@@ -631,7 +631,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "买药的地方。",
+            "guide": "名词，意思是“药店”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "연휴에 문을 연 약국을 찾았어요.",
             "exampleZh": "找到了假期营业的药店。"
         },
@@ -641,7 +641,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "인터넷/스마트폰 과다 사용问题。",
+            "guide": "名词，意思是“上瘾、成瘾”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰 중독을 조심해야 해요.",
             "exampleZh": "要小心手机成瘾。"
         },
@@ -651,7 +651,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "형용사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "担心、焦虑。",
+            "guide": "形容词，意思是“不安”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "휴대폰이 없으면 불안해요.",
             "exampleZh": "没有手机就不安。"
         },
@@ -661,7 +661,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "专家判断症状。",
+            "guide": "名词，意思是“诊断”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전문가의 진단을 받아 보세요.",
             "exampleZh": "请接受专家诊断。"
         },
@@ -671,7 +671,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "睡不着的症状。",
+            "guide": "名词，意思是“失眠症”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "불면증이 생겼어요.",
             "exampleZh": "出现了失眠。"
         },
@@ -681,7 +681,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "视力变差。",
+            "guide": "名词，意思是“视力恶化”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰 사용은 시력 악화의 원인이 될 수 있어요.",
             "exampleZh": "使用手机可能成为视力恶化的原因。"
         },
@@ -691,7 +691,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "술 마신 뒤 운전。",
+            "guide": "名词，意思是“酒后驾驶”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "음주 운전은 위험해요.",
             "exampleZh": "酒后驾驶很危险。"
         },
@@ -701,7 +701,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "형용사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "관계가 서먹할 때 사용。",
+            "guide": "形容词，意思是“尴尬、不自然”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "직접 만나면 어색해요.",
             "exampleZh": "见面会尴尬。"
         },
@@ -711,7 +711,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 185,
             "source": "읽기 전",
-            "guide": "정보와 마음을 주고받다。",
+            "guide": "动词表达，意思是“沟通”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "SNS로만 소통해요.",
             "exampleZh": "只通过社交网络沟通。"
         },
@@ -721,7 +721,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "每天的生活。",
+            "guide": "名词，意思是“日常”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰 없는 일상을 상상하기 어려워요.",
             "exampleZh": "很难想象没有手机的日常。"
         },
@@ -731,7 +731,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "머릿속으로 그려 보다。",
+            "guide": "动词表达，意思是“想象”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "미래 생활을 상상해 봤어요.",
             "exampleZh": "想象了未来生活。"
         },
@@ -741,7 +741,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 186,
             "source": "읽기",
-            "guide": "前后时代对比。",
+            "guide": "固定表达，意思是“与过去不同”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "과거와 달리 많은 일을 쉽게 해요.",
             "exampleZh": "与过去不同，很多事情能轻松完成。"
         },
@@ -751,7 +751,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "문법 표현",
             "page": 186,
             "source": "읽기",
-            "guide": "긍정적인 원인을 말할 때 사용。",
+            "guide": "语法型表达，意思是“多亏、由于”。不要逐词硬译，要按整句语气理解。",
             "exampleKo": "스마트폰 덕분에 편리해졌어요.",
             "exampleZh": "多亏智能手机变方便了。"
         },
@@ -761,7 +761,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 186,
             "source": "읽기",
-            "guide": "빠르게의正式 표현。",
+            "guide": "副词，意思是“迅速地”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "문제를 신속하게 해결했어요.",
             "exampleZh": "迅速解决了问题。"
         },
@@ -771,7 +771,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "문제나 일을 끝내다。",
+            "guide": "动词表达，意思是“解决”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "많은 일을 쉽게 해결해요.",
             "exampleZh": "轻松解决很多事情。"
         },
@@ -781,7 +781,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 186,
             "source": "읽기",
-            "guide": "优缺点转换时使用。",
+            "guide": "副词，意思是“另一方面、相反”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "편리한 반면 문제가 있어요.",
             "exampleZh": "方便的同时也有问题。"
         },
@@ -791,7 +791,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "依赖的强度。",
+            "guide": "名词，意思是“依赖程度”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰 의존도가 높아졌어요.",
             "exampleZh": "对手机的依赖度提高了。"
         },
@@ -801,7 +801,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "人与人的关系。",
+            "guide": "名词，意思是“人际关系”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰은 인간관계에도 영향을 미쳐요.",
             "exampleZh": "智能手机也影响人际关系。"
         },
@@ -811,7 +811,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "文章中引出说明。",
+            "guide": "动词表达，意思是“观察、了解、看看”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "편리함부터 살펴봅시다.",
             "exampleZh": "先来看看便利性。"
         },
@@ -821,7 +821,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "스마트폰 같은电子设备。",
+            "guide": "名词，意思是“设备”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "작은 기기 하나로 가능해요.",
             "exampleZh": "一个小设备就能做到。"
         },
@@ -831,7 +831,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "声音记录。",
+            "guide": "名词，意思是“录音”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰으로 녹음을 했어요.",
             "exampleZh": "用手机录了音。"
         },
@@ -841,7 +841,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 186,
             "source": "읽기",
-            "guide": "필요할 때마다。",
+            "guide": "副词，意思是“随时、经常”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "수시로 메시지를 주고받아요.",
             "exampleZh": "随时互发消息。"
         },
@@ -851,7 +851,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "消息、礼物等互相往来。",
+            "guide": "动词表达，意思是“互相传递”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "메시지를 주고받았어요.",
             "exampleZh": "互相发了消息。"
         },
@@ -861,7 +861,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 186,
             "source": "읽기",
-            "guide": "强调最重要原因。",
+            "guide": "副词，意思是“最重要的是”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "무엇보다도 정보 활용이 쉬워요.",
             "exampleZh": "最重要的是信息使用很方便。"
         },
@@ -871,7 +871,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "信息数据或手机流量。",
+            "guide": "名词，意思是“数据、流量”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "최신 데이터를 활용해요.",
             "exampleZh": "使用最新数据。"
         },
@@ -881,7 +881,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "찾아내다。",
+            "guide": "动词表达，意思是“发现”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "필요한 정보를 발견했어요.",
             "exampleZh": "发现了需要的信息。"
         },
@@ -891,7 +891,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "잘 이용하다。",
+            "guide": "动词表达，意思是“活用、利用”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "정보를 잘 활용해야 해요.",
             "exampleZh": "要好好利用信息。"
         },
@@ -901,7 +901,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "广泛使用。",
+            "guide": "动词表达，意思是“普遍化、普及”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "인터넷 뱅킹이 보편화되었어요.",
             "exampleZh": "网上银行普及了。"
         },
@@ -911,7 +911,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 186,
             "source": "읽기",
-            "guide": "某事影响某对象。",
+            "guide": "固定表达，意思是“产生影响”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "삶에 큰 영향을 미쳤어요.",
             "exampleZh": "对生活产生了很大影响。"
         },
@@ -921,7 +921,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "近况、新闻。",
+            "guide": "名词，意思是“消息”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "SNS로 소식을 주고받아요.",
             "exampleZh": "通过社交网络互通消息。"
         },
@@ -931,7 +931,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 186,
             "source": "읽기",
-            "guide": "交流时间减少。",
+            "guide": "固定表达，意思是“对话减少”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직접 대화가 줄어들었어요.",
             "exampleZh": "面对面对话减少了。"
         },
@@ -941,7 +941,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "关系或沟通断开。",
+            "guide": "动词表达，意思是“被断绝、中断”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "소통이 단절될 수 있어요.",
             "exampleZh": "沟通可能会中断。"
         },
@@ -951,7 +951,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "隐私数据外流。",
+            "guide": "名词，意思是“个人信息泄露”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "개인 정보 유출을 조심하세요.",
             "exampleZh": "请小心个人信息泄露。"
         },
@@ -961,7 +961,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "私人生活被公开。",
+            "guide": "名词，意思是“私生活曝光”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "사생활 노출 문제가 심각해요.",
             "exampleZh": "私生活曝光问题很严重。"
         },
@@ -971,7 +971,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "社会层面的困难。",
+            "guide": "名词，意思是“社会问题”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중독은 사회 문제가 되었어요.",
             "exampleZh": "成瘾成了社会问题。"
         },
@@ -981,7 +981,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "형용사",
             "page": 186,
             "source": "읽기",
-            "guide": "问题程度重。",
+            "guide": "形容词，意思是“严重”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "문제가 심각해졌어요.",
             "exampleZh": "问题变严重了。"
         },
@@ -991,7 +991,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "한자성어",
             "page": 186,
             "source": "읽기",
-            "guide": "过度不如适度。",
+            "guide": "汉字成语，意思是“过犹不及”。按整体含义记忆，比逐字翻译更自然。",
             "exampleKo": "스마트폰 사용에도 과유불급이 필요해요.",
             "exampleZh": "使用智能手机也要记住过犹不及。"
         },
@@ -1001,7 +1001,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "형용사/동사",
             "page": 186,
             "source": "읽기",
-            "guide": "정도가 넘다。",
+            "guide": "动词表达，意思是“过度”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "지나친 사용은 좋지 않아요.",
             "exampleZh": "过度使用不好。"
         },
@@ -1011,7 +1011,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "동사",
             "page": 186,
             "source": "읽기",
-            "guide": "부족하다와 비슷。",
+            "guide": "动词表达，意思是“不足”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "지나친 것은 모자란 것보다 좋지 않아요.",
             "exampleZh": "过度不比不足好。"
         },
@@ -1021,7 +1021,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 186,
             "source": "읽기",
-            "guide": "잘 판단하고 사용하는 능力。",
+            "guide": "名词，意思是“智慧”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "잘 사용하는 지혜가 필요해요.",
             "exampleZh": "需要善用的智慧。"
         },
@@ -1031,7 +1031,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 187,
             "source": "쓰기",
-            "guide": "사용하는 방법。",
+            "guide": "名词，意思是“活用方法”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스마트폰 활용법을 써 보세요.",
             "exampleZh": "请写智能手机使用方法。"
         },
@@ -1041,7 +1041,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 187,
             "source": "쓰기",
-            "guide": "잘못된 부분。",
+            "guide": "名词，意思是“问题点”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문제점을 정리했어요.",
             "exampleZh": "整理了问题点。"
         },
@@ -1051,7 +1051,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 187,
             "source": "쓰기",
-            "guide": "过多过少都不是，恰当地。",
+            "guide": "副词，意思是“适当地”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "스마트폰을 적절하게 사용해야 해요.",
             "exampleZh": "应该适当地使用手机。"
         },
@@ -1061,7 +1061,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "SKT, KT, LG U+ 같은 회사。",
+            "guide": "名词，意思是“通信公司、运营商”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대표적인 통신사 이름을 기억하세요.",
             "exampleZh": "请记住代表性运营商的名字。"
         },
@@ -1071,7 +1071,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "移动电话服务公司。",
+            "guide": "名词，意思是“移动通信运营商”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국에는 세 곳의 이동 통신사가 있어요.",
             "exampleZh": "韩国有三家移动通信运营商。"
         },
@@ -1081,7 +1081,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "휴대폰 개통을 처리하는 매장。",
+            "guide": "名词，意思是“代理店、营业厅”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "통신사 대리점에 가야 해요.",
             "exampleZh": "要去运营商营业厅。"
         },
@@ -1091,7 +1091,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "여권, 외국인등록증 등。",
+            "guide": "名词，意思是“身份证件”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신분증을 반드시 가져가야 해요.",
             "exampleZh": "必须带身份证件。"
         },
@@ -1101,7 +1101,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "외국인이 자주 쓰는 신분증。",
+            "guide": "名词，意思是“护照”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여권을 챙겨 가세요.",
             "exampleZh": "请带上护照。"
         },
@@ -1111,7 +1111,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "韩国外国人身份证件。",
+            "guide": "名词，意思是“外国人登录证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "외국인 등록증이 필요해요.",
             "exampleZh": "需要外国人登录证。"
         },
@@ -1121,7 +1121,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "휴대폰 통신에 필요한 카드。",
+            "guide": "名词，意思是“USIM 卡、手机卡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "유심 카드를 챙겨 갔어요.",
             "exampleZh": "带去了 USIM 卡。"
         },
@@ -1131,7 +1131,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "계약名义为本人。",
+            "guide": "固定表达，意思是“以本人名义”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "본인 이름으로 개통할 수 없어요.",
             "exampleZh": "不能以本人名义开通。"
         },
@@ -1141,7 +1141,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "数据、通话、短信组合。",
+            "guide": "名词，意思是“资费套餐”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자신에게 맞는 요금제를 선택하세요.",
             "exampleZh": "请选择适合自己的套餐。"
         },
@@ -1151,7 +1151,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "手机流量用量。",
+            "guide": "名词，意思是“数据使用量”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "데이터 사용량이 많아요.",
             "exampleZh": "数据使用量很多。"
         },
@@ -1161,7 +1161,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "업무 때문에라는 뜻。",
+            "guide": "副词，意思是“因工作、业务上”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "업무상 휴대폰을 많이 써요.",
             "exampleZh": "因工作经常用手机。"
         },
@@ -1171,7 +1171,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "使用量과 관계없이 매달 같은 요금을 내는套餐。",
+            "guide": "名词，意思是“无限套餐”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "무제한 요금제가 유리해요.",
             "exampleZh": "无限套餐更划算。"
         },
@@ -1181,7 +1181,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "명사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "전화로 말하는 통화。",
+            "guide": "名词，意思是“语音通话”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "음성 통화 시간이 많아요.",
             "exampleZh": "语音通话时间很多。"
         },
@@ -1191,7 +1191,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "부사",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "每个月。",
+            "guide": "副词，意思是“每月”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "매달 같은 요금을 내요.",
             "exampleZh": "每月交相同费用。"
         },
@@ -1201,7 +1201,7 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "pos": "표현",
             "page": 188,
             "source": "문화와 정보",
-            "guide": "费用支付。",
+            "guide": "固定表达，意思是“缴费”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "휴대폰 요금을 냈어요.",
             "exampleZh": "交了手机费。"
         }

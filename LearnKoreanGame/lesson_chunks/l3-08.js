@@ -115,7 +115,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 96,
             "source": "단원 제목",
-            "guide": "本课主题，음식 是食物，요리 是料理或烹饪。",
+            "guide": "固定表达，意思是“饮食和料理”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "8과의 주제는 음식과 요리입니다.",
             "exampleZh": "第8课的主题是饮食和料理。"
         },
@@ -125,7 +125,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 96,
             "source": "단원 제목",
-            "guide": "먹는 모든 것을 넓게 말한다.",
+            "guide": "名词，意思是“食物”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "좋아하는 음식이 뭐예요?",
             "exampleZh": "你喜欢的食物是什么？"
         },
@@ -135,7 +135,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사/동사",
             "page": 96,
             "source": "단원 제목",
-            "guide": "食物本身，也可以表示烹饪行为。",
+            "guide": "动词表达，意思是“料理、做菜”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "요리를 자주 해요?",
             "exampleZh": "你经常做菜吗？"
         },
@@ -145,7 +145,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 96,
             "source": "어휘 목표",
-            "guide": "음식 맛을 내는 재료.",
+            "guide": "名词，意思是“调味料、调料”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 음식에는 어떤 양념이 들어가요?",
             "exampleZh": "这道菜里放什么调料？"
         },
@@ -155,7 +155,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 96,
             "source": "어휘 목표",
-            "guide": "음식의 느낌이나 풍미.",
+            "guide": "名词，意思是“味道”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "맛이 어때요?",
             "exampleZh": "味道怎么样？"
         },
@@ -165,7 +165,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 96,
             "source": "어휘 목표",
-            "guide": "음식을 만드는 순서와 방식.",
+            "guide": "固定表达，意思是“料理方法”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "김치볶음밥 요리 방법을 읽었어요.",
             "exampleZh": "读了泡菜炒饭的做法。"
         },
@@ -175,7 +175,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 96,
             "source": "활동 목표",
-            "guide": "고향에서 먹던 음식.",
+            "guide": "固定表达，意思是“故乡菜”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고향 음식 요리 방법을 소개해 보세요.",
             "exampleZh": "请介绍故乡菜的做法。"
         },
@@ -185,7 +185,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 96,
             "source": "문화 제목",
-            "guide": "食品可以销售到什么时候的日期。",
+            "guide": "固定表达，意思是“食品流通期限、保质销售期限”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "식품의 유통 기한을 확인하세요.",
             "exampleZh": "请确认食品的流通期限。"
         },
@@ -195,7 +195,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "고춧가루로 만든 매운 장.",
+            "guide": "名词，意思是“辣椒酱”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비빔밥에는 고추장을 넣어요.",
             "exampleZh": "拌饭里放辣椒酱。"
         },
@@ -205,7 +205,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "짠맛을 내는 검은색 양념.",
+            "guide": "名词，意思是“酱油”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "간장으로 간을 맞췄어요.",
             "exampleZh": "用酱油调味了。"
         },
@@ -215,7 +215,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "콩으로 만든 한국 장.",
+            "guide": "名词，意思是“大酱”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "된장찌개를 좋아해요.",
             "exampleZh": "喜欢大酱汤。"
         },
@@ -225,7 +225,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "고소한 향을 내는 기름.",
+            "guide": "名词，意思是“香油、芝麻油”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "마지막에 참기름을 조금 넣으세요.",
             "exampleZh": "最后放一点香油。"
         },
@@ -235,7 +235,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "신맛을 내는 양념.",
+            "guide": "名词，意思是“醋”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "식초에 절이면 새콤해요.",
             "exampleZh": "用醋腌会发酸爽。"
         },
@@ -245,7 +245,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "말린 고추를 빻은 가루.",
+            "guide": "名词，意思是“辣椒粉”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "김치에는 고춧가루가 많이 들어가요.",
             "exampleZh": "泡菜里放很多辣椒粉。"
         },
@@ -255,7 +255,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "음식 위에 뿌리는 고소한 씨앗.",
+            "guide": "名词，意思是“芝麻”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "볶음밥 위에 깨를 뿌려요.",
             "exampleZh": "在炒饭上撒芝麻。"
         },
@@ -265,7 +265,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 98,
             "source": "어휘",
-            "guide": "매운 향을 내는 양념.",
+            "guide": "名词，意思是“胡椒”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "후추를 조금 뿌리세요.",
             "exampleZh": "撒一点胡椒。"
         },
@@ -275,7 +275,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 98,
             "source": "어휘",
-            "guide": "고추 같은 자극적인 맛.",
+            "guide": "形容词，意思是“辣”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "고추장이 들어가서 매워요.",
             "exampleZh": "因为放了辣椒酱所以辣。"
         },
@@ -285,7 +285,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 98,
             "source": "어휘",
-            "guide": "소금이나 간장이 많아 맛이 강하다.",
+            "guide": "形容词，意思是“咸”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "간장을 많이 넣어서 짜요.",
             "exampleZh": "酱油放多了所以咸。"
         },
@@ -295,7 +295,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 98,
             "source": "어휘",
-            "guide": "설탕 같은 맛이 나다.",
+            "guide": "形容词，意思是“甜”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "설탕을 넣어서 달아요.",
             "exampleZh": "因为放了糖所以甜。"
         },
@@ -305,7 +305,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 98,
             "source": "어휘",
-            "guide": "식초나 레몬 같은 맛.",
+            "guide": "形容词，意思是“酸”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "식초를 넣어서 좀 셔요.",
             "exampleZh": "因为放了醋所以有点酸。"
         },
@@ -315,7 +315,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 98,
             "source": "어휘",
-            "guide": "참기름, 깨, 견과류 같은 맛.",
+            "guide": "形容词，意思是“香、香醇”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "참기름 냄새가 고소해요.",
             "exampleZh": "香油味很香。"
         },
@@ -325,7 +325,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "재료를 물로 깨끗하게 하다.",
+            "guide": "动词表达，意思是“洗胡萝卜”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "먼저 당근을 씻으세요.",
             "exampleZh": "请先洗胡萝卜。"
         },
@@ -335,7 +335,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "껍질을 떼어 내다.",
+            "guide": "动词表达，意思是“剥洋葱皮”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "양파 껍질을 벗긴 다음 썰어요.",
             "exampleZh": "剥洋葱皮后切。"
         },
@@ -345,7 +345,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "칼로 재료를 자르다.",
+            "guide": "动词表达，意思是“用刀切土豆”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "감자를 칼로 작게 썰어요.",
             "exampleZh": "用刀把土豆切小。"
         },
@@ -355,7 +355,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "작게 잘게 자르다.",
+            "guide": "动词表达，意思是“剁蒜”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "마늘을 다져서 양념에 넣어요.",
             "exampleZh": "把蒜剁碎放进调料里。"
         },
@@ -365,7 +365,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "물이 끓게 하다.",
+            "guide": "动词表达，意思是“烧水”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "라면을 끓이려면 물을 끓이세요.",
             "exampleZh": "要煮拉面的话先烧水。"
         },
@@ -375,7 +375,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "뜨거운 기름에 익히다.",
+            "guide": "动词表达，意思是“油炸”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "만두를 기름에 튀겼어요.",
             "exampleZh": "把饺子油炸了。"
         },
@@ -385,7 +385,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "김으로 익히다.",
+            "guide": "动词表达，意思是“蒸饺子”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "찜기에 만두를 쪘어요.",
             "exampleZh": "在蒸锅里蒸了饺子。"
         },
@@ -395,7 +395,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "끓는 물에 익히다.",
+            "guide": "动词表达，意思是“煮鸡蛋”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "계란을 삶아서 위에 올리세요.",
             "exampleZh": "煮鸡蛋后放在上面。"
         },
@@ -405,7 +405,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "프라이팬에서 섞어 익히다.",
+            "guide": "动词表达，意思是“炒饭”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "김치와 밥을 같이 볶아요.",
             "exampleZh": "把泡菜和米饭一起炒。"
         },
@@ -415,7 +415,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "양념을 넣고 손으로 섞다.",
+            "guide": "动词表达，意思是“拌野菜/蔬菜”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "참기름을 넣고 나물을 무쳤어요.",
             "exampleZh": "放香油拌了蔬菜。"
         },
@@ -425,7 +425,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "불이나 팬에 익히다.",
+            "guide": "动词表达，意思是“烤肉”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "프라이팬에 고기를 구워요.",
             "exampleZh": "在平底锅里烤肉。"
         },
@@ -435,7 +435,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 98,
             "source": "어휘",
-            "guide": "끓는 물에 살짝 익히다.",
+            "guide": "动词表达，意思是“焯菠菜”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "시금치를 데친 후 무치세요.",
             "exampleZh": "菠菜焯水后拌。"
         },
@@ -445,7 +445,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "문법",
             "page": 99,
             "source": "문법",
-            "guide": "主语让别人做或使状态改变的表达。",
+            "guide": "语法型表达，意思是“使动”。不要逐词硬译，要按整句语气理解。",
             "exampleKo": "사동 표현을 배웠어요.",
             "exampleZh": "学习了使动表达。"
         },
@@ -455,7 +455,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법",
-            "guide": "입다의 사동형.",
+            "guide": "动词表达，意思是“给穿、让穿”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아기에게 따뜻한 옷을 입히세요.",
             "exampleZh": "请给宝宝穿暖和的衣服。"
         },
@@ -465,7 +465,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법",
-            "guide": "먹다의 사동형.",
+            "guide": "动词表达，意思是“喂、让吃”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이한테 채소 볶음밥을 먹여요.",
             "exampleZh": "给孩子喂蔬菜炒饭。"
         },
@@ -475,7 +475,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법",
-            "guide": "物品或 일을 맡게 하다.",
+            "guide": "动词表达，意思是“托付、送去”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "겨울 코트를 세탁소에 맡기세요.",
             "exampleZh": "把冬季外套送去洗衣店。"
         },
@@ -485,7 +485,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법",
-            "guide": "타다의 사동형.",
+            "guide": "动词表达，意思是“让乘坐、搭载”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이를 자동차 뒷자리에 태워요.",
             "exampleZh": "让孩子坐在汽车后座。"
         },
@@ -495,7 +495,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법",
-            "guide": "신다의 사동형.",
+            "guide": "动词表达，意思是“给穿鞋/袜”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이에게 신발을 신겨요.",
             "exampleZh": "给孩子穿鞋。"
         },
@@ -505,7 +505,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법",
-            "guide": "맞다의 사동형，요리에서는 간/시간/양과 함께 자주 쓴다.",
+            "guide": "动词表达，意思是“调整、配合、对准”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "간을 맞추세요.",
             "exampleZh": "请调好味道。"
         },
@@ -515,7 +515,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 99,
             "source": "문법 연습",
-            "guide": "씌우다 表示给人戴上帽子等。",
+            "guide": "动词表达，意思是“给戴帽子”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이에게 모자를 씌웠어요.",
             "exampleZh": "给孩子戴上了帽子。"
         },
@@ -525,7 +525,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법 연습",
-            "guide": "날다의 사동형.",
+            "guide": "动词表达，意思是“放飞、使飞”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "종이비행기를 날려요.",
             "exampleZh": "放飞纸飞机。"
         },
@@ -535,7 +535,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 99,
             "source": "문법 연습",
-            "guide": "읽다의 사동형.",
+            "guide": "动词表达，意思是“让读、使读”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "선생님이 학생에게 책을 읽혀요.",
             "exampleZh": "老师让学生读书。"
         },
@@ -545,7 +545,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 99,
             "source": "문법 연습",
-            "guide": "아이를 태우고 이동하는 도구.",
+            "guide": "名词，意思是“婴儿车”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아이를 유모차에 태워요.",
             "exampleZh": "让孩子坐婴儿车。"
         },
@@ -555,7 +555,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 100,
             "source": "문법",
-            "guide": "얼다의 사동형.",
+            "guide": "动词表达，意思是“冻起来”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "남은 고기는 냉동실에 넣어서 얼리세요.",
             "exampleZh": "剩下的肉放进冷冻室冻起来。"
         },
@@ -565,7 +565,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 100,
             "source": "문법",
-            "guide": "소리, 양, 시간 등을 작게 하다.",
+            "guide": "动词表达，意思是“减少、调小”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "소리를 좀 줄여 주세요.",
             "exampleZh": "请把声音调小一点。"
         },
@@ -575,7 +575,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 100,
             "source": "문법",
-            "guide": "남다의 사동형/타동형.",
+            "guide": "动词表达，意思是“留下、剩下”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "음식을 남기지 않고 다 먹었어요.",
             "exampleZh": "食物一点没剩都吃完了。"
         },
@@ -585,7 +585,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 100,
             "source": "문법 연습",
-            "guide": "껍질이나 옷을 벗게 하다.",
+            "guide": "动词表达，意思是“剥掉、脱掉”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "제이슨 씨가 양파 껍질을 벗겨요.",
             "exampleZh": "Jason在剥洋葱皮。"
         },
@@ -595,7 +595,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "표현",
             "page": 100,
             "source": "연습",
-            "guide": "더 먹기 어려운 상태.",
+            "guide": "固定表达，意思是“肚子饱”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "배가 불러서 다 못 먹겠어요.",
             "exampleZh": "太饱了，吃不完。"
         },
@@ -605,7 +605,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "표현",
             "page": 100,
             "source": "연습",
-            "guide": "室内温度高。",
+            "guide": "固定表达，意思是“房间热”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "방이 너무 더우면 온도를 낮추세요.",
             "exampleZh": "房间太热的话请调低温度。"
         },
@@ -615,7 +615,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "표현",
             "page": 101,
             "source": "말하기",
-            "guide": "몸속, 특히 위가 편하지 않다.",
+            "guide": "固定表达，意思是“胃/身体不舒服”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "요즘 속이 좋지 않아 밥을 못 먹어요.",
             "exampleZh": "最近胃不舒服，吃不下饭。"
         },
@@ -625,7 +625,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "표현",
             "page": 101,
             "source": "말하기",
-            "guide": "먹은 음식이 위에서 잘 처리되다.",
+            "guide": "固定表达，意思是“容易消化”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "죽은 소화가 잘 돼요.",
             "exampleZh": "粥容易消化。"
         },
@@ -635,7 +635,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 101,
             "source": "말하기",
-            "guide": "채소를 넣어 끓인 죽.",
+            "guide": "名词，意思是“蔬菜粥”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "속이 안 좋을 때 야채죽을 먹어요.",
             "exampleZh": "胃不舒服时吃蔬菜粥。"
         },
@@ -645,7 +645,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 101,
             "source": "말하기",
-            "guide": "상대에게 방법을 알려 주다.",
+            "guide": "动词表达，意思是“教给”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "요리 방법을 가르쳐 주세요.",
             "exampleZh": "请教我料理方法。"
         },
@@ -655,7 +655,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 101,
             "source": "말하기",
-            "guide": "음식이 먹을 수 있게 되다.",
+            "guide": "动词表达，意思是“熟、煮熟”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "채소가 익을 때까지 끓이세요.",
             "exampleZh": "煮到蔬菜熟为止。"
         },
@@ -665,7 +665,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 101,
             "source": "말하기",
-            "guide": "복잡하지 않고 쉽다.",
+            "guide": "形容词，意思是“简单”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "이 요리는 간단해요.",
             "exampleZh": "这道菜很简单。"
         },
@@ -675,7 +675,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "표현",
             "page": 101,
             "source": "말하기",
-            "guide": "만드는 중에 다른 일이 생길 때.",
+            "guide": "固定表达，意思是“做着做着”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "만들다가 모르는 게 있으면 물어보세요.",
             "exampleZh": "做着做着有不懂的就问。"
         },
@@ -685,7 +685,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "부사",
             "page": 101,
             "source": "말하기",
-            "guide": "어느 때나.",
+            "guide": "副词，意思是“随时”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "언제든지 저한테 물어보세요.",
             "exampleZh": "随时问我。"
         },
@@ -695,7 +695,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 101,
             "source": "말하기",
-            "guide": "아기에게 먹이는 부드러운 음식.",
+            "guide": "名词，意思是“辅食”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아기 이유식을 만들어요.",
             "exampleZh": "做宝宝辅食。"
         },
@@ -705,7 +705,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 101,
             "source": "말하기",
-            "guide": "환자가 먹기 좋은 음식.",
+            "guide": "固定表达，意思是“病人餐”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "환자 음식은 소화가 잘 되는 게 좋아요.",
             "exampleZh": "病人餐最好容易消化。"
         },
@@ -715,7 +715,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 101,
             "source": "말하기",
-            "guide": "재료를 갈 때 쓰는 기계.",
+            "guide": "名词，意思是“搅拌机”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "채소를 믹서기에 넣고 갈아요.",
             "exampleZh": "把蔬菜放进搅拌机里打碎。"
         },
@@ -725,7 +725,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 101,
             "source": "말하기",
-            "guide": "재료를 아주 잘게 만들다.",
+            "guide": "动词表达，意思是“磨、搅碎”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "재료가 없어질 때까지 갈아요.",
             "exampleZh": "搅到看不见颗粒为止。"
         },
@@ -735,7 +735,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 101,
             "source": "말하기",
-            "guide": "잎이 둥글게 뭉친 채소.",
+            "guide": "名词，意思是“圆白菜”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "양배추를 삶아서 갈아요.",
             "exampleZh": "把圆白菜煮熟后搅碎。"
         },
@@ -745,7 +745,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 101,
             "source": "말하기",
-            "guide": "초록색 꽃 모양 채소.",
+            "guide": "名词，意思是“西兰花”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "브로콜리를 이유식에 넣어요.",
             "exampleZh": "把西兰花放进辅食里。"
         },
@@ -755,7 +755,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 102,
             "source": "듣기",
-            "guide": "음식을 사 먹는 곳.",
+            "guide": "名词，意思是“餐馆”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자주 가는 식당이 있어요?",
             "exampleZh": "有常去的餐馆吗？"
         },
@@ -765,7 +765,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 102,
             "source": "듣기",
-            "guide": "음식에 곁들이는 양념장.",
+            "guide": "名词，意思是“酱汁”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "소스에는 간장과 고춧가루가 들어가요.",
             "exampleZh": "酱汁里有酱油和辣椒粉。"
         },
@@ -775,7 +775,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 102,
             "source": "듣기",
-            "guide": "양념에 재운 고기.",
+            "guide": "固定表达，意思是“调味肉”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "양념 고기를 좋아해요.",
             "exampleZh": "喜欢调味肉。"
         },
@@ -785,7 +785,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 102,
             "source": "발음",
-            "guide": "쇠고기를 넣은 볶음밥.",
+            "guide": "固定表达，意思是“牛肉炒饭”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "오늘 저녁에는 쇠고기 볶음밥을 만들게요.",
             "exampleZh": "今晚做牛肉炒饭。"
         },
@@ -795,7 +795,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "양념에 담가 맛이 배게 하다.",
+            "guide": "动词表达，意思是“用调料腌”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "고기를 양념에 절였어요.",
             "exampleZh": "把肉用调料腌了。"
         },
@@ -805,7 +805,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "소금으로 재료의 물기를 빼거나 맛을 내다.",
+            "guide": "动词表达，意思是“用盐腌”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "배추를 소금에 절여요.",
             "exampleZh": "用盐腌白菜。"
         },
@@ -815,7 +815,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "식초에 담가 신맛을 내다.",
+            "guide": "动词表达，意思是“用醋腌”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "오이를 식초에 절였어요.",
             "exampleZh": "用醋腌了黄瓜。"
         },
@@ -825,7 +825,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "통 안에 넣다.",
+            "guide": "动词表达，意思是“装进容器”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "김치를 통에 담으세요.",
             "exampleZh": "把泡菜装进容器。"
         },
@@ -835,7 +835,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "음식을 접시에 놓다.",
+            "guide": "动词表达，意思是“盛到盘子里”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "완성된 음식을 접시에 담아요.",
             "exampleZh": "把完成的食物盛到盘子里。"
         },
@@ -845,7 +845,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "음식을 그릇에 넣다.",
+            "guide": "动词表达，意思是“盛到碗/器皿里”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "국수를 그릇에 담으세요.",
             "exampleZh": "把面盛到碗里。"
         },
@@ -855,7 +855,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "김치와 부침가루로 만드는 전.",
+            "guide": "名词，意思是“泡菜煎饼”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비 오는 날에는 김치전을 먹고 싶어요.",
             "exampleZh": "下雨天想吃泡菜煎饼。"
         },
@@ -865,7 +865,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "김치와 양념을 넣어 비빈 국수.",
+            "guide": "名词，意思是“泡菜拌面”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "김치비빔국수는 매콤해요.",
             "exampleZh": "泡菜拌面辣爽。"
         },
@@ -875,7 +875,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "단맛을 내는 재료.",
+            "guide": "名词，意思是“糖”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "양념에 설탕을 조금 넣어요.",
             "exampleZh": "调料里放一点糖。"
         },
@@ -885,7 +885,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 103,
             "source": "배운 어휘 확인",
-            "guide": "전을 만들 때 쓰는 가루.",
+            "guide": "名词，意思是“煎饼粉”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부침 가루에 물을 넣어 섞으세요.",
             "exampleZh": "在煎饼粉里加水搅拌。"
         },
@@ -895,7 +895,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "비빔국수에 쓰는 면.",
+            "guide": "名词，意思是“拌面面条”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비빔국수면을 4분 정도 삶으세요.",
             "exampleZh": "把拌面面条煮约4分钟。"
         },
@@ -905,7 +905,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "쌈이나 비빔국수에 넣는 채소.",
+            "guide": "名词，意思是“生菜”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "상추를 채 썰어 넣으세요.",
             "exampleZh": "把生菜切丝放进去。"
         },
@@ -915,7 +915,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 103,
             "source": "읽기 전",
-            "guide": "재료의 물을 제거하다.",
+            "guide": "动词表达，意思是“沥干水分”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "면을 삶고 물기를 빼세요.",
             "exampleZh": "面煮好后沥干水分。"
         },
@@ -925,7 +925,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "재료와 양념을 섞다.",
+            "guide": "动词表达，意思是“拌”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "국수에 양념을 넣고 비비세요.",
             "exampleZh": "面里放调料拌一拌。"
         },
@@ -935,7 +935,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 103,
             "source": "읽기 전",
-            "guide": "요리가 다 만들어지다.",
+            "guide": "动词表达，意思是“完成”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "완성되면 그릇에 담으세요.",
             "exampleZh": "完成后盛到碗里。"
         },
@@ -945,7 +945,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "김치와 밥을 볶아 만든 음식.",
+            "guide": "名词，意思是“泡菜炒饭”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "김치볶음밥을 만들어 봅시다.",
             "exampleZh": "来做泡菜炒饭吧。"
         },
@@ -955,7 +955,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "밥과 함께 먹는 음식.",
+            "guide": "名词，意思是“小菜、配菜”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오늘 반찬이 없나요?",
             "exampleZh": "今天没有配菜吗？"
         },
@@ -965,7 +965,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "요리에 필요한 것.",
+            "guide": "名词，意思是“材料、食材”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집에 있는 재료만 넣어도 됩니다.",
             "exampleZh": "只放家里有的材料也可以。"
         },
@@ -975,7 +975,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "돼지의 고기.",
+            "guide": "名词，意思是“猪肉”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "돼지고기를 먼저 볶으세요.",
             "exampleZh": "先炒猪肉。"
         },
@@ -985,7 +985,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "요리에 쓰는 기름.",
+            "guide": "名词，意思是“食用油”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "프라이팬에 식용유를 두르세요.",
             "exampleZh": "在平底锅里倒食用油。"
         },
@@ -995,7 +995,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "볶거나 부칠 때 쓰는 팬.",
+            "guide": "名词，意思是“平底锅”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "프라이팬에 밥을 볶아요.",
             "exampleZh": "在平底锅里炒饭。"
         },
@@ -1005,7 +1005,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 104,
             "source": "읽기",
-            "guide": "기름을 팬에 골고루 넣다.",
+            "guide": "动词表达，意思是“倒上一圈、围上”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "프라이팬에 식용유를 두르세요.",
             "exampleZh": "在平底锅里倒油。"
         },
@@ -1015,7 +1015,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 104,
             "source": "읽기",
-            "guide": "싱겁거나 짜지 않게 맛을 조절하다.",
+            "guide": "动词表达，意思是“调味”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "간장으로 간을 맞췄어요.",
             "exampleZh": "用酱油调味了。"
         },
@@ -1025,7 +1025,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 104,
             "source": "읽기",
-            "guide": "프라이팬에 부친 계란.",
+            "guide": "名词，意思是“煎鸡蛋”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "계란프라이를 밥 위에 올려요.",
             "exampleZh": "把煎鸡蛋放在饭上。"
         },
@@ -1035,7 +1035,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 104,
             "source": "읽기",
-            "guide": "기름을 두르고 얇게 익히다.",
+            "guide": "动词表达，意思是“煎”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "계란프라이를 부쳐요.",
             "exampleZh": "煎鸡蛋。"
         },
@@ -1045,7 +1045,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 104,
             "source": "읽기/배운 어휘 확인",
-            "guide": "가루나 액체를 위에 흩어 놓다.",
+            "guide": "动词表达，意思是“撒”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "참기름과 깨를 뿌리세요.",
             "exampleZh": "撒上香油和芝麻。"
         },
@@ -1055,7 +1055,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "속담형 표현",
             "page": 104,
             "source": "읽기",
-            "guide": "맛이 아주 좋다는 과장 표현.",
+            "guide": "固定表达，意思是“好吃到两个人吃着少一个都不知道”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "둘이 먹다가 하나가 죽어도 모를 만큼 맛있어요.",
             "exampleZh": "好吃到夸张地说两个人吃着少一个都不知道。"
         },
@@ -1065,7 +1065,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 105,
             "source": "쓰기",
-            "guide": "요리 재료와 방법을 적은 글.",
+            "guide": "名词，意思是“食谱”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "고향 음식 레시피를 써 보세요.",
             "exampleZh": "请写故乡菜食谱。"
         },
@@ -1075,7 +1075,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "사람이 먹는 제품.",
+            "guide": "名词，意思是“食品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "식품의 유통 기한을 확인하세요.",
             "exampleZh": "请确认食品的流通期限。"
         },
@@ -1085,7 +1085,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "판매자가 식품을 소비자에게 팔 수 있는 날짜.",
+            "guide": "名词，意思是“流通期限、保质销售期限”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "유통 기한이 지난 제품은 팔 수 없습니다.",
             "exampleZh": "过了流通期限的产品不能销售。"
         },
@@ -1095,7 +1095,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "물건을 파는 사람이나 회사.",
+            "guide": "名词，意思是“销售者”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "판매자는 유통 기한을 확인해야 해요.",
             "exampleZh": "销售者要确认流通期限。"
         },
@@ -1105,7 +1105,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "물건을 사서 쓰는 사람.",
+            "guide": "名词，意思是“消费者”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "소비자는 표시된 날짜를 확인합니다.",
             "exampleZh": "消费者确认标示的日期。"
         },
@@ -1115,7 +1115,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "음식이 먹을 수 없게 변하다.",
+            "guide": "动词表达，意思是“坏掉、变质”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "날씨가 더워서 음식이 상했어요.",
             "exampleZh": "天气热，食物变质了。"
         },
@@ -1125,7 +1125,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "겉에 적거나 보이게 하다.",
+            "guide": "动词表达，意思是“标示”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "유통 기한을 년, 월, 일로 표시합니다.",
             "exampleZh": "用年、月、日标示流通期限。"
         },
@@ -1135,7 +1135,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "먹을 수 있는 마지막 날짜.",
+            "guide": "名词，意思是“消费期限、可食用期限”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "소비 기한은 먹을 수 있는 날짜를 말해요.",
             "exampleZh": "消费期限指可以食用的日期。"
         },
@@ -1145,7 +1145,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "식품을 안전하게 보관하는 방법.",
+            "guide": "固定表达，意思是“保存方法”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "보관 방법을 잘 지켜야 합니다.",
             "exampleZh": "要好好遵守保存方法。"
         },
@@ -1155,7 +1155,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "형용사",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "버리거나 잃기 아쉽다.",
+            "guide": "形容词，意思是“可惜”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "먹을 수 있는 음식을 버리면 아까워요.",
             "exampleZh": "把还能吃的食物扔掉很可惜。"
         },
@@ -1165,7 +1165,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사구",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "맞고 바른 방법.",
+            "guide": "固定表达，意思是“正确方法”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "올바른 방법으로 보관하세요.",
             "exampleZh": "请用正确方法保存。"
         },
@@ -1175,7 +1175,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "표현",
             "page": 106,
             "source": "문화와 정보",
-            "guide": "맛이나 상태가 달라지다.",
+            "guide": "固定表达，意思是“食品变质/发生变化”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "잘 보관하지 않으면 식품이 변할 수 있어요.",
             "exampleZh": "保存不当的话食品可能变质。"
         },
@@ -1185,7 +1185,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "대표적인 식품 유통 기한 예시.",
+            "guide": "名词，意思是“牛奶”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "우유의 유통 기한은 짧아요.",
             "exampleZh": "牛奶的流通期限较短。"
         },
@@ -1195,7 +1195,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "발효유 제품.",
+            "guide": "名词，意思是“酸奶”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요거트를 냉장 보관하세요.",
             "exampleZh": "请冷藏酸奶。"
         },
@@ -1205,7 +1205,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "얇게 썬 빵.",
+            "guide": "名词，意思是“吐司面包”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "식빵은 빨리 먹는 게 좋아요.",
             "exampleZh": "吐司最好尽快吃。"
         },
@@ -1215,7 +1215,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "인스턴트 면 음식.",
+            "guide": "名词，意思是“拉面”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "라면의 유통 기한을 확인했어요.",
             "exampleZh": "确认了拉面的流通期限。"
         },
@@ -1225,7 +1225,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "우유로 만든 식품.",
+            "guide": "名词，意思是“奶酪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "치즈를 냉장고에 넣었어요.",
             "exampleZh": "把奶酪放进冰箱了。"
         },
@@ -1235,7 +1235,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "콩으로 만든 식품.",
+            "guide": "名词，意思是“豆腐”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "두부는 유통 기한을 꼭 확인하세요.",
             "exampleZh": "豆腐一定要确认流通期限。"
         },
@@ -1245,7 +1245,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "마시는 음료나 원두 제품.",
+            "guide": "名词，意思是“咖啡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "커피도 보관 방법이 중요해요.",
             "exampleZh": "咖啡的保存方法也重要。"
         },
@@ -1255,7 +1255,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "얼려서 보관하는 식품.",
+            "guide": "名词，意思是“冷冻食品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "냉동식품은 냉동실에 보관하세요.",
             "exampleZh": "冷冻食品请放在冷冻室保存。"
         },
@@ -1265,7 +1265,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "명사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "쌀을 오래 끓여 부드럽게 만든 음식.",
+            "guide": "名词，意思是“粥”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "속이 안 좋을 때 죽을 먹어요.",
             "exampleZh": "胃不舒服时吃粥。"
         },
@@ -1275,7 +1275,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "재료가 먹을 수 있게 되다.",
+            "guide": "动词表达，意思是“熟”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "채소가 익을 때까지 끓이세요.",
             "exampleZh": "煮到蔬菜熟为止。"
         },
@@ -1285,7 +1285,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "재료를 가늘고 길게 썰다.",
+            "guide": "动词表达，意思是“切丝”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "상추를 채 썰어 넣어요.",
             "exampleZh": "把生菜切丝放进去。"
         },
@@ -1295,7 +1295,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "얇은 조각으로 썰다.",
+            "guide": "动词表达，意思是“切薄片”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "양파를 얇게 썰어요.",
             "exampleZh": "把洋葱切薄片。"
         },
@@ -1305,7 +1305,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "정육면체 모양으로 썰다.",
+            "guide": "动词表达，意思是“切丁”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "감자를 깍둑썰어요.",
             "exampleZh": "把土豆切丁。"
         },
@@ -1315,7 +1315,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "소금, 식초, 양념에 담가 두다.",
+            "guide": "动词表达，意思是“腌”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "배추를 소금에 절였어요.",
             "exampleZh": "用盐腌了白菜。"
         },
@@ -1325,7 +1325,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "재료의 양을 알맞게 조절하다.",
+            "guide": "动词表达，意思是“调好分量”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "재료의 양을 맞추세요.",
             "exampleZh": "请调好材料分量。"
         },
@@ -1335,7 +1335,7 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "pos": "동사구",
             "page": 107,
             "source": "배운 어휘 확인",
-            "guide": "요리 시간이나 약속 시간을 맞게 하다.",
+            "guide": "动词表达，意思是“把时间调准、掌握时间”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "삶는 시간을 맞추는 것이 중요해요.",
             "exampleZh": "掌握煮的时间很重要。"
         }

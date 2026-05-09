@@ -104,7 +104,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 60,
             "source": "단원 제목",
-            "guide": "本课主题。소비 是花钱消费，절약 是节省。",
+            "guide": "名词，意思是“消费和节约”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오늘은 소비와 절약에 대해 배워요.",
             "exampleZh": "今天学习消费和节约。"
         },
@@ -114,7 +114,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 60,
             "source": "단원 제목/어휘",
-            "guide": "돈이나 물건을 쓰는行为。",
+            "guide": "名词，意思是“消费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요즘 소비를 줄이려고 해요.",
             "exampleZh": "最近想减少消费。"
         },
@@ -124,7 +124,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 60,
             "source": "단원 제목/어휘",
-            "guide": "돈、시간、전기 等都可以 절약하다。",
+            "guide": "名词，意思是“节约”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활비 절약 방법을 알아보세요.",
             "exampleZh": "请了解生活费节约方法。"
         },
@@ -134,7 +134,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 60,
             "source": "어휘 목표",
-            "guide": "说明如何省钱、省电、省生活费时使用。",
+            "guide": "名词，意思是“节约方法”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여러 가지 절약 방법이 있어요.",
             "exampleZh": "有各种节约方法。"
         },
@@ -144,7 +144,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 60,
             "source": "활동 목표",
-            "guide": "本课写作和说话核心任务。",
+            "guide": "名词，意思是“生活费节约方法”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "친구에게 생활비 절약 방법을 소개했어요.",
             "exampleZh": "向朋友介绍了生活费节约方法。"
         },
@@ -154,7 +154,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 60,
             "source": "문화와 정보",
-            "guide": "가입하다 用于加入服务、产品、保险、储蓄。",
+            "guide": "名词，意思是“办理定期积蓄、加入储蓄产品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행에서 적금 가입하기에 대해 상담을 받았어요.",
             "exampleZh": "在银行咨询了办理储蓄产品。"
         },
@@ -164,7 +164,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 61,
             "source": "도입",
-            "guide": "지출하다 比 쓰다 更正式，常用于账本或统计。",
+            "guide": "名词，意思是“支出钱、花钱”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달에는 교통비에 돈을 많이 지출했어요.",
             "exampleZh": "这个月在交通费上花了很多钱。"
         },
@@ -174,7 +174,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 61,
             "source": "도입",
-            "guide": "비용/돈이 들다 表示需要花费。",
+            "guide": "名词，意思是“产生生活费、需要生活费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "혼자 살면 생활비가 많이 들어요.",
             "exampleZh": "一个人生活会花很多生活费。"
         },
@@ -184,7 +184,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "日常生活所需花费的总称。",
+            "guide": "名词，意思是“生活费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여러분은 어디에 생활비가 가장 많이 들어요?",
             "exampleZh": "你在哪方面生活费花得最多？"
         },
@@ -194,7 +194,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표",
-            "guide": "记账时先写 날짜。",
+            "guide": "名词，意思是“日期”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가계부에 날짜를 적었어요.",
             "exampleZh": "在家计簿上写了日期。"
         },
@@ -204,7 +204,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "收入的反义方向，表示花出去的钱。",
+            "guide": "名词，意思是“支出”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달 지출이 너무 많아요.",
             "exampleZh": "这个月支出太多。"
         },
@@ -214,7 +214,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "记录具体买了什么或付了什么费用。",
+            "guide": "名词，意思是“支出内容”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지출 내용을 자세히 쓰세요.",
             "exampleZh": "请详细写支出内容。"
         },
@@ -224,7 +224,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "식비、교통비、통신비처럼分类。",
+            "guide": "名词，意思是“支出项目”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지출 항목별로 정리해 보세요.",
             "exampleZh": "请按支出项目整理一下。"
         },
@@ -234,7 +234,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표",
-            "guide": "택시 + 비，表示坐出租车花的钱。",
+            "guide": "名词，意思是“出租车费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "택시비가 많이 나와서 다음에는 지하철을 타려고요.",
             "exampleZh": "出租车费太多，下次想坐地铁。"
         },
@@ -244,7 +244,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "충전하다 可用于交通卡、手机、电池等。",
+            "guide": "名词，意思是“交通卡充值”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "교통 카드를 만 원 충전했어요.",
             "exampleZh": "给交通卡充了一万韩元。"
         },
@@ -254,7 +254,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "버스、지하철、택시 等出行费用。",
+            "guide": "名词，意思是“交通费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달 교통비로 12만 원이나 썼어요.",
             "exampleZh": "这个月交通费竟然花了 12 万韩元。"
         },
@@ -264,7 +264,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "관람 是观看展览、电影、演出等较正式表达。",
+            "guide": "名词，意思是“看电影、观影”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "영화 관람은 문화생활비에 들어가요.",
             "exampleZh": "看电影归入文化生活费。"
         },
@@ -274,7 +274,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "电影、演出、展览、兴趣活动等费用。",
+            "guide": "名词，意思是“文化生活费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문화생활비를 조금 줄여야겠어요.",
             "exampleZh": "文化生活费得稍微减少一些。"
         },
@@ -284,7 +284,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표",
-            "guide": "밥값、점심값처럼日常口语使用。",
+            "guide": "名词，意思是“午饭钱”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요즘 점심값이 많이 올랐어요.",
             "exampleZh": "最近午饭钱涨了很多。"
         },
@@ -294,7 +294,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "먹는 데 쓰는费用。",
+            "guide": "名词，意思是“餐饮费、伙食费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "우리 가족은 식비가 많이 나와요.",
             "exampleZh": "我们家伙食费很多。"
         },
@@ -304,7 +304,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표",
-            "guide": "小额但频繁的消费项目。",
+            "guide": "名词，意思是“咖啡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "커피값도 모이면 큰돈이 돼요.",
             "exampleZh": "咖啡钱积起来也会变成大钱。"
         },
@@ -314,7 +314,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표",
-            "guide": "두통 是头痛，약 是药。",
+            "guide": "名词，意思是“头痛药”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "약국에서 두통약을 샀어요.",
             "exampleZh": "在药店买了头痛药。"
         },
@@ -324,7 +324,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "병원、약、치료 等健康相关费用。",
+            "guide": "名词，意思是“医疗费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "의료비가 부담돼서 보험을 알아봤어요.",
             "exampleZh": "因为医疗费有负担，所以了解了保险。"
         },
@@ -334,7 +334,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "학원 费用通常归入 교육비。",
+            "guide": "名词，意思是“英语培训班”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아이 영어 학원비가 많이 들어요.",
             "exampleZh": "孩子英语培训班费用很多。"
         },
@@ -344,7 +344,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "学费、培训班、教材等费用。",
+            "guide": "名词，意思是“教育费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달에는 교육비가 45만 원이나 들었어요.",
             "exampleZh": "这个月教育费竟然花了 45 万韩元。"
         },
@@ -354,7 +354,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "手机套餐、通话、数据费用。",
+            "guide": "名词，意思是“手机费用”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "휴대 전화 요금을 줄이고 싶어요.",
             "exampleZh": "想减少手机费用。"
         },
@@ -364,7 +364,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "手机、网络、电话等通信相关费用。",
+            "guide": "名词，意思是“通讯费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달 통신비가 27,000원밖에 안 나왔어요.",
             "exampleZh": "这个月通讯费只出了 27,000 韩元。"
         },
@@ -374,7 +374,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "婚礼等喜事时给的钱。",
+            "guide": "名词，意思是“贺礼金”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "친구 결혼식에 축의금을 냈어요.",
             "exampleZh": "朋友婚礼上随了礼金。"
         },
@@ -384,7 +384,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "결혼식、장례식 等礼金支出。",
+            "guide": "名词，意思是“红白喜事费用”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달에는 경조사비가 많이 들었어요.",
             "exampleZh": "这个月红白喜事费用花得多。"
         },
@@ -394,7 +394,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘 표",
-            "guide": "공과금 里的一个项目。",
+            "guide": "名词，意思是“电费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여름에는 전기 요금이 많이 나와요.",
             "exampleZh": "夏天电费会很多。"
         },
@@ -404,7 +404,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘 표/배운 어휘 확인",
-            "guide": "电费、水费、燃气费等定期账单。",
+            "guide": "名词，意思是“公共费用、水电煤等杂费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공과금을 자동 이체로 냅니다.",
             "exampleZh": "通过自动转账缴纳公共费用。"
         },
@@ -414,7 +414,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 62,
             "source": "어휘",
-            "guide": "购物前写清单，避免冲动购买。",
+            "guide": "名词，意思是“提前记下要买的东西”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "쇼핑하기 전에 살 것을 미리 메모하세요.",
             "exampleZh": "购物前请提前记下要买的东西。"
         },
@@ -424,7 +424,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "가계부 是家庭收支账本。",
+            "guide": "名词，意思是“记家计簿、记账”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활비를 줄이려고 가계부를 쓰고 있어요.",
             "exampleZh": "为了减少生活费，正在记账。"
         },
@@ -434,7 +434,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "记录收入和支出。",
+            "guide": "名词，意思是“家计簿、家庭账本”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행에서 고객에게 가계부를 줬어요.",
             "exampleZh": "银行给顾客送了家计簿。"
         },
@@ -444,7 +444,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 62,
             "source": "어휘",
-            "guide": "结账时可打折或积点。",
+            "guide": "名词，意思是“折扣卡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "할인 카드로 결제하면 싸요.",
             "exampleZh": "用折扣卡结账会便宜。"
         },
@@ -454,7 +454,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "카드로 결제하다、현금으로 결제하다처럼使用。",
+            "guide": "名词，意思是“结账、付款”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "할인 카드로 결제했어요.",
             "exampleZh": "用折扣卡付款了。"
         },
@@ -464,7 +464,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "购物或会员卡中积累的点数。",
+            "guide": "名词，意思是“积分”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "포인트를 적립해서 다음에 쓰세요.",
             "exampleZh": "积累积分，下次使用。"
         },
@@ -474,7 +474,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "할인 쿠폰、무료 쿠폰처럼使用。",
+            "guide": "名词，意思是“优惠券”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "쿠폰이 있어서 커피를 싸게 샀어요.",
             "exampleZh": "因为有优惠券，咖啡买得便宜。"
         },
@@ -484,7 +484,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "포인트、쿠폰、마일리지 等可 적립하다。",
+            "guide": "名词，意思是“积累、积存”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "포인트를 많이 적립했어요.",
             "exampleZh": "积累了很多积分。"
         },
@@ -494,7 +494,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 62,
             "source": "어휘/배운 어휘 확인",
-            "guide": "계획 없이 갑자기 사는购物。",
+            "guide": "名词，意思是“冲动购物”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "충동구매를 하지 않으면 돈을 아낄 수 있어요.",
             "exampleZh": "不冲动购物就能省钱。"
         },
@@ -504,7 +504,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "副词短语",
             "page": 63,
             "source": "문법 설명",
-            "guide": "이나/밖에 都常和预期差有关。",
+            "guide": "名词，意思是“比预想更……”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "예상보다 식비가 많이 나왔어요.",
             "exampleZh": "伙食费比预想花得多。"
         },
@@ -514,7 +514,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 63,
             "source": "문법 예문",
-            "guide": "-밖에 안 되다 表示时间很短。",
+            "guide": "名词，意思是“买了才一年”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "산 지 1년밖에 안 됐는데 벌써 고장 났어요.",
             "exampleZh": "买了才一年，却已经坏了。"
         },
@@ -524,7 +524,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 63,
             "source": "문법 예문",
-            "guide": "机器、电子产品坏了时使用。",
+            "guide": "名词，意思是“出故障、坏掉”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "노트북이 자꾸 고장 나요.",
             "exampleZh": "笔记本电脑总是坏。"
         },
@@ -534,7 +534,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "数量表达",
             "page": 63,
             "source": "문법 예문",
-            "guide": "이나 表示数量很多，带惊讶感。",
+            "guide": "名词，意思是“竟然五杯”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "저는 하루에 커피를 다섯 잔이나 마셔요.",
             "exampleZh": "我一天竟然喝五杯咖啡。"
         },
@@ -544,7 +544,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "数量表达",
             "page": 63,
             "source": "문법 예문",
-            "guide": "밖에 和 안/없다 等否定表达连用。",
+            "guide": "名词，意思是“只有 27,000 韩元”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달에는 통신비가 27,000원밖에 안 나왔어요.",
             "exampleZh": "这个月通讯费只出了 27,000 韩元。"
         },
@@ -554,7 +554,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 63,
             "source": "문법 연습/배운 어휘 확인",
-            "guide": "冬天锅炉、暖气产生的费用。",
+            "guide": "名词，意思是“取暖费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "겨울에는 난방비가 많이 나와요.",
             "exampleZh": "冬天取暖费会很多。"
         },
@@ -564,7 +564,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 63,
             "source": "문법 연습",
-            "guide": "时间数量也可接 -밖에。",
+            "guide": "名词，意思是“学习韩语的时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "하루에 한국어 공부하는 시간이 한 시간밖에 없어요.",
             "exampleZh": "一天学习韩语的时间只有一小时。"
         },
@@ -574,7 +574,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 63,
             "source": "문법 연습",
-            "guide": "睡眠时间少时可说 다섯 시간밖에 못 자요。",
+            "guide": "名词，意思是“睡觉时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요즘 잠을 자는 시간이 부족해요.",
             "exampleZh": "最近睡觉时间不够。"
         },
@@ -584,7 +584,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 63,
             "source": "말하기",
-            "guide": "可用于比较自己和朋友的时间安排。",
+            "guide": "名词，意思是“运动时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "운동하는 시간이 하루에 30분밖에 안 돼요.",
             "exampleZh": "每天运动时间只有 30 分钟。"
         },
@@ -594,7 +594,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 63,
             "source": "말하기",
-            "guide": "문화생활비와 연결해서 말하기 좋다。",
+            "guide": "名词，意思是“兴趣生活、业余爱好活动”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "취미 생활을 하는 시간은 많지 않아요.",
             "exampleZh": "做兴趣活动的时间不多。"
         },
@@ -604,7 +604,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 64,
             "source": "문법 예문",
-            "guide": "购物前比较不同网站或商店价格。",
+            "guide": "名词，意思是“价格比较、比价”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "물건을 사기 전에 가격 비교를 해 보세요.",
             "exampleZh": "买东西前请比比价。"
         },
@@ -614,7 +614,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 64,
             "source": "문법 예문",
-            "guide": "인터넷으로 가격을 검색하다처럼使用。",
+            "guide": "名词，意思是“搜索、查询”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아이 장난감 가격을 검색해 봐야겠어요.",
             "exampleZh": "得查一下孩子玩具的价格。"
         },
@@ -624,7 +624,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 64,
             "source": "문법 예문",
-            "guide": "중고 물건을 사고파는店。",
+            "guide": "名词，意思是“二手商店”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고 매장에 가면 필요한 물건을 싸게 살 수 있어요.",
             "exampleZh": "去二手店可以买到便宜的所需物品。"
         },
@@ -634,7 +634,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 64,
             "source": "문법 예문",
-            "guide": "필요하다 + -ㄴ 名词修饰形。",
+            "guide": "名词，意思是“需要的东西”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "필요한 물건만 사세요.",
             "exampleZh": "只买需要的东西。"
         },
@@ -644,7 +644,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 64,
             "source": "문법 예문",
-            "guide": "싸다 的副词形 싸게。",
+            "guide": "名词，意思是“买得便宜”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고차를 싸게 샀어요.",
             "exampleZh": "便宜地买了二手车。"
         },
@@ -654,7 +654,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "문법 예문/문화와 정보",
-            "guide": "本课文化文章围绕银行储蓄。",
+            "guide": "名词，意思是“银行”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행에서 적금에 가입했어요.",
             "exampleZh": "在银行办理了储蓄。"
         },
@@ -664,7 +664,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "문법 예문",
-            "guide": "银行、商店、服务机构使用的正式词。",
+            "guide": "名词，意思是“顾客、客户”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행에서 고객에게 선물을 줬어요.",
             "exampleZh": "银行给顾客送了礼物。"
         },
@@ -674,7 +674,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "문법 대화",
-            "guide": "旅行费用节约中常见。",
+            "guide": "名词，意思是“机票”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "항공권을 미리 예약하면 저렴해요.",
             "exampleZh": "提前预订机票会便宜。"
         },
@@ -684,7 +684,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 64,
             "source": "문법 대화",
-            "guide": "행사 是活动，购物促销常说 할인 행사。",
+            "guide": "名词，意思是“打折活动”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "항공권 할인 행사가 시작된다고 해요.",
             "exampleZh": "听说机票打折活动开始了。"
         },
@@ -694,7 +694,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 64,
             "source": "문법 대화",
-            "guide": "自动词，被动/自然开始的感觉。",
+            "guide": "名词，意思是“开始”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오늘부터 할인 행사가 시작돼요.",
             "exampleZh": "打折活动从今天开始。"
         },
@@ -704,7 +704,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 64,
             "source": "문법 대화",
-            "guide": "机票、餐厅、医院都可以预约。",
+            "guide": "名词，意思是“预约、预订”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "빨리 항공권을 예약해야겠어요.",
             "exampleZh": "得赶紧预订机票。"
         },
@@ -714,7 +714,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 64,
             "source": "문법 연습",
-            "guide": "직접 表示亲自、自己动手。",
+            "guide": "名词，意思是“亲自修理”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "직접 수리하면 비용을 아낄 수 있다고 해요.",
             "exampleZh": "听说亲自修理就能省费用。"
         },
@@ -724,7 +724,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 64,
             "source": "문법 연습/배운 어휘 확인",
-            "guide": "家电、车、家具坏了时使用。",
+            "guide": "名词，意思是“修理”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "의자를 직접 수리했어요.",
             "exampleZh": "亲自修理了椅子。"
         },
@@ -734,7 +734,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 64,
             "source": "문법 연습",
-            "guide": "아끼다 表示节省、珍惜。",
+            "guide": "名词，意思是“节省费用”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고를 사면 비용을 아낄 수 있어요.",
             "exampleZh": "买二手就能节省费用。"
         },
@@ -744,7 +744,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "문법 연습/배운 어휘 확인",
-            "guide": "중고 + 차，表示二手车。",
+            "guide": "名词，意思是“二手车”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고차를 구입하면 새 차보다 싸요.",
             "exampleZh": "购买二手车比新车便宜。"
         },
@@ -754,7 +754,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 64,
             "source": "문법 연습/읽기",
-            "guide": "比 사다 更正式，文章中常用。",
+            "guide": "名词，意思是“购买”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고 육아용품을 구입한 경험이 있어요.",
             "exampleZh": "有购买二手育儿用品的经验。"
         },
@@ -764,7 +764,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "문법 연습",
-            "guide": "아이 교육费用相关词。",
+            "guide": "名词，意思是“校服”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이웃에게 아이의 교복을 물려받았어요.",
             "exampleZh": "从邻居那里接收了孩子的校服。"
         },
@@ -774,7 +774,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 64,
             "source": "문법 연습/배운 어휘 확인",
-            "guide": "从家人、邻居、朋友那里接手物品。",
+            "guide": "名词，意思是“继承、接收别人用过的东西”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아이 옷을 언니에게 물려받았어요.",
             "exampleZh": "从姐姐那里接收了孩子衣服。"
         },
@@ -784,7 +784,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "말하기",
-            "guide": "-는다고 하다 转述新闻内容。",
+            "guide": "名词，意思是“新闻”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "내일 비가 온다는 뉴스를 들었어요.",
             "exampleZh": "听了明天下雨的新闻。"
         },
@@ -794,7 +794,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 64,
             "source": "말하기/읽기",
-            "guide": "신문 기사처럼使用。",
+            "guide": "名词，意思是“报道、文章”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활 정보 기사를 읽었어요.",
             "exampleZh": "读了生活信息报道。"
         },
@@ -804,7 +804,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 64,
             "source": "말하기",
-            "guide": "天气、打折、节约等实用信息。",
+            "guide": "名词，意思是“生活信息”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "친구에게 생활 정보를 전해 줬어요.",
             "exampleZh": "把生活信息转告给朋友。"
         },
@@ -814,7 +814,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기",
-            "guide": "账单费用常说 얼마가 나오다。",
+            "guide": "名词，意思是“产生取暖费账单”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이번 달 난방비가 29만 원이나 나왔어요.",
             "exampleZh": "这个月取暖费竟然出了 29 万韩元。"
         },
@@ -824,7 +824,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기/배운 어휘 확인",
-            "guide": "틀다 用于打开空调、电视、暖气等设备。",
+            "guide": "名词，意思是“开锅炉、开暖气”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "추워서 보일러를 계속 틀었어요.",
             "exampleZh": "因为冷，一直开着锅炉。"
         },
@@ -834,7 +834,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 65,
             "source": "말하기/배운 어휘 확인",
-            "guide": "韩国住房常见供暖设备。",
+            "guide": "名词，意思是“锅炉、供暖设备”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "보일러 온도를 조금 내리세요.",
             "exampleZh": "请把锅炉温度调低一点。"
         },
@@ -844,7 +844,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 65,
             "source": "말하기/배운 어휘 확인",
-            "guide": "开设备时用，注意和 켜다 相近。",
+            "guide": "名词，意思是“打开、启动”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "텔레비전을 너무 크게 틀지 마세요.",
             "exampleZh": "不要把电视开得太大声。"
         },
@@ -854,7 +854,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기",
-            "guide": "내리다 表示往下降。",
+            "guide": "名词，意思是“调低温度”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "난방비를 줄이려면 온도를 조금 내리세요.",
             "exampleZh": "想减少取暖费的话，请把温度调低一点。"
         },
@@ -864,7 +864,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 65,
             "source": "말하기/배운 어휘 확인",
-            "guide": "보일러、날씨、음식温度都可用。",
+            "guide": "名词，意思是“温度”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "실내 온도를 확인해 보세요.",
             "exampleZh": "请确认室内温度。"
         },
@@ -874,7 +874,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기",
-            "guide": "节省取暖费时常给出的建议。",
+            "guide": "名词，意思是“穿暖和一点”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집에서도 옷을 따뜻하게 입으면 좋아요.",
             "exampleZh": "在家也穿暖和一点比较好。"
         },
@@ -884,7 +884,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기",
-            "guide": "-을 수 있다 表示可能或能力。",
+            "guide": "名词，意思是“能够节约”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 방법으로 난방비를 절약할 수 있어요.",
             "exampleZh": "用这个方法可以节约取暖费。"
         },
@@ -894,7 +894,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기",
-            "guide": "전화하다보다强调通话行为。",
+            "guide": "名词，意思是“通话”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가족들과 통화를 많이 해요.",
             "exampleZh": "经常和家人通话。"
         },
@@ -904,7 +904,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 65,
             "source": "말하기/배운 어휘 확인",
-            "guide": "手机套餐和通讯费相关词。",
+            "guide": "名词，意思是“通信公司、运营商”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "통신사를 바꾸면 통신비를 줄일 수 있어요.",
             "exampleZh": "换运营商可以减少通讯费。"
         },
@@ -914,7 +914,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "副词短语",
             "page": 65,
             "source": "말하기 표",
-            "guide": "만 表示限定。",
+            "guide": "名词，意思是“只买需要的东西”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "필요한 것만 메모해서 장을 보세요.",
             "exampleZh": "只把需要的东西记下来再买菜。"
         },
@@ -924,7 +924,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 65,
             "source": "말하기 표/배운 어휘 확인",
-            "guide": "去市场或超市买生活用品。",
+            "guide": "名词，意思是“买菜、采购日用品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주말에 시장에서 장을 봐요.",
             "exampleZh": "周末在市场买菜。"
         },
@@ -934,7 +934,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 65,
             "source": "말하기 표",
-            "guide": "공유 是共享，교통비 절약 방법之一。",
+            "guide": "名词，意思是“共享自行车”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "택시 대신 공유 자전거를 이용해 보세요.",
             "exampleZh": "试试用共享自行车代替出租车。"
         },
@@ -944,7 +944,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 65,
             "source": "말하기 표/배운 어휘 확인",
-            "guide": "资源一起使用的概念。",
+            "guide": "名词，意思是“共享”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공유 자전거를 자주 이용해요.",
             "exampleZh": "经常使用共享自行车。"
         },
@@ -954,7 +954,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 65,
             "source": "말하기 표",
-            "guide": "服务、交通、设施都常用 이용하다。",
+            "guide": "名词，意思是“利用、使用”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대중교통을 이용하면 교통비가 줄어요.",
             "exampleZh": "使用大众交通可以减少交通费。"
         },
@@ -964,7 +964,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 66,
             "source": "듣기",
-            "guide": "저렴하다 是便宜、价格低。",
+            "guide": "名词，意思是“买得便宜”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전시 상품을 저렴하게 살 수 있어요.",
             "exampleZh": "可以买到便宜的展示商品。"
         },
@@ -974,7 +974,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 66,
             "source": "듣기/배운 어휘 확인",
-            "guide": "卖场中展示过的商品，通常比新商品便宜。",
+            "guide": "名词，意思是“展示商品、样品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전시 상품은 새 상품보다 가격이 싸요.",
             "exampleZh": "展示商品比新商品价格便宜。"
         },
@@ -984,7 +984,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 66,
             "source": "듣기",
-            "guide": "전시 상품、중고 상품 的对比词。",
+            "guide": "名词，意思是“新商品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "새 상품보다 전시 상품이 더 저렴해요.",
             "exampleZh": "展示商品比新商品更便宜。"
         },
@@ -994,7 +994,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 66,
             "source": "듣기",
-            "guide": "할인되다 的过去修饰形。",
+            "guide": "名词，意思是“打折后的价格”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "할인된 가격에 구입할 수 있어요.",
             "exampleZh": "可以用打折后的价格购买。"
         },
@@ -1004,7 +1004,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 66,
             "source": "듣기",
-            "guide": "인터넷 쇼핑과 대비되는线下商店。",
+            "guide": "名词，意思是“实体店、实际店铺”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "실제 매장에 가서 물건을 확인했어요.",
             "exampleZh": "去了实体店确认商品。"
         },
@@ -1014,7 +1014,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 66,
             "source": "발음",
-            "guide": "发音练习词，也可用于消费误买。",
+            "guide": "名词，意思是“失误、错误”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "실수로 필요 없는 물건을 샀어요.",
             "exampleZh": "失误买了不需要的东西。"
         },
@@ -1024,7 +1024,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 66,
             "source": "발음",
-            "guide": "网购中常见附加费用。",
+            "guide": "名词，意思是“快递费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "택배비까지 내면 비싸요.",
             "exampleZh": "加上快递费就贵了。"
         },
@@ -1034,7 +1034,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 66,
             "source": "발음",
-            "guide": "推荐购物方法、商品或服务。",
+            "guide": "名词，意思是“推荐”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "저렴한 통신사를 추천해 주세요.",
             "exampleZh": "请推荐便宜的通信公司。"
         },
@@ -1044,7 +1044,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "某事要花钱时使用。",
+            "guide": "名词，意思是“需要费用、花费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가족 여행은 비용이 많이 들어요.",
             "exampleZh": "家庭旅行花费很多。"
         },
@@ -1054,7 +1054,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "되다 强调费用对人造成负担。",
+            "guide": "名词，意思是“费用成为负担”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "새 제품의 구입 비용이 부담됐어요.",
             "exampleZh": "新产品购买费用成了负担。"
         },
@@ -1064,7 +1064,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "스럽다 带“感觉上”的语气。",
+            "guide": "名词，意思是“费用让人有负担”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "배우는 데 비용이 부담스러워요.",
             "exampleZh": "学习费用让人有负担。"
         },
@@ -1074,7 +1074,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "줄이다 是减少，节约写作中很常用。",
+            "guide": "名词，意思是“减少费用”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고를 이용하면 비용을 줄일 수 있어요.",
             "exampleZh": "使用二手可以减少费用。"
         },
@@ -1084,7 +1084,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "多人一起买，通常能获得低价。",
+            "guide": "名词，意思是“共同购买、团购”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공동 구매를 이용하면 싸게 살 수 있어요.",
             "exampleZh": "利用团购可以买得便宜。"
         },
@@ -1094,7 +1094,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "새 상품이 아닌别人用过的用品。",
+            "guide": "名词，意思是“二手用品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "새 상품이 아닌 중고 용품을 이용해요.",
             "exampleZh": "使用非新商品的二手用品。"
         },
@@ -1104,7 +1104,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "个人出售旧物的小市场。",
+            "guide": "名词，意思是“跳蚤市场”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집 주변 벼룩시장에서 필요한 물건을 골랐어요.",
             "exampleZh": "在家附近跳蚤市场挑了需要的东西。"
         },
@@ -1114,7 +1114,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "물건、옷、메뉴 等都可 고르다。",
+            "guide": "名词，意思是“挑选”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "필요한 물건을 잘 골라 보세요.",
             "exampleZh": "请好好挑选需要的东西。"
         },
@@ -1124,7 +1124,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "정반대 계절 表示完全相反的季节。",
+            "guide": "名词，意思是“正相反、完全相反”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "정반대 계절의 이월 상품을 사면 저렴해요.",
             "exampleZh": "买反季过季商品会便宜。"
         },
@@ -1134,7 +1134,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "上一季留下来的商品，通常打折出售。",
+            "guide": "名词，意思是“过季商品、结转商品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이월 상품을 할인된 가격에 샀어요.",
             "exampleZh": "用打折价格买了过季商品。"
         },
@@ -1144,7 +1144,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "桌子、椅子、床等。",
+            "guide": "名词，意思是“家具”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가구는 전시 상품으로 사도 괜찮아요.",
             "exampleZh": "家具买展示商品也可以。"
         },
@@ -1154,7 +1154,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "电视、冰箱、洗衣机等。",
+            "guide": "名词，意思是“家电产品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가전제품을 살 때 가격 비교를 해요.",
             "exampleZh": "买家电时会比价。"
         },
@@ -1164,7 +1164,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동/배운 어휘 확인",
-            "guide": "상품表面的小伤。",
+            "guide": "名词，意思是“瑕疵、划痕”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "흠집이 난 상품은 더 저렴할 수 있어요.",
             "exampleZh": "有划痕的商品可能更便宜。"
         },
@@ -1174,7 +1174,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "英语 scratch 的韩语外来词。",
+            "guide": "名词，意思是“划痕”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "스크래치가 조금 있지만 사용할 만해요.",
             "exampleZh": "虽然有一点划痕，但还能用。"
         },
@@ -1184,7 +1184,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "2+1 活动商品常在便利店出现。",
+            "guide": "名词，意思是“便利店”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "편의점에서 2+1 행사 상품을 샀어요.",
             "exampleZh": "在便利店买了 2+1 活动商品。"
         },
@@ -1194,7 +1194,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 67,
             "source": "읽기 전 활동",
-            "guide": "韩国便利店常见促销。",
+            "guide": "名词，意思是“买二送一活动商品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "2+1 행사 상품을 사면 하나를 더 받을 수 있어요.",
             "exampleZh": "买 2+1 活动商品可以多拿一个。"
         },
@@ -1204,7 +1204,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 68,
             "source": "읽기/읽기 단어장/배운 어휘 확인",
-            "guide": "孩子成长、照护所需用品。",
+            "guide": "名词，意思是“育儿用品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "육아용품은 사용 기간이 짧아요.",
             "exampleZh": "育儿用品使用期间短。"
         },
@@ -1214,7 +1214,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词/冠形词",
             "page": 68,
             "source": "읽기",
-            "guide": "중고 육아용품、중고차처럼使用。",
+            "guide": "名词，意思是“二手”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고도 괜찮다고 생각해요.",
             "exampleZh": "我觉得二手也不错。"
         },
@@ -1224,7 +1224,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 68,
             "source": "읽기",
-            "guide": "설문 조사를 실시한主体。",
+            "guide": "名词，意思是“机构”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "어떤 기관에서 설문 조사를 실시했어요.",
             "exampleZh": "某个机构进行了问卷调查。"
         },
@@ -1234,7 +1234,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 68,
             "source": "읽기",
-            "guide": "만 表示周岁。",
+            "guide": "名词，意思是“满 9 岁以下”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "만 9세 이하의 자녀가 있는 부모를 대상으로 조사했어요.",
             "exampleZh": "以有满 9 岁以下子女的父母为对象做了调查。"
         },
@@ -1244,7 +1244,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 68,
             "source": "읽기",
-            "guide": "文章调查对象。",
+            "guide": "名词，意思是“父母”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부모 1,000명이 설문 조사에 참여했어요.",
             "exampleZh": "1000 名父母参加了问卷调查。"
         },
@@ -1254,7 +1254,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "副词短语",
             "page": 68,
             "source": "읽기",
-            "guide": "조사/서비스/교육 대상说明中常见。",
+            "guide": "名词，意思是“以……为对象”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부모를 대상으로 설문 조사를 실시했어요.",
             "exampleZh": "以父母为对象进行了问卷调查。"
         },
@@ -1264,7 +1264,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 68,
             "source": "읽기 단어장/배운 어휘 확인",
-            "guide": "用问题收集意见或经验。",
+            "guide": "名词，意思是“问卷调查”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고 육아용품 구입 경험에 대한 설문 조사예요.",
             "exampleZh": "是关于购买二手育儿用品经验的问卷调查。"
         },
@@ -1274,7 +1274,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 68,
             "source": "읽기 단어장/배운 어휘 확인",
-            "guide": "正式书面语，常和 조사、교육、행사 搭配。",
+            "guide": "名词，意思是“实施、进行”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "기관에서 설문 조사를 실시했어요.",
             "exampleZh": "机构进行了问卷调查。"
         },
@@ -1284,7 +1284,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 68,
             "source": "읽기",
-            "guide": "경험이 있다/없다 用于是否做过某事。",
+            "guide": "名词，意思是“购买经验”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "중고 육아용품 구입 경험이 있습니까?",
             "exampleZh": "有购买二手育儿用品的经验吗？"
         },
@@ -1294,7 +1294,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 68,
             "source": "읽기",
-            "guide": "产品或选择令人满意时使用。",
+            "guide": "名词，意思是“满意、合心意”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "구입한 제품이 마음에 들었어요.",
             "exampleZh": "购买的产品令人满意。"
         },
@@ -1304,7 +1304,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "形容词",
             "page": 68,
             "source": "읽기",
-            "guide": "调查回答中的中间评价。",
+            "guide": "名词，意思是“一般、普通”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "제품은 좋지도 나쁘지도 않고 보통이었어요.",
             "exampleZh": "产品不好也不坏，一般。"
         },
@@ -1314,7 +1314,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "形容词",
             "page": 68,
             "source": "읽기",
-            "guide": "常与 생각한 것보다 搭配表达不如预期。",
+            "guide": "名词，意思是“不怎么样、不太好”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생각한 것보다는 별로였어요.",
             "exampleZh": "比想象中不怎么样。"
         },
@@ -1324,7 +1324,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 68,
             "source": "읽기",
-            "guide": "ㄹ 생각이 있다 表示有做某事的打算。",
+            "guide": "名词，意思是“有再次购买的想法”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "다시 중고 육아용품을 구입할 생각이 있어요.",
             "exampleZh": "有再次购买二手育儿用品的想法。"
         },
@@ -1334,7 +1334,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 68,
             "source": "읽기 단어장/배운 어휘 확인",
-            "guide": "统计比例中常用。",
+            "guide": "名词，意思是“占、占据”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "다시 살 생각이 있다는 대답이 40%를 차지했어요.",
             "exampleZh": "表示有再次购买想法的回答占 40%。"
         },
@@ -1344,7 +1344,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 68,
             "source": "읽기",
-            "guide": "物品实际被使用的时间长度。",
+            "guide": "名词，意思是“使用期间、使用时长”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "육아용품은 사용 기간이 짧아요.",
             "exampleZh": "育儿用品使用时间短。"
         },
@@ -1354,7 +1354,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "副词",
             "page": 68,
             "source": "읽기 단어장/배운 어휘 확인",
-            "guide": "文章转换话题或补充另一组情况。",
+            "guide": "名词，意思是“另一方面、另外”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한편, 구입한 적이 없는 사람들도 관심이 있었어요.",
             "exampleZh": "另一方面，没有购买过的人也有兴趣。"
         },
@@ -1364,7 +1364,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "副词",
             "page": 68,
             "source": "읽기",
-            "guide": "表示未来计划或意向。",
+            "guide": "名词，意思是“今后、以后”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "앞으로 중고를 이용할 생각이 있어요.",
             "exampleZh": "以后有使用二手的想法。"
         },
@@ -1374,7 +1374,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 68,
             "source": "읽기",
-            "guide": "对某事持正面态度。",
+            "guide": "名词，意思是“积极地看待、正面地认为”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "많은 사람들이 중고를 긍정적으로 생각해요.",
             "exampleZh": "很多人正面看待二手。"
         },
@@ -1384,7 +1384,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 69,
             "source": "쓰기",
-            "guide": "整理支出多少时可按 순위 写。",
+            "guide": "名词，意思是“顺位、排名”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활비 순위를 정리해 보세요.",
             "exampleZh": "请整理生活费排名。"
         },
@@ -1394,7 +1394,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 69,
             "source": "쓰기",
-            "guide": "쓰기 任务要求介绍个人节约方法。",
+            "guide": "名词，意思是“自己独有的方法”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활비를 절약할 수 있는 자신만의 방법을 써 보세요.",
             "exampleZh": "请写一写自己节约生活费的方法。"
         },
@@ -1404,7 +1404,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "在一定期间把固定或自由金额存入银行的储蓄产品。",
+            "guide": "名词，意思是“定期积蓄、储蓄存款”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "매달 적금에 돈을 넣고 있어요.",
             "exampleZh": "每月往储蓄产品里存钱。"
         },
@@ -1414,7 +1414,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "정해진 기간과 비슷한意思。",
+            "guide": "名词，意思是“一定期间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "일정 기간 동안 돈을 은행에 맡겨요.",
             "exampleZh": "在一定期间把钱交给银行保管。"
         },
@@ -1424,7 +1424,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "정기 적금에서 매月/定期存入的金额。",
+            "guide": "名词，意思是“规定金额、固定金额”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "정해진 금액을 매달 넣어요.",
             "exampleZh": "每月存入固定金额。"
         },
@@ -1434,7 +1434,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "돈을 은행에 맡기다 表示把钱存/交给银行保管。",
+            "guide": "名词，意思是“托付、存放”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "돈을 은행에 맡기면 이자가 붙어요.",
             "exampleZh": "把钱存在银行会有利息。"
         },
@@ -1444,7 +1444,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "붙다 在这里表示附加上去。",
+            "guide": "名词，意思是“产生利息”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행에 맡긴 돈에 이자가 붙어요.",
             "exampleZh": "存在银行的钱会产生利息。"
         },
@@ -1454,7 +1454,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "은행 상품利息比例。",
+            "guide": "名词，意思是“利率”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행마다 적금 이율이 달라요.",
             "exampleZh": "每家银行的储蓄利率不同。"
         },
@@ -1464,7 +1464,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "副词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "名词 + 마다 表示每一个。",
+            "guide": "名词，意思是“每家银行”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행마다 이율이 다르니까 비교해 보세요.",
             "exampleZh": "每家银行利率不同，请比较一下。"
         },
@@ -1474,7 +1474,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "产品合同持续的时间。",
+            "guide": "名词，意思是“加入期限、存款期限”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가입 기간이 길면 이자가 더 많아요.",
             "exampleZh": "存款期限长的话，利息更多。"
         },
@@ -1484,7 +1484,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "在固定日期存入固定金额的储蓄方式。",
+            "guide": "名词，意思是“定期积蓄”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "목돈을 모으고 싶다면 정기 적금이 좋아요.",
             "exampleZh": "想攒一笔钱的话，定期积蓄比较好。"
         },
@@ -1494,7 +1494,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "不固定日期和金额，想存时存想存的钱。",
+            "guide": "名词，意思是“自由积蓄”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "수입이 일정하지 않으면 자유 적금이 좋아요.",
             "exampleZh": "收入不固定的话，自由积蓄比较好。"
         },
@@ -1504,7 +1504,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "A와 B로 나눌 수 있다 表示可分为 A 和 B。",
+            "guide": "名词，意思是“分为、分开”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "적금은 정기 적금과 자유 적금으로 나눌 수 있어요.",
             "exampleZh": "储蓄可分为定期积蓄和自由积蓄。"
         },
@@ -1514,7 +1514,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "직장에서 받는 돈。",
+            "guide": "名词，意思是“月薪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "월급이 매달 다르면 자유 적금이 편해요.",
             "exampleZh": "月薪每月不同的话，自由积蓄方便。"
         },
@@ -1524,7 +1524,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "未来费用、金额、情况都可 예상하다。",
+            "guide": "名词，意思是“预想、预计”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활비로 얼마를 쓸지 예상하기가 어려워요.",
             "exampleZh": "很难预计生活费会花多少。"
         },
@@ -1534,7 +1534,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "动词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "银行、保险、手机套餐等产品都用 가입하다。",
+            "guide": "名词，意思是“加入、办理、签约”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "적금에 가입하려고 은행에 갔어요.",
             "exampleZh": "为了办理储蓄去了银行。"
         },
@@ -1544,7 +1544,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "外国人在银行办理业务时常需携带。",
+            "guide": "名词，意思是“护照”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여권을 가지고 은행에 가세요.",
             "exampleZh": "请带护照去银行。"
         },
@@ -1554,7 +1554,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "名词短语",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "在韩外国人的身份证明文件。",
+            "guide": "名词，意思是“外国人登录证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "외국인 등록증을 가지고 상담을 받았어요.",
             "exampleZh": "带着外国人登录证接受了咨询。"
         },
@@ -1564,7 +1564,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "表达",
             "page": 70,
             "source": "문화와 정보",
-            "guide": "银行、医院、中心等场景常用。",
+            "guide": "名词，意思是“接受咨询”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "은행에서 자세한 상담을 받는 것이 좋아요.",
             "exampleZh": "最好在银行接受详细咨询。"
         },
@@ -1574,7 +1574,7 @@ window.lessonGuideL3LessonChunks["l3-05"] = {
             "pos": "形容词",
             "page": 71,
             "source": "배운 어휘 확인",
-            "guide": "합리적인 소비 表示理性消费。",
+            "guide": "名词，意思是“合理、理性”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가격을 비교하면 합리적으로 소비할 수 있어요.",
             "exampleZh": "比较价格就能理性消费。"
         }

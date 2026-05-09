@@ -126,7 +126,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 130,
             "source": "단원 제목",
-            "guide": "일자리를 얻어 직장에 들어가는 것.",
+            "guide": "名词，意思是“就业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "취업을 준비하고 있어요.",
             "exampleZh": "我正在准备就业。"
         },
@@ -136,7 +136,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 130,
             "source": "어휘 목표",
-            "guide": "회사나 기관에 들어가 일을 시작하다.",
+            "guide": "动词表达，意思是“就职、找到工作”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 회사에 취직하고 싶어요.",
             "exampleZh": "我想进入韩国公司工作。"
         },
@@ -146,7 +146,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 130,
             "source": "활동 목표",
-            "guide": "일자리를 찾고 지원하는 활동.",
+            "guide": "固定表达，意思是“求职活动”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "구직 활동에 대해 조언했어요.",
             "exampleZh": "就求职活动给了建议。"
         },
@@ -156,7 +156,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 130,
             "source": "활동 목표",
-            "guide": "개인 정보, 학력, 경력 등을 문서로 쓰는 일.",
+            "guide": "固定表达，意思是“写简历”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이력서 작성을 연습했어요.",
             "exampleZh": "练习了写简历。"
         },
@@ -166,7 +166,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 130,
             "source": "문화 제목",
-            "guide": "월급과 월급에서 내는 세금을 함께 말한다.",
+            "guide": "固定表达，意思是“工资和税金”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "급여와 세금에 대해 읽었어요.",
             "exampleZh": "阅读了工资和税金。"
         },
@@ -176,7 +176,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "일자리를 찾는다는 뜻이다.",
+            "guide": "固定表达，意思是“找工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국에서 어떤 일을 구해요?",
             "exampleZh": "你在韩国找什么工作？"
         },
@@ -186,7 +186,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "학원에서 학생을 가르치는 사람.",
+            "guide": "名词，意思是“培训班讲师”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "학원 강사로 일하고 싶어요.",
             "exampleZh": "我想做培训班讲师。"
         },
@@ -196,7 +196,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "다문화 배경의 언어를 가르치는 강사.",
+            "guide": "固定表达，意思是“多元文化语言讲师”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "다문화 언어 강사를 하고 싶어요.",
             "exampleZh": "我想做多元文化语言讲师。"
         },
@@ -206,7 +206,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "편의점에서 시간제로 하는 일.",
+            "guide": "固定表达，意思是“便利店兼职”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "편의점 아르바이트를 구했어요.",
             "exampleZh": "找到了便利店兼职。"
         },
@@ -216,7 +216,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "정해진 시간만 일하는 형태의 일.",
+            "guide": "固定表达，意思是“可以按小时做的工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "시간제로 할 수 있는 일을 찾고 있어요.",
             "exampleZh": "正在找可以按小时做的工作。"
         },
@@ -226,7 +226,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 132,
             "source": "어휘",
-            "guide": "자기 일을 운영하다.",
+            "guide": "动词表达，意思是“做生意、创业”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "나중에 사업하고 싶어요.",
             "exampleZh": "以后想做生意。"
         },
@@ -236,7 +236,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "가게를 새로 열어 운영하다.",
+            "guide": "固定表达，意思是“开店”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가게를 차리기 위해 준비하고 있어요.",
             "exampleZh": "为了开店正在准备。"
         },
@@ -246,7 +246,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "말을 다른 언어로 바꾸어 전달하는 일.",
+            "guide": "名词，意思是“口译”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "통역 일을 하고 싶어요.",
             "exampleZh": "我想做口译工作。"
         },
@@ -256,7 +256,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "글을 다른 언어로 바꾸는 일.",
+            "guide": "名词，意思是“翻译、笔译”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "번역 일을 배워 보고 싶어요.",
             "exampleZh": "我想学着做翻译工作。"
         },
@@ -266,7 +266,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "특정 지식이나 기술이 필요한 일.",
+            "guide": "固定表达，意思是“有专业性的工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "전문성 있는 일을 하고 싶어요.",
             "exampleZh": "我想做有专业性的工作。"
         },
@@ -276,7 +276,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "일자리와 운영이 비교적 안정된 회사.",
+            "guide": "固定表达，意思是“稳定的公司”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "안정적인 회사에서 일하고 싶어요.",
             "exampleZh": "我想在稳定的公司工作。"
         },
@@ -286,7 +286,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "일하는 장소와 조건.",
+            "guide": "固定表达，意思是“工作环境”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "근무 환경이 좋은 회사를 원해요.",
             "exampleZh": "我想要工作环境好的公司。"
         },
@@ -296,7 +296,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "한 달에 한 번 받는 급여.",
+            "guide": "名词，意思是“月薪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "월급을 많이 주는 회사가 좋아요.",
             "exampleZh": "喜欢给月薪高的公司。"
         },
@@ -306,7 +306,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "출근과 퇴근 시간이 비교적 자유롭다.",
+            "guide": "固定表达，意思是“上下班自由”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "출퇴근이 자유로운 회사에서 일하고 싶어요.",
             "exampleZh": "我想在上下班自由的公司工作。"
         },
@@ -316,7 +316,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "앞으로 더 좋아지거나 커질 가능성.",
+            "guide": "固定表达，意思是“发展可能性”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "발전 가능성이 있는 회사를 찾고 있어요.",
             "exampleZh": "正在找有发展可能性的公司。"
         },
@@ -326,7 +326,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "사회에 도움이 되는 일을 하다.",
+            "guide": "固定表达，意思是“为社会做贡献”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "사회에 기여할 수 있는 일을 하고 싶어요.",
             "exampleZh": "我想做能为社会做贡献的事。"
         },
@@ -336,7 +336,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "자신의 능력을 키우는 일.",
+            "guide": "固定表达，意思是“自我提升”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "자기 계발을 할 수 있는 회사가 좋아요.",
             "exampleZh": "喜欢能自我提升的公司。"
         },
@@ -346,7 +346,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "일을 하며 의미와 만족을 느끼다.",
+            "guide": "固定表达，意思是“感到有价值、有成就感”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "일에 대한 보람을 느껴요.",
             "exampleZh": "对工作感到有成就感。"
         },
@@ -356,7 +356,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "사람을 구한다는 광고.",
+            "guide": "固定表达，意思是“招聘广告”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "구인 광고를 봤어요.",
             "exampleZh": "看了招聘广告。"
         },
@@ -366,7 +366,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "학력과 경력 등을 적은 문서.",
+            "guide": "名词，意思是“简历”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이력서를 써 놓았어요.",
             "exampleZh": "把简历提前写好了。"
         },
@@ -376,7 +376,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "회사나 기관에 지원하기 위해 쓰는 서류.",
+            "guide": "名词，意思是“申请表、报名表”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지원서를 작성했어요.",
             "exampleZh": "填写了申请表。"
         },
@@ -386,7 +386,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 132,
             "source": "어휘",
-            "guide": "문서나 글을 쓰다.",
+            "guide": "动词表达，意思是“填写、撰写”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "지원서를 작성해야 해요.",
             "exampleZh": "需要填写申请表。"
         },
@@ -396,7 +396,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 132,
             "source": "어휘",
-            "guide": "제출하는 문서.",
+            "guide": "名词，意思是“材料、文件”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "서류를 준비해 놓았어요.",
             "exampleZh": "把材料提前准备好了。"
         },
@@ -406,7 +406,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 132,
             "source": "어휘",
-            "guide": "문서나 과제를 내다.",
+            "guide": "动词表达，意思是“提交”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "서류를 제출했어요.",
             "exampleZh": "提交了材料。"
         },
@@ -416,7 +416,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "글로 답하는 시험을 치르다.",
+            "guide": "固定表达，意思是“参加笔试”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "필기시험을 봤어요.",
             "exampleZh": "参加了笔试。"
         },
@@ -426,7 +426,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 132,
             "source": "어휘",
-            "guide": "회사 사람을 만나 질문에 답하다.",
+            "guide": "固定表达，意思是“参加面试”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "내일 면접을 봐요.",
             "exampleZh": "明天参加面试。"
         },
@@ -436,7 +436,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 132,
             "source": "어휘",
-            "guide": "합격했다는 내용을 알려 주는 문자.",
+            "guide": "固定表达，意思是“录取通知短信”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "합격 통보 문자를 받았어요.",
             "exampleZh": "收到了录取通知短信。"
         },
@@ -446,7 +446,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 133,
             "source": "문법 연습",
-            "guide": "필요한 것을 미리 갖추다.",
+            "guide": "动词表达，意思是“准备”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "무엇을 준비하고 있어요?",
             "exampleZh": "正在准备什么？"
         },
@@ -456,7 +456,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 133,
             "source": "문법 연습",
-            "guide": "일정한 자격을 증명하는 문서.",
+            "guide": "名词，意思是“资格证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자격증을 따 놓으세요.",
             "exampleZh": "请提前考取资格证。"
         },
@@ -466,7 +466,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 133,
             "source": "문법 연습",
-            "guide": "컴퓨터 능력을 증명하는 자격증.",
+            "guide": "固定表达，意思是“电脑资格证”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "컴퓨터 자격증을 미리 따 놓으세요.",
             "exampleZh": "请提前考取电脑资格证。"
         },
@@ -476,7 +476,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "부사",
             "page": 134,
             "source": "문법",
-            "guide": "어떤 일이 있기 전에 먼저.",
+            "guide": "副词，意思是“提前”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "미리 예약해 놓았어요.",
             "exampleZh": "已经提前预约好了。"
         },
@@ -486,7 +486,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 134,
             "source": "말하기",
-            "guide": "자격증이나 면허를 얻다.",
+            "guide": "动词表达，意思是“取得、考取”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "자격증을 따고 싶어요.",
             "exampleZh": "想考取资格证。"
         },
@@ -496,7 +496,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 133,
             "source": "예문",
-            "guide": "한국 국민으로서의 자격.",
+            "guide": "固定表达，意思是“韩国国籍”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국 국적을 취득하기 위해 공부하고 있어요.",
             "exampleZh": "为了取得韩国国籍正在学习。"
         },
@@ -506,7 +506,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 133,
             "source": "예문",
-            "guide": "자격이나 권리를 얻다.",
+            "guide": "动词表达，意思是“取得”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 국적을 취득하고 싶어요.",
             "exampleZh": "想取得韩国国籍。"
         },
@@ -516,7 +516,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 133,
             "source": "문법 연습",
-            "guide": "통역 일을 전문적으로 하는 사람.",
+            "guide": "名词，意思是“口译员”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "통역사가 되기 위해 공부해요.",
             "exampleZh": "为了成为口译员而学习。"
         },
@@ -526,7 +526,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 133,
             "source": "예문",
-            "guide": "한 번 쓰고 버리는 물건.",
+            "guide": "名词，意思是“一次性用品”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "일회용품 사용을 줄여야 해요.",
             "exampleZh": "应该减少一次性用品使用。"
         },
@@ -536,7 +536,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 133,
             "source": "예문",
-            "guide": "쓰는 양이나 횟수를 낮추다.",
+            "guide": "固定表达，意思是“减少使用”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "쓰레기를 줄이기 위해 사용을 줄여요.",
             "exampleZh": "为了减少垃圾而减少使用。"
         },
@@ -546,7 +546,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 133,
             "source": "예문",
-            "guide": "아이를 돌봐 줄 수 있는 곳.",
+            "guide": "固定表达，意思是“托管孩子的地方”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "아이 맡길 곳을 찾고 있어요.",
             "exampleZh": "正在找托管孩子的地方。"
         },
@@ -556,7 +556,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 133,
             "source": "예문",
-            "guide": "목표를 이루기 위해 힘쓰다.",
+            "guide": "动词表达，意思是“努力”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "취업하기 위해 노력하고 있어요.",
             "exampleZh": "为了就业正在努力。"
         },
@@ -566,7 +566,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 135,
             "source": "말하기",
-            "guide": "마음을 다해 꼼꼼하게 쓰다.",
+            "guide": "固定表达，意思是“用心写”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이력서를 정성껏 쓰세요.",
             "exampleZh": "请用心写简历。"
         },
@@ -576,7 +576,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 135,
             "source": "말하기",
-            "guide": "수출입과 거래를 하는 회사.",
+            "guide": "固定表达，意思是“贸易公司”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "무역 회사에 취직하고 싶어요.",
             "exampleZh": "想进贸易公司工作。"
         },
@@ -586,7 +586,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 135,
             "source": "말하기",
-            "guide": "한국어를 일상적으로 이르는 말.",
+            "guide": "名词，意思是“韩语”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국말을 어느 정도 할 수 있어요.",
             "exampleZh": "韩语会到一定程度。"
         },
@@ -596,7 +596,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "표현",
             "page": 135,
             "source": "말하기 연습",
-            "guide": "영어 수업을 하다.",
+            "guide": "固定表达，意思是“教英语”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "학교에서 영어를 가르치고 싶어요.",
             "exampleZh": "想在学校教英语。"
         },
@@ -606,7 +606,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 136,
             "source": "듣기",
-            "guide": "회사나 학교에 들어가려고 신청하다.",
+            "guide": "动词表达，意思是“应聘、申请”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "우리 회사에 왜 지원했습니까?",
             "exampleZh": "为什么应聘我们公司？"
         },
@@ -616,7 +616,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 136,
             "source": "듣기",
-            "guide": "회사에 들어가 직원이 되다.",
+            "guide": "动词表达，意思是“入职、进公司”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "입사하면 어떤 일을 하고 싶습니까?",
             "exampleZh": "入职后想做什么工作？"
         },
@@ -626,7 +626,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 136,
             "source": "듣기",
-            "guide": "왜 지원했는지에 대한 이유.",
+            "guide": "固定表达，意思是“应聘理由”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지원한 이유가 무엇입니까?",
             "exampleZh": "应聘理由是什么？"
         },
@@ -636,7 +636,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 136,
             "source": "듣기/발음",
-            "guide": "전에 일한 경험.",
+            "guide": "名词，意思是“经历、工作经验”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "경력이 있습니까?",
             "exampleZh": "有工作经验吗？"
         },
@@ -646,7 +646,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 136,
             "source": "발음",
-            "guide": "전에 일한 사실을 증명하는 서류.",
+            "guide": "固定表达，意思是“工作经历证明书”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "경력 증명서를 제출해 주세요.",
             "exampleZh": "请提交工作经历证明书。"
         },
@@ -656,7 +656,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "읽기 전",
-            "guide": "필요한 사람을 모으는 일.",
+            "guide": "名词，意思是“招募、招聘”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신입 사원을 모집합니다.",
             "exampleZh": "招聘新员工。"
         },
@@ -666,7 +666,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "읽기 전",
-            "guide": "새로 들어오는 사람.",
+            "guide": "名词，意思是“新人、应届/新入职”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신입 사원 모집 광고를 봤어요.",
             "exampleZh": "看了招聘新人职员的广告。"
         },
@@ -676,7 +676,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "일한 경험이 있는 직원.",
+            "guide": "固定表达，意思是“有经验职员”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "경력 사원을 모집합니다.",
             "exampleZh": "招聘有经验职员。"
         },
@@ -686,7 +686,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "어떤 일을 할 사람을 뽑는지 나타내는 항목.",
+            "guide": "固定表达，意思是“招聘领域/岗位”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "모집 분야는 판매직입니다.",
             "exampleZh": "招聘岗位是销售职。"
         },
@@ -696,7 +696,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "화장품을 파는 일자리.",
+            "guide": "固定表达，意思是“化妆品销售岗位”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "화장품 판매직에 지원했어요.",
             "exampleZh": "应聘了化妆品销售岗位。"
         },
@@ -706,7 +706,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "뽑으려는 사람 수.",
+            "guide": "固定表达，意思是“招聘人数”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "모집 인원은 00명입니다.",
             "exampleZh": "招聘人数是若干名。"
         },
@@ -716,7 +716,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "지원할 수 있는 조건.",
+            "guide": "固定表达，意思是“应聘资格”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지원 자격을 확인하세요.",
             "exampleZh": "请确认应聘资格。"
         },
@@ -726,7 +726,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "읽기 전",
-            "guide": "고등학교를 졸업한 학력.",
+            "guide": "名词，意思是“高中毕业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지원 자격은 고졸입니다.",
             "exampleZh": "应聘资格是高中毕业。"
         },
@@ -736,7 +736,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "읽기 전",
-            "guide": "궁금한 점을 물어보는 것.",
+            "guide": "名词，意思是“咨询、问询”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문의 전화번호를 확인했어요.",
             "exampleZh": "确认了咨询电话号码。"
         },
@@ -746,7 +746,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "어떻게 지원하는지에 대한 방법.",
+            "guide": "固定表达，意思是“应聘方式”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지원 방법은 온라인 접수입니다.",
             "exampleZh": "应聘方式是线上接收。"
         },
@@ -756,7 +756,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "읽기 전",
-            "guide": "인터넷으로 서류를 내는 방식.",
+            "guide": "固定表达，意思是“线上申请/网上接收”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "온라인 접수를 했어요.",
             "exampleZh": "进行了线上申请。"
         },
@@ -766,7 +766,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "물건을 파는 직무.",
+            "guide": "名词，意思是“销售岗位”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "판매직을 찾고 있어요.",
             "exampleZh": "正在找销售岗位。"
         },
@@ -776,7 +776,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "고객을 만나 판매나 계약을 하는 직무.",
+            "guide": "名词，意思是“营业/业务岗位”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "영업직 경력이 있어요.",
             "exampleZh": "有业务岗位经验。"
         },
@@ -786,7 +786,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "공장에서 제품을 만드는 직무.",
+            "guide": "名词，意思是“生产岗位”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생산직 직원을 모집합니다.",
             "exampleZh": "招聘生产岗位员工。"
         },
@@ -796,7 +796,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "정확한 수를 밝히지 않고 조금 뽑는다는 뜻.",
+            "guide": "名词，意思是“若干名”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "모집 인원은 약간명입니다.",
             "exampleZh": "招聘人数为若干名。"
         },
@@ -806,7 +806,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "대학교를 졸업한 학력.",
+            "guide": "名词，意思是“大学毕业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지원 자격은 대졸입니다.",
             "exampleZh": "应聘资格是大学毕业。"
         },
@@ -816,7 +816,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "단어장",
-            "guide": "일한 기간이 2년보다 길거나 같음.",
+            "guide": "固定表达，意思是“两年以上经验”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "경력 2년 이상인 사람을 찾습니다.",
             "exampleZh": "寻找两年以上经验的人。"
         },
@@ -826,7 +826,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "단어장",
-            "guide": "자격증을 복사한 서류.",
+            "guide": "固定表达，意思是“资格证复印件”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "자격증 사본을 제출하세요.",
             "exampleZh": "请提交资格证复印件。"
         },
@@ -836,7 +836,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "운전할 수 있음을 증명하는 증명서.",
+            "guide": "名词，意思是“驾驶证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "운전면허증이 필요합니다.",
             "exampleZh": "需要驾驶证。"
         },
@@ -846,7 +846,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "단어장",
-            "guide": "직접 찾아가 서류를 내는 방식.",
+            "guide": "固定表达，意思是“现场申请”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "방문 접수도 가능합니다.",
             "exampleZh": "也可以现场申请。"
         },
@@ -856,7 +856,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "단어장",
-            "guide": "인터넷 편지 주소 또는 메시지.",
+            "guide": "名词，意思是“电子邮件”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이메일로 지원서를 보냈어요.",
             "exampleZh": "用电子邮件发送了申请表。"
         },
@@ -866,7 +866,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 137,
             "source": "제출 서류",
-            "guide": "자신의 경험과 장점을 소개하는 글.",
+            "guide": "名词，意思是“自我介绍书”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자기소개서를 써 놓았어요.",
             "exampleZh": "已经写好了自我介绍书。"
         },
@@ -876,7 +876,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "제출 서류",
-            "guide": "학교 성적을 증명하는 서류.",
+            "guide": "固定表达，意思是“成绩证明书”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "성적 증명서를 냈어요.",
             "exampleZh": "提交了成绩证明书。"
         },
@@ -886,7 +886,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "제출 서류",
-            "guide": "학교를 졸업했음을 증명하는 서류.",
+            "guide": "固定表达，意思是“毕业证明书”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "졸업 증명서를 준비하세요.",
             "exampleZh": "请准备毕业证明书。"
         },
@@ -896,7 +896,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "제출 서류",
-            "guide": "가족 관계를 증명하는 서류.",
+            "guide": "固定表达，意思是“家庭关系证明书”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가족 관계 증명서가 필요해요.",
             "exampleZh": "需要家庭关系证明书。"
         },
@@ -906,7 +906,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "제출 서류",
-            "guide": "여권을 복사한 서류.",
+            "guide": "固定表达，意思是“护照复印件”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "여권 사본을 제출하세요.",
             "exampleZh": "请提交护照复印件。"
         },
@@ -916,7 +916,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 137,
             "source": "제출 서류",
-            "guide": "외국인 등록증을 복사한 서류.",
+            "guide": "固定表达，意思是“外国人登记证复印件”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "외국인 등록증 사본을 냈어요.",
             "exampleZh": "提交了外国人登记证复印件。"
         },
@@ -926,7 +926,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 138,
             "source": "읽기",
-            "guide": "방과 후 수업에서 영어를 가르치는 교사.",
+            "guide": "固定表达，意思是“课后英语教师”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "방과 후 영어 교사를 모집합니다.",
             "exampleZh": "招聘课后英语教师。"
         },
@@ -936,7 +936,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 138,
             "source": "읽기",
-            "guide": "일하는 시간.",
+            "guide": "固定表达，意思是“工作时间”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "근무 시간은 월요일부터 금요일까지입니다.",
             "exampleZh": "工作时间是周一到周五。"
         },
@@ -946,7 +946,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 138,
             "source": "읽기",
-            "guide": "월요일부터 금요일까지.",
+            "guide": "固定表达，意思是“周一到周五”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "월~금 14시부터 19시까지 일합니다.",
             "exampleZh": "周一到周五14点到19点工作。"
         },
@@ -956,7 +956,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 138,
             "source": "읽기",
-            "guide": "문구류를 파는 가게.",
+            "guide": "名词，意思是“文具店”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문구점 직원을 구합니다.",
             "exampleZh": "招聘文具店员工。"
         },
@@ -966,7 +966,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 138,
             "source": "읽기",
-            "guide": "회사나 가게에서 일하는 사람.",
+            "guide": "名词，意思是“员工”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "직원을 구하고 있어요.",
             "exampleZh": "正在招聘员工。"
         },
@@ -976,7 +976,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 138,
             "source": "읽기",
-            "guide": "사무용품을 배달하는 일.",
+            "guide": "固定表达，意思是“办公用品配送”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "업무는 사무용품 배송입니다.",
             "exampleZh": "工作内容是办公用品配送。"
         },
@@ -986,7 +986,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 138,
             "source": "읽기",
-            "guide": "어떤 자격이나 물건을 가지고 있는 사람.",
+            "guide": "名词，意思是“持有者”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "운전면허증 소지자를 찾습니다.",
             "exampleZh": "寻找驾驶证持有者。"
         },
@@ -996,7 +996,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "사람을 부르는 명칭.",
+            "guide": "名词，意思是“姓名”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이력서에 이름을 씁니다.",
             "exampleZh": "在简历上写姓名。"
         },
@@ -1006,7 +1006,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "태어난 해, 달, 날.",
+            "guide": "名词，意思是“出生年月日”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생년월일을 정확히 쓰세요.",
             "exampleZh": "请准确填写出生年月日。"
         },
@@ -1016,7 +1016,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "어느 나라 사람인지 나타내는 자격.",
+            "guide": "名词，意思是“国籍”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "국적은 필수 항목입니다.",
             "exampleZh": "国籍是必填项目。"
         },
@@ -1026,7 +1026,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "전화 연락을 위한 번호.",
+            "guide": "名词，意思是“电话号码”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전화번호를 확인하세요.",
             "exampleZh": "请确认电话号码。"
         },
@@ -1036,7 +1036,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "가지고 다니는 전화기.",
+            "guide": "名词，意思是“手机”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "휴대전화 번호를 씁니다.",
             "exampleZh": "填写手机号码。"
         },
@@ -1046,7 +1046,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "여권에 적힌 번호.",
+            "guide": "名词，意思是“护照号码”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여권번호를 적어 주세요.",
             "exampleZh": "请填写护照号码。"
         },
@@ -1056,7 +1056,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "사는 곳의 위치.",
+            "guide": "名词，意思是“地址”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주소를 자세히 쓰세요.",
             "exampleZh": "请详细填写地址。"
         },
@@ -1066,7 +1066,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "학교를 다닌 이력.",
+            "guide": "名词，意思是“学历”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "학력 사항을 작성합니다.",
             "exampleZh": "填写学历事项。"
         },
@@ -1076,7 +1076,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "어떤 일이 계속된 시간.",
+            "guide": "名词，意思是“期间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "재학 기간을 씁니다.",
             "exampleZh": "填写在学期间。"
         },
@@ -1086,7 +1086,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "학교의 이름.",
+            "guide": "名词，意思是“学校名称”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "학교명을 정확히 쓰세요.",
             "exampleZh": "请准确填写学校名称。"
         },
@@ -1096,7 +1096,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "주로 공부한 분야.",
+            "guide": "名词，意思是“专业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전공은 영어입니다.",
             "exampleZh": "专业是英语。"
         },
@@ -1106,7 +1106,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "종류를 나누는 항목.",
+            "guide": "名词，意思是“区分、类别”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "졸업 여부를 구분에 씁니다.",
             "exampleZh": "在类别栏填写是否毕业。"
         },
@@ -1116,7 +1116,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "회사나 기관의 이름.",
+            "guide": "名词，意思是“机构名称”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "경력란에 기관명을 적습니다.",
             "exampleZh": "在经历栏填写机构名称。"
         },
@@ -1126,7 +1126,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "회사에서 맡은 자리.",
+            "guide": "名词，意思是“职位”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "직위는 사원입니다.",
             "exampleZh": "职位是职员。"
         },
@@ -1136,7 +1136,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "덧붙여 쓰는 내용.",
+            "guide": "名词，意思是“备注”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비고란에 추가 내용을 씁니다.",
             "exampleZh": "在备注栏写补充内容。"
         },
@@ -1146,7 +1146,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "자격증 등을 얻은 날짜.",
+            "guide": "名词，意思是“取得日期”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자격증 취득일을 쓰세요.",
             "exampleZh": "请填写资格证取得日期。"
         },
@@ -1156,7 +1156,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "수준을 나눈 단계.",
+            "guide": "名词，意思是“等级”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자격증 등급을 확인하세요.",
             "exampleZh": "请确认资格证等级。"
         },
@@ -1166,7 +1166,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "증명서나 자격증을 발행한 곳.",
+            "guide": "名词，意思是“发行机构”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "발행처를 써야 해요.",
             "exampleZh": "需要填写发行机构。"
         },
@@ -1176,7 +1176,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 139,
             "source": "쓰기",
-            "guide": "문서에 내용을 적다.",
+            "guide": "动词表达，意思是“记载、填写”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "기재한 사항은 사실입니다.",
             "exampleZh": "记载事项属实。"
         },
@@ -1186,7 +1186,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 139,
             "source": "쓰기",
-            "guide": "성과 이름.",
+            "guide": "名词，意思是“姓名”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "마지막에 성명을 씁니다.",
             "exampleZh": "最后写姓名。"
         },
@@ -1196,7 +1196,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "급여를 받는 날.",
+            "guide": "名词，意思是“发薪日”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "직장인들이 기다리는 날은 급여일입니다.",
             "exampleZh": "职场人等待的日子是发薪日。"
         },
@@ -1206,7 +1206,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "일하고 받는 돈.",
+            "guide": "名词，意思是“工资、薪酬”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여는 은행 계좌로 받습니다.",
             "exampleZh": "工资通过银行账户领取。"
         },
@@ -1216,7 +1216,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "일하고 받는 기본적인 급여.",
+            "guide": "名词，意思是“基本工资”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여에는 기본급이 있습니다.",
             "exampleZh": "工资里有基本工资。"
         },
@@ -1226,7 +1226,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "기본급 외에 추가로 받는 돈.",
+            "guide": "名词，意思是“津贴、补贴”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "수당의 종류가 다양합니다.",
             "exampleZh": "津贴种类很多。"
         },
@@ -1236,7 +1236,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "가족 상황에 따라 받는 수당.",
+            "guide": "固定表达，意思是“家庭津贴”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가족 수당을 받을 수 있어요.",
             "exampleZh": "可以领取家庭津贴。"
         },
@@ -1246,7 +1246,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "정해진 시간보다 더 일하고 받는 수당.",
+            "guide": "固定表达，意思是“加班津贴”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "초과 근무 수당이 나왔어요.",
             "exampleZh": "发了加班津贴。"
         },
@@ -1256,7 +1256,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "상여금 성격으로 받는 수당.",
+            "guide": "固定表达，意思是“奖金津贴”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "상여 수당을 받았어요.",
             "exampleZh": "收到了奖金津贴。"
         },
@@ -1266,7 +1266,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "은행에 만든 돈 입출금 계정.",
+            "guide": "固定表达，意思是“银行账户”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "급여가 은행 계좌로 입금됩니다.",
             "exampleZh": "工资打进银行账户。"
         },
@@ -1276,7 +1276,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "돈이 계좌에 들어오다.",
+            "guide": "动词表达，意思是“入账”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "월급이 계좌에 입금되었어요.",
             "exampleZh": "工资入账了。"
         },
@@ -1286,7 +1286,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "돈이나 물건이 주어지다.",
+            "guide": "动词表达，意思是“被支付、发放”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "실제 지급되는 월급과 차이가 있어요.",
             "exampleZh": "和实际发放的月薪有差异。"
         },
@@ -1296,7 +1296,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "국가나 지방자치단체에 내는 돈.",
+            "guide": "名词，意思是“税金”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여에서 세금이 공제됩니다.",
             "exampleZh": "工资中会扣除税金。"
         },
@@ -1306,7 +1306,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "건강보험을 위해 내는 돈.",
+            "guide": "固定表达，意思是“健康保险费”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "건강 보험료도 급여에서 공제됩니다.",
             "exampleZh": "健康保险费也从工资中扣除。"
         },
@@ -1316,7 +1316,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사구",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "정해진 기간 동안 일정액을 저축하는 것.",
+            "guide": "固定表达，意思是“定期储蓄”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "정기 적금이 급여에서 빠져나가요.",
             "exampleZh": "定期储蓄会从工资中扣出。"
         },
@@ -1326,7 +1326,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "동사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "전체 금액에서 빼다.",
+            "guide": "动词表达，意思是“扣除”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "세금을 급여에서 공제합니다.",
             "exampleZh": "从工资中扣除税金。"
         },
@@ -1336,7 +1336,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "돈의 양.",
+            "guide": "名词，意思是“金额”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여 액수에 따라 세금이 달라져요.",
             "exampleZh": "税金会根据工资金额变化。"
         },
@@ -1346,7 +1346,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 140,
             "source": "문화와 정보",
-            "guide": "전체에서 차지하는 정도.",
+            "guide": "名词，意思是“比例”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "세금을 내는 비율이 높아집니다.",
             "exampleZh": "缴税比例会提高。"
         },
@@ -1356,7 +1356,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 141,
             "source": "배운 어휘 확인",
-            "guide": "일이나 공부의 범위.",
+            "guide": "名词，意思是“领域、岗位类别”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "어떤 분야에 지원했어요?",
             "exampleZh": "应聘了什么领域？"
         },
@@ -1366,7 +1366,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 141,
             "source": "배운 어휘 확인",
-            "guide": "사람 수.",
+            "guide": "名词，意思是“人员、人数”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "모집 인원을 확인하세요.",
             "exampleZh": "请确认招聘人数。"
         },
@@ -1376,7 +1376,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 141,
             "source": "배운 어휘 확인",
-            "guide": "어떤 사실을 증명하는 서류.",
+            "guide": "名词，意思是“证明书”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "증명서를 제출해야 해요.",
             "exampleZh": "需要提交证明书。"
         },
@@ -1386,7 +1386,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 141,
             "source": "배운 어휘 확인",
-            "guide": "원본을 복사한 것.",
+            "guide": "名词，意思是“复印件”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신분증 사본을 준비하세요.",
             "exampleZh": "请准备身份证件复印件。"
         },
@@ -1396,7 +1396,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "pos": "명사",
             "page": 141,
             "source": "배운 어휘 확인",
-            "guide": "전문 지식이나 능력이 있는 성질.",
+            "guide": "名词，意思是“专业性”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전문성이 있는 일을 하고 싶어요.",
             "exampleZh": "想做有专业性的工作。"
         }

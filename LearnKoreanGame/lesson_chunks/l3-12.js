@@ -121,7 +121,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 154,
             "source": "단원 제목",
-            "guide": "오래전부터 이어져 온 명절.",
+            "guide": "固定表达，意思是“传统节日”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "12과의 주제는 전통 명절입니다.",
             "exampleZh": "第12课主题是传统节日。"
         },
@@ -131,7 +131,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 154,
             "source": "어휘 목표",
-            "guide": "명절에 하는 전통적인 일과 습관.",
+            "guide": "固定表达，意思是“节日风俗”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "명절 풍습에 대해 이야기해요.",
             "exampleZh": "谈论节日风俗。"
         },
@@ -141,7 +141,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 154,
             "source": "활동 목표",
-            "guide": "자기 나라나 고향에서 지내는 명절.",
+            "guide": "固定表达，意思是“故乡的节日”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국과 고향의 명절을 비교해 보세요.",
             "exampleZh": "比较韩国和故乡的节日。"
         },
@@ -151,7 +151,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 154,
             "source": "문화 제목",
-            "guide": "강릉 지역에서 단오 때 열리는 대표 축제.",
+            "guide": "固定表达，意思是“江陵端午祭”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "강릉 단오제에 대해 읽었어요.",
             "exampleZh": "阅读了江陵端午祭。"
         },
@@ -161,7 +161,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "음력 1월 1일에 지내는 한국 명절.",
+            "guide": "名词，意思是“春节、韩国新年”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "설날에는 떡국을 먹어요.",
             "exampleZh": "春节吃年糕汤。"
         },
@@ -171,7 +171,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 156,
             "source": "어휘",
-            "guide": "음력 1월 15일의 명절.",
+            "guide": "固定表达，意思是“正月十五”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "정월 대보름에는 부럼을 먹어요.",
             "exampleZh": "正月十五吃坚果。"
         },
@@ -181,7 +181,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "음력 8월 15일의 큰 명절.",
+            "guide": "名词，意思是“中秋、秋夕”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "추석에는 송편을 먹어요.",
             "exampleZh": "中秋吃松饼。"
         },
@@ -191,7 +191,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "양력 12월 21일 무렵의 절기.",
+            "guide": "名词，意思是“冬至”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동지에는 팥죽을 먹어요.",
             "exampleZh": "冬至吃红豆粥。"
         },
@@ -201,7 +201,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "달의 움직임을 기준으로 한 달력.",
+            "guide": "名词，意思是“农历”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "설날은 음력 1월 1일입니다.",
             "exampleZh": "春节是农历一月一日。"
         },
@@ -211,7 +211,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "태양의 움직임을 기준으로 한 달력.",
+            "guide": "名词，意思是“阳历”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동지는 양력 12월 21일쯤입니다.",
             "exampleZh": "冬至大约是阳历12月21日。"
         },
@@ -221,7 +221,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "설날에 주로 먹는 떡이 들어간 국.",
+            "guide": "名词，意思是“年糕汤”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "떡국을 먹으면 나이를 한 살 더 먹는다고 생각해요.",
             "exampleZh": "认为吃年糕汤就长一岁。"
         },
@@ -231,7 +231,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "정월 대보름에 깨물어 먹는 견과류.",
+            "guide": "名词，意思是“坚果、破壳果”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부럼을 먹으면 피부병에 걸리지 않는다고 해요.",
             "exampleZh": "据说吃坚果不会得皮肤病。"
         },
@@ -241,7 +241,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "추석에 먹는 반달 모양 떡.",
+            "guide": "名词，意思是“松饼”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "추석에는 송편을 빚어요.",
             "exampleZh": "中秋做松饼。"
         },
@@ -251,7 +251,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "동지에 먹는 붉은 팥으로 만든 죽.",
+            "guide": "名词，意思是“红豆粥”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "팥죽의 붉은색이 나쁜 기운을 쫓아요.",
             "exampleZh": "红豆粥的红色驱赶坏气运。"
         },
@@ -261,7 +261,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 156,
             "source": "어휘",
-            "guide": "건강한 상태로 오래 살다.",
+            "guide": "固定表达，意思是“健康长寿”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "떡국을 먹고 건강하게 오래 살기를 기원해요.",
             "exampleZh": "吃年糕汤祈愿健康长寿。"
         },
@@ -271,7 +271,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 156,
             "source": "어휘/배운 확인",
-            "guide": "바라는 일이 이루어지기를 빌다.",
+            "guide": "动词表达，意思是“祈愿”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "가족의 건강을 기원합니다.",
             "exampleZh": "祈愿家人健康。"
         },
@@ -281,7 +281,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘/배운 확인",
-            "guide": "피부에 생기는 병.",
+            "guide": "名词，意思是“皮肤病”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "피부병이 생기지 않기를 바랍니다.",
             "exampleZh": "希望不要得皮肤病。"
         },
@@ -291,7 +291,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘/배운 확인",
-            "guide": "빨간색.",
+            "guide": "名词，意思是“红色”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "붉은색은 나쁜 기운을 쫓는다고 해요.",
             "exampleZh": "据说红色能驱赶坏气运。"
         },
@@ -301,7 +301,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 156,
             "source": "어휘",
-            "guide": "좋지 않은 힘이나 분위기.",
+            "guide": "固定表达，意思是“坏气运、邪气”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "팥죽이 나쁜 기운을 쫓는다고 해요.",
             "exampleZh": "据说红豆粥能驱赶坏气运。"
         },
@@ -311,7 +311,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 156,
             "source": "어휘/배운 확인",
-            "guide": "밖으로 몰아내다.",
+            "guide": "动词表达，意思是“驱赶”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "나쁜 것을 쫓습니다.",
             "exampleZh": "驱赶坏东西。"
         },
@@ -321,7 +321,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 156,
             "source": "어휘",
-            "guide": "한 해 동안 지은 농사.",
+            "guide": "固定表达，意思是“一年的农事”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "추석에는 일 년 농사에 감사합니다.",
             "exampleZh": "秋夕感谢一年的农事。"
         },
@@ -331,7 +331,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 156,
             "source": "어휘",
-            "guide": "고마운 마음을 나타내다.",
+            "guide": "动词表达，意思是“感谢”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "조상에게 감사하는 마음을 표현해요.",
             "exampleZh": "表达对祖先的感谢。"
         },
@@ -341,7 +341,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 156,
             "source": "어휘",
-            "guide": "가족과 친척 사람들.",
+            "guide": "固定表达，意思是“家人和亲戚”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가족과 친척들이 모여 윷놀이를 해요.",
             "exampleZh": "家人和亲戚聚在一起玩柶戏。"
         },
@@ -351,7 +351,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 156,
             "source": "어휘",
-            "guide": "윷을 던져 말판에서 말을 움직이는 전통 놀이를 하다.",
+            "guide": "固定表达，意思是“玩柶戏”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "설날에 윷놀이를 했어요.",
             "exampleZh": "春节玩了柶戏。"
         },
@@ -361,7 +361,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "연을 하늘에 날리는 놀이.",
+            "guide": "名词，意思是“放风筝”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아이들은 연날리기를 즐겨요.",
             "exampleZh": "孩子们喜欢放风筝。"
         },
@@ -371,7 +371,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "제기를 발로 차는 전통 놀이.",
+            "guide": "名词，意思是“踢毽子”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "제기차기 놀이를 했어요.",
             "exampleZh": "玩了踢毽子游戏。"
         },
@@ -381,7 +381,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 156,
             "source": "어휘",
-            "guide": "놀이를 재미있게 하다.",
+            "guide": "固定表达，意思是“享受游戏、玩耍”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "명절에 전통 놀이를 즐깁니다.",
             "exampleZh": "节日里玩传统游戏。"
         },
@@ -391,7 +391,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘/배운 확인",
-            "guide": "둥글게 꽉 찬 달.",
+            "guide": "名词，意思是“满月”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "보름달을 보며 소원을 빌어요.",
             "exampleZh": "看着满月许愿。"
         },
@@ -401,7 +401,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 156,
             "source": "어휘",
-            "guide": "바라는 일을 마음속으로 말하다.",
+            "guide": "固定表达，意思是“许愿”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "보름달을 보며 소원을 빌었어요.",
             "exampleZh": "看着满月许了愿。"
         },
@@ -411,7 +411,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "그 해에 처음 거둔 곡식.",
+            "guide": "名词，意思是“新收获的谷物”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "햇곡식으로 차례를 지냅니다.",
             "exampleZh": "用新收获的谷物祭祀。"
         },
@@ -421,7 +421,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 156,
             "source": "어휘",
-            "guide": "그 해에 처음 거둔 과일.",
+            "guide": "名词，意思是“新收获的水果”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "햇과일을 준비해요.",
             "exampleZh": "准备新收获的水果。"
         },
@@ -431,7 +431,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 156,
             "source": "어휘",
-            "guide": "명절에 조상에게 예를 올리다.",
+            "guide": "固定表达，意思是“举行祭礼”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "추석에는 차례를 지내요.",
             "exampleZh": "秋夕举行祭礼。"
         },
@@ -441,7 +441,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "부사",
             "page": 157,
             "source": "문법",
-            "guide": "-어도와 함께 쓰여 강조한다.",
+            "guide": "副词，意思是“无论多么、再怎么”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "아무리 바빠도 고향에 갑니다.",
             "exampleZh": "再怎么忙也回故乡。"
         },
@@ -451,7 +451,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 157,
             "source": "문법 예문",
-            "guide": "사람들이 모여 하는 일.",
+            "guide": "名词，意思是“活动、仪式”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비가 와도 행사는 진행됩니다.",
             "exampleZh": "即使下雨活动也会进行。"
         },
@@ -461,7 +461,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 157,
             "source": "문법 예문",
-            "guide": "일이 계속 이루어지다.",
+            "guide": "动词表达，意思是“进行”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "행사가 예정대로 진행됩니다.",
             "exampleZh": "活动按计划进行。"
         },
@@ -471,7 +471,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 157,
             "source": "문법 예문",
-            "guide": "아침에 먹는 밥.",
+            "guide": "名词，意思是“早饭”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "시간이 없어도 아침밥을 먹어요.",
             "exampleZh": "即使没时间也吃早饭。"
         },
@@ -481,7 +481,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 157,
             "source": "문법 예문",
-            "guide": "수업이나 모임에 나오지 않다.",
+            "guide": "动词表达，意思是“缺席”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "몸이 아파도 결석하지 않아요.",
             "exampleZh": "身体不舒服也不缺席。"
         },
@@ -491,7 +491,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "형용사",
             "page": 157,
             "source": "문법 연습",
-            "guide": "몸이나 마음이 지쳐 있다.",
+            "guide": "形容词，意思是“疲惫”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "아무리 피곤해도 운동해요.",
             "exampleZh": "再累也运动。"
         },
@@ -501,7 +501,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 157,
             "source": "문법 연습",
-            "guide": "날마다 운동을 하다.",
+            "guide": "固定表达，意思是“每天运动”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "매일 운동을 해요.",
             "exampleZh": "每天运动。"
         },
@@ -511,7 +511,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 157,
             "source": "문법 연습",
-            "guide": "늦은 시간에 잠을 자다.",
+            "guide": "固定表达，意思是“晚睡”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "늦게 자도 6시에 일어나요.",
             "exampleZh": "即使晚睡也6点起床。"
         },
@@ -521,7 +521,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 157,
             "source": "문법 연습",
-            "guide": "차갑게 마시는 커피.",
+            "guide": "固定表达，意思是“冰咖啡”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "날씨가 추워도 차가운 커피만 마셔요.",
             "exampleZh": "天气冷也只喝冰咖啡。"
         },
@@ -531,7 +531,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 157,
             "source": "말하기",
-            "guide": "일이 끝난 뒤.",
+            "guide": "固定表达，意思是“下班后”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "퇴근 후에 힘들어도 운동해요.",
             "exampleZh": "下班后即使累也运动。"
         },
@@ -541,7 +541,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 예문",
-            "guide": "이사나 여행을 위해 물건을 정리하다.",
+            "guide": "固定表达，意思是“收拾行李”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이사 가려고 짐을 싸고 있어요.",
             "exampleZh": "为了搬家正在收拾行李。"
         },
@@ -551,7 +551,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 예문",
-            "guide": "사는 곳을 옮기다.",
+            "guide": "固定表达，意思是“搬家去”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "좋은 집을 구해서 이사 가게 됐어요.",
             "exampleZh": "找到了好房子所以要搬家了。"
         },
@@ -561,7 +561,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 예문",
-            "guide": "살 집을 찾다.",
+            "guide": "固定表达，意思是“找房子”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "좋은 집을 구했어요.",
             "exampleZh": "找到了好房子。"
         },
@@ -571,7 +571,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 예문",
-            "guide": "형편이나 상황이 어렵다.",
+            "guide": "固定表达，意思是“情况不允许”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "사정이 안 돼서 가게 문을 닫게 되었어요.",
             "exampleZh": "因为情况不允许，店关门了。"
         },
@@ -581,7 +581,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 예문",
-            "guide": "회사에 취직하다.",
+            "guide": "固定表达，意思是“进公司”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "새로운 회사에 들어가게 되었어요.",
             "exampleZh": "进入了新公司。"
         },
@@ -591,7 +591,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "형용사",
             "page": 158,
             "source": "문법 예문",
-            "guide": "마음이 즐겁다.",
+            "guide": "形容词，意思是“高兴”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "회사에 들어가게 되어서 기뻐요.",
             "exampleZh": "进入公司后很高兴。"
         },
@@ -601,7 +601,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 158,
             "source": "문법 연습",
-            "guide": "이전과 다르게 되다.",
+            "guide": "动词表达，意思是“变得不同”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국에 와서 달라진 게 있어요.",
             "exampleZh": "来韩国后有变化的地方。"
         },
@@ -611,7 +611,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 158,
             "source": "문법 연습",
-            "guide": "고추 맛이 강한 음식.",
+            "guide": "固定表达，意思是“辣的食物”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "매운 음식을 잘 먹게 됐어요.",
             "exampleZh": "变得能吃辣的食物了。"
         },
@@ -621,7 +621,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 연습",
-            "guide": "한국 문화를 알게 되다.",
+            "guide": "固定表达，意思是“理解韩国文化”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국 문화를 이해하게 됐어요.",
             "exampleZh": "变得理解韩国文化了。"
         },
@@ -631,7 +631,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "문법 연습",
-            "guide": "말을 전혀 못하다.",
+            "guide": "固定表达，意思是“一句也不会说”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "처음에는 한국어를 한 마디도 못했어요.",
             "exampleZh": "一开始一句韩语也不会说。"
         },
@@ -641,7 +641,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구/부사",
             "page": 158,
             "source": "문법 연습",
-            "guide": "완벽하지 않지만 일정한 수준.",
+            "guide": "副词，意思是“某种程度”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "한국어를 어느 정도 할 수 있어요.",
             "exampleZh": "韩语能说到一定程度。"
         },
@@ -651,7 +651,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 158,
             "source": "말하기",
-            "guide": "어떤 것에 마음을 두다.",
+            "guide": "固定表达，意思是“产生兴趣、关心”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "역사 드라마를 보고 관심을 가지게 됐어요.",
             "exampleZh": "看了历史剧后产生了兴趣。"
         },
@@ -661,7 +661,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 159,
             "source": "말하기",
-            "guide": "쉬는 날이 이어지는 기간.",
+            "guide": "名词，意思是“连休、长假”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "연휴 동안 잘 쉬었어요.",
             "exampleZh": "长假期间好好休息了。"
         },
@@ -671,7 +671,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 159,
             "source": "말하기",
-            "guide": "고향에 있는 부모님의 집.",
+            "guide": "固定表达，意思是“故乡父母家”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고향 부모님 댁에 다녀왔어요.",
             "exampleZh": "去了故乡父母家又回来了。"
         },
@@ -681,7 +681,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 159,
             "source": "말하기",
-            "guide": "어딘가에 갔다가 돌아오다.",
+            "guide": "动词表达，意思是“去过回来”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "부모님 댁에 다녀왔어요.",
             "exampleZh": "去了父母家回来。"
         },
@@ -691,7 +691,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 159,
             "source": "말하기",
-            "guide": "새해가 되다.",
+            "guide": "固定表达，意思是“换年、新年到来”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "해가 바뀔 때 떡국을 먹어요.",
             "exampleZh": "新年到来时吃年糕汤。"
         },
@@ -701,7 +701,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 159,
             "source": "말하기",
-            "guide": "나이가 한 살 더해지다.",
+            "guide": "固定表达，意思是“年龄增加一岁”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "떡국을 먹어야 나이가 한 살 많아진다고 생각해요.",
             "exampleZh": "认为要吃年糕汤才长一岁。"
         },
@@ -711,7 +711,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 159,
             "source": "말하기",
-            "guide": "한국식으로 세는 나이.",
+            "guide": "固定表达，意思是“韩国年龄”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국 나이로는 한 살이 더 많아요.",
             "exampleZh": "按韩国年龄多一岁。"
         },
@@ -721,7 +721,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "부사구",
             "page": 159,
             "source": "말하기",
-            "guide": "누구의 도움 때문에.",
+            "guide": "副词，意思是“多亏、托……的福”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "과장님 덕분에 한국 문화를 알게 됐어요.",
             "exampleZh": "多亏科长了解了韩国文化。"
         },
@@ -731,7 +731,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 159,
             "source": "말하기",
-            "guide": "좋지 않은 기운을 몰아내다.",
+            "guide": "固定表达，意思是“驱赶坏气运”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "팥죽의 붉은색이 나쁜 기운을 쫓습니다.",
             "exampleZh": "红豆粥的红色驱赶坏气运。"
         },
@@ -741,7 +741,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "듣기",
-            "guide": "명절에 고향으로 돌아감.",
+            "guide": "名词，意思是“返乡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "명절에는 귀성하는 사람이 많아요.",
             "exampleZh": "节日里返乡的人很多。"
         },
@@ -751,7 +751,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 160,
             "source": "듣기/배운 확인",
-            "guide": "명절 교통이 매우 혼잡한 상황을 비유적으로 이르는 말.",
+            "guide": "固定表达，意思是“返乡大战”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "귀성 전쟁이 시작됐어요.",
             "exampleZh": "返乡大战开始了。"
         },
@@ -761,7 +761,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "듣기/배운 확인",
-            "guide": "명절에 고향으로 가는 사람.",
+            "guide": "名词，意思是“返乡客”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "기차역은 귀성객들로 붐벼요.",
             "exampleZh": "火车站挤满返乡客。"
         },
@@ -771,7 +771,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "듣기/배운 확인",
-            "guide": "쉬는 날이 길게 이어지는 좋은 연휴.",
+            "guide": "名词，意思是“黄金长假”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "황금연휴 첫날입니다.",
             "exampleZh": "黄金长假的第一天。"
         },
@@ -781,7 +781,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "듣기/배운 확인",
-            "guide": "추석을 달리 이르는 말.",
+            "guide": "名词，意思是“中秋、秋夕的别称”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "더도 말고 덜도 말고 한가위만 같아라.",
             "exampleZh": "不多不少，只愿天天像中秋。"
         },
@@ -791,7 +791,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 160,
             "source": "듣기",
-            "guide": "차가 빠르게 다니는 큰 도로.",
+            "guide": "固定表达，意思是“高速公路”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고속 도로가 주차장이 됐어요.",
             "exampleZh": "高速公路变成了停车场。"
         },
@@ -801,7 +801,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "듣기",
-            "guide": "기차를 타고 내리는 곳.",
+            "guide": "名词，意思是“火车站”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "기차역이 붐벼요.",
             "exampleZh": "火车站很拥挤。"
         },
@@ -811,7 +811,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 160,
             "source": "듣기",
-            "guide": "시외버스를 타고 내리는 곳.",
+            "guide": "固定表达，意思是“巴士客运站”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "버스 터미널도 붐빕니다.",
             "exampleZh": "巴士客运站也很拥挤。"
         },
@@ -821,7 +821,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 160,
             "source": "듣기/배운 확인",
-            "guide": "사람이나 차가 많아 복잡하다.",
+            "guide": "动词表达，意思是“拥挤”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "명절에는 기차역이 붐벼요.",
             "exampleZh": "节日里火车站很拥挤。"
         },
@@ -831,7 +831,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "듣기",
-            "guide": "표를 미리 사거나 예약함.",
+            "guide": "名词，意思是“预订、预售”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "기차표는 예매로만 살 수 있어요.",
             "exampleZh": "火车票只能预订购买。"
         },
@@ -841,7 +841,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 160,
             "source": "발음",
-            "guide": "소식을 주고받음.",
+            "guide": "名词，意思是“联系”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "친척들과 연락을 했어요.",
             "exampleZh": "和亲戚联系了。"
         },
@@ -851,7 +851,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 161,
             "source": "읽기 전",
-            "guide": "인사할 때 쓰는 말.",
+            "guide": "名词，意思是“问候语”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "명절 인사말을 보냈어요.",
             "exampleZh": "发送了节日问候语。"
         },
@@ -861,7 +861,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 161,
             "source": "읽기 전",
-            "guide": "설날에 많이 쓰는 인사말.",
+            "guide": "固定表达，意思是“新年快乐、多多得福”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "어른께 새해 복 많이 받으세요라고 인사해요.",
             "exampleZh": "向长辈说新年快乐。"
         },
@@ -871,7 +871,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사/인사말",
             "page": 161,
             "source": "읽기 전/배운 확인",
-            "guide": "새해를 축하하는 한자식 인사말.",
+            "guide": "名词，意思是“恭贺新年”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "카드에 근하신년이라고 썼어요.",
             "exampleZh": "在贺卡上写了恭贺新年。"
         },
@@ -881,7 +881,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "형용사",
             "page": 161,
             "source": "읽기 전",
-            "guide": "걱정이나 탈이 없이 편안하다.",
+            "guide": "形容词，意思是“平安”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "새해에도 건강하고 평안하시기 바랍니다.",
             "exampleZh": "祝新年也健康平安。"
         },
@@ -891,7 +891,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 161,
             "source": "읽기 전",
-            "guide": "마음속으로 바라던 일.",
+            "guide": "固定表达，意思是“想做的事、心愿”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "뜻한 것을 모두 이루세요.",
             "exampleZh": "愿心想事成。"
         },
@@ -901,7 +901,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 161,
             "source": "읽기 전",
-            "guide": "넉넉하고 풍요로운 추석.",
+            "guide": "固定表达，意思是“丰盛的中秋”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "풍성한 한가위 보내세요.",
             "exampleZh": "祝您度过丰盛的中秋。"
         },
@@ -911,7 +911,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 161,
             "source": "읽기 전/배운 확인",
-            "guide": "설날에 아랫사람이 윗사람에게 절하며 인사하다.",
+            "guide": "动词表达，意思是“拜年行礼”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이들이 어른께 세배해요.",
             "exampleZh": "孩子们给长辈拜年。"
         },
@@ -921,7 +921,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 161,
             "source": "읽기 전/배운 확인",
-            "guide": "세배 후 어른에게 돈을 받다.",
+            "guide": "固定表达，意思是“收压岁钱”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "세배하고 세뱃돈을 받았어요.",
             "exampleZh": "拜年后收到了压岁钱。"
         },
@@ -931,7 +931,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 161,
             "source": "읽기 전/배운 확인",
-            "guide": "설날에 새 옷이나 좋은 옷을 입다.",
+            "guide": "固定表达，意思是“穿新年衣服”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "설날에 설빔을 입어요.",
             "exampleZh": "春节穿新年衣服。"
         },
@@ -941,7 +941,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 161,
             "source": "읽기 전/배운 확인",
-            "guide": "좋은 말로 축복해 주다.",
+            "guide": "固定表达，意思是“说祝福话”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "어른들이 아이들에게 덕담을 해 줍니다.",
             "exampleZh": "长辈给孩子说祝福话。"
         },
@@ -951,7 +951,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 162,
             "source": "읽기",
-            "guide": "가장 잘 알려진 명절.",
+            "guide": "固定表达，意思是“代表性节日”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국의 대표적인 명절에는 설날과 추석이 있어요.",
             "exampleZh": "韩国代表性节日有春节和秋夕。"
         },
@@ -961,7 +961,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 162,
             "source": "읽기",
-            "guide": "새해에 하는 인사.",
+            "guide": "固定表达，意思是“新年问候”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가족들이 새해 인사를 합니다.",
             "exampleZh": "家人互相新年问候。"
         },
@@ -971,7 +971,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 162,
             "source": "읽기",
-            "guide": "나이나 지위가 낮은 사람.",
+            "guide": "名词，意思是“晚辈、下级”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아랫사람이 윗사람에게 세배해요.",
             "exampleZh": "晚辈向长辈拜年。"
         },
@@ -981,7 +981,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 162,
             "source": "읽기",
-            "guide": "나이나 지위가 높은 사람.",
+            "guide": "名词，意思是“长辈、上级”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "윗사람은 덕담을 해 줍니다.",
             "exampleZh": "长辈说祝福话。"
         },
@@ -991,7 +991,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 162,
             "source": "읽기",
-            "guide": "먼저 살았던 가족의 어른들.",
+            "guide": "名词，意思是“祖先”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "추석에는 조상에게 차례를 지내요.",
             "exampleZh": "秋夕向祖先举行祭礼。"
         },
@@ -1001,7 +1001,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 162,
             "source": "읽기",
-            "guide": "손으로 송편 모양을 만들다.",
+            "guide": "固定表达，意思是“做松饼”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "송편을 예쁘게 빚어요.",
             "exampleZh": "把松饼做得漂亮。"
         },
@@ -1011,7 +1011,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 162,
             "source": "읽기",
-            "guide": "말이나 풍습이 이어져 오다.",
+            "guide": "动词表达，意思是“流传”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "그런 말이 전해지고 있어요.",
             "exampleZh": "这种说法流传着。"
         },
@@ -1021,7 +1021,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 162,
             "source": "읽기",
-            "guide": "시간이 지나 사회 모습이 달라지다.",
+            "guide": "固定表达，意思是“时代变化”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "시대가 바뀌면서 명절 모습도 달라졌어요.",
             "exampleZh": "随着时代变化，节日样貌也变了。"
         },
@@ -1031,7 +1031,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 162,
             "source": "읽기",
-            "guide": "휴대 전화로 보내는 짧은 글.",
+            "guide": "固定表达，意思是“短信”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "명절 인사를 문자 메시지로 보내요.",
             "exampleZh": "用短信发送节日问候。"
         },
@@ -1041,7 +1041,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "동사",
             "page": 162,
             "source": "읽기",
-            "guide": "몸과 마음을 쉬게 하다.",
+            "guide": "动词表达，意思是“休息”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "명절에는 휴식한다는 의미도 커졌어요.",
             "exampleZh": "节日也越来越有休息的意义。"
         },
@@ -1051,7 +1051,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "설날, 한식, 단오, 추석을 이르는 말.",
+            "guide": "固定表达，意思是“韩国四大节日”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국의 4대 명절은 설날, 한식, 단오, 추석입니다.",
             "exampleZh": "韩国四大节日是春节、寒食、端午、秋夕。"
         },
@@ -1061,7 +1061,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "한국의 4대 명절 중 하나.",
+            "guide": "名词，意思是“寒食”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한식은 한국의 전통 명절입니다.",
             "exampleZh": "寒食是韩国传统节日。"
         },
@@ -1071,7 +1071,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "음력 5월 5일의 명절.",
+            "guide": "名词，意思是“端午”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "단오는 음력 5월 5일입니다.",
             "exampleZh": "端午是农历五月五日。"
         },
@@ -1081,7 +1081,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "세상의 모든 것.",
+            "guide": "名词，意思是“万物”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "단오는 만물의 기운이 강한 날입니다.",
             "exampleZh": "端午是万物气运强盛的日子。"
         },
@@ -1091,7 +1091,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "창포를 넣은 물로 머리를 씻다.",
+            "guide": "固定表达，意思是“用菖蒲水洗头”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "단오에는 창포물에 머리를 감는 풍습이 있었어요.",
             "exampleZh": "端午有用菖蒲水洗头的风俗。"
         },
@@ -1101,7 +1101,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "한국 전통 겨루기 놀이를 하다.",
+            "guide": "固定表达，意思是“摔跤”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "남자들은 씨름을 했어요.",
             "exampleZh": "男人们摔跤。"
         },
@@ -1111,7 +1111,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "표현",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "그네에 앉아 앞뒤로 움직이다.",
+            "guide": "固定表达，意思是“荡秋千”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "여자들은 그네를 탔어요.",
             "exampleZh": "女人们荡秋千。"
         },
@@ -1121,7 +1121,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "기념하고 즐기기 위해 여는 큰 행사.",
+            "guide": "名词，意思是“庆典、节庆”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "강릉 단오제는 유명한 축제입니다.",
             "exampleZh": "江陵端午祭是有名的庆典。"
         },
@@ -1131,7 +1131,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "전통적으로 전해지는 놀이.",
+            "guide": "名词，意思是“民俗游戏”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "강릉 단오제는 민속놀이로도 알려졌어요.",
             "exampleZh": "江陵端午祭也作为民俗游戏而知名。"
         },
@@ -1141,7 +1141,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "세계가 지켜야 할 무형 문화유산.",
+            "guide": "固定表达，意思是“联合国教科文组织世界非物质遗产”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "강릉 단오제는 세계 무형 유산이 되었습니다.",
             "exampleZh": "江陵端午祭成为世界非物质遗产。"
         },
@@ -1151,7 +1151,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "역사와 문화 가치가 있어 보존할 대상.",
+            "guide": "名词，意思是“文化财、文化遗产”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "세계가 함께 지켜야 할 문화재입니다.",
             "exampleZh": "是世界共同守护的文化遗产。"
         },
@@ -1161,7 +1161,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "같은 마을 사람들이 이루는 공동체.",
+            "guide": "固定表达，意思是“村落共同体”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "마을 공동체의 신앙을 바탕으로 합니다.",
             "exampleZh": "以村落共同体的信仰为基础。"
         },
@@ -1171,7 +1171,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "농사가 잘된 해.",
+            "guide": "名词，意思是“丰年、丰收”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "풍년을 기원합니다.",
             "exampleZh": "祈愿丰收。"
         },
@@ -1181,7 +1181,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사구",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "지역이 안전한 상태.",
+            "guide": "固定表达，意思是“地区安全”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지역의 안전을 기원했어요.",
             "exampleZh": "祈愿地区安全。"
         },
@@ -1191,7 +1191,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "신이나 조상에게 예를 올리는 의식.",
+            "guide": "名词，意思是“祭祀”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "풍요를 바라는 제사를 올립니다.",
             "exampleZh": "举行祈愿富饶的祭祀。"
         },
@@ -1201,7 +1201,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 164,
             "source": "문화와 정보",
-            "guide": "무대에서 보이는 음악, 춤, 연극 등.",
+            "guide": "名词，意思是“演出”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공연을 올리고 행사도 진행해요.",
             "exampleZh": "举行演出，也进行活动。"
         },
@@ -1211,7 +1211,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "명사",
             "page": 165,
             "source": "배운 어휘 확인",
-            "guide": "친척과 가까운 사람들.",
+            "guide": "名词，意思是“亲友”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "명절에 친지들을 만났어요.",
             "exampleZh": "节日见了亲友。"
         },
@@ -1221,7 +1221,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "형용사",
             "page": 165,
             "source": "배운 어휘 확인",
-            "guide": "넉넉하고 많다.",
+            "guide": "形容词，意思是“丰盛、丰富”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "풍성한 한가위 보내세요.",
             "exampleZh": "祝您度过丰盛的中秋。"
         },
@@ -1231,7 +1231,7 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "pos": "형용사",
             "page": 165,
             "source": "배운 어휘 확인",
-            "guide": "빈 곳 없이 꽉 차다.",
+            "guide": "形容词，意思是“充满”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "감사와 행복이 가득한 추석 보내세요.",
             "exampleZh": "祝您度过充满感谢和幸福的秋夕。"
         }

@@ -142,7 +142,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 202,
             "source": "단원 제목",
-            "guide": "长期天气特征。",
+            "guide": "名词，意思是“气候”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국의 기후는 사계절이 뚜렷해요.",
             "exampleZh": "韩国气候四季分明。"
         },
@@ -152,7 +152,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 202,
             "source": "단원 제목",
-            "guide": "短期天气状态。",
+            "guide": "名词，意思是“天气”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오늘 날씨가 어때요?",
             "exampleZh": "今天天气怎么样？"
         },
@@ -162,7 +162,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 202,
             "source": "단원 제목",
-            "guide": "天气引起的身体状态变化。",
+            "guide": "名词，意思是“身体变化”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "날씨에 따라 몸의 변화가 있어요.",
             "exampleZh": "根据天气会有身体变化。"
         },
@@ -172,7 +172,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기",
-            "guide": "날씨를 미리 알려 주는 정보。",
+            "guide": "名词，意思是“天气预报”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "일기 예보를 봤어요?",
             "exampleZh": "看天气预报了吗？"
         },
@@ -182,7 +182,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "天气预报图标词。",
+            "guide": "名词，意思是“晴”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오늘 날씨는 맑음입니다.",
             "exampleZh": "今天天气晴。"
         },
@@ -192,7 +192,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "몸으로 느끼는 온도。",
+            "guide": "名词，意思是“体感温度”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "체감 온도는 영하예요.",
             "exampleZh": "体感温度是零下。"
         },
@@ -202,7 +202,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "空气中水分程度。",
+            "guide": "名词，意思是“湿度”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "습도가 높아서 끈적거려요.",
             "exampleZh": "湿度高所以黏糊糊的。"
         },
@@ -212,7 +212,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "下雨可能性。",
+            "guide": "名词，意思是“降雨概率”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비 올 확률이 80%예요.",
             "exampleZh": "降雨概率是 80%。"
         },
@@ -222,7 +222,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "一天中最低温度。",
+            "guide": "名词，意思是“最低气温”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "내일 최저 기온은 영하 3도예요.",
             "exampleZh": "明天最低气温零下三度。"
         },
@@ -232,7 +232,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "一天中最高温度。",
+            "guide": "名词，意思是“最高气温”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오늘 최고 기온은 33도예요.",
             "exampleZh": "今天最高气温 33 度。"
         },
@@ -242,7 +242,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "空气污染颗粒。",
+            "guide": "名词，意思是“细颗粒物、微尘”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "미세 먼지가 심해요.",
             "exampleZh": "细颗粒物很严重。"
         },
@@ -252,7 +252,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "危险天气的较低级别预警。",
+            "guide": "名词，意思是“注意预警”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "미세 먼지 주의보가 내렸어요.",
             "exampleZh": "发布了微尘注意预警。"
         },
@@ -262,7 +262,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "较严重的危险天气警报。",
+            "guide": "名词，意思是“警报”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "호우 경보가 내렸어요.",
             "exampleZh": "发布了暴雨警报。"
         },
@@ -272,7 +272,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "밖에 나가는 것。",
+            "guide": "名词，意思是“外出”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "외출 시 마스크를 쓰세요.",
             "exampleZh": "外出时请戴口罩。"
         },
@@ -282,7 +282,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 204,
             "source": "어휘",
-            "guide": "쓰다 可用于帽子、眼镜、口罩。",
+            "guide": "动词表达，意思是“戴口罩”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "미세 먼지가 심할 때 마스크를 써요.",
             "exampleZh": "微尘严重时戴口罩。"
         },
@@ -292,7 +292,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "非常炎热的天气。",
+            "guide": "名词，意思是“酷暑、暴热”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "폭염 주의보가 내렸어요.",
             "exampleZh": "发布了酷暑注意预警。"
         },
@@ -302,7 +302,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 204,
             "source": "어휘",
-            "guide": "炎热天气建议。",
+            "guide": "固定表达，意思是“多喝水”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "폭염에는 물을 많이 마셔야 해요.",
             "exampleZh": "酷暑时要多喝水。"
         },
@@ -312,7 +312,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "많은 비。",
+            "guide": "名词，意思是“暴雨”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "호우 경보가 내렸어요.",
             "exampleZh": "发布了暴雨警报。"
         },
@@ -322,7 +322,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "강이나 개울。",
+            "guide": "名词，意思是“河川”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "하천 주변은 위험해요.",
             "exampleZh": "河川周边很危险。"
         },
@@ -332,7 +332,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "그 지역에 사는 사람。",
+            "guide": "名词，意思是“居民”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주민은 대피해야 해요.",
             "exampleZh": "居民必须避难。"
         },
@@ -342,7 +342,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 204,
             "source": "어휘",
-            "guide": "위험한 곳을 피하다。",
+            "guide": "动词表达，意思是“避难、撤离”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "하천 주변 주민은 대피하세요.",
             "exampleZh": "河川周边居民请撤离。"
         },
@@ -352,7 +352,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 204,
             "source": "어휘",
-            "guide": "매우 추운 날씨。",
+            "guide": "名词，意思是“寒潮”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한파 경보가 내렸어요.",
             "exampleZh": "发布了寒潮警报。"
         },
@@ -362,7 +362,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "부사",
             "page": 204,
             "source": "어휘",
-            "guide": "가능할 경우。",
+            "guide": "副词，意思是“如果可能的话”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "가능하면 외출하지 마세요.",
             "exampleZh": "如果可能请不要外出。"
         },
@@ -372,7 +372,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 205,
             "source": "문법 예문",
-            "guide": "忙中安排时间。",
+            "guide": "动词表达，意思是“抽出时间”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "바쁘실 텐데 시간을 내 주셔서 감사합니다.",
             "exampleZh": "您应该很忙，还抽出时间，谢谢。"
         },
@@ -382,7 +382,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 205,
             "source": "문법 대화",
-            "guide": "비 예보에 대한建议。",
+            "guide": "固定表达，意思是“带伞去”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "비가 올 텐데 우산을 가지고 가세요.",
             "exampleZh": "可能会下雨，请带伞。"
         },
@@ -392,7 +392,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 205,
             "source": "문법 연습",
-            "guide": "寒冷天气穿的衣服。",
+            "guide": "名词，意思是“厚衣服”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "추울 텐데 두꺼운 옷을 입으세요.",
             "exampleZh": "天气会冷，请穿厚衣服。"
         },
@@ -402,7 +402,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 205,
             "source": "문법 연습",
-            "guide": "交通不畅。",
+            "guide": "固定表达，意思是“堵车、道路拥堵”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "길이 막힐 텐데 지하철을 타요.",
             "exampleZh": "路可能会堵，坐地铁吧。"
         },
@@ -412,7 +412,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 205,
             "source": "문법 연습",
-            "guide": "비나 눈 때문에道路 slippery。",
+            "guide": "固定表达，意思是“路滑”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "길이 미끄러울 텐데 조심하세요.",
             "exampleZh": "路会滑，请小心。"
         },
@@ -422,7 +422,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 205,
             "source": "문법 연습",
-            "guide": "짧게 갑자기 내리는 비。",
+            "guide": "名词，意思是“阵雨”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "소나기가 곧 그칠 텐데 기다립시다.",
             "exampleZh": "阵雨应该很快会停，等一下吧。"
         },
@@ -432,7 +432,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 205,
             "source": "문법 연습",
-            "guide": "雨、雪停止。",
+            "guide": "动词表达，意思是“停止”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "비가 그쳤어요.",
             "exampleZh": "雨停了。"
         },
@@ -442,7 +442,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 206,
             "source": "문법 예문",
-            "guide": "职场称呼。",
+            "guide": "名词，意思是“科长、经理”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "과장님 옆에 앉아 있어요.",
             "exampleZh": "坐在科长旁边。"
         },
@@ -452,7 +452,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 206,
             "source": "문법 예문",
-            "guide": "앉은 상태가 지속됨。",
+            "guide": "动词表达，意思是“坐着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "고천 씨가 소파에 앉아 있어요.",
             "exampleZh": "高天坐在沙发上。"
         },
@@ -462,7 +462,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 206,
             "source": "문법 예문",
-            "guide": "某物内部含有某成分。",
+            "guide": "固定表达，意思是“放着糖、含有糖”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이 커피에는 설탕이 들어 있어요.",
             "exampleZh": "这杯咖啡里放了糖。"
         },
@@ -472,7 +472,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 206,
             "source": "문법 예문",
-            "guide": "关闭后的状态持续。",
+            "guide": "固定表达，意思是“电源关着”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "친구의 휴대폰 전원이 꺼져 있어요.",
             "exampleZh": "朋友的手机关机着。"
         },
@@ -482,7 +482,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 206,
             "source": "문법 대화",
-            "guide": "花开后状态持续。",
+            "guide": "动词表达，意思是“开着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "꽃이 많이 피어 있어요.",
             "exampleZh": "开着很多花。"
         },
@@ -492,7 +492,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 206,
             "source": "문법 연습",
-            "guide": "掉落后的状态。",
+            "guide": "动词表达，意思是“掉在、落在”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "볼펜이 바닥에 떨어져 있어요.",
             "exampleZh": "圆珠笔掉在地上。"
         },
@@ -502,7 +502,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 206,
             "source": "문법 연습",
-            "guide": "门窗关闭后的状态。",
+            "guide": "动词表达，意思是“关着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "창문이 닫혀 있어요.",
             "exampleZh": "窗户关着。"
         },
@@ -512,7 +512,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 206,
             "source": "문법 연습",
-            "guide": "挂在某处的状态。",
+            "guide": "动词表达，意思是“挂着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "시계가 벽에 걸려 있어요.",
             "exampleZh": "表挂在墙上。"
         },
@@ -522,7 +522,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 206,
             "source": "문법 연습",
-            "guide": "被放置后的状态。",
+            "guide": "动词表达，意思是“放着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "탁자 위에 컵이 놓여 있어요.",
             "exampleZh": "桌子上放着杯子。"
         },
@@ -532,7 +532,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 207,
             "source": "말하기",
-            "guide": "温度降低。",
+            "guide": "固定表达，意思是“气温下降”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "기온이 많이 떨어졌어요.",
             "exampleZh": "气温下降了很多。"
         },
@@ -542,7 +542,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기",
-            "guide": "体育活动。",
+            "guide": "名词，意思是“运动会”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "내일 체육 대회를 하기로 했어요.",
             "exampleZh": "明天决定举办运动会。"
         },
@@ -552,7 +552,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 207,
             "source": "말하기",
-            "guide": "对不好天气的概括。",
+            "guide": "固定表达，意思是“天气这样”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "날씨가 이래서 걱정이에요.",
             "exampleZh": "天气这样，所以很担心。"
         },
@@ -562,7 +562,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기",
-            "guide": "밖에서 하는 행사。",
+            "guide": "名词，意思是“户外活动”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "내일 같은 날에 야외 행사는 무리예요.",
             "exampleZh": "明天这样的天气办户外活动太勉强。"
         },
@@ -572,7 +572,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기",
-            "guide": "情况不适合或过度。",
+            "guide": "名词，意思是“勉强、不合适”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "폭염에 야외 행사는 무리예요.",
             "exampleZh": "酷暑时办户外活动太勉强。"
         },
@@ -582,7 +582,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 207,
             "source": "말하기",
-            "guide": "时间往后推。",
+            "guide": "动词表达，意思是“延期”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "체육 대회를 다른 날로 연기합시다.",
             "exampleZh": "把运动会延期到别的日子吧。"
         },
@@ -592,7 +592,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기 활동",
-            "guide": "비나 눈이 올 확률。",
+            "guide": "名词，意思是“降水概率”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "강수 확률이 80%입니다.",
             "exampleZh": "降水概率是 80%。"
         },
@@ -602,7 +602,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기 활동",
-            "guide": "团体外出活动。",
+            "guide": "名词，意思是“郊游、野游会”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "야유회를 가지 말고 식사만 해요.",
             "exampleZh": "不要去郊游，只一起吃饭吧。"
         },
@@ -612,7 +612,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 207,
             "source": "말하기 활동",
-            "guide": "날씨 경보가 발표되다。",
+            "guide": "固定表达，意思是“发布暴雨警报”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "여행 가는 날에 호우 경보가 내렸어요.",
             "exampleZh": "旅行当天发布了暴雨警报。"
         },
@@ -622,7 +622,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 207,
             "source": "말하기 활동",
-            "guide": "밖에서 하는 근무。",
+            "guide": "名词，意思是“户外工作”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "야외 근무를 하는 날이에요.",
             "exampleZh": "是户外工作的日子。"
         },
@@ -632,7 +632,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 208,
             "source": "듣기",
-            "guide": "空气质量。",
+            "guide": "名词，意思是“空气”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주말에는 공기가 깨끗하겠습니다.",
             "exampleZh": "周末空气会干净。"
         },
@@ -642,7 +642,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 208,
             "source": "듣기",
-            "guide": "冷风吹。",
+            "guide": "固定表达，意思是“刮冷风”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "낮에도 찬바람이 불어요.",
             "exampleZh": "白天也刮冷风。"
         },
@@ -652,7 +652,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 208,
             "source": "듣기",
-            "guide": "夜间气温仍高，难以入睡的现象。",
+            "guide": "名词，意思是“热带夜”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "밤사이 열대야 현상이 나타났어요.",
             "exampleZh": "夜间出现了热带夜现象。"
         },
@@ -662,7 +662,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 208,
             "source": "듣기",
-            "guide": "一天内最高最低温差。",
+            "guide": "名词，意思是“昼夜温差”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "일교차가 크니까 조심하세요.",
             "exampleZh": "昼夜温差大，请小心。"
         },
@@ -672,7 +672,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 208,
             "source": "듣기",
-            "guide": "0도 아래 온도。",
+            "guide": "名词，意思是“零下”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "체감 온도는 영하로 내려가요.",
             "exampleZh": "体感温度降到零下。"
         },
@@ -682,7 +682,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 208,
             "source": "발음 예문",
-            "guide": "天气慢慢变阴。",
+            "guide": "固定表达，意思是“逐渐转阴”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "오후에는 점차 흐려지겠습니다.",
             "exampleZh": "下午会逐渐转阴。"
         },
@@ -692,7 +692,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 208,
             "source": "발음 예문",
-            "guide": "가볍게 밖에 놀러 나감。",
+            "guide": "名词，意思是“出游”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "날씨가 맑아 나들이하기 좋아요.",
             "exampleZh": "天气晴，适合出游。"
         },
@@ -702,7 +702,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 209,
             "source": "읽기 전",
-            "guide": "봄철에 나른하고 졸린 상태。",
+            "guide": "名词，意思是“春困症”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "봄에는 춘곤증을 느껴요.",
             "exampleZh": "春天会感到春困。"
         },
@@ -712,7 +712,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 209,
             "source": "읽기 전",
-            "guide": "힘이 없고 처지는 상태。",
+            "guide": "固定表达，意思是“身体发软、乏力”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "온몸이 나른해요.",
             "exampleZh": "全身乏力。"
         },
@@ -722,7 +722,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 209,
             "source": "읽기 전",
-            "guide": "疲劳感出现。",
+            "guide": "固定表达，意思是“感到疲劳”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "쉽게 피로를 느껴요.",
             "exampleZh": "容易感到疲劳。"
         },
@@ -732,7 +732,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 209,
             "source": "읽기 전",
-            "guide": "활력이 부족하다。",
+            "guide": "固定表达，意思是“没有力气”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "요즘 기운이 없어요.",
             "exampleZh": "最近没力气。"
         },
@@ -742,7 +742,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 209,
             "source": "읽기 전",
-            "guide": "注意力变差。",
+            "guide": "固定表达，意思是“集中力下降”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "오후에는 집중력이 떨어져요.",
             "exampleZh": "下午集中力会下降。"
         },
@@ -752,7 +752,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 209,
             "source": "읽기 전",
-            "guide": "心情低落。",
+            "guide": "固定表达，意思是“感到忧郁”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "비 오는 날에는 우울한 기분이 들어요.",
             "exampleZh": "下雨天会感到忧郁。"
         },
@@ -762,7 +762,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 209,
             "source": "읽기 전",
-            "guide": "높은 열。",
+            "guide": "名词，意思是“高烧”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "고열이 나면 병원에 가세요.",
             "exampleZh": "发高烧时请去医院。"
         },
@@ -772,7 +772,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 209,
             "source": "읽기 전",
-            "guide": "肌肉疼痛。",
+            "guide": "名词，意思是“肌肉痛”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "근육통이 심해요.",
             "exampleZh": "肌肉痛很严重。"
         },
@@ -782,7 +782,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 209,
             "source": "읽기 전",
-            "guide": "인플루엔자 감염병。",
+            "guide": "名词，意思是“流感”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "독감이 의심되면 검사를 받으세요.",
             "exampleZh": "怀疑流感时请接受检查。"
         },
@@ -792,7 +792,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 209,
             "source": "읽기 전",
-            "guide": "증상상 어떤 병일 가능성이 있음。",
+            "guide": "动词表达，意思是“被怀疑、疑似”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "독감이 의심돼요.",
             "exampleZh": "疑似流感。"
         },
@@ -802,7 +802,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 210,
             "source": "읽기",
-            "guide": "봄철 몸과 마음이 영향을 받음。",
+            "guide": "固定表达，意思是“受春天影响而困倦/情绪变化”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "요즘 봄을 타는 것 같아요.",
             "exampleZh": "最近好像受春天影响。"
         },
@@ -812,7 +812,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "부사",
             "page": 210,
             "source": "읽기",
-            "guide": "医学角度。",
+            "guide": "副词，意思是“医学上”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "의학적으로 질병은 아니에요.",
             "exampleZh": "医学上不是疾病。"
         },
@@ -822,7 +822,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 210,
             "source": "읽기",
-            "guide": "병의正式词。",
+            "guide": "名词，意思是“疾病”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "춘곤증은 질병이 아니에요.",
             "exampleZh": "春困症不是疾病。"
         },
@@ -832,7 +832,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 210,
             "source": "읽기",
-            "guide": "季节转换。",
+            "guide": "名词，意思是“季节变化”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "계절 변화에 몸이 적응해야 해요.",
             "exampleZh": "身体要适应季节变化。"
         },
@@ -842,7 +842,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 210,
             "source": "읽기",
-            "guide": "新的环境或变化에 맞게 되다。",
+            "guide": "动词表达，意思是“适应”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "몸이 봄에 적응하지 못했어요.",
             "exampleZh": "身体没能适应春天。"
         },
@@ -852,7 +852,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "형용사",
             "page": 210,
             "source": "읽기",
-            "guide": "某状态已习惯。",
+            "guide": "形容词，意思是“熟悉、习惯”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "몸은 추위에 익숙해 있어요.",
             "exampleZh": "身体习惯了寒冷。"
         },
@@ -862,7 +862,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "형용사",
             "page": 210,
             "source": "읽기",
-            "guide": " 일정한 규칙이 있음。",
+            "guide": "形容词，意思是“有规律”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "규칙적인 운동이 중요해요.",
             "exampleZh": "规律运动很重要。"
         },
@@ -872,7 +872,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "형용사",
             "page": 210,
             "source": "읽기",
-            "guide": "程度合适。",
+            "guide": "形容词，意思是“适当”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "적당한 운동을 하세요.",
             "exampleZh": "请做适当的运动。"
         },
@@ -882,7 +882,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 210,
             "source": "읽기",
-            "guide": "몸을 늘여 근육을 풀다。",
+            "guide": "动词表达，意思是“做伸展运动”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "두세 시간 간격으로 스트레칭을 하세요.",
             "exampleZh": "请每隔两三个小时做伸展。"
         },
@@ -892,7 +892,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 210,
             "source": "읽기",
-            "guide": "两次之间的距离或时间。",
+            "guide": "名词，意思是“间隔”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "2~3시간 간격으로 쉬세요.",
             "exampleZh": "每隔两三个小时休息。"
         },
@@ -902,7 +902,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 210,
             "source": "읽기",
-            "guide": "긴장된 근육을 이완하다。",
+            "guide": "固定表达，意思是“放松肌肉紧张”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "스트레칭은 근육의 긴장을 풀어 줘요.",
             "exampleZh": "伸展能放松肌肉紧张。"
         },
@@ -912,7 +912,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "형용사",
             "page": 210,
             "source": "읽기",
-            "guide": "좋은 효과가 있음。",
+            "guide": "形容词，意思是“有效”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "스트레칭이 효과적이에요.",
             "exampleZh": "伸展很有效。"
         },
@@ -922,7 +922,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 210,
             "source": "읽기",
-            "guide": "营养素。",
+            "guide": "名词，意思是“维生素”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비타민이 많이 필요해요.",
             "exampleZh": "需要很多维生素。"
         },
@@ -932,7 +932,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 210,
             "source": "읽기",
-            "guide": "里面含有。",
+            "guide": "动词表达，意思是“包含”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "채소에는 비타민이 포함되어 있어요.",
             "exampleZh": "蔬菜里含有维生素。"
         },
@@ -942,7 +942,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 210,
             "source": "읽기",
-            "guide": "잠자는 시간。",
+            "guide": "名词，意思是“睡眠时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "수면 시간은 7~8시간이 적당해요.",
             "exampleZh": "睡眠时间 7-8 小时较合适。"
         },
@@ -952,7 +952,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "형용사",
             "page": 211,
             "source": "쓰기",
-            "guide": "湿度低。",
+            "guide": "形容词，意思是“干燥”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "겨울에는 춥고 건조해요.",
             "exampleZh": "冬天寒冷又干燥。"
         },
@@ -962,7 +962,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 211,
             "source": "쓰기",
-            "guide": "病或风气广泛出现。",
+            "guide": "动词表达，意思是“流行”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "독감이 유행할 수 있어요.",
             "exampleZh": "流感可能流行。"
         },
@@ -972,7 +972,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "按太阳运行划分季节变化的时段。",
+            "guide": "名词，意思是“节气”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국에는 24절기가 있어요.",
             "exampleZh": "韩国有二十四节气。"
         },
@@ -982,7 +982,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "一年分成的 24 个时段。",
+            "guide": "名词，意思是“二十四个时期”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "1년을 24시기로 나누었어요.",
             "exampleZh": "把一年分成二十四个时期。"
         },
@@ -992,7 +992,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "季节转换。",
+            "guide": "名词，意思是“季节变化”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "절기는 계절의 변화를 나타내요.",
             "exampleZh": "节气表示季节变化。"
         },
@@ -1002,7 +1002,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "日常中固定下来。",
+            "guide": "动词表达，意思是“扎根、占据位置”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "몇몇 절기는 일상 속에 자리 잡고 있어요.",
             "exampleZh": "一些节气在日常中扎根。"
         },
@@ -1012,7 +1012,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "형용사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "낯설지 않음。",
+            "guide": "形容词，意思是“熟悉”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "입춘은 사람들에게 친숙한 절기예요.",
             "exampleZh": "立春是人们熟悉的节气。"
         },
@@ -1022,7 +1022,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "봄의 시작을 알리는 절기。",
+            "guide": "名词，意思是“立春”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "입춘은 봄의 시작을 알려요.",
             "exampleZh": "立春表示春天开始。"
         },
@@ -1032,7 +1032,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "낮과 밤의 길이가 같은 봄 절기。",
+            "guide": "名词，意思是“春分”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "춘분에는 낮과 밤의 길이가 같아요.",
             "exampleZh": "春分时昼夜等长。"
         },
@@ -1042,7 +1042,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "낮이 가장 긴 날。",
+            "guide": "名词，意思是“夏至”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "하지는 낮의 길이가 가장 긴 날이에요.",
             "exampleZh": "夏至是一年中白天最长的日子。"
         },
@@ -1052,7 +1052,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "낮과 밤의 길이가 같은 가을 절기。",
+            "guide": "名词，意思是“秋分”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "추분이 지나면 밤이 길어져요.",
             "exampleZh": "秋分过后夜晚变长。"
         },
@@ -1062,7 +1062,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "밤이 가장 긴 날。",
+            "guide": "名词，意思是“冬至”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동지에는 팥죽을 먹어요.",
             "exampleZh": "冬至吃红豆粥。"
         },
@@ -1072,7 +1072,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "한자성어",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "立春时祈福语。",
+            "guide": "汉字成语，意思是“立春大吉”。按整体含义记忆，比逐字翻译更自然。",
             "exampleKo": "입춘에 입춘대길을 써서 붙였어요.",
             "exampleZh": "立春时写“立春大吉”贴上。"
         },
@@ -1082,7 +1082,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "집의 큰门。",
+            "guide": "名词，意思是“大门”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대문에 글을 붙였어요.",
             "exampleZh": "在大门上贴了字。"
         },
@@ -1092,7 +1092,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "동사구",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "好运到来를 바라다。",
+            "guide": "动词表达，意思是“祈福”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "입춘에 복을 빌었어요.",
             "exampleZh": "立春时祈福。"
         },
@@ -1102,7 +1102,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "동지에 먹는 음식。",
+            "guide": "名词，意思是“红豆粥”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동지에는 팥죽을 먹는 풍습이 있어요.",
             "exampleZh": "冬至有吃红豆粥的风俗。"
         },
@@ -1112,7 +1112,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "명사",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "오래 이어진 생활习俗。",
+            "guide": "名词，意思是“风俗”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "나쁜 일을 막는 풍습이 있어요.",
             "exampleZh": "有阻挡坏事的风俗。"
         },
@@ -1122,7 +1122,7 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "pos": "표현",
             "page": 212,
             "source": "문화와 정보",
-            "guide": "不好的事不发生하게 하다。",
+            "guide": "固定表达，意思是“阻挡坏事”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "팥죽을 먹으며 나쁜 일을 막는다고 생각했어요.",
             "exampleZh": "人们认为吃红豆粥可以阻挡坏事。"
         }

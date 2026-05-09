@@ -985,6 +985,33 @@
             return "来源待补";
         }
 
+        function formatWordPos(pos) {
+            const label = String(pos || "").trim();
+            if (!label) return "词性待补";
+
+            const posMap = {
+                "명사": "名词",
+                "명사구": "名词短语",
+                "동사": "动词",
+                "동사구": "动词短语",
+                "형용사": "形容词",
+                "부사": "副词",
+                "부사구": "副词短语",
+                "표현": "表达",
+                "문법": "语法",
+                "문법 표현": "语法表达",
+                "한자성어": "汉字成语",
+                "관형사": "冠形词",
+                "속담형 표현": "俗语型表达",
+                "인사말": "问候语"
+            };
+
+            return label
+                .split("/")
+                .map(part => posMap[part.trim()] || part.trim())
+                .join("/");
+        }
+
         function normalizeLesson(lesson) {
             return {
                 goals: [],
@@ -1120,7 +1147,7 @@
                     <div>
                         <div class="eyebrow">
                             <span class="level-badge">KIIP L3-${String(lesson.number).padStart(2, "0")}</span>
-                            ${lesson.pages ? `<span class="page-badge">PDF ${escapeHtml(lesson.pages)}页</span>` : ""}
+                            ${lesson.pages ? `<span class="page-badge">p.${escapeHtml(lesson.pages)}</span>` : ""}
                             <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
                         </div>
                         <h1>${escapeHtml(lesson.titleKo)}</h1>
@@ -1191,7 +1218,7 @@
                             ${showChinese ? `<div class="example-zh">${escapeHtml(item.exampleZh)}</div>` : ""}
                             <div class="word-meta">
                                 <span class="word-source">${escapeHtml(formatWordSource(item))}</span>
-                                <span class="word-pos">${escapeHtml(item.pos)}</span>
+                                <span class="word-pos">${escapeHtml(formatWordPos(item.pos))}</span>
                             </div>
                         </article>
                     `).join("")}
@@ -1219,7 +1246,7 @@
                                     <h2>${escapeHtml(dialogue.title)}</h2>
                                     <div class="dialogue-meta">
                                         <span class="dialogue-focus">${escapeHtml(dialogue.focus)}</span>
-                                        ${dialogue.page ? `<span class="page-badge">PDF p.${escapeHtml(dialogue.page)}</span>` : ""}
+                                        ${dialogue.page ? `<span class="page-badge">p.${escapeHtml(dialogue.page)}</span>` : ""}
                                         ${dialogue.source ? `<span class="word-source">${escapeHtml(dialogue.source)}</span>` : ""}
                                     </div>
                                 </div>
@@ -1299,7 +1326,7 @@
                     <div class="eyebrow">
                         <span class="level-badge">${escapeHtml(culture.titleKo)}</span>
                         <span class="page-badge">${escapeHtml(culture.titleZh)}</span>
-                        ${culture.page ? `<span class="page-badge">PDF p.${escapeHtml(culture.page)}</span>` : ""}
+                        ${culture.page ? `<span class="page-badge">p.${escapeHtml(culture.page)}</span>` : ""}
                     </div>
                     <div class="culture-summary">${escapeHtml(culture.summaryZh)}</div>
                     <h2>原文与翻译</h2>

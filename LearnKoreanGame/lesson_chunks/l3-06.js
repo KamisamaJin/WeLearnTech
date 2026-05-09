@@ -136,7 +136,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "단원 제목",
-            "guide": "집과 주변 생활 조건을 통틀어 말한다.",
+            "guide": "名词，意思是“居住环境”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주거 환경이 좋은 곳에서 살고 싶어요.",
             "exampleZh": "我想住在居住环境好的地方。"
         },
@@ -146,7 +146,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "어휘 목표",
-            "guide": "사람들이 주로 사는 지역이다.",
+            "guide": "名词，意思是“居住区域”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이곳은 조용한 주거 지역입니다.",
             "exampleZh": "这里是安静的居住区域。"
         },
@@ -156,7 +156,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "어휘 목표",
-            "guide": "산, 강, 교통, 위치 같은 환경을 말한다.",
+            "guide": "名词，意思是“地理环境”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "사마르칸트의 지리적 환경을 소개했어요.",
             "exampleZh": "介绍了撒马尔罕的地理环境。"
         },
@@ -166,7 +166,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "활동 목표",
-            "guide": "내가 사는 주변 지역.",
+            "guide": "名词，意思是“小区、街区”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "우리 동네에는 공원이 많아요.",
             "exampleZh": "我们小区有很多公园。"
         },
@@ -176,7 +176,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "활동 목표",
-            "guide": "집이나 학교 근처에 있는 시설.",
+            "guide": "名词，意思是“周边设施”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주변 시설이 많아서 생활하기 편해요.",
             "exampleZh": "周边设施多，所以生活方便。"
         },
@@ -186,7 +186,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "활동 목표",
-            "guide": "고향에서 살던 동네.",
+            "guide": "名词，意思是“故乡的街区”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "고향 동네는 지금 사는 곳보다 한적해요.",
             "exampleZh": "故乡的街区比现在住的地方清静。"
         },
@@ -196,7 +196,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 72,
             "source": "문화 제목",
-            "guide": "집을 짓거나 살기 좋은 자리.",
+            "guide": "名词，意思是“风水宝地、好地段”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "옛날에는 산과 물이 있는 곳을 명당이라고 했어요.",
             "exampleZh": "以前把有山有水的地方称为好地段。"
         },
@@ -206,7 +206,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 73,
             "source": "도입 질문",
-            "guide": "장소의 편리함이나 불편함을 물을 때 쓴다.",
+            "guide": "固定表达，意思是“生活起来怎么样”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이 동네는 생활하기가 어때요?",
             "exampleZh": "这个街区生活起来怎么样？"
         },
@@ -216,7 +216,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 73,
             "source": "도입 질문",
-            "guide": "현재 머물러 사는 상태.",
+            "guide": "动词表达，意思是“正在居住”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "여러분은 어떤 곳에서 살고 있어요?",
             "exampleZh": "你们住在什么样的地方？"
         },
@@ -226,7 +226,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 74,
             "source": "어휘",
-            "guide": "공장과 회사가 모여 있는 지역.",
+            "guide": "名词，意思是“产业园区”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 도시에는 산업 단지가 많아요.",
             "exampleZh": "这个城市有很多产业园区。"
         },
@@ -236,7 +236,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 74,
             "source": "어휘",
-            "guide": "시끄러운 정도가 크다.",
+            "guide": "固定表达，意思是“噪音严重”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "도로 옆이라서 소음이 심해요.",
             "exampleZh": "因为在路边，噪音很大。"
         },
@@ -246,7 +246,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 74,
             "source": "어휘",
-            "guide": "공기가 깨끗하지 않다.",
+            "guide": "固定表达，意思是“空气浑浊”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공장이 많아서 공기가 탁해요.",
             "exampleZh": "工厂多，所以空气浑浊。"
         },
@@ -256,7 +256,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 74,
             "source": "어휘",
-            "guide": "길에 쓰레기가 없고 정돈되어 있다.",
+            "guide": "固定表达，意思是“街道干净”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "우리 동네는 거리가 깨끗해요.",
             "exampleZh": "我们街区的街道很干净。"
         },
@@ -266,7 +266,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 74,
             "source": "어휘",
-            "guide": "극장, 도서관, 박물관 같은 시설.",
+            "guide": "名词，意思是“文化设施”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문화 시설이 많으면 주말에 갈 곳이 많아요.",
             "exampleZh": "文化设施多的话，周末可去的地方就多。"
         },
@@ -276,7 +276,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "부사",
             "page": 74,
             "source": "어휘",
-            "guide": "걷는 방법으로.",
+            "guide": "副词，意思是“步行、走着”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "집에서 걸어서 공원에 갈 수 있어요.",
             "exampleZh": "从家可以步行去公园。"
         },
@@ -286,7 +286,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 74,
             "source": "어휘",
-            "guide": "산책하거나 쉬는 공공 장소.",
+            "guide": "名词，意思是“公园”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "저녁마다 공원에서 산책해요.",
             "exampleZh": "每天晚上在公园散步。"
         },
@@ -296,7 +296,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 74,
             "source": "어휘",
-            "guide": "산, 강, 공기, 숲 같은 자연 조건.",
+            "guide": "名词，意思是“自然环境”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자연환경이 좋아서 이사 왔어요.",
             "exampleZh": "因为自然环境好所以搬来了。"
         },
@@ -306,7 +306,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 74,
             "source": "어휘",
-            "guide": "공기가 깨끗하고 상쾌하다.",
+            "guide": "固定表达，意思是“空气清新”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "시골은 공기가 맑아요.",
             "exampleZh": "乡下空气清新。"
         },
@@ -316,7 +316,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "형용사",
             "page": 74,
             "source": "어휘",
-            "guide": "사람이 많지 않아 조용하다.",
+            "guide": "形容词，意思是“清静、僻静”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "저는 한적한 곳에서 살고 싶어요.",
             "exampleZh": "我想住在清静的地方。"
         },
@@ -326,7 +326,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 74,
             "source": "어휘",
-            "guide": "보이는 자연이나 풍경이 아름답다.",
+            "guide": "固定表达，意思是“风景好”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "창밖 경치가 정말 좋아요.",
             "exampleZh": "窗外风景真好。"
         },
@@ -336,7 +336,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 74,
             "source": "어휘",
-            "guide": "사람과 시설이 많이 모여 있는 지역.",
+            "guide": "名词，意思是“城市”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "도시는 편리하지만 복잡해요.",
             "exampleZh": "城市方便但复杂拥挤。"
         },
@@ -346,7 +346,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 74,
             "source": "어휘",
-            "guide": "농사를 많이 짓는 지역.",
+            "guide": "名词，意思是“农村”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "농촌은 도시보다 한적해요.",
             "exampleZh": "农村比城市清静。"
         },
@@ -356,7 +356,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "문법",
             "page": 75,
             "source": "문법",
-            "guide": "다른 힘에 의해 이루어진 상태를 나타낸다.",
+            "guide": "语法型表达，意思是“被动、受动”。不要逐词硬译，要按整句语气理解。",
             "exampleKo": "문이 갑자기 닫혔어요.",
             "exampleZh": "门突然被关上了。"
         },
@@ -366,7 +366,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 75,
             "source": "문법 예문",
-            "guide": "차가 많아서 길이 통하지 않다.",
+            "guide": "固定表达，意思是“路堵了”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "퇴근 시간이라서 길이 많이 막혔어요.",
             "exampleZh": "因为是下班时间，路堵得很厉害。"
         },
@@ -376,7 +376,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 75,
             "source": "문법 예문",
-            "guide": "모기가 사람을 물어 상처가 나다.",
+            "guide": "固定表达，意思是“被蚊子咬”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "모기한테 많이 물려서 가려워요.",
             "exampleZh": "被蚊子咬了很多处，很痒。"
         },
@@ -386,7 +386,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "형용사",
             "page": 75,
             "source": "문법 예문",
-            "guide": "피부를 긁고 싶은 느낌이 있다.",
+            "guide": "形容词，意思是“痒”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "팔이 너무 가려워요.",
             "exampleZh": "胳膊很痒。"
         },
@@ -396,7 +396,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 75,
             "source": "문법 예문",
-            "guide": "통화가 이어지지 않고 중단되다.",
+            "guide": "固定表达，意思是“电话断了”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "친구와 이야기하다가 전화가 끊겼어요.",
             "exampleZh": "和朋友说话时电话断了。"
         },
@@ -406,7 +406,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "문법 대화",
-            "guide": "눈에 들어오다.",
+            "guide": "动词表达，意思是“看得见、被看见”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "방 안에서 산이 보여요.",
             "exampleZh": "在房间里看得见山。"
         },
@@ -416,7 +416,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "피동 형식",
-            "guide": "놓다의 피동형.",
+            "guide": "动词表达，意思是“被放置”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "책상이 창가에 놓여 있어요.",
             "exampleZh": "桌子被放在窗边。"
         },
@@ -426,7 +426,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "피동 형식",
-            "guide": "잡다의 피동형.",
+            "guide": "动词表达，意思是“被抓住”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "범인이 잡혔어요.",
             "exampleZh": "犯人被抓住了。"
         },
@@ -436,7 +436,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "피동 형식",
-            "guide": "열다의 피동형.",
+            "guide": "动词表达，意思是“被打开、开着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "문이 열렸어요.",
             "exampleZh": "门被打开了。"
         },
@@ -446,7 +446,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "피동 형식",
-            "guide": "듣다의 피동형.",
+            "guide": "动词表达，意思是“听得见”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "저쪽에서 비명 소리가 들려요.",
             "exampleZh": "那边传来尖叫声。"
         },
@@ -456,7 +456,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "피동 형식",
-            "guide": "쫓다의 피동형.",
+            "guide": "动词表达，意思是“被追赶”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "도둑이 경찰에게 쫓겼어요.",
             "exampleZh": "小偷被警察追赶。"
         },
@@ -466,7 +466,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "연습",
-            "guide": "무언가가 좌우로 움직이다.",
+            "guide": "动词表达，意思是“摇晃”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "갑자기 엘리베이터가 흔들렸어요.",
             "exampleZh": "电梯突然晃动了。"
         },
@@ -476,7 +476,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "연습",
-            "guide": "자물쇠가 채워져 열 수 없다.",
+            "guide": "动词表达，意思是“被锁上、锁着”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "기숙사 문이 잠겼어요.",
             "exampleZh": "宿舍门被锁上了。"
         },
@@ -486,7 +486,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 75,
             "source": "연습",
-            "guide": "놀라거나 무서워서 지르는 소리.",
+            "guide": "名词，意思是“尖叫声”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "저쪽에서 비명 소리가 들렸어요.",
             "exampleZh": "那边传来了尖叫声。"
         },
@@ -496,7 +496,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "뉴스 연습",
-            "guide": "물건이나 눈이 위로 모이다.",
+            "guide": "动词表达，意思是“堆积”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "밤사이에 눈이 많이 쌓였어요.",
             "exampleZh": "夜里积了很多雪。"
         },
@@ -506,7 +506,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 75,
             "source": "뉴스 연습",
-            "guide": "죄를 지은 사람.",
+            "guide": "名词，意思是“犯人”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "3개월 만에 범인이 잡혔어요.",
             "exampleZh": "三个月后犯人被抓住了。"
         },
@@ -516,7 +516,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 75,
             "source": "뉴스 연습",
-            "guide": "물건이 판매되다.",
+            "guide": "动词表达，意思是“被卖出、卖得出去”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 자동차가 많이 팔렸어요.",
             "exampleZh": "韩国汽车卖出了很多。"
         },
@@ -526,7 +526,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 75,
             "source": "뉴스 연습",
-            "guide": "한국의 강원도 일대를 말한다.",
+            "guide": "名词，意思是“江原地区”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "강원 지역에 눈이 많이 왔어요.",
             "exampleZh": "江原地区下了很多雪。"
         },
@@ -536,7 +536,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 76,
             "source": "문법 대화",
-            "guide": "사는 곳을 옮기다.",
+            "guide": "动词表达，意思是“搬家”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "다음 달에 이사할 거예요.",
             "exampleZh": "下个月要搬家。"
         },
@@ -546,7 +546,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 76,
             "source": "문법 대화",
-            "guide": "다른 곳으로 옮겨 살다.",
+            "guide": "动词表达，意思是“搬去”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "남편이 직장 가까이 이사 가자고 해요.",
             "exampleZh": "丈夫说搬到公司附近吧。"
         },
@@ -556,7 +556,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 76,
             "source": "문법 대화",
-            "guide": "일하는 곳과 가까운 위치.",
+            "guide": "固定表达，意思是“公司附近”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장 가까이에 살면 출근이 편해요.",
             "exampleZh": "住在公司附近上班方便。"
         },
@@ -566,7 +566,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 76,
             "source": "문법 예문",
-            "guide": "여러 사람이 모여 의논하다.",
+            "guide": "动词表达，意思是“开会”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "내일 다시 회의하자고 하셨어요.",
             "exampleZh": "他说我们明天再开会。"
         },
@@ -576,7 +576,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 76,
             "source": "문법 예문",
-            "guide": "만나기로 한 곳.",
+            "guide": "名词，意思是“约定地点”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "약속 장소에 늦지 않게 나갔어요.",
             "exampleZh": "准时去了约定地点。"
         },
@@ -586,7 +586,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 76,
             "source": "문법 예문",
-            "guide": "안에서 밖으로 가다.",
+            "guide": "动词表达，意思是“出去、前往”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구가 만나자고 해서 나갔어요.",
             "exampleZh": "朋友说见面吧，所以我出去了。"
         },
@@ -596,7 +596,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 76,
             "source": "문법 예문",
-            "guide": "기다리는 행동이 진행 중이다.",
+            "guide": "固定表达，意思是“正在等待”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "아내가 밥 먹자고 해서 기다리는 중이에요.",
             "exampleZh": "妻子说一起吃饭，所以我正在等。"
         },
@@ -606,7 +606,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 76,
             "source": "활동",
-            "guide": "노래를 부르는 방.",
+            "guide": "名词，意思是“练歌房”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "반 친구가 노래방에 가자고 했어요.",
             "exampleZh": "班同学说去练歌房吧。"
         },
@@ -616,7 +616,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 76,
             "source": "활동",
-            "guide": "천천히 걸으며 쉬다.",
+            "guide": "动词表达，意思是“散步”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "공원에서 산책하자고 했어요.",
             "exampleZh": "他说在公园散步吧。"
         },
@@ -626,7 +626,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 76,
             "source": "활동",
-            "guide": "다른 사람을 오라고 하다.",
+            "guide": "动词表达，意思是“邀请”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "고향 친구를 집에 초대했어요.",
             "exampleZh": "邀请故乡朋友来家里。"
         },
@@ -636,7 +636,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 76,
             "source": "활동",
-            "guide": "부모, 배우자, 자녀 같은 사람들.",
+            "guide": "名词，意思是“家人”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가족을 초대해서 식사했어요.",
             "exampleZh": "邀请家人一起吃饭。"
         },
@@ -646,7 +646,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 76,
             "source": "활동",
-            "guide": "같은 고향 출신의 사람.",
+            "guide": "名词，意思是“老乡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "고향 사람을 만나서 반가웠어요.",
             "exampleZh": "见到老乡很高兴。"
         },
@@ -656,7 +656,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 77,
             "source": "말하기",
-            "guide": "다른 곳에서 이곳으로 옮겨 살다.",
+            "guide": "动词表达，意思是“搬来”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "어제 이 동네로 이사 왔어요.",
             "exampleZh": "昨天搬到这个街区来了。"
         },
@@ -666,7 +666,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 77,
             "source": "말하기",
-            "guide": "아이들이 노는 장소.",
+            "guide": "名词，意思是“游乐场”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "105동 앞에 놀이터가 있어요.",
             "exampleZh": "105栋前面有游乐场。"
         },
@@ -676,7 +676,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 77,
             "source": "말하기",
-            "guide": "자전거에 올라 이동하다.",
+            "guide": "动词表达，意思是“骑自行车”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아이가 자전거 타는 것을 좋아해요.",
             "exampleZh": "孩子喜欢骑自行车。"
         },
@@ -686,7 +686,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 77,
             "source": "말하기",
-            "guide": "산책하기 좋게 만든 길.",
+            "guide": "名词，意思是“散步路”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "산책로에서 운동할 수 있어요.",
             "exampleZh": "可以在散步路上运动。"
         },
@@ -696,7 +696,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 77,
             "source": "말하기",
-            "guide": "들어가는 곳.",
+            "guide": "名词，意思是“入口”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "놀이터에서 산책로 입구가 보여요.",
             "exampleZh": "从游乐场看得见散步路入口。"
         },
@@ -706,7 +706,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "형용사",
             "page": 77,
             "source": "말하기",
-            "guide": "알고 싶은 마음이 있다.",
+            "guide": "形容词，意思是“好奇、想知道”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "궁금한 게 있으면 물어보세요.",
             "exampleZh": "有想知道的就问吧。"
         },
@@ -716,7 +716,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 77,
             "source": "말하기",
-            "guide": "운동 시설이 있는 곳.",
+            "guide": "名词，意思是“体育中心”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "근처에 체육 센터가 있어요.",
             "exampleZh": "附近有体育中心。"
         },
@@ -726,7 +726,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 77,
             "source": "말하기",
-            "guide": "건물이나 단지의 뒤쪽 문.",
+            "guide": "名词，意思是“后门”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아파트 후문으로 나가세요.",
             "exampleZh": "请从公寓后门出去。"
         },
@@ -736,7 +736,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 77,
             "source": "말하기",
-            "guide": "아이들이 놀기에 괜찮은 장소.",
+            "guide": "固定表达，意思是“孩子们适合玩的地方”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "아이들이 놀 만한 곳이 있어요?",
             "exampleZh": "有孩子们适合玩的地方吗？"
         },
@@ -746,7 +746,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 77,
             "source": "말하기",
-            "guide": "운동하기 괜찮은 장소.",
+            "guide": "固定表达，意思是“适合运动的地方”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "운동할 만한 곳이 근처에 있어요.",
             "exampleZh": "附近有适合运动的地方。"
         },
@@ -756,7 +756,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 78,
             "source": "듣기",
-            "guide": "도시가 아닌 농촌 지역.",
+            "guide": "名词，意思是“乡下”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주말에 시골에 다녀왔어요.",
             "exampleZh": "周末去了乡下。"
         },
@@ -766,7 +766,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 78,
             "source": "듣기",
-            "guide": "밭이나 논에서 농작물을 기르다.",
+            "guide": "动词表达，意思是“务农、种地”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "부모님은 시골에서 농사를 지으세요.",
             "exampleZh": "父母在乡下务农。"
         },
@@ -776,7 +776,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 78,
             "source": "듣기",
-            "guide": "회사에 출근해 일하다.",
+            "guide": "动词表达，意思是“在公司上班”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "아내는 회사에 다녀요.",
             "exampleZh": "妻子在公司上班。"
         },
@@ -786,7 +786,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사구",
             "page": 78,
             "source": "듣기",
-            "guide": "공장에 근무하다.",
+            "guide": "动词表达，意思是“在工厂工作”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "형은 공장에서 일해요.",
             "exampleZh": "哥哥在工厂工作。"
         },
@@ -796,7 +796,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 78,
             "source": "듣기",
-            "guide": "비닐로 덮은 농업용 시설.",
+            "guide": "名词，意思是“塑料大棚”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "비닐하우스에서 채소를 길러요.",
             "exampleZh": "在塑料大棚里种蔬菜。"
         },
@@ -806,7 +806,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 78,
             "source": "듣기",
-            "guide": "도시에서 사는 생활.",
+            "guide": "名词，意思是“城市生活”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아내는 도시 생활을 좋아해요.",
             "exampleZh": "妻子喜欢城市生活。"
         },
@@ -816,7 +816,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "자연 경치를 그린 그림.",
+            "guide": "名词，意思是“风景画”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "계절마다 바뀌는 풍경화 같아요.",
             "exampleZh": "像每个季节都会变化的风景画。"
         },
@@ -826,7 +826,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "자연환경 안에서.",
+            "guide": "固定表达，意思是“自然之中”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "자연 속에서 생활할 수 있습니다.",
             "exampleZh": "可以在自然中生活。"
         },
@@ -836,7 +836,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "자연이 만든 아름다운 풍경.",
+            "guide": "名词，意思是“自然景观”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "최고의 자연 경관을 볼 수 있어요.",
             "exampleZh": "可以看到最棒的自然景观。"
         },
@@ -846,7 +846,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "부사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "바로 앞에 보이는 위치.",
+            "guide": "副词，意思是“眼前”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "넓은 강과 높은 산이 눈앞에 있어요.",
             "exampleZh": "宽阔的河和高山就在眼前。"
         },
@@ -856,7 +856,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "이동하기 쉬운 교통 조건.",
+            "guide": "固定表达，意思是“便利的交通”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "편리한 교통 때문에 이곳이 좋아요.",
             "exampleZh": "因为交通便利，所以这里好。"
         },
@@ -866,7 +866,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "사람과 차가 많아 붐비는 도시.",
+            "guide": "固定表达，意思是“复杂拥挤的城市”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "복잡한 도시를 떠나고 싶어요.",
             "exampleZh": "想离开复杂拥挤的城市。"
         },
@@ -876,7 +876,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "여러 것 중 하나를 고르는 일.",
+            "guide": "名词，意思是“选择”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 아파트는 좋은 선택입니다.",
             "exampleZh": "这套公寓是好的选择。"
         },
@@ -886,7 +886,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "여행 기간을 나타내는 표현.",
+            "guide": "固定表达，意思是“五晚六天行程”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "4박 6일 일정으로 여행을 가요.",
             "exampleZh": "按五晚六天行程去旅行。"
         },
@@ -896,7 +896,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "등급이 아주 높은 호텔.",
+            "guide": "固定表达，意思是“最高级酒店”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "최고급 호텔에서 묵습니다.",
             "exampleZh": "住在最高级酒店。"
         },
@@ -906,7 +906,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "동서양을 잇던 옛 교역로.",
+            "guide": "名词，意思是“丝绸之路”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "사마르칸트는 실크 로드의 도시예요.",
             "exampleZh": "撒马尔罕是丝绸之路上的城市。"
         },
@@ -916,7 +916,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "역사적 일이 남아 있는 장소.",
+            "guide": "固定表达，意思是“历史现场”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "역사의 현장으로 시간 여행을 떠나요.",
             "exampleZh": "去历史现场进行时间旅行。"
         },
@@ -926,7 +926,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "과거로 가는 듯한 경험.",
+            "guide": "名词，意思是“时间旅行”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "옛 도시를 보면 시간 여행을 하는 것 같아요.",
             "exampleZh": "看古城时像在时间旅行。"
         },
@@ -936,7 +936,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "중앙아시아의 나라.",
+            "guide": "名词，意思是“乌兹别克斯坦”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "저는 우즈베키스탄에서 왔어요.",
             "exampleZh": "我来自乌兹别克斯坦。"
         },
@@ -946,7 +946,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "우즈베키스탄의 도시.",
+            "guide": "名词，意思是“塔什干”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "여행은 타슈켄트에서 시작해요.",
             "exampleZh": "旅行从塔什干开始。"
         },
@@ -956,7 +956,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "우즈베키스탄의 역사 도시.",
+            "guide": "名词，意思是“撒马尔罕”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "제 고향은 사마르칸트입니다.",
             "exampleZh": "我的故乡是撒马尔罕。"
         },
@@ -966,7 +966,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "우즈베키스탄의 역사 도시.",
+            "guide": "名词，意思是“布哈拉”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부하라에도 오래된 건축물이 많아요.",
             "exampleZh": "布哈拉也有很多古建筑。"
         },
@@ -976,7 +976,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "사람이 지은 건물.",
+            "guide": "名词，意思是“建筑物”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "도시 곳곳에 옛날 건축물이 있어요.",
             "exampleZh": "城市各处有古建筑。"
         },
@@ -986,7 +986,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "소중히 지니거나 보존하다.",
+            "guide": "动词表达，意思是“珍藏、保存”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "이 도시는 역사를 간직하고 있어요.",
             "exampleZh": "这座城市保存着历史。"
         },
@@ -996,7 +996,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "평평한 땅.",
+            "guide": "名词，意思是“平地”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "도시는 넓은 평지 위에 펼쳐져 있어요.",
             "exampleZh": "城市展开在宽阔的平地上。"
         },
@@ -1006,7 +1006,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "넓게 벌어져 보이다.",
+            "guide": "动词表达，意思是“展开、铺开”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "눈앞에 아름다운 경치가 펼쳐졌어요.",
             "exampleZh": "美丽的景色展现在眼前。"
         },
@@ -1016,7 +1016,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "높지 않은 작은 산.",
+            "guide": "固定表达，意思是“低矮的丘陵”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주변에 낮은 언덕이 있습니다.",
             "exampleZh": "周边有低矮的丘陵。"
         },
@@ -1026,7 +1026,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "박물관을 보고 둘러보는 것.",
+            "guide": "固定表达，意思是“参观博物馆”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "박물관 관람도 일정에 포함됩니다.",
             "exampleZh": "行程也包含参观博物馆。"
         },
@@ -1036,7 +1036,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 79,
             "source": "읽기 전 광고",
-            "guide": "어떤 범위 안에 들어가다.",
+            "guide": "动词表达，意思是“被包含”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "관람료가 여행비에 포함되어 있어요.",
             "exampleZh": "参观费包含在旅行费里。"
         },
@@ -1046,7 +1046,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "읽기",
-            "guide": "작년의 전 해.",
+            "guide": "名词，意思是“前年”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "저는 재작년에 한국에 왔어요.",
             "exampleZh": "我前年来到了韩国。"
         },
@@ -1056,7 +1056,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "읽기",
-            "guide": "이삿짐을 옮겨 주는 회사.",
+            "guide": "名词，意思是“搬家公司”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한 이삿짐센터에서 일하고 있습니다.",
             "exampleZh": "正在一家搬家公司工作。"
         },
@@ -1066,7 +1066,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "형용사",
             "page": 80,
             "source": "단어장",
-            "guide": "습기가 적다.",
+            "guide": "形容词，意思是“干燥”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "건조한 날씨 때문에 나무가 많지 않아요.",
             "exampleZh": "因为天气干燥，树不多。"
         },
@@ -1076,7 +1076,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "단어장",
-            "guide": "풀을 먹는 동물.",
+            "guide": "名词，意思是“山羊”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "언덕에서는 염소들이 풀을 먹습니다.",
             "exampleZh": "丘陵上山羊在吃草。"
         },
@@ -1086,7 +1086,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "단어장",
-            "guide": "땅에서 자라는 작은 식물.",
+            "guide": "名词，意思是“草”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "염소가 풀을 먹어요.",
             "exampleZh": "山羊吃草。"
         },
@@ -1096,7 +1096,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "읽기",
-            "guide": "가을에 나뭇잎이 붉거나 노랗게 물드는 것.",
+            "guide": "名词，意思是“红叶”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가을에는 단풍을 구경합니다.",
             "exampleZh": "秋天观赏红叶。"
         },
@@ -1106,7 +1106,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 80,
             "source": "읽기",
-            "guide": "무엇을 보고 즐기다.",
+            "guide": "动词表达，意思是“观看、游览”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "겨울에는 쌓인 눈을 구경해요.",
             "exampleZh": "冬天观赏积雪。"
         },
@@ -1116,7 +1116,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "읽기",
-            "guide": "눈으로 보는 전체 풍경.",
+            "guide": "名词，意思是“景观”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "산의 경관이 좋습니다.",
             "exampleZh": "山的景观很好。"
         },
@@ -1126,7 +1126,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "형용사",
             "page": 80,
             "source": "읽기",
-            "guide": "보고 싶거나 돌아가고 싶은 마음이 있다.",
+            "guide": "形容词，意思是“想念”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "고향의 모습이 그립습니다.",
             "exampleZh": "想念故乡的样子。"
         },
@@ -1136,7 +1136,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 80,
             "source": "읽기",
-            "guide": "눈에 보이는 자연이나 장면.",
+            "guide": "名词，意思是“风景”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국의 풍경을 많이 보려고 해요.",
             "exampleZh": "想多看看韩国的风景。"
         },
@@ -1146,7 +1146,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 81,
             "source": "쓰기",
-            "guide": "동네나 도시의 이름.",
+            "guide": "固定表达，意思是“地区名称”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지역 이름을 먼저 쓰세요.",
             "exampleZh": "请先写地区名称。"
         },
@@ -1156,7 +1156,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 81,
             "source": "쓰기",
-            "guide": "날씨 특징과 계절 특징.",
+            "guide": "固定表达，意思是“天气或季节”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "날씨나 계절을 비교해 보세요.",
             "exampleZh": "比较一下天气或季节。"
         },
@@ -1166,7 +1166,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "어떤 곳이 자리한 곳.",
+            "guide": "名词，意思是“位置”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집의 위치가 중요하다고 생각했어요.",
             "exampleZh": "认为房子的位置很重要。"
         },
@@ -1176,7 +1176,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "어느 쪽을 향하는지.",
+            "guide": "名词，意思是“方向”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집의 방향도 중요합니다.",
             "exampleZh": "房子的方向也很重要。"
         },
@@ -1186,7 +1186,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "만족하고 즐거운 상태.",
+            "guide": "名词，意思是“幸福”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집이 사람의 행복을 결정한다고 믿었어요.",
             "exampleZh": "相信房子会决定人的幸福。"
         },
@@ -1196,7 +1196,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 82,
             "source": "문화",
-            "guide": "결론을 정하다.",
+            "guide": "动词表达，意思是“决定”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "위치와 방향이 행복을 결정한다고 믿었습니다.",
             "exampleZh": "相信位置和方向决定幸福。"
         },
@@ -1206,7 +1206,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 82,
             "source": "문화",
-            "guide": "집의 뒤쪽.",
+            "guide": "固定表达，意思是“房子后面”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집 뒤에 산이 있으면 좋다고 했어요.",
             "exampleZh": "说房子后面有山就好。"
         },
@@ -1216,7 +1216,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 82,
             "source": "문화",
-            "guide": "집의 앞쪽.",
+            "guide": "固定表达，意思是“房子前面”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집 앞에 물이 흐르면 명당이라고 했어요.",
             "exampleZh": "说房子前面有水流过就是宝地。"
         },
@@ -1226,7 +1226,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "표현",
             "page": 82,
             "source": "문화",
-            "guide": "물이 움직여 지나가다.",
+            "guide": "固定表达，意思是“水流动”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집 앞에 물이 흐릅니다.",
             "exampleZh": "房子前面有水流过。"
         },
@@ -1236,7 +1236,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "집이 남쪽을 향한 집.",
+            "guide": "名词，意思是“朝南的房子”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국에서는 남향집이 인기가 있어요.",
             "exampleZh": "在韩国朝南的房子很受欢迎。"
         },
@@ -1246,7 +1246,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "집의 큰 문.",
+            "guide": "名词，意思是“大门”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대문은 남쪽을 향하도록 했어요.",
             "exampleZh": "让大门朝向南方。"
         },
@@ -1256,7 +1256,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 82,
             "source": "문화",
-            "guide": "어떤 방향을 바라보다.",
+            "guide": "动词表达，意思是“朝向”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "집은 남쪽을 향해 있어요.",
             "exampleZh": "房子朝向南方。"
         },
@@ -1266,7 +1266,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사구",
             "page": 82,
             "source": "문화",
-            "guide": "생활하며 움직이는 공간.",
+            "guide": "固定表达，意思是“活动空间”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "활동 공간이 남쪽을 향하면 편리해요.",
             "exampleZh": "活动空间朝南会方便。"
         },
@@ -1276,7 +1276,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "오래 이어져 온 문화나 방식.",
+            "guide": "名词，意思是“传统”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이러한 전통은 현대까지 내려왔어요.",
             "exampleZh": "这样的传统延续到了现代。"
         },
@@ -1286,7 +1286,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 82,
             "source": "문화",
-            "guide": "과거에서 현재까지 이어지다.",
+            "guide": "动词表达，意思是“传下来”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "남향집을 좋아하는 전통이 내려왔어요.",
             "exampleZh": "喜欢朝南房子的传统流传了下来。"
         },
@@ -1296,7 +1296,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "무엇을 만족시키는 요소.",
+            "guide": "名词，意思是“条件”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "좋은 집의 조건이 달라졌어요.",
             "exampleZh": "好房子的条件变了。"
         },
@@ -1306,7 +1306,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 82,
             "source": "문화",
-            "guide": "새로운 것이 더해지다.",
+            "guide": "动词表达，意思是“被添加”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "새로운 조건이 추가되었습니다.",
             "exampleZh": "新增了新的条件。"
         },
@@ -1316,7 +1316,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "학교 배정이나 교육 환경과 관련된 구역.",
+            "guide": "名词，意思是“学区”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "좋은 학군은 집의 인기를 높여요.",
             "exampleZh": "好学区会提高房子的受欢迎程度。"
         },
@@ -1326,7 +1326,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "사람이나 차가 이동하는 체계.",
+            "guide": "名词，意思是“交通”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "교통이 편리하면 집값도 높아질 수 있어요.",
             "exampleZh": "交通便利的话房价也可能变高。"
         },
@@ -1336,7 +1336,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "지하철을 타고 내리는 곳.",
+            "guide": "名词，意思是“地铁站”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "근처에 지하철역이 있으면 편리해요.",
             "exampleZh": "附近有地铁站就方便。"
         },
@@ -1346,7 +1346,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 82,
             "source": "문화",
-            "guide": "중요한 큰 도로.",
+            "guide": "名词，意思是“主干道”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "간선 도로가 통과하면 교통이 좋아요.",
             "exampleZh": "主干道经过的话交通会好。"
         },
@@ -1356,7 +1356,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "동사",
             "page": 82,
             "source": "문화",
-            "guide": "어떤 곳을 지나가다.",
+            "guide": "动词表达，意思是“通过、经过”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "도로가 동네를 통과합니다.",
             "exampleZh": "道路经过这个街区。"
         },
@@ -1366,7 +1366,7 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "pos": "명사",
             "page": 83,
             "source": "배운 어휘 확인",
-            "guide": "여러 세대가 함께 사는 공동주택.",
+            "guide": "名词，意思是“公寓”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아파트 후문으로 나가면 공원이 있어요.",
             "exampleZh": "从公寓后门出去就有公园。"
         }
