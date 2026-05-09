@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>KIIP L3 Lesson Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #121417;
+            --panel: rgba(28, 32, 38, 0.78);
+            --panel-solid: #1c2026;
+            --line: rgba(255,255,255,0.1);
+            --text: #f7f4ee;
+            --muted: #a7adb7;
+            --soft: #cdd3dd;
+            --teal: #2dd4bf;
+            --amber: #fbbf24;
+            --rose: #fb7185;
+            --violet: #a78bfa;
+            --green: #4ade80;
+            --shadow: rgba(0,0,0,0.24);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 90% 6%, rgba(45, 212, 191, 0.12), transparent 32%),
+                radial-gradient(circle at 18% 92%, rgba(251, 191, 36, 0.11), transparent 34%),
+                var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+        }
+
+        button, input {
+            font: inherit;
+        }
+
+        .app-shell {
+            display: flex;
+            height: 100%;
+        }
+
+        .sidebar {
+            width: 318px;
+            flex: 0 0 318px;
+            display: flex;
+            flex-direction: column;
+            background: rgba(21, 24, 29, 0.9);
+            border-right: 1px solid var(--line);
+            backdrop-filter: blur(14px);
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .sidebar-title {
+            margin: 0;
+            font-size: 1.35rem;
+            line-height: 1.15;
+            color: var(--teal);
+        }
+
+        .sidebar-subtitle {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .search-box {
+            width: 100%;
+            margin-top: 14px;
+            padding: 11px 12px;
+            color: var(--text);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .search-box:focus {
+            border-color: rgba(45, 212, 191, 0.75);
+            box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.12);
+        }
+
+        .lesson-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .lesson-item {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 10px;
+            align-items: center;
+            padding: 11px 10px;
+            margin-bottom: 5px;
+            color: var(--soft);
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .lesson-item:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: rgba(255,255,255,0.08);
+        }
+
+        .lesson-item.active {
+            color: var(--text);
+            background: rgba(45, 212, 191, 0.12);
+            border-color: rgba(45, 212, 191, 0.4);
+        }
+
+        .lesson-number {
+            min-width: 34px;
+            padding: 5px 0;
+            color: #071312;
+            background: var(--teal);
+            border-radius: 7px;
+            text-align: center;
+            font-size: 0.74rem;
+            font-weight: 900;
+        }
+
+        .lesson-item.todo .lesson-number {
+            color: var(--muted);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .lesson-name {
+            min-width: 0;
+        }
+
+        .lesson-ko {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 800;
+        }
+
+        .lesson-zh {
+            margin-top: 2px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .status-pill {
+            padding: 4px 7px;
+            border-radius: 6px;
+            font-size: 0.68rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .status-draft {
+            color: #171008;
+            background: var(--amber);
+        }
+
+        .status-todo {
+            color: var(--muted);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .content-shell {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .mobile-header {
+            display: none;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: rgba(21, 24, 29, 0.92);
+            border-bottom: 1px solid var(--line);
+            backdrop-filter: blur(14px);
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--text);
+            background: rgba(255,255,255,0.05);
+            cursor: pointer;
+        }
+
+        .mobile-title {
+            min-width: 0;
+            font-weight: 900;
+            color: var(--teal);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 18px;
+            align-items: start;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .eyebrow {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .level-badge,
+        .page-badge {
+            display: inline-flex;
+            align-items: center;
+            min-height: 24px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 900;
+        }
+
+        .level-badge {
+            color: #071312;
+            background: var(--teal);
+        }
+
+        .page-badge {
+            color: var(--soft);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid var(--line);
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        .hero-zh {
+            margin: 8px 0 0;
+            color: var(--soft);
+            font-size: 1.05rem;
+        }
+
+        .source-box {
+            max-width: 300px;
+            padding: 12px;
+            border: 1px solid rgba(251, 191, 36, 0.35);
+            border-radius: 8px;
+            background: rgba(251, 191, 36, 0.08);
+            color: #f8ddb0;
+            font-size: 0.8rem;
+            line-height: 1.45;
+        }
+
+        .tabs {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            gap: 8px;
+            padding: 14px 0;
+            background: linear-gradient(180deg, var(--bg) 0%, rgba(18,20,23,0.92) 80%, transparent 100%);
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            flex: 0 0 auto;
+            padding: 9px 13px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--muted);
+            background: rgba(255,255,255,0.04);
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .tab-btn.active {
+            color: #071312;
+            border-color: transparent;
+            background: var(--teal);
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .stat-card,
+        .content-card,
+        .word-card,
+        .line-card,
+        .practice-card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--panel);
+            box-shadow: 0 12px 28px var(--shadow);
+        }
+
+        .stat-card {
+            padding: 15px;
+        }
+
+        .stat-value {
+            color: var(--teal);
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .stat-label {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        .content-card {
+            padding: 18px;
+            margin-bottom: 14px;
+        }
+
+        .content-card h2,
+        .content-card h3 {
+            margin: 0 0 12px;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .guide-list {
+            display: grid;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .guide-list li {
+            padding: 10px 12px;
+            border-left: 3px solid var(--teal);
+            border-radius: 6px;
+            background: rgba(255,255,255,0.05);
+            line-height: 1.55;
+        }
+
+        .grammar-row,
+        .term-row,
+        .qa-row {
+            display: grid;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .grammar-row + .grammar-row,
+        .term-row + .term-row,
+        .qa-row + .qa-row {
+            margin-top: 8px;
+        }
+
+        .pattern {
+            color: var(--amber);
+            font-weight: 900;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .tool-btn {
+            padding: 9px 12px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--text);
+            background: rgba(255,255,255,0.06);
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 12px;
+        }
+
+        .word-card {
+            padding: 15px;
+        }
+
+        .word-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .word-ko {
+            color: var(--text);
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 900;
+            line-height: 1.3;
+        }
+
+        .word-pos {
+            padding: 4px 6px;
+            color: var(--muted);
+            background: rgba(255,255,255,0.07);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            white-space: nowrap;
+        }
+
+        .word-meta {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .word-source {
+            padding: 4px 6px;
+            color: #9ff4e9;
+            background: rgba(41, 217, 194, 0.1);
+            border: 1px solid rgba(41, 217, 194, 0.22);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            white-space: nowrap;
+        }
+
+        .source-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 10px;
+        }
+
+        .source-chip {
+            display: grid;
+            gap: 4px;
+            padding: 10px 12px;
+            border: 1px solid rgba(41, 217, 194, 0.22);
+            border-radius: 8px;
+            background: rgba(41, 217, 194, 0.07);
+        }
+
+        .source-chip strong {
+            color: var(--teal);
+            font-size: 0.88rem;
+        }
+
+        .source-chip span {
+            color: var(--muted);
+            font-size: 0.82rem;
+            line-height: 1.45;
+        }
+
+        .word-zh {
+            margin-top: 7px;
+            color: var(--teal);
+            font-weight: 800;
+        }
+
+        .word-guide,
+        .example-zh,
+        .line-guide {
+            color: var(--muted);
+            line-height: 1.55;
+            font-size: 0.93rem;
+        }
+
+        .example-ko {
+            margin-top: 12px;
+            color: var(--soft);
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            line-height: 1.55;
+        }
+
+        .dialogue-header {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .dialogue-title {
+            display: grid;
+            gap: 8px;
+        }
+
+        .dialogue-title h2 {
+            margin: 0;
+        }
+
+        .dialogue-meta {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .dialogue-focus {
+            color: var(--amber);
+            font-weight: 900;
+        }
+
+        .dialogue-scene {
+            margin-bottom: 12px;
+            padding: 12px;
+            border: 1px solid rgba(244, 114, 182, 0.26);
+            border-radius: 8px;
+            color: #ffd5e7;
+            background: rgba(244, 114, 182, 0.07);
+            line-height: 1.55;
+        }
+
+        .dialogue-points {
+            display: grid;
+            gap: 8px;
+            margin: 0 0 14px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .dialogue-points li {
+            padding: 9px 11px;
+            border-radius: 8px;
+            color: var(--soft);
+            background: rgba(255,255,255,0.05);
+            line-height: 1.5;
+        }
+
+        .dialogue-roles {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .role-chip {
+            padding: 5px 7px;
+            border-radius: 6px;
+            color: #160b10;
+            background: var(--rose);
+            font-size: 0.75rem;
+            font-weight: 900;
+        }
+
+        .line-card {
+            display: grid;
+            grid-template-columns: 34px 82px 1fr;
+            gap: 12px;
+            padding: 14px;
+            margin-bottom: 10px;
+        }
+
+        .line-index {
+            display: inline-grid;
+            place-items: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            color: #071312;
+            background: var(--teal);
+            font-size: 0.78rem;
+            font-weight: 900;
+        }
+
+        .speaker {
+            color: var(--rose);
+            font-weight: 900;
+        }
+
+        .line-ko {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            line-height: 1.5;
+        }
+
+        .line-zh {
+            margin-top: 5px;
+            color: var(--teal);
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        details {
+            margin-top: 10px;
+        }
+
+        summary {
+            color: var(--amber);
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .drill {
+            margin-top: 10px;
+            padding: 11px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .drill-answer {
+            margin-top: 8px;
+            color: var(--soft);
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.5;
+        }
+
+        .role-task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .role-task {
+            padding: 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .role-task h3 {
+            margin: 0 0 8px;
+            color: var(--teal);
+            font-size: 0.95rem;
+        }
+
+        .culture-summary {
+            margin-bottom: 12px;
+            padding: 14px;
+            border: 1px solid rgba(45, 212, 191, 0.3);
+            border-radius: 8px;
+            color: #d5fbf5;
+            background: rgba(45, 212, 191, 0.08);
+            line-height: 1.65;
+        }
+
+        .paragraph-block {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .paragraph-block:last-child {
+            border-bottom: none;
+        }
+
+        .paragraph-label {
+            display: inline-flex;
+            margin-bottom: 7px;
+            padding: 3px 6px;
+            border-radius: 6px;
+            color: var(--muted);
+            background: rgba(255,255,255,0.07);
+            font-size: 0.72rem;
+            font-weight: 900;
+        }
+
+        .paragraph-ko {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 1.08rem;
+            font-weight: 800;
+            line-height: 1.65;
+        }
+
+        .paragraph-zh {
+            margin-top: 7px;
+            color: var(--teal);
+            line-height: 1.65;
+        }
+
+        .practice-card {
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+
+        .practice-type {
+            display: inline-flex;
+            margin-bottom: 8px;
+            padding: 4px 7px;
+            color: #160b10;
+            background: var(--rose);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 900;
+        }
+
+        .todo-panel {
+            display: grid;
+            place-items: center;
+            min-height: 320px;
+            border: 1px dashed rgba(255,255,255,0.18);
+            border-radius: 8px;
+            color: var(--muted);
+            text-align: center;
+            padding: 24px;
+            background: rgba(255,255,255,0.03);
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 90;
+            background: rgba(0,0,0,0.48);
+            backdrop-filter: blur(3px);
+        }
+
+        @media (max-width: 920px) {
+            .sidebar {
+                position: fixed;
+                inset: 0 auto 0 0;
+                z-index: 100;
+                transform: translateX(-100%);
+                transition: transform 0.25s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .sidebar-overlay.open {
+                display: block;
+            }
+
+            .mobile-header {
+                display: flex;
+            }
+
+            .main-content {
+                padding: 18px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .source-box {
+                max-width: none;
+            }
+
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .sidebar {
+                width: 286px;
+                flex-basis: 286px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .line-card {
+                grid-template-columns: 1fr;
+            }
+
+            .toolbar {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .tool-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">L3 Lesson Guide</h1>
+                <p class="sidebar-subtitle">单词、对话、文化文章中文伴学</p>
+                <input class="search-box" id="lesson-search" type="search" placeholder="搜索课文、单词或中文...">
+            </div>
+            <div class="lesson-list" id="lesson-list"></div>
+        </aside>
+
+        <div class="content-shell">
+            <header class="mobile-header">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open lesson menu">☰</button>
+                <div class="mobile-title" id="mobile-title">L3 Lesson Guide</div>
+            </header>
+            <main class="main-content" id="main-content"></main>
+        </div>
+    </div>
+
+    <script src="lesson_data_l3.js"></script>
+    <script>
+        const lessons = lessonGuideL3.lessons;
+        const tabs = [
+            { id: "overview", label: "总览" },
+            { id: "vocabulary", label: "单词" },
+            { id: "dialogue", label: "对话" },
+            { id: "culture", label: "文化" },
+            { id: "practice", label: "练习" }
+        ];
+
+        const lessonList = document.getElementById("lesson-list");
+        const mainContent = document.getElementById("main-content");
+        const lessonSearch = document.getElementById("lesson-search");
+        const sidebar = document.getElementById("sidebar");
+        const sidebarOverlay = document.getElementById("sidebar-overlay");
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileTitle = document.getElementById("mobile-title");
+
+        let activeLessonId = lessons[0].id;
+        let activeTab = "overview";
+        let showChinese = true;
+
+        function escapeHtml(value) {
+            return String(value ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function formatWordSource(item) {
+            if (item.page && item.source) return `p.${item.page} · ${item.source}`;
+            if (item.page) return `p.${item.page}`;
+            if (item.source) return item.source;
+            return "来源待补";
+        }
+
+        function getActiveLesson() {
+            return lessons.find(lesson => lesson.id === activeLessonId) || lessons[0];
+        }
+
+        function statusLabel(status) {
+            return status === "draft" ? "草稿" : "待抽取";
+        }
+
+        function lessonMatches(lesson, query) {
+            if (!query) return true;
+            const haystack = [
+                lesson.titleKo,
+                lesson.titleZh,
+                lesson.number,
+                ...(lesson.goals || []),
+                ...(lesson.grammar || []).map(item => `${item.pattern} ${item.zh} ${item.guide}`),
+                ...(lesson.vocabulary || []).map(item => `${item.ko} ${item.zh} ${item.guide}`),
+                ...(lesson.dialogues || []).flatMap(dialogue => [
+                    dialogue.title,
+                    dialogue.focus,
+                    dialogue.source,
+                    dialogue.sceneZh,
+                    ...(dialogue.learningPoints || []),
+                    ...(dialogue.lines || []).map(line => `${line.ko} ${line.zh} ${line.guide}`),
+                    ...(dialogue.rolePlays || []).map(item => `${item.title} ${item.promptZh} ${item.answerKo}`),
+                    ...(dialogue.drills || []).map(item => `${item.promptZh} ${item.answerKo} ${item.pattern}`)
+                ]),
+                lesson.culture ? [
+                    lesson.culture.titleKo,
+                    lesson.culture.titleZh,
+                    lesson.culture.summaryZh,
+                    ...(lesson.culture.paragraphs || []).map(paragraph => `${paragraph.ko} ${paragraph.zh} ${paragraph.guide}`),
+                    ...(lesson.culture.keyTerms || []).map(term => `${term.ko} ${term.zh}`)
+                ].join(" ") : ""
+            ].join(" ").toLowerCase();
+            return haystack.includes(query.toLowerCase());
+        }
+
+        function renderLessonList() {
+            const query = lessonSearch.value.trim();
+            const filtered = lessons.filter(lesson => lessonMatches(lesson, query));
+
+            lessonList.innerHTML = filtered.map(lesson => `
+                <button class="lesson-item ${lesson.id === activeLessonId ? "active" : ""} ${lesson.status === "todo" ? "todo" : ""}" data-lesson-id="${escapeHtml(lesson.id)}">
+                    <span class="lesson-number">L3-${String(lesson.number).padStart(2, "0")}</span>
+                    <span class="lesson-name">
+                        <span class="lesson-ko">${escapeHtml(lesson.titleKo)}</span>
+                        <span class="lesson-zh">${escapeHtml(lesson.titleZh)}</span>
+                    </span>
+                    <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
+                </button>
+            `).join("") || `<div class="todo-panel">没有匹配的课文</div>`;
+        }
+
+        function renderHero(lesson) {
+            const vocabCount = lesson.vocabulary?.length || 0;
+            const dialogueCount = lesson.dialogues?.length || 0;
+            const cultureCount = lesson.culture ? 1 : 0;
+
+            return `
+                <section class="hero">
+                    <div>
+                        <div class="eyebrow">
+                            <span class="level-badge">KIIP L3-${String(lesson.number).padStart(2, "0")}</span>
+                            ${lesson.pages ? `<span class="page-badge">PDF ${escapeHtml(lesson.pages)}页</span>` : ""}
+                            <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
+                        </section>
+                        <h1>${escapeHtml(lesson.titleKo)}</h1>
+                        <p class="hero-zh">${escapeHtml(lesson.titleZh)}</p>
+                    </div>
+                    <div class="source-box">
+                        来源：${escapeHtml(lessonGuideL3.source.file)}<br>
+                        状态：${escapeHtml(lessonGuideL3.source.extraction)}<br>
+                        内容统计：${vocabCount} 个单词 / ${dialogueCount} 段对话 / ${cultureCount} 篇文化
+                    </div>
+                </section>
+                <nav class="tabs">
+                    ${tabs.map(tab => `<button class="tab-btn ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}">${tab.label}</button>`).join("")}
+                </nav>
+            `;
+        }
+
+        function renderOverview(lesson) {
+            return `
+                <div class="section-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">${lesson.vocabulary?.length || 0}</div>
+                        <div class="stat-label">单词与表达</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${lesson.dialogues?.length || 0}</div>
+                        <div class="stat-label">对话练习</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${lesson.culture ? 1 : 0}</div>
+                        <div class="stat-label">文化文章</div>
+                    </div>
+                </div>
+
+                ${lesson.vocabularySources?.length ? `
+                    <section class="content-card">
+                        <h2>词汇来源覆盖</h2>
+                        <div class="source-list">
+                            ${lesson.vocabularySources.map(source => `
+                                <div class="source-chip">
+                                    <strong>p.${escapeHtml(source.page)} · ${escapeHtml(source.label)}</strong>
+                                    <span>${escapeHtml(source.note)}</span>
+                                </div>
+                            `).join("")}
+                        </div>
+                    </section>
+                ` : ""}
+
+                <section class="content-card">
+                    <h2>学习目标</h2>
+                    <ul class="guide-list">
+                        ${(lesson.goals || []).map(goal => `<li>${escapeHtml(goal)}</li>`).join("")}
+                    </ul>
+                </section>
+
+                <section class="content-card">
+                    <h2>本课语法连接</h2>
+                    ${(lesson.grammar || []).length ? lesson.grammar.map(item => `
+                        <div class="grammar-row">
+                            <div class="pattern">${escapeHtml(item.pattern)} · ${escapeHtml(item.zh)}</div>
+                            <div class="muted">${escapeHtml(item.guide)}</div>
+                        </div>
+                    `).join("") : `<p class="muted">语法点会在该课 OCR 校对后补充。</p>`}
+                </section>
+            `;
+        }
+
+        function renderVocabulary(lesson) {
+            if (!lesson.vocabulary?.length) return renderTodo("单词表待抽取", "后续会从该课 어휘 页面抽取韩语词、中文释义、例句和使用提示。");
+
+            return `
+                <div class="toolbar">
+                    <div class="muted">${lesson.vocabulary.length} 个词条，中文释义和例句可用于复习。</div>
+                    <button class="tool-btn" data-toggle-zh>${showChinese ? "隐藏中文" : "显示中文"}</button>
+                </div>
+                <div class="vocab-grid">
+                    ${lesson.vocabulary.map(item => `
+                        <article class="word-card">
+                            <div class="word-top">
+                                <div class="word-ko">${escapeHtml(item.ko)}</div>
+                                <div class="word-meta">
+                                    <span class="word-source">${escapeHtml(formatWordSource(item))}</span>
+                                    <span class="word-pos">${escapeHtml(item.pos)}</span>
+                                </div>
+                            </div>
+                            ${showChinese ? `<div class="word-zh">${escapeHtml(item.zh)}</div>` : ""}
+                            <p class="word-guide">${escapeHtml(item.guide)}</p>
+                            <div class="example-ko">${escapeHtml(item.exampleKo)}</div>
+                            ${showChinese ? `<div class="example-zh">${escapeHtml(item.exampleZh)}</div>` : ""}
+                        </article>
+                    `).join("")}
+                </div>
+            `;
+        }
+
+        function renderDialogue(lesson) {
+            if (!lesson.dialogues?.length) return renderTodo("对话练习待抽取", "后续会拆分角色台词，补中文逐句翻译、表达讲解和替换练习。");
+
+            const lineCount = lesson.dialogues.reduce((total, dialogue) => total + (dialogue.lines?.length || 0), 0);
+
+            return `
+                <div class="toolbar">
+                    <div class="muted">${lesson.dialogues.length} 段对话 / ${lineCount} 句台词，可按角色朗读和替换练习。</div>
+                    <button class="tool-btn" data-toggle-zh>${showChinese ? "隐藏中文" : "显示中文"}</button>
+                </div>
+                ${lesson.dialogues.map(dialogue => {
+                    const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
+
+                    return `
+                        <section class="content-card">
+                            <div class="dialogue-header">
+                                <div class="dialogue-title">
+                                    <h2>${escapeHtml(dialogue.title)}</h2>
+                                    <div class="dialogue-meta">
+                                        <span class="dialogue-focus">${escapeHtml(dialogue.focus)}</span>
+                                        ${dialogue.page ? `<span class="page-badge">PDF p.${escapeHtml(dialogue.page)}</span>` : ""}
+                                        ${dialogue.source ? `<span class="word-source">${escapeHtml(dialogue.source)}</span>` : ""}
+                                    </div>
+                                </div>
+                            </div>
+                            ${dialogue.sceneZh && showChinese ? `<div class="dialogue-scene">${escapeHtml(dialogue.sceneZh)}</div>` : ""}
+                            ${dialogue.learningPoints?.length && showChinese ? `
+                                <ul class="dialogue-points">
+                                    ${dialogue.learningPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
+                                </ul>
+                            ` : ""}
+                            ${speakers.length ? `
+                                <div class="dialogue-roles">
+                                    ${speakers.map(speaker => `<span class="role-chip">${escapeHtml(speaker)}</span>`).join("")}
+                                </div>
+                            ` : ""}
+                            ${(dialogue.lines || []).map((line, index) => `
+                                <div class="line-card">
+                                    <div class="line-index">${index + 1}</div>
+                                    <div class="speaker">${escapeHtml(line.speaker)}</div>
+                                    <div>
+                                        <div class="line-ko">${escapeHtml(line.ko)}</div>
+                                        ${showChinese ? `<div class="line-zh">${escapeHtml(line.zh)}</div>` : ""}
+                                        ${showChinese ? `<div class="line-guide">${escapeHtml(line.guide)}</div>` : ""}
+                                    </div>
+                                </div>
+                            `).join("")}
+                            ${dialogue.rolePlays?.length ? `
+                                <details open>
+                                    <summary>角色练习</summary>
+                                    <div class="role-task-grid">
+                                        ${dialogue.rolePlays.map(task => `
+                                            <div class="role-task">
+                                                <h3>${escapeHtml(task.title)}</h3>
+                                                ${showChinese ? `<div class="muted">${escapeHtml(task.promptZh)}</div>` : ""}
+                                                <div class="drill-answer">${escapeHtml(task.answerKo)}</div>
+                                            </div>
+                                        `).join("")}
+                                    </div>
+                                </details>
+                            ` : ""}
+                            ${dialogue.drills?.length ? `
+                                <details>
+                                    <summary>替换练习</summary>
+                                    ${(dialogue.drills || []).map(drill => `
+                                        <div class="drill">
+                                            ${showChinese ? `<div>${escapeHtml(drill.promptZh)}</div>` : ""}
+                                            <div class="muted">句型：${escapeHtml(drill.pattern)}</div>
+                                            <div class="drill-answer">${escapeHtml(drill.answerKo)}</div>
+                                        </div>
+                                    `).join("")}
+                                </details>
+                            ` : ""}
+                        </div>
+                    `;
+                }).join("")}
+            `;
+        }
+
+        function renderCulture(lesson) {
+            if (!lesson.culture) return renderTodo("文化文章待抽取", "后续会整理韩国文化文章原文、自然中文翻译、背景说明和理解题。");
+
+            const culture = lesson.culture;
+            return `
+                <section class="content-card">
+                    <div class="eyebrow">
+                        <span class="level-badge">${escapeHtml(culture.titleKo)}</span>
+                        <span class="page-badge">${escapeHtml(culture.titleZh)}</span>
+                        ${culture.page ? `<span class="page-badge">PDF p.${escapeHtml(culture.page)}</span>` : ""}
+                    </div>
+                    <div class="culture-summary">${escapeHtml(culture.summaryZh)}</div>
+                    <h2>原文与翻译</h2>
+                    ${(culture.paragraphs || []).map(paragraph => `
+                        <div class="paragraph-block">
+                            <span class="paragraph-label">原文</span>
+                            <div class="paragraph-ko">${escapeHtml(paragraph.ko)}</div>
+                            <span class="paragraph-label">中文</span>
+                            <div class="paragraph-zh">${escapeHtml(paragraph.zh)}</div>
+                            <p class="line-guide">${escapeHtml(paragraph.guide)}</p>
+                        </div>
+                    `).join("")}
+                </section>
+
+                <section class="content-card">
+                    <h2>关键词</h2>
+                    ${(culture.keyTerms || []).map(term => `
+                        <div class="term-row">
+                            <div class="pattern">${escapeHtml(term.ko)}</div>
+                            <div>${escapeHtml(term.zh)}</div>
+                        </div>
+                    `).join("")}
+                </section>
+
+                <section class="content-card">
+                    <h2>理解问题</h2>
+                    ${(culture.questions || []).map(item => `
+                        <div class="qa-row">
+                            <div class="line-ko">${escapeHtml(item.q)}</div>
+                            <div class="line-zh">${escapeHtml(item.zh)}</div>
+                            <div class="muted">${escapeHtml(item.a)}</div>
+                        </div>
+                    `).join("")}
+                </section>
+            `;
+        }
+
+        function renderPractice(lesson) {
+            if (!lesson.practice?.length) return renderTodo("练习待生成", "等本课单词、对话和文化文章校对后，会生成翻译、替换和理解练习。");
+
+            return lesson.practice.map(item => `
+                <article class="practice-card">
+                    <span class="practice-type">${escapeHtml(item.type)}</span>
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.prompt)}</p>
+                    <details>
+                        <summary>参考答案</summary>
+                        <div class="drill-answer">${escapeHtml(item.answer)}</div>
+                    </details>
+                </article>
+            `).join("");
+        }
+
+        function renderTodo(title, body) {
+            return `
+                <div class="todo-panel">
+                    <div>
+                        <h2>${escapeHtml(title)}</h2>
+                        <p>${escapeHtml(body)}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderActiveTab(lesson) {
+            if (activeTab === "vocabulary") return renderVocabulary(lesson);
+            if (activeTab === "dialogue") return renderDialogue(lesson);
+            if (activeTab === "culture") return renderCulture(lesson);
+            if (activeTab === "practice") return renderPractice(lesson);
+            return renderOverview(lesson);
+        }
+
+        function renderMain() {
+            const lesson = getActiveLesson();
+            mobileTitle.textContent = `L3-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
+            mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
+            mainContent.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove("open");
+            sidebarOverlay.classList.remove("open");
+        }
+
+        lessonList.addEventListener("click", event => {
+            const button = event.target.closest("[data-lesson-id]");
+            if (!button) return;
+            activeLessonId = button.dataset.lessonId;
+            activeTab = "overview";
+            renderLessonList();
+            renderMain();
+            if (window.innerWidth <= 920) closeSidebar();
+        });
+
+        mainContent.addEventListener("click", event => {
+            const tabButton = event.target.closest("[data-tab]");
+            if (tabButton) {
+                activeTab = tabButton.dataset.tab;
+                renderMain();
+                return;
+            }
+
+            if (event.target.closest("[data-toggle-zh]")) {
+                showChinese = !showChinese;
+                renderMain();
+            }
+        });
+
+        lessonSearch.addEventListener("input", renderLessonList);
+        menuToggle.addEventListener("click", () => {
+            sidebar.classList.add("open");
+            sidebarOverlay.classList.add("open");
+        });
+        sidebarOverlay.addEventListener("click", closeSidebar);
+
+        renderLessonList();
+        renderMain();
+    </script>
+</body>
+</html>

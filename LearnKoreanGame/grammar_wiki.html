@@ -39,11 +39,31 @@
             padding: 20px;
             border-bottom: 1px solid var(--border);
         }
+        .sidebar-header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
         .sidebar-header h1 {
             margin: 0;
             font-size: 1.5rem;
             color: var(--primary);
             text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+        }
+        .guide-link {
+            flex-shrink: 0;
+            padding: 6px 9px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+        .guide-link:hover {
+            color: var(--primary);
+            border-color: var(--primary);
         }
         .search-box {
             width: 100%;
@@ -356,6 +376,18 @@
             font-size: 1rem;
             font-weight: 800;
         }
+        .mobile-guide-link {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 900;
+        }
         .menu-toggle {
             background: transparent; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0;
         }
@@ -396,7 +428,10 @@
     <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMenu()"></div>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <h1>Grammar Wiki</h1>
+            <div class="sidebar-header-top">
+                <h1>Grammar Wiki</h1>
+                <a class="guide-link" href="lesson_guide.html" target="_blank">Lesson Guide</a>
+            </div>
             <input type="text" id="search" class="search-box" placeholder="Search grammar...">
         </div>
         <div class="level-filters" id="level-filters">
@@ -420,6 +455,7 @@
                     <span class="mobile-detail-text" id="mobile-detail-text"></span>
                 </span>
             </div>
+            <a class="mobile-guide-link" href="lesson_guide.html" target="_blank" title="L3 Lesson Guide">课</a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         </div>
         <div class="main-content" id="main-content">
