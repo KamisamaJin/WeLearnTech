@@ -1089,8 +1089,10 @@
     </div>
 
     <script src="lesson_data_l3.js"></script>
+    <script src="lesson_translations_l3_en.js"></script>
     <script>
         const lessons = lessonGuideL3.lessons;
+        const lessonTranslationPacks = window.lessonGuideL3Translations || {};
         const lessonCache = new Map();
         const lessonLoadPromises = new Map();
         const loadedLessonScripts = new Set();
@@ -1381,6 +1383,9 @@
         }
 
         function wordGuide(item) {
+            if (translationLocale === "en" && !item?.translations?.en?.guide && item?.translations?.en?.meaning) {
+                return `${item.ko} means "${item.translations.en.meaning}". Notice how it is used in the example sentence.`;
+            }
             return getLocalizedValue(item, "guide", "guide");
         }
 
@@ -1416,6 +1421,62 @@
             if (Array.isArray(fallbackTranslation) && fallbackTranslation.length) return fallbackTranslation;
 
             return item?.[fallbackKey] || [];
+        }
+
+        function mergeLocaleFields(item, locale, fields) {
+            if (!item || !fields) return;
+            const cleaned = Object.fromEntries(Object.entries(fields).filter(([, value]) => value !== undefined));
+            if (!Object.keys(cleaned).length) return;
+            item.translations ||= {};
+            item.translations[locale] = {
+                ...(item.translations[locale] || {}),
+                ...cleaned
+            };
+        }
+
+        function mergeArrayLocaleFields(items = [], locale, fieldPatches = []) {
+            fieldPatches.forEach((fields, index) => {
+                mergeLocaleFields(items[index], locale, fields);
+            });
+        }
+
+        function applyLessonTranslationPacks(lesson) {
+            Object.entries(lessonTranslationPacks).forEach(([locale, pack]) => {
+                const patch = pack?.lessons?.[lesson.id];
+                if (!patch) return;
+
+                mergeLocaleFields(lesson, locale, {
+                    title: patch.title,
+                    goals: patch.goals
+                });
+                mergeArrayLocaleFields(lesson.grammar, locale, patch.grammar);
+                mergeArrayLocaleFields(lesson.vocabulary, locale, patch.vocabulary);
+                mergeArrayLocaleFields(lesson.practice, locale, patch.practice);
+
+                (patch.dialogues || []).forEach((dialoguePatch, index) => {
+                    const dialogue = lesson.dialogues?.[index];
+                    if (!dialogue) return;
+                    mergeLocaleFields(dialogue, locale, {
+                        scene: dialoguePatch.scene,
+                        learningPoints: dialoguePatch.learningPoints
+                    });
+                    mergeArrayLocaleFields(dialogue.lines, locale, dialoguePatch.lines);
+                    mergeArrayLocaleFields(dialogue.rolePlays, locale, dialoguePatch.rolePlays);
+                    mergeArrayLocaleFields(dialogue.drills, locale, dialoguePatch.drills);
+                });
+
+                if (lesson.culture && patch.culture) {
+                    mergeLocaleFields(lesson.culture, locale, {
+                        title: patch.culture.title,
+                        summary: patch.culture.summary
+                    });
+                    mergeArrayLocaleFields(lesson.culture.paragraphs, locale, patch.culture.paragraphs);
+                    mergeArrayLocaleFields(lesson.culture.keyTerms, locale, patch.culture.keyTerms);
+                    mergeArrayLocaleFields(lesson.culture.questions, locale, patch.culture.questions);
+                }
+            });
+
+            return lesson;
         }
 
         function lessonTitleTranslation(item) {
@@ -1624,7 +1685,7 @@
             if (lessonCache.has(meta.id)) return lessonCache.get(meta.id);
 
             if (!meta.chunk) {
-                const lesson = normalizeLesson(meta);
+                const lesson = applyLessonTranslationPacks(normalizeLesson(meta));
                 lessonCache.set(meta.id, lesson);
                 return lesson;
             }
@@ -1635,10 +1696,10 @@
                     const chunk = window.lessonGuideL3LessonChunks?.[meta.id];
                     if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
 
-                    const lesson = normalizeLesson({
+                    const lesson = applyLessonTranslationPacks(normalizeLesson({
                         ...meta,
                         ...chunk
-                    });
+                    }));
                     lessonCache.set(meta.id, lesson);
                     return lesson;
                 })());
@@ -1738,6 +1799,7 @@
             const haystack = [
                 searchableLesson.titleKo,
                 searchableLesson.titleZh,
+                JSON.stringify(searchableLesson.translations || ""),
                 searchableLesson.number,
                 searchableLesson.searchText,
                 ...(searchableLesson.goals || []),
@@ -1801,6 +1863,7 @@
 
         function renderOverview(lesson) {
             const stats = getLessonStats(lesson);
+            const goals = localizedArray(lesson, "goals", "goals");
 
             return `
                 <div class="section-grid">
@@ -1821,7 +1884,7 @@
                 <section class="content-card">
                     <h2>${escapeHtml(t("learningGoals"))}</h2>
                     <ul class="guide-list">
-                        ${(lesson.goals || []).map(goal => `<li>${escapeHtml(goal)}</li>`).join("")}
+                        ${goals.map(goal => `<li>${escapeHtml(goal)}</li>`).join("")}
                     </ul>
                 </section>
 
@@ -2026,7 +2089,7 @@
             return lesson.practice.map(item => `
                 <article class="practice-card">
                     <span class="practice-type">${escapeHtml(formatPracticeType(item.type))}</span>
-                    <h3>${escapeHtml(item.title)}</h3>
+                    <h3>${escapeHtml(taskTitle(item))}</h3>
                     <p>${escapeHtml(practicePrompt(item))}</p>
                     <details>
                         <summary>${escapeHtml(t("answer"))}</summary>
@@ -2281,6 +2344,7 @@
             if (event.key === "Escape") closeLanguageMenus();
         });
 
+        lessons.forEach(applyLessonTranslationPacks);
         applyStaticLocale();
         renderLessonList();
         renderMain();
