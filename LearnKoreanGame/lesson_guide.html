@@ -61,6 +61,13 @@
             border-bottom: 1px solid var(--line);
         }
 
+        .sidebar-title-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
         .sidebar-title {
             margin: 0;
             font-size: 1.35rem;
@@ -183,6 +190,8 @@
         }
 
         .mobile-header {
+            position: relative;
+            z-index: 120;
             display: none;
             align-items: center;
             gap: 12px;
@@ -203,12 +212,101 @@
         }
 
         .mobile-title {
+            flex: 1;
             min-width: 0;
             font-weight: 900;
             color: var(--teal);
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        .language-switcher {
+            position: relative;
+            z-index: 130;
+            flex: 0 0 auto;
+        }
+
+        .language-toggle {
+            display: inline-grid;
+            place-items: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--text);
+            background: rgba(255,255,255,0.05);
+            cursor: pointer;
+        }
+
+        .language-toggle svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .language-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            z-index: 140;
+            width: 236px;
+            padding: 10px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(28, 32, 38, 0.98);
+            box-shadow: 0 18px 44px var(--shadow);
+            backdrop-filter: blur(14px);
+        }
+
+        .language-menu[hidden] {
+            display: none;
+        }
+
+        .language-section + .language-section {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--line);
+        }
+
+        .language-section-title {
+            margin: 0 0 7px;
+            color: var(--muted);
+            font-size: 0.74rem;
+            font-weight: 900;
+        }
+
+        .language-option {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 8px 9px;
+            border: 1px solid transparent;
+            border-radius: 7px;
+            color: var(--soft);
+            background: transparent;
+            cursor: pointer;
+            text-align: left;
+            font-weight: 800;
+        }
+
+        .language-option:hover,
+        .language-option.active {
+            color: var(--text);
+            background: rgba(45, 212, 191, 0.1);
+            border-color: rgba(45, 212, 191, 0.28);
+        }
+
+        .language-option.active::after {
+            content: "✓";
+            color: var(--teal);
+            font-weight: 900;
         }
 
         .main-content {
@@ -970,7 +1068,10 @@
     <div class="app-shell">
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <h1 class="sidebar-title">L3 Lesson Guide</h1>
+                <div class="sidebar-title-row">
+                    <h1 class="sidebar-title">L3 Lesson Guide</h1>
+                    <div class="language-switcher" data-language-switcher></div>
+                </div>
                 <p class="sidebar-subtitle">单词、对话、文化文章中文伴学</p>
                 <input class="search-box" id="lesson-search" type="search" placeholder="搜索课文、单词或中文...">
             </div>
@@ -981,6 +1082,7 @@
             <header class="mobile-header">
                 <button class="menu-toggle" id="menu-toggle" aria-label="Open lesson menu">☰</button>
                 <div class="mobile-title" id="mobile-title">L3 Lesson Guide</div>
+                <div class="language-switcher" data-language-switcher></div>
             </header>
             <main class="main-content" id="main-content"></main>
         </div>
@@ -992,12 +1094,237 @@
         const lessonCache = new Map();
         const lessonLoadPromises = new Map();
         const loadedLessonScripts = new Set();
+        const localeStorageKeys = {
+            ui: "lessonGuideUiLocale",
+            translation: "lessonGuideTranslationLocale",
+            showTranslation: "lessonGuideShowTranslation"
+        };
+        const localeNames = {
+            "zh-CN": "中文",
+            en: "English",
+            ja: "日本語",
+            vi: "Tiếng Việt"
+        };
+        const uiLocales = ["zh-CN", "en"];
+        const translationLocales = ["zh-CN", "en", "ja", "vi"];
+        const messages = {
+            "zh-CN": {
+                appTitle: "L3 Lesson Guide",
+                sidebarSubtitle: "单词、对话、文化文章中文伴学",
+                searchPlaceholder: "搜索课文、单词或中文...",
+                openLessonMenu: "打开课程菜单",
+                languageSettings: "语言设置",
+                interfaceLanguage: "界面语言",
+                translationLanguage: "翻译语言",
+                draft: "草稿",
+                todo: "待抽取",
+                noResults: "没有匹配的课文",
+                tabsOverview: "总览",
+                tabsVocabulary: "单词",
+                tabsDialogue: "对话",
+                tabsCulture: "文化",
+                tabsPractice: "练习",
+                statVocabulary: "单词与表达",
+                statDialogue: "对话练习",
+                statCulture: "文化文章",
+                learningGoals: "学习目标",
+                grammarLinks: "本课语法连接",
+                grammarPending: "语法点会在该课 OCR 校对后补充。",
+                sourcePending: "来源待补",
+                posPending: "词性待补",
+                practiceFallback: "练习",
+                hideTranslation: "隐藏翻译",
+                showTranslation: "显示翻译",
+                vocabularyToolbar: "{count} 个词条，翻译和例句可用于复习。",
+                vocabularyPendingTitle: "单词表待抽取",
+                vocabularyPendingBody: "后续会从该课 어휘 页面抽取韩语词、翻译、例句和使用提示。",
+                dialogueToolbar: "{dialogues} 段对话 / {lines} 句台词",
+                dialoguePendingTitle: "对话练习待抽取",
+                dialoguePendingBody: "后续会拆分角色台词，补逐句翻译、表达讲解和替换练习。",
+                dialoguePanelTitle: "对话正文",
+                readingTips: "读法提示",
+                rolePractice: "角色练习",
+                substitutionPractice: "替换练习",
+                patternLabel: "句型",
+                culturePendingTitle: "文化文章待抽取",
+                culturePendingBody: "后续会整理韩国文化文章原文、自然翻译、背景说明和理解题。",
+                originalLabel: "原文",
+                translationLabel: "翻译",
+                originalAndTranslation: "原文与翻译",
+                keyTerms: "关键词",
+                comprehensionQuestions: "理解问题",
+                practicePendingTitle: "练习待生成",
+                practicePendingBody: "等本课单词、对话和文化文章校对后，会生成翻译、替换和理解练习。",
+                answer: "参考答案",
+                loadingTitle: "正在加载课程数据",
+                loadErrorTitle: "课程数据加载失败",
+                loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。",
+                playPronunciation: "播放 {text} 发音"
+            },
+            en: {
+                appTitle: "L3 Lesson Guide",
+                sidebarSubtitle: "Vocabulary, dialogues, and culture notes",
+                searchPlaceholder: "Search lessons, words, or translations...",
+                openLessonMenu: "Open lesson menu",
+                languageSettings: "Language settings",
+                interfaceLanguage: "Interface language",
+                translationLanguage: "Translation language",
+                draft: "Draft",
+                todo: "To extract",
+                noResults: "No matching lessons",
+                tabsOverview: "Overview",
+                tabsVocabulary: "Words",
+                tabsDialogue: "Dialogue",
+                tabsCulture: "Culture",
+                tabsPractice: "Practice",
+                statVocabulary: "Words & phrases",
+                statDialogue: "Dialogues",
+                statCulture: "Culture texts",
+                learningGoals: "Learning Goals",
+                grammarLinks: "Grammar Links",
+                grammarPending: "Grammar notes will be added after OCR review.",
+                sourcePending: "Source pending",
+                posPending: "POS pending",
+                practiceFallback: "Practice",
+                hideTranslation: "Hide translation",
+                showTranslation: "Show translation",
+                vocabularyToolbar: "{count} entries with translations and examples.",
+                vocabularyPendingTitle: "Vocabulary pending",
+                vocabularyPendingBody: "Korean words, translations, examples, and notes will be extracted from this lesson.",
+                dialogueToolbar: "{dialogues} dialogues / {lines} lines",
+                dialoguePendingTitle: "Dialogues pending",
+                dialoguePendingBody: "Dialogue lines, translations, notes, and substitution drills will be added later.",
+                dialoguePanelTitle: "Dialogue Text",
+                readingTips: "Reading Tips",
+                rolePractice: "Role Practice",
+                substitutionPractice: "Substitution Practice",
+                patternLabel: "Pattern",
+                culturePendingTitle: "Culture text pending",
+                culturePendingBody: "Original Korean text, natural translations, background notes, and questions will be added later.",
+                originalLabel: "Original",
+                translationLabel: "Translation",
+                originalAndTranslation: "Original & Translation",
+                keyTerms: "Key Terms",
+                comprehensionQuestions: "Questions",
+                practicePendingTitle: "Practice pending",
+                practicePendingBody: "Translation, substitution, and comprehension exercises will be generated after review.",
+                answer: "Answer",
+                loadingTitle: "Loading lesson data",
+                loadErrorTitle: "Lesson data failed to load",
+                loadErrorBody: "{title}'s chunk file did not load. Please refresh and try again.",
+                playPronunciation: "Play pronunciation for {text}"
+            }
+        };
+        const wordPosLabels = {
+            "zh-CN": {
+                "名词": "名词",
+                "名词短语": "名词短语",
+                "动词": "动词",
+                "动词短语": "动词短语",
+                "动词表达": "动词表达",
+                "形容词": "形容词",
+                "副词": "副词",
+                "副词短语": "副词短语",
+                "表达": "表达",
+                "语法": "语法",
+                "语法表达": "语法表达",
+                "汉字成语": "汉字成语",
+                "冠形词": "冠形词",
+                "俗语型表达": "俗语型表达",
+                "问候语": "问候语",
+                "机构名": "机构名",
+                "告示表达": "告示表达",
+                "数量表达": "数量表达",
+                "敬语动词": "敬语动词",
+                "敬语表达": "敬语表达",
+                "依存名词": "依存名词",
+                "问候表达": "问候表达",
+                "请求表达": "请求表达",
+                "명사": "名词",
+                "명사구": "名词短语",
+                "동사": "动词",
+                "동사구": "动词短语",
+                "형용사": "形容词",
+                "부사": "副词",
+                "부사구": "副词短语",
+                "표현": "表达",
+                "문법": "语法",
+                "문법 표현": "语法表达",
+                "한자성어": "汉字成语",
+                "관형사": "冠形词",
+                "속담형 표현": "俗语型表达",
+                "인사말": "问候语"
+            },
+            en: {
+                "名词": "Noun",
+                "名词短语": "Noun phrase",
+                "动词": "Verb",
+                "动词短语": "Verb phrase",
+                "动词表达": "Verb phrase",
+                "形容词": "Adjective",
+                "副词": "Adverb",
+                "副词短语": "Adverb phrase",
+                "表达": "Expression",
+                "语法": "Grammar",
+                "语法表达": "Grammar expression",
+                "汉字成语": "Idiom",
+                "冠形词": "Determiner",
+                "俗语型表达": "Proverbial expression",
+                "问候语": "Greeting",
+                "机构名": "Institution",
+                "告示表达": "Notice phrase",
+                "数量表达": "Quantity",
+                "敬语动词": "Honorific verb",
+                "敬语表达": "Honorific expression",
+                "依存名词": "Bound noun",
+                "问候表达": "Greeting",
+                "请求表达": "Request",
+                "명사": "Noun",
+                "명사구": "Noun phrase",
+                "동사": "Verb",
+                "동사구": "Verb phrase",
+                "형용사": "Adjective",
+                "부사": "Adverb",
+                "부사구": "Adverb phrase",
+                "표현": "Expression",
+                "문법": "Grammar",
+                "문법 표현": "Grammar expression",
+                "한자성어": "Idiom",
+                "관형사": "Determiner",
+                "속담형 표현": "Proverbial expression",
+                "인사말": "Greeting"
+            }
+        };
+        const practiceTypeLabels = {
+            "zh-CN": {
+                grammar: "语法",
+                culture: "文化",
+                speaking: "口语",
+                reading: "阅读",
+                writing: "写作",
+                vocabulary: "词汇",
+                translation: "翻译",
+                pattern: "句型",
+                listening: "听力"
+            },
+            en: {
+                grammar: "Grammar",
+                culture: "Culture",
+                speaking: "Speaking",
+                reading: "Reading",
+                writing: "Writing",
+                vocabulary: "Vocabulary",
+                translation: "Translation",
+                pattern: "Pattern",
+                listening: "Listening"
+            }
+        };
         const tabs = [
-            { id: "overview", label: "总览" },
-            { id: "vocabulary", label: "单词" },
-            { id: "dialogue", label: "对话" },
-            { id: "culture", label: "文化" },
-            { id: "practice", label: "练习" }
+            { id: "overview", labelKey: "tabsOverview" },
+            { id: "vocabulary", labelKey: "tabsVocabulary" },
+            { id: "dialogue", labelKey: "tabsDialogue" },
+            { id: "culture", labelKey: "tabsCulture" },
+            { id: "practice", labelKey: "tabsPractice" }
         ];
 
         const lessonList = document.getElementById("lesson-list");
@@ -1010,7 +1337,9 @@
 
         let activeLessonId = lessons[0].id;
         let activeTab = "overview";
-        let showChinese = true;
+        let uiLocale = uiLocales.includes(localStorage.getItem(localeStorageKeys.ui)) ? localStorage.getItem(localeStorageKeys.ui) : "zh-CN";
+        let translationLocale = translationLocales.includes(localStorage.getItem(localeStorageKeys.translation)) ? localStorage.getItem(localeStorageKeys.translation) : "zh-CN";
+        let showChinese = localStorage.getItem(localeStorageKeys.showTranslation) !== "false";
         let renderRunId = 0;
         const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
         const tabSwipeState = {
@@ -1029,38 +1358,131 @@
                 .replace(/'/g, "&#039;");
         }
 
+        function t(key) {
+            return messages[uiLocale]?.[key] || messages["zh-CN"][key] || key;
+        }
+
+        function tf(key, values = {}) {
+            return t(key).replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");
+        }
+
+        function getLocalizedValue(item, translationKey, fallbackKey) {
+            const preferred = item?.translations?.[translationLocale]?.[translationKey];
+            if (preferred) return preferred;
+
+            const fallbackTranslation = item?.translations?.["zh-CN"]?.[translationKey];
+            if (fallbackTranslation) return fallbackTranslation;
+
+            return item?.[fallbackKey] || "";
+        }
+
+        function wordMeaning(item) {
+            return getLocalizedValue(item, "meaning", "zh");
+        }
+
+        function wordGuide(item) {
+            return getLocalizedValue(item, "guide", "guide");
+        }
+
+        function wordExampleTranslation(item) {
+            return getLocalizedValue(item, "example", "exampleZh");
+        }
+
+        function lineTranslation(line) {
+            return getLocalizedValue(line, "translation", "zh");
+        }
+
+        function lineGuide(line) {
+            return getLocalizedValue(line, "guide", "guide");
+        }
+
+        function cultureTranslation(item, key) {
+            const fallbackKeys = {
+                translation: "zh",
+                meaning: "zh",
+                answer: "a",
+                guide: "guide",
+                title: "titleZh",
+                summary: "summaryZh"
+            };
+            return getLocalizedValue(item, key, fallbackKeys[key] || key);
+        }
+
+        function localizedArray(item, translationKey, fallbackKey) {
+            const preferred = item?.translations?.[translationLocale]?.[translationKey];
+            if (Array.isArray(preferred) && preferred.length) return preferred;
+
+            const fallbackTranslation = item?.translations?.["zh-CN"]?.[translationKey];
+            if (Array.isArray(fallbackTranslation) && fallbackTranslation.length) return fallbackTranslation;
+
+            return item?.[fallbackKey] || [];
+        }
+
+        function lessonTitleTranslation(item) {
+            return getLocalizedValue(item, "title", "titleZh");
+        }
+
+        function grammarMeaning(item) {
+            return getLocalizedValue(item, "meaning", "zh");
+        }
+
+        function grammarGuide(item) {
+            return getLocalizedValue(item, "guide", "guide");
+        }
+
+        function dialogueScene(dialogue) {
+            return getLocalizedValue(dialogue, "scene", "sceneZh");
+        }
+
+        function taskTitle(item) {
+            return getLocalizedValue(item, "title", "title");
+        }
+
+        function taskPrompt(item) {
+            return getLocalizedValue(item, "prompt", "promptZh");
+        }
+
+        function cultureTitleTranslation(culture) {
+            return getLocalizedValue(culture, "title", "titleZh");
+        }
+
+        function cultureSummary(culture) {
+            return getLocalizedValue(culture, "summary", "summaryZh");
+        }
+
+        function practicePrompt(item) {
+            return getLocalizedValue(item, "prompt", "prompt");
+        }
+
+        function practiceAnswer(item) {
+            const nestedAnswerKo = item?.prompts?.find(prompt => prompt.answerKo)?.answerKo;
+            const answer = item?.answerKo || nestedAnswerKo || item?.answer || "";
+            return String(answer).split(/\s+\/\s+/)[0].trim();
+        }
+
         function formatWordSource(item) {
             if (item.page && item.source) return `p.${item.page} · ${item.source}`;
             if (item.page) return `p.${item.page}`;
             if (item.source) return item.source;
-            return "来源待补";
+            return t("sourcePending");
         }
 
         function formatWordPos(pos) {
             const label = String(pos || "").trim();
-            if (!label) return "词性待补";
-
-            const posMap = {
-                "명사": "名词",
-                "명사구": "名词短语",
-                "동사": "动词",
-                "동사구": "动词短语",
-                "형용사": "形容词",
-                "부사": "副词",
-                "부사구": "副词短语",
-                "표현": "表达",
-                "문법": "语法",
-                "문법 표현": "语法表达",
-                "한자성어": "汉字成语",
-                "관형사": "冠形词",
-                "속담형 표현": "俗语型表达",
-                "인사말": "问候语"
-            };
+            if (!label) return t("posPending");
+            const posMap = wordPosLabels[uiLocale] || wordPosLabels["zh-CN"];
 
             return label
                 .split("/")
                 .map(part => posMap[part.trim()] || part.trim())
                 .join("/");
+        }
+
+        function formatPracticeType(type) {
+            const label = String(type || "").trim();
+            const typeMap = practiceTypeLabels[uiLocale] || practiceTypeLabels["zh-CN"];
+
+            return typeMap[label] || label || t("practiceFallback");
         }
 
         function romanizeKorean(value) {
@@ -1233,7 +1655,81 @@
         }
 
         function statusLabel(status) {
-            return status === "draft" ? "草稿" : "待抽取";
+            return status === "draft" ? t("draft") : t("todo");
+        }
+
+        function languageIcon() {
+            return `
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M2 12h20"></path>
+                    <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+                    <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+                </svg>
+            `;
+        }
+
+        function renderLanguageSwitchers() {
+            document.querySelectorAll("[data-language-switcher]").forEach(switcher => {
+                const isOpen = switcher.querySelector(".language-menu:not([hidden])");
+                switcher.innerHTML = `
+                    <button class="language-toggle" type="button" data-language-toggle aria-label="${escapeHtml(t("languageSettings"))}" title="${escapeHtml(t("languageSettings"))}" aria-expanded="${isOpen ? "true" : "false"}">
+                        ${languageIcon()}
+                    </button>
+                    <div class="language-menu" data-language-menu ${isOpen ? "" : "hidden"}>
+                        <div class="language-section">
+                            <p class="language-section-title">${escapeHtml(t("interfaceLanguage"))}</p>
+                            ${uiLocales.map(locale => `
+                                <button class="language-option ${locale === uiLocale ? "active" : ""}" type="button" data-locale-kind="ui" data-locale-value="${escapeHtml(locale)}">
+                                    ${escapeHtml(localeNames[locale])}
+                                </button>
+                            `).join("")}
+                        </div>
+                        <div class="language-section">
+                            <p class="language-section-title">${escapeHtml(t("translationLanguage"))}</p>
+                            ${translationLocales.map(locale => `
+                                <button class="language-option ${locale === translationLocale ? "active" : ""}" type="button" data-locale-kind="translation" data-locale-value="${escapeHtml(locale)}">
+                                    ${escapeHtml(localeNames[locale])}
+                                </button>
+                            `).join("")}
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function closeLanguageMenus() {
+            document.querySelectorAll("[data-language-menu]").forEach(menu => {
+                menu.hidden = true;
+                menu.previousElementSibling?.setAttribute("aria-expanded", "false");
+            });
+        }
+
+        function applyStaticLocale() {
+            document.documentElement.lang = uiLocale;
+            document.title = t("appTitle");
+            document.querySelector(".sidebar-title").textContent = t("appTitle");
+            document.querySelector(".sidebar-subtitle").textContent = t("sidebarSubtitle");
+            lessonSearch.placeholder = t("searchPlaceholder");
+            menuToggle.setAttribute("aria-label", t("openLessonMenu"));
+            renderLanguageSwitchers();
+        }
+
+        function setLocale(kind, locale) {
+            if (kind === "ui" && uiLocales.includes(locale)) {
+                uiLocale = locale;
+                localStorage.setItem(localeStorageKeys.ui, uiLocale);
+            }
+            if (kind === "translation" && translationLocales.includes(locale)) {
+                translationLocale = locale;
+                localStorage.setItem(localeStorageKeys.translation, translationLocale);
+                showChinese = true;
+                localStorage.setItem(localeStorageKeys.showTranslation, "true");
+            }
+
+            applyStaticLocale();
+            renderLessonList();
+            renderMain({ scrollTarget: "preserve" });
         }
 
         function lessonMatches(lesson, query) {
@@ -1277,11 +1773,11 @@
                     <span class="lesson-number">L3-${String(lesson.number).padStart(2, "0")}</span>
                     <span class="lesson-name">
                         <span class="lesson-ko">${escapeHtml(lesson.titleKo)}</span>
-                        <span class="lesson-zh">${escapeHtml(lesson.titleZh)}</span>
+                        <span class="lesson-zh">${escapeHtml(lessonTitleTranslation(lesson))}</span>
                     </span>
                     <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
                 </button>
-            `).join("") || `<div class="todo-panel">没有匹配的课文</div>`;
+            `).join("") || `<div class="todo-panel">${escapeHtml(t("noResults"))}</div>`;
         }
 
         function renderHero(lesson) {
@@ -1294,11 +1790,11 @@
                             <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
                         </div>
                         <h1>${escapeHtml(lesson.titleKo)}</h1>
-                        <p class="hero-zh">${escapeHtml(lesson.titleZh)}</p>
+                        <p class="hero-zh">${escapeHtml(lessonTitleTranslation(lesson))}</p>
                     </div>
                 </section>
                 <nav class="tabs">
-                    ${tabs.map(tab => `<button class="tab-btn ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}">${tab.label}</button>`).join("")}
+                    ${tabs.map(tab => `<button class="tab-btn ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}">${escapeHtml(t(tab.labelKey))}</button>`).join("")}
                 </nav>
             `;
         }
@@ -1310,44 +1806,44 @@
                 <div class="section-grid">
                     <button class="stat-card" type="button" data-tab="vocabulary">
                         <div class="stat-value">${stats.vocabulary}</div>
-                        <div class="stat-label">单词与表达</div>
+                        <div class="stat-label">${escapeHtml(t("statVocabulary"))}</div>
                     </button>
                     <button class="stat-card" type="button" data-tab="dialogue">
                         <div class="stat-value">${stats.dialogues}</div>
-                        <div class="stat-label">对话练习</div>
+                        <div class="stat-label">${escapeHtml(t("statDialogue"))}</div>
                     </button>
                     <button class="stat-card" type="button" data-tab="culture">
                         <div class="stat-value">${stats.culture}</div>
-                        <div class="stat-label">文化文章</div>
+                        <div class="stat-label">${escapeHtml(t("statCulture"))}</div>
                     </button>
                 </div>
 
                 <section class="content-card">
-                    <h2>学习目标</h2>
+                    <h2>${escapeHtml(t("learningGoals"))}</h2>
                     <ul class="guide-list">
                         ${(lesson.goals || []).map(goal => `<li>${escapeHtml(goal)}</li>`).join("")}
                     </ul>
                 </section>
 
                 <section class="content-card">
-                    <h2>本课语法连接</h2>
+                    <h2>${escapeHtml(t("grammarLinks"))}</h2>
                     ${(lesson.grammar || []).length ? lesson.grammar.map(item => `
                         <div class="grammar-row">
-                            <div class="pattern">${escapeHtml(item.pattern)} · ${escapeHtml(item.zh)}</div>
-                            <div class="muted">${escapeHtml(item.guide)}</div>
+                            <div class="pattern">${escapeHtml(item.pattern)} · ${escapeHtml(grammarMeaning(item))}</div>
+                            <div class="muted">${escapeHtml(grammarGuide(item))}</div>
                         </div>
-                    `).join("") : `<p class="muted">语法点会在该课 OCR 校对后补充。</p>`}
+                    `).join("") : `<p class="muted">${escapeHtml(t("grammarPending"))}</p>`}
                 </section>
             `;
         }
 
         function renderVocabulary(lesson) {
-            if (!lesson.vocabulary?.length) return renderTodo("单词表待抽取", "后续会从该课 어휘 页面抽取韩语词、中文释义、例句和使用提示。");
+            if (!lesson.vocabulary?.length) return renderTodo(t("vocabularyPendingTitle"), t("vocabularyPendingBody"));
 
             return `
                 <div class="toolbar">
-                    <div class="muted">${lesson.vocabulary.length} 个词条，中文释义和例句可用于复习。</div>
-                    <button class="tool-btn" data-toggle-zh>${showChinese ? "隐藏中文" : "显示中文"}</button>
+                    <div class="muted">${escapeHtml(tf("vocabularyToolbar", { count: lesson.vocabulary.length }))}</div>
+                    <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
                 </div>
                 <div class="vocab-grid">
                     ${lesson.vocabulary.map(item => `
@@ -1357,16 +1853,16 @@
                                     <div class="word-ko">${escapeHtml(item.ko)}</div>
                                     <span class="word-pron">${escapeHtml(romanizeKorean(item.ko))}</span>
                                 </div>
-                                <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="播放 ${escapeHtml(item.ko)} 发音" title="播放发音">
+                                <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="${escapeHtml(tf("playPronunciation", { text: item.ko }))}" title="${escapeHtml(tf("playPronunciation", { text: item.ko }))}">
                                     <svg viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M8 5v14l11-7z"></path>
                                     </svg>
                                 </button>
                             </div>
-                            ${showChinese ? `<div class="word-zh">${escapeHtml(item.zh)}</div>` : ""}
-                            <p class="word-guide">${escapeHtml(item.guide)}</p>
+                            ${showChinese ? `<div class="word-zh">${escapeHtml(wordMeaning(item))}</div>` : ""}
+                            <p class="word-guide">${escapeHtml(wordGuide(item))}</p>
                             <div class="example-ko">${escapeHtml(item.exampleKo)}</div>
-                            ${showChinese ? `<div class="example-zh">${escapeHtml(item.exampleZh)}</div>` : ""}
+                            ${showChinese ? `<div class="example-zh">${escapeHtml(wordExampleTranslation(item))}</div>` : ""}
                             <div class="word-meta">
                                 <span class="word-source">${escapeHtml(formatWordSource(item))}</span>
                                 <span class="word-pos">${escapeHtml(formatWordPos(item.pos))}</span>
@@ -1378,17 +1874,19 @@
         }
 
         function renderDialogue(lesson) {
-            if (!lesson.dialogues?.length) return renderTodo("对话练习待抽取", "后续会拆分角色台词，补中文逐句翻译、表达讲解和替换练习。");
+            if (!lesson.dialogues?.length) return renderTodo(t("dialoguePendingTitle"), t("dialoguePendingBody"));
 
             const lineCount = lesson.dialogues.reduce((total, dialogue) => total + (dialogue.lines?.length || 0), 0);
 
             return `
                 <div class="toolbar">
-                    <div class="muted">${lesson.dialogues.length} 段对话 / ${lineCount} 句台词</div>
-                    <button class="tool-btn" data-toggle-zh>${showChinese ? "隐藏中文" : "显示中文"}</button>
+                    <div class="muted">${escapeHtml(tf("dialogueToolbar", { dialogues: lesson.dialogues.length, lines: lineCount }))}</div>
+                    <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
                 </div>
                 ${lesson.dialogues.map(dialogue => {
                     const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
+                    const scene = dialogueScene(dialogue);
+                    const learningPoints = localizedArray(dialogue, "learningPoints", "learningPoints");
 
                     return `
                         <section class="content-card dialogue-card">
@@ -1406,11 +1904,11 @@
                                         ${speakers.map(speaker => `<span class="speaker-chip">${escapeHtml(speaker)}</span>`).join("")}
                                     </div>
                                 ` : ""}
-                                ${dialogue.sceneZh && showChinese ? `<p class="dialogue-scene">${escapeHtml(dialogue.sceneZh)}</p>` : ""}
+                                ${scene && showChinese ? `<p class="dialogue-scene">${escapeHtml(scene)}</p>` : ""}
                             </div>
                             <div class="dialogue-layout">
                                 <div class="dialogue-transcript">
-                                    <div class="dialogue-panel-title">对话正文</div>
+                                    <div class="dialogue-panel-title">${escapeHtml(t("dialoguePanelTitle"))}</div>
                                     ${(dialogue.lines || []).map((line, index) => `
                                         <div class="line-card">
                                             <div class="line-index">${index + 1}</div>
@@ -1420,35 +1918,35 @@
                                                 </div>
                                                 <div class="line-ko-row">
                                                     <div class="line-ko">${escapeHtml(line.ko)}</div>
-                                                    <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(line.ko)}" data-speak-mode="sentence" aria-label="播放 ${escapeHtml(line.ko)} 发音" title="播放发音">
+                                                    <button class="speak-btn" type="button" data-speak-ko="${escapeHtml(line.ko)}" data-speak-mode="sentence" aria-label="${escapeHtml(tf("playPronunciation", { text: line.ko }))}" title="${escapeHtml(tf("playPronunciation", { text: line.ko }))}">
                                                         <svg viewBox="0 0 24 24" aria-hidden="true">
                                                             <path d="M8 5v14l11-7z"></path>
                                                         </svg>
                                                     </button>
                                                 </div>
-                                                ${showChinese ? `<div class="line-zh">${escapeHtml(line.zh)}</div>` : ""}
-                                                ${showChinese ? `<div class="line-guide">${escapeHtml(line.guide)}</div>` : ""}
+                                                ${showChinese ? `<div class="line-zh">${escapeHtml(lineTranslation(line))}</div>` : ""}
+                                                ${showChinese ? `<div class="line-guide">${escapeHtml(lineGuide(line))}</div>` : ""}
                                             </div>
                                         </div>
                                     `).join("")}
                                 </div>
                                 <aside class="dialogue-side">
-                                    ${dialogue.learningPoints?.length && showChinese ? `
+                                    ${learningPoints.length && showChinese ? `
                                         <section class="dialogue-mini-panel">
-                                            <h3>读法提示</h3>
+                                            <h3>${escapeHtml(t("readingTips"))}</h3>
                                             <ul class="dialogue-points">
-                                                ${dialogue.learningPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
+                                                ${learningPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
                                             </ul>
                                         </section>
                                     ` : ""}
                                     ${dialogue.rolePlays?.length ? `
                                         <details class="dialogue-mini-panel" open>
-                                            <summary>角色练习</summary>
+                                            <summary>${escapeHtml(t("rolePractice"))}</summary>
                                             <div class="role-task-grid">
                                                 ${dialogue.rolePlays.map(task => `
                                                     <div class="role-task">
-                                                        <h3>${escapeHtml(task.title)}</h3>
-                                                        ${showChinese ? `<div class="muted">${escapeHtml(task.promptZh)}</div>` : ""}
+                                                        <h3>${escapeHtml(taskTitle(task))}</h3>
+                                                        ${showChinese ? `<div class="muted">${escapeHtml(taskPrompt(task))}</div>` : ""}
                                                         <div class="drill-answer">${escapeHtml(task.answerKo)}</div>
                                                     </div>
                                                 `).join("")}
@@ -1457,11 +1955,11 @@
                                     ` : ""}
                                     ${dialogue.drills?.length ? `
                                         <details class="dialogue-mini-panel">
-                                            <summary>替换练习</summary>
+                                            <summary>${escapeHtml(t("substitutionPractice"))}</summary>
                                             ${(dialogue.drills || []).map(drill => `
                                                 <div class="drill">
-                                                    ${showChinese ? `<div>${escapeHtml(drill.promptZh)}</div>` : ""}
-                                                    <div class="muted">句型：${escapeHtml(drill.pattern)}</div>
+                                                    ${showChinese ? `<div>${escapeHtml(taskPrompt(drill))}</div>` : ""}
+                                                    <div class="muted">${escapeHtml(t("patternLabel"))}：${escapeHtml(drill.pattern)}</div>
                                                     <div class="drill-answer">${escapeHtml(drill.answerKo)}</div>
                                                 </div>
                                             `).join("")}
@@ -1476,46 +1974,46 @@
         }
 
         function renderCulture(lesson) {
-            if (!lesson.culture) return renderTodo("文化文章待抽取", "后续会整理韩国文化文章原文、自然中文翻译、背景说明和理解题。");
+            if (!lesson.culture) return renderTodo(t("culturePendingTitle"), t("culturePendingBody"));
 
             const culture = lesson.culture;
             return `
                 <section class="content-card">
                     <div class="eyebrow">
                         <span class="level-badge">${escapeHtml(culture.titleKo)}</span>
-                        <span class="page-badge">${escapeHtml(culture.titleZh)}</span>
+                        <span class="page-badge">${escapeHtml(cultureTitleTranslation(culture))}</span>
                         ${culture.page ? `<span class="page-badge">p.${escapeHtml(culture.page)}</span>` : ""}
                     </div>
-                    <div class="culture-summary">${escapeHtml(culture.summaryZh)}</div>
-                    <h2>原文与翻译</h2>
+                    <div class="culture-summary">${escapeHtml(cultureSummary(culture))}</div>
+                    <h2>${escapeHtml(t("originalAndTranslation"))}</h2>
                     ${(culture.paragraphs || []).map(paragraph => `
                         <div class="paragraph-block">
-                            <span class="paragraph-label">原文</span>
+                            <span class="paragraph-label">${escapeHtml(t("originalLabel"))}</span>
                             <div class="paragraph-ko">${escapeHtml(paragraph.ko)}</div>
-                            <span class="paragraph-label">中文</span>
-                            <div class="paragraph-zh">${escapeHtml(paragraph.zh)}</div>
-                            <p class="line-guide">${escapeHtml(paragraph.guide)}</p>
+                            <span class="paragraph-label">${escapeHtml(t("translationLabel"))}</span>
+                            <div class="paragraph-zh">${escapeHtml(cultureTranslation(paragraph, "translation"))}</div>
+                            <p class="line-guide">${escapeHtml(cultureTranslation(paragraph, "guide"))}</p>
                         </div>
                     `).join("")}
                 </section>
 
                 <section class="content-card">
-                    <h2>关键词</h2>
+                    <h2>${escapeHtml(t("keyTerms"))}</h2>
                     ${(culture.keyTerms || []).map(term => `
                         <div class="term-row">
                             <div class="pattern">${escapeHtml(term.ko)}</div>
-                            <div>${escapeHtml(term.zh)}</div>
+                            <div>${escapeHtml(cultureTranslation(term, "meaning"))}</div>
                         </div>
                     `).join("")}
                 </section>
 
                 <section class="content-card">
-                    <h2>理解问题</h2>
+                    <h2>${escapeHtml(t("comprehensionQuestions"))}</h2>
                     ${(culture.questions || []).map(item => `
                         <div class="qa-row">
                             <div class="line-ko">${escapeHtml(item.q)}</div>
-                            <div class="line-zh">${escapeHtml(item.zh)}</div>
-                            <div class="muted">${escapeHtml(item.a)}</div>
+                            <div class="line-zh">${escapeHtml(cultureTranslation(item, "translation"))}</div>
+                            <div class="muted">${escapeHtml(cultureTranslation(item, "answer"))}</div>
                         </div>
                     `).join("")}
                 </section>
@@ -1523,16 +2021,16 @@
         }
 
         function renderPractice(lesson) {
-            if (!lesson.practice?.length) return renderTodo("练习待生成", "等本课单词、对话和文化文章校对后，会生成翻译、替换和理解练习。");
+            if (!lesson.practice?.length) return renderTodo(t("practicePendingTitle"), t("practicePendingBody"));
 
             return lesson.practice.map(item => `
                 <article class="practice-card">
-                    <span class="practice-type">${escapeHtml(item.type)}</span>
+                    <span class="practice-type">${escapeHtml(formatPracticeType(item.type))}</span>
                     <h3>${escapeHtml(item.title)}</h3>
-                    <p>${escapeHtml(item.prompt)}</p>
+                    <p>${escapeHtml(practicePrompt(item))}</p>
                     <details>
-                        <summary>参考答案</summary>
-                        <div class="drill-answer">${escapeHtml(item.answer)}</div>
+                        <summary>${escapeHtml(t("answer"))}</summary>
+                        <div class="drill-answer">${escapeHtml(practiceAnswer(item))}</div>
                     </details>
                 </article>
             `).join("");
@@ -1553,8 +2051,8 @@
             return `
                 <div class="todo-panel">
                     <div>
-                        <h2>正在加载课程数据</h2>
-                        <p>${escapeHtml(lesson.titleKo)} · ${escapeHtml(lesson.titleZh)}</p>
+                        <h2>${escapeHtml(t("loadingTitle"))}</h2>
+                        <p>${escapeHtml(lesson.titleKo)} · ${escapeHtml(lessonTitleTranslation(lesson))}</p>
                     </div>
                 </div>
             `;
@@ -1564,8 +2062,8 @@
             return `
                 <div class="todo-panel">
                     <div>
-                        <h2>课程数据加载失败</h2>
-                        <p>${escapeHtml(lesson.titleKo)} 的分片文件没有加载成功，请刷新页面后再试。</p>
+                        <h2>${escapeHtml(t("loadErrorTitle"))}</h2>
+                        <p>${escapeHtml(tf("loadErrorBody", { title: lesson.titleKo }))}</p>
                     </div>
                 </div>
             `;
@@ -1694,6 +2192,7 @@
 
             if (event.target.closest("[data-toggle-zh]")) {
                 showChinese = !showChinese;
+                localStorage.setItem(localeStorageKeys.showTranslation, String(showChinese));
                 renderMain();
             }
         });
@@ -1750,6 +2249,39 @@
         });
         sidebarOverlay.addEventListener("click", closeSidebar);
 
+        document.addEventListener("click", event => {
+            const toggle = event.target.closest("[data-language-toggle]");
+            if (toggle) {
+                const switcher = toggle.closest("[data-language-switcher]");
+                const menu = switcher?.querySelector("[data-language-menu]");
+                const shouldOpen = Boolean(menu?.hidden);
+                closeLanguageMenus();
+                if (menu) {
+                    menu.hidden = !shouldOpen;
+                    toggle.setAttribute("aria-expanded", String(shouldOpen));
+                }
+                event.stopPropagation();
+                return;
+            }
+
+            const localeOption = event.target.closest("[data-locale-kind][data-locale-value]");
+            if (localeOption) {
+                setLocale(localeOption.dataset.localeKind, localeOption.dataset.localeValue);
+                closeLanguageMenus();
+                event.stopPropagation();
+                return;
+            }
+
+            if (!event.target.closest("[data-language-switcher]")) {
+                closeLanguageMenus();
+            }
+        });
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape") closeLanguageMenus();
+        });
+
+        applyStaticLocale();
         renderLessonList();
         renderMain();
     </script>

@@ -1697,7 +1697,7 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "type": "vocabulary",
             "title": "구인 광고 읽기",
             "prompt": "说出 모집 분야、지원 자격、제출 서류、지원 방법 的中文意思。（韩语题目：모집 분야, 지원 자격, 제출 서류, 지원 방법의 중국어 뜻을 말해 보세요.）",
-            "answer": "招聘岗位、应聘资格、提交材料、应聘方式。"
+            "answer": "모집 분야, 지원 자격, 제출 서류, 지원 방법입니다."
         },
         {
             "type": "reading",

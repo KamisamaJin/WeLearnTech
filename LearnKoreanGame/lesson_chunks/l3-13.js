@@ -1634,7 +1634,7 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "type": "culture",
             "title": "워라밸 설명하기",
             "prompt": "用中文说明 워라밸 的意思。（韩语题目：워라밸의 의미를 중국어로 설명하세요.）",
-            "answer": "工作与个人生活的平衡。"
+            "answer": "일과 개인 생활의 균형입니다."
         },
         {
             "type": "writing",
