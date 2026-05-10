@@ -138,7 +138,11 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘 목표",
             "guide": "动词表达，意思是“就职、找到工作”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 회사에 취직하고 싶어요.",
-            "exampleZh": "我想进入韩国公司工作。"
+            "exampleZh": "我想进入韩国公司工作。",
+            "tips": [
+                { "label": "搭配", "text": "회사에 취직하다" },
+                { "label": "易错", "text": "취업은 명사, 취직하다는 동사" }
+            ]
         },
         {
             "ko": "구직 활동",
@@ -148,7 +152,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "활동 목표",
             "guide": "固定表达，意思是“求职活动”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "구직 활동에 대해 조언했어요.",
-            "exampleZh": "就求职活动给了建议。"
+            "exampleZh": "就求职活动给了建议。",
+            "tips": [
+                { "label": "易错", "text": "구직=找工作；구인=招人" }
+            ]
         },
         {
             "ko": "이력서 작성",
@@ -158,7 +165,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "활동 목표",
             "guide": "固定表达，意思是“写简历”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이력서 작성을 연습했어요.",
-            "exampleZh": "练习了写简历。"
+            "exampleZh": "练习了写简历。",
+            "tips": [
+                { "label": "搭配", "text": "이력서를 작성하다" }
+            ]
         },
         {
             "ko": "급여와 세금",
@@ -178,7 +188,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“找工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국에서 어떤 일을 구해요?",
-            "exampleZh": "你在韩国找什么工作？"
+            "exampleZh": "你在韩国找什么工作？",
+            "tips": [
+                { "label": "搭配", "text": "일을 구하다 / 직장을 구하다" }
+            ]
         },
         {
             "ko": "학원 강사",
@@ -238,7 +251,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“开店”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가게를 차리기 위해 준비하고 있어요.",
-            "exampleZh": "为了开店正在准备。"
+            "exampleZh": "为了开店正在准备。",
+            "tips": [
+                { "label": "搭配", "text": "가게를 차리다, 회사를 차리다" }
+            ]
         },
         {
             "ko": "통역",
@@ -248,7 +264,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "名词，意思是“口译”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "통역 일을 하고 싶어요.",
-            "exampleZh": "我想做口译工作。"
+            "exampleZh": "我想做口译工作。",
+            "tips": [
+                { "label": "易错", "text": "통역은 말, 번역은 글" }
+            ]
         },
         {
             "ko": "번역",
@@ -258,7 +277,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "名词，意思是“翻译、笔译”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "번역 일을 배워 보고 싶어요.",
-            "exampleZh": "我想学着做翻译工作。"
+            "exampleZh": "我想学着做翻译工作。",
+            "tips": [
+                { "label": "易错", "text": "번역은 글, 통역은 말" }
+            ]
         },
         {
             "ko": "전문성 있는 일",
@@ -268,7 +290,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“有专业性的工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "전문성 있는 일을 하고 싶어요.",
-            "exampleZh": "我想做有专业性的工作。"
+            "exampleZh": "我想做有专业性的工作。",
+            "tips": [
+                { "label": "搭配", "text": "전문성이 있다 / 없다" }
+            ]
         },
         {
             "ko": "안정적인 회사",
@@ -278,7 +303,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“稳定的公司”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "안정적인 회사에서 일하고 싶어요.",
-            "exampleZh": "我想在稳定的公司工作。"
+            "exampleZh": "我想在稳定的公司工作。",
+            "tips": [
+                { "label": "搭配", "text": "안정적인 회사에서 일하다" }
+            ]
         },
         {
             "ko": "근무 환경",
@@ -288,7 +316,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“工作环境”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "근무 환경이 좋은 회사를 원해요.",
-            "exampleZh": "我想要工作环境好的公司。"
+            "exampleZh": "我想要工作环境好的公司。",
+            "tips": [
+                { "label": "搭配", "text": "근무 환경이 좋다 / 나쁘다" }
+            ]
         },
         {
             "ko": "월급",
@@ -298,7 +329,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "名词，意思是“月薪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "월급을 많이 주는 회사가 좋아요.",
-            "exampleZh": "喜欢给月薪高的公司。"
+            "exampleZh": "喜欢给月薪高的公司。",
+            "tips": [
+                { "label": "易错", "text": "급여보다 일상적인 말" }
+            ]
         },
         {
             "ko": "출퇴근이 자유롭다",
@@ -308,7 +342,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“上下班自由”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "출퇴근이 자유로운 회사에서 일하고 싶어요.",
-            "exampleZh": "我想在上下班自由的公司工作。"
+            "exampleZh": "我想在上下班自由的公司工作。",
+            "tips": [
+                { "label": "搭配", "text": "출퇴근 시간이 자유롭다" }
+            ]
         },
         {
             "ko": "발전 가능성",
@@ -328,7 +365,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“为社会做贡献”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "사회에 기여할 수 있는 일을 하고 싶어요.",
-            "exampleZh": "我想做能为社会做贡献的事。"
+            "exampleZh": "我想做能为社会做贡献的事。",
+            "tips": [
+                { "label": "搭配", "text": "사회에 기여하다: 조사 에" }
+            ]
         },
         {
             "ko": "자기 계발",
@@ -338,7 +378,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“自我提升”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "자기 계발을 할 수 있는 회사가 좋아요.",
-            "exampleZh": "喜欢能自我提升的公司。"
+            "exampleZh": "喜欢能自我提升的公司。",
+            "tips": [
+                { "label": "易错", "text": "개발보다 사람 능력에는 계발" }
+            ]
         },
         {
             "ko": "보람을 느끼다",
@@ -348,7 +391,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“感到有价值、有成就感”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "일에 대한 보람을 느껴요.",
-            "exampleZh": "对工作感到有成就感。"
+            "exampleZh": "对工作感到有成就感。",
+            "tips": [
+                { "label": "搭配", "text": "일에 보람을 느끼다" }
+            ]
         },
         {
             "ko": "구인 광고",
@@ -358,7 +404,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“招聘广告”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "구인 광고를 봤어요.",
-            "exampleZh": "看了招聘广告。"
+            "exampleZh": "看了招聘广告。",
+            "tips": [
+                { "label": "易错", "text": "구인은 모집, 구직은 일 찾기" }
+            ]
         },
         {
             "ko": "이력서",
@@ -368,7 +417,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "名词，意思是“简历”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이력서를 써 놓았어요.",
-            "exampleZh": "把简历提前写好了。"
+            "exampleZh": "把简历提前写好了。",
+            "tips": [
+                { "label": "搭配", "text": "이력서를 쓰다 / 작성하다" }
+            ]
         },
         {
             "ko": "지원서",
@@ -378,7 +430,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "名词，意思是“申请表、报名表”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지원서를 작성했어요.",
-            "exampleZh": "填写了申请表。"
+            "exampleZh": "填写了申请表。",
+            "tips": [
+                { "label": "搭配", "text": "지원서를 작성하다 / 내다" }
+            ]
         },
         {
             "ko": "작성하다",
@@ -388,7 +443,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "动词表达，意思是“填写、撰写”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "지원서를 작성해야 해요.",
-            "exampleZh": "需要填写申请表。"
+            "exampleZh": "需要填写申请表。",
+            "tips": [
+                { "label": "搭配", "text": "이력서·지원서를 작성하다" }
+            ]
         },
         {
             "ko": "서류",
@@ -398,7 +456,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "名词，意思是“材料、文件”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "서류를 준비해 놓았어요.",
-            "exampleZh": "把材料提前准备好了。"
+            "exampleZh": "把材料提前准备好了。",
+            "tips": [
+                { "label": "搭配", "text": "서류를 준비하다 / 제출하다" }
+            ]
         },
         {
             "ko": "제출하다",
@@ -408,7 +469,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "动词表达，意思是“提交”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "서류를 제출했어요.",
-            "exampleZh": "提交了材料。"
+            "exampleZh": "提交了材料。",
+            "tips": [
+                { "label": "搭配", "text": "서류를 제출하다" }
+            ]
         },
         {
             "ko": "필기시험을 보다",
@@ -418,7 +482,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“参加笔试”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "필기시험을 봤어요.",
-            "exampleZh": "参加了笔试。"
+            "exampleZh": "参加了笔试。",
+            "tips": [
+                { "label": "搭配", "text": "시험을 보다 = 응시하다" }
+            ]
         },
         {
             "ko": "면접을 보다",
@@ -428,7 +495,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“参加面试”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "내일 면접을 봐요.",
-            "exampleZh": "明天参加面试。"
+            "exampleZh": "明天参加面试。",
+            "tips": [
+                { "label": "搭配", "text": "면접을 보다 = 면접에 가다" }
+            ]
         },
         {
             "ko": "합격 통보 문자",
@@ -438,7 +508,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“录取通知短信”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "합격 통보 문자를 받았어요.",
-            "exampleZh": "收到了录取通知短信。"
+            "exampleZh": "收到了录取通知短信。",
+            "tips": [
+                { "label": "搭配", "text": "합격 통보를 받다" }
+            ]
         },
         {
             "ko": "준비하다",
@@ -458,7 +531,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“资格证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자격증을 따 놓으세요.",
-            "exampleZh": "请提前考取资格证。"
+            "exampleZh": "请提前考取资格证。",
+            "tips": [
+                { "label": "搭配", "text": "자격증을 따다 / 취득하다" }
+            ]
         },
         {
             "ko": "컴퓨터 자격증",
@@ -478,7 +554,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문법",
             "guide": "副词，意思是“提前”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "미리 예약해 놓았어요.",
-            "exampleZh": "已经提前预约好了。"
+            "exampleZh": "已经提前预约好了。",
+            "tips": [
+                { "label": "搭配", "text": "미리 + -어 놓다" }
+            ]
         },
         {
             "ko": "따다",
@@ -488,7 +567,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "말하기",
             "guide": "动词表达，意思是“取得、考取”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "자격증을 따고 싶어요.",
-            "exampleZh": "想考取资格证。"
+            "exampleZh": "想考取资格证。",
+            "tips": [
+                { "label": "搭配", "text": "자격증을 따다" }
+            ]
         },
         {
             "ko": "한국 국적",
@@ -508,7 +590,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "예문",
             "guide": "动词表达，意思是“取得”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 국적을 취득하고 싶어요.",
-            "exampleZh": "想取得韩国国籍。"
+            "exampleZh": "想取得韩国国籍。",
+            "tips": [
+                { "label": "易错", "text": "따다보다 서류·자격에 격식체" }
+            ]
         },
         {
             "ko": "통역사",
@@ -568,7 +653,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“用心写”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이력서를 정성껏 쓰세요.",
-            "exampleZh": "请用心写简历。"
+            "exampleZh": "请用心写简历。",
+            "tips": [
+                { "label": "搭配", "text": "이력서를 정성껏 쓰다" }
+            ]
         },
         {
             "ko": "무역 회사",
@@ -588,7 +676,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "말하기",
             "guide": "名词，意思是“韩语”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국말을 어느 정도 할 수 있어요.",
-            "exampleZh": "韩语会到一定程度。"
+            "exampleZh": "韩语会到一定程度。",
+            "tips": [
+                { "label": "易错", "text": "한국어보다 편한 말" }
+            ]
         },
         {
             "ko": "영어를 가르치다",
@@ -608,7 +699,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "듣기",
             "guide": "动词表达，意思是“应聘、申请”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "우리 회사에 왜 지원했습니까?",
-            "exampleZh": "为什么应聘我们公司？"
+            "exampleZh": "为什么应聘我们公司？",
+            "tips": [
+                { "label": "搭配", "text": "회사에 지원하다" }
+            ]
         },
         {
             "ko": "입사하다",
@@ -618,7 +712,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "듣기",
             "guide": "动词表达，意思是“入职、进公司”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "입사하면 어떤 일을 하고 싶습니까?",
-            "exampleZh": "入职后想做什么工作？"
+            "exampleZh": "入职后想做什么工作？",
+            "tips": [
+                { "label": "易错", "text": "회사에는 입사, 학교에는 입학" }
+            ]
         },
         {
             "ko": "지원한 이유",
@@ -638,7 +735,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "듣기/발음",
             "guide": "名词，意思是“经历、工作经验”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "경력이 있습니까?",
-            "exampleZh": "有工作经验吗？"
+            "exampleZh": "有工作经验吗？",
+            "tips": [
+                { "label": "易错", "text": "직장 경험은 경력" }
+            ]
         },
         {
             "ko": "경력 증명서",
@@ -668,7 +768,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“新人、应届/新入职”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신입 사원 모집 광고를 봤어요.",
-            "exampleZh": "看了招聘新人职员的广告。"
+            "exampleZh": "看了招聘新人职员的广告。",
+            "tips": [
+                { "label": "易错", "text": "신입 반대는 경력" }
+            ]
         },
         {
             "ko": "경력 사원",
@@ -688,7 +791,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“招聘领域/岗位”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "모집 분야는 판매직입니다.",
-            "exampleZh": "招聘岗位是销售职。"
+            "exampleZh": "招聘岗位是销售职。",
+            "tips": [
+                { "label": "搭配", "text": "모집 분야 / 모집 인원" }
+            ]
         },
         {
             "ko": "화장품 판매직",
@@ -718,7 +824,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“应聘资格”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지원 자격을 확인하세요.",
-            "exampleZh": "请确认应聘资格。"
+            "exampleZh": "请确认应聘资格。",
+            "tips": [
+                { "label": "搭配", "text": "지원 자격이 되다 / 안 되다" }
+            ]
         },
         {
             "ko": "고졸",
@@ -728,7 +837,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“高中毕业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지원 자격은 고졸입니다.",
-            "exampleZh": "应聘资格是高中毕业。"
+            "exampleZh": "应聘资格是高中毕业。",
+            "tips": [
+                { "label": "易错", "text": "고등학교 졸업의 줄임말" }
+            ]
         },
         {
             "ko": "문의",
@@ -738,7 +850,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“咨询、问询”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문의 전화번호를 확인했어요.",
-            "exampleZh": "确认了咨询电话号码。"
+            "exampleZh": "确认了咨询电话号码。",
+            "tips": [
+                { "label": "搭配", "text": "문의 전화 / 문의하다" }
+            ]
         },
         {
             "ko": "지원 방법",
@@ -758,7 +873,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“线上申请/网上接收”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "온라인 접수를 했어요.",
-            "exampleZh": "进行了线上申请。"
+            "exampleZh": "进行了线上申请。",
+            "tips": [
+                { "label": "易错", "text": "방문 접수와 반대" }
+            ]
         },
         {
             "ko": "판매직",
@@ -778,7 +896,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "단어장",
             "guide": "名词，意思是“营业/业务岗位”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "영업직 경력이 있어요.",
-            "exampleZh": "有业务岗位经验。"
+            "exampleZh": "有业务岗位经验。",
+            "tips": [
+                { "label": "易错", "text": "판매직보다 고객·거래처 활동 중심" }
+            ]
         },
         {
             "ko": "생산직",
@@ -798,7 +919,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "단어장",
             "guide": "名词，意思是“若干名”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "모집 인원은 약간명입니다.",
-            "exampleZh": "招聘人数为若干名。"
+            "exampleZh": "招聘人数为若干名。",
+            "tips": [
+                { "label": "易错", "text": "채용 공고의 “몇 명”" }
+            ]
         },
         {
             "ko": "대졸",
@@ -818,7 +942,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“两年以上经验”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "경력 2년 이상인 사람을 찾습니다.",
-            "exampleZh": "寻找两年以上经验的人。"
+            "exampleZh": "寻找两年以上经验的人。",
+            "tips": [
+                { "label": "搭配", "text": "N년 이상 / N년 이하" }
+            ]
         },
         {
             "ko": "자격증 사본",
@@ -828,7 +955,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“资格证复印件”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "자격증 사본을 제출하세요.",
-            "exampleZh": "请提交资格证复印件。"
+            "exampleZh": "请提交资格证复印件。",
+            "tips": [
+                { "label": "搭配", "text": "사본을 제출하다" }
+            ]
         },
         {
             "ko": "운전면허증",
@@ -838,7 +968,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "단어장",
             "guide": "名词，意思是“驾驶证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "운전면허증이 필요합니다.",
-            "exampleZh": "需要驾驶证。"
+            "exampleZh": "需要驾驶证。",
+            "tips": [
+                { "label": "搭配", "text": "운전면허증 소지자" }
+            ]
         },
         {
             "ko": "방문 접수",
@@ -848,7 +981,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“现场申请”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "방문 접수도 가능합니다.",
-            "exampleZh": "也可以现场申请。"
+            "exampleZh": "也可以现场申请。",
+            "tips": [
+                { "label": "易错", "text": "온라인 접수와 반대" }
+            ]
         },
         {
             "ko": "이메일",
@@ -868,7 +1004,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "제출 서류",
             "guide": "名词，意思是“自我介绍书”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자기소개서를 써 놓았어요.",
-            "exampleZh": "已经写好了自我介绍书。"
+            "exampleZh": "已经写好了自我介绍书。",
+            "tips": [
+                { "label": "搭配", "text": "자기소개서를 쓰다" }
+            ]
         },
         {
             "ko": "성적 증명서",
@@ -938,7 +1077,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“工作时间”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "근무 시간은 월요일부터 금요일까지입니다.",
-            "exampleZh": "工作时间是周一到周五。"
+            "exampleZh": "工作时间是周一到周五。",
+            "tips": [
+                { "label": "搭配", "text": "근무 시간은 월~금입니다" }
+            ]
         },
         {
             "ko": "월~금",
@@ -988,7 +1130,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "읽기",
             "guide": "名词，意思是“持有者”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "운전면허증 소지자를 찾습니다.",
-            "exampleZh": "寻找驾驶证持有者。"
+            "exampleZh": "寻找驾驶证持有者。",
+            "tips": [
+                { "label": "搭配", "text": "운전면허증 소지자" }
+            ]
         },
         {
             "ko": "이름",
@@ -1008,7 +1153,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "쓰기",
             "guide": "名词，意思是“出生年月日”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생년월일을 정확히 쓰세요.",
-            "exampleZh": "请准确填写出生年月日。"
+            "exampleZh": "请准确填写出生年月日。",
+            "tips": [
+                { "label": "易错", "text": "생일보다 서류식 표현" }
+            ]
         },
         {
             "ko": "국적",
@@ -1038,7 +1186,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "쓰기",
             "guide": "名词，意思是“手机”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "휴대전화 번호를 씁니다.",
-            "exampleZh": "填写手机号码。"
+            "exampleZh": "填写手机号码。",
+            "tips": [
+                { "label": "易错", "text": "핸드폰보다 서류식 표현" }
+            ]
         },
         {
             "ko": "여권번호",
@@ -1068,7 +1219,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "쓰기",
             "guide": "名词，意思是“学历”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "학력 사항을 작성합니다.",
-            "exampleZh": "填写学历事项。"
+            "exampleZh": "填写学历事项。",
+            "tips": [
+                { "label": "易错", "text": "학력은 학교 이력, 경력은 일 이력" }
+            ]
         },
         {
             "ko": "기간",
@@ -1098,7 +1252,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "쓰기",
             "guide": "名词，意思是“专业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전공은 영어입니다.",
-            "exampleZh": "专业是英语。"
+            "exampleZh": "专业是英语。",
+            "tips": [
+                { "label": "搭配", "text": "영어 전공 / 전공은 영어" }
+            ]
         },
         {
             "ko": "구분",
@@ -1178,7 +1335,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "쓰기",
             "guide": "动词表达，意思是“记载、填写”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "기재한 사항은 사실입니다.",
-            "exampleZh": "记载事项属实。"
+            "exampleZh": "记载事项属实。",
+            "tips": [
+                { "label": "易错", "text": "서류에 적을 때 쓰는 격식체" }
+            ]
         },
         {
             "ko": "성명",
@@ -1208,7 +1368,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“工资、薪酬”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여는 은행 계좌로 받습니다.",
-            "exampleZh": "工资通过银行账户领取。"
+            "exampleZh": "工资通过银行账户领取。",
+            "tips": [
+                { "label": "易错", "text": "월급보다 넓고 격식 있는 말" }
+            ]
         },
         {
             "ko": "기본급",
@@ -1218,7 +1381,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“基本工资”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여에는 기본급이 있습니다.",
-            "exampleZh": "工资里有基本工资。"
+            "exampleZh": "工资里有基本工资。",
+            "tips": [
+                { "label": "搭配", "text": "급여 = 기본급 + 수당" }
+            ]
         },
         {
             "ko": "수당",
@@ -1228,7 +1394,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“津贴、补贴”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "수당의 종류가 다양합니다.",
-            "exampleZh": "津贴种类很多。"
+            "exampleZh": "津贴种类很多。",
+            "tips": [
+                { "label": "搭配", "text": "초과 근무 수당 / 가족 수당" }
+            ]
         },
         {
             "ko": "가족 수당",
@@ -1278,7 +1447,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“入账”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "월급이 계좌에 입금되었어요.",
-            "exampleZh": "工资入账了。"
+            "exampleZh": "工资入账了。",
+            "tips": [
+                { "label": "变形", "text": "입금하다 ↔ 입금되다" }
+            ]
         },
         {
             "ko": "지급되다",
@@ -1288,7 +1460,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“被支付、发放”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "실제 지급되는 월급과 차이가 있어요.",
-            "exampleZh": "和实际发放的月薪有差异。"
+            "exampleZh": "和实际发放的月薪有差异。",
+            "tips": [
+                { "label": "变形", "text": "지급하다 ↔ 지급되다" }
+            ]
         },
         {
             "ko": "세금",
@@ -1328,7 +1503,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“扣除”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "세금을 급여에서 공제합니다.",
-            "exampleZh": "从工资中扣除税金。"
+            "exampleZh": "从工资中扣除税金。",
+            "tips": [
+                { "label": "搭配", "text": "급여에서 공제하다" }
+            ]
         },
         {
             "ko": "액수",
@@ -1348,7 +1526,10 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“比例”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "세금을 내는 비율이 높아집니다.",
-            "exampleZh": "缴税比例会提高。"
+            "exampleZh": "缴税比例会提高。",
+            "tips": [
+                { "label": "搭配", "text": "비율이 높아지다 / 낮아지다" }
+            ]
         },
         {
             "ko": "분야",

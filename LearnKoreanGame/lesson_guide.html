@@ -650,6 +650,39 @@
             font-size: 0.93rem;
         }
 
+        .word-guide-tips {
+            display: grid;
+            gap: 5px;
+            margin-top: 9px;
+        }
+
+        .word-guide-tip {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 8px;
+            align-items: start;
+            color: var(--muted);
+            line-height: 1.4;
+            font-size: 0.84rem;
+        }
+
+        .word-guide-label {
+            width: fit-content;
+            padding: 1px 5px;
+            border: 1px solid rgba(41, 217, 194, 0.18);
+            border-radius: 5px;
+            color: var(--teal);
+            background: rgba(41, 217, 194, 0.08);
+            font-size: 0.66rem;
+            font-weight: 900;
+            line-height: 1.35;
+            white-space: nowrap;
+        }
+
+        .word-guide-text {
+            color: var(--soft);
+        }
+
         .example-ko {
             margin-top: 12px;
             color: var(--soft);
@@ -1401,6 +1434,54 @@
             return getLocalizedValue(item, "guide", "guide");
         }
 
+        function uniqueGuideTips(tips) {
+            const seen = new Set();
+            return tips.filter(tip => {
+                if (!tip?.text) return false;
+                const key = `${tip.label}:${tip.text}`;
+                if (seen.has(key)) return false;
+                seen.add(key);
+                return true;
+            });
+        }
+
+        const wordGuideTipLabels = new Set(["搭配", "易错", "变形"]);
+
+        function normalizeWordGuideTips(tips = []) {
+            if (!Array.isArray(tips)) return [];
+            return uniqueGuideTips(tips
+                .filter(tip => wordGuideTipLabels.has(tip?.label))
+                .map(tip => ({
+                    label: tip.label,
+                    text: String(tip.text || "").trim()
+                })));
+        }
+
+        function lessonHasWordGuideTips(lesson) {
+            return (lesson?.vocabulary || []).some(item => normalizeWordGuideTips(item.tips).length);
+        }
+
+        function renderWordGuideTips(tips) {
+            return `
+                <div class="word-guide-tips">
+                    ${tips.map(tip => `
+                        <div class="word-guide-tip">
+                            <span class="word-guide-label">${escapeHtml(tip.label)}</span>
+                            <span class="word-guide-text">${escapeHtml(tip.text)}</span>
+                        </div>
+                    `).join("")}
+                </div>
+            `;
+        }
+
+        function renderWordGuide(lesson, item) {
+            const dataTips = normalizeWordGuideTips(item.tips);
+            if (dataTips.length) return renderWordGuideTips(dataTips);
+            if (lessonHasWordGuideTips(lesson)) return "";
+
+            return `<p class="word-guide">${escapeHtml(wordGuide(item))}</p>`;
+        }
+
         function wordExampleTranslation(item) {
             return getLocalizedValue(item, "example", "exampleZh");
         }
@@ -1916,19 +1997,28 @@
             return lessons.find(lesson => lesson.id === lessonId) || lessons[0];
         }
 
+        function versionedScriptSrc(src) {
+            const url = new URL(src, window.location.href);
+            const pageVersion = new URLSearchParams(window.location.search).get("v");
+            if (pageVersion && !url.searchParams.has("v")) {
+                url.searchParams.set("v", pageVersion);
+            }
+            return url.href;
+        }
+
         function loadScript(src) {
-            const absoluteSrc = new URL(src, window.location.href).href;
+            const absoluteSrc = versionedScriptSrc(src);
             if (loadedLessonScripts.has(absoluteSrc)) return Promise.resolve();
 
             return new Promise((resolve, reject) => {
                 const script = document.createElement("script");
-                script.src = src;
+                script.src = absoluteSrc;
                 script.async = true;
                 script.onload = () => {
                     loadedLessonScripts.add(absoluteSrc);
                     resolve();
                 };
-                script.onerror = () => reject(new Error(`课程数据加载失败：${src}`));
+                script.onerror = () => reject(new Error(`课程数据加载失败：${absoluteSrc}`));
                 document.head.appendChild(script);
             });
         }
@@ -2188,7 +2278,7 @@
                                 </button>` : ""}
                             </div>
                             ${showChinese ? `<div class="word-zh">${escapeHtml(wordMeaning(item))}</div>` : ""}
-                            <p class="word-guide">${escapeHtml(wordGuide(item))}</p>
+                            ${renderWordGuide(lesson, item)}
                             <div class="example-ko">${escapeHtml(item.exampleKo)}</div>
                             ${showChinese ? `<div class="example-zh">${escapeHtml(wordExampleTranslation(item))}</div>` : ""}
                             <div class="word-meta">

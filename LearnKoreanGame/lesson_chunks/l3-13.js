@@ -128,7 +128,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "단원 제목",
             "guide": "固定表达，意思是“职场生活”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장 생활이 쉽지 않아요.",
-            "exampleZh": "职场生活不容易。"
+            "exampleZh": "职场生活不容易。",
+            "tips": [
+                { "label": "搭配", "text": "직장 생활에 적응하다" }
+            ]
         },
         {
             "ko": "조언 구하기",
@@ -138,7 +141,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "활동 목표",
             "guide": "固定表达，意思是“寻求建议”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장 생활에 대해 조언을 구했어요.",
-            "exampleZh": "就职场生活寻求了建议。"
+            "exampleZh": "就职场生活寻求了建议。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 조언을 구하다" }
+            ]
         },
         {
             "ko": "직장 생활 잘하는 방법",
@@ -158,7 +164,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화 제목",
             "guide": "名词，意思是“工作生活平衡”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요즘은 워라밸을 중요하게 생각해요.",
-            "exampleZh": "最近重视工作生活平衡。"
+            "exampleZh": "最近重视工作生活平衡。",
+            "tips": [
+                { "label": "易错", "text": "워크+라이프+밸런스 줄임말" }
+            ]
         },
         {
             "ko": "회의를 하다",
@@ -178,7 +187,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“下达工作指示”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "과장님이 업무 지시를 하셨어요.",
-            "exampleZh": "科长下达了工作指示。"
+            "exampleZh": "科长下达了工作指示。",
+            "tips": [
+                { "label": "易错", "text": "지시를 하다 = 상사가 내림" }
+            ]
         },
         {
             "ko": "업무 지시를 받다",
@@ -188,7 +200,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“接受工作指示”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "상사에게 업무 지시를 받았어요.",
-            "exampleZh": "从上司那里接受了工作指示。"
+            "exampleZh": "从上司那里接受了工作指示。",
+            "tips": [
+                { "label": "易错", "text": "지시를 받다 = 직원이 받음" }
+            ]
         },
         {
             "ko": "업무를 보고하다",
@@ -198,7 +213,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“汇报工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "팀장님께 업무를 보고했어요.",
-            "exampleZh": "向组长汇报了工作。"
+            "exampleZh": "向组长汇报了工作。",
+            "tips": [
+                { "label": "搭配", "text": "팀장님께 업무를 보고하다" }
+            ]
         },
         {
             "ko": "서류를 작성하다",
@@ -208,7 +226,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“填写/制作文件”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "서류를 작성하고 있어요.",
-            "exampleZh": "正在制作文件。"
+            "exampleZh": "正在制作文件。",
+            "tips": [
+                { "label": "搭配", "text": "서류/보고서/일지를 작성하다" }
+            ]
         },
         {
             "ko": "결재를 하다",
@@ -218,7 +239,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“审批”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "부장님이 결재를 하셨어요.",
-            "exampleZh": "部长进行了审批。"
+            "exampleZh": "部长进行了审批。",
+            "tips": [
+                { "label": "易错", "text": "상사가 결재를 하다" }
+            ]
         },
         {
             "ko": "결재를 받다",
@@ -228,7 +252,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“获得审批”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "보고서 결재를 받았어요.",
-            "exampleZh": "报告获得了审批。"
+            "exampleZh": "报告获得了审批。",
+            "tips": [
+                { "label": "易错", "text": "직원이 결재를 받다" }
+            ]
         },
         {
             "ko": "작업장",
@@ -298,7 +325,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“工作日志”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "작업 일지를 작성하세요.",
-            "exampleZh": "请填写工作日志。"
+            "exampleZh": "请填写工作日志。",
+            "tips": [
+                { "label": "搭配", "text": "작업 일지를 작성하다/제출하다" }
+            ]
         },
         {
             "ko": "작성하다",
@@ -308,7 +338,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "어휘/배운 확인",
             "guide": "动词表达，意思是“填写、撰写”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "작업 일지를 작성했어요.",
-            "exampleZh": "填写了工作日志。"
+            "exampleZh": "填写了工作日志。",
+            "tips": [
+                { "label": "易错", "text": "공식 문서에는 쓰다보다 작성하다" }
+            ]
         },
         {
             "ko": "제출하다",
@@ -328,7 +361,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법",
             "guide": "动词表达，意思是“使唤、安排”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "-게 하다는 시키다로 바꿔 말할 수 있어요.",
-            "exampleZh": "使动表达可以理解为“让别人做某事”。"
+            "exampleZh": "使动表达可以理解为“让别人做某事”。",
+            "tips": [
+                { "label": "搭配", "text": "사람에게 일을 시키다" }
+            ]
         },
         {
             "ko": "마무리하다",
@@ -338,7 +374,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 대화/배운 확인",
             "guide": "动词表达，意思是“收尾、完成”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "오늘 작업을 다 마무리했어요.",
-            "exampleZh": "今天的作业都完成了。"
+            "exampleZh": "今天的作业都完成了。",
+            "tips": [
+                { "label": "搭配", "text": "일을/작업을 마무리하다" }
+            ]
         },
         {
             "ko": "팀원",
@@ -418,7 +457,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 예문/배운 확인",
             "guide": "动词表达，意思是“居住”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "6개월 이상 거주하는 외국인입니다.",
-            "exampleZh": "是居住6个月以上的外国人。"
+            "exampleZh": "是居住6个月以上的外国人。",
+            "tips": [
+                { "label": "搭配", "text": "한국에 6개월 이상 거주하다" }
+            ]
         },
         {
             "ko": "서류 번역",
@@ -438,7 +480,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 대화",
             "guide": "固定表达，意思是“还差得远、还没好”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "서류 번역 아직 멀었어요?",
-            "exampleZh": "文件翻译还没好吗？"
+            "exampleZh": "文件翻译还没好吗？",
+            "tips": [
+                { "label": "易错", "text": "끝나려면 많이 남았을 때" }
+            ]
         },
         {
             "ko": "거의 다 끝나 가다",
@@ -448,7 +493,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 대화",
             "guide": "固定表达，意思是“差不多快完成”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이제 거의 다 끝나 가요.",
-            "exampleZh": "现在差不多快完成了。"
+            "exampleZh": "现在差不多快完成了。",
+            "tips": [
+                { "label": "变形", "text": "끝나 가요 / 끝나 갑니다" }
+            ]
         },
         {
             "ko": "일하는 방식",
@@ -468,7 +516,11 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 예문",
             "guide": "动词表达，意思是“逐渐了解”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "직장 문화를 알아 가고 있어요.",
-            "exampleZh": "正在逐渐了解职场文化。"
+            "exampleZh": "正在逐渐了解职场文化。",
+            "tips": [
+                { "label": "变形", "text": "알아 가고 있다" },
+                { "label": "易错", "text": "점점 알게 되는 과정" }
+            ]
         },
         {
             "ko": "적응해 가다",
@@ -478,7 +530,11 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 대화",
             "guide": "动词表达，意思是“逐渐适应”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "회사 생활에 잘 적응해 가고 있어요.",
-            "exampleZh": "正在逐渐适应公司生活。"
+            "exampleZh": "正在逐渐适应公司生活。",
+            "tips": [
+                { "label": "搭配", "text": "회사 생활에 적응해 가다" },
+                { "label": "变形", "text": "적응해 가고 있어요" }
+            ]
         },
         {
             "ko": "신입 사원",
@@ -518,7 +574,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문법 연습/배운 확인",
             "guide": "固定表达，意思是“掌握业务”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "업무를 파악해 가고 있어요.",
-            "exampleZh": "正在逐渐掌握业务。"
+            "exampleZh": "正在逐渐掌握业务。",
+            "tips": [
+                { "label": "搭配", "text": "업무 내용을 파악하다" }
+            ]
         },
         {
             "ko": "익숙해지다",
@@ -528,7 +587,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기",
             "guide": "动词表达，意思是“变得熟悉”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 생활에 익숙해져 가고 있어요.",
-            "exampleZh": "正在逐渐熟悉韩国生活。"
+            "exampleZh": "正在逐渐熟悉韩国生活。",
+            "tips": [
+                { "label": "搭配", "text": "N에 익숙해지다" }
+            ]
         },
         {
             "ko": "직장 선배",
@@ -538,7 +600,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“职场前辈”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장 선배에게 조언을 구했어요.",
-            "exampleZh": "向职场前辈寻求建议。"
+            "exampleZh": "向职场前辈寻求建议。",
+            "tips": [
+                { "label": "搭配", "text": "직장 선배에게 조언을 구하다" }
+            ]
         },
         {
             "ko": "부장님",
@@ -578,7 +643,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“没能做好”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "번역을 제대로 하지 못했어요.",
-            "exampleZh": "翻译没能做好。"
+            "exampleZh": "翻译没能做好。",
+            "tips": [
+                { "label": "搭配", "text": "일을 제대로 하지 못하다" }
+            ]
         },
         {
             "ko": "동료",
@@ -598,7 +666,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“你怎么不问问呢？”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "미리 물어보지 그랬어요?",
-            "exampleZh": "你怎么不提前问问呢？"
+            "exampleZh": "你怎么不提前问问呢？",
+            "tips": [
+                { "label": "易错", "text": "지난 행동에 대한 아쉬운 조언" }
+            ]
         },
         {
             "ko": "창피하다",
@@ -608,7 +679,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기",
             "guide": "形容词，意思是“丢脸、不好意思”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "물어보기가 창피했어요.",
-            "exampleZh": "问别人觉得不好意思。"
+            "exampleZh": "问别人觉得不好意思。",
+            "tips": [
+                { "label": "变形", "text": "창피해서 / 창피했어요" }
+            ]
         },
         {
             "ko": "주변 사람",
@@ -638,7 +712,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기 연습",
             "guide": "固定表达，意思是“工作汇报”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "업무 보고를 누구에게 해야 해요?",
-            "exampleZh": "工作汇报要向谁做？"
+            "exampleZh": "工作汇报要向谁做？",
+            "tips": [
+                { "label": "搭配", "text": "업무 보고를 하다/받다" }
+            ]
         },
         {
             "ko": "상사",
@@ -648,7 +725,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기 연습",
             "guide": "名词，意思是“上司”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "상사가 여러 명이라서 힘들어요.",
-            "exampleZh": "上司有好几位，所以很难。"
+            "exampleZh": "上司有好几位，所以很难。",
+            "tips": [
+                { "label": "易错", "text": "회사 윗사람; 사장님만 뜻하지 않음" }
+            ]
         },
         {
             "ko": "날짜가 빠르다",
@@ -658,7 +738,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "말하기 연습",
             "guide": "固定表达，意思是“期限很赶”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "끝내라는 날짜가 너무 빨라요.",
-            "exampleZh": "要求完成的日期太赶。"
+            "exampleZh": "要求完成的日期太赶。",
+            "tips": [
+                { "label": "易错", "text": "마감이 촉박하다는 뜻" }
+            ]
         },
         {
             "ko": "직장 어려움",
@@ -678,7 +761,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "듣기",
             "guide": "固定表达，意思是“申请休假”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "휴가를 신청해야 해요.",
-            "exampleZh": "需要申请休假。"
+            "exampleZh": "需要申请休假。",
+            "tips": [
+                { "label": "搭配", "text": "휴가 신청서를 내다" }
+            ]
         },
         {
             "ko": "출근을 하다",
@@ -688,7 +774,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "듣기",
             "guide": "固定表达，意思是“上班”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "몸이 아파서 출근을 할 수 없어요.",
-            "exampleZh": "身体不舒服，不能上班。"
+            "exampleZh": "身体不舒服，不能上班。",
+            "tips": [
+                { "label": "易错", "text": "일하다가 아니라 회사에 감" }
+            ]
         },
         {
             "ko": "휴가 신청서",
@@ -708,7 +797,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "듣기/배운 확인",
             "guide": "动词表达，意思是“商量”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "동료와 먼저 상의하세요.",
-            "exampleZh": "请先和同事商量。"
+            "exampleZh": "请先和同事商量。",
+            "tips": [
+                { "label": "搭配", "text": "동료와 상의하다" }
+            ]
         },
         {
             "ko": "안 좋은 일",
@@ -738,7 +830,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "발음",
             "guide": "名词，意思是“家务事”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집안일은 반반씩 나누어서 합니다.",
-            "exampleZh": "家务事一人一半分着做。"
+            "exampleZh": "家务事一人一半分着做。",
+            "tips": [
+                { "label": "易错", "text": "회사 일 아님; 가사/집안 문제" }
+            ]
         },
         {
             "ko": "반반씩 나누다",
@@ -748,7 +843,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "발음/배운 확인",
             "guide": "固定表达，意思是“各一半分担”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집안일을 반반씩 나눠요.",
-            "exampleZh": "家务一人一半分担。"
+            "exampleZh": "家务一人一半分担。",
+            "tips": [
+                { "label": "搭配", "text": "집안일을 반반씩 나누다" }
+            ]
         },
         {
             "ko": "모집 공고",
@@ -758,7 +856,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전/배운 확인",
             "guide": "固定表达，意思是“招聘公告”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "모집 공고를 봤어요.",
-            "exampleZh": "看了招聘公告。"
+            "exampleZh": "看了招聘公告。",
+            "tips": [
+                { "label": "搭配", "text": "모집 공고를 보다" }
+            ]
         },
         {
             "ko": "직종",
@@ -768,7 +869,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“职业种类”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "어떤 직종과 관련이 있습니까?",
-            "exampleZh": "和什么职业种类有关？"
+            "exampleZh": "和什么职业种类有关？",
+            "tips": [
+                { "label": "易错", "text": "직장=일터, 직종=일의 종류" }
+            ]
         },
         {
             "ko": "사무직",
@@ -838,7 +942,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전/배운 확인",
             "guide": "名词，意思是“工资、薪酬”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여 조건을 확인하세요.",
-            "exampleZh": "请确认薪酬条件。"
+            "exampleZh": "请确认薪酬条件。",
+            "tips": [
+                { "label": "易错", "text": "임금/월급보다 공식적인 말" }
+            ]
         },
         {
             "ko": "연봉",
@@ -848,7 +955,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전/배운 확인",
             "guide": "名词，意思是“年薪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "연봉이 오르지 않아서 힘들어요.",
-            "exampleZh": "年薪没有上涨所以辛苦。"
+            "exampleZh": "年薪没有上涨所以辛苦。",
+            "tips": [
+                { "label": "易错", "text": "1년 기준 급여" }
+            ]
         },
         {
             "ko": "주급",
@@ -878,7 +988,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전/배운 확인",
             "guide": "名词，意思是“津贴、补贴”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "야근하면 수당을 받습니다.",
-            "exampleZh": "加班会收到津贴。"
+            "exampleZh": "加班会收到津贴。",
+            "tips": [
+                { "label": "搭配", "text": "야근 수당 / 주말 근무 수당" }
+            ]
         },
         {
             "ko": "보너스",
@@ -898,7 +1011,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“感到压力”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "대인 관계에서 스트레스를 받아요.",
-            "exampleZh": "在人际关系中感到压力。"
+            "exampleZh": "在人际关系中感到压力。",
+            "tips": [
+                { "label": "搭配", "text": "대인 관계에서 스트레스를 받다" }
+            ]
         },
         {
             "ko": "버티기 힘들다",
@@ -908,7 +1024,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“难以坚持”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가장 버티기 힘든 부분은 대인 관계예요.",
-            "exampleZh": "最难坚持的部分是人际关系。"
+            "exampleZh": "最难坚持的部分是人际关系。",
+            "tips": [
+                { "label": "搭配", "text": "버티기 힘든 부분" }
+            ]
         },
         {
             "ko": "대인 관계",
@@ -918,7 +1037,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“人际关系”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장에서는 대인 관계가 중요해요.",
-            "exampleZh": "职场中人际关系很重要。"
+            "exampleZh": "职场中人际关系很重要。",
+            "tips": [
+                { "label": "搭配", "text": "대인 관계가 원만하다" }
+            ]
         },
         {
             "ko": "야근",
@@ -928,7 +1050,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“加班到晚”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "야근을 하면 피로가 쌓여요.",
-            "exampleZh": "加班会积累疲劳。"
+            "exampleZh": "加班会积累疲劳。",
+            "tips": [
+                { "label": "易错", "text": "밤늦게 하는 근무" }
+            ]
         },
         {
             "ko": "주말 근무",
@@ -948,7 +1073,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전/배운 확인",
             "guide": "固定表达，意思是“疲劳积累”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "쉬지 못해 피로가 쌓입니다.",
-            "exampleZh": "不能休息所以疲劳积累。"
+            "exampleZh": "不能休息所以疲劳积累。",
+            "tips": [
+                { "label": "搭配", "text": "피로가 쌓여서 힘들다" }
+            ]
         },
         {
             "ko": "취미 생활",
@@ -958,7 +1086,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“兴趣生活”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "취미 생활로 스트레스를 풀어요.",
-            "exampleZh": "通过兴趣生活缓解压力。"
+            "exampleZh": "通过兴趣生活缓解压力。",
+            "tips": [
+                { "label": "搭配", "text": "취미 생활로 스트레스를 풀다" }
+            ]
         },
         {
             "ko": "정시에 퇴근하다",
@@ -968,7 +1099,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“准时下班”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "퇴근 시간에 정확하게 퇴근해요.",
-            "exampleZh": "准时在下班时间下班。"
+            "exampleZh": "准时在下班时间下班。",
+            "tips": [
+                { "label": "搭配", "text": "정시에 출근하다/퇴근하다" }
+            ]
         },
         {
             "ko": "혼밥",
@@ -978,7 +1112,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“一个人吃饭”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "혼밥으로 자기 시간을 가져요.",
-            "exampleZh": "一个人吃饭来拥有自己的时间。"
+            "exampleZh": "一个人吃饭来拥有自己的时间。",
+            "tips": [
+                { "label": "易错", "text": "혼자+밥 줄임말" }
+            ]
         },
         {
             "ko": "혼술",
@@ -988,7 +1125,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“一个人喝酒”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "혼술을 하며 쉬기도 해요.",
-            "exampleZh": "也会一个人喝酒休息。"
+            "exampleZh": "也会一个人喝酒休息。",
+            "tips": [
+                { "label": "易错", "text": "혼자+술 줄임말" }
+            ]
         },
         {
             "ko": "혼영",
@@ -998,7 +1138,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“一个人看电影”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "혼영으로 스트레스를 풀어요.",
-            "exampleZh": "一个人看电影来缓解压力。"
+            "exampleZh": "一个人看电影来缓解压力。",
+            "tips": [
+                { "label": "易错", "text": "혼자+영화 줄임말" }
+            ]
         },
         {
             "ko": "동호회",
@@ -1018,7 +1161,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기 전",
             "guide": "动词表达，意思是“合群、相处”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "사람들과 잘 어울려요.",
-            "exampleZh": "和人相处得好。"
+            "exampleZh": "和人相处得好。",
+            "tips": [
+                { "label": "搭配", "text": "사람들과 잘 어울리다" }
+            ]
         },
         {
             "ko": "샐러리맨",
@@ -1038,7 +1184,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“克服、挺过去”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "어려움을 이겨 내야 해요.",
-            "exampleZh": "需要克服困难。"
+            "exampleZh": "需要克服困难。",
+            "tips": [
+                { "label": "搭配", "text": "어려움을 이겨 내다" }
+            ]
         },
         {
             "ko": "설문 조사",
@@ -1048,7 +1197,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“问卷调查”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "설문 조사를 실시했어요.",
-            "exampleZh": "进行了问卷调查。"
+            "exampleZh": "进行了问卷调查。",
+            "tips": [
+                { "label": "搭配", "text": "설문 조사를 실시하다" }
+            ]
         },
         {
             "ko": "실시하다",
@@ -1068,7 +1220,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“上下级关系”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "상사와의 상하 관계가 어렵다고 해요.",
-            "exampleZh": "据说和上司的上下级关系很难。"
+            "exampleZh": "据说和上司的上下级关系很难。",
+            "tips": [
+                { "label": "搭配", "text": "상사와의 상하 관계" }
+            ]
         },
         {
             "ko": "성과",
@@ -1078,7 +1233,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기/배운 확인",
             "guide": "名词，意思是“成果、业绩”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "좋은 성과를 얻어야 해요.",
-            "exampleZh": "要取得好成果。"
+            "exampleZh": "要取得好成果。",
+            "tips": [
+                { "label": "搭配", "text": "좋은 성과를 얻다" }
+            ]
         },
         {
             "ko": "부담감",
@@ -1088,7 +1246,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기",
             "guide": "名词，意思是“负担感、压力感”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "성과에 대한 부담감이 있어요.",
-            "exampleZh": "有对成果的负担感。"
+            "exampleZh": "有对成果的负担感。",
+            "tips": [
+                { "label": "搭配", "text": "성과에 대한 부담감" }
+            ]
         },
         {
             "ko": "극복하다",
@@ -1108,7 +1269,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“缓解压力”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "휴식하면서 스트레스를 풀어요.",
-            "exampleZh": "通过休息缓解压力。"
+            "exampleZh": "通过休息缓解压力。",
+            "tips": [
+                { "label": "易错", "text": "받다=压力产生; 풀다=压力缓解" }
+            ]
         },
         {
             "ko": "재충전하다",
@@ -1118,7 +1282,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "읽기/배운 확인",
             "guide": "动词表达，意思是“重新充电、恢复精力”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "취미 생활을 하면서 재충전해요.",
-            "exampleZh": "通过兴趣生活恢复精力。"
+            "exampleZh": "通过兴趣生活恢复精力。",
+            "tips": [
+                { "label": "易错", "text": "쉬면서 에너지를 회복하는 말" }
+            ]
         },
         {
             "ko": "직장 생활 잘하다",
@@ -1158,7 +1325,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "쓰기",
             "guide": "固定表达，意思是“工作内容”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "업무 내용을 정확하게 파악해야 해요.",
-            "exampleZh": "要准确掌握工作内容。"
+            "exampleZh": "要准确掌握工作内容。",
+            "tips": [
+                { "label": "搭配", "text": "업무 내용을 정확하게 파악하다" }
+            ]
         },
         {
             "ko": "정확하다",
@@ -1178,7 +1348,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "쓰기/배운 확인",
             "guide": "名词，意思是“责任感”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "하는 일에 책임감이 있어야 해요.",
-            "exampleZh": "对自己做的事要有责任感。"
+            "exampleZh": "对自己做的事要有责任感。",
+            "tips": [
+                { "label": "搭配", "text": "책임감이 강하다 / 부족하다" }
+            ]
         },
         {
             "ko": "원만하다",
@@ -1188,7 +1361,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "쓰기/배운 확인",
             "guide": "形容词，意思是“圆满、融洽”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "대인 관계가 원만해야 해요.",
-            "exampleZh": "人际关系要融洽。"
+            "exampleZh": "人际关系要融洽。",
+            "tips": [
+                { "label": "搭配", "text": "대인 관계가 원만하다" }
+            ]
         },
         {
             "ko": "인정을 받다",
@@ -1198,7 +1374,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“得到认可”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "사회에서 인정을 받고 싶어 했어요.",
-            "exampleZh": "曾想在社会上得到认可。"
+            "exampleZh": "曾想在社会上得到认可。",
+            "tips": [
+                { "label": "搭配", "text": "사회에서 인정을 받다" }
+            ]
         },
         {
             "ko": "승진하다",
@@ -1208,7 +1387,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“升职”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "직장에서 승진하고 싶어 했어요.",
-            "exampleZh": "曾想在职场升职。"
+            "exampleZh": "曾想在职场升职。",
+            "tips": [
+                { "label": "搭配", "text": "직장에서 승진하다" }
+            ]
         },
         {
             "ko": "높은 연봉",
@@ -1248,7 +1430,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“工作与个人生活的平衡”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "워라밸은 일과 개인 생활의 균형을 의미합니다.",
-            "exampleZh": "工作生活平衡指工作和个人生活的平衡。"
+            "exampleZh": "工作生活平衡指工作和个人生活的平衡。",
+            "tips": [
+                { "label": "易错", "text": "워라밸의 풀어 쓴 말" }
+            ]
         },
         {
             "ko": "야근",
@@ -1268,7 +1453,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“有晚上的生活”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장인들은 저녁이 있는 삶을 원해요.",
-            "exampleZh": "职场人想要有晚上的生活。"
+            "exampleZh": "职场人想要有晚上的生活。",
+            "tips": [
+                { "label": "易错", "text": "저녁 시간이 보장되는 생활" }
+            ]
         },
         {
             "ko": "근로자",
@@ -1288,7 +1476,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“每周工作时间”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주당 근로 시간은 최대 52시간입니다.",
-            "exampleZh": "每周工作时间最多52小时。"
+            "exampleZh": "每周工作时间最多52小时。",
+            "tips": [
+                { "label": "搭配", "text": "주당 근로 시간을 줄이다" }
+            ]
         },
         {
             "ko": "최대 52시간",
@@ -1308,7 +1499,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“重视”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "워라밸을 중시하는 문화가 생겼어요.",
-            "exampleZh": "产生了重视工作生活平衡的文化。"
+            "exampleZh": "产生了重视工作生活平衡的文化。",
+            "tips": [
+                { "label": "搭配", "text": "N을/를 중시하다" }
+            ]
         },
         {
             "ko": "기존",
@@ -1318,7 +1512,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "修饰词，意思是“既有、原有”。通常放在名词前面，用来限定后面的对象。",
             "exampleKo": "기존의 행복 개념과 달라요.",
-            "exampleZh": "和既有的幸福概念不同。"
+            "exampleZh": "和既有的幸福概念不同。",
+            "tips": [
+                { "label": "易错", "text": "기존의 + 명사" }
+            ]
         },
         {
             "ko": "개념",
@@ -1338,7 +1535,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“小确幸、小而确定的幸福”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "소확행이라는 말도 만들어 냈어요.",
-            "exampleZh": "也创造出了“小确幸”这个词。"
+            "exampleZh": "也创造出了“小确幸”这个词。",
+            "tips": [
+                { "label": "易错", "text": "작지만 확실한 행복의 줄임말" }
+            ]
         },
         {
             "ko": "작지만 확실한 행복",
@@ -1358,7 +1558,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "배운 어휘 확인",
             "guide": "动词表达，意思是“疲惫、厌倦”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "직장 생활에 지치지 않으려면 쉬어야 해요.",
-            "exampleZh": "为了不被职场生活耗尽，需要休息。"
+            "exampleZh": "为了不被职场生活耗尽，需要休息。",
+            "tips": [
+                { "label": "搭配", "text": "직장 생활에 지치다" }
+            ]
         },
         {
             "ko": "허락을 받다",
@@ -1368,7 +1571,10 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "source": "배운 어휘 확인",
             "guide": "固定表达，意思是“获得许可”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "휴가 전에 허락을 받아야 해요.",
-            "exampleZh": "休假前需要获得许可。"
+            "exampleZh": "休假前需要获得许可。",
+            "tips": [
+                { "label": "搭配", "text": "상사에게 허락을 받다" }
+            ]
         }
     ],
     "dialogues": [

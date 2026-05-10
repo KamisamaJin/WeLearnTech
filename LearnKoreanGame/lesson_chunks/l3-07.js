@@ -169,7 +169,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "활동 목표",
             "guide": "固定表达，意思是“观后感、感想”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공연 감상 소감을 말해 보세요.",
-            "exampleZh": "说说演出观后感。"
+            "exampleZh": "说说演出观后感。",
+            "tips": [
+                { "label": "搭配", "text": "공연 감상 소감을 말하다" }
+            ]
         },
         {
             "ko": "감상평",
@@ -179,7 +182,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "활동 목표",
             "guide": "名词，意思是“观后评价”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "뮤지컬 감상평을 썼어요.",
-            "exampleZh": "写了音乐剧观后评价。"
+            "exampleZh": "写了音乐剧观后评价。",
+            "tips": [
+                { "label": "易错", "text": "감상평은 글로 쓰는 평가에 자주 씀" }
+            ]
         },
         {
             "ko": "공연 정보",
@@ -189,7 +195,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문화 제목",
             "guide": "固定表达，意思是“演出信息”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "인터넷에서 공연 정보를 찾았어요.",
-            "exampleZh": "在网上找了演出信息。"
+            "exampleZh": "在网上找了演出信息。",
+            "tips": [
+                { "label": "搭配", "text": "공연 정보를 검색하다" }
+            ]
         },
         {
             "ko": "보러 가다",
@@ -199,7 +208,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "도입 질문",
             "guide": "动词表达，意思是“去看”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "시간이 있을 때 뮤지컬을 보러 가고 싶어요.",
-            "exampleZh": "有时间时想去看音乐剧。"
+            "exampleZh": "有时间时想去看音乐剧。",
+            "tips": [
+                { "label": "搭配", "text": "N을/를 보러 가다" }
+            ]
         },
         {
             "ko": "연극",
@@ -249,7 +261,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“街头演出”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주말에 길거리 공연을 봤어요.",
-            "exampleZh": "周末看了街头演出。"
+            "exampleZh": "周末看了街头演出。",
+            "tips": [
+                { "label": "搭配", "text": "길거리에서 공연하다 / 버스킹하다" }
+            ]
         },
         {
             "ko": "미술 전시회",
@@ -309,7 +324,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“谈话讲座、讲演会”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "작가의 토크 콘서트에 참석했어요.",
-            "exampleZh": "参加了作家的谈话讲座。"
+            "exampleZh": "参加了作家的谈话讲座。",
+            "tips": [
+                { "label": "易错", "text": "노래 공연보다 강연·대화 중심" }
+            ]
         },
         {
             "ko": "강연",
@@ -329,7 +347,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“搜索演出信息”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "휴대 전화로 공연 정보를 검색했어요.",
-            "exampleZh": "用手机搜索了演出信息。"
+            "exampleZh": "用手机搜索了演出信息。",
+            "tips": [
+                { "label": "搭配", "text": "인터넷/문화포털에서 검색하다" }
+            ]
         },
         {
             "ko": "표(티켓)",
@@ -339,7 +360,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "名词，意思是“票”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "표를 미리 사야 해요.",
-            "exampleZh": "要提前买票。"
+            "exampleZh": "要提前买票。",
+            "tips": [
+                { "label": "搭配", "text": "표를 예매하다/사다" },
+                { "label": "易错", "text": "표는 고유어, 티켓은 외래어" }
+            ]
         },
         {
             "ko": "예매하다",
@@ -349,7 +374,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "动词表达，意思是“预订”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "인터넷으로 표를 예매했어요.",
-            "exampleZh": "在网上预订了票。"
+            "exampleZh": "在网上预订了票。",
+            "tips": [
+                { "label": "搭配", "text": "공연 표를 예매하다" },
+                { "label": "易错", "text": "예매는 미리 사 두는 것" }
+            ]
         },
         {
             "ko": "수령하다",
@@ -359,7 +388,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "动词表达，意思是“领取”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "공연장 앞에서 표를 수령하세요.",
-            "exampleZh": "请在演出场前领取票。"
+            "exampleZh": "请在演出场前领取票。",
+            "tips": [
+                { "label": "搭配", "text": "표를 수령하다" },
+                { "label": "易错", "text": "받다보다 공식적인 말" }
+            ]
         },
         {
             "ko": "기대하다",
@@ -369,7 +402,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "动词表达，意思是“期待”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "내일 공연을 기대하고 있어요.",
-            "exampleZh": "期待明天的演出。"
+            "exampleZh": "期待明天的演出。",
+            "tips": [
+                { "label": "搭配", "text": "N을/를 기대하다" }
+            ]
         },
         {
             "ko": "기대되다",
@@ -379,7 +415,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "动词表达，意思是“令人期待”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "이번 공연이 정말 기대돼요.",
-            "exampleZh": "这次演出真令人期待。"
+            "exampleZh": "这次演出真令人期待。",
+            "tips": [
+                { "label": "易错", "text": "제가 기대해요 / 공연이 기대돼요" },
+                { "label": "变形", "text": "기대하다 → 기대되다" }
+            ]
         },
         {
             "ko": "감동적이다",
@@ -389,7 +429,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "形容词，意思是“令人感动”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "마지막 장면이 감동적이었어요.",
-            "exampleZh": "最后的场面令人感动。"
+            "exampleZh": "最后的场面令人感动。",
+            "tips": [
+                { "label": "易错", "text": "감동을 받다 / 감동적이다" }
+            ]
         },
         {
             "ko": "인상적이다",
@@ -399,7 +442,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "어휘",
             "guide": "形容词，意思是“印象深刻”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "배우의 표정이 인상적이었어요.",
-            "exampleZh": "演员的表情印象深刻。"
+            "exampleZh": "演员的表情印象深刻。",
+            "tips": [
+                { "label": "搭配", "text": "가장 인상적인 장면" }
+            ]
         },
         {
             "ko": "안내 방송",
@@ -409,7 +455,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 대화",
             "guide": "名词，意思是“广播通知”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공연 전에 안내 방송이 나왔어요.",
-            "exampleZh": "演出前播放了广播通知。"
+            "exampleZh": "演出前播放了广播通知。",
+            "tips": [
+                { "label": "搭配", "text": "안내 방송이 나오다" }
+            ]
         },
         {
             "ko": "곧",
@@ -429,7 +478,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 대화",
             "guide": "名词，意思是“手机”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공연 중에는 휴대 전화를 꺼 주세요.",
-            "exampleZh": "演出中请关掉手机。"
+            "exampleZh": "演出中请关掉手机。",
+            "tips": [
+                { "label": "搭配", "text": "휴대 전화 전원을 끄다" }
+            ]
         },
         {
             "ko": "전원",
@@ -439,7 +491,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 대화",
             "guide": "名词，意思是“电源”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "휴대 전화의 전원을 꺼 주세요.",
-            "exampleZh": "请关掉手机电源。"
+            "exampleZh": "请关掉手机电源。",
+            "tips": [
+                { "label": "搭配", "text": "전원을 켜다/끄다" }
+            ]
         },
         {
             "ko": "끄다",
@@ -449,7 +504,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 대화",
             "guide": "动词表达，意思是“关掉”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "공연 전에 휴대 전화를 꺼요.",
-            "exampleZh": "演出前关掉手机。"
+            "exampleZh": "演出前关掉手机。",
+            "tips": [
+                { "label": "变形", "text": "끄다 → 꺼요, 껐어요" }
+            ]
         },
         {
             "ko": "꺼 주다",
@@ -459,7 +517,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 대화",
             "guide": "固定表达，意思是“请关掉”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "전원을 모두 꺼 주세요.",
-            "exampleZh": "请把电源都关掉。"
+            "exampleZh": "请把电源都关掉。",
+            "tips": [
+                { "label": "搭配", "text": "전원을 꺼 주시기 바랍니다" }
+            ]
         },
         {
             "ko": "관객",
@@ -469,7 +530,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "名词，意思是“观众”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "직원이 관객들에게 입장하라고 했어요.",
-            "exampleZh": "工作人员让观众入场。"
+            "exampleZh": "工作人员让观众入场。",
+            "tips": [
+                { "label": "易错", "text": "공연을 보는 사람은 관객" }
+            ]
         },
         {
             "ko": "공연장",
@@ -479,7 +543,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "名词，意思是“演出场馆”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공연장에 일찍 도착했어요.",
-            "exampleZh": "早早到达了演出场馆。"
+            "exampleZh": "早早到达了演出场馆。",
+            "tips": [
+                { "label": "搭配", "text": "공연장에 입장하다" }
+            ]
         },
         {
             "ko": "입장하다",
@@ -489,7 +556,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "动词表达，意思是“入场”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "곧 공연장에 입장합니다.",
-            "exampleZh": "马上入场。"
+            "exampleZh": "马上入场。",
+            "tips": [
+                { "label": "搭配", "text": "공연장에 입장하다" }
+            ]
         },
         {
             "ko": "입장하라고 하다",
@@ -499,7 +569,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법",
             "guide": "语法型表达，意思是“让入场”。不要逐词硬译，要按整句语气理解。",
             "exampleKo": "직원이 지금 입장하라고 했어요.",
-            "exampleZh": "工作人员说现在入场。"
+            "exampleZh": "工作人员说现在入场。",
+            "tips": [
+                { "label": "搭配", "text": "V-(으)라고 하다" }
+            ]
         },
         {
             "ko": "좋아하냐고 하다",
@@ -509,7 +582,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법",
             "guide": "语法型表达，意思是“问喜不喜欢”。不要逐词硬译，要按整句语气理解。",
             "exampleKo": "친구가 케이팝을 좋아하냐고 했어요.",
-            "exampleZh": "朋友问我喜不喜欢K-pop。"
+            "exampleZh": "朋友问我喜不喜欢K-pop。",
+            "tips": [
+                { "label": "搭配", "text": "A/V-냐고 하다" },
+                { "label": "易错", "text": "좋아하다 → 좋아하냐고" }
+            ]
         },
         {
             "ko": "몇 시에 시작하다",
@@ -519,7 +596,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "연습",
             "guide": "固定表达，意思是“几点开始”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공연이 몇 시에 시작하냐고 했어요.",
-            "exampleZh": "他问演出几点开始。"
+            "exampleZh": "他问演出几点开始。",
+            "tips": [
+                { "label": "搭配", "text": "몇 시에 시작해요?" }
+            ]
         },
         {
             "ko": "택배",
@@ -559,7 +639,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "말하기",
             "guide": "动词表达，意思是“经常联系”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "부모님이 자주 연락하라고 하세요.",
-            "exampleZh": "父母让我经常联系。"
+            "exampleZh": "父母让我经常联系。",
+            "tips": [
+                { "label": "搭配", "text": "N에게/한테 연락하다" }
+            ]
         },
         {
             "ko": "무료 공연",
@@ -569,7 +652,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "固定表达，意思是“免费演出”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "무료 공연도 좋은 게 많아요.",
-            "exampleZh": "免费演出也有很多好的。"
+            "exampleZh": "免费演出也有很多好的。",
+            "tips": [
+                { "label": "易错", "text": "무료=free, 유료=paid" }
+            ]
         },
         {
             "ko": "유료 공연",
@@ -579,7 +665,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "固定表达，意思是“收费演出”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "무료 공연도 유료 공연만큼 좋았어요.",
-            "exampleZh": "免费演出也像收费演出一样好。"
+            "exampleZh": "免费演出也像收费演出一样好。",
+            "tips": [
+                { "label": "易错", "text": "유료=paid, 무료=free" }
+            ]
         },
         {
             "ko": "찾아보다",
@@ -589,7 +678,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "动词表达，意思是“查找、找找看”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "잘 찾아보면 할인 공연이 있어요.",
-            "exampleZh": "好好找的话会有优惠演出。"
+            "exampleZh": "好好找的话会有优惠演出。",
+            "tips": [
+                { "label": "易错", "text": "정보를 찾아보다=查查看" }
+            ]
         },
         {
             "ko": "고향 음식",
@@ -629,7 +721,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문법 예문",
             "guide": "名词，意思是“市内、市中心”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주말만큼 시내에 사람이 많지 않아요.",
-            "exampleZh": "不像周末那样市中心人多。"
+            "exampleZh": "不像周末那样市中心人多。",
+            "tips": [
+                { "label": "易错", "text": "도시 안보다 중심가 느낌" }
+            ]
         },
         {
             "ko": "가수",
@@ -669,7 +764,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "연습",
             "guide": "形容词，意思是“流利”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "미호 씨는 한국 사람만큼 한국어가 유창해요.",
-            "exampleZh": "美穗的韩语像韩国人一样流利。"
+            "exampleZh": "美穗的韩语像韩国人一样流利。",
+            "tips": [
+                { "label": "搭配", "text": "한국어를 유창하게 하다" }
+            ]
         },
         {
             "ko": "프로 작가",
@@ -709,7 +807,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "말하기",
             "guide": "名词，意思是“演技、表演”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "주인공의 연기가 좋았어요.",
-            "exampleZh": "主演的演技很好。"
+            "exampleZh": "主演的演技很好。",
+            "tips": [
+                { "label": "易错", "text": "공연 문맥에서는 演技" }
+            ]
         },
         {
             "ko": "장면",
@@ -719,7 +820,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "名词，意思是“场面、镜头”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가장 인상적인 장면은 마지막 장면이에요.",
-            "exampleZh": "最印象深刻的场面是最后一幕。"
+            "exampleZh": "最印象深刻的场面是最后一幕。",
+            "tips": [
+                { "label": "搭配", "text": "인상적인/감동적인 장면" }
+            ]
         },
         {
             "ko": "표정",
@@ -729,7 +833,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "名词，意思是“表情”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "배우들의 표정까지 다 볼 수 있었어요.",
-            "exampleZh": "连演员们的表情都能看清。"
+            "exampleZh": "连演员们的表情都能看清。",
+            "tips": [
+                { "label": "搭配", "text": "표정이 밝다/어둡다" }
+            ]
         },
         {
             "ko": "헤어지다",
@@ -739,7 +846,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "动词表达，意思是“分开、离别”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "주인공이 헤어진 가족을 찾았어요.",
-            "exampleZh": "主角找到了分离的家人。"
+            "exampleZh": "主角找到了分离的家人。",
+            "tips": [
+                { "label": "搭配", "text": "가족/친구와 헤어지다" }
+            ]
         },
         {
             "ko": "추천하다",
@@ -749,7 +859,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "动词表达，意思是“推荐”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구가 이 연극을 추천했어요.",
-            "exampleZh": "朋友推荐了这部话剧。"
+            "exampleZh": "朋友推荐了这部话剧。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 N을 추천하다" }
+            ]
         },
         {
             "ko": "입장권",
@@ -769,7 +882,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“一直又笑又哭”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "저는 계속 웃다가 울다가 했어요.",
-            "exampleZh": "我一直又笑又哭。"
+            "exampleZh": "我一直又笑又哭。",
+            "tips": [
+                { "label": "搭配", "text": "V-다가 V-다가 하다" }
+            ]
         },
         {
             "ko": "기억에 남다",
@@ -779,7 +895,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“留在记忆中”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "마지막 장면이 기억에 남아요.",
-            "exampleZh": "最后一幕留在记忆里。"
+            "exampleZh": "最后一幕留在记忆里。",
+            "tips": [
+                { "label": "搭配", "text": "가장 기억에 남다" }
+            ]
         },
         {
             "ko": "무대 가까이",
@@ -789,7 +908,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“舞台附近”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "무대 가까이에서 연극을 봤어요.",
-            "exampleZh": "在靠近舞台的地方看了话剧。"
+            "exampleZh": "在靠近舞台的地方看了话剧。",
+            "tips": [
+                { "label": "搭配", "text": "무대 가까이에서 보다" }
+            ]
         },
         {
             "ko": "앞좌석",
@@ -829,7 +951,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“令人感动的场面”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가장 감동적인 장면을 말해 보세요.",
-            "exampleZh": "说说最令人感动的场面。"
+            "exampleZh": "说说最令人感动的场面。",
+            "tips": [
+                { "label": "搭配", "text": "감동적인 장면이 기억에 남다" }
+            ]
         },
         {
             "ko": "초대하다",
@@ -849,7 +974,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "듣기",
             "guide": "动词表达，意思是“受到邀请”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구에게 콘서트에 초대받았어요.",
-            "exampleZh": "受朋友邀请去演唱会。"
+            "exampleZh": "受朋友邀请去演唱会。",
+            "tips": [
+                { "label": "易错", "text": "초대하다=邀请；초대받다=受邀" },
+                { "label": "变形", "text": "초대하다 → 초대받다" }
+            ]
         },
         {
             "ko": "앉아 있다",
@@ -859,7 +988,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "발음",
             "guide": "固定表达，意思是“坐着”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "앞좌석에 앉아 있어요.",
-            "exampleZh": "坐在前排。"
+            "exampleZh": "坐在前排。",
+            "tips": [
+                { "label": "易错", "text": "앉다=坐下；앉아 있다=坐着" }
+            ]
         },
         {
             "ko": "초대권",
@@ -869,7 +1001,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“邀请券、赠票”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "뮤지컬 초대권을 받았어요.",
-            "exampleZh": "收到了音乐剧赠票。"
+            "exampleZh": "收到了音乐剧赠票。",
+            "tips": [
+                { "label": "易错", "text": "초대받아 받은 표" }
+            ]
         },
         {
             "ko": "공연일시",
@@ -879,7 +1014,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“演出日期时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공연일시는 10월 31일 오후 3시입니다.",
-            "exampleZh": "演出时间是10月31日下午3点。"
+            "exampleZh": "演出时间是10月31日下午3点。",
+            "tips": [
+                { "label": "易错", "text": "포스터에서는 붙여 쓰는 경우 많음" }
+            ]
         },
         {
             "ko": "공연장소",
@@ -939,7 +1077,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“退款”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "티켓 환불은 하루 전까지 가능합니다.",
-            "exampleZh": "票券退款截至前一天可以办理。"
+            "exampleZh": "票券退款截至前一天可以办理。",
+            "tips": [
+                { "label": "搭配", "text": "환불이 안 되다 / 환불받다" }
+            ]
         },
         {
             "ko": "당일",
@@ -949,7 +1090,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“当天”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "당일에는 변경이나 취소가 안 됩니다.",
-            "exampleZh": "当天不能变更或取消。"
+            "exampleZh": "当天不能变更或取消。",
+            "tips": [
+                { "label": "搭配", "text": "공연 당일 / 당일 취소" }
+            ]
         },
         {
             "ko": "변경",
@@ -969,7 +1113,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“取消”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "공연 당일 취소는 어렵습니다.",
-            "exampleZh": "演出当天取消比较困难。"
+            "exampleZh": "演出当天取消比较困难。",
+            "tips": [
+                { "label": "搭配", "text": "예매를 취소하다" }
+            ]
         },
         {
             "ko": "할인 티켓",
@@ -1019,7 +1166,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“参观费、门票费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오후 4시 이후에는 관람료가 할인됩니다.",
-            "exampleZh": "下午4点以后参观费打折。"
+            "exampleZh": "下午4点以后参观费打折。",
+            "tips": [
+                { "label": "易错", "text": "관람료는 전시·공연 비용" }
+            ]
         },
         {
             "ko": "문의",
@@ -1029,7 +1179,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“咨询”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "문의는 박물관으로 하세요.",
-            "exampleZh": "请向博物馆咨询。"
+            "exampleZh": "请向博物馆咨询。",
+            "tips": [
+                { "label": "搭配", "text": "문의 전화 / 문의하다" }
+            ]
         },
         {
             "ko": "거리 공연",
@@ -1089,7 +1242,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“有文化日”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "문화가 있는 날에 공연을 보러 가요.",
-            "exampleZh": "在“有文化日”去看演出。"
+            "exampleZh": "在“有文化日”去看演出。",
+            "tips": [
+                { "label": "易错", "text": "정책 이름이라 통째로 기억" }
+            ]
         },
         {
             "ko": "매월 마지막 주 수요일",
@@ -1099,7 +1255,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“每月最后一周星期三”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "문화가 있는 날은 매월 마지막 주 수요일이에요.",
-            "exampleZh": "“有文化日”是每月最后一周星期三。"
+            "exampleZh": "“有文化日”是每月最后一周星期三。",
+            "tips": [
+                { "label": "易错", "text": "매주가 아니라 매월" }
+            ]
         },
         {
             "ko": "보통 때보다",
@@ -1109,7 +1268,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“比平时”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "보통 때보다 싼 가격으로 볼 수 있어요.",
-            "exampleZh": "可以用比平时便宜的价格观看。"
+            "exampleZh": "可以用比平时便宜的价格观看。",
+            "tips": [
+                { "label": "搭配", "text": "보통 때보다 싸다/많다" }
+            ]
         },
         {
             "ko": "싼 가격",
@@ -1129,7 +1291,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“没有负担”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "부담 없이 전시회를 볼 수 있어요.",
-            "exampleZh": "可以毫无负担地看展览。"
+            "exampleZh": "可以毫无负担地看展览。",
+            "tips": [
+                { "label": "搭配", "text": "부담 없이 즐기다" }
+            ]
         },
         {
             "ko": "할인을 받다",
@@ -1139,7 +1304,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“获得折扣”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "재즈 콘서트 티켓을 50% 할인받았어요.",
-            "exampleZh": "爵士音乐会票打了五折。"
+            "exampleZh": "爵士音乐会票打了五折。",
+            "tips": [
+                { "label": "搭配", "text": "50% 할인을 받다" }
+            ]
         },
         {
             "ko": "좋은 기회",
@@ -1179,7 +1347,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“一次也没去过”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "박물관에는 아직 한 번도 간 적이 없어요.",
-            "exampleZh": "还一次也没去过博物馆。"
+            "exampleZh": "还一次也没去过博物馆。",
+            "tips": [
+                { "label": "搭配", "text": "한 번도 V-(으)ㄴ 적이 없다" }
+            ]
         },
         {
             "ko": "경험이 쌓이다",
@@ -1189,7 +1360,11 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“经验积累”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "문화생활 경험이 쌓이고 있어요.",
-            "exampleZh": "文化生活经验正在积累。"
+            "exampleZh": "文化生活经验正在积累。",
+            "tips": [
+                { "label": "搭配", "text": "경험이 쌓이다" },
+                { "label": "变形", "text": "쌓다 → 쌓이다" }
+            ]
         },
         {
             "ko": "익숙해지다",
@@ -1199,7 +1374,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“变得熟悉、适应”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "한국 생활에 점점 익숙해지고 있어요.",
-            "exampleZh": "逐渐适应韩国生活。"
+            "exampleZh": "逐渐适应韩国生活。",
+            "tips": [
+                { "label": "搭配", "text": "N에 익숙해지다" }
+            ]
         },
         {
             "ko": "관련 기관",
@@ -1219,7 +1397,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문화",
             "guide": "动词表达，意思是“直接咨询”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "공연 시간은 극장에 직접 문의하세요.",
-            "exampleZh": "演出时间请直接咨询剧场。"
+            "exampleZh": "演出时间请直接咨询剧场。",
+            "tips": [
+                { "label": "搭配", "text": "기관에 직접 문의하다" }
+            ]
         },
         {
             "ko": "홈페이지",
@@ -1239,7 +1420,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문화",
             "guide": "固定表达，意思是“集中放在一起”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공연 정보를 한 데 모아 놓은 사이트가 있어요.",
-            "exampleZh": "有把演出信息集中在一起的网站。"
+            "exampleZh": "有把演出信息集中在一起的网站。",
+            "tips": [
+                { "label": "搭配", "text": "한 데 모아 놓은 정보" }
+            ]
         },
         {
             "ko": "포털 사이트",
@@ -1279,7 +1463,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문화",
             "guide": "固定表达，意思是“演出评论、观后感”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공연 후기를 읽고 선택했어요.",
-            "exampleZh": "读了演出评论后做了选择。"
+            "exampleZh": "读了演出评论后做了选择。",
+            "tips": [
+                { "label": "搭配", "text": "공연 후기를 남기다/읽다" }
+            ]
         },
         {
             "ko": "선택하다",
@@ -1299,7 +1486,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문화",
             "guide": "固定表达，意思是“有参考价值”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공연 후기가 선택할 때 참고가 돼요.",
-            "exampleZh": "演出评论在选择时有参考价值。"
+            "exampleZh": "演出评论在选择时有参考价值。",
+            "tips": [
+                { "label": "搭配", "text": "선택할 때 참고가 되다" }
+            ]
         },
         {
             "ko": "문화 관련 영상",
@@ -1339,7 +1529,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "문화",
             "guide": "固定表达，意思是“会员注册”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "회원 가입을 하면 더 편리하게 이용할 수 있어요.",
-            "exampleZh": "注册会员后可以更方便地使用。"
+            "exampleZh": "注册会员后可以更方便地使用。",
+            "tips": [
+                { "label": "易错", "text": "가입하다 是动词，회원 가입 是名词" }
+            ]
         },
         {
             "ko": "참석하다",
@@ -1349,7 +1542,10 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "배운 어휘 확인",
             "guide": "动词表达，意思是“参加、出席”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "토크 콘서트에 참석했어요.",
-            "exampleZh": "参加了谈话讲座。"
+            "exampleZh": "参加了谈话讲座。",
+            "tips": [
+                { "label": "易错", "text": "회의/행사에 참석하다; 공연은 보다" }
+            ]
         }
     ],
     "grammar": [

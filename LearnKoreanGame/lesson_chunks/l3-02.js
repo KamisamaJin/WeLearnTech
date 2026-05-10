@@ -95,6 +95,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 24,
             "source": "단원 제목",
             "guide": "名词，意思是“性格”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "성격=性格；성적=成绩" }
+            ],
             "exampleKo": "여러분의 성격은 어때요?",
             "exampleZh": "你的性格怎么样？"
         },
@@ -115,6 +118,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 26,
             "source": "어휘",
             "guide": "名词，意思是“内向”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "성격이 내성적이다 / 내성적인 아이" }
+            ],
             "exampleKo": "아이가 성격이 많이 내성적이에요.",
             "exampleZh": "孩子性格很内向。"
         },
@@ -125,6 +131,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 26,
             "source": "어휘",
             "guide": "名词，意思是“积极、主动”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "적극적으로 참여하다" },
+                { "label": "易错", "text": "主动参与，不只是心情积极" }
+            ],
             "exampleKo": "손님들과 적극적으로 대화해야 해요.",
             "exampleZh": "需要主动和客人交谈。"
         },
@@ -145,6 +155,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 26,
             "source": "어휘",
             "guide": "名词，意思是“细致、认真”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "꼼꼼하게 확인하다" },
+                { "label": "变形", "text": "꼼꼼하다 → 꼼꼼해지다" }
+            ],
             "exampleKo": "요즘 많이 꼼꼼해졌네요.",
             "exampleZh": "最近变得很细致了呢。"
         },
@@ -175,6 +189,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 26,
             "source": "어휘",
             "guide": "名词，意思是“冷淡、不善表达”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "말투가 무뚝뚝하다" },
+                { "label": "易错", "text": "不一定生气，常指不善表达" }
+            ],
             "exampleKo": "결혼하기 전에는 무뚝뚝했어요.",
             "exampleZh": "结婚前比较不善表达。"
         },
@@ -185,6 +203,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 26,
             "source": "어휘",
             "guide": "名词，意思是“性格悠闲、不急”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "느리다=慢；느긋하다=不急" }
+            ],
             "exampleKo": "고향에 있을 때는 성격이 느긋했어요.",
             "exampleZh": "在家乡时性格比较慢悠悠。"
         },
@@ -195,6 +216,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 26,
             "source": "어휘",
             "guide": "名词，意思是“性格急”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "성격이 급하다 / 마음이 급하다" },
+                { "label": "易错", "text": "일이 급하다=事情急" }
+            ],
             "exampleKo": "저는 성격이 급해서 실수를 자주 해요.",
             "exampleZh": "我性子急，所以经常出错。"
         },
@@ -205,6 +230,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 27,
             "source": "문법 연습",
             "guide": "名词，意思是“活泼、活跃”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "활발한 성격" },
+                { "label": "变形", "text": "활발하다 → 활발해지다" }
+            ],
             "exampleKo": "태권도를 배우고 많이 활발해졌어요.",
             "exampleZh": "学了跆拳道以后变活泼了很多。"
         },
@@ -215,6 +244,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 27,
             "source": "문법 연습",
             "guide": "名词，意思是“舒服、方便”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "마음이 편하다" },
+                { "label": "易错", "text": "편리하다=便利；편하다=舒服轻松" }
+            ],
             "exampleKo": "일이 익숙해져서 편해졌어요.",
             "exampleZh": "工作熟悉以后变轻松了。"
         },
@@ -235,6 +268,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 27,
             "source": "문법 연습",
             "guide": "名词，意思是“变得熟悉、适应”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "한국 생활에 익숙해지다" },
+                { "label": "易错", "text": "일에 익숙해지다：常接 에" }
+            ],
             "exampleKo": "이제 한국 생활에 많이 익숙해졌어요.",
             "exampleZh": "现在已经很适应韩国生活了。"
         },
@@ -275,6 +312,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 27,
             "source": "문법 연습",
             "guide": "名词，意思是“发音好”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "발음이 좋아지다" },
+                { "label": "易错", "text": "발음 的收音读作 ㅁ" }
+            ],
             "exampleKo": "한국어를 많이 듣고 발음이 좋아졌어요.",
             "exampleZh": "多听韩语以后发音变好了。"
         },
@@ -285,6 +326,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 27,
             "source": "문법 연습",
             "guide": "名词，意思是“入职”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "회사에 입사하다" },
+                { "label": "易错", "text": "입사하다=入职；출근하다=去上班" }
+            ],
             "exampleKo": "입사하기 전에는 회사 일이 낯설었어요.",
             "exampleZh": "入职前公司工作很陌生。"
         },
@@ -295,6 +340,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 27,
             "source": "문법 연습",
             "guide": "名词，意思是“结婚”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "누구와 결혼하다" }
+            ],
             "exampleKo": "결혼한 후에 성격이 달라졌어요.",
             "exampleZh": "结婚后性格变了。"
         },
@@ -305,6 +353,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“代替、作为交换”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "V-는 대신에 / N 대신에" },
+                { "label": "易错", "text": "可表代替，也可表补偿" }
+            ],
             "exampleKo": "일요일에 일하는 대신에 월요일에는 쉬어요.",
             "exampleZh": "星期天上班，作为交换星期一休息。"
         },
@@ -315,6 +367,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“花很长时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "시간이 걸리다" },
+                { "label": "易错", "text": "不说 시간을 걸리다" }
+            ],
             "exampleKo": "숙제하는 시간이 오래 걸려요.",
             "exampleZh": "做作业花很长时间。"
         },
@@ -335,6 +391,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“拜访、看望”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "부모님을 찾아뵙다" },
+                { "label": "易错", "text": "찾아가다/보다 的敬语" }
+            ],
             "exampleKo": "자주 찾아뵙지 못하는 대신 전화를 자주 드려요.",
             "exampleZh": "虽然不能常去看望，但经常打电话。"
         },
@@ -345,6 +405,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“给您打电话”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "부모님께 전화를 드리다" },
+                { "label": "易错", "text": "给长辈：께 + 드리다" }
+            ],
             "exampleKo": "부모님께 전화를 자주 드려요.",
             "exampleZh": "经常给父母打电话。"
         },
@@ -355,6 +419,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“积累经验”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "다양한 경험을 쌓다" }
+            ],
             "exampleKo": "일이 힘든 대신 다양한 경험을 쌓을 수 있어요.",
             "exampleZh": "工作虽然辛苦，但能积累各种经验。"
         },
@@ -365,6 +432,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“上班”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "출근하다=去上班；퇴근하다=下班" }
+            ],
             "exampleKo": "일요일에도 출근해요?",
             "exampleZh": "星期天也上班吗？"
         },
@@ -385,6 +455,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“工作、值班”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "주말에 근무하다 / 야간 근무" },
+                { "label": "易错", "text": "출근=去上班；근무=工作/值班" }
+            ],
             "exampleKo": "주말에 근무하는 대신 평일에 쉬어요.",
             "exampleZh": "周末工作，作为交换平日休息。"
         },
@@ -405,6 +479,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 28,
             "source": "문법 연습",
             "guide": "名词，意思是“点外卖吃”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "배달 음식을 시키다" },
+                { "label": "易错", "text": "시키다 在这里是“点餐”" }
+            ],
             "exampleKo": "음식을 시켜 먹는 대신 집에서 만들지 않아요.",
             "exampleZh": "点外卖吃，所以不在家做。"
         },
@@ -435,6 +513,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기",
             "guide": "名词，意思是“烦恼、苦恼”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "고민이 있다 / 고민 때문에" },
+                { "label": "易错", "text": "고민=纠结烦恼；걱정=担心" }
+            ],
             "exampleKo": "우리 아이 성격 때문에 고민이에요.",
             "exampleZh": "因为我孩子的性格很苦恼。"
         },
@@ -445,6 +527,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기",
             "guide": "名词，意思是“像、长得像/性格像”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "누구를 닮다" },
+                { "label": "易错", "text": "长相、性格像都可用" }
+            ],
             "exampleKo": "애가 저를 닮아 성격이 내성적이에요.",
             "exampleZh": "孩子像我，性格比较内向。"
         },
@@ -465,6 +551,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기",
             "guide": "名词，意思是“合得来、融入”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "친구들과 어울리다 / 옷이 어울리다" },
+                { "label": "易错", "text": "可指合群，也可指适合" }
+            ],
             "exampleKo": "학교 친구들과 아직 못 어울리는 것 같아요.",
             "exampleZh": "好像还不能和学校朋友融入到一起。"
         },
@@ -475,6 +565,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기",
             "guide": "名词，意思是“担心”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "걱정이 되다" },
+                { "label": "易错", "text": "걱정하다=担心；걱정되다=令人担心" }
+            ],
             "exampleKo": "그래요? 걱정되시겠어요.",
             "exampleZh": "是吗？您一定很担心吧。"
         },
@@ -505,6 +599,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기",
             "guide": "名词，意思是“让……做、安排”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "可表“让做”，也可表“点餐”" }
+            ],
             "exampleKo": "아이에게 동아리나 봉사 활동을 시켜 보세요.",
             "exampleZh": "试着让孩子参加社团或志愿服务吧。"
         },
@@ -515,6 +612,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기",
             "guide": "名词，意思是“变开朗、变明朗”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "성격이 밝아지다" },
+                { "label": "变形", "text": "밝다 → 밝아지다" }
+            ],
             "exampleKo": "성격이 외향적이고 밝아진 것 같아요.",
             "exampleZh": "性格好像变外向、开朗了。"
         },
@@ -535,6 +636,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기/배운 어휘 확인",
             "guide": "名词，意思是“制定计划”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "계획을 세우다" }
+            ],
             "exampleKo": "계획표를 세워서 일을 해요.",
             "exampleZh": "制定计划表后做事。"
         },
@@ -545,6 +649,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 29,
             "source": "말하기/배운 어휘 확인",
             "guide": "名词，意思是“站出来、出头”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "사람들 앞에 나서다" },
+                { "label": "易错", "text": "主动出面，不是单纯走出去" }
+            ],
             "exampleKo": "사람들 앞에 나서는 것을 어려워해요.",
             "exampleZh": "觉得在人前站出来很难。"
         },
@@ -575,6 +683,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 30,
             "source": "듣기/발음",
             "guide": "名词，意思是“参加、参与”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "수업에 참여하다" },
+                { "label": "易错", "text": "参与某事常接 에" }
+            ],
             "exampleKo": "수업에 적극적으로 참여해요.",
             "exampleZh": "积极参与课堂。"
         },
@@ -585,6 +697,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 30,
             "source": "듣기/발음",
             "guide": "名词，意思是“羡慕”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "친구를 부러워하다" },
+                { "label": "易错", "text": "羡慕对象常接 을/를" }
+            ],
             "exampleKo": "친구들이 애나를 부러워해요.",
             "exampleZh": "朋友们羡慕安娜。"
         },
@@ -595,6 +711,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“开放、开明”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "개방적=开明；외향적=外向" }
+            ],
             "exampleKo": "교사는 개방적이면 좋을 것 같아요.",
             "exampleZh": "教师开明一点会比较好。"
         },
@@ -615,6 +734,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“慎重”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "신중하게 생각하다" },
+                { "label": "易错", "text": "偏“谨慎”，不是胆小" }
+            ],
             "exampleKo": "의사는 신중하면 좋을 것 같아요.",
             "exampleZh": "医生慎重一点会比较好。"
         },
@@ -625,6 +748,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“敏感”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "냄새에 예민하다" },
+                { "label": "易错", "text": "也可带“易烦/神经质”" }
+            ],
             "exampleKo": "예민한 성격이라서 작은 변화도 잘 알아요.",
             "exampleZh": "性格敏感，所以小变化也能察觉。"
         },
@@ -635,6 +762,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동/배운 어휘 확인",
             "guide": "名词，意思是“很有幽默感”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "유머 감각이 있다 / 뛰어나다" },
+                { "label": "易错", "text": "更自然：유머 감각이 있다" }
+            ],
             "exampleKo": "저희 가족은 유머 감각이 많아요.",
             "exampleZh": "我们家人都很有幽默感。"
         },
@@ -645,6 +776,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“体贴、细心照顾”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "照顾人的细心，不是 꼼꼼하다" }
+            ],
             "exampleKo": "사회 복지사는 자상하면 좋을 것 같아요.",
             "exampleZh": "社会福利师体贴一点会比较好。"
         },
@@ -655,6 +789,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“重感情、人情味足”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "정이 많은 사람" },
+                { "label": "易错", "text": "정=人与人之间的情分" }
+            ],
             "exampleKo": "그분은 정이 많아서 사람들을 잘 챙겨요.",
             "exampleZh": "那位很重感情，所以很会照顾人。"
         },
@@ -665,6 +803,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“责任感强”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "책임감은 강하다/있다 更自然" }
+            ],
             "exampleKo": "공무원은 책임감이 강하면 좋을 것 같아요.",
             "exampleZh": "公务员责任感强会比较好。"
         },
@@ -715,6 +856,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기 전 활동",
             "guide": "名词，意思是“口译员”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "통역=口译；번역=笔译" }
+            ],
             "exampleKo": "통역사는 언어뿐만 아니라 문화도 알아야 해요.",
             "exampleZh": "口译员不仅要懂语言，也要懂文化。"
         },
@@ -775,6 +919,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 31,
             "source": "읽기",
             "guide": "名词，意思是“对话、交谈”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "손님과 대화하다" },
+                { "label": "易错", "text": "和某人交谈：와/과 대화하다" }
+            ],
             "exampleKo": "손님들과 적극적으로 대화해야 해요.",
             "exampleZh": "需要主动和客人交谈。"
         },
@@ -815,6 +963,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기",
             "guide": "名词，意思是“获准休假、请到假”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "휴가를 받다 / 휴가를 내다" },
+                { "label": "易错", "text": "받다=获准；내다=申请" }
+            ],
             "exampleKo": "지난주에 휴가를 받아서 고향에 갔습니다.",
             "exampleZh": "上周请到假回了家乡。"
         },
@@ -835,6 +987,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기/배운 어휘 확인",
             "guide": "名词，意思是“吵闹”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "집안이 시끄럽다" },
+                { "label": "变形", "text": "시끄럽다 → 시끄러워요" }
+            ],
             "exampleKo": "집안이 시끄러운 편인데 이날은 조용했습니다.",
             "exampleZh": "家里平时比较吵闹，但那天很安静。"
         },
@@ -845,6 +1001,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기/배운 어휘 확인",
             "guide": "名词，意思是“争吵、争执”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "친구와 다투다" },
+                { "label": "易错", "text": "싸우다 更口语、更强烈" }
+            ],
             "exampleKo": "부모님이 결혼기념일에 크게 다투셨어요.",
             "exampleZh": "父母在结婚纪念日大吵了一架。"
         },
@@ -865,6 +1025,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기/배운 어휘 확인",
             "guide": "名词，意思是“同好会、兴趣社团”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "동호회에 가입하다" },
+                { "label": "易错", "text": "동아리=学校社团；동호회=兴趣同好" }
+            ],
             "exampleKo": "아버지는 동호회 모임에 가셨어요.",
             "exampleZh": "父亲去了同好会聚会。"
         },
@@ -885,6 +1049,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기",
             "guide": "名词，意思是“深夜、很晚”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "밤늦게 들어오다" },
+                { "label": "易错", "text": "늦게=晚；밤늦게=深夜很晚" }
+            ],
             "exampleKo": "밤늦게 들어오신 겁니다.",
             "exampleZh": "是很晚才回来的。"
         },
@@ -925,6 +1093,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기",
             "guide": "名词，意思是“餐桌”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "식탁=餐桌；식당=餐厅/食堂" }
+            ],
             "exampleKo": "가족이 모두 식탁 앞에 앉았습니다.",
             "exampleZh": "家人都坐到了餐桌前。"
         },
@@ -935,6 +1106,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기/배운 어휘 확인",
             "guide": "名词，意思是“变得不同、改变”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "성격이 달라지다" },
+                { "label": "变形", "text": "다르다 → 달라지다" }
+            ],
             "exampleKo": "이제부터 달라질게.",
             "exampleZh": "从现在开始我会改变。"
         },
@@ -945,6 +1120,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 32,
             "source": "읽기/배운 어휘 확인",
             "guide": "名词，意思是“斜眼瞪、白眼”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "不是流眼泪，是斜眼瞪" }
+            ],
             "exampleKo": "어머니께서는 눈을 흘기면서 좋아하셨어요.",
             "exampleZh": "母亲一边瞪了一眼，一边高兴了起来。"
         },
@@ -975,6 +1153,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 34,
             "source": "문화와 정보",
             "guide": "名词，意思是“选择职业”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "진로를 선택하다" }
+            ],
             "exampleKo": "성격을 잘 알면 직업을 선택할 때 도움이 됩니다.",
             "exampleZh": "了解自己的性格有助于选择职业。"
         },
@@ -995,6 +1176,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 34,
             "source": "문화와 정보",
             "guide": "名词，意思是“性格测试”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "성격 검사를 하다 / 검사를 받다" },
+                { "label": "易错", "text": "검사 可表示测试、检查" }
+            ],
             "exampleKo": "성격 검사를 통해 맞는 직업을 찾아볼 수 있어요.",
             "exampleZh": "可以通过性格测试找适合的职业。"
         },
@@ -1075,6 +1260,9 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 34,
             "source": "문화와 정보",
             "guide": "名词，意思是“坦率、直率”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "직설적이다 比 솔직하다 更冲" }
+            ],
             "exampleKo": "현실형은 솔직하지만 고집이 센 편입니다.",
             "exampleZh": "现实型坦率，但比较固执。"
         },
@@ -1085,6 +1273,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 34,
             "source": "문화와 정보",
             "guide": "名词，意思是“固执、主见强”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "고집이 세다 / 고집을 부리다" },
+                { "label": "易错", "text": "세다 可表程度“强”" }
+            ],
             "exampleKo": "그 사람은 조금 고집이 센 편이에요.",
             "exampleZh": "那个人有点固执。"
         },
@@ -1145,6 +1337,10 @@ window.lessonGuideL3LessonChunks["l3-02"] = {
             "page": 35,
             "source": "배운 어휘 확인",
             "guide": "名词，意思是“才艺展示”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "장기 자랑을 하다 / 장기 자랑 대회" },
+                { "label": "易错", "text": "장기=拿手才艺，不是器官/将棋" }
+            ],
             "exampleKo": "장기 자랑에서 노래를 불렀어요.",
             "exampleZh": "在才艺展示中唱了歌。"
         }

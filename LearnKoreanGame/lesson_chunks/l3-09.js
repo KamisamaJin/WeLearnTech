@@ -162,6 +162,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 118,
             "source": "활동 목표",
             "guide": "固定表达，意思是“电话咨询”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "전화 문의를 드리다" }
+            ],
             "exampleKo": "서비스 센터에 전화 문의를 했어요.",
             "exampleZh": "给服务中心打电话咨询了。"
         },
@@ -182,6 +185,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 118,
             "source": "문화 제목",
             "guide": "固定表达，意思是“电子产品保修期”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "보증 기간을 확인하다 / 지나다" }
+            ],
             "exampleKo": "전자 제품 보증 기간을 확인하세요.",
             "exampleZh": "请确认电子产品保修期。"
         },
@@ -192,6 +198,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 119,
             "source": "도입",
             "guide": "固定表达，意思是“出现问题”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "생기다=出现；있다=已有" }
+            ],
             "exampleKo": "무슨 문제가 생긴 것 같아요?",
             "exampleZh": "好像出了什么问题？"
         },
@@ -212,6 +221,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“下水口堵了”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "막히다=被堵，막다=堵住" }
+            ],
             "exampleKo": "하수구가 막혀서 물이 안 내려가요.",
             "exampleZh": "下水口堵了，水下不去。"
         },
@@ -242,6 +254,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“不出水”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "물/화면/소리가 안 나오다" }
+            ],
             "exampleKo": "세면대에서 물이 안 나와요.",
             "exampleZh": "洗手台不出水。"
         },
@@ -252,6 +267,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“漏水”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "새다=漏；세다=强/数数" }
+            ],
             "exampleKo": "천장에서 물이 새요.",
             "exampleZh": "天花板漏水。"
         },
@@ -272,6 +290,10 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“灯坏了/灯灭了”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "전등이 나가다 / 갈다" },
+                { "label": "易错", "text": "灯坏了自然说나가다" }
+            ],
             "exampleKo": "거실 전등이 나갔어요.",
             "exampleZh": "客厅灯坏了。"
         },
@@ -282,6 +304,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“门锁上/打不开”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "잠그다=锁上；잠기다=锁着" }
+            ],
             "exampleKo": "문이 잠겨서 못 들어가요.",
             "exampleZh": "门锁住了进不去。"
         },
@@ -292,6 +317,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“燃气点不着”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "가스불이 들어오다 / 안 들어오다" }
+            ],
             "exampleKo": "가스불이 안 들어와요.",
             "exampleZh": "燃气点不着。"
         },
@@ -302,6 +330,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“不能冷冻”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "功能不工作常说안 되다" }
+            ],
             "exampleKo": "냉장고 냉동이 안 돼요.",
             "exampleZh": "冰箱不能冷冻。"
         },
@@ -312,6 +343,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“Wi-Fi连不上”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "연결이 안 되다 / 끊기다" }
+            ],
             "exampleKo": "와이파이 연결이 안 돼요.",
             "exampleZh": "Wi-Fi连不上。"
         },
@@ -322,6 +356,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“屏幕碎了”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "액정이 깨지다 / 금이 가다" }
+            ],
             "exampleKo": "휴대 전화 액정이 깨졌어요.",
             "exampleZh": "手机屏幕碎了。"
         },
@@ -332,6 +369,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“无法启动”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "부팅이 안 되다" }
+            ],
             "exampleKo": "노트북 부팅이 안 돼요.",
             "exampleZh": "笔记本无法启动。"
         },
@@ -342,6 +382,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“电源打不开”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "켜다主动，켜지다状态/被动" }
+            ],
             "exampleKo": "어제부터 전원이 안 켜져요.",
             "exampleZh": "从昨天开始电源打不开。"
         },
@@ -352,6 +395,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘/배운 어휘 확인",
             "guide": "固定表达，意思是“出故障”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "전자 제품에 고장이 나다" }
+            ],
             "exampleKo": "전자 제품이 고장 났어요.",
             "exampleZh": "电子产品出故障了。"
         },
@@ -362,6 +408,10 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "动词表达，意思是“咨询”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "서비스 센터에 문의하다" },
+                { "label": "易错", "text": "比물어보다更正式" }
+            ],
             "exampleKo": "서비스 센터에 문의하세요.",
             "exampleZh": "请咨询服务中心。"
         },
@@ -372,6 +422,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“上门服务”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "출장 서비스를 신청하다" }
+            ],
             "exampleKo": "출장 서비스를 신청했어요.",
             "exampleZh": "申请了上门服务。"
         },
@@ -402,6 +455,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "动词表达，意思是“修、修好”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "고치다较口语，수리하다较正式" }
+            ],
             "exampleKo": "노트북을 고쳤어요.",
             "exampleZh": "把笔记本修好了。"
         },
@@ -422,6 +478,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“支付维修费”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "비용을 내다 / 지불하다" }
+            ],
             "exampleKo": "고객이 수리 비용을 내야 합니다.",
             "exampleZh": "顾客需要支付维修费。"
         },
@@ -432,6 +491,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 120,
             "source": "어휘",
             "guide": "固定表达，意思是“接受免费维修”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "무상 수리를 받을 수 있다" }
+            ],
             "exampleKo": "보증 기간이면 무상 수리를 받을 수 있어요.",
             "exampleZh": "在保修期内可以免费维修。"
         },
@@ -552,6 +614,10 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 121,
             "source": "문법 연습/배운 어휘 확인",
             "guide": "动词表达，意思是“弄掉、掉落”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "바닥에 떨어뜨리다" },
+                { "label": "易错", "text": "떨어지다=掉下；떨어뜨리다=弄掉" }
+            ],
             "exampleKo": "휴대 전화를 떨어뜨려서 액정이 깨졌어요.",
             "exampleZh": "手机掉了所以屏幕碎了。"
         },
@@ -582,6 +648,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 121,
             "source": "문법 연습",
             "guide": "形容词，意思是“慢”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
+            "tips": [
+                { "label": "搭配", "text": "속도가 느리다 / 빠르다" }
+            ],
             "exampleKo": "인터넷이 너무 느려요.",
             "exampleZh": "网速太慢。"
         },
@@ -612,6 +681,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 122,
             "source": "문법 예문",
             "guide": "固定表达，意思是“修理要多久”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "V-는 데 얼마나 걸리다" }
+            ],
             "exampleKo": "고치는 데 얼마나 걸리나요?",
             "exampleZh": "修理要多久？"
         },
@@ -642,6 +714,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 122,
             "source": "문법 대화",
             "guide": "动词表达，意思是“预约”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "예약을 하다 / 예약하고 가다" }
+            ],
             "exampleKo": "서비스 센터에 예약하고 가세요.",
             "exampleZh": "请预约后去服务中心。"
         },
@@ -652,6 +727,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 122,
             "source": "문법 연습/배운 어휘 확인",
             "guide": "动词表达，意思是“检查、检修”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "기계를 점검하다 / 점검을 받다" }
+            ],
             "exampleKo": "온도를 조절하고 점검해야 합니다.",
             "exampleZh": "需要调节温度并检查。"
         },
@@ -662,6 +740,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 122,
             "source": "문법 연습",
             "guide": "名词，意思是“上门费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "출장비≠수리비" }
+            ],
             "exampleKo": "수리 비용은 출장비만 나옵니다.",
             "exampleZh": "维修费用只产生上门费。"
         },
@@ -672,6 +753,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "말하기",
             "guide": "名词，意思是“顾客（敬称）”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "님是敬称，自己不用" }
+            ],
             "exampleKo": "네, 고객님. 어떤 문제가 있으세요?",
             "exampleZh": "好的，顾客，请问有什么问题？"
         },
@@ -682,6 +766,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "말하기",
             "guide": "固定表达，意思是“服务咨询”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "서비스 문의 좀 드리다" }
+            ],
             "exampleKo": "서비스 문의 좀 드리려고 하는데요.",
             "exampleZh": "我想咨询一下服务。"
         },
@@ -692,6 +779,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "말하기",
             "guide": "固定表达，意思是“能请您说明吗？”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "말씀은 말하다的尊敬表达" }
+            ],
             "exampleKo": "어떤 문제가 있는지 말씀해 주시겠어요?",
             "exampleZh": "能请您说明有什么问题吗？"
         },
@@ -712,6 +802,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "말하기",
             "guide": "固定表达，意思是“从几天前开始”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "며칠 전부터 계속" }
+            ],
             "exampleKo": "며칠 전부터 속도가 느려졌어요.",
             "exampleZh": "从几天前开始速度变慢了。"
         },
@@ -732,6 +825,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "말하기",
             "guide": "固定表达，意思是“接受检查”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "서비스 센터에서 점검을 받다" }
+            ],
             "exampleKo": "서비스 센터에서 점검을 받아 보세요.",
             "exampleZh": "请在服务中心接受检查。"
         },
@@ -742,6 +838,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "말하기",
             "guide": "固定表达，意思是“拜托预约”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "드리다是주다的谦让表达" }
+            ],
             "exampleKo": "그럼 예약 좀 부탁드려요.",
             "exampleZh": "那麻烦帮我预约一下。"
         },
@@ -772,6 +871,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 123,
             "source": "문법 연습/배운 어휘 확인",
             "guide": "名词，意思是“冷气、冷却力”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "냉기가 약하다 / 나오다" }
+            ],
             "exampleKo": "냉기가 약합니다.",
             "exampleZh": "冷气不足。"
         },
@@ -792,6 +894,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 124,
             "source": "듣기",
             "guide": "固定表达，意思是“进水”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "휴대 전화에 물이 들어가다" }
+            ],
             "exampleKo": "휴대 전화에 물이 들어갔어요.",
             "exampleZh": "手机进水了。"
         },
@@ -802,6 +907,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 124,
             "source": "듣기/배운 어휘 확인",
             "guide": "固定表达，意思是“加入保险”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "보험에 가입하다 / 가입되어 있다" }
+            ],
             "exampleKo": "휴대 전화 보험에 가입했어요.",
             "exampleZh": "加入了手机保险。"
         },
@@ -812,6 +920,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 124,
             "source": "듣기/배운 어휘 확인",
             "guide": "动词表达，意思是“除外”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "제외하다主动，제외되다被排除" }
+            ],
             "exampleKo": "보험 대상에서 제외될 수 있어요.",
             "exampleZh": "可能被排除在保险对象之外。"
         },
@@ -852,6 +963,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 124,
             "source": "발음",
             "guide": "固定表达，意思是“无理要求”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "무리하다=勉强/过分" }
+            ],
             "exampleKo": "무리한 요구는 갈등을 만들 수 있어요.",
             "exampleZh": "无理要求可能造成冲突。"
         },
@@ -872,6 +986,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전/배운 어휘 확인",
             "guide": "动词表达，意思是“拔出”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "플러그는 뽑다，앱은 종료하다" }
+            ],
             "exampleKo": "플러그를 뽑았다 다시 꽂아 보세요.",
             "exampleZh": "拔掉插头再插上试试。"
         },
@@ -882,6 +999,10 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전/배운 어휘 확인",
             "guide": "动词表达，意思是“插入”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "플러그를 꽂다" },
+                { "label": "变形", "text": "꽂아요 / 꽂았어요" }
+            ],
             "exampleKo": "플러그를 다시 꽂으세요.",
             "exampleZh": "请重新插上插头。"
         },
@@ -902,6 +1023,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전",
             "guide": "动词表达，意思是“锁上、关紧”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "밸브/문을 잠그다" }
+            ],
             "exampleKo": "가스 밸브를 잠그세요.",
             "exampleZh": "请关紧燃气阀门。"
         },
@@ -922,6 +1046,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전",
             "guide": "动词表达，意思是“调低温度”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "낮다=低，낮추다=调低" }
+            ],
             "exampleKo": "냉동이 안 되면 온도를 낮춰 보세요.",
             "exampleZh": "不能冷冻的话试着调低温度。"
         },
@@ -932,6 +1059,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전",
             "guide": "动词表达，意思是“调高温度”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "높다=高，높이다=调高" }
+            ],
             "exampleKo": "방이 추우면 온도를 높이세요.",
             "exampleZh": "房间冷的话请调高温度。"
         },
@@ -942,6 +1072,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전/배운 어휘 확인",
             "guide": "动词表达，意思是“用皮搋子疏通、抽压”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "막힌 변기에 펌프질하다" }
+            ],
             "exampleKo": "변기가 막히면 펌프질을 해 보세요.",
             "exampleZh": "马桶堵了的话用皮搋子试试。"
         },
@@ -972,6 +1105,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전",
             "guide": "固定表达，意思是“画面不显示”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "화면/소리가 안 나오다" }
+            ],
             "exampleKo": "노트북 화면이 안 나와요.",
             "exampleZh": "笔记本屏幕不显示。"
         },
@@ -982,6 +1118,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 125,
             "source": "읽기 전",
             "guide": "动词表达，意思是“关闭应用”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "종료하다比끄다更正式" }
+            ],
             "exampleKo": "앱을 종료하거나 데이터를 삭제해 보세요.",
             "exampleZh": "关闭应用或删除数据试试。"
         },
@@ -1012,6 +1151,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기",
             "guide": "固定表达，意思是“网络论坛/留言板”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "게시판에 질문을 올리다" }
+            ],
             "exampleKo": "인터넷 게시판에 질문을 올렸어요.",
             "exampleZh": "在网络论坛上发了问题。"
         },
@@ -1042,6 +1184,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기",
             "guide": "固定表达，意思是“一周三四次”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "서너=三四，不是十四" }
+            ],
             "exampleKo": "일주일에 서너 번 이상 막혀요.",
             "exampleZh": "一周堵三四次以上。"
         },
@@ -1052,6 +1197,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기/배운 어휘 확인",
             "guide": "动词表达，意思是“疏通、打通”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "변기를 뚫다=疏通；구멍을 뚫다=打洞" }
+            ],
             "exampleKo": "펌프질을 해서 변기를 뚫었어요.",
             "exampleZh": "用皮搋子把马桶疏通了。"
         },
@@ -1062,6 +1210,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기",
             "guide": "固定表达，意思是“只是一时有效”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "뿐이다前面常接名词或그때" }
+            ],
             "exampleKo": "세제를 써도 그때뿐이에요.",
             "exampleZh": "用了清洁剂也只是当时有效。"
         },
@@ -1102,6 +1253,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기/배운 어휘 확인",
             "guide": "名词，意思是“异物”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "이물질이 들어가다 / 끼다" }
+            ],
             "exampleKo": "변기 안에 이물질이 들어갔어요.",
             "exampleZh": "马桶里进了异物。"
         },
@@ -1112,6 +1266,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기",
             "guide": "固定表达，意思是“无法解决”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "해결하다主动，해결이 되다自然" }
+            ],
             "exampleKo": "세제로는 해결이 안 됩니다.",
             "exampleZh": "用清洁剂无法解决。"
         },
@@ -1122,6 +1279,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 126,
             "source": "읽기",
             "guide": "动词表达，意思是“联系”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "집주인에게 연락하다" }
+            ],
             "exampleKo": "전문가에게 연락하세요.",
             "exampleZh": "请联系专家。"
         },
@@ -1142,6 +1302,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 127,
             "source": "쓰기",
             "guide": "固定表达，意思是“管理办公室”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "관리 사무실에 연락하다" }
+            ],
             "exampleKo": "관리 사무실에 연락하세요.",
             "exampleZh": "请联系管理办公室。"
         },
@@ -1152,6 +1315,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 127,
             "source": "쓰기",
             "guide": "动词表达，意思是“请求”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "搭配", "text": "수리를 요청하다" }
+            ],
             "exampleKo": "집수리를 요청하는 글을 써요.",
             "exampleZh": "写请求房屋维修的文字。"
         },
@@ -1172,6 +1338,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "名词，意思是“保修证、保证书”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "搭配", "text": "보증서를 받다 / 보관하다" }
+            ],
             "exampleKo": "전자 제품을 사면 보증서를 받습니다.",
             "exampleZh": "买电子产品会收到保修证。"
         },
@@ -1192,6 +1361,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "固定表达，意思是“购买日期”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "구입 일자를 기준으로 하다" }
+            ],
             "exampleKo": "구입 일자는 영수증으로 확인합니다.",
             "exampleZh": "购买日期用收据确认。"
         },
@@ -1212,6 +1384,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보/배운 어휘 확인",
             "guide": "固定表达，意思是“保修期”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "보증 기간이 지나다 / 남다" }
+            ],
             "exampleKo": "보증 기간은 제품에 따라 다릅니다.",
             "exampleZh": "保修期因产品而异。"
         },
@@ -1222,6 +1397,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "名词，意思是“制造商”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
+            "tips": [
+                { "label": "易错", "text": "제조사=制造商，판매자=销售者" }
+            ],
             "exampleKo": "제조사가 무료 수리를 약속합니다.",
             "exampleZh": "制造商承诺免费维修。"
         },
@@ -1242,6 +1420,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "固定表达，意思是“免费维修”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "易错", "text": "무료 수리=무상 수리" }
+            ],
             "exampleKo": "보증 기간에는 무료 수리가 가능합니다.",
             "exampleZh": "保修期内可以免费维修。"
         },
@@ -1252,6 +1433,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "固定表达，意思是“以……为准”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "N을 기준으로 하다" }
+            ],
             "exampleKo": "보증 기간은 구입 일자를 기준으로 합니다.",
             "exampleZh": "保修期以购买日期为准。"
         },
@@ -1302,6 +1486,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "固定表达，意思是“注意事项”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "주의 사항을 지키다" }
+            ],
             "exampleKo": "주의 사항을 지키지 않으면 비용을 내야 합니다.",
             "exampleZh": "不遵守注意事项可能要付费。"
         },
@@ -1312,6 +1499,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "固定表达，意思是“顾客的失误”。建议按整块记忆，写作和口语里可以直接套用。",
+            "tips": [
+                { "label": "搭配", "text": "고객의 실수로 고장이 나다" }
+            ],
             "exampleKo": "고객의 실수로 고장이 나면 비용을 지불해야 해요.",
             "exampleZh": "因顾客失误导致故障时要支付费用。"
         },
@@ -1322,6 +1512,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 128,
             "source": "문화와 정보",
             "guide": "动词表达，意思是“支付”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "내다较口语，지불하다较正式" }
+            ],
             "exampleKo": "수리 비용을 지불해야 합니다.",
             "exampleZh": "需要支付维修费。"
         },
@@ -1382,6 +1575,9 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 129,
             "source": "배운 어휘 확인",
             "guide": "动词表达，意思是“获得退款/返还”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
+            "tips": [
+                { "label": "易错", "text": "환불받다=退货退款；환급받다=返还费用" }
+            ],
             "exampleKo": "수리 비용 일부를 환급받았어요.",
             "exampleZh": "获得了部分维修费返还。"
         },

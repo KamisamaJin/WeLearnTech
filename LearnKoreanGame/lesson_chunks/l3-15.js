@@ -171,7 +171,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘 주제",
             "guide": "名词，意思是“矛盾、冲突”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "가족 간의 갈등이 있어요.",
-            "exampleZh": "家庭之间有矛盾。"
+            "exampleZh": "家庭之间有矛盾。",
+            "tips": [
+                { "label": "搭配", "text": "N 간의 갈등" }
+            ]
         },
         {
             "ko": "친구나 사람들과 가까워지기 어렵다",
@@ -181,7 +184,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“难以和朋友或他人亲近”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "저는 사람들과 가까워지기 어려워요.",
-            "exampleZh": "我很难和别人亲近。"
+            "exampleZh": "我很难和别人亲近。",
+            "tips": [
+                { "label": "变形", "text": "가깝다→가까워지다" }
+            ]
         },
         {
             "ko": "동료들과 성격이 안 맞다",
@@ -191,7 +197,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“和同事性格不合”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "동료들과 성격이 안 맞아서 힘들어요.",
-            "exampleZh": "因为和同事性格不合很辛苦。"
+            "exampleZh": "因为和同事性格不合很辛苦。",
+            "tips": [
+                { "label": "搭配", "text": "N와/과 성격이 안 맞다" }
+            ]
         },
         {
             "ko": "고부간의 갈등이 있다",
@@ -201,7 +210,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“婆媳之间有矛盾”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고부간의 갈등 때문에 고민이에요.",
-            "exampleZh": "因为婆媳矛盾而烦恼。"
+            "exampleZh": "因为婆媳矛盾而烦恼。",
+            "tips": [
+                { "label": "易错", "text": "고부간=婆媳；부부간=夫妻间" }
+            ]
         },
         {
             "ko": "부부 싸움을 자주 하다",
@@ -211,7 +223,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“夫妻经常吵架”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "요즘 부부 싸움을 자주 해요.",
-            "exampleZh": "最近夫妻经常吵架。"
+            "exampleZh": "最近夫妻经常吵架。",
+            "tips": [
+                { "label": "搭配", "text": "부부 싸움이 잦다" }
+            ]
         },
         {
             "ko": "한국어 실력이 제자리걸음이다",
@@ -221,7 +236,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“韩语水平停滞不前”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국어 실력이 제자리걸음인 것 같아요.",
-            "exampleZh": "感觉韩语水平停滞不前。"
+            "exampleZh": "感觉韩语水平停滞不前。",
+            "tips": [
+                { "label": "搭配", "text": "실력이 제자리걸음이다" }
+            ]
         },
         {
             "ko": "모임에 참여하기 두렵다",
@@ -241,7 +259,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“难以兼顾工作和育儿”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "직장과 육아를 병행하기 힘듭니다.",
-            "exampleZh": "很难兼顾工作和育儿。"
+            "exampleZh": "很难兼顾工作和育儿。",
+            "tips": [
+                { "label": "搭配", "text": "A와 B를 병행하다" }
+            ]
         },
         {
             "ko": "아이의 모국어 상실이 두렵다",
@@ -261,7 +282,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“前途不明朗”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "졸업 후 진로가 불투명해요.",
-            "exampleZh": "毕业后的方向不明朗。"
+            "exampleZh": "毕业后的方向不明朗。",
+            "tips": [
+                { "label": "搭配", "text": "진로가 불투명하다/뚜렷하다" }
+            ]
         },
         {
             "ko": "퇴직과 이직을 되풀이하고 있다",
@@ -271,7 +295,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“反复离职和换工作”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "퇴직과 이직을 되풀이하고 있어요.",
-            "exampleZh": "一直反复离职和换工作。"
+            "exampleZh": "一直反复离职和换工作。",
+            "tips": [
+                { "label": "变形", "text": "되풀이하다→되풀이하고 있다" }
+            ]
         },
         {
             "ko": "이유 없이 자주 우울하다",
@@ -301,7 +328,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“收入不稳定”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "수입이 일정하지 않아서 걱정이에요.",
-            "exampleZh": "因为收入不稳定而担心。"
+            "exampleZh": "因为收入不稳定而担心。",
+            "tips": [
+                { "label": "易错", "text": "수입=收入；수출=出口" }
+            ]
         },
         {
             "ko": "재테크 및 돈 관리가 어렵다",
@@ -321,7 +351,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민",
             "guide": "固定表达，意思是“脑子很乱”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고민 때문에 머리가 복잡해요.",
-            "exampleZh": "因为烦恼脑子很乱。"
+            "exampleZh": "因为烦恼脑子很乱。",
+            "tips": [
+                { "label": "易错", "text": "想法太多、理不清时用" }
+            ]
         },
         {
             "ko": "신경이 쓰이다",
@@ -331,7 +364,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민",
             "guide": "固定表达，意思是“在意、操心”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "시험 결과가 신경 쓰여요.",
-            "exampleZh": "很在意考试结果。"
+            "exampleZh": "很在意考试结果。",
+            "tips": [
+                { "label": "易错", "text": "신경이 쓰이다 更像“被牵挂”" }
+            ]
         },
         {
             "ko": "속이 타다",
@@ -341,7 +377,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민",
             "guide": "固定表达，意思是“心急如焚”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "연락이 안 돼서 속이 타요.",
-            "exampleZh": "联系不上所以很焦急。"
+            "exampleZh": "联系不上所以很焦急。",
+            "tips": [
+                { "label": "易错", "text": "不是胃痛，是焦急" }
+            ]
         },
         {
             "ko": "골치가 아프다",
@@ -351,7 +390,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민",
             "guide": "固定表达，意思是“头疼、伤脑筋”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "돈 문제 때문에 골치가 아파요.",
-            "exampleZh": "因为钱的问题很头疼。"
+            "exampleZh": "因为钱的问题很头疼。",
+            "tips": [
+                { "label": "易错", "text": "问题棘手时用，不是普通头痛" }
+            ]
         },
         {
             "ko": "눈앞이 캄캄하다",
@@ -361,7 +403,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민",
             "guide": "固定表达，意思是“眼前一黑、不知所措”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "갑자기 해고되어 눈앞이 캄캄했어요.",
-            "exampleZh": "突然被解雇，感觉不知所措。"
+            "exampleZh": "突然被解雇，感觉不知所措。",
+            "tips": [
+                { "label": "易错", "text": "前路看不见的 막막함" }
+            ]
         },
         {
             "ko": "발 뻗고 못 자다",
@@ -371,7 +416,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민",
             "guide": "固定表达，意思是“睡不踏实”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "걱정 때문에 발 뻗고 못 자요.",
-            "exampleZh": "因为担心睡不踏实。"
+            "exampleZh": "因为担心睡不踏实。",
+            "tips": [
+                { "label": "易错", "text": "担心到不能安心睡" }
+            ]
         },
         {
             "ko": "고민을 털어놓다",
@@ -381,7 +429,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 상담",
             "guide": "动词表达，意思是“倾诉烦恼”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구에게 고민을 털어놓았어요.",
-            "exampleZh": "向朋友倾诉了烦恼。"
+            "exampleZh": "向朋友倾诉了烦恼。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 고민을 털어놓다" }
+            ]
         },
         {
             "ko": "고민을 나누다",
@@ -391,7 +442,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 상담",
             "guide": "动词表达，意思是“分享烦恼”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "가족과 고민을 나눴어요.",
-            "exampleZh": "和家人分享了烦恼。"
+            "exampleZh": "和家人分享了烦恼。",
+            "tips": [
+                { "label": "易错", "text": "不是解决，是一起谈" }
+            ]
         },
         {
             "ko": "조언을 구하다",
@@ -401,7 +455,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 상담",
             "guide": "动词表达，意思是“寻求建议”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "선배에게 조언을 구했어요.",
-            "exampleZh": "向前辈寻求了建议。"
+            "exampleZh": "向前辈寻求了建议。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 조언을 구하다" }
+            ]
         },
         {
             "ko": "상담을 받다",
@@ -411,7 +468,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 상담",
             "guide": "动词表达，意思是“接受咨询”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "센터에서 상담을 받았어요.",
-            "exampleZh": "在中心接受了咨询。"
+            "exampleZh": "在中心接受了咨询。",
+            "tips": [
+                { "label": "搭配", "text": "센터에서 상담을 받다" }
+            ]
         },
         {
             "ko": "고민을 덜다",
@@ -421,7 +481,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민 해결",
             "guide": "动词表达，意思是“减轻烦恼”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "이야기하고 나니 고민을 덜었어요.",
-            "exampleZh": "说完以后烦恼减轻了。"
+            "exampleZh": "说完以后烦恼减轻了。",
+            "tips": [
+                { "label": "易错", "text": "덜다=减轻，不一定解决" }
+            ]
         },
         {
             "ko": "고민을 해결하다",
@@ -441,7 +504,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "어휘: 고민 해결",
             "guide": "动词表达，意思是“甩掉烦恼”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "여행을 하며 고민을 털어버렸어요.",
-            "exampleZh": "通过旅行甩掉了烦恼。"
+            "exampleZh": "通过旅行甩掉了烦恼。",
+            "tips": [
+                { "label": "易错", "text": "털어놓다=倾诉；털어버리다=甩开" }
+            ]
         },
         {
             "ko": "마침",
@@ -451,7 +517,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 예문",
             "guide": "副词，意思是“正好”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "마침 전화하려던 참이었어요.",
-            "exampleZh": "正好打算打电话。"
+            "exampleZh": "正好打算打电话。",
+            "tips": [
+                { "label": "搭配", "text": "마침 -으려던 참이다" }
+            ]
         },
         {
             "ko": "잘됐다",
@@ -461,7 +530,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 예문",
             "guide": "固定表达，意思是“太好了、正好”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "잘됐네요.",
-            "exampleZh": "正好/太好了。"
+            "exampleZh": "正好/太好了。",
+            "tips": [
+                { "label": "易错", "text": "일이 잘되다 也可指顺利" }
+            ]
         },
         {
             "ko": "사과하다",
@@ -471,7 +543,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 예문",
             "guide": "动词表达，意思是“道歉”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "친구에게 사과하려던 참이었어요.",
-            "exampleZh": "正打算向朋友道歉。"
+            "exampleZh": "正打算向朋友道歉。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 사과하다" }
+            ]
         },
         {
             "ko": "도움을 청하다",
@@ -481,7 +556,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 연습",
             "guide": "动词表达，意思是“请求帮助”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "다른 사람에게 도움을 청했어요.",
-            "exampleZh": "向别人请求了帮助。"
+            "exampleZh": "向别人请求了帮助。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 도움을 청하다" }
+            ]
         },
         {
             "ko": "건강을 위해서",
@@ -501,7 +579,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“月薪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "월급을 받자마자 부모님께 송금했어요.",
-            "exampleZh": "一拿到月薪就给父母汇款。"
+            "exampleZh": "一拿到月薪就给父母汇款。",
+            "tips": [
+                { "label": "易错", "text": "월급=月薪；일당=日薪" }
+            ]
         },
         {
             "ko": "송금하다",
@@ -511,7 +592,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 연습",
             "guide": "动词表达，意思是“汇款”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "고향에 돈을 송금했어요.",
-            "exampleZh": "给家乡汇了钱。"
+            "exampleZh": "给家乡汇了钱。",
+            "tips": [
+                { "label": "搭配", "text": "N에게/에 돈을 송금하다" }
+            ]
         },
         {
             "ko": "켜다",
@@ -521,7 +605,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 연습",
             "guide": "动词表达，意思是“打开”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "집에 돌아가자마자 텔레비전을 켜요.",
-            "exampleZh": "一回家就打开电视。"
+            "exampleZh": "一回家就打开电视。",
+            "tips": [
+                { "label": "易错", "text": "켜다=打开；끄다=关闭" }
+            ]
         },
         {
             "ko": "전해 드리다",
@@ -531,7 +618,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "문법 연습",
             "guide": "动词表达，意思是“转告、转交（敬语）”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "사장님께 전해 드릴게요.",
-            "exampleZh": "我会转告老板。"
+            "exampleZh": "我会转告老板。",
+            "tips": [
+                { "label": "易错", "text": "윗사람께는 드리다" }
+            ]
         },
         {
             "ko": "산책하다",
@@ -561,7 +651,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“完全不见进步”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "한국어 실력이 통 늘지 않아요.",
-            "exampleZh": "韩语水平完全不见进步。"
+            "exampleZh": "韩语水平完全不见进步。",
+            "tips": [
+                { "label": "搭配", "text": "실력이 통 늘지 않다" }
+            ]
         },
         {
             "ko": "외우다",
@@ -571,7 +664,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "말하기",
             "guide": "动词表达，意思是“背、记”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "단어를 외워도 금방 잊어버려요.",
-            "exampleZh": "背了单词也很快忘。"
+            "exampleZh": "背了单词也很快忘。",
+            "tips": [
+                { "label": "变形", "text": "외우다→외워요" }
+            ]
         },
         {
             "ko": "잊어버리다",
@@ -581,7 +677,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "말하기",
             "guide": "动词表达，意思是“忘掉”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "외우자마자 잊어버려요.",
-            "exampleZh": "一背完就忘。"
+            "exampleZh": "一背完就忘。",
+            "tips": [
+                { "label": "易错", "text": "잊다보다“忘掉”感更强" }
+            ]
         },
         {
             "ko": "꾸준히",
@@ -591,7 +690,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "말하기",
             "guide": "副词，意思是“坚持不懈地”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "꾸준히 공부하는 게 중요해요.",
-            "exampleZh": "坚持学习很重要。"
+            "exampleZh": "坚持学习很重要。",
+            "tips": [
+                { "label": "搭配", "text": "꾸준히 공부하다/운동하다" }
+            ]
         },
         {
             "ko": "예습하다",
@@ -631,7 +733,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "듣기",
             "guide": "名词，意思是“资格证”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "자격증이 있으세요?",
-            "exampleZh": "您有资格证吗？"
+            "exampleZh": "您有资格证吗？",
+            "tips": [
+                { "label": "易错", "text": "자격증=资格证；면허증=许可证" }
+            ]
         },
         {
             "ko": "운전면허증",
@@ -651,7 +756,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "듣기",
             "guide": "名词，意思是“工资、薪资”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여는 얼마나 받고 싶으세요?",
-            "exampleZh": "想拿多少工资？"
+            "exampleZh": "想拿多少工资？",
+            "tips": [
+                { "label": "易错", "text": "급여 比 월급 更正式" }
+            ]
         },
         {
             "ko": "이직하다",
@@ -661,7 +769,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "듣기",
             "guide": "动词表达，意思是“换工作”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "급여 때문에 이직하고 싶어요.",
-            "exampleZh": "因为工资想换工作。"
+            "exampleZh": "因为工资想换工作。",
+            "tips": [
+                { "label": "易错", "text": "이직하다≠이사하다" }
+            ]
         },
         {
             "ko": "일당",
@@ -671,7 +782,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "듣기",
             "guide": "名词，意思是“日薪”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "급여를 일당으로 받아요.",
-            "exampleZh": "按日薪拿工资。"
+            "exampleZh": "按日薪拿工资。",
+            "tips": [
+                { "label": "易错", "text": "일당=日薪；월급=月薪" }
+            ]
         },
         {
             "ko": "귀국하다",
@@ -721,7 +835,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "발음 예문",
             "guide": "动词表达，意思是“推迟、拖延”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "일을 미루지 마세요.",
-            "exampleZh": "不要拖延事情。"
+            "exampleZh": "不要拖延事情。",
+            "tips": [
+                { "label": "易错", "text": "미루다=拖延；연기하다=延期安排" }
+            ]
         },
         {
             "ko": "우울증",
@@ -761,7 +878,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "자가 진단",
             "guide": "副词，意思是“每件事上、凡事”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "매사에 흥미가 없어요.",
-            "exampleZh": "对任何事都没兴趣。"
+            "exampleZh": "对任何事都没兴趣。",
+            "tips": [
+                { "label": "搭配", "text": "매사에 흥미가 없다" }
+            ]
         },
         {
             "ko": "흥미",
@@ -791,7 +911,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "자가 진단",
             "guide": "固定表达，意思是“难以入睡”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "밤에 잠들기 어려워요.",
-            "exampleZh": "晚上难以入睡。"
+            "exampleZh": "晚上难以入睡。",
+            "tips": [
+                { "label": "易错", "text": "잠들다=入睡；자다=睡觉" }
+            ]
         },
         {
             "ko": "자주 깨다",
@@ -801,7 +924,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "자가 진단",
             "guide": "固定表达，意思是“经常醒来”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "밤에 자주 깨요.",
-            "exampleZh": "夜里经常醒。"
+            "exampleZh": "夜里经常醒。",
+            "tips": [
+                { "label": "易错", "text": "깨다=醒来；깨우다=叫醒" }
+            ]
         },
         {
             "ko": "기운이 없다",
@@ -821,7 +947,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "자가 진단",
             "guide": "固定表达，意思是“食欲减少”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "식욕이 줄었어요.",
-            "exampleZh": "食欲减少了。"
+            "exampleZh": "食欲减少了。",
+            "tips": [
+                { "label": "变形", "text": "줄다→줄어요/줄었다" }
+            ]
         },
         {
             "ko": "실패자",
@@ -841,7 +970,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "자가 진단",
             "guide": "动词表达，意思是“使失望”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "가족을 실망시켰다고 느껴요.",
-            "exampleZh": "觉得让家人失望了。"
+            "exampleZh": "觉得让家人失望了。",
+            "tips": [
+                { "label": "变形", "text": "실망하다→실망시키다" }
+            ]
         },
         {
             "ko": "집중하기 어렵다",
@@ -851,7 +983,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "자가 진단",
             "guide": "固定表达，意思是“难以集中”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공부에 집중하기 어려워요.",
-            "exampleZh": "难以集中学习。"
+            "exampleZh": "难以集中学习。",
+            "tips": [
+                { "label": "搭配", "text": "공부/일에 집중하다" }
+            ]
         },
         {
             "ko": "죽고 싶다는 생각을 하다",
@@ -871,7 +1006,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "副词，意思是“暂时地”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "일시적으로 기분이 우울해질 수 있어요.",
-            "exampleZh": "心情可能暂时变忧郁。"
+            "exampleZh": "心情可能暂时变忧郁。",
+            "tips": [
+                { "label": "易错", "text": "일시적=短暂；지속적=持续" }
+            ]
         },
         {
             "ko": "회복하다",
@@ -881,7 +1019,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“恢复”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "쉽게 회복하지 못했어요.",
-            "exampleZh": "没能轻易恢复。"
+            "exampleZh": "没能轻易恢复。",
+            "tips": [
+                { "label": "搭配", "text": "건강/기분이 회복되다" }
+            ]
         },
         {
             "ko": "의심하다",
@@ -891,7 +1032,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“怀疑”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "우울증이 아닌지 의심해 볼 수 있어요.",
-            "exampleZh": "可以怀疑是不是抑郁症。"
+            "exampleZh": "可以怀疑是不是抑郁症。",
+            "tips": [
+                { "label": "易错", "text": "의심하다 主动；의심되다 被动/疑似" }
+            ]
         },
         {
             "ko": "세계보건기구(WHO)",
@@ -911,7 +1055,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“被报告、据报告”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "흔한 병이라고 보고되었어요.",
-            "exampleZh": "据报告是常见疾病。"
+            "exampleZh": "据报告是常见疾病。",
+            "tips": [
+                { "label": "变形", "text": "보고하다→보고되다" }
+            ]
         },
         {
             "ko": "흔한 병",
@@ -941,7 +1088,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“补充说”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "중요하다고 덧붙였어요.",
-            "exampleZh": "补充说很重要。"
+            "exampleZh": "补充说很重要。",
+            "tips": [
+                { "label": "搭配", "text": "-다고 덧붙이다" }
+            ]
         },
         {
             "ko": "조기 진단",
@@ -951,7 +1101,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "名词，意思是“早期诊断”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "조기 진단과 치료가 중요해요.",
-            "exampleZh": "早期诊断和治疗很重要。"
+            "exampleZh": "早期诊断和治疗很重要。",
+            "tips": [
+                { "label": "搭配", "text": "조기 진단과 치료" }
+            ]
         },
         {
             "ko": "지역 정신 보건 기관",
@@ -991,7 +1144,10 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“维持关系和联系”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "가족과 연락을 유지하세요.",
-            "exampleZh": "请和家人保持联系。"
+            "exampleZh": "请和家人保持联系。",
+            "tips": [
+                { "label": "搭配", "text": "연락을 유지하다" }
+            ]
         },
         {
             "ko": "상담 신청서",

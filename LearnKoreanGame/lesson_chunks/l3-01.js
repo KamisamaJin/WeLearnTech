@@ -110,7 +110,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“没有共同话题/共鸣点”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "서로 공감대가 없어서 친해지기가 어려워요.",
-            "exampleZh": "因为彼此没有共同话题，所以很难熟起来。"
+            "exampleZh": "因为彼此没有共同话题，所以很难熟起来。",
+            "tips": [
+                { "label": "搭配", "text": "공감대가 있다 / 없다" }
+            ]
         },
         {
             "ko": "사이가 멀어지다",
@@ -120,7 +123,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“关系疏远”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "연락을 자주 못해서 사이가 멀어졌어요.",
-            "exampleZh": "因为不常联系，关系变疏远了。"
+            "exampleZh": "因为不常联系，关系变疏远了。",
+            "tips": [
+                { "label": "变形", "text": "멀다 -> 멀어지다" }
+            ]
         },
         {
             "ko": "연락이 끊기다",
@@ -130,7 +136,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“断了联系”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "고향 친구와 연락이 끊겼어요.",
-            "exampleZh": "和家乡朋友断了联系。"
+            "exampleZh": "和家乡朋友断了联系。",
+            "tips": [
+                { "label": "易错", "text": "끊다 是主动切断，끊기다 是被切断" }
+            ]
         },
         {
             "ko": "연락을 주고받다",
@@ -140,7 +149,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“互相联系”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동창들과 자주 연락을 주고받아요.",
-            "exampleZh": "经常和同学互相联系。"
+            "exampleZh": "经常和同学互相联系。",
+            "tips": [
+                { "label": "搭配", "text": "N와/과 연락을 주고받다" }
+            ]
         },
         {
             "ko": "선배를 대하다",
@@ -150,7 +162,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“对待前辈/和前辈相处”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "학교에서 선배를 대하기 어려워요.",
-            "exampleZh": "在学校里不知道怎么和前辈相处。"
+            "exampleZh": "在学校里不知道怎么和前辈相处。",
+            "tips": [
+                { "label": "搭配", "text": "사람을 어떻게 대하다" }
+            ]
         },
         {
             "ko": "후배가 나를 어려워하다",
@@ -160,7 +175,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“后辈觉得我不好接近”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "후배들이 저를 어려워하는 것 같아요.",
-            "exampleZh": "后辈们好像觉得我不好接近。"
+            "exampleZh": "后辈们好像觉得我不好接近。",
+            "tips": [
+                { "label": "易错", "text": "어려워하는 대상은 을/를" }
+            ]
         },
         {
             "ko": "상사의 지시",
@@ -180,7 +198,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“请求帮助”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동료에게 도움을 요청하기 어려워요.",
-            "exampleZh": "很难向同事请求帮助。"
+            "exampleZh": "很难向同事请求帮助。",
+            "tips": [
+                { "label": "搭配", "text": "N에게 도움을 요청하다" }
+            ]
         },
         {
             "ko": "의견을 솔직하게 말하다",
@@ -200,7 +221,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“彼此守礼貌”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "먼저 인사하고 서로 예의를 지키면 돼요.",
-            "exampleZh": "先打招呼并互相保持礼貌就可以。"
+            "exampleZh": "先打招呼并互相保持礼貌就可以。",
+            "tips": [
+                { "label": "搭配", "text": "예의를 지키다" }
+            ]
         },
         {
             "ko": "내성적이다",
@@ -210,7 +234,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“内向”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "성격이 내성적이고 해서 사람을 사귀기가 힘들어요.",
-            "exampleZh": "因为性格比较内向等原因，所以交朋友很难。"
+            "exampleZh": "因为性格比较内向等原因，所以交朋友很难。",
+            "tips": [
+                { "label": "搭配", "text": "내성적인 사람 / 성격" }
+            ]
         },
         {
             "ko": "선배",
@@ -240,7 +267,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "배운 어휘 확인",
             "guide": "名词，意思是“对待、面对”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국 사람을 어떻게 대해야 할지 모르겠어요.",
-            "exampleZh": "不知道该怎么和韩国人相处。"
+            "exampleZh": "不知道该怎么和韩国人相处。",
+            "tips": [
+                { "label": "搭配", "text": "사람을 대하다" },
+                { "label": "易错", "text": "대해 말하다 是“关于”" }
+            ]
         },
         {
             "ko": "상사",
@@ -270,7 +301,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "배운 어휘 확인",
             "guide": "名词，意思是“拒绝”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부탁을 거절하기가 어려워요.",
-            "exampleZh": "很难拒绝别人的请求。"
+            "exampleZh": "很难拒绝别人的请求。",
+            "tips": [
+                { "label": "搭配", "text": "부탁/요청을 거절하다" }
+            ]
         },
         {
             "ko": "요청",
@@ -320,7 +354,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "배운 어휘 확인",
             "guide": "名词，意思是“结交、交往”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "새로운 사람들을 사귀고 싶어요.",
-            "exampleZh": "想结识新朋友。"
+            "exampleZh": "想结识新朋友。",
+            "tips": [
+                { "label": "搭配", "text": "친구를 사귀다" },
+                { "label": "易错", "text": "恋爱也可用 사귀다" }
+            ]
         },
         {
             "ko": "부족하다",
@@ -350,7 +388,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“感兴趣、关心”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "서로에게 관심을 가지면 돼요.",
-            "exampleZh": "对彼此多一些关心就可以。"
+            "exampleZh": "对彼此多一些关心就可以。",
+            "tips": [
+                { "label": "搭配", "text": "N에 관심을 갖다" },
+                { "label": "变形", "text": "갖다 -> 가져요" }
+            ]
         },
         {
             "ko": "사이좋다",
@@ -360,7 +402,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“关系好、和睦”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부부가 사이좋게 지내요.",
-            "exampleZh": "夫妻关系很好。"
+            "exampleZh": "夫妻关系很好。",
+            "tips": [
+                { "label": "搭配", "text": "사이좋게 지내다" }
+            ]
         },
         {
             "ko": "위로",
@@ -380,7 +425,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“减少、降低”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "의견 차이를 줄이는 방법을 이야기해 보세요.",
-            "exampleZh": "请说说减少意见差异的方法。"
+            "exampleZh": "请说说减少意见差异的方法。",
+            "tips": [
+                { "label": "搭配", "text": "차이를 줄이다" },
+                { "label": "易错", "text": "줄다 是自动，줄이다 是使减少" }
+            ]
         },
         {
             "ko": "안부",
@@ -390,7 +439,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“近况、安否”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "친구에게 자주 안부를 물어요.",
-            "exampleZh": "经常问候朋友的近况。"
+            "exampleZh": "经常问候朋友的近况。",
+            "tips": [
+                { "label": "搭配", "text": "안부를 묻다" }
+            ]
         },
         {
             "ko": "문제를 풀다",
@@ -400,7 +452,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“解题、解决问题”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "토픽 시험 문제를 많이 풀어 보세요.",
-            "exampleZh": "请多做 TOPIK 考题。"
+            "exampleZh": "请多做 TOPIK 考题。",
+            "tips": [
+                { "label": "易错", "text": "考试题用 풀다，不用 하다" }
+            ]
         },
         {
             "ko": "외우다",
@@ -420,7 +475,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "말하기",
             "guide": "名词，意思是“适应”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "새 직장에 적응하려고 노력 중이에요.",
-            "exampleZh": "正在努力适应新工作。"
+            "exampleZh": "正在努力适应新工作。",
+            "tips": [
+                { "label": "搭配", "text": "N에 적응하다" }
+            ]
         },
         {
             "ko": "노력 중이다",
@@ -430,7 +488,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "말하기",
             "guide": "名词，意思是“正在努力”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "적응하려고 노력 중입니다.",
-            "exampleZh": "正在努力适应。"
+            "exampleZh": "正在努力适应。",
+            "tips": [
+                { "label": "搭配", "text": "V-려고 노력 중이다" }
+            ]
         },
         {
             "ko": "이야기를 나누다",
@@ -440,7 +501,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "듣기/발음",
             "guide": "名词，意思是“交谈、聊天”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "친구와 솔직한 이야기를 나눠 보세요.",
-            "exampleZh": "试着和朋友坦诚地聊一聊。"
+            "exampleZh": "试着和朋友坦诚地聊一聊。",
+            "tips": [
+                { "label": "搭配", "text": "N와/과 이야기를 나누다" }
+            ]
         },
         {
             "ko": "동호회",
@@ -450,7 +514,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“同好会、兴趣社团”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "등산 동호회에 가입했어요.",
-            "exampleZh": "加入了登山同好会。"
+            "exampleZh": "加入了登山同好会。",
+            "tips": [
+                { "label": "搭配", "text": "동호회에 가입하다" }
+            ]
         },
         {
             "ko": "대통령",
@@ -500,7 +567,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기 단어장",
             "guide": "名词，意思是“搬动、转移、换到”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 사람은 얼마 전에 회사를 옮겼어요.",
-            "exampleZh": "这个人前不久换了公司。"
+            "exampleZh": "这个人前不久换了公司。",
+            "tips": [
+                { "label": "搭配", "text": "회사를 옮기다" },
+                { "label": "易错", "text": "这里不是搬东西" }
+            ]
         },
         {
             "ko": "대부분",
@@ -520,7 +591,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기 단어장",
             "guide": "名词，意思是“避开、回避”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "요즘은 선배들하고 같이 있는 자리를 피하게 됩니다.",
-            "exampleZh": "最近会避开和前辈们在一起的场合。"
+            "exampleZh": "最近会避开和前辈们在一起的场合。",
+            "tips": [
+                { "label": "搭配", "text": "자리를 피하다" }
+            ]
         },
         {
             "ko": "동료",
@@ -550,7 +624,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“好好倾听对方的话”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "상대방의 이야기를 잘 들어 주면 돼요.",
-            "exampleZh": "好好倾听对方的话就可以。"
+            "exampleZh": "好好倾听对方的话就可以。",
+            "tips": [
+                { "label": "搭配", "text": "이야기를 들어 주다" }
+            ]
         },
         {
             "ko": "함께 시간을 보내다",
@@ -560,7 +637,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "어휘",
             "guide": "名词，意思是“一起度过时间”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동료들과 함께 시간을 보내면 가까워질 거예요.",
-            "exampleZh": "和同事们一起相处的话会变亲近。"
+            "exampleZh": "和同事们一起相处的话会变亲近。",
+            "tips": [
+                { "label": "搭配", "text": "N와/과 함께 시간을 보내다" }
+            ]
         },
         {
             "ko": "양보하다",
@@ -590,7 +670,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "말하기",
             "guide": "名词，意思是“变得熟悉、习惯”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "시간이 지나면 새 직장에 익숙해질 거예요.",
-            "exampleZh": "时间久了就会适应新工作。"
+            "exampleZh": "时间久了就会适应新工作。",
+            "tips": [
+                { "label": "搭配", "text": "N에 익숙해지다" },
+                { "label": "变形", "text": "익숙하다 -> 익숙해지다" }
+            ]
         },
         {
             "ko": "신경 쓰다",
@@ -600,7 +684,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "말하기",
             "guide": "名词，意思是“费心、在意、关照”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신경 써 주셔서 감사합니다.",
-            "exampleZh": "谢谢您费心关照。"
+            "exampleZh": "谢谢您费心关照。",
+            "tips": [
+                { "label": "搭配", "text": "N에 신경 쓰다" },
+                { "label": "易错", "text": "써 주다 有替对方费心的感觉" }
+            ]
         },
         {
             "ko": "언어가 다르다",
@@ -630,7 +718,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문법 연습",
             "guide": "名词，意思是“想法不同”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국 사람과 생각이 달라서 말하기 어려웠어요.",
-            "exampleZh": "因为和韩国人的想法不同，所以说话有点难。"
+            "exampleZh": "因为和韩国人的想法不同，所以说话有点难。",
+            "tips": [
+                { "label": "易错", "text": "다르다 不是 틀리다" }
+            ]
         },
         {
             "ko": "편견을 갖다",
@@ -640,7 +731,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기 전 활동",
             "guide": "名词，意思是“带有偏见”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "서로에게 편견을 갖고 있으면 가까워지기 힘들어요.",
-            "exampleZh": "如果彼此带有偏见，就很难亲近。"
+            "exampleZh": "如果彼此带有偏见，就很难亲近。",
+            "tips": [
+                { "label": "搭配", "text": "N에 대한 편견을 갖다" }
+            ]
         },
         {
             "ko": "생활 방식",
@@ -660,7 +754,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기 전 활동",
             "guide": "名词，意思是“敬语”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국에서는 높임말 사용이 중요해요.",
-            "exampleZh": "在韩国，敬语的使用很重要。"
+            "exampleZh": "在韩国，敬语的使用很重要。",
+            "tips": [
+                { "label": "搭配", "text": "윗사람에게 높임말을 쓰다" }
+            ]
         },
         {
             "ko": "의도",
@@ -680,7 +777,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기 전 활동",
             "guide": "名词，意思是“表达”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "의견을 솔직하게 표현해 보세요.",
-            "exampleZh": "试着坦率表达意见。"
+            "exampleZh": "试着坦率表达意见。",
+            "tips": [
+                { "label": "搭配", "text": "의견/의도를 표현하다" }
+            ]
         },
         {
             "ko": "대화를 이어 나가다",
@@ -730,7 +830,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기",
             "guide": "名词，意思是“评论、回帖”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "고민 글에 댓글이 많이 달렸어요.",
-            "exampleZh": "烦恼帖下面有很多评论。"
+            "exampleZh": "烦恼帖下面有很多评论。",
+            "tips": [
+                { "label": "搭配", "text": "댓글을 달다 / 댓글이 달리다" }
+            ]
         },
         {
             "ko": "룸메이트",
@@ -770,7 +873,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기",
             "guide": "名词，意思是“感到压力、受压力”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "너무 스트레스 받지 마세요.",
-            "exampleZh": "不要太有压力。"
+            "exampleZh": "不要太有压力。",
+            "tips": [
+                { "label": "搭配", "text": "스트레스를 받다" },
+                { "label": "易错", "text": "口语常省略 를" }
+            ]
         },
         {
             "ko": "진심으로 대하다",
@@ -780,7 +887,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기",
             "guide": "名词，意思是“真心对待”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "항상 진심으로 대하면 마음을 알아줄 거예요.",
-            "exampleZh": "如果一直真心对待，对方会理解你的心意。"
+            "exampleZh": "如果一直真心对待，对方会理解你的心意。",
+            "tips": [
+                { "label": "搭配", "text": "N을/를 진심으로 대하다" }
+            ]
         },
         {
             "ko": "마음을 알아주다",
@@ -820,7 +930,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기",
             "guide": "名词，意思是“年纪、年龄（敬语）”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대부분 저보다 연세가 많으신 분들입니다.",
-            "exampleZh": "大部分是比我年长的人。"
+            "exampleZh": "大部分是比我年长的人。",
+            "tips": [
+                { "label": "易错", "text": "연세 是 나이 的敬语" }
+            ]
         },
         {
             "ko": "윗사람",
@@ -840,7 +953,11 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기",
             "guide": "名词，意思是“说、讲话（敬语）”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "선배들이 그렇게 말씀하실 때가 많아요.",
-            "exampleZh": "前辈们经常那样说。"
+            "exampleZh": "前辈们经常那样说。",
+            "tips": [
+                { "label": "易错", "text": "말하다 的主体敬语" },
+                { "label": "变形", "text": "말씀하시다 -> 말씀하세요" }
+            ]
         },
         {
             "ko": "불편하다",
@@ -860,7 +977,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "읽기 단어장",
             "guide": "名词，意思是“避开某个场合”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "선배들하고 같이 있는 자리를 피하게 됩니다.",
-            "exampleZh": "会避开和前辈们在一起的场合。"
+            "exampleZh": "会避开和前辈们在一起的场合。",
+            "tips": [
+                { "label": "搭配", "text": "같이 있는 자리를 피하다" }
+            ]
         },
         {
             "ko": "친목",
@@ -880,7 +1000,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“增进友谊、促进亲睦”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동창회는 서로 친목을 도모하기 위한 모임입니다.",
-            "exampleZh": "同窗会是为了彼此增进友谊的聚会。"
+            "exampleZh": "同窗会是为了彼此增进友谊的聚会。",
+            "tips": [
+                { "label": "搭配", "text": "친목/발전을 도모하다" }
+            ]
         },
         {
             "ko": "참석하다",
@@ -890,7 +1013,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“出席、参加”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대표적인 모임에 참석합니다.",
-            "exampleZh": "参加代表性的聚会。"
+            "exampleZh": "参加代表性的聚会。",
+            "tips": [
+                { "label": "搭配", "text": "모임에 참석하다" }
+            ]
         },
         {
             "ko": "대표적인",
@@ -970,7 +1096,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“定期地”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "모임을 정기적으로 열어요.",
-            "exampleZh": "定期举行聚会。"
+            "exampleZh": "定期举行聚会。",
+            "tips": [
+                { "label": "搭配", "text": "정기적으로 열다" }
+            ]
         },
         {
             "ko": "단체 여행",
@@ -1060,7 +1189,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“共享信息”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동호회 사람들은 온라인에서 정보를 공유해요.",
-            "exampleZh": "同好会的人在线上共享信息。"
+            "exampleZh": "同好会的人在线上共享信息。",
+            "tips": [
+                { "label": "搭配", "text": "N와/과 정보를 공유하다" }
+            ]
         },
         {
             "ko": "실제 모임",
@@ -1090,7 +1222,10 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“加入、注册”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "동호회에 가입해서 취미 활동을 해요.",
-            "exampleZh": "加入同好会进行兴趣活动。"
+            "exampleZh": "加入同好会进行兴趣活动。",
+            "tips": [
+                { "label": "搭配", "text": "N에 가입하다" }
+            ]
         },
         {
             "ko": "취미 활동",

@@ -128,7 +128,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단원 제목",
             "guide": "名词，意思是“房地产、房产中介”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "부동산에 집을 보러 갔어요.",
-            "exampleZh": "去了房产中介看房。"
+            "exampleZh": "去了房产中介看房。",
+            "tips": [
+                { "label": "易错", "text": "장소로는 “부동산에 가다”" }
+            ]
         },
         {
             "ko": "집 구하기",
@@ -138,7 +141,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘 목표",
             "guide": "固定表达，意思是“找房子”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집 구하기가 쉽지 않아요.",
-            "exampleZh": "找房子不容易。"
+            "exampleZh": "找房子不容易。",
+            "tips": [
+                { "label": "搭配", "text": "집을 구하다 / 방을 구하다" }
+            ]
         },
         {
             "ko": "계약",
@@ -148,7 +154,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘 목표",
             "guide": "名词，意思是“合同、签约”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "계약하기 전에 확인하세요.",
-            "exampleZh": "签合同前请确认。"
+            "exampleZh": "签合同前请确认。",
+            "tips": [
+                { "label": "搭配", "text": "계약을 하다 / 계약서를 쓰다" }
+            ]
         },
         {
             "ko": "매매",
@@ -158,7 +167,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“买卖”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아파트 매매를 알아보고 있어요.",
-            "exampleZh": "正在了解公寓买卖。"
+            "exampleZh": "正在了解公寓买卖。",
+            "tips": [
+                { "label": "易错", "text": "매매는 사고파는 것" }
+            ]
         },
         {
             "ko": "임대",
@@ -168,7 +180,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“租赁、出租”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "임대 주택을 찾고 있어요.",
-            "exampleZh": "正在找租赁住宅。"
+            "exampleZh": "正在找租赁住宅。",
+            "tips": [
+                { "label": "易错", "text": "임대는 빌려주는 쪽" }
+            ]
         },
         {
             "ko": "기숙사",
@@ -188,7 +203,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“单间、一室户”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "원룸을 찾고 있어요.",
-            "exampleZh": "正在找单间。"
+            "exampleZh": "正在找单间。",
+            "tips": [
+                { "label": "易错", "text": "한국식 한 방 구조" }
+            ]
         },
         {
             "ko": "오피스텔",
@@ -198,7 +216,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“办公居住两用公寓”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "오피스텔 월세가 비싸요.",
-            "exampleZh": "办公居住两用公寓月租很贵。"
+            "exampleZh": "办公居住两用公寓月租很贵。",
+            "tips": [
+                { "label": "易错", "text": "사무실보다 주거형 건물" }
+            ]
         },
         {
             "ko": "아파트",
@@ -218,7 +239,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“联排/多户住宅”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "방 두 개인 월세 빌라를 찾고 있어요.",
-            "exampleZh": "正在找两室月租住宅。"
+            "exampleZh": "正在找两室月租住宅。",
+            "tips": [
+                { "label": "易错", "text": "한국에서는 다세대 주택 느낌" }
+            ]
         },
         {
             "ko": "단독주택",
@@ -238,7 +262,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“月租”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "월세가 싼 집을 찾고 있어요.",
-            "exampleZh": "正在找月租便宜的房子。"
+            "exampleZh": "正在找月租便宜的房子。",
+            "tips": [
+                { "label": "搭配", "text": "월세를 내다 / 월세가 싸다" }
+            ]
         },
         {
             "ko": "전세",
@@ -248,7 +275,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“全租、押金租赁”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전세 집을 알아보고 있어요.",
-            "exampleZh": "正在了解全租房。"
+            "exampleZh": "正在了解全租房。",
+            "tips": [
+                { "label": "易错", "text": "매달 월세보다 큰 보증금 중심" }
+            ]
         },
         {
             "ko": "보증금",
@@ -258,7 +288,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘/배운 확인",
             "guide": "名词，意思是“押金”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "보증금이 얼마예요?",
-            "exampleZh": "押金是多少？"
+            "exampleZh": "押金是多少？",
+            "tips": [
+                { "label": "搭配", "text": "보증금을 내다 / 돌려받다" }
+            ]
         },
         {
             "ko": "교통이 편리하다",
@@ -268,7 +301,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“交通方便”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "이 집은 교통이 편리해요.",
-            "exampleZh": "这套房交通方便。"
+            "exampleZh": "这套房交通方便。",
+            "tips": [
+                { "label": "搭配", "text": "교통이 편리한 집" }
+            ]
         },
         {
             "ko": "교통이 불편하다",
@@ -278,7 +314,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“交通不方便”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "버스 정류장이 멀어서 교통이 불편해요.",
-            "exampleZh": "公交站远，所以交通不方便。"
+            "exampleZh": "公交站远，所以交通不方便。",
+            "tips": [
+                { "label": "搭配", "text": "교통이 불편한 동네" }
+            ]
         },
         {
             "ko": "지하철역",
@@ -308,7 +347,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "形容词，意思是“近”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "학교가 가까워요.",
-            "exampleZh": "学校很近。"
+            "exampleZh": "学校很近。",
+            "tips": [
+                { "label": "变形", "text": "가깝다 → 가까워요" }
+            ]
         },
         {
             "ko": "멀다",
@@ -318,7 +360,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "形容词，意思是“远”。主要用来描述状态、性质或感受，适合和人物、物品、情况一起造句。",
             "exampleKo": "지하철역이 멀어요.",
-            "exampleZh": "地铁站很远。"
+            "exampleZh": "地铁站很远。",
+            "tips": [
+                { "label": "变形", "text": "멀다 → 먼 곳 / 멉니다" }
+            ]
         },
         {
             "ko": "주차할 곳",
@@ -328,7 +373,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“停车的地方”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주차할 곳이 있어요.",
-            "exampleZh": "有停车的地方。"
+            "exampleZh": "有停车的地方。",
+            "tips": [
+                { "label": "搭配", "text": "주차할 곳이 있다 / 없다" }
+            ]
         },
         {
             "ko": "큰 도로",
@@ -368,7 +416,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“便利设施”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주변에 편의 시설이 많아요.",
-            "exampleZh": "周边便利设施很多。"
+            "exampleZh": "周边便利设施很多。",
+            "tips": [
+                { "label": "搭配", "text": "주변에 편의 시설이 많다" }
+            ]
         },
         {
             "ko": "시장",
@@ -438,7 +489,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“景观、视野”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전망이 좋은 집이에요.",
-            "exampleZh": "是景观好的房子。"
+            "exampleZh": "是景观好的房子。",
+            "tips": [
+                { "label": "搭配", "text": "전망이 좋다 / 나쁘다" }
+            ]
         },
         {
             "ko": "햇빛이 잘 들어오다",
@@ -448,7 +502,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "固定表达，意思是“采光好”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "창문이 커서 햇빛이 잘 들어와요.",
-            "exampleZh": "窗户大，所以采光好。"
+            "exampleZh": "窗户大，所以采光好。",
+            "tips": [
+                { "label": "搭配", "text": "해가 잘 들어오는 집" }
+            ]
         },
         {
             "ko": "방",
@@ -548,7 +605,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "어휘",
             "guide": "名词，意思是“配置、附带设备”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "침대와 세탁기 옵션이 있어요.",
-            "exampleZh": "有床和洗衣机配置。"
+            "exampleZh": "有床和洗衣机配置。",
+            "tips": [
+                { "label": "易错", "text": "가구·가전 포함 여부" }
+            ]
         },
         {
             "ko": "남향",
@@ -558,7 +618,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문법 연습/말하기",
             "guide": "名词，意思是“朝南”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이 집은 남향인 데다가 전망도 좋아요.",
-            "exampleZh": "这套房朝南，而且景观也好。"
+            "exampleZh": "这套房朝南，而且景观也好。",
+            "tips": [
+                { "label": "搭配", "text": "남향인 데다가 전망도 좋다" }
+            ]
         },
         {
             "ko": "새로 수리하다",
@@ -568,7 +631,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“新装修、重新维修”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "새로 수리해서 깨끗해요.",
-            "exampleZh": "新装修过所以很干净。"
+            "exampleZh": "新装修过所以很干净。",
+            "tips": [
+                { "label": "搭配", "text": "새로 수리한 집" }
+            ]
         },
         {
             "ko": "깨끗하다",
@@ -588,7 +654,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“步行5分钟距离”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "지하철역이 걸어서 5분 거리에 있어요.",
-            "exampleZh": "地铁站步行5分钟。"
+            "exampleZh": "地铁站步行5分钟。",
+            "tips": [
+                { "label": "搭配", "text": "역에서 걸어서 5분 거리" }
+            ]
         },
         {
             "ko": "부동산 중개인",
@@ -618,7 +687,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“去看房”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집 좀 보려고 하는데요.",
-            "exampleZh": "我想看一下房子。"
+            "exampleZh": "我想看一下房子。",
+            "tips": [
+                { "label": "搭配", "text": "집을 보러 부동산에 가다" }
+            ]
         },
         {
             "ko": "방 두 개인 월세 빌라",
@@ -628,7 +700,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "말하기",
             "guide": "固定表达，意思是“两室月租住宅”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "방 두 개인 월세 빌라를 찾고 있어요.",
-            "exampleZh": "正在找两室月租住宅。"
+            "exampleZh": "正在找两室月租住宅。",
+            "tips": [
+                { "label": "搭配", "text": "방 두 개인 + 집/빌라" }
+            ]
         },
         {
             "ko": "테라스",
@@ -648,7 +723,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "말하기 연습",
             "guide": "固定表达，意思是“周边环境”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주변 환경이 깨끗하고 안전해요.",
-            "exampleZh": "周边环境干净又安全。"
+            "exampleZh": "周边环境干净又安全。",
+            "tips": [
+                { "label": "搭配", "text": "주변 환경이 깨끗하다" }
+            ]
         },
         {
             "ko": "안전하다",
@@ -678,7 +756,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“楼层间噪音”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "층간 소음이 없는지 확인하세요.",
-            "exampleZh": "请确认是否有楼层间噪音。"
+            "exampleZh": "请确认是否有楼层间噪音。",
+            "tips": [
+                { "label": "易错", "text": "띄어 써도 붙여 써도 자주 봄" }
+            ]
         },
         {
             "ko": "냄새",
@@ -698,7 +779,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“水”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "물이 잘 나오는지 확인하세요.",
-            "exampleZh": "请确认水是否正常。"
+            "exampleZh": "请确认水是否正常。",
+            "tips": [
+                { "label": "搭配", "text": "물이 잘 나오다" }
+            ]
         },
         {
             "ko": "전기",
@@ -708,7 +792,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“电”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전기가 잘 되는지 확인하세요.",
-            "exampleZh": "请确认电是否正常。"
+            "exampleZh": "请确认电是否正常。",
+            "tips": [
+                { "label": "搭配", "text": "전기가 잘 되다" }
+            ]
         },
         {
             "ko": "난방",
@@ -718,7 +805,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“供暖”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "난방이 잘 나오는지 확인하세요.",
-            "exampleZh": "请确认供暖是否正常。"
+            "exampleZh": "请确认供暖是否正常。",
+            "tips": [
+                { "label": "搭配", "text": "난방이 잘 나오다" }
+            ]
         },
         {
             "ko": "고장 난 곳",
@@ -728,7 +818,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기 전",
             "guide": "固定表达，意思是“坏掉的地方”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "고장 난 곳이 없는지 살펴보세요.",
-            "exampleZh": "请查看有没有坏掉的地方。"
+            "exampleZh": "请查看有没有坏掉的地方。",
+            "tips": [
+                { "label": "搭配", "text": "고장 난 곳이 있는지 보다" }
+            ]
         },
         {
             "ko": "문",
@@ -788,7 +881,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기 전",
             "guide": "名词，意思是“公共交通”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "대중교통을 이용하기 편리해요.",
-            "exampleZh": "使用公共交通很方便。"
+            "exampleZh": "使用公共交通很方便。",
+            "tips": [
+                { "label": "搭配", "text": "대중교통을 이용하다" }
+            ]
         },
         {
             "ko": "도보",
@@ -798,7 +894,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장",
             "guide": "名词，意思是“步行”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "지하철역까지 도보 5분입니다.",
-            "exampleZh": "到地铁站步行5分钟。"
+            "exampleZh": "到地铁站步行5分钟。",
+            "tips": [
+                { "label": "搭配", "text": "도보 5분 / 도보 10분" }
+            ]
         },
         {
             "ko": "등기부등본",
@@ -808,7 +907,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장",
             "guide": "名词，意思是“登记簿副本”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "등기부등본을 꼭 확인해야 해요.",
-            "exampleZh": "一定要确认登记簿副本。"
+            "exampleZh": "一定要确认登记簿副本。",
+            "tips": [
+                { "label": "搭配", "text": "계약 전 등기부등본 확인" }
+            ]
         },
         {
             "ko": "신축",
@@ -818,7 +920,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장",
             "guide": "名词，意思是“新建”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "신축 오피스텔을 봤어요.",
-            "exampleZh": "看了新建办公居住公寓。"
+            "exampleZh": "看了新建办公居住公寓。",
+            "tips": [
+                { "label": "易错", "text": "새로 지은 건물" }
+            ]
         },
         {
             "ko": "역세권",
@@ -828,7 +933,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장",
             "guide": "名词，意思是“车站圈、站点周边”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "역세권 집은 교통이 편리해요.",
-            "exampleZh": "站点周边的房子交通方便。"
+            "exampleZh": "站点周边的房子交通方便。",
+            "tips": [
+                { "label": "易错", "text": "역 가까운 생활권" }
+            ]
         },
         {
             "ko": "잔금",
@@ -838,7 +946,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장",
             "guide": "名词，意思是“尾款、余款”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "이사하는 날 잔금을 지불합니다.",
-            "exampleZh": "搬家那天支付尾款。"
+            "exampleZh": "搬家那天支付尾款。",
+            "tips": [
+                { "label": "易错", "text": "마지막에 남은 돈" }
+            ]
         },
         {
             "ko": "전입 신고",
@@ -848,7 +959,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장/배운 확인",
             "guide": "固定表达，意思是“迁入申报”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "주민 센터에서 전입 신고를 해야 해요.",
-            "exampleZh": "需要在居民中心办理迁入申报。"
+            "exampleZh": "需要在居民中心办理迁入申报。",
+            "tips": [
+                { "label": "搭配", "text": "주민 센터에 전입 신고" }
+            ]
         },
         {
             "ko": "특약 사항",
@@ -858,7 +972,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장/배운 확인",
             "guide": "固定表达，意思是“特别约定事项”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집수리 특약 사항을 자세히 쓰세요.",
-            "exampleZh": "请详细写明房屋维修特别约定事项。"
+            "exampleZh": "请详细写明房屋维修特别约定事项。",
+            "tips": [
+                { "label": "搭配", "text": "특약 사항에 쓰다" }
+            ]
         },
         {
             "ko": "풀 옵션",
@@ -868,7 +985,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "단어장",
             "guide": "固定表达，意思是“全配置”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "풀 옵션 원룸을 찾고 있어요.",
-            "exampleZh": "正在找全配置单间。"
+            "exampleZh": "正在找全配置单间。",
+            "tips": [
+                { "label": "搭配", "text": "풀 옵션 원룸" }
+            ]
         },
         {
             "ko": "살펴보다",
@@ -878,7 +998,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“查看、仔细看”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "집의 상태를 꼼꼼하게 살펴보세요.",
-            "exampleZh": "请仔细查看房屋状态。"
+            "exampleZh": "请仔细查看房屋状态。",
+            "tips": [
+                { "label": "搭配", "text": "꼼꼼하게 살펴보다" }
+            ]
         },
         {
             "ko": "꼼꼼하게",
@@ -888,7 +1011,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "副词，意思是“仔细地”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "계약서를 꼼꼼하게 읽어 보세요.",
-            "exampleZh": "请仔细阅读合同。"
+            "exampleZh": "请仔细阅读合同。",
+            "tips": [
+                { "label": "搭配", "text": "꼼꼼하게 확인하다 / 읽다" }
+            ]
         },
         {
             "ko": "계약서",
@@ -898,7 +1024,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "名词，意思是“合同书”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "계약서를 꼼꼼하게 읽어 보세요.",
-            "exampleZh": "请仔细阅读合同书。"
+            "exampleZh": "请仔细阅读合同书。",
+            "tips": [
+                { "label": "搭配", "text": "계약서를 쓰다 / 읽다" }
+            ]
         },
         {
             "ko": "집주인",
@@ -908,7 +1037,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "名词，意思是“房东”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "집주인과 직접 계약하는 것이 안전해요.",
-            "exampleZh": "和房东直接签合同比较安全。"
+            "exampleZh": "和房东直接签合同比较安全。",
+            "tips": [
+                { "label": "搭配", "text": "집주인과 직접 계약하다" }
+            ]
         },
         {
             "ko": "직접 계약하다",
@@ -918,7 +1050,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“直接签约”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "집주인과 직접 계약하세요.",
-            "exampleZh": "请和房东直接签约。"
+            "exampleZh": "请和房东直接签约。",
+            "tips": [
+                { "label": "搭配", "text": "집주인과 직접 계약하다" }
+            ]
         },
         {
             "ko": "입금 계좌",
@@ -928,7 +1063,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“收款账户”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "입금 계좌가 집주인의 것인지 확인하세요.",
-            "exampleZh": "请确认收款账户是否是房东的。"
+            "exampleZh": "请确认收款账户是否是房东的。",
+            "tips": [
+                { "label": "搭配", "text": "집주인 명의 계좌인지 확인" }
+            ]
         },
         {
             "ko": "집수리",
@@ -948,7 +1086,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“发生事故/问题”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "대신 계약하면 사고가 발생할 수 있어요.",
-            "exampleZh": "代签的话可能发生问题。"
+            "exampleZh": "代签的话可能发生问题。",
+            "tips": [
+                { "label": "搭配", "text": "문제·사고가 발생하다" }
+            ]
         },
         {
             "ko": "약속을 지키다",
@@ -958,7 +1099,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“遵守约定”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "말로만 이야기하면 약속을 안 지킬 수 있어요.",
-            "exampleZh": "只口头说的话可能不遵守约定。"
+            "exampleZh": "只口头说的话可能不遵守约定。",
+            "tips": [
+                { "label": "搭配", "text": "약속을 지키다 / 어기다" }
+            ]
         },
         {
             "ko": "도망가다",
@@ -978,7 +1122,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“支付”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "잔금을 지불하고 열쇠를 받습니다.",
-            "exampleZh": "支付尾款并拿钥匙。"
+            "exampleZh": "支付尾款并拿钥匙。",
+            "tips": [
+                { "label": "搭配", "text": "잔금을 지불하다" }
+            ]
         },
         {
             "ko": "열쇠",
@@ -1008,7 +1155,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "名词，意思是“搬家的行李”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "새집에 이삿짐을 옮겼어요.",
-            "exampleZh": "把搬家行李搬到新家了。"
+            "exampleZh": "把搬家行李搬到新家了。",
+            "tips": [
+                { "label": "搭配", "text": "이삿짐을 옮기다" }
+            ]
         },
         {
             "ko": "주민 센터",
@@ -1028,7 +1178,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "固定表达，意思是“确定日期、租赁登记日期”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "확정 일자를 받아야 해요.",
-            "exampleZh": "需要取得确定日期。"
+            "exampleZh": "需要取得确定日期。",
+            "tips": [
+                { "label": "搭配", "text": "확정 일자를 받다" }
+            ]
         },
         {
             "ko": "돌려받다",
@@ -1038,7 +1191,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "읽기",
             "guide": "动词表达，意思是“拿回、退回”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "보증금을 안전하게 돌려받을 수 있어요.",
-            "exampleZh": "可以安全拿回押金。"
+            "exampleZh": "可以安全拿回押金。",
+            "tips": [
+                { "label": "搭配", "text": "보증금을 돌려받다" }
+            ]
         },
         {
             "ko": "선호하다",
@@ -1048,7 +1204,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문법 예문",
             "guide": "动词表达，意思是“偏好、喜欢选择”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "사람들은 교통이 편리한 집을 선호해요.",
-            "exampleZh": "人们偏好交通便利的房子。"
+            "exampleZh": "人们偏好交通便利的房子。",
+            "tips": [
+                { "label": "搭配", "text": "N을/를 선호하다" }
+            ]
         },
         {
             "ko": "객관적인 글",
@@ -1078,7 +1237,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“共享住宅”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공유 주택은 젊은 세대에게 인기가 있어요.",
-            "exampleZh": "共享住宅受年轻一代欢迎。"
+            "exampleZh": "共享住宅受年轻一代欢迎。",
+            "tips": [
+                { "label": "易错", "text": "공동 공간 + 개인 공간" }
+            ]
         },
         {
             "ko": "셰어 하우스",
@@ -1088,7 +1250,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“Share House、合租共享住宅”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "셰어 하우스에 살아 보고 싶어요.",
-            "exampleZh": "想住一下共享住宅。"
+            "exampleZh": "想住一下共享住宅。",
+            "tips": [
+                { "label": "易错", "text": "share house의 한글 표기" }
+            ]
         },
         {
             "ko": "임대 주택",
@@ -1098,7 +1263,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“租赁住宅”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공유 주택은 임대 주택입니다.",
-            "exampleZh": "共享住宅是租赁住宅。"
+            "exampleZh": "共享住宅是租赁住宅。",
+            "tips": [
+                { "label": "搭配", "text": "임대 주택에 살다" }
+            ]
         },
         {
             "ko": "젊은 세대",
@@ -1118,7 +1286,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“快速扩散”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공유 주택 문화가 급속히 퍼지고 있어요.",
-            "exampleZh": "共享住宅文化正在快速扩散。"
+            "exampleZh": "共享住宅文化正在快速扩散。",
+            "tips": [
+                { "label": "搭配", "text": "문화가 급속히 퍼지다" }
+            ]
         },
         {
             "ko": "주방",
@@ -1178,7 +1349,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“独立空间”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "각자의 독립된 공간을 가질 수 있어요.",
-            "exampleZh": "可以拥有各自的独立空间。"
+            "exampleZh": "可以拥有各自的独立空间。",
+            "tips": [
+                { "label": "搭配", "text": "독립된 공간을 가지다" }
+            ]
         },
         {
             "ko": "계약 기간",
@@ -1188,7 +1362,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“合同期限”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "계약 기간은 최소 1개월입니다.",
-            "exampleZh": "合同期限最少1个月。"
+            "exampleZh": "合同期限最少1个月。",
+            "tips": [
+                { "label": "搭配", "text": "계약 기간이 짧다 / 길다" }
+            ]
         },
         {
             "ko": "최소",
@@ -1198,7 +1375,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "副词，意思是“最少、最低”。常用来修饰动作、程度或整句话的语气。",
             "exampleKo": "최소 1개월부터 계약할 수 있어요.",
-            "exampleZh": "最少可从1个月开始签。"
+            "exampleZh": "最少可从1个月开始签。",
+            "tips": [
+                { "label": "搭配", "text": "최소 1개월 / 최소 2명" }
+            ]
         },
         {
             "ko": "사회 초년생",
@@ -1208,7 +1388,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“社会新人、职场新人”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "사회 초년생들에게 인기가 있어요.",
-            "exampleZh": "受到社会新人的欢迎。"
+            "exampleZh": "受到社会新人的欢迎。",
+            "tips": [
+                { "label": "易错", "text": "사회생활을 막 시작한 사람" }
+            ]
         },
         {
             "ko": "경제적인 이유",
@@ -1228,7 +1411,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“下班后”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "퇴근 후에 같이 식사해요.",
-            "exampleZh": "下班后一起吃饭。"
+            "exampleZh": "下班后一起吃饭。",
+            "tips": [
+                { "label": "搭配", "text": "퇴근 후에 식사하다" }
+            ]
         },
         {
             "ko": "거주하다",
@@ -1238,7 +1424,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“居住”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "거주하는 사람들과 대화할 수 있어요.",
-            "exampleZh": "可以和居住的人交谈。"
+            "exampleZh": "可以和居住的人交谈。",
+            "tips": [
+                { "label": "易错", "text": "살다보다 격식 있는 말" }
+            ]
         },
         {
             "ko": "여가 시간",
@@ -1268,7 +1457,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“既分开又一起”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공유 주택에서는 따로 또 같이 삽니다.",
-            "exampleZh": "在共享住宅里既分开又一起生活。"
+            "exampleZh": "在共享住宅里既分开又一起生活。",
+            "tips": [
+                { "label": "易错", "text": "개인 생활과 공동생활을 함께" }
+            ]
         },
         {
             "ko": "생활비",
@@ -1278,7 +1470,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "名词，意思是“生活费”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "생활비를 절약할 수 있어요.",
-            "exampleZh": "可以节省生活费。"
+            "exampleZh": "可以节省生活费。",
+            "tips": [
+                { "label": "搭配", "text": "생활비를 절약하다" }
+            ]
         },
         {
             "ko": "절약하다",
@@ -1288,7 +1483,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "动词表达，意思是“节约”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "집세와 생활비를 절약해요.",
-            "exampleZh": "节省房租和生活费。"
+            "exampleZh": "节省房租和生活费。",
+            "tips": [
+                { "label": "搭配", "text": "집세와 생활비를 절약하다" }
+            ]
         },
         {
             "ko": "인간관계",
@@ -1318,7 +1516,10 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "source": "문화와 정보",
             "guide": "固定表达，意思是“居住文化”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "공유 주택은 새로운 주거 문화가 되고 있어요.",
-            "exampleZh": "共享住宅正在成为新的居住文化。"
+            "exampleZh": "共享住宅正在成为新的居住文化。",
+            "tips": [
+                { "label": "搭配", "text": "새로운 주거 문화" }
+            ]
         },
         {
             "ko": "부동산 계약",
