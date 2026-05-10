@@ -1002,10 +1002,27 @@
         @media (max-width: 920px) {
             .sidebar {
                 position: fixed;
-                inset: 0 auto 0 0;
+                inset: 69px auto 0 0;
                 z-index: 100;
                 transform: translateX(-100%);
                 transition: transform 0.25s ease;
+            }
+
+            .sidebar-title-row {
+                display: none;
+            }
+
+            .sidebar-header {
+                padding: 12px 20px 13px;
+            }
+
+            .sidebar-subtitle {
+                margin-top: 0;
+                line-height: 1.35;
+            }
+
+            .search-box {
+                margin-top: 9px;
             }
 
             .sidebar.open {
