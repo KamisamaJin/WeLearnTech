@@ -112,6 +112,34 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
             ]
         },
         {
+            "meaning": "coworker / colleague",
+            "example": "I want to reduce differences in opinion with my coworkers."
+        },
+        {
+            "meaning": "way of working",
+            "example": "It is hard because I still do not really know how to work."
+        },
+        {
+            "meaning": "to listen carefully to someone",
+            "example": "It is enough to listen carefully to the other person.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이야기를 들어 주다"
+                }
+            ]
+        },
+        {
+            "meaning": "to spend time together",
+            "example": "If you spend time with your coworkers, you will become closer.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 함께 시간을 보내다"
+                }
+            ]
+        },
+        {
             "meaning": "introverted",
             "example": "Because my personality is rather introverted, it is hard to make friends.",
             "tips": [
@@ -122,78 +150,22 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
             ]
         },
         {
-            "meaning": "senior / someone with more experience",
-            "example": "I want to get along well with my seniors at work."
+            "meaning": "to speak different languages",
+            "example": "My foreign friend and I speak different languages and have different cultures."
         },
         {
-            "meaning": "junior / someone with less experience",
-            "example": "Please give advice to junior immigrants."
+            "meaning": "to have different cultures",
+            "example": "It was hard at first because the culture was different and for other reasons."
         },
         {
-            "meaning": "to treat / to deal with",
-            "example": "I do not know how I should interact with Koreans.",
+            "meaning": "to think differently",
+            "example": "It was a little hard to talk because my way of thinking was different from Koreans'.",
             "tips": [
-                {
-                    "type": "collocation",
-                    "text": "사람을 대하다"
-                },
                 {
                     "type": "pitfall",
-                    "text": "대해 말하다 is \"about\""
+                    "text": "다르다 not 틀리다"
                 }
             ]
-        },
-        {
-            "meaning": "supervisor / boss",
-            "example": "It is hard to refuse a supervisor's instructions."
-        },
-        {
-            "meaning": "instruction / order",
-            "example": "You need to understand your supervisor's instructions well."
-        },
-        {
-            "meaning": "to refuse",
-            "example": "It is difficult to refuse someone else's request.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "부탁/요청을 거절하다"
-                }
-            ]
-        },
-        {
-            "meaning": "request",
-            "example": "I made a request for help."
-        },
-        {
-            "meaning": "method / way",
-            "example": "I do not really know how to speak."
-        },
-        {
-            "meaning": "honest / frank",
-            "example": "It is enough to express your opinion honestly."
-        },
-        {
-            "meaning": "empathy / common feeling",
-            "example": "I felt empathy with my friend's story."
-        },
-        {
-            "meaning": "to make friends / to date",
-            "example": "I want to meet new people.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "친구를 사귀다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "Love can also be used 사귀다"
-                }
-            ]
-        },
-        {
-            "meaning": "insufficient / lacking",
-            "example": "I am worried because my Korean is not enough."
         },
         {
             "meaning": "speed",
@@ -266,6 +238,14 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
             "example": "It is enough to memorize many words."
         },
         {
+            "meaning": "to compromise / to yield",
+            "example": "It is enough to express your opinion and compromise little by little."
+        },
+        {
+            "meaning": "high score",
+            "example": "I want to get a high score on the TOPIK exam."
+        },
+        {
             "meaning": "to adapt",
             "example": "I am trying to adapt to my new workplace.",
             "tips": [
@@ -284,106 +264,6 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
                     "text": "V-려고 노력 중이다"
                 }
             ]
-        },
-        {
-            "meaning": "to have a conversation",
-            "example": "Try having an honest conversation with your friend.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "N와/과 이야기를 나누다"
-                }
-            ]
-        },
-        {
-            "meaning": "hobby club / interest group",
-            "example": "I joined a hiking club.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "동호회에 가입하다"
-                }
-            ]
-        },
-        {
-            "meaning": "president",
-            "example": "The president will give a speech."
-        },
-        {
-            "meaning": "argument / quarrel",
-            "example": "I often argue with my roommate."
-        },
-        {
-            "meaning": "frustrated / stuffy / upset",
-            "example": "I feel frustrated because it is hard to express my intention accurately."
-        },
-        {
-            "meaning": "changing jobs",
-            "example": "I changed jobs not long ago."
-        },
-        {
-            "meaning": "to move / to transfer / to change to",
-            "example": "This person changed companies not long ago.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "회사를 옮기다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "This is not about moving things"
-                }
-            ]
-        },
-        {
-            "meaning": "most / the majority",
-            "example": "Most of them are older than I am."
-        },
-        {
-            "meaning": "to avoid",
-            "example": "These days I avoid being in the same place as my seniors.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "자리를 피하다"
-                }
-            ]
-        },
-        {
-            "meaning": "coworker / colleague",
-            "example": "I want to reduce differences in opinion with my coworkers."
-        },
-        {
-            "meaning": "way of working",
-            "example": "It is hard because I still do not really know how to work."
-        },
-        {
-            "meaning": "to listen carefully to someone",
-            "example": "It is enough to listen carefully to the other person.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "이야기를 들어 주다"
-                }
-            ]
-        },
-        {
-            "meaning": "to spend time together",
-            "example": "If you spend time with your coworkers, you will become closer.",
-            "tips": [
-                {
-                    "type": "collocation",
-                    "text": "N와/과 함께 시간을 보내다"
-                }
-            ]
-        },
-        {
-            "meaning": "to compromise / to yield",
-            "example": "It is enough to express your opinion and compromise little by little."
-        },
-        {
-            "meaning": "high score",
-            "example": "I want to get a high score on the TOPIK exam."
         },
         {
             "meaning": "to become used to / to get familiar with",
@@ -414,22 +294,26 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
             ]
         },
         {
-            "meaning": "to speak different languages",
-            "example": "My foreign friend and I speak different languages and have different cultures."
-        },
-        {
-            "meaning": "to have different cultures",
-            "example": "It was hard at first because the culture was different and for other reasons."
-        },
-        {
-            "meaning": "to think differently",
-            "example": "It was a little hard to talk because my way of thinking was different from Koreans'.",
+            "meaning": "to have a conversation",
+            "example": "Try having an honest conversation with your friend.",
             "tips": [
                 {
-                    "type": "pitfall",
-                    "text": "다르다 not 틀리다"
+                    "type": "collocation",
+                    "text": "N와/과 이야기를 나누다"
                 }
             ]
+        },
+        {
+            "meaning": "president",
+            "example": "The president will give a speech."
+        },
+        {
+            "meaning": "argument / quarrel",
+            "example": "I often argue with my roommate."
+        },
+        {
+            "meaning": "frustrated / stuffy / upset",
+            "example": "I feel frustrated because it is hard to express my intention accurately."
         },
         {
             "meaning": "to have prejudice",
@@ -536,6 +420,38 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
             "example": "Koreans will also understand that feeling."
         },
         {
+            "meaning": "changing jobs",
+            "example": "I changed jobs not long ago."
+        },
+        {
+            "meaning": "to move / to transfer / to change to",
+            "example": "This person changed companies not long ago.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사를 옮기다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "This is not about moving things"
+                }
+            ]
+        },
+        {
+            "meaning": "most / the majority",
+            "example": "Most of them are older than I am."
+        },
+        {
+            "meaning": "to avoid",
+            "example": "These days I avoid being in the same place as my seniors.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자리를 피하다"
+                }
+            ]
+        },
+        {
             "meaning": "workplace",
             "example": "There are many Koreans at my new workplace."
         },
@@ -582,6 +498,16 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
                 {
                     "type": "collocation",
                     "text": "같이 있는 자리를 피하다"
+                }
+            ]
+        },
+        {
+            "meaning": "hobby club / interest group",
+            "example": "I joined a hiking club.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "동호회에 가입하다"
                 }
             ]
         },
@@ -714,6 +640,80 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         {
             "meaning": "to collect information",
             "example": "They also collect various kinds of information."
+        },
+        {
+            "meaning": "senior / someone with more experience",
+            "example": "I want to get along well with my seniors at work."
+        },
+        {
+            "meaning": "junior / someone with less experience",
+            "example": "Please give advice to junior immigrants."
+        },
+        {
+            "meaning": "to treat / to deal with",
+            "example": "I do not know how I should interact with Koreans.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사람을 대하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "대해 말하다 is \"about\""
+                }
+            ]
+        },
+        {
+            "meaning": "supervisor / boss",
+            "example": "It is hard to refuse a supervisor's instructions."
+        },
+        {
+            "meaning": "instruction / order",
+            "example": "You need to understand your supervisor's instructions well."
+        },
+        {
+            "meaning": "to refuse",
+            "example": "It is difficult to refuse someone else's request.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "부탁/요청을 거절하다"
+                }
+            ]
+        },
+        {
+            "meaning": "request",
+            "example": "I made a request for help."
+        },
+        {
+            "meaning": "method / way",
+            "example": "I do not really know how to speak."
+        },
+        {
+            "meaning": "honest / frank",
+            "example": "It is enough to express your opinion honestly."
+        },
+        {
+            "meaning": "empathy / common feeling",
+            "example": "I felt empathy with my friend's story."
+        },
+        {
+            "meaning": "to make friends / to date",
+            "example": "I want to meet new people.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "친구를 사귀다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Love can also be used 사귀다"
+                }
+            ]
+        },
+        {
+            "meaning": "insufficient / lacking",
+            "example": "I am worried because my Korean is not enough."
         }
     ],
     "dialogues": [
@@ -883,6 +883,10 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
             {
                 "translation": "What can you do if you join a hobby club?",
                 "answer": "You can do hobby activities, get information, and make new friends."
+            },
+            {
+                "translation": "What kinds of gatherings are there in your hometown?",
+                "answer": "In my hometown, there are gatherings such as alumni meetings and hobby clubs."
             }
         ]
     },
