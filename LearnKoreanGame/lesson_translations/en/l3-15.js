@@ -37,32 +37,68 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "contradiction; conflict",
             "guide": "Noun meaning \"contradiction, conflict\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There are conflicts between families."
+            "example": "There are conflicts between families.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N 간의 갈등"
+                }
+            ]
         },
         {
             "meaning": "Difficulty getting close to friends or others",
             "guide": "Fixed expression meaning \"difficulty getting close to friends or others\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I have a hard time getting close to others."
+            "example": "I have a hard time getting close to others.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "가깝다→가까워지다"
+                }
+            ]
         },
         {
             "meaning": "Discord with colleagues",
             "guide": "Fixed expression meaning \"I don't get along with my colleagues\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It’s hard because I don’t have a good temperament with my colleagues."
+            "example": "It’s hard because I don’t have a good temperament with my colleagues.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 성격이 안 맞다"
+                }
+            ]
         },
         {
             "meaning": "There is a conflict between mother-in-law and daughter-in-law",
             "guide": "Fixed expression, meaning \"there is a conflict between mother-in-law and daughter-in-law\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I am troubled by the conflict between mother-in-law and daughter-in-law."
+            "example": "I am troubled by the conflict between mother-in-law and daughter-in-law.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "고부간=mother-in-law and daughter-in-law; 부부간=between husband and wife"
+                }
+            ]
         },
         {
             "meaning": "Couples often quarrel",
             "guide": "Fixed expression meaning \"couples often quarrel\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The couple has been quarreling a lot lately."
+            "example": "The couple has been quarreling a lot lately.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "부부 싸움이 잦다"
+                }
+            ]
         },
         {
             "meaning": "Korean proficiency has stagnated",
             "guide": "Fixed expression meaning \"Korean proficiency has stagnated.\" It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I feel like my Korean proficiency has stagnated."
+            "example": "I feel like my Korean proficiency has stagnated.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "실력이 제자리걸음이다"
+                }
+            ]
         },
         {
             "meaning": "Afraid of going to parties",
@@ -72,7 +108,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "Difficulty balancing work and childcare",
             "guide": "Fixed expression meaning \"difficulty balancing work and childcare\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It’s hard to juggle work and parenting."
+            "example": "It’s hard to juggle work and parenting.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "A와 B를 병행하다"
+                }
+            ]
         },
         {
             "meaning": "Worry about children losing their mother tongue",
@@ -82,12 +124,24 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "The future is unclear",
             "guide": "Fixed expression meaning \"the future is unclear\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The direction after graduation is unclear."
+            "example": "The direction after graduation is unclear.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "진로가 불투명하다/뚜렷하다"
+                }
+            ]
         },
         {
             "meaning": "Repeatedly leaving and changing jobs",
             "guide": "Fixed expression meaning \"repeatedly leaving and changing jobs\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I have been quitting and changing jobs repeatedly."
+            "example": "I have been quitting and changing jobs repeatedly.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "되풀이하다→되풀이하고 있다"
+                }
+            ]
         },
         {
             "meaning": "often depressed for no reason",
@@ -102,7 +156,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "Unstable income",
             "guide": "Fixed expression meaning \"unstable income\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Worried about unstable income."
+            "example": "Worried about unstable income.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "수입 means income; 수출 means export."
+                }
+            ]
         },
         {
             "meaning": "Finance and money management are hard",
@@ -112,57 +172,123 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "My mind is very confused",
             "guide": "Fixed expression meaning \"the mind is very confused\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "My mind is confused because of worries."
+            "example": "My mind is confused because of worries.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use it when you have too many ideas and can’t figure them out"
+                }
+            ]
         },
         {
             "meaning": "care about; worry about",
             "guide": "Fixed expression meaning \"care about, worry about\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I care about the test results very much."
+            "example": "I care about the test results very much.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "신경이 쓰이다 is more like \"cared about\""
+                }
+            ]
         },
         {
             "meaning": "anxious",
             "guide": "Fixed expression meaning \"frustrated\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I couldn't get in touch so I was very anxious."
+            "example": "I couldn't get in touch so I was very anxious.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It's not stomachache, it's anxiety"
+                }
+            ]
         },
         {
             "meaning": "headache; nerve-wracking",
             "guide": "Fixed expression meaning \"headache, nerve-wracking\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Because the money problem is a headache."
+            "example": "Because the money problem is a headache.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use it when you have a difficult problem, not an ordinary headache"
+                }
+            ]
         },
         {
             "meaning": "It's dark; I don't know what to do",
             "guide": "Fixed expression, meaning \"the vision is dark and at a loss\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Feeling overwhelmed by being suddenly fired."
+            "example": "Feeling overwhelmed by being suddenly fired.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The road ahead is invisible 막막함"
+                }
+            ]
         },
         {
             "meaning": "Can't sleep well",
             "guide": "Fixed expression meaning \"not sleeping soundly\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Because I am worried about not sleeping well."
+            "example": "Because I am worried about not sleeping well.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Too worried to sleep peacefully"
+                }
+            ]
         },
         {
             "meaning": "Tell your troubles",
             "guide": "Verb expression meaning \"to pour out one's troubles\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I confided my troubles to my friends."
+            "example": "I confided my troubles to my friends.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 고민을 털어놓다"
+                }
+            ]
         },
         {
             "meaning": "Share troubles",
             "guide": "Verb expression meaning \"to share troubles\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I shared my worries with my family."
+            "example": "I shared my worries with my family.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It's not a solution, it's a discussion together."
+                }
+            ]
         },
         {
             "meaning": "seek advice",
             "guide": "Verb expression meaning \"to seek advice.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I sought advice from my seniors."
+            "example": "I sought advice from my seniors.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 조언을 구하다"
+                }
+            ]
         },
         {
             "meaning": "receive consultation",
             "guide": "Verb expression meaning \"to receive counselling\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Received counseling at the center."
+            "example": "Received counseling at the center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "센터에서 상담을 받다"
+                }
+            ]
         },
         {
             "meaning": "relieve worries",
             "guide": "Verb expression meaning \"to relieve trouble\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "After saying that, my worries were relieved."
+            "example": "After saying that, my worries were relieved.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "덜다=ease, not necessarily solve"
+                }
+            ]
         },
         {
             "meaning": "solve worries",
@@ -172,27 +298,57 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "Get rid of worries",
             "guide": "Verb expression meaning \"to get rid of worries\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Get rid of worries through travel."
+            "example": "Get rid of worries through travel.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "털어놓다=to confide; 털어버리다=to throw away"
+                }
+            ]
         },
         {
             "meaning": "Just right",
             "guide": "Adverb meaning \"just right\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Just about to make a call."
+            "example": "Just about to make a call.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "마침 -으려던 참이다"
+                }
+            ]
         },
         {
             "meaning": "Great; just right",
             "guide": "Fixed expression meaning \"too good, just right\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Just right/too good."
+            "example": "Just right/too good.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "일이 잘되다 can also mean smooth"
+                }
+            ]
         },
         {
             "meaning": "apologize",
             "guide": "Verb expression meaning \"to apologize\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I was about to apologize to my friend."
+            "example": "I was about to apologize to my friend.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 사과하다"
+                }
+            ]
         },
         {
             "meaning": "Ask for help",
             "guide": "Verb expression meaning \"to ask for help\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Asked for help from others."
+            "example": "Asked for help from others.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 도움을 청하다"
+                }
+            ]
         },
         {
             "meaning": "for health",
@@ -202,22 +358,46 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "monthly salary",
             "guide": "Noun meaning \"monthly salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "As soon as I get my monthly salary, I send money to my parents."
+            "example": "As soon as I get my monthly salary, I send money to my parents.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "월급=monthly salary; 일당=daily salary"
+                }
+            ]
         },
         {
             "meaning": "Remittance",
             "guide": "Verb expression meaning \"to send money\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I sent money to my hometown."
+            "example": "I sent money to my hometown.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게/에 돈을 송금하다"
+                }
+            ]
         },
         {
             "meaning": "open",
             "guide": "Verb expression meaning \"to open\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Turn on the TV as soon as you get home."
+            "example": "Turn on the TV as soon as you get home.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "켜다=open; 끄다=close"
+                }
+            ]
         },
         {
             "meaning": "convey; convey (honorific)",
             "guide": "Verb expression, meaning \"to tell, to transfer (honorific language)\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I will tell the boss."
+            "example": "I will tell the boss.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 드리다 when speaking to a superior."
+                }
+            ]
         },
         {
             "meaning": "take a walk",
@@ -232,22 +412,46 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "No progress at all",
             "guide": "Fixed expression meaning \"no progress at all\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "My Korean proficiency has not improved at all."
+            "example": "My Korean proficiency has not improved at all.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "실력이 통 늘지 않다"
+                }
+            ]
         },
         {
             "meaning": "memorize; remember",
             "guide": "Verb expression, meaning \"to memorize, to remember\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I also forget the words quickly after memorizing them."
+            "example": "I also forget the words quickly after memorizing them.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "외우다→외워요"
+                }
+            ]
         },
         {
             "meaning": "forget",
             "guide": "Verb expression meaning \"to forget\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Once memorized, forget about it."
+            "example": "Once memorized, forget about it.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "잊다보다 has a stronger sense of “forgetting”"
+                }
+            ]
         },
         {
             "meaning": "persistently",
             "guide": "Adverb meaning \"persistently\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "It is important to keep learning."
+            "example": "It is important to keep learning.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "꾸준히 공부하다/운동하다"
+                }
+            ]
         },
         {
             "meaning": "Preview",
@@ -267,7 +471,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "Qualification certificate",
             "guide": "Noun, meaning \"qualification certificate\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Do you have a qualification certificate?"
+            "example": "Do you have a qualification certificate?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "자격증 is a qualification certificate; 면허증 is a license."
+                }
+            ]
         },
         {
             "meaning": "driver's license",
@@ -277,17 +487,35 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "salary; salary",
             "guide": "Noun meaning \"salary, salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "How much salary do you want to get?"
+            "example": "How much salary do you want to get?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "급여 is more formal than 월급"
+                }
+            ]
         },
         {
             "meaning": "Change jobs",
             "guide": "Verb expression meaning \"to change jobs\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I want to change jobs because of the salary."
+            "example": "I want to change jobs because of the salary.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "이직하다 and 이사하다 are not the same."
+                }
+            ]
         },
         {
             "meaning": "daily salary",
             "guide": "Noun meaning \"daily wage\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Get paid on a daily basis."
+            "example": "Get paid on a daily basis.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "일당 is daily pay; 월급 is monthly pay."
+                }
+            ]
         },
         {
             "meaning": "return home",
@@ -312,7 +540,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "postpone; delay",
             "guide": "Verb expression meaning \"to postpone, delay\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Don't put things off."
+            "example": "Don't put things off.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "미루다=delay; 연기하다=delay arrangement"
+                }
+            ]
         },
         {
             "meaning": "depression",
@@ -332,7 +566,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "in everything; everything",
             "guide": "Adverb meaning \"in everything, in everything\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Not interested in anything."
+            "example": "Not interested in anything.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "매사에 흥미가 없다"
+                }
+            ]
         },
         {
             "meaning": "Interest",
@@ -347,12 +587,24 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "Difficulty falling asleep",
             "guide": "Fixed expression meaning \"difficulty falling asleep\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Having trouble falling asleep at night."
+            "example": "Having trouble falling asleep at night.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "잠들다=fall asleep; 자다=sleep"
+                }
+            ]
         },
         {
             "meaning": "wake up often",
             "guide": "Fixed expression meaning \"to wake up often\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Frequently wakes up at night."
+            "example": "Frequently wakes up at night.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "깨다=wake up; 깨우다=wake up"
+                }
+            ]
         },
         {
             "meaning": "no strength",
@@ -362,7 +614,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "decreased appetite",
             "guide": "Fixed expression meaning \"reduced appetite\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Appetite is reduced."
+            "example": "Appetite is reduced.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "줄다→줄어요/줄었다"
+                }
+            ]
         },
         {
             "meaning": "loser",
@@ -372,12 +630,24 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "disappoint",
             "guide": "Verb expression meaning \"to disappoint\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I feel like I've let my family down."
+            "example": "I feel like I've let my family down.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "실망하다→실망시키다"
+                }
+            ]
         },
         {
             "meaning": "Difficulty concentrating",
             "guide": "Fixed expression meaning \"difficulty concentrating\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Difficulty concentrating on studying."
+            "example": "Difficulty concentrating on studying.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공부/일에 집중하다"
+                }
+            ]
         },
         {
             "meaning": "having thoughts of death",
@@ -387,17 +657,35 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "temporarily",
             "guide": "Adverb meaning \"temporarily\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "The mood may temporarily turn melancholy."
+            "example": "The mood may temporarily turn melancholy.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "일시적=ephemeral; 지속적=continuous"
+                }
+            ]
         },
         {
             "meaning": "restore",
             "guide": "Verb expression meaning \"to restore\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Didn't recover easily."
+            "example": "Didn't recover easily.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "건강/기분이 회복되다"
+                }
+            ]
         },
         {
             "meaning": "doubt",
             "guide": "Verb expression meaning \"to doubt\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "You can wonder if it's depression."
+            "example": "You can wonder if it's depression.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "의심하다 active; 의심되다 passive/suspicious"
+                }
+            ]
         },
         {
             "meaning": "World Health Organization",
@@ -407,7 +695,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "to be reported; to be reported",
             "guide": "Verb expression meaning \"to be reported, to be reported\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "It is reported to be a common disease."
+            "example": "It is reported to be a common disease.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "보고하다→보고되다"
+                }
+            ]
         },
         {
             "meaning": "Common diseases",
@@ -422,12 +716,24 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "added",
             "guide": "Verb expression meaning \"to add\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "It is important to add."
+            "example": "It is important to add.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "-다고 덧붙이다"
+                }
+            ]
         },
         {
             "meaning": "early diagnosis",
             "guide": "Noun meaning \"early diagnosis\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Early diagnosis and treatment are important."
+            "example": "Early diagnosis and treatment are important.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "조기 진단과 치료"
+                }
+            ]
         },
         {
             "meaning": "Regional mental health agency",
@@ -447,7 +753,13 @@ window.lessonGuideL3TranslationChunks.en["l3-15"] = {
         {
             "meaning": "Maintain relationships and connections",
             "guide": "Fixed expression meaning \"to maintain relationships and connections.\" It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please stay in touch with your family."
+            "example": "Please stay in touch with your family.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "연락을 유지하다"
+                }
+            ]
         },
         {
             "meaning": "Consultation application form",

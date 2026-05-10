@@ -28,12 +28,28 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "exchange, exchange",
             "guide": "Noun, meaning \"exchange, exchange\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because of the small size, I changed it to a large size."
+            "example": "Because of the small size, I changed it to a large size.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "큰 사이즈로 교환하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "교환하다 means exchange; 환불하다 means refund."
+                }
+            ]
         },
         {
             "meaning": "Refund",
             "guide": "Noun meaning \"refund\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because there were stains, I gave it a refund."
+            "example": "Because there were stains, I gave it a refund.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "환불을 받다 / 환불해 주다"
+                }
+            ]
         },
         {
             "meaning": "Things to note",
@@ -43,7 +59,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Consumer Advisory Center",
             "guide": "Noun meaning \"consumer consultation center\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If the problem cannot be solved, please contact the Consumer Consultation Center."
+            "example": "If the problem cannot be solved, please contact the Consumer Consultation Center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "소비자 상담 센터에 문의하다"
+                }
+            ]
         },
         {
             "meaning": "products, commodities",
@@ -58,7 +80,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "damage, damage",
             "guide": "Noun meaning \"damaged, ruined\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If the item is damaged, it cannot be exchanged."
+            "example": "If the item is damaged, it cannot be exchanged.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "훼손하다 -> 훼손되다"
+                }
+            ]
         },
         {
             "meaning": "Tags, labels",
@@ -73,27 +101,61 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "remove, take off",
             "guide": "Noun meaning \"to remove, to take off\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please do not take off the price tag and bring it with you."
+            "example": "Please do not take off the price tag and bring it with you.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "태그/라벨/가격표를 제거하다"
+                }
+            ]
         },
         {
             "meaning": "No exchange/refund",
             "guide": "Noun meaning \"no exchange/refund\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Products cannot be exchanged/refunded after use."
+            "example": "Products cannot be exchanged/refunded after use.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사용 시 교환/환불 불가"
+                }
+            ]
         },
         {
             "meaning": "Can be exchanged/refunded",
             "guide": "Noun meaning \"can exchange/refund\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Exchange/refund is available with receipt."
+            "example": "Exchange/refund is available with receipt.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "영수증 지참 시 가능"
+                }
+            ]
         },
         {
             "meaning": "Receipts, receipts",
             "guide": "Noun, meaning \"receipt, receipt\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Went to the store with the receipt."
+            "example": "Went to the store with the receipt.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "영수증을 지참하다/제시하다"
+                }
+            ]
         },
         {
             "meaning": "carry, hold",
             "guide": "Noun meaning \"to carry, to hold\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please bring your payment card."
+            "example": "Please bring your payment card.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "신분증/영수증을 지참하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Notification tone, more formal than 가지고 오다"
+                }
+            ]
         },
         {
             "meaning": "Purchase date",
@@ -103,7 +165,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "within",
             "guide": "Noun meaning \"within\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please bring it within a week."
+            "example": "Please bring it within a week.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "7일 이내 includes the 7th day."
+                }
+            ]
         },
         {
             "meaning": "things, objects",
@@ -118,22 +186,46 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Small size",
             "guide": "Noun meaning \"small size\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The shoe size was small, so I exchanged it."
+            "example": "The shoe size was small, so I exchanged it.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "큰 사이즈로 교환하다"
+                }
+            ]
         },
         {
             "meaning": "Color is different",
             "guide": "Noun meaning \"different colors\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The color is different from what I saw online."
+            "example": "The color is different from what I saw online.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "본 것과 색상이 다르다"
+                }
+            ]
         },
         {
             "meaning": "Loose pants",
             "guide": "Noun meaning \"loose pants\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The pants were too loose, so I changed them to a small size."
+            "example": "The pants were too loose, so I changed them to a small size.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "헐렁하다=loose; 끼다=tight"
+                }
+            ]
         },
         {
             "meaning": "The pants are tight and stuck in the body",
             "guide": "Noun, meaning \"tight pants, stuck in the body\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The pants are too tight and uncomfortable to wear."
+            "example": "The pants are too tight and uncomfortable to wear.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Also used when clothes feel tight on the body."
+                }
+            ]
         },
         {
             "meaning": "There are stains",
@@ -143,7 +235,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "The button fell off",
             "guide": "A noun meaning \"a button fell off\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The button fell off, so I want to exchange it."
+            "example": "The button fell off, so I want to exchange it.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "떨어지다=drop it yourself; 떨어뜨리다=get rid of it"
+                }
+            ]
         },
         {
             "meaning": "There is something wrong with the sutures or they are sewn wrongly.",
@@ -153,17 +251,39 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Unsatisfactory design",
             "guide": "A noun meaning \"undesirable design.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I don't like the design, so I want to exchange it."
+            "example": "I don't like the design, so I want to exchange it.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "마음에 들다 / 안 들다"
+                }
+            ]
         },
         {
             "meaning": "Consult the customer service center",
             "guide": "Noun, meaning \"consult the customer service center\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I consulted the online store customer service center."
+            "example": "I consulted the online store customer service center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고객 센터에 문의하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Use 에 문의하다 with a place or institution."
+                }
+            ]
         },
         {
             "meaning": "consultation, negotiation",
             "guide": "Noun, meaning \"consultation, discussion\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I contacted the Consumer Consultation Center."
+            "example": "I contacted the Consumer Consultation Center.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "상담하다=consultation; 상담을 받다=receive consultation"
+                }
+            ]
         },
         {
             "meaning": "Worth learning, fairly learnable",
@@ -178,7 +298,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Worth seeing",
             "guide": "Noun meaning \"worth seeing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If there are any movies worth watching recently, please introduce them to me."
+            "example": "If there are any movies worth watching recently, please introduce them to me.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "보다 -> 볼 만하다 / 볼 만한"
+                }
+            ]
         },
         {
             "meaning": "Worth reading",
@@ -188,12 +314,28 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Still usable and worth using",
             "guide": "Noun, meaning \"can still be used, worthy of use\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although it is old, it is still strong and usable."
+            "example": "Although it is old, it is still strong and usable.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "쓰다 -> 쓸 만하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "쓸만하다 is also common, but the textbooks are written separately"
+                }
+            ]
         },
         {
             "meaning": "Still wearable, worth wearing",
             "guide": "Noun, meaning \"still wearable, worth wearing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although the pants are short, they are still wearable."
+            "example": "Although the pants are short, they are still wearable.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "입다 -> 입을 만하다"
+                }
+            ]
         },
         {
             "meaning": "strong",
@@ -203,7 +345,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "It's old, it's been a long time",
             "guide": "Noun, meaning \"old, long time\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This desk is a bit old."
+            "example": "This desk is a bit old.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "오래된 물건=old things; 늙다 used for people/animals getting old"
+                }
+            ]
         },
         {
             "meaning": "replace, replace",
@@ -218,7 +366,17 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Still wearable and worth wearing",
             "guide": "Noun, meaning \"still wearable, still worth wearing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I can still wear the sneakers I bought last year."
+            "example": "I can still wear the sneakers I bought last year.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 신다 for shoes and socks, not 입다"
+                },
+                {
+                    "type": "form",
+                    "text": "신다 -> 신을 만하다"
+                }
+            ]
         },
         {
             "meaning": "sneakers",
@@ -233,12 +391,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Commuting to and from get off work",
             "guide": "Noun meaning \"commuting to and from get off work.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although the company is far away, it's still a relatively easy commute."
+            "example": "Although the company is far away, it's still a relatively easy commute.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사에 출퇴근하다"
+                }
+            ]
         },
         {
             "meaning": "Because it's small",
             "guide": "Noun meaning \"because of smallness\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Since the size is a bit small, I would like to change it to a larger size."
+            "example": "Since the size is a bit small, I would like to change it to a larger size.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Spoken in spoken language; commonly used in formal writing 작아서"
+                }
+            ]
         },
         {
             "meaning": "After coming, because of coming",
@@ -268,12 +438,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Why did you come?",
             "guide": "Noun, meaning \"Why are you here?\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The clerk asked me why I came."
+            "example": "The clerk asked me why I came.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직원: 무슨 일로 오셨어요?"
+                }
+            ]
         },
         {
             "meaning": "I want to exchange",
             "guide": "Noun meaning \"I want to exchange goods\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I bought this yesterday and I want to exchange it."
+            "example": "I bought this yesterday and I want to exchange it.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교환/환불하고 싶은데요"
+                }
+            ]
         },
         {
             "meaning": "Confirm product",
@@ -293,12 +475,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Confirm if it is appropriate/correct",
             "guide": "Noun, meaning \"to confirm whether it is appropriate/correct\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Could you please confirm if the size is suitable?"
+            "example": "Could you please confirm if the size is suitable?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사이즈/색상이 맞는지 확인하다"
+                }
+            ]
         },
         {
             "meaning": "Payment, settlement",
             "guide": "Noun, meaning \"payment, settlement\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Did you bring the card you used to pay?"
+            "example": "Did you bring the card you used to pay?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "카드로 결제하다"
+                }
+            ]
         },
         {
             "meaning": "card, bank card",
@@ -323,12 +517,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "online shopping",
             "guide": "A noun meaning \"online shopping\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I encountered problems while shopping online."
+            "example": "I encountered problems while shopping online.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "인터넷에서 쇼핑하다"
+                }
+            ]
         },
         {
             "meaning": "Express fee",
             "guide": "A noun meaning \"express delivery fee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Worry about the courier fee when exchanging goods."
+            "example": "Worry about the courier fee when exchanging goods.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "택배비가 들다 / 택배비를 내다"
+                }
+            ]
         },
         {
             "meaning": "Recommended",
@@ -343,22 +549,46 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "free shipping",
             "guide": "A noun meaning \"free shipping\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This item ships for free."
+            "example": "This item ships for free.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "무료 배송 상품"
+                }
+            ]
         },
         {
             "meaning": "Exchange fee",
             "guide": "Noun meaning \"exchange fee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I asked how much the exchange fee would be."
+            "example": "I asked how much the exchange fee would be.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교환 비용을 부담하다"
+                }
+            ]
         },
         {
             "meaning": "buy",
             "guide": "Noun meaning \"to buy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Bought jeans at a department store."
+            "example": "Bought jeans at a department store.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "구입하다/구매하다 is more formal than 사다"
+                }
+            ]
         },
         {
             "meaning": "Available items for sale",
             "guide": "A noun meaning \"saleable goods\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If the item is still salable, it can be exchanged."
+            "example": "If the item is still salable, it can be exchanged.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "판매 가능한 상태"
+                }
+            ]
         },
         {
             "meaning": "fresh food, fresh food",
@@ -373,27 +603,61 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "damaged",
             "guide": "Noun meaning \"broken\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Exchanges cannot be made if the box is damaged."
+            "example": "Exchanges cannot be made if the box is damaged.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "박스 파손 시"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "파손 is breakage; 훼손 is broader damage."
+                }
+            ]
         },
         {
             "meaning": "repair, modify",
             "guide": "Noun meaning \"to repair, modify\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "No refunds will be given after the garment has been altered."
+            "example": "No refunds will be given after the garment has been altered.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "옷을 수선하다 / 수선 시"
+                }
+            ]
         },
         {
             "meaning": "giveaway",
             "guide": "Noun meaning \"gift\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If there are any gifts, they can be processed after they are returned."
+            "example": "If there are any gifts, they can be processed after they are returned.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "증정품을 반납하다"
+                }
+            ]
         },
         {
             "meaning": "return, hand over",
             "guide": "Noun meaning \"to return, to hand over\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I got a refund after returning the gift."
+            "example": "I got a refund after returning the gift.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Return goods with 반납하다; receive money back with 환불받다."
+                }
+            ]
         },
         {
             "meaning": "Buy store",
             "guide": "Noun meaning \"buying store\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Exchanges can only be processed at the store where the product was purchased."
+            "example": "Exchanges can only be processed at the store where the product was purchased.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "구매점에서만 가능"
+                }
+            ]
         },
         {
             "meaning": "normal product",
@@ -403,17 +667,35 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Defective products and defective products",
             "guide": "Noun, meaning \"defective goods, defective goods\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Defective products can be refunded within 10 days."
+            "example": "Defective products can be refunded within 10 days.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The opposite of 정상 제품."
+                }
+            ]
         },
         {
             "meaning": "kaifeng",
             "guide": "Noun, meaning \"Kaifeng\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If you open the box, it will be more difficult to get a refund."
+            "example": "If you open the box, it will be more difficult to get a refund.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "개봉하다=opened; 미개봉=unopened"
+                }
+            ]
         },
         {
             "meaning": "unopened",
             "guide": "Noun meaning \"unopened\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Exchanges are available if the box is unopened."
+            "example": "Exchanges are available if the box is unopened.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "박스 미개봉의 경우"
+                }
+            ]
         },
         {
             "meaning": "jeans",
@@ -428,7 +710,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Discounted items",
             "guide": "A noun meaning \"discounted goods\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Discounted items are marked non-refundable."
+            "example": "Discounted items are marked non-refundable.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "세일 상품은 환불 불가일 수 있음"
+                }
+            ]
         },
         {
             "meaning": "Stores, shops",
@@ -438,12 +726,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "try on",
             "guide": "Noun meaning \"to try on\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "When I got home and tried it on again, I found that the size was too small."
+            "example": "When I got home and tried it on again, I found that the size was too small.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "입어 보니 / 입어 봤어요"
+                }
+            ]
         },
         {
             "meaning": "request, demand",
             "guide": "Noun meaning \"request, request\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Went to the store and made a refund request."
+            "example": "Went to the store and made a refund request.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "환불/교환을 요청하다"
+                }
+            ]
         },
         {
             "meaning": "Instructions, tips",
@@ -453,7 +753,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "consultation, inquiry",
             "guide": "Noun, meaning \"consultation, inquiry\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I asked the customer service center about the exchange method."
+            "example": "I asked the customer service center about the exchange method.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고객 센터에 문의하다"
+                }
+            ]
         },
         {
             "meaning": "Usually, generally",
@@ -463,7 +769,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "seller, seller",
             "guide": "Noun meaning \"seller, seller\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Special instructions received from seller."
+            "example": "Special instructions received from seller.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "판매자=seller; 소비자=buyer"
+                }
+            ]
         },
         {
             "meaning": "special, special",
@@ -473,7 +785,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "consumer",
             "guide": "Noun meaning \"consumer\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Consumers cannot obtain refunds or exchanges."
+            "example": "Consumers cannot obtain refunds or exchanges.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "소비자=consumer; 사업자=operator"
+                }
+            ]
         },
         {
             "meaning": "Cash",
@@ -483,7 +801,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "tear off, tear up",
             "guide": "Noun meaning \"to tear off, tear up.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Tear up the receipt."
+            "example": "Tear up the receipt.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "-아/어 버리다 marks completion, often with regret."
+                }
+            ]
         },
         {
             "meaning": "packaging",
@@ -493,7 +817,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "tear apart, take apart",
             "guide": "Noun meaning \"to tear apart, to tear apart\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It may be difficult to exchange items after unpacking them."
+            "example": "It may be difficult to exchange items after unpacking them.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "포장을 뜯다"
+                }
+            ]
         },
         {
             "meaning": "coffee machine",
@@ -518,22 +848,46 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "suffer damage",
             "guide": "Noun meaning \"to suffer damage\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "More and more consumers are being harmed."
+            "example": "More and more consumers are being harmed.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "피해를 입다 / 피해가 발생하다"
+                }
+            ]
         },
         {
             "meaning": "Operator, merchant",
             "guide": "Noun, meaning \"operator, merchant\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Disputes arise between consumers and operators."
+            "example": "Disputes arise between consumers and operators.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "사업자 is a business operator, not an ordinary employee."
+                }
+            ]
         },
         {
             "meaning": "dispute, dispute",
             "guide": "Noun meaning \"dispute, dispute\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Disputes often occur between consumers and operators."
+            "example": "Disputes often occur between consumers and operators.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "소비자와 사업자 사이의 분쟁"
+                }
+            ]
         },
         {
             "meaning": "occur, produce",
             "guide": "Noun, meaning \"to occur, to produce\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Counseling is available when consumer damage occurs."
+            "example": "Counseling is available when consumer damage occurs.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문제/피해/분쟁이 발생하다"
+                }
+            ]
         },
         {
             "meaning": "Difficulties, hardships",
@@ -543,7 +897,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "obtain relief for damages",
             "guide": "Noun meaning \"to obtain relief for damages.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Help consumers obtain damages relief."
+            "example": "Help consumers obtain damages relief.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "구제하다=relief; 구제받다=get relief"
+                }
+            ]
         },
         {
             "meaning": "government agencies",
@@ -553,7 +913,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Korea Consumer Agency",
             "guide": "Noun meaning \"Korean Consumer Institute\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You need to apply for damage relief from the Korean Consumer Agency."
+            "example": "You need to apply for damage relief from the Korean Consumer Agency.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한국소비자원에 신청하다"
+                }
+            ]
         },
         {
             "meaning": "Application for damages relief",
@@ -563,12 +929,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "handle on behalf of, do for...",
             "guide": "Noun, meaning \"to handle on behalf of, to do for...\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The center handles the application on your behalf."
+            "example": "The center handles the application on your behalf.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "신청을 대신해 주다"
+                }
+            ]
         },
         {
             "meaning": "side, position",
             "guide": "Noun, meaning \"a party, a position\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Find solutions on the side of consumers."
+            "example": "Find solutions on the side of consumers.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "소비자의 편에서"
+                }
+            ]
         },
         {
             "meaning": "local governments, local governments",
@@ -593,12 +971,24 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "propose, show",
             "guide": "Noun, meaning \"to propose, to present.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The counselor suggested a solution."
+            "example": "The counselor suggested a solution.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "해결 방법을 제시하다"
+                }
+            ]
         },
         {
             "meaning": "No area code required",
             "guide": "Noun meaning \"no area code required\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "No area code required, dial 1372."
+            "example": "No area code required, dial 1372.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "국번 없이 1372번"
+                }
+            ]
         },
         {
             "meaning": "Official website, homepage",
@@ -618,7 +1008,13 @@ window.lessonGuideL3TranslationChunks.en["l3-04"] = {
         {
             "meaning": "Size, size",
             "guide": "Noun meaning \"size, size\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The size didn't fit, so I exchanged it."
+            "example": "The size didn't fit, so I exchanged it.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "치수는 정확한 size; 사이즈는 daily size"
+                }
+            ]
         },
         {
             "meaning": "mistake, error",

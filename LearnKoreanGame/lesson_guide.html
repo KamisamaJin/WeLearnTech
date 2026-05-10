@@ -1438,27 +1438,68 @@
             const seen = new Set();
             return tips.filter(tip => {
                 if (!tip?.text) return false;
-                const key = `${tip.label}:${tip.text}`;
+                const key = `${tip.type || tip.label}:${tip.text}`;
                 if (seen.has(key)) return false;
                 seen.add(key);
                 return true;
             });
         }
 
-        const wordGuideTipLabels = new Set(["搭配", "易错", "变形"]);
+        const wordGuideTipTypeByLabel = {
+            "搭配": "collocation",
+            "易错": "pitfall",
+            "变形": "form",
+            collocation: "collocation",
+            pitfall: "pitfall",
+            form: "form"
+        };
+        const wordGuideTipLabels = {
+            "zh-CN": {
+                collocation: "搭配",
+                pitfall: "易错",
+                form: "变形"
+            },
+            en: {
+                collocation: "Pattern",
+                pitfall: "Pitfall",
+                form: "Form"
+            }
+        };
+
+        function wordGuideTipType(tip) {
+            return tip?.type || wordGuideTipTypeByLabel[tip?.label] || "";
+        }
+
+        function wordGuideTipLabel(type) {
+            return wordGuideTipLabels[uiLocale]?.[type] || wordGuideTipLabels["zh-CN"][type] || type;
+        }
 
         function normalizeWordGuideTips(tips = []) {
             if (!Array.isArray(tips)) return [];
             return uniqueGuideTips(tips
-                .filter(tip => wordGuideTipLabels.has(tip?.label))
                 .map(tip => ({
-                    label: tip.label,
+                    type: wordGuideTipType(tip),
                     text: String(tip.text || "").trim()
+                }))
+                .filter(tip => tip.type && tip.text)
+                .map(tip => ({
+                    type: tip.type,
+                    text: tip.text
                 })));
         }
 
         function lessonHasWordGuideTips(lesson) {
-            return (lesson?.vocabulary || []).some(item => normalizeWordGuideTips(item.tips).length);
+            return (lesson?.vocabulary || []).some(item => localizedWordGuideTips(item).length);
+        }
+
+        function localizedWordGuideTips(item) {
+            const preferred = item?.translations?.[translationLocale]?.tips;
+            if (Array.isArray(preferred) && preferred.length) return normalizeWordGuideTips(preferred);
+
+            const fallbackTranslation = item?.translations?.["zh-CN"]?.tips;
+            if (Array.isArray(fallbackTranslation) && fallbackTranslation.length) return normalizeWordGuideTips(fallbackTranslation);
+
+            return normalizeWordGuideTips(item?.tips);
         }
 
         function renderWordGuideTips(tips) {
@@ -1466,7 +1507,7 @@
                 <div class="word-guide-tips">
                     ${tips.map(tip => `
                         <div class="word-guide-tip">
-                            <span class="word-guide-label">${escapeHtml(tip.label)}</span>
+                            <span class="word-guide-label">${escapeHtml(wordGuideTipLabel(tip.type))}</span>
                             <span class="word-guide-text">${escapeHtml(tip.text)}</span>
                         </div>
                     `).join("")}
@@ -1475,7 +1516,7 @@
         }
 
         function renderWordGuide(lesson, item) {
-            const dataTips = normalizeWordGuideTips(item.tips);
+            const dataTips = localizedWordGuideTips(item);
             if (dataTips.length) return renderWordGuideTips(dataTips);
             if (lessonHasWordGuideTips(lesson)) return "";
 

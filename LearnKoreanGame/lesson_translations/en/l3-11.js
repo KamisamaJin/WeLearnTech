@@ -23,27 +23,57 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "real estate; real estate agency",
             "guide": "Noun, meaning \"real estate, real estate agency\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Went to a real estate agency to look at houses."
+            "example": "Went to a real estate agency to look at houses.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "For the place, say 부동산에 가다."
+                }
+            ]
         },
         {
             "meaning": "Looking for a house",
             "guide": "Fixed expression meaning \"looking for a house\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Finding a house is not easy."
+            "example": "Finding a house is not easy.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집을 구하다 / 방을 구하다"
+                }
+            ]
         },
         {
             "meaning": "contract; signing",
             "guide": "Noun meaning \"contract, signing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please confirm before signing the contract."
+            "example": "Please confirm before signing the contract.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "계약을 하다 / 계약서를 쓰다"
+                }
+            ]
         },
         {
             "meaning": "buy and sell",
             "guide": "Noun meaning \"buy and sell\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Looking into buying and selling an apartment."
+            "example": "Looking into buying and selling an apartment.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "매매 means buying and selling."
+                }
+            ]
         },
         {
             "meaning": "lease; lease",
             "guide": "Noun meaning \"rent, rent\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Looking for rental housing."
+            "example": "Looking for rental housing.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "임대 is from the side that rents something out."
+                }
+            ]
         },
         {
             "meaning": "dormitory",
@@ -53,12 +83,24 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "single room; one-bedroom apartment",
             "guide": "Noun, meaning \"single room, one-room household\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Looking for a single room."
+            "example": "Looking for a single room.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A Korean-style single-room layout."
+                }
+            ]
         },
         {
             "meaning": "Office and living apartment",
             "guide": "Noun, meaning \"office and residential apartment\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The monthly rent for office-living apartments is very expensive."
+            "example": "The monthly rent for office-living apartments is very expensive.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A residential building, not an office."
+                }
+            ]
         },
         {
             "meaning": "apartment",
@@ -68,7 +110,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Townhouse/Multi-Family Housing",
             "guide": "Noun meaning \"township/multi-family dwelling\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Looking for a two bedroom house for monthly rent."
+            "example": "Looking for a two bedroom house for monthly rent.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "In Korea, it feels like a multi-family house."
+                }
+            ]
         },
         {
             "meaning": "single family house",
@@ -78,27 +126,57 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "monthly rent",
             "guide": "Noun meaning \"monthly rent\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Looking for a house with low monthly rent."
+            "example": "Looking for a house with low monthly rent.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "월세를 내다 / 월세가 싸다"
+                }
+            ]
         },
         {
             "meaning": "Full rent; deposit rental",
             "guide": "Noun, meaning \"full lease, deposit lease\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Are learning about full rental housing."
+            "example": "Are learning about full rental housing.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Centered on a large deposit rather than monthly rent."
+                }
+            ]
         },
         {
             "meaning": "Deposit",
             "guide": "Noun meaning \"deposit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "How much is the deposit?"
+            "example": "How much is the deposit?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보증금을 내다 / 돌려받다"
+                }
+            ]
         },
         {
             "meaning": "Convenient transportation",
             "guide": "Fixed expression meaning \"convenient transportation\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "This suite is easily accessible."
+            "example": "This suite is easily accessible.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교통이 편리한 집"
+                }
+            ]
         },
         {
             "meaning": "Transportation is inconvenient",
             "guide": "Fixed expression meaning \"inconvenient transportation\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The bus station is far away, so transportation is inconvenient."
+            "example": "The bus station is far away, so transportation is inconvenient.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교통이 불편한 동네"
+                }
+            ]
         },
         {
             "meaning": "subway station",
@@ -113,17 +191,35 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "near",
             "guide": "Adjective meaning \"near\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "The school is very close."
+            "example": "The school is very close.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "가깝다 → 가까워요"
+                }
+            ]
         },
         {
             "meaning": "far",
             "guide": "Adjective meaning \"far\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "The subway station is far away."
+            "example": "The subway station is far away.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "멀다 → 먼 곳 / 멉니다"
+                }
+            ]
         },
         {
             "meaning": "parking place",
             "guide": "Fixed expression meaning \"a place to park\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There is parking space."
+            "example": "There is parking space.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "주차할 곳이 있다 / 없다"
+                }
+            ]
         },
         {
             "meaning": "main road; main road",
@@ -143,7 +239,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Amenities",
             "guide": "Fixed expression meaning \"amenity\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There are many conveniences around."
+            "example": "There are many conveniences around.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "주변에 편의 시설이 많다"
+                }
+            ]
         },
         {
             "meaning": "market",
@@ -178,12 +280,24 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "landscape; vision",
             "guide": "Noun meaning \"landscape, vision\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It's a house with a nice view."
+            "example": "It's a house with a nice view.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전망이 좋다 / 나쁘다"
+                }
+            ]
         },
         {
             "meaning": "Good lighting",
             "guide": "Fixed expression meaning \"good lighting\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The windows are big, so the lighting is good."
+            "example": "The windows are big, so the lighting is good.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "해가 잘 들어오는 집"
+                }
+            ]
         },
         {
             "meaning": "room",
@@ -233,17 +347,35 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "configuration; accompanying equipment",
             "guide": "Noun, meaning \"configuration, accompanying equipment\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There is a bed and washing machine configuration."
+            "example": "There is a bed and washing machine configuration.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Whether furniture and appliances are included."
+                }
+            ]
         },
         {
             "meaning": "Facing south",
             "guide": "Noun meaning \"south facing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This suite faces south and has a great view."
+            "example": "This suite faces south and has a great view.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "남향인 데다가 전망도 좋다"
+                }
+            ]
         },
         {
             "meaning": "Newly renovated; renovated",
             "guide": "Fixed expression meaning \"new decoration, re-repair\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Newly renovated so very clean."
+            "example": "Newly renovated so very clean.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "새로 수리한 집"
+                }
+            ]
         },
         {
             "meaning": "clean",
@@ -253,7 +385,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "5 minutes walk",
             "guide": "Fixed expression meaning \"a 5-minute walk away\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "5 minutes walk from the subway station."
+            "example": "5 minutes walk from the subway station.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "역에서 걸어서 5분 거리"
+                }
+            ]
         },
         {
             "meaning": "real estate agent",
@@ -268,12 +406,24 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Go to see a house",
             "guide": "Fixed expression meaning \"going to see a house\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want to see the house."
+            "example": "I want to see the house.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집을 보러 부동산에 가다"
+                }
+            ]
         },
         {
             "meaning": "Two-bedroom apartment for monthly rent",
             "guide": "Fixed expression meaning \"a two-bedroom house for monthly rent\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Looking for a two bedroom house for monthly rent."
+            "example": "Looking for a two bedroom house for monthly rent.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "방 두 개인 + 집/빌라"
+                }
+            ]
         },
         {
             "meaning": "Terrace",
@@ -283,7 +433,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Surrounding environment",
             "guide": "Fixed expression meaning \"surrounding environment\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The surrounding environment is clean and safe."
+            "example": "The surrounding environment is clean and safe.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "주변 환경이 깨끗하다"
+                }
+            ]
         },
         {
             "meaning": "safe",
@@ -298,7 +454,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Noise between floors",
             "guide": "Fixed expression meaning \"noise between floors\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please check if there is any noise between floors."
+            "example": "Please check if there is any noise between floors.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "You will often see it written either spaced or attached."
+                }
+            ]
         },
         {
             "meaning": "smell",
@@ -308,22 +470,46 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "water",
             "guide": "Noun meaning \"water\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please confirm whether the water is normal."
+            "example": "Please confirm whether the water is normal.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "물이 잘 나오다"
+                }
+            ]
         },
         {
             "meaning": "electricity",
             "guide": "A noun meaning \"electricity\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please confirm whether the power supply is normal."
+            "example": "Please confirm whether the power supply is normal.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전기가 잘 되다"
+                }
+            ]
         },
         {
             "meaning": "heating",
             "guide": "Noun meaning \"heating\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please confirm whether the heating is normal."
+            "example": "Please confirm whether the heating is normal.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "난방이 잘 나오다"
+                }
+            ]
         },
         {
             "meaning": "broken place",
             "guide": "Fixed expression meaning \"a broken place\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please check for any damage."
+            "example": "Please check for any damage.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고장 난 곳이 있는지 보다"
+                }
+            ]
         },
         {
             "meaning": "door",
@@ -353,77 +539,167 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "public transport",
             "guide": "Noun meaning \"public transportation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It's easy to use public transportation."
+            "example": "It's easy to use public transportation.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "대중교통을 이용하다"
+                }
+            ]
         },
         {
             "meaning": "walk",
             "guide": "Noun meaning \"to walk\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "5 minutes walk to the subway station."
+            "example": "5 minutes walk to the subway station.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "도보 5분 / 도보 10분"
+                }
+            ]
         },
         {
             "meaning": "copy of register",
             "guide": "Noun meaning \"copy of register\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Be sure to confirm a copy of the register."
+            "example": "Be sure to confirm a copy of the register.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "계약 전 등기부등본 확인"
+                }
+            ]
         },
         {
             "meaning": "New",
             "guide": "A noun meaning \"newly built\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Check out the newly built office and living apartments."
+            "example": "Check out the newly built office and living apartments.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A newly built building."
+                }
+            ]
         },
         {
             "meaning": "station circle; station surroundings",
             "guide": "Noun, meaning \"station circle, station surroundings\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The houses around the site are easily accessible."
+            "example": "The houses around the site are easily accessible.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A living area close to a station."
+                }
+            ]
         },
         {
             "meaning": "balance; balance",
             "guide": "Noun, meaning \"final payment, balance\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The final payment is due on the day of moving."
+            "example": "The final payment is due on the day of moving.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The money left at the end."
+                }
+            ]
         },
         {
             "meaning": "Moving in notification",
             "guide": "Fixed expression meaning \"declaration of moving in\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "You need to apply for a move-in declaration at the resident center."
+            "example": "You need to apply for a move-in declaration at the resident center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "주민 센터에 전입 신고"
+                }
+            ]
         },
         {
             "meaning": "Special agreement",
             "guide": "Fixed expression meaning \"special agreement\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please specify the special arrangements for house maintenance in detail."
+            "example": "Please specify the special arrangements for house maintenance in detail.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "특약 사항에 쓰다"
+                }
+            ]
         },
         {
             "meaning": "Fully configured",
             "guide": "Fixed expression meaning \"full configuration\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Looking for a fully furnished single room."
+            "example": "Looking for a fully furnished single room.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "풀 옵션 원룸"
+                }
+            ]
         },
         {
             "meaning": "check; look carefully",
             "guide": "Verb expression meaning \"to look at, to look carefully\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please check the status of the home carefully."
+            "example": "Please check the status of the home carefully.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "꼼꼼하게 살펴보다"
+                }
+            ]
         },
         {
             "meaning": "carefully",
             "guide": "Adverb meaning \"carefully\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Please read the contract carefully."
+            "example": "Please read the contract carefully.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "꼼꼼하게 확인하다 / 읽다"
+                }
+            ]
         },
         {
             "meaning": "contract",
             "guide": "Noun meaning \"contract\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please read the contract carefully."
+            "example": "Please read the contract carefully.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "계약서를 쓰다 / 읽다"
+                }
+            ]
         },
         {
             "meaning": "Landlord",
             "guide": "Noun meaning \"landlord\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is safer to sign a contract directly with the landlord."
+            "example": "It is safer to sign a contract directly with the landlord.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집주인과 직접 계약하다"
+                }
+            ]
         },
         {
             "meaning": "direct contract",
             "guide": "Fixed expression meaning \"direct contract\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please sign the contract directly with the landlord."
+            "example": "Please sign the contract directly with the landlord.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집주인과 직접 계약하다"
+                }
+            ]
         },
         {
             "meaning": "Collection account",
             "guide": "Fixed expression meaning \"receipt account\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please confirm whether the payment account belongs to the landlord."
+            "example": "Please confirm whether the payment account belongs to the landlord.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집주인 명의 계좌인지 확인"
+                }
+            ]
         },
         {
             "meaning": "house repair",
@@ -433,12 +709,24 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Accident/problem occurs",
             "guide": "Fixed expression meaning \"an accident/problem occurred\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Problems may arise if you sign on behalf of someone else."
+            "example": "Problems may arise if you sign on behalf of someone else.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문제·사고가 발생하다"
+                }
+            ]
         },
         {
             "meaning": "abide by the agreement",
             "guide": "Fixed expression meaning \"to keep an agreement\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Merely speaking words may not keep the agreement."
+            "example": "Merely speaking words may not keep the agreement.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "약속을 지키다 / 어기다"
+                }
+            ]
         },
         {
             "meaning": "run away",
@@ -448,7 +736,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "pay",
             "guide": "Verb expression meaning \"to pay\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Pay the balance and get the keys."
+            "example": "Pay the balance and get the keys.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "잔금을 지불하다"
+                }
+            ]
         },
         {
             "meaning": "key",
@@ -463,7 +757,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "moving luggage",
             "guide": "A noun meaning \"moving baggage\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Moved the moving luggage to the new home."
+            "example": "Moved the moving luggage to the new home.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이삿짐을 옮기다"
+                }
+            ]
         },
         {
             "meaning": "Resident Center",
@@ -473,17 +773,35 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "Confirmation date; lease registration date",
             "guide": "Fixed expression meaning \"date of establishment, date of lease registration\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Need to get a firm date."
+            "example": "Need to get a firm date.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "확정 일자를 받다"
+                }
+            ]
         },
         {
             "meaning": "take back; return",
             "guide": "Verb expression meaning \"to take back, to return\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "You can get your deposit back safely."
+            "example": "You can get your deposit back safely.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보증금을 돌려받다"
+                }
+            ]
         },
         {
             "meaning": "preference; liking to choose",
             "guide": "Verb expression meaning \"preference, liking to choose\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "People prefer houses with convenient transportation."
+            "example": "People prefer houses with convenient transportation.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/를 선호하다"
+                }
+            ]
         },
         {
             "meaning": "objective text",
@@ -498,17 +816,35 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "shared housing",
             "guide": "Fixed expression meaning \"shared dwelling\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Shared housing is popular with the younger generation."
+            "example": "Shared housing is popular with the younger generation.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Shared space plus private space."
+                }
+            ]
         },
         {
             "meaning": "Share House; shared housing",
             "guide": "Fixed expression meaning \"share house, shared house\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want to live in a shared house."
+            "example": "I want to live in a shared house.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "share house의 한글 표기"
+                }
+            ]
         },
         {
             "meaning": "rental residence",
             "guide": "Fixed expression meaning \"rental dwelling\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Shared housing is rental housing."
+            "example": "Shared housing is rental housing.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "임대 주택에 살다"
+                }
+            ]
         },
         {
             "meaning": "younger generation",
@@ -518,7 +854,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "rapid spread",
             "guide": "Fixed expression meaning \"rapid diffusion\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Shared housing culture is spreading rapidly."
+            "example": "Shared housing culture is spreading rapidly.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문화가 급속히 퍼지다"
+                }
+            ]
         },
         {
             "meaning": "kitchen",
@@ -548,22 +890,46 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "independent space",
             "guide": "Fixed expression meaning \"independent space\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Can have their own independent space."
+            "example": "Can have their own independent space.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "독립된 공간을 가지다"
+                }
+            ]
         },
         {
             "meaning": "Contract term",
             "guide": "Fixed expression meaning \"term of contract\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The contract period is at least 1 month."
+            "example": "The contract period is at least 1 month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "계약 기간이 짧다 / 길다"
+                }
+            ]
         },
         {
             "meaning": "least; lowest",
             "guide": "Adverb meaning \"least, lowest\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "You can sign from at least 1 month."
+            "example": "You can sign from at least 1 month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "최소 1개월 / 최소 2명"
+                }
+            ]
         },
         {
             "meaning": "Newcomer in society; newcomer in the workplace",
             "guide": "Fixed expression, meaning \"newcomer in society and workplace\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Be welcomed by newcomers to society."
+            "example": "Be welcomed by newcomers to society.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Someone who has just started working life."
+                }
+            ]
         },
         {
             "meaning": "economic reasons",
@@ -573,12 +939,24 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "after get off work",
             "guide": "Fixed expression meaning \"after get off work\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Have dinner together after get off work."
+            "example": "Have dinner together after get off work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "퇴근 후에 식사하다"
+                }
+            ]
         },
         {
             "meaning": "live",
             "guide": "Verb expression meaning \"to live\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "You can talk to the people who live there."
+            "example": "You can talk to the people who live there.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "More formal than 살다."
+                }
+            ]
         },
         {
             "meaning": "leisure time",
@@ -593,17 +971,35 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "both apart and together",
             "guide": "Fixed expression meaning \"both apart and together\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Living apart and together in a shared home."
+            "example": "Living apart and together in a shared home.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Personal life and communal living together."
+                }
+            ]
         },
         {
             "meaning": "living expenses",
             "guide": "Noun meaning \"living expenses\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Can save living expenses."
+            "example": "Can save living expenses.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활비를 절약하다"
+                }
+            ]
         },
         {
             "meaning": "save",
             "guide": "Verb expression meaning \"to save\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Save money on rent and living expenses."
+            "example": "Save money on rent and living expenses.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집세와 생활비를 절약하다"
+                }
+            ]
         },
         {
             "meaning": "interpersonal relationships",
@@ -618,7 +1014,13 @@ window.lessonGuideL3TranslationChunks.en["l3-11"] = {
         {
             "meaning": "residential culture",
             "guide": "Fixed expression meaning \"dwelling culture\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Shared housing is becoming a new living culture."
+            "example": "Shared housing is becoming a new living culture.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "새로운 주거 문화"
+                }
+            ]
         },
         {
             "meaning": "real estate contract",

@@ -52,12 +52,24 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "Feng shui treasure land; good location",
             "guide": "Noun, meaning \"feng shui treasure land, good location\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "In the past, places with mountains and water were called good locations."
+            "example": "In the past, places with mountains and water were called good locations.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "좋은 위치, 명당이라고 하다"
+                }
+            ]
         },
         {
             "meaning": "how is life",
             "guide": "Fixed expression meaning \"How is life going?\" It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "What's it like to live in this neighborhood?"
+            "example": "What's it like to live in this neighborhood?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활하기가 편하다/불편하다/좋다"
+                }
+            ]
         },
         {
             "meaning": "living in",
@@ -67,17 +79,35 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "Industrial Park",
             "guide": "Noun meaning \"industrial park\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There are many industrial parks in this city."
+            "example": "There are many industrial parks in this city.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "산업 단지가 들어서다"
+                }
+            ]
         },
         {
             "meaning": "Serious noise",
             "guide": "Fixed expression meaning \"serious noise\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Because it is on the roadside, there is a lot of noise."
+            "example": "Because it is on the roadside, there is a lot of noise.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "소음이 심해서 잠을 못 자다"
+                }
+            ]
         },
         {
             "meaning": "The air is turbid",
             "guide": "Fixed expression meaning \"turbid air\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There are many factories, so the air is turbid."
+            "example": "There are many factories, so the air is turbid.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "탁하다 describes air or water that is not clear."
+                }
+            ]
         },
         {
             "meaning": "The streets are clean",
@@ -92,7 +122,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "walk; walk",
             "guide": "Adverb meaning \"to walk, to walk.\" Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "You can walk to the park from home."
+            "example": "You can walk to the park from home.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "걸어서 10분 / 걸어서 가다"
+                }
+            ]
         },
         {
             "meaning": "park",
@@ -107,17 +143,35 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "fresh air",
             "guide": "Fixed expression meaning \"fresh air\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The air in the countryside is fresh."
+            "example": "The air in the countryside is fresh.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "맑다 can describe air, water, or weather."
+                }
+            ]
         },
         {
             "meaning": "quiet; secluded",
             "guide": "Adjective meaning \"quiet, secluded\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "I want to live in a quiet place."
+            "example": "I want to live in a quiet place.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Compared with 조용하다, it suggests fewer people or cars."
+                }
+            ]
         },
         {
             "meaning": "Nice scenery",
             "guide": "Fixed expression meaning \"nice scenery\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The scenery outside the window is really nice."
+            "example": "The scenery outside the window is really nice.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "경치가 좋은 곳"
+                }
+            ]
         },
         {
             "meaning": "city",
@@ -132,17 +186,43 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "passive; passive",
             "guide": "Grammatical expression, meaning \"passive, passive\". Don’t translate word for word, but understand the whole sentence according to its tone.",
-            "example": "The door was suddenly closed."
+            "example": "The door was suddenly closed.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The subject undergoes the action or ends up in that state."
+                }
+            ]
         },
         {
             "meaning": "The road is blocked",
             "guide": "Fixed expression meaning \"the road is blocked\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Because it was off-duty time, the road was very congested."
+            "example": "Because it was off-duty time, the road was very congested.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "출퇴근 시간에 길이 막히다"
+                },
+                {
+                    "type": "form",
+                    "text": "막다 → 막히다"
+                }
+            ]
         },
         {
             "meaning": "bitten by mosquito",
             "guide": "Fixed expression meaning \"to be bitten by a mosquito\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I was bitten by mosquitoes in many places and it was very itchy."
+            "example": "I was bitten by mosquitoes in many places and it was very itchy.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N한테 물리다"
+                },
+                {
+                    "type": "form",
+                    "text": "물다 → 물리다"
+                }
+            ]
         },
         {
             "meaning": "itchy",
@@ -152,47 +232,125 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "The phone is disconnected",
             "guide": "Fixed expression meaning \"the phone was disconnected\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The phone went dead while talking to a friend."
+            "example": "The phone went dead while talking to a friend.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "통화 중에 전화가 끊기다"
+                },
+                {
+                    "type": "form",
+                    "text": "끊다 → 끊기다"
+                }
+            ]
         },
         {
             "meaning": "visible; to be seen",
             "guide": "Verb expression meaning \"to see, to be seen\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Mountains can be seen from the room."
+            "example": "Mountains can be seen from the room.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "보다=see; 보이다=can see"
+                },
+                {
+                    "type": "form",
+                    "text": "보다 → 보이다"
+                }
+            ]
         },
         {
             "meaning": "be placed",
             "guide": "Verb expression meaning \"to be placed\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The table was placed by the window."
+            "example": "The table was placed by the window.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "놓다 → 놓이다"
+                }
+            ]
         },
         {
             "meaning": "caught",
             "guide": "Verb expression meaning \"to be caught\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The culprit was caught."
+            "example": "The culprit was caught.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "범인이 잡히다"
+                },
+                {
+                    "type": "form",
+                    "text": "잡다 → 잡히다"
+                }
+            ]
         },
         {
             "meaning": "to be opened; to be open",
             "guide": "Verb expression meaning \"to be opened, to open\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The door was opened."
+            "example": "The door was opened.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "문이 열리다=The door is open/is opened"
+                },
+                {
+                    "type": "form",
+                    "text": "열다 → 열리다"
+                }
+            ]
         },
         {
             "meaning": "audible",
             "guide": "Verb expression meaning \"to hear\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "There were screams from over there."
+            "example": "There were screams from over there.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "듣다 means listen; 들리다 means be audible or be heard."
+                },
+                {
+                    "type": "form",
+                    "text": "듣다 → 들리다"
+                }
+            ]
         },
         {
             "meaning": "being chased",
             "guide": "Verb expression meaning \"to be chased\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The thief is chased by the police."
+            "example": "The thief is chased by the police.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "쫓다 → 쫓기다"
+                }
+            ]
         },
         {
             "meaning": "shake",
             "guide": "Verb expression meaning \"to shake\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The elevator suddenly shook."
+            "example": "The elevator suddenly shook.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "흔들다 → 흔들리다"
+                }
+            ]
         },
         {
             "meaning": "to be locked; to be locked",
             "guide": "Verb expression meaning \"to be chained, locked up\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The dormitory door was locked."
+            "example": "The dormitory door was locked.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "문이 잠기다=The door is locked"
+                },
+                {
+                    "type": "form",
+                    "text": "잠그다 → 잠기다"
+                }
+            ]
         },
         {
             "meaning": "scream",
@@ -202,7 +360,17 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "pile up",
             "guide": "Verb expression meaning \"to pile up\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "A lot of snow accumulated during the night."
+            "example": "A lot of snow accumulated during the night.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "눈이 쌓이다"
+                },
+                {
+                    "type": "form",
+                    "text": "쌓다 → 쌓이다"
+                }
+            ]
         },
         {
             "meaning": "prisoner",
@@ -212,7 +380,17 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "to be sold; to be sold",
             "guide": "Verb expression meaning \"to be sold, to sell out\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Korean cars sell a lot."
+            "example": "Korean cars sell a lot.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "잘 팔리다=sell well"
+                },
+                {
+                    "type": "form",
+                    "text": "팔다 → 팔리다"
+                }
+            ]
         },
         {
             "meaning": "Gangwon area",
@@ -222,17 +400,39 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "moving",
             "guide": "Verb expression meaning \"to move\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I'm moving next month."
+            "example": "I'm moving next month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "어디로 이사하다"
+                }
+            ]
         },
         {
             "meaning": "move",
             "guide": "Verb expression meaning \"to move\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "My husband said we should move near the company."
+            "example": "My husband said we should move near the company.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "To move away from here, use 이사 가다"
+                },
+                {
+                    "type": "collocation",
+                    "text": "서울로 이사 가다"
+                }
+            ]
         },
         {
             "meaning": "near the company",
             "guide": "Fixed expression meaning \"near the company\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It's convenient to live near the company and go to work."
+            "example": "It's convenient to live near the company and go to work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직장 가까이 이사 가다"
+                }
+            ]
         },
         {
             "meaning": "meeting",
@@ -242,7 +442,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "agreed place",
             "guide": "Noun, meaning \"agreed place\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Went to the appointed place on time."
+            "example": "Went to the appointed place on time.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "약속 장소에 나가다/도착하다"
+                }
+            ]
         },
         {
             "meaning": "go out; go to",
@@ -252,7 +458,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "waiting",
             "guide": "Fixed expression meaning \"waiting for\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "My wife said we would have dinner together, so I was waiting."
+            "example": "My wife said we would have dinner together, so I was waiting.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "V-는 중이다"
+                }
+            ]
         },
         {
             "meaning": "singing room",
@@ -282,7 +494,17 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "move here",
             "guide": "Verb expression meaning \"to move in\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Moved to this neighborhood yesterday."
+            "example": "Moved to this neighborhood yesterday.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Move here to use 이사 오다"
+                },
+                {
+                    "type": "collocation",
+                    "text": "이 동네로 이사 오다"
+                }
+            ]
         },
         {
             "meaning": "playground",
@@ -292,12 +514,24 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "Cycling",
             "guide": "Verb expression meaning \"to ride a bicycle\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Children love riding bicycles."
+            "example": "Children love riding bicycles.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자전거를 타고 가다"
+                }
+            ]
         },
         {
             "meaning": "promenade",
             "guide": "Noun meaning \"walking path\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can exercise on the walking path."
+            "example": "You can exercise on the walking path.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "산책로를 걷다"
+                }
+            ]
         },
         {
             "meaning": "entrance",
@@ -307,7 +541,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "curious; want to know",
             "guide": "Adjective meaning \"curious, wanting to know\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "If you want to know anything, just ask."
+            "example": "If you want to know anything, just ask.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "궁금한 게 있다"
+                }
+            ]
         },
         {
             "meaning": "sports center",
@@ -322,7 +562,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "A place for children to play",
             "guide": "Fixed expression meaning \"a place for children to play\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Is there a place for children to play?"
+            "example": "Is there a place for children to play?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "V-(으)ㄹ 만한 곳"
+                }
+            ]
         },
         {
             "meaning": "A place suitable for exercise",
@@ -337,12 +583,24 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "farming; farming",
             "guide": "Verb expression, meaning \"farming, farming\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "My parents work in the countryside."
+            "example": "My parents work in the countryside.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "농사를 짓다로 통째로 기억"
+                }
+            ]
         },
         {
             "meaning": "Work in the company",
             "guide": "Verb expression meaning \"to work in the company\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "My wife works in the company."
+            "example": "My wife works in the company.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사/학교에 다니다"
+                }
+            ]
         },
         {
             "meaning": "work in factory",
@@ -367,7 +625,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "in nature",
             "guide": "Fixed expression meaning \"in nature\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "You can live in nature."
+            "example": "You can live in nature.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자연 속에서 쉬다/살다"
+                }
+            ]
         },
         {
             "meaning": "natural landscape",
@@ -377,7 +641,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "in front of you",
             "guide": "Adverb meaning \"before your eyes\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "A wide river and high mountains are in front of you."
+            "example": "A wide river and high mountains are in front of you.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "눈앞에 펼쳐지다"
+                }
+            ]
         },
         {
             "meaning": "Convenient transportation",
@@ -397,7 +667,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "Five nights and six days itinerary",
             "guide": "Fixed expression meaning \"five nights and six days trip\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Travel on a five-night, six-day itinerary."
+            "example": "Travel on a five-night, six-day itinerary.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "4박 means four nights."
+                }
+            ]
         },
         {
             "meaning": "superlative hotel",
@@ -412,7 +688,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "historical scene",
             "guide": "Fixed expression meaning \"historical scene\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Time travel to historical sites."
+            "example": "Time travel to historical sites.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "역사의 현장을 방문하다"
+                }
+            ]
         },
         {
             "meaning": "time travel",
@@ -447,7 +729,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "collect; preserve",
             "guide": "Verb expression, meaning \"treasure, preservation\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "This city preserves history."
+            "example": "This city preserves history.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "추억/역사를 간직하다"
+                }
+            ]
         },
         {
             "meaning": "flat ground",
@@ -457,7 +745,17 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "unfold; spread out",
             "guide": "Verb expression meaning \"to unfold, spread out\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Beautiful scenery unfolds before your eyes."
+            "example": "Beautiful scenery unfolds before your eyes.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "눈앞에 펼쳐지다"
+                },
+                {
+                    "type": "form",
+                    "text": "펼치다 → 펼쳐지다"
+                }
+            ]
         },
         {
             "meaning": "low hills",
@@ -472,22 +770,46 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "contained",
             "guide": "Verb expression meaning \"to be contained\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The visit fee is included in the travel fee."
+            "example": "The visit fee is included in the travel fee.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "포함하다 → 포함되다"
+                }
+            ]
         },
         {
             "meaning": "the year before last",
             "guide": "Noun meaning \"the year before\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I came to Korea the year before last."
+            "example": "I came to Korea the year before last.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "작년 = last year; 재작년 = the year before last."
+                }
+            ]
         },
         {
             "meaning": "moving company",
             "guide": "Noun meaning \"moving company\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Currently working for a moving company."
+            "example": "Currently working for a moving company.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "사이시옷 appears in 이삿짐센터."
+                }
+            ]
         },
         {
             "meaning": "dry",
             "guide": "Adjective meaning \"dry\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "Because the weather is dry, there are not many trees."
+            "example": "Because the weather is dry, there are not many trees.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "날씨/피부/공기가 건조하다"
+                }
+            ]
         },
         {
             "meaning": "goat",
@@ -507,17 +829,39 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "watch; tour",
             "guide": "Verb expression, meaning \"to watch, visit\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Watch the snow in winter."
+            "example": "Watch the snow in winter.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Compared with 보다, it more clearly means sightseeing or looking around."
+                }
+            ]
         },
         {
             "meaning": "landscape",
             "guide": "Noun meaning \"landscape\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The view of the mountain is very good."
+            "example": "The view of the mountain is very good.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "More written or formal than 경치."
+                }
+            ]
         },
         {
             "meaning": "miss",
             "guide": "Adjective meaning \"to miss\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "I miss my hometown."
+            "example": "I miss my hometown.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고향/가족이 그립다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Stronger sense of longing than 보고 싶다."
+                }
+            ]
         },
         {
             "meaning": "scenery",
@@ -552,7 +896,13 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "decide",
             "guide": "Verb expression meaning \"to decide\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Believe that location and direction determine happiness."
+            "example": "Believe that location and direction determine happiness.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/로 결정하다"
+                }
+            ]
         },
         {
             "meaning": "behind the house",
@@ -567,12 +917,24 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "water flow",
             "guide": "Fixed expression meaning \"water flows\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There is water flowing in front of the house."
+            "example": "There is water flowing in front of the house.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집 앞에 물이 흐르다"
+                }
+            ]
         },
         {
             "meaning": "south facing house",
             "guide": "A noun meaning \"a south-facing house.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "South-facing houses are very popular in Korea."
+            "example": "South-facing houses are very popular in Korea.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "남쪽을 향한 집"
+                }
+            ]
         },
         {
             "meaning": "gate",
@@ -582,7 +944,17 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "towards",
             "guide": "Verb expression meaning \"towards\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The house faces south."
+            "example": "The house faces south.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "남쪽을 향하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "You can also say 목적지로 향하다."
+                }
+            ]
         },
         {
             "meaning": "activity space",
@@ -597,7 +969,17 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "passed down",
             "guide": "Verb expression meaning \"to pass down\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The tradition of preferring south-facing houses endures."
+            "example": "The tradition of preferring south-facing houses endures.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전통이 내려오다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "For culture or customs, it has the sense of being handed down."
+                }
+            ]
         },
         {
             "meaning": "Conditions",
@@ -607,12 +989,24 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "was added",
             "guide": "Verb expression meaning \"to be added to\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "New conditions have been added."
+            "example": "New conditions have been added.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "추가하다 → 추가되다"
+                }
+            ]
         },
         {
             "meaning": "school district",
             "guide": "Noun meaning \"school district\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A good school district will increase a house's desirability."
+            "example": "A good school district will increase a house's desirability.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "좋은 학군 / 학군이 좋은 동네"
+                }
+            ]
         },
         {
             "meaning": "transportation",
@@ -627,12 +1021,24 @@ window.lessonGuideL3TranslationChunks.en["l3-06"] = {
         {
             "meaning": "main road",
             "guide": "Noun meaning \"main road\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Traffic will be better if the main road passes by."
+            "example": "Traffic will be better if the main road passes by.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "간선 도로가 통과하다"
+                }
+            ]
         },
         {
             "meaning": "pass; go through",
             "guide": "Verb expression meaning \"to pass through\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The road passes through this neighborhood."
+            "example": "The road passes through this neighborhood.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "도로가 지역을 통과하다"
+                }
+            ]
         },
         {
             "meaning": "apartment",

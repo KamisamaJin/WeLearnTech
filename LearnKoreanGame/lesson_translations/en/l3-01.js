@@ -25,27 +25,63 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to have no common ground",
-            "example": "Because we do not have much in common, it is hard to become close."
+            "example": "Because we do not have much in common, it is hard to become close.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공감대가 있다 / 없다"
+                }
+            ]
         },
         {
             "meaning": "to grow distant",
-            "example": "Because we could not keep in touch often, we grew distant."
+            "example": "Because we could not keep in touch often, we grew distant.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "멀다 -> 멀어지다"
+                }
+            ]
         },
         {
             "meaning": "to lose contact",
-            "example": "I lost contact with my hometown friend."
+            "example": "I lost contact with my hometown friend.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "끊다 means to actively cut off, 끊기다 means to be cut off"
+                }
+            ]
         },
         {
             "meaning": "to keep in touch with each other",
-            "example": "I often keep in touch with my classmates."
+            "example": "I often keep in touch with my classmates.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 연락을 주고받다"
+                }
+            ]
         },
         {
             "meaning": "to deal with seniors / to interact with seniors",
-            "example": "It is difficult to interact with seniors at school."
+            "example": "It is difficult to interact with seniors at school.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사람을 어떻게 대하다"
+                }
+            ]
         },
         {
             "meaning": "juniors feel uncomfortable around me",
-            "example": "It seems my juniors feel uncomfortable around me."
+            "example": "It seems my juniors feel uncomfortable around me.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The object of 어려워하다 takes 을/를."
+                }
+            ]
         },
         {
             "meaning": "a supervisor's instructions",
@@ -53,7 +89,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to ask for help",
-            "example": "It is difficult to ask a coworker for help."
+            "example": "It is difficult to ask a coworker for help.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 도움을 요청하다"
+                }
+            ]
         },
         {
             "meaning": "to express one's opinion honestly",
@@ -61,11 +103,23 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to be polite to each other",
-            "example": "It is enough to greet first and be polite to each other."
+            "example": "It is enough to greet first and be polite to each other.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "예의를 지키다"
+                }
+            ]
         },
         {
             "meaning": "introverted",
-            "example": "Because my personality is rather introverted, it is hard to make friends."
+            "example": "Because my personality is rather introverted, it is hard to make friends.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "내성적인 사람 / 성격"
+                }
+            ]
         },
         {
             "meaning": "senior / someone with more experience",
@@ -77,7 +131,17 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to treat / to deal with",
-            "example": "I do not know how I should interact with Koreans."
+            "example": "I do not know how I should interact with Koreans.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사람을 대하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "대해 말하다 is \"about\""
+                }
+            ]
         },
         {
             "meaning": "supervisor / boss",
@@ -89,7 +153,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to refuse",
-            "example": "It is difficult to refuse someone else's request."
+            "example": "It is difficult to refuse someone else's request.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "부탁/요청을 거절하다"
+                }
+            ]
         },
         {
             "meaning": "request",
@@ -109,7 +179,17 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to make friends / to date",
-            "example": "I want to meet new people."
+            "example": "I want to meet new people.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "친구를 사귀다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Love can also be used 사귀다"
+                }
+            ]
         },
         {
             "meaning": "insufficient / lacking",
@@ -121,11 +201,27 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to show interest / to care",
-            "example": "It is enough to show more interest in each other."
+            "example": "It is enough to show more interest in each other.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 관심을 갖다"
+                },
+                {
+                    "type": "form",
+                    "text": "갖다 -> 가져요"
+                }
+            ]
         },
         {
             "meaning": "to get along well",
-            "example": "The couple gets along well."
+            "example": "The couple gets along well.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사이좋게 지내다"
+                }
+            ]
         },
         {
             "meaning": "comfort / consolation",
@@ -133,15 +229,37 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to reduce / to lessen",
-            "example": "Please talk about ways to reduce differences in opinion."
+            "example": "Please talk about ways to reduce differences in opinion.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "차이를 줄이다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "줄다 is automatic, 줄이다 is to reduce"
+                }
+            ]
         },
         {
             "meaning": "how someone is doing / regards",
-            "example": "I often ask how my friend is doing."
+            "example": "I often ask how my friend is doing.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "안부를 묻다"
+                }
+            ]
         },
         {
             "meaning": "to solve problems / to work through questions",
-            "example": "Please practice many TOPIK questions."
+            "example": "Please practice many TOPIK questions.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Exam questions use 풀다 instead of 하다"
+                }
+            ]
         },
         {
             "meaning": "to memorize",
@@ -149,19 +267,43 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to adapt",
-            "example": "I am trying to adapt to my new workplace."
+            "example": "I am trying to adapt to my new workplace.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 적응하다"
+                }
+            ]
         },
         {
             "meaning": "to be in the middle of trying",
-            "example": "I am trying to adapt."
+            "example": "I am trying to adapt.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "V-려고 노력 중이다"
+                }
+            ]
         },
         {
             "meaning": "to have a conversation",
-            "example": "Try having an honest conversation with your friend."
+            "example": "Try having an honest conversation with your friend.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 이야기를 나누다"
+                }
+            ]
         },
         {
             "meaning": "hobby club / interest group",
-            "example": "I joined a hiking club."
+            "example": "I joined a hiking club.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "동호회에 가입하다"
+                }
+            ]
         },
         {
             "meaning": "president",
@@ -181,7 +323,17 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to move / to transfer / to change to",
-            "example": "This person changed companies not long ago."
+            "example": "This person changed companies not long ago.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사를 옮기다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "This is not about moving things"
+                }
+            ]
         },
         {
             "meaning": "most / the majority",
@@ -189,7 +341,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to avoid",
-            "example": "These days I avoid being in the same place as my seniors."
+            "example": "These days I avoid being in the same place as my seniors.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자리를 피하다"
+                }
+            ]
         },
         {
             "meaning": "coworker / colleague",
@@ -201,11 +359,23 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to listen carefully to someone",
-            "example": "It is enough to listen carefully to the other person."
+            "example": "It is enough to listen carefully to the other person.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이야기를 들어 주다"
+                }
+            ]
         },
         {
             "meaning": "to spend time together",
-            "example": "If you spend time with your coworkers, you will become closer."
+            "example": "If you spend time with your coworkers, you will become closer.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 함께 시간을 보내다"
+                }
+            ]
         },
         {
             "meaning": "to compromise / to yield",
@@ -217,11 +387,31 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to become used to / to get familiar with",
-            "example": "As time passes, you will get used to the new workplace."
+            "example": "As time passes, you will get used to the new workplace.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 익숙해지다"
+                },
+                {
+                    "type": "form",
+                    "text": "익숙하다 -> 익숙해지다"
+                }
+            ]
         },
         {
             "meaning": "to care / to pay attention",
-            "example": "Thank you for caring about me."
+            "example": "Thank you for caring about me.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 신경 쓰다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "써 주다 Feeling like you are taking care of the other person"
+                }
+            ]
         },
         {
             "meaning": "to speak different languages",
@@ -233,11 +423,23 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to think differently",
-            "example": "It was a little hard to talk because my way of thinking was different from Koreans'."
+            "example": "It was a little hard to talk because my way of thinking was different from Koreans'.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "다르다 not 틀리다"
+                }
+            ]
         },
         {
             "meaning": "to have prejudice",
-            "example": "If people have prejudice toward each other, it is hard to become close."
+            "example": "If people have prejudice toward each other, it is hard to become close.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 대한 편견을 갖다"
+                }
+            ]
         },
         {
             "meaning": "lifestyle",
@@ -245,7 +447,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "honorific speech",
-            "example": "Using honorific speech is important in Korea."
+            "example": "Using honorific speech is important in Korea.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "윗사람에게 높임말을 쓰다"
+                }
+            ]
         },
         {
             "meaning": "intention / meaning",
@@ -253,7 +461,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to express",
-            "example": "Try expressing your opinion honestly."
+            "example": "Try expressing your opinion honestly.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "의견/의도를 표현하다"
+                }
+            ]
         },
         {
             "meaning": "to keep a conversation going",
@@ -273,7 +487,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "comment / reply",
-            "example": "There were many comments under the post about the concern."
+            "example": "There were many comments under the post about the concern.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "댓글을 달다 / 댓글이 달리다"
+                }
+            ]
         },
         {
             "meaning": "roommate",
@@ -289,11 +509,27 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to feel stressed",
-            "example": "Do not feel too stressed."
+            "example": "Do not feel too stressed.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "스트레스를 받다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "를 is often omitted in spoken English"
+                }
+            ]
         },
         {
             "meaning": "to treat someone sincerely",
-            "example": "If you always treat people sincerely, they will understand your heart."
+            "example": "If you always treat people sincerely, they will understand your heart.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/를 진심으로 대하다"
+                }
+            ]
         },
         {
             "meaning": "to understand someone's heart",
@@ -309,7 +545,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "age (honorific)",
-            "example": "Most of them are older than I am."
+            "example": "Most of them are older than I am.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "연세 is an honorific for 나이"
+                }
+            ]
         },
         {
             "meaning": "superior / elder",
@@ -317,7 +559,17 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to speak (honorific)",
-            "example": "Seniors often say that."
+            "example": "Seniors often say that.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The subject honorific of 말하다"
+                },
+                {
+                    "type": "form",
+                    "text": "말씀하시다 -> 말씀하세요"
+                }
+            ]
         },
         {
             "meaning": "uncomfortable / inconvenient",
@@ -325,7 +577,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to avoid a certain situation or gathering",
-            "example": "I end up avoiding places where I am with my seniors."
+            "example": "I end up avoiding places where I am with my seniors.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "같이 있는 자리를 피하다"
+                }
+            ]
         },
         {
             "meaning": "friendship / friendly relations",
@@ -333,11 +591,23 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to promote friendship",
-            "example": "An alumni meeting is a gathering for promoting friendship with one another."
+            "example": "An alumni meeting is a gathering for promoting friendship with one another.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "친목/발전을 도모하다"
+                }
+            ]
         },
         {
             "meaning": "to attend / to participate",
-            "example": "People attend representative gatherings."
+            "example": "People attend representative gatherings.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "모임에 참석하다"
+                }
+            ]
         },
         {
             "meaning": "representative / typical",
@@ -369,7 +639,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "regularly",
-            "example": "They hold gatherings regularly."
+            "example": "They hold gatherings regularly.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "정기적으로 열다"
+                }
+            ]
         },
         {
             "meaning": "group trip",
@@ -405,7 +681,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to share information",
-            "example": "People in hobby clubs share information online."
+            "example": "People in hobby clubs share information online.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 정보를 공유하다"
+                }
+            ]
         },
         {
             "meaning": "in-person gathering",
@@ -417,7 +699,13 @@ window.lessonGuideL3TranslationChunks.en["l3-01"] = {
         },
         {
             "meaning": "to join / to sign up",
-            "example": "I joined a hobby club and do hobby activities."
+            "example": "I joined a hobby club and do hobby activities.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 가입하다"
+                }
+            ]
         },
         {
             "meaning": "hobby activity",

@@ -43,7 +43,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Telephone consultation",
             "guide": "Fixed expression meaning \"telephone consultation\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Called the service center for consultation."
+            "example": "Called the service center for consultation.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전화 문의를 드리다"
+                }
+            ]
         },
         {
             "meaning": "Request home repairs",
@@ -53,12 +59,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Electronic product warranty period",
             "guide": "Fixed expression meaning \"electronic product warranty period\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please confirm the warranty period of electronic products."
+            "example": "Please confirm the warranty period of electronic products.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보증 기간을 확인하다 / 지나다"
+                }
+            ]
         },
         {
             "meaning": "Something went wrong",
             "guide": "Fixed expression meaning \"something went wrong\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Something seems to be wrong?"
+            "example": "Something seems to be wrong?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "생기다=appear; 있다=already"
+                }
+            ]
         },
         {
             "meaning": "drain",
@@ -68,7 +86,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "The drain is blocked",
             "guide": "Fixed expression meaning \"the drain is blocked\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The drain is blocked and the water cannot go down."
+            "example": "The drain is blocked and the water cannot go down.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "막히다=to be blocked, 막다=to be blocked"
+                }
+            ]
         },
         {
             "meaning": "toilet",
@@ -83,12 +107,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "No water comes out",
             "guide": "Fixed expression meaning \"without water\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "No water comes out of the sink."
+            "example": "No water comes out of the sink.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "물/화면/소리가 안 나오다"
+                }
+            ]
         },
         {
             "meaning": "water leakage",
             "guide": "Fixed expression meaning \"to leak\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The ceiling is leaking."
+            "example": "The ceiling is leaking.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "새다=leaking; 세다=strong/counting"
+                }
+            ]
         },
         {
             "meaning": "electric light",
@@ -98,57 +134,131 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "The light is broken/the light is out",
             "guide": "Fixed expression meaning \"the light is broken/the light is out\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The living room light is broken."
+            "example": "The living room light is broken.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전등이 나가다 / 갈다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "When the light is broken, naturally say 나가다"
+                }
+            ]
         },
         {
             "meaning": "Door locked/cannot be opened",
             "guide": "Fixed expression meaning \"the door is locked/cannot be opened\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The door is locked and I can't get in."
+            "example": "The door is locked and I can't get in.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "잠그다 means to lock; 잠기다 means to be locked."
+                }
+            ]
         },
         {
             "meaning": "The gas won't light",
             "guide": "Fixed expression meaning \"the gas cannot be ignited\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The gas won't light."
+            "example": "The gas won't light.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가스불이 들어오다 / 안 들어오다"
+                }
+            ]
         },
         {
             "meaning": "cannot be frozen",
             "guide": "Fixed expression meaning \"cannot be frozen\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The refrigerator cannot freeze."
+            "example": "The refrigerator cannot freeze.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Function not working often says 안 되다"
+                }
+            ]
         },
         {
             "meaning": "Wi-Fi cannot connect",
             "guide": "Fixed expression, meaning \"Wi-Fi cannot be connected\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Wi-Fi cannot be connected."
+            "example": "Wi-Fi cannot be connected.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "연결이 안 되다 / 끊기다"
+                }
+            ]
         },
         {
             "meaning": "The screen is broken",
             "guide": "Fixed expression meaning \"the screen is broken\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The phone screen is broken."
+            "example": "The phone screen is broken.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "액정이 깨지다 / 금이 가다"
+                }
+            ]
         },
         {
             "meaning": "Unable to start",
             "guide": "Fixed expression meaning \"unable to start\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The notebook cannot start."
+            "example": "The notebook cannot start.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "부팅이 안 되다"
+                }
+            ]
         },
         {
             "meaning": "The power cannot be turned on",
             "guide": "Fixed expression meaning \"the power cannot be turned on\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The power won't turn on since yesterday."
+            "example": "The power won't turn on since yesterday.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "켜다 is active; 켜지다 is passive or a resulting state."
+                }
+            ]
         },
         {
             "meaning": "malfunction",
             "guide": "Fixed expression meaning \"to malfunction\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Electronics are malfunctioning."
+            "example": "Electronics are malfunctioning.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전자 제품에 고장이 나다"
+                }
+            ]
         },
         {
             "meaning": "Consultation",
             "guide": "Verb expression meaning \"to consult\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please consult the service center."
+            "example": "Please consult the service center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서비스 센터에 문의하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "More formal than 물어보다"
+                }
+            ]
         },
         {
             "meaning": "door-to-door service",
             "guide": "Fixed expression meaning \"door-to-door service\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Apply for door-to-door service."
+            "example": "Apply for door-to-door service.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "출장 서비스를 신청하다"
+                }
+            ]
         },
         {
             "meaning": "Apply",
@@ -163,7 +273,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "repair; repair",
             "guide": "Verb expression, meaning \"to repair, to repair\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The laptop was repaired."
+            "example": "The laptop was repaired.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "고치다 is more colloquial, 수리하다 is more formal"
+                }
+            ]
         },
         {
             "meaning": "repair",
@@ -173,12 +289,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Pay for repairs",
             "guide": "Fixed expression meaning \"to pay for repairs\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Customers are required to pay for repairs."
+            "example": "Customers are required to pay for repairs.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비용을 내다 / 지불하다"
+                }
+            ]
         },
         {
             "meaning": "receive free repairs",
             "guide": "Fixed expression meaning \"to receive free repairs\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Free repairs are available during the warranty period."
+            "example": "Free repairs are available during the warranty period.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "무상 수리를 받을 수 있다"
+                }
+            ]
         },
         {
             "meaning": "Speculated reasons",
@@ -238,7 +366,17 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "get rid of; drop",
             "guide": "Verb expression meaning \"to drop, to drop\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I dropped my phone so the screen was shattered."
+            "example": "I dropped my phone so the screen was shattered.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "바닥에 떨어뜨리다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "떨어지다=drop; 떨어뜨리다=get rid of"
+                }
+            ]
         },
         {
             "meaning": "Downloaded files",
@@ -253,7 +391,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "slow",
             "guide": "Adjective meaning \"slow\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "Internet speed is too slow."
+            "example": "Internet speed is too slow.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "속도가 느리다 / 빠르다"
+                }
+            ]
         },
         {
             "meaning": "soft; soft",
@@ -268,7 +412,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "How long does it take to repair",
             "guide": "Fixed expression meaning \"how long will the repair take?\" It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "How long will the repair take?"
+            "example": "How long will the repair take?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "V-는 데 얼마나 걸리다"
+                }
+            ]
         },
         {
             "meaning": "about two days",
@@ -283,32 +433,68 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Make an appointment",
             "guide": "Verb expression meaning \"to make an appointment\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please make an appointment and go to the service center."
+            "example": "Please make an appointment and go to the service center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "예약을 하다 / 예약하고 가다"
+                }
+            ]
         },
         {
             "meaning": "inspection; overhaul",
             "guide": "Verb expression, meaning \"inspection, maintenance\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Temperature needs to be adjusted and checked."
+            "example": "Temperature needs to be adjusted and checked.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기계를 점검하다 / 점검을 받다"
+                }
+            ]
         },
         {
             "meaning": "Door-to-door fee",
             "guide": "Noun meaning \"door-to-door fee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Maintenance costs only include door-to-door charges."
+            "example": "Maintenance costs only include door-to-door charges.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "출장비 and 수리비 are not the same."
+                }
+            ]
         },
         {
             "meaning": "Customer (honorific title)",
             "guide": "Noun meaning \"customer (honorific title)\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "OK, customer, do you have any questions?"
+            "example": "OK, customer, do you have any questions?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "님 is an honorific, I don’t use it"
+                }
+            ]
         },
         {
             "meaning": "Service consultation",
             "guide": "Fixed expression meaning \"service consultation\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I would like to inquire about the service."
+            "example": "I would like to inquire about the service.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서비스 문의 좀 드리다"
+                }
+            ]
         },
         {
             "meaning": "Can you please explain?",
             "guide": "Fixed expression meaning \"Can you please explain?\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Could you please explain what the problem is?"
+            "example": "Could you please explain what the problem is?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "말씀은 말하다 expression of respect"
+                }
+            ]
         },
         {
             "meaning": "suddenly",
@@ -318,7 +504,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "from a few days ago",
             "guide": "Fixed expression meaning \"from a few days ago\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It's been slowing down since a few days ago."
+            "example": "It's been slowing down since a few days ago.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "며칠 전부터 계속"
+                }
+            ]
         },
         {
             "meaning": "Nearby service center",
@@ -328,12 +520,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Get checked",
             "guide": "Fixed expression meaning \"to be examined\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please have it checked at a service center."
+            "example": "Please have it checked at a service center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서비스 센터에서 점검을 받다"
+                }
+            ]
         },
         {
             "meaning": "Please make an appointment",
             "guide": "Fixed expression meaning \"please make an appointment\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Then please make an appointment for me."
+            "example": "Then please make an appointment for me.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "드리다 is a humble expression of 주다"
+                }
+            ]
         },
         {
             "meaning": "TV",
@@ -348,7 +552,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "air conditioning; cooling power",
             "guide": "Noun, meaning \"air conditioning, cooling power\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Not enough air conditioning."
+            "example": "Not enough air conditioning.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "냉기가 약하다 / 나오다"
+                }
+            ]
         },
         {
             "meaning": "mobile phone",
@@ -358,17 +568,35 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "water ingress",
             "guide": "Fixed expression meaning \"water in\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The phone is flooded."
+            "example": "The phone is flooded.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "휴대 전화에 물이 들어가다"
+                }
+            ]
         },
         {
             "meaning": "Join insurance",
             "guide": "Fixed expression meaning \"to join the insurance\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Joined mobile phone insurance."
+            "example": "Joined mobile phone insurance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보험에 가입하다 / 가입되어 있다"
+                }
+            ]
         },
         {
             "meaning": "Except",
             "guide": "Verb expression meaning \"except\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "May be excluded from insurance coverage."
+            "example": "May be excluded from insurance coverage.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "제외하다 takes the initiative, 제외되다 is excluded"
+                }
+            ]
         },
         {
             "meaning": "insurance company",
@@ -388,7 +616,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Unreasonable demands",
             "guide": "Fixed expression meaning \"unreasonable request\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Unreasonable demands may cause conflicts."
+            "example": "Unreasonable demands may cause conflicts.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "무리하다 means to overdo it or be unreasonable."
+                }
+            ]
         },
         {
             "meaning": "plug",
@@ -398,12 +632,28 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "pull out",
             "guide": "Verb expression meaning \"to pull out.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Unplug and try plugging it back in again."
+            "example": "Unplug and try plugging it back in again.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 뽑다 for plugs; use 종료하다 for apps."
+                }
+            ]
         },
         {
             "meaning": "Insert",
             "guide": "Verb expression meaning \"to insert\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please plug it back in."
+            "example": "Please plug it back in.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "플러그를 꽂다"
+                },
+                {
+                    "type": "form",
+                    "text": "꽂아요 / 꽂았어요"
+                }
+            ]
         },
         {
             "meaning": "valve",
@@ -413,7 +663,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "lock; close tightly",
             "guide": "Verb expression meaning \"to lock, to close\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please close the gas valve tightly."
+            "example": "Please close the gas valve tightly.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "밸브/문을 잠그다"
+                }
+            ]
         },
         {
             "meaning": "open",
@@ -423,17 +679,35 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Turn down the temperature",
             "guide": "Verb expression meaning \"to turn down the temperature.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "If freezing is not possible, try lowering the temperature."
+            "example": "If freezing is not possible, try lowering the temperature.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "낮다=low, 낮추다=tune down"
+                }
+            ]
         },
         {
             "meaning": "Turn up the temperature",
             "guide": "Verb expression meaning \"to turn up the temperature.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "If the room is cold, please turn up the temperature."
+            "example": "If the room is cold, please turn up the temperature.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "높다=high, 높이다=higher"
+                }
+            ]
         },
         {
             "meaning": "Use a leather spatula to dredge; pump and compress",
             "guide": "Verb expression, meaning \"to use a leather shovel to dredge or pump out pressure\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "If the toilet is clogged, try using a spatula."
+            "example": "If the toilet is clogged, try using a spatula.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "막힌 변기에 펌프질하다"
+                }
+            ]
         },
         {
             "meaning": "Confirm",
@@ -448,12 +722,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Screen does not display",
             "guide": "Fixed expression meaning \"the picture is not displayed\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The laptop screen does not display."
+            "example": "The laptop screen does not display.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "화면/소리가 안 나오다"
+                }
+            ]
         },
         {
             "meaning": "Close app",
             "guide": "Verb expression meaning \"to close the application\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Try closing the app or deleting the data."
+            "example": "Try closing the app or deleting the data.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "종료하다 is more formal than 끄다"
+                }
+            ]
         },
         {
             "meaning": "unnecessary data",
@@ -468,7 +754,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Online forum/message board",
             "guide": "Fixed expression meaning \"online forum/message board\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Posted a question on an online forum."
+            "example": "Posted a question on an online forum.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "게시판에 질문을 올리다"
+                }
+            ]
         },
         {
             "meaning": "often blocked",
@@ -483,17 +775,35 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "three or four times a week",
             "guide": "Fixed expression meaning \"three or four times a week\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Traffic jams more than three or four times a week."
+            "example": "Traffic jams more than three or four times a week.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "서너 means three or four, not fourteen"
+                }
+            ]
         },
         {
             "meaning": "dredge; open up",
             "guide": "Verb expression, meaning \"to dredge, to open up\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Unclog the toilet with a spatula."
+            "example": "Unclog the toilet with a spatula.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "변기를 뚫다=to clear; 구멍을 뚫다=to make a hole"
+                }
+            ]
         },
         {
             "meaning": "Only valid temporarily",
             "guide": "Fixed expression meaning \"effective only for a while\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Cleansers are only effective at the time."
+            "example": "Cleansers are only effective at the time.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "뿐이다 is often preceded by a noun or 그때"
+                }
+            ]
         },
         {
             "meaning": "Expert help",
@@ -513,17 +823,35 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Foreign body",
             "guide": "Noun meaning \"foreign body\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There was a foreign object in the toilet."
+            "example": "There was a foreign object in the toilet.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이물질이 들어가다 / 끼다"
+                }
+            ]
         },
         {
             "meaning": "Unable to solve",
             "guide": "Fixed expression meaning \"cannot be solved\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Can't fix it with detergent."
+            "example": "Can't fix it with detergent.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "해결하다active, 해결이 되다natural"
+                }
+            ]
         },
         {
             "meaning": "Contact",
             "guide": "Verb expression meaning \"to connect\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please contact an expert."
+            "example": "Please contact an expert.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집주인에게 연락하다"
+                }
+            ]
         },
         {
             "meaning": "Landlord",
@@ -533,12 +861,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "management office",
             "guide": "Fixed expression meaning \"to manage the office\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please contact the management office."
+            "example": "Please contact the management office.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "관리 사무실에 연락하다"
+                }
+            ]
         },
         {
             "meaning": "Request",
             "guide": "Verb expression meaning \"to request\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Write a text requesting home repairs."
+            "example": "Write a text requesting home repairs.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "수리를 요청하다"
+                }
+            ]
         },
         {
             "meaning": "take notes",
@@ -548,7 +888,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "warranty certificate; guarantee letter",
             "guide": "Noun, meaning \"warranty certificate, guarantee letter\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "When you buy electronic products, you will receive a warranty certificate."
+            "example": "When you buy electronic products, you will receive a warranty certificate.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보증서를 받다 / 보관하다"
+                }
+            ]
         },
         {
             "meaning": "Model name",
@@ -558,7 +904,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Purchase date",
             "guide": "Fixed expression meaning \"date of purchase\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Date of purchase confirmed with receipt."
+            "example": "Date of purchase confirmed with receipt.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "구입 일자를 기준으로 하다"
+                }
+            ]
         },
         {
             "meaning": "Warranty content",
@@ -568,12 +920,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Warranty period",
             "guide": "Fixed expression meaning \"warranty period\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Warranty period varies by product."
+            "example": "Warranty period varies by product.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보증 기간이 지나다 / 남다"
+                }
+            ]
         },
         {
             "meaning": "manufacturer",
             "guide": "Noun meaning \"maker\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The manufacturer promises free repairs."
+            "example": "The manufacturer promises free repairs.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "제조사=manufacturer, 판매자=seller"
+                }
+            ]
         },
         {
             "meaning": "product seller",
@@ -583,12 +947,24 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Free repair",
             "guide": "Fixed expression meaning \"free repairs\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Free repairs are available during the warranty period."
+            "example": "Free repairs are available during the warranty period.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "무료 수리 and 무상 수리 mean free repair."
+                }
+            ]
         },
         {
             "meaning": "Subject to...",
             "guide": "Fixed expression meaning \"subject to\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The warranty period is based on the date of purchase."
+            "example": "The warranty period is based on the date of purchase.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을 기준으로 하다"
+                }
+            ]
         },
         {
             "meaning": "receipt",
@@ -613,17 +989,35 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Things to note",
             "guide": "Fixed expression meaning \"things to note\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Failure to comply with the precautions may result in charges."
+            "example": "Failure to comply with the precautions may result in charges.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "주의 사항을 지키다"
+                }
+            ]
         },
         {
             "meaning": "customer error",
             "guide": "Fixed expression meaning \"customer error\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "A fee will be charged if the malfunction is caused by customer error."
+            "example": "A fee will be charged if the malfunction is caused by customer error.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고객의 실수로 고장이 나다"
+                }
+            ]
         },
         {
             "meaning": "pay",
             "guide": "Verb expression meaning \"to pay\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Maintenance fee required."
+            "example": "Maintenance fee required.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "내다 is more colloquial, 지불하다 is more formal"
+                }
+            ]
         },
         {
             "meaning": "Smartphone",
@@ -653,7 +1047,13 @@ window.lessonGuideL3TranslationChunks.en["l3-09"] = {
         {
             "meaning": "Get a refund/return",
             "guide": "Verb expression meaning \"to get a refund/return\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Received a partial refund of maintenance fees."
+            "example": "Received a partial refund of maintenance fees.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "환불받다=return and refund; 환급받다=refund of fees"
+                }
+            ]
         },
         {
             "meaning": "end; close",

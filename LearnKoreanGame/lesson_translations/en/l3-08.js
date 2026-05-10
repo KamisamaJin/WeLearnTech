@@ -32,12 +32,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "cooking; cooking",
             "guide": "Verb expression, meaning \"cooking, cooking\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Do you cook often?"
+            "example": "Do you cook often?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "요리=dish/cooking; 요리하다=cooking"
+                }
+            ]
         },
         {
             "meaning": "condiments; condiments",
             "guide": "Noun meaning \"seasoning, condiment\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "What seasonings are in this dish?"
+            "example": "What seasonings are in this dish?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "양념을 넣다 / 양념에 절이다"
+                }
+            ]
         },
         {
             "meaning": "Taste",
@@ -47,7 +59,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Cooking methods",
             "guide": "Fixed expression meaning \"cooking method\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Read how to make kimchi fried rice."
+            "example": "Read how to make kimchi fried rice.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "요리 방법을 소개하다 / 설명하다"
+                }
+            ]
         },
         {
             "meaning": "hometown cuisine",
@@ -57,7 +75,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Food circulation period; shelf life and sales period",
             "guide": "Fixed expression, meaning \"food circulation period, shelf life and sales period\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please confirm the expiration date of food."
+            "example": "Please confirm the expiration date of food.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "유통 기한을 확인하다 / 지나다"
+                }
+            ]
         },
         {
             "meaning": "chili sauce",
@@ -67,7 +91,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "soy sauce",
             "guide": "Noun meaning \"soy sauce\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Seasoned with soy sauce."
+            "example": "Seasoned with soy sauce.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "간장으로 간을 맞추다"
+                }
+            ]
         },
         {
             "meaning": "miso",
@@ -82,12 +112,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "vinegar",
             "guide": "Noun meaning \"vinegar\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Pickling it with vinegar will make it sour and refreshing."
+            "example": "Pickling it with vinegar will make it sour and refreshing.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "식초에 절이다"
+                }
+            ]
         },
         {
             "meaning": "paprika",
             "guide": "Noun meaning \"chili powder\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There’s a lot of chili powder in the kimchi."
+            "example": "There’s a lot of chili powder in the kimchi.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "고추장 is red pepper paste; 고춧가루 is chili powder."
+                }
+            ]
         },
         {
             "meaning": "Sesame",
@@ -102,12 +144,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "spicy",
             "guide": "Adjective meaning \"spicy\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "It's spicy because of the chili sauce."
+            "example": "It's spicy because of the chili sauce.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "매워요 / 매운 음식"
+                }
+            ]
         },
         {
             "meaning": "salty",
             "guide": "Adjective meaning \"salty\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "Too much soy sauce makes it salty."
+            "example": "Too much soy sauce makes it salty.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "짜다 can also mean \"stingy\""
+                }
+            ]
         },
         {
             "meaning": "sweet",
@@ -117,12 +171,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Acid",
             "guide": "Adjective meaning \"sour\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "It's a little sour because of the vinegar."
+            "example": "It's a little sour because of the vinegar.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "셔요 / 신 음식"
+                }
+            ]
         },
         {
             "meaning": "fragrant; fragrant",
             "guide": "Adjective, meaning \"fragrant, mellow\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "The scent of sesame oil is very fragrant."
+            "example": "The scent of sesame oil is very fragrant.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Oily and nutty aroma 고소하다"
+                }
+            ]
         },
         {
             "meaning": "wash carrots",
@@ -132,7 +198,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Peel the onion",
             "guide": "Verb expression meaning \"to peel the onion.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Peel and cut the onion."
+            "example": "Peel and cut the onion.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "껍질을 벗기다"
+                }
+            ]
         },
         {
             "meaning": "cut potatoes with knife",
@@ -142,47 +214,101 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Chop garlic",
             "guide": "Verb expression meaning \"to chop garlic\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Chop the garlic and add it to the dressing."
+            "example": "Chop the garlic and add it to the dressing.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "마늘을 잘게 다지다"
+                }
+            ]
         },
         {
             "meaning": "boil water",
             "guide": "Verb expression meaning \"to boil water\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "To cook ramen, boil water first."
+            "example": "To cook ramen, boil water first.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "끓다=boil water; 끓이다=boil"
+                }
+            ]
         },
         {
             "meaning": "fried",
             "guide": "Verb expression meaning \"to fry\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Deep fried the dumplings."
+            "example": "Deep fried the dumplings.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기름에 튀기다"
+                }
+            ]
         },
         {
             "meaning": "steamed dumplings",
             "guide": "Verb expression meaning \"to steam dumplings\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Steamed dumplings in a steamer."
+            "example": "Steamed dumplings in a steamer.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "찌다=steam; 살이 찌다=get fat"
+                }
+            ]
         },
         {
             "meaning": "boiled eggs",
             "guide": "Verb expression meaning \"to boil an egg\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Boil the eggs and place on top."
+            "example": "Boil the eggs and place on top.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "삶다=boiled, 굽다=roasted/fried"
+                }
+            ]
         },
         {
             "meaning": "Fried rice",
             "guide": "Verb expression meaning \"fried rice\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Stir-fry kimchi with rice."
+            "example": "Stir-fry kimchi with rice.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "밥을 볶다 → 볶음밥"
+                }
+            ]
         },
         {
             "meaning": "Mixed wild vegetables/vegetables",
             "guide": "Verb expression, meaning \"mix wild vegetables/vegetables\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Add sesame oil and mix vegetables."
+            "example": "Add sesame oil and mix vegetables.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "무치다=mixed vegetables, 비비다=mixed rice/noodles"
+                }
+            ]
         },
         {
             "meaning": "BBQ",
             "guide": "Verb expression meaning \"to grill\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Roast meat in pan."
+            "example": "Roast meat in pan.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "구워요 / 구운 고기"
+                }
+            ]
         },
         {
             "meaning": "Blanch spinach",
             "guide": "Verb expression meaning \"to blanch spinach\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Blanch the spinach and mix."
+            "example": "Blanch the spinach and mix.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "데치다=blanch, not cook"
+                }
+            ]
         },
         {
             "meaning": "move",
@@ -192,47 +318,129 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "to wear; to wear",
             "guide": "Verb expression, meaning \"to clothe, to clothe\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please dress your baby in warm clothes."
+            "example": "Please dress your baby in warm clothes.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "아이에게 옷을 입히다"
+                },
+                {
+                    "type": "form",
+                    "text": "입다→입히다"
+                }
+            ]
         },
         {
             "meaning": "feed; let eat",
             "guide": "Verb expression, meaning \"feed, let eat\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Feed vegetable fried rice to your children."
+            "example": "Feed vegetable fried rice to your children.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "아이한테 밥을 먹이다"
+                },
+                {
+                    "type": "form",
+                    "text": "먹다→먹이다"
+                }
+            ]
         },
         {
             "meaning": "entrust; send",
             "guide": "Verb expression, meaning \"entrust, send\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Send your winter coat to the laundromat."
+            "example": "Send your winter coat to the laundromat.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "세탁소에 맡기다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "맡다=responsible; 맡기다=entrust"
+                }
+            ]
         },
         {
             "meaning": "to ride on; to carry",
             "guide": "Verb expression, meaning \"to let ride, to carry\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Put your child in the back seat of the car."
+            "example": "Put your child in the back seat of the car.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "차에 태우다"
+                },
+                {
+                    "type": "form",
+                    "text": "타다→태우다"
+                }
+            ]
         },
         {
             "meaning": "Put on shoes/socks",
             "guide": "Verb expression meaning \"to put on shoes/socks\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Put shoes on your child."
+            "example": "Put shoes on your child.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "신발을 신기다"
+                },
+                {
+                    "type": "form",
+                    "text": "신다→신기다"
+                }
+            ]
         },
         {
             "meaning": "adjust; fit; align",
             "guide": "Verb expression meaning \"to adjust, cooperate, align\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please adjust the taste."
+            "example": "Please adjust the taste.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "맞다=suitable; 맞추다=adjusted to suitability"
+                }
+            ]
         },
         {
             "meaning": "Put on a hat",
             "guide": "Verb expression meaning \"to put a hat on\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Put a hat on the child."
+            "example": "Put a hat on the child.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "모자를 씌우다"
+                },
+                {
+                    "type": "form",
+                    "text": "쓰다→씌우다"
+                }
+            ]
         },
         {
             "meaning": "to let fly; to fly",
             "guide": "Verb expression, meaning \"to let fly, to make fly\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Let fly paper airplanes."
+            "example": "Let fly paper airplanes.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "날다→날리다"
+                }
+            ]
         },
         {
             "meaning": "to make one read; to make one read",
             "guide": "Verb expression, meaning \"to make reading, to make reading\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The teacher asks the students to read."
+            "example": "The teacher asks the students to read.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "읽다→읽히다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "읽히다 can also mean \"to be read\""
+                }
+            ]
         },
         {
             "meaning": "Stroller",
@@ -242,27 +450,65 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "freeze",
             "guide": "Verb expression meaning \"to freeze\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Put the remaining meat in the freezer and freeze it."
+            "example": "Put the remaining meat in the freezer and freeze it.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "얼다→얼리다"
+                }
+            ]
         },
         {
             "meaning": "reduce; turn down",
             "guide": "Verb expression meaning \"reduce, tone down\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please turn down the volume."
+            "example": "Please turn down the volume.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "줄다=reduce; 줄이다=reduce"
+                }
+            ]
         },
         {
             "meaning": "stay; remain",
             "guide": "Verb expression meaning \"to stay, to remain\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "There was no food left and all was finished."
+            "example": "There was no food left and all was finished.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "남다=left; 남기다=to stay"
+                }
+            ]
         },
         {
             "meaning": "peel off; take off",
             "guide": "Verb expression meaning \"to peel off, take off\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Jason is peeling an onion."
+            "example": "Jason is peeling an onion.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "벗다→벗기다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Both 껍질 and 옷 can be used as 벗기다"
+                }
+            ]
         },
         {
             "meaning": "full stomach",
             "guide": "Fixed expression meaning \"full stomach\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I'm so full that I can't finish eating."
+            "example": "I'm so full that I can't finish eating.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "배가 불러서 못 먹다"
+                },
+                {
+                    "type": "form",
+                    "text": "불러요 / 불러서"
+                }
+            ]
         },
         {
             "meaning": "Room is hot",
@@ -272,12 +518,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Stomach/body discomfort",
             "guide": "Fixed expression meaning \"stomach/body discomfort\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I've been feeling sick to my stomach lately and can't eat."
+            "example": "I've been feeling sick to my stomach lately and can't eat.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "속이 안 좋다 / 좋지 않다"
+                }
+            ]
         },
         {
             "meaning": "easy to digest",
             "guide": "Fixed expression meaning \"easy to digest\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Porridge is easy to digest."
+            "example": "Porridge is easy to digest.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "소화가 잘 돼요, don’t say 잘 해요"
+                }
+            ]
         },
         {
             "meaning": "vegetable porridge",
@@ -287,12 +545,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "teach",
             "guide": "Verb expression meaning \"to teach\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please teach me how to cook."
+            "example": "Please teach me how to cook.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "가르치다=teach, 가리키다=point"
+                }
+            ]
         },
         {
             "meaning": "cooked; cooked",
             "guide": "Verb expression meaning \"cooked, cooked\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Cook until vegetables are cooked."
+            "example": "Cook until vegetables are cooked.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "익다=cooked; 익히다=cooked"
+                }
+            ]
         },
         {
             "meaning": "simple",
@@ -327,7 +597,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "grind; pulverize",
             "guide": "Verb expression meaning \"to grind, to grind\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Stir until no particles are visible."
+            "example": "Stir until no particles are visible.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "믹서기에 갈다 / 강판에 갈다"
+                }
+            ]
         },
         {
             "meaning": "cabbage",
@@ -362,27 +638,57 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Marinate with seasonings",
             "guide": "Verb expression meaning \"to marinate with seasoning\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Marinate the meat with seasonings."
+            "example": "Marinate the meat with seasonings.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을 양념에 절이다"
+                }
+            ]
         },
         {
             "meaning": "salted",
             "guide": "Verb expression meaning \"to salt\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Salt the cabbage."
+            "example": "Salt the cabbage.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "배추를 소금에 절이다"
+                }
+            ]
         },
         {
             "meaning": "pickle with vinegar",
             "guide": "Verb expression meaning \"to pickle with vinegar\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Pickled cucumbers with vinegar."
+            "example": "Pickled cucumbers with vinegar.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "오이를 식초에 절이다"
+                }
+            ]
         },
         {
             "meaning": "put into container",
             "guide": "Verb expression meaning \"to put into a container\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Put the pickles into the container."
+            "example": "Put the pickles into the container.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "통에 담아 보관하다"
+                }
+            ]
         },
         {
             "meaning": "put on a plate",
             "guide": "Verb expression meaning \"to put on a plate\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Transfer finished food to plates."
+            "example": "Transfer finished food to plates.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "완성된 음식을 접시에 담다"
+                }
+            ]
         },
         {
             "meaning": "Serve in a bowl/vessel",
@@ -422,17 +728,39 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Drain",
             "guide": "Verb expression meaning \"to drain\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Drain the water after the noodles are cooked."
+            "example": "Drain the water after the noodles are cooked.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "면의 물기를 빼다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "빼다=remove, here it means drain"
+                }
+            ]
         },
         {
             "meaning": "mix",
             "guide": "Verb expression meaning \"to mix\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Add seasoning to the noodles and mix."
+            "example": "Add seasoning to the noodles and mix.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "양념을 넣고 비비다"
+                }
+            ]
         },
         {
             "meaning": "Complete",
             "guide": "Verb expression meaning \"to complete\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "When done, transfer to bowls."
+            "example": "When done, transfer to bowls.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "완성하다 active, 완성되다 passive"
+                }
+            ]
         },
         {
             "meaning": "Kimchi Fried Rice",
@@ -457,7 +785,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "edible oil",
             "guide": "Noun meaning \"edible oil\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Pour cooking oil into the pan."
+            "example": "Pour cooking oil into the pan.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "식용유를 두르다"
+                }
+            ]
         },
         {
             "meaning": "pan",
@@ -467,12 +801,28 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "pour in a circle; surround",
             "guide": "Verb expression, meaning \"to pour in a circle, to surround\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Pour oil into pan."
+            "example": "Pour oil into pan.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "프라이팬에 기름을 두르다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Pour the oil in a circle and use 두르다"
+                }
+            ]
         },
         {
             "meaning": "seasoning",
             "guide": "Verb expression meaning \"to season\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Seasoned with soy sauce."
+            "example": "Seasoned with soy sauce.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "간장/소금으로 간을 맞추다"
+                }
+            ]
         },
         {
             "meaning": "Fried eggs",
@@ -482,17 +832,35 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "fry",
             "guide": "Verb expression meaning \"to fry\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Fried eggs."
+            "example": "Fried eggs.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 부치다 for pancakes/eggs and 볶다 for stir-fries."
+                }
+            ]
         },
         {
             "meaning": "spread",
             "guide": "Verb expression meaning \"to scatter\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Sprinkle with sesame oil and sesame seeds."
+            "example": "Sprinkle with sesame oil and sesame seeds.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "깨를 뿌리다 / 후추를 뿌리다"
+                }
+            ]
         },
         {
             "meaning": "It's so delicious that two people don't even know that one of them is missing after eating it.",
             "guide": "Fixed expression, meaning \"It's so delicious that two people can eat it without even realizing it's missing.\" It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It was so delicious that it was exaggerated to say that two people ate it without even realizing that one person was missing."
+            "example": "It was so delicious that it was exaggerated to say that two people ate it without even realizing that one person was missing.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "An exaggerated saying, only used to praise how delicious it is"
+                }
+            ]
         },
         {
             "meaning": "Recipes",
@@ -507,7 +875,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Circulation period; shelf life and sales period",
             "guide": "Noun, meaning \"circulation period, shelf life and sales period\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Products that have expired cannot be sold."
+            "example": "Products that have expired cannot be sold.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "유통 기한이 지나다 / 남다"
+                }
+            ]
         },
         {
             "meaning": "seller",
@@ -522,7 +896,17 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "broken; spoiled",
             "guide": "Verb expression meaning \"to break, to deteriorate\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The weather is hot and the food is spoiled."
+            "example": "The weather is hot and the food is spoiled.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "음식이 상하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Food spoilage is often said 상하다"
+                }
+            ]
         },
         {
             "meaning": "mark",
@@ -532,12 +916,24 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "consumption period; edible period",
             "guide": "Noun, meaning \"expiration date, edible period\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The expiration date refers to the date when it can be eaten."
+            "example": "The expiration date refers to the date when it can be eaten.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "유통 기한 and 소비 기한 are not the same."
+                }
+            ]
         },
         {
             "meaning": "Save method",
             "guide": "Fixed expression meaning \"method of preservation\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please follow the storage method carefully."
+            "example": "Please follow the storage method carefully.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "냉장/냉동 보관"
+                }
+            ]
         },
         {
             "meaning": "It's a pity",
@@ -552,7 +948,13 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "Food spoilage/change",
             "guide": "Fixed expression meaning \"food has spoiled/changed\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Food may spoil if not stored properly."
+            "example": "Food may spoil if not stored properly.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Food spoilage becomes more natural 상하다"
+                }
+            ]
         },
         {
             "meaning": "milk",
@@ -607,32 +1009,68 @@ window.lessonGuideL3TranslationChunks.en["l3-08"] = {
         {
             "meaning": "shred",
             "guide": "Verb expression meaning \"to shred\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Shred the lettuce and add it."
+            "example": "Shred the lettuce and add it.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "채 썰다=shredded, 잘게 썰다=chopped"
+                }
+            ]
         },
         {
             "meaning": "cut into thin slices",
             "guide": "Verb expression meaning \"to slice thinly.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Thinly slice the onion."
+            "example": "Thinly slice the onion.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "얇게/두껍게 썰다"
+                }
+            ]
         },
         {
             "meaning": "dice",
             "guide": "Verb expression meaning \"to dice\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Dice the potatoes."
+            "example": "Dice the potatoes.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "감자를 깍둑썰다"
+                }
+            ]
         },
         {
             "meaning": "Pickle",
             "guide": "Verb expression meaning \"to pickle\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Salted cabbage."
+            "example": "Salted cabbage.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "소금에 절이다 / 양념에 절이다"
+                }
+            ]
         },
         {
             "meaning": "Adjust the quantity",
             "guide": "Verb expression meaning \"to adjust the portions\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please adjust the ingredients."
+            "example": "Please adjust the ingredients.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "재료의 양을 맞추다"
+                }
+            ]
         },
         {
             "meaning": "set the time correctly; master the time",
             "guide": "Verb expression, meaning \"to adjust the time correctly, to master the time\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "It is important to know the cooking time."
+            "example": "It is important to know the cooking time.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Available for adjusting or mastering the time"
+                }
+            ]
         }
     ],
     "dialogues": [

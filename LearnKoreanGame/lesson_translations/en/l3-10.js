@@ -28,17 +28,39 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "find a job; find a job",
             "guide": "Verb expression meaning \"to take up a job, to find a job\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I want to work in a Korean company."
+            "example": "I want to work in a Korean company.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사에 취직하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "취업 is a noun; 취직하다 is a verb."
+                }
+            ]
         },
         {
             "meaning": "job hunting activities",
             "guide": "Fixed expression meaning \"job search activity\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Advised on job search activities."
+            "example": "Advised on job search activities.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "구직=Looking for a job; 구인=Recruiting people"
+                }
+            ]
         },
         {
             "meaning": "write resume",
             "guide": "Fixed expression meaning \"writing a resume\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Practice writing your resume."
+            "example": "Practice writing your resume.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이력서를 작성하다"
+                }
+            ]
         },
         {
             "meaning": "wages and taxes",
@@ -48,7 +70,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "looking for a job",
             "guide": "Fixed expression meaning \"to find a job\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "What kind of job are you looking for in Korea?"
+            "example": "What kind of job are you looking for in Korea?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "일을 구하다 / 직장을 구하다"
+                }
+            ]
         },
         {
             "meaning": "Training course instructor",
@@ -78,42 +106,90 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Open a store",
             "guide": "Fixed expression meaning \"to open a shop\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Preparations are being made to open the store."
+            "example": "Preparations are being made to open the store.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가게를 차리다, 회사를 차리다"
+                }
+            ]
         },
         {
             "meaning": "Interpretation",
             "guide": "Noun meaning \"interpretation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I want to work as an interpreter."
+            "example": "I want to work as an interpreter.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "통역 is spoken interpretation; 번역 is written translation."
+                }
+            ]
         },
         {
             "meaning": "Translation; Translation",
             "guide": "Noun meaning \"translation, translation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I want to learn to do translation work."
+            "example": "I want to learn to do translation work.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "번역 is written translation; 통역 is spoken interpretation."
+                }
+            ]
         },
         {
             "meaning": "professional work",
             "guide": "Fixed expression meaning \"professional work\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want to do professional work."
+            "example": "I want to do professional work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전문성이 있다 / 없다"
+                }
+            ]
         },
         {
             "meaning": "stable company",
             "guide": "Fixed expression meaning \"stable company\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want to work in a stable company."
+            "example": "I want to work in a stable company.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "안정적인 회사에서 일하다"
+                }
+            ]
         },
         {
             "meaning": "working environment",
             "guide": "Fixed expression meaning \"working environment\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want a company with a good working environment."
+            "example": "I want a company with a good working environment.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "근무 환경이 좋다 / 나쁘다"
+                }
+            ]
         },
         {
             "meaning": "monthly salary",
             "guide": "Noun meaning \"monthly salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I like companies that offer high monthly salaries."
+            "example": "I like companies that offer high monthly salaries.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A more everyday word than 급여."
+                }
+            ]
         },
         {
             "meaning": "freedom of commuting",
             "guide": "Fixed expression meaning \"freedom to commute to get off work\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want to work in a company where I can commute freely."
+            "example": "I want to work in a company where I can commute freely.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "출퇴근 시간이 자유롭다"
+                }
+            ]
         },
         {
             "meaning": "development possibilities",
@@ -123,62 +199,134 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Contribute to society",
             "guide": "Fixed expression meaning \"to contribute to society\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I want to do something that can contribute to society."
+            "example": "I want to do something that can contribute to society.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사회에 기여하다: 조사 에"
+                }
+            ]
         },
         {
             "meaning": "self-improvement",
             "guide": "Fixed expression meaning \"self-improvement\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I like companies that promote themselves."
+            "example": "I like companies that promote themselves.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 계발 for developing a person’s ability, not 개발."
+                }
+            ]
         },
         {
             "meaning": "feel valuable; have a sense of accomplishment",
             "guide": "Fixed expression meaning \"to feel valuable and accomplished\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Feel a sense of accomplishment in your work."
+            "example": "Feel a sense of accomplishment in your work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "일에 보람을 느끼다"
+                }
+            ]
         },
         {
             "meaning": "Recruitment Advertisement",
             "guide": "Fixed expression meaning \"recruitment advertisement\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Saw the job ad."
+            "example": "Saw the job ad.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "구인 means recruiting; 구직 means looking for work."
+                }
+            ]
         },
         {
             "meaning": "Resume",
             "guide": "Noun meaning \"resume\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Write your resume in advance."
+            "example": "Write your resume in advance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이력서를 쓰다 / 작성하다"
+                }
+            ]
         },
         {
             "meaning": "application form; registration form",
             "guide": "Noun, meaning \"application form, registration form\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Filled out the application form."
+            "example": "Filled out the application form.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "지원서를 작성하다 / 내다"
+                }
+            ]
         },
         {
             "meaning": "fill in; compose",
             "guide": "Verb expression meaning \"to fill in, write\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "An application form needs to be filled out."
+            "example": "An application form needs to be filled out.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이력서·지원서를 작성하다"
+                }
+            ]
         },
         {
             "meaning": "materials; documents",
             "guide": "Noun, meaning \"material, document\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Prepare the materials in advance."
+            "example": "Prepare the materials in advance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서류를 준비하다 / 제출하다"
+                }
+            ]
         },
         {
             "meaning": "Submit",
             "guide": "Verb expression meaning \"to submit\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Materials submitted."
+            "example": "Materials submitted.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서류를 제출하다"
+                }
+            ]
         },
         {
             "meaning": "Take the written test",
             "guide": "Fixed expression meaning \"to take a written examination\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Participated in the written test."
+            "example": "Participated in the written test.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "시험을 보다 = 응시하다"
+                }
+            ]
         },
         {
             "meaning": "Attend an interview",
             "guide": "Fixed expression meaning \"to attend an interview\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Have an interview tomorrow."
+            "example": "Have an interview tomorrow.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "면접을 보다 = 면접에 가다"
+                }
+            ]
         },
         {
             "meaning": "Admission notification text message",
             "guide": "Fixed expression meaning \"admission notification text message\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Received the admission notification text message."
+            "example": "Received the admission notification text message.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "합격 통보를 받다"
+                }
+            ]
         },
         {
             "meaning": "Prepare",
@@ -188,7 +336,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Qualification certificate",
             "guide": "Noun, meaning \"qualification certificate\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please take the qualification certificate in advance."
+            "example": "Please take the qualification certificate in advance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자격증을 따다 / 취득하다"
+                }
+            ]
         },
         {
             "meaning": "Computer qualification certificate",
@@ -198,12 +352,24 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "in advance",
             "guide": "Adverb meaning \"in advance\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Already made a reservation in advance."
+            "example": "Already made a reservation in advance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "미리 + -어 놓다"
+                }
+            ]
         },
         {
             "meaning": "obtain; obtain",
             "guide": "Verb expression, meaning \"to obtain, to obtain\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I want to get a qualification certificate."
+            "example": "I want to get a qualification certificate.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자격증을 따다"
+                }
+            ]
         },
         {
             "meaning": "Korean nationality",
@@ -213,7 +379,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "obtain",
             "guide": "Verb expression meaning \"to obtain\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I want to obtain Korean citizenship."
+            "example": "I want to obtain Korean citizenship.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "More formal for documents or qualifications than 따다."
+                }
+            ]
         },
         {
             "meaning": "interpreter",
@@ -243,7 +415,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Write carefully",
             "guide": "Fixed expression meaning \"write with care\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please write your resume carefully."
+            "example": "Please write your resume carefully.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이력서를 정성껏 쓰다"
+                }
+            ]
         },
         {
             "meaning": "trading company",
@@ -253,7 +431,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Korean",
             "guide": "Noun meaning \"Korean\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Can speak Korean to a certain extent."
+            "example": "Can speak Korean to a certain extent.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A more casual word than 한국어."
+                }
+            ]
         },
         {
             "meaning": "teach english",
@@ -263,12 +447,24 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "apply; apply",
             "guide": "Verb expression, meaning \"to apply for a job, to apply\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Why apply to our company?"
+            "example": "Why apply to our company?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사에 지원하다"
+                }
+            ]
         },
         {
             "meaning": "Join the company; enter the company",
             "guide": "Verb expression, meaning \"to join, enter the company\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "What do you want to do after joining the job?"
+            "example": "What do you want to do after joining the job?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 입사 for a company and 입학 for a school."
+                }
+            ]
         },
         {
             "meaning": "Reasons for application",
@@ -278,7 +474,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "experience; work experience",
             "guide": "Noun, meaning \"experience, work experience\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Do you have work experience?"
+            "example": "Do you have work experience?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Work experience is 경력."
+                }
+            ]
         },
         {
             "meaning": "Work experience certificate",
@@ -293,7 +495,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Newcomer; fresh graduate/newly hired",
             "guide": "Noun, meaning \"newcomer, fresh graduate/newly hired\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I saw an advertisement for new staff."
+            "example": "I saw an advertisement for new staff.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The opposite of 신입 is 경력."
+                }
+            ]
         },
         {
             "meaning": "Experienced staff",
@@ -303,7 +511,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Recruitment areas/positions",
             "guide": "Fixed expression meaning \"recruitment field/position\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The recruitment position is sales position."
+            "example": "The recruitment position is sales position.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "모집 분야 / 모집 인원"
+                }
+            ]
         },
         {
             "meaning": "Cosmetics sales positions",
@@ -318,17 +532,35 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Qualifications",
             "guide": "Fixed expression meaning \"qualifications for employment\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please confirm your application qualifications."
+            "example": "Please confirm your application qualifications.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "지원 자격이 되다 / 안 되다"
+                }
+            ]
         },
         {
             "meaning": "high school graduation",
             "guide": "Noun meaning \"high school graduation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The qualification for application is high school graduation."
+            "example": "The qualification for application is high school graduation.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Short for high school graduation."
+                }
+            ]
         },
         {
             "meaning": "consultation; inquiry",
             "guide": "Noun, meaning \"consultation, inquiry\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The consultation phone number was confirmed."
+            "example": "The consultation phone number was confirmed.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문의 전화 / 문의하다"
+                }
+            ]
         },
         {
             "meaning": "How to apply",
@@ -338,7 +570,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Online application/online acceptance",
             "guide": "Fixed expression meaning \"online application/online acceptance\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Apply online."
+            "example": "Apply online.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The opposite of in-person application."
+                }
+            ]
         },
         {
             "meaning": "sales position",
@@ -348,7 +586,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Sales/business positions",
             "guide": "Noun meaning \"business/business position\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Have experience in business positions."
+            "example": "Have experience in business positions.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "More focused on customers and clients than simple sales work."
+                }
+            ]
         },
         {
             "meaning": "production positions",
@@ -358,7 +602,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "several names",
             "guide": "Noun, meaning \"a number of names\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The number of people to be recruited is several."
+            "example": "The number of people to be recruited is several.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "In job postings, it means “how many people.”"
+                }
+            ]
         },
         {
             "meaning": "university graduate",
@@ -368,22 +618,46 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "More than two years of experience",
             "guide": "Fixed expression meaning \"more than two years of experience\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Looking for someone with more than two years of experience."
+            "example": "Looking for someone with more than two years of experience.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N년 이상 / N년 이하"
+                }
+            ]
         },
         {
             "meaning": "Copy of qualification certificate",
             "guide": "Fixed expression meaning \"copy of qualification certificate\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please submit a copy of your qualification certificate."
+            "example": "Please submit a copy of your qualification certificate.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사본을 제출하다"
+                }
+            ]
         },
         {
             "meaning": "driver's license",
             "guide": "Noun meaning \"driver's license\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Driver's license required."
+            "example": "Driver's license required.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "운전면허증 소지자"
+                }
+            ]
         },
         {
             "meaning": "On-site application",
             "guide": "Fixed expression meaning \"to apply on the spot\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "You can also apply on site."
+            "example": "You can also apply on site.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The opposite of online application."
+                }
+            ]
         },
         {
             "meaning": "Email",
@@ -393,7 +667,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Self-introduction letter",
             "guide": "Noun, meaning \"self-introduction letter\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I have already written a self-introduction letter."
+            "example": "I have already written a self-introduction letter.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "자기소개서를 쓰다"
+                }
+            ]
         },
         {
             "meaning": "Certificate of achievement",
@@ -428,7 +708,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "working hours",
             "guide": "Fixed expression meaning \"working hours\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Working hours are Monday to Friday."
+            "example": "Working hours are Monday to Friday.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "근무 시간은 월~금입니다"
+                }
+            ]
         },
         {
             "meaning": "Monday to Friday",
@@ -453,7 +739,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "holder",
             "guide": "Noun meaning \"holder\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Looking for driver's license holders."
+            "example": "Looking for driver's license holders.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "운전면허증 소지자"
+                }
+            ]
         },
         {
             "meaning": "name",
@@ -463,7 +755,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Date of birth",
             "guide": "A noun meaning \"date, month, and day of birth.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please fill in the date of birth accurately."
+            "example": "Please fill in the date of birth accurately.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A document-style word, more formal than 생일."
+                }
+            ]
         },
         {
             "meaning": "Nationality",
@@ -478,7 +776,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "mobile phone",
             "guide": "Noun meaning \"mobile phone\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Fill in your mobile phone number."
+            "example": "Fill in your mobile phone number.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A document-style word, more formal than 핸드폰."
+                }
+            ]
         },
         {
             "meaning": "Passport number",
@@ -493,7 +797,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Educational qualifications",
             "guide": "Noun meaning \"education\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Fill in academic qualifications."
+            "example": "Fill in academic qualifications.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "학력 is education history; 경력 is work history."
+                }
+            ]
         },
         {
             "meaning": "period",
@@ -508,7 +818,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Professional",
             "guide": "A noun meaning \"professional\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Major is English."
+            "example": "Major is English.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "영어 전공 / 전공은 영어"
+                }
+            ]
         },
         {
             "meaning": "distinction; category",
@@ -548,7 +864,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "record; fill in",
             "guide": "Verb expression, meaning \"record, fill in\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The recorded matters are true."
+            "example": "The recorded matters are true.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A formal term used on documents."
+                }
+            ]
         },
         {
             "meaning": "name",
@@ -563,17 +885,35 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "salary; remuneration",
             "guide": "Noun meaning \"wage, salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Salary is received through bank account."
+            "example": "Salary is received through bank account.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Broader and more formal than 월급."
+                }
+            ]
         },
         {
             "meaning": "basic salary",
             "guide": "Noun meaning \"basic salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Salary includes basic salary."
+            "example": "Salary includes basic salary.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "급여 = 기본급 + 수당"
+                }
+            ]
         },
         {
             "meaning": "allowance; subsidy",
             "guide": "Noun, meaning \"allowance, subsidy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There are many types of allowances."
+            "example": "There are many types of allowances.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "초과 근무 수당 / 가족 수당"
+                }
+            ]
         },
         {
             "meaning": "family allowance",
@@ -598,12 +938,24 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "account",
             "guide": "Verb expression meaning \"to put into account\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The salary was recorded."
+            "example": "The salary was recorded.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "입금하다 ↔ 입금되다"
+                }
+            ]
         },
         {
             "meaning": "be paid; issue",
             "guide": "Verb expression meaning \"to be paid, issued\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "There is a difference with the actual monthly salary paid."
+            "example": "There is a difference with the actual monthly salary paid.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "지급하다 ↔ 지급되다"
+                }
+            ]
         },
         {
             "meaning": "taxes",
@@ -623,7 +975,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "deduction",
             "guide": "Verb expression meaning \"to deduct\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Taxes are deducted from wages."
+            "example": "Taxes are deducted from wages.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "급여에서 공제하다"
+                }
+            ]
         },
         {
             "meaning": "Amount",
@@ -633,7 +991,13 @@ window.lessonGuideL3TranslationChunks.en["l3-10"] = {
         {
             "meaning": "Proportion",
             "guide": "Noun meaning \"proportion\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The tax rate will increase."
+            "example": "The tax rate will increase.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비율이 높아지다 / 낮아지다"
+                }
+            ]
         },
         {
             "meaning": "Field; job category",

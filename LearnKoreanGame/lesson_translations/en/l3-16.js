@@ -22,7 +22,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "climate",
             "guide": "Noun meaning \"climate\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "South Korea's climate has four distinct seasons."
+            "example": "South Korea's climate has four distinct seasons.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "기후 means climate; 날씨 means weather."
+                }
+            ]
         },
         {
             "meaning": "weather",
@@ -47,7 +53,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "body temperature",
             "guide": "Noun meaning \"sensory temperature\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The body temperature is below zero."
+            "example": "The body temperature is below zero.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Actual temperature and feeling may vary"
+                }
+            ]
         },
         {
             "meaning": "Humidity",
@@ -57,7 +69,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "Rainfall probability",
             "guide": "Noun meaning \"probability of rainfall\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Chance of rain is 80%."
+            "example": "Chance of rain is 80%.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비 올 확률이 높다/낮다"
+                }
+            ]
         },
         {
             "meaning": "minimum temperature",
@@ -72,17 +90,35 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "fine particulate matter; dust",
             "guide": "Noun, meaning \"fine particles, dust\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Fine particulate matter is serious."
+            "example": "Fine particulate matter is serious.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "미세 먼지가 심하다"
+                }
+            ]
         },
         {
             "meaning": "Pay attention to warning",
             "guide": "Noun, meaning \"pay attention to warning\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A fine dust warning has been issued."
+            "example": "A fine dust warning has been issued.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "주의보 is less severe than 경보."
+                }
+            ]
         },
         {
             "meaning": "Alert",
             "guide": "Noun meaning \"alert\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A heavy rain warning was issued."
+            "example": "A heavy rain warning was issued.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "경보 is more severe than 주의보."
+                }
+            ]
         },
         {
             "meaning": "go out",
@@ -92,12 +128,24 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "Wear a mask",
             "guide": "Verb expression meaning \"wear a mask\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Wear a mask when the dust is severe."
+            "example": "Wear a mask when the dust is severe.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 쓰다 with masks."
+                }
+            ]
         },
         {
             "meaning": "scorching heat; intense heat",
             "guide": "Noun, meaning \"scorching heat, intense heat\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A severe heat warning has been issued."
+            "example": "A severe heat warning has been issued.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "폭염 주의보/경보"
+                }
+            ]
         },
         {
             "meaning": "drink more water",
@@ -107,7 +155,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "Heavy rain",
             "guide": "Noun meaning \"heavy rain\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A heavy rain warning was issued."
+            "example": "A heavy rain warning was issued.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "호우 주의보/경보"
+                }
+            ]
         },
         {
             "meaning": "river",
@@ -122,27 +176,57 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "take refuge; evacuate",
             "guide": "Verb expression meaning \"to take refuge, to evacuate\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Residents near the river are asked to evacuate."
+            "example": "Residents near the river are asked to evacuate.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "안전한 곳으로 대피하다"
+                }
+            ]
         },
         {
             "meaning": "cold wave",
             "guide": "A noun meaning \"cold wave.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A cold wave warning was issued."
+            "example": "A cold wave warning was issued.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한파 주의보/경보"
+                }
+            ]
         },
         {
             "meaning": "if possible",
             "guide": "Adverb meaning \"if possible\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Please do not go out if possible."
+            "example": "Please do not go out if possible.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가능하면 -지 마세요"
+                }
+            ]
         },
         {
             "meaning": "take time out",
             "guide": "Verb expression meaning \"to take time out.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "You should be very busy and still find time, thank you."
+            "example": "You should be very busy and still find time, thank you.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "시간을 내 주다"
+                }
+            ]
         },
         {
             "meaning": "Take an umbrella with you",
             "guide": "Fixed expression meaning \"go with an umbrella\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It may rain, please bring an umbrella."
+            "example": "It may rain, please bring an umbrella.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "가지고 가다 means take with you; 가지고 오다 means bring here."
+                }
+            ]
         },
         {
             "meaning": "thick clothes",
@@ -152,7 +236,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "traffic jam; road congestion",
             "guide": "Fixed expression meaning \"traffic jam, road congestion\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The roads may be congested, so take the subway."
+            "example": "The roads may be congested, so take the subway.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Say 길이 막히다, don’t say 차가 막히다"
+                }
+            ]
         },
         {
             "meaning": "Slippery road",
@@ -162,12 +252,24 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "Showers",
             "guide": "Noun meaning \"shower\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The showers should stop soon, just wait."
+            "example": "The showers should stop soon, just wait.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Sudden rain for a short period of time"
+                }
+            ]
         },
         {
             "meaning": "stop",
             "guide": "Verb expression meaning \"to stop\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The rain stopped."
+            "example": "The rain stopped.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비/눈이 그치다"
+                }
+            ]
         },
         {
             "meaning": "section chief; manager",
@@ -177,47 +279,101 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "sitting",
             "guide": "Verb expression meaning \"to sit\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Gao Tian sat on the sofa."
+            "example": "Gao Tian sat on the sofa.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The state after sitting down, not sitting down"
+                }
+            ]
         },
         {
             "meaning": "with sugar; containing sugar",
             "guide": "Fixed expression meaning \"putting sugar, containing sugar\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There is sugar in this cup of coffee."
+            "example": "There is sugar in this cup of coffee.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "N에 들어 있다 means containing"
+                }
+            ]
         },
         {
             "meaning": "Power off",
             "guide": "Fixed expression meaning \"the power is off\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "My friend's cell phone is turned off."
+            "example": "My friend's cell phone is turned off.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "끄다→꺼지다→꺼져 있다"
+                }
+            ]
         },
         {
             "meaning": "open",
             "guide": "Verb expression meaning \"to open\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "There are many flowers blooming."
+            "example": "There are many flowers blooming.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "피다→피어 있다"
+                }
+            ]
         },
         {
             "meaning": "fall on; fall on",
             "guide": "Verb expression, meaning \"fall on, fall on\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The ballpoint pen fell to the ground."
+            "example": "The ballpoint pen fell to the ground.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "떨어지다→떨어져 있다"
+                }
+            ]
         },
         {
             "meaning": "closed",
             "guide": "Verb expression meaning \"to close\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The windows are closed."
+            "example": "The windows are closed.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "닫다→닫히다→닫혀 있다"
+                }
+            ]
         },
         {
             "meaning": "hanging",
             "guide": "Verb expression meaning \"to hang\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The watch is hung on the wall."
+            "example": "The watch is hung on the wall.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "걸다→걸리다→걸려 있다"
+                }
+            ]
         },
         {
             "meaning": "Leave it alone",
             "guide": "Verb expression meaning \"to put\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "There are cups on the table."
+            "example": "There are cups on the table.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "놓다→놓이다→놓여 있다"
+                }
+            ]
         },
         {
             "meaning": "temperature drops",
             "guide": "Fixed expression meaning \"a drop in temperature\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The temperature dropped a lot."
+            "example": "The temperature dropped a lot.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기온이 오르다/떨어지다"
+                }
+            ]
         },
         {
             "meaning": "sports meeting",
@@ -232,22 +388,46 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "outdoor activities",
             "guide": "Noun meaning \"outdoor activity\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It will be difficult to hold outdoor activities in weather like this tomorrow."
+            "example": "It will be difficult to hold outdoor activities in weather like this tomorrow.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "야외=outdoor; 실내=indoor"
+                }
+            ]
         },
         {
             "meaning": "Reluctant; inappropriate",
             "guide": "Noun, meaning \"reluctant, inappropriate\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is too difficult to hold outdoor activities in the hot summer."
+            "example": "It is too difficult to hold outdoor activities in the hot summer.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "무리예요 / 무리하지 마세요"
+                }
+            ]
         },
         {
             "meaning": "postpone",
             "guide": "Verb expression meaning \"to postpone\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Postpone the sports meeting to another day."
+            "example": "Postpone the sports meeting to another day.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "연기하다 can also refer to acting skills, depending on context"
+                }
+            ]
         },
         {
             "meaning": "Precipitation probability",
             "guide": "Noun meaning \"probability of precipitation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Chance of precipitation is 80%."
+            "example": "Chance of precipitation is 80%.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "More formal than 비 올 확률"
+                }
+            ]
         },
         {
             "meaning": "outing; picnic party",
@@ -257,7 +437,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "Issue heavy rain warning",
             "guide": "Fixed expression meaning \"issue a heavy rain warning\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "A heavy rain warning was issued on the day of the trip."
+            "example": "A heavy rain warning was issued on the day of the trip.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "경보/주의보가 내리다"
+                }
+            ]
         },
         {
             "meaning": "outdoor work",
@@ -272,7 +458,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "blowing cold wind",
             "guide": "Fixed expression meaning \"a cold wind is blowing\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There was also a cold wind blowing during the day."
+            "example": "There was also a cold wind blowing during the day.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "바람이 불다"
+                }
+            ]
         },
         {
             "meaning": "tropical night",
@@ -282,17 +474,35 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "temperature difference between day and night",
             "guide": "A noun meaning \"the difference in temperature between day and night\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There is a big temperature difference between day and night, so please be careful."
+            "example": "There is a big temperature difference between day and night, so please be careful.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "일교차가 크다"
+                }
+            ]
         },
         {
             "meaning": "Below zero",
             "guide": "Noun meaning \"below zero\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The body temperature dropped to below zero."
+            "example": "The body temperature dropped to below zero.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "영하 3도 means -3°C; 영상 3도 means +3°C."
+                }
+            ]
         },
         {
             "meaning": "Gradually turning cloudy",
             "guide": "Fixed expression meaning \"gradually turning negative\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It will gradually turn cloudy in the afternoon."
+            "example": "It will gradually turn cloudy in the afternoon.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "흐리다→흐려지다"
+                }
+            ]
         },
         {
             "meaning": "Travel",
@@ -302,7 +512,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "spring sleep syndrome",
             "guide": "Noun, meaning \"spring sleep syndrome\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You will feel spring sleepy in spring."
+            "example": "You will feel spring sleepy in spring.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Spring fatigue is not necessarily an illness"
+                }
+            ]
         },
         {
             "meaning": "Weakness of body; fatigue",
@@ -322,12 +538,24 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "decreased concentration",
             "guide": "Fixed expression meaning \"loss of concentration\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Concentration declines in the afternoon."
+            "example": "Concentration declines in the afternoon.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집중력이 떨어지다"
+                }
+            ]
         },
         {
             "meaning": "feel blue",
             "guide": "Fixed expression meaning \"to feel melancholy\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I feel blue on rainy days."
+            "example": "I feel blue on rainy days.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기분이 들다"
+                }
+            ]
         },
         {
             "meaning": "high fever",
@@ -342,17 +570,35 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "influenza",
             "guide": "Noun meaning \"flu\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Get tested if you suspect the flu."
+            "example": "Get tested if you suspect the flu.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "독감 is heavier than 감기"
+                }
+            ]
         },
         {
             "meaning": "suspected; suspected",
             "guide": "Verb expression meaning \"to be suspected, suspected of\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Suspected flu."
+            "example": "Suspected flu.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "의심하다→의심되다"
+                }
+            ]
         },
         {
             "meaning": "Drowsiness/mood changes affected by spring",
             "guide": "Fixed expression meaning \"drowsy/mood changes affected by spring\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It seems to be affected by spring recently."
+            "example": "It seems to be affected by spring recently.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "계절을 타다 expresses emotions affected by seasons"
+                }
+            ]
         },
         {
             "meaning": "medically",
@@ -362,7 +608,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "disease",
             "guide": "Noun meaning \"disease\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Spring syndrome is not a disease."
+            "example": "Spring syndrome is not a disease.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "질병 is more formal; 병 is more colloquial"
+                }
+            ]
         },
         {
             "meaning": "seasonal changes",
@@ -372,12 +624,24 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "adapt",
             "guide": "Verb expression meaning \"to adapt\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The body has failed to adapt to spring."
+            "example": "The body has failed to adapt to spring.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 적응하다"
+                }
+            ]
         },
         {
             "meaning": "familiar; accustomed",
             "guide": "Adjective meaning \"familiar, accustomed\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "The body gets used to the cold."
+            "example": "The body gets used to the cold.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 익숙하다"
+                }
+            ]
         },
         {
             "meaning": "Regularly",
@@ -397,12 +661,24 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "interval",
             "guide": "Noun meaning \"interval\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Take breaks every two or three hours."
+            "example": "Take breaks every two or three hours.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N시간 간격으로"
+                }
+            ]
         },
         {
             "meaning": "Relax muscle tension",
             "guide": "Fixed expression meaning \"to relax muscle tension\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Stretching relaxes muscle tension."
+            "example": "Stretching relaxes muscle tension.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "긴장을 풀다"
+                }
+            ]
         },
         {
             "meaning": "valid",
@@ -417,7 +693,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "contains",
             "guide": "Verb expression meaning \"to contain\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Vegetables contain vitamins."
+            "example": "Vegetables contain vitamins.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "포함하다→포함되다"
+                }
+            ]
         },
         {
             "meaning": "sleep time",
@@ -432,7 +714,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "Popular",
             "guide": "Verb expression meaning \"popular\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Influenza may be circulating."
+            "example": "Influenza may be circulating.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "독감이 유행하다"
+                }
+            ]
         },
         {
             "meaning": "solar terms",
@@ -452,7 +740,13 @@ window.lessonGuideL3TranslationChunks.en["l3-16"] = {
         {
             "meaning": "take root; take up position",
             "guide": "Verb expression meaning \"to take root, to take up position\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Some solar terms take root in daily life."
+            "example": "Some solar terms take root in daily life.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "자리 잡다 can mean stable and rooted"
+                }
+            ]
         },
         {
             "meaning": "familiar",

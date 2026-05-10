@@ -32,17 +32,35 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Activate mobile phone",
             "guide": "A noun meaning \"to open a mobile phone\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Identity documents are required to activate a mobile phone."
+            "example": "Identity documents are required to activate a mobile phone.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "통신사 대리점에서 개통하다"
+                }
+            ]
         },
         {
             "meaning": "Search for information",
             "guide": "Verb expression meaning \"to search for information\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I usually use the internet to search for information."
+            "example": "I usually use the internet to search for information.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "인터넷으로 정보를 검색하다"
+                }
+            ]
         },
         {
             "meaning": "Use online banking",
             "guide": "Verb expression meaning \"to use online banking\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I transferred money through online banking."
+            "example": "I transferred money through online banking.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "For banking tasks, 업무 usually takes 하다."
+                }
+            ]
         },
         {
             "meaning": "online shopping",
@@ -52,12 +70,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Send email",
             "guide": "Verb expression meaning \"to send an email\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I emailed the company."
+            "example": "I emailed the company.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게/에 이메일을 보내다"
+                }
+            ]
         },
         {
             "meaning": "Listen to online classes",
             "guide": "Verb expression, meaning \"listen to online classes\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I take Korean online classes."
+            "example": "I take Korean online classes.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 듣다, not 보다, for lectures."
+                }
+            ]
         },
         {
             "meaning": "enjoy movies",
@@ -72,7 +102,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Leave a message; post a comment",
             "guide": "Verb expression, meaning \"leave a message, post a comment\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I left a message below the video."
+            "example": "I left a message below the video.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "게시물/영상에 댓글을 남기다"
+                }
+            ]
         },
         {
             "meaning": "Watch YouTube",
@@ -87,17 +123,35 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Shoot video",
             "guide": "Verb expression meaning \"to shoot a video\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I took a video of the kid."
+            "example": "I took a video of the kid.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사진/동영상을 촬영하다"
+                }
+            ]
         },
         {
             "meaning": "video call",
             "guide": "Verb expression meaning \"video call\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I had a video call with my parents."
+            "example": "I had a video call with my parents.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "영상 통화를 걸다 / 받다"
+                }
+            ]
         },
         {
             "meaning": "send text message",
             "guide": "Verb expression meaning \"to send text messages.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I texted my friend."
+            "example": "I texted my friend.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 문자를 보내다"
+                }
+            ]
         },
         {
             "meaning": "Look up word meaning",
@@ -112,12 +166,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Install application",
             "guide": "Verb expression meaning \"to install an application\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I installed the Korean Vocabulary App."
+            "example": "I installed the Korean Vocabulary App.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "앱을 설치하다 / 삭제하다"
+                }
+            ]
         },
         {
             "meaning": "Latest",
             "guide": "Modifier meaning \"latest\". Usually placed in front of a noun to qualify the following object.",
-            "example": "Taken with the latest smartphone."
+            "example": "Taken with the latest smartphone.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Before a noun: 최신 스마트폰."
+                }
+            ]
         },
         {
             "meaning": "size; dimensions",
@@ -132,47 +198,105 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "personally; directly",
             "guide": "Adverb meaning \"personally, directly\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Please confirm it yourself."
+            "example": "Please confirm it yourself.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "직접=in person; 바로=immediately"
+                }
+            ]
         },
         {
             "meaning": "in my hometown; living in my hometown",
             "guide": "Fixed expression, meaning \"in my hometown, living in my hometown\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I miss my parents back home."
+            "example": "I miss my parents back home.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "계시다 is an honorific for 있다"
+                }
+            ]
         },
         {
             "meaning": "Contact; contact...(honorific)",
             "guide": "Verb expression, meaning \"to contact, to contact... (honorific language)\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please contact parents frequently."
+            "example": "Please contact parents frequently.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N께 연락드리다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "드리다 to lift someone up"
+                }
+            ]
         },
         {
             "meaning": "Member registration",
             "guide": "Noun, meaning \"membership registration\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I have registered as a member on the website."
+            "example": "I have registered as a member on the website.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "가입하다 is a verb; 회원 가입 is a noun phrase."
+                }
+            ]
         },
         {
             "meaning": "Personal certification",
             "guide": "Noun, meaning \"personal authentication\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You must authenticate yourself to register."
+            "example": "You must authenticate yourself to register.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "본인 확인을 하다/받다"
+                }
+            ]
         },
         {
             "meaning": "connect; access",
             "guide": "Verb expression meaning \"to connect, to access\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Wi-Fi connected."
+            "example": "Wi-Fi connected.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "와이파이/사이트에 접속하다"
+                }
+            ]
         },
         {
             "meaning": "Password",
             "guide": "Noun meaning \"password\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Password required."
+            "example": "Password required.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비밀번호를 입력하다"
+                }
+            ]
         },
         {
             "meaning": "input",
             "guide": "Verb expression meaning \"to enter\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please enter your mobile phone number."
+            "example": "Please enter your mobile phone number.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 입력하다 for forms/numbers"
+                }
+            ]
         },
         {
             "meaning": "fluent",
             "guide": "Adjective meaning \"fluent\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "You must be fluent in Korean to get a job."
+            "example": "You must be fluent in Korean to get a job.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한국어가 유창하다"
+                }
+            ]
         },
         {
             "meaning": "Navigation App",
@@ -187,7 +311,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "tell me what app",
             "guide": "Fixed expression meaning \"tell me what app\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I’ll tell you what app it is if needed."
+            "example": "I’ll tell you what app it is if needed.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "-인지 Reserved for questions"
+                }
+            ]
         },
         {
             "meaning": "Beauty App",
@@ -207,7 +337,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Recommended",
             "guide": "Verb expression meaning \"to recommend\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please recommend good videos."
+            "example": "Please recommend good videos.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 N을 추천하다"
+                }
+            ]
         },
         {
             "meaning": "image; video",
@@ -217,12 +353,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Play volume; click volume",
             "guide": "Noun, meaning \"play volume, click volume\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This video has a lot of views."
+            "example": "This video has a lot of views.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "조회수가 높다/많다"
+                }
+            ]
         },
         {
             "meaning": "Personal channel",
             "guide": "Noun meaning \"personal channel\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Created a personal channel."
+            "example": "Created a personal channel.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "채널을 만들다/운영하다"
+                }
+            ]
         },
         {
             "meaning": "Cooking video",
@@ -232,7 +380,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Isn't it difficult?",
             "guide": "A grammatical expression that means \"isn't it difficult?\" Don’t translate word for word, but understand the whole sentence according to its tone.",
-            "example": "Isn’t it difficult to learn cooking by yourself?"
+            "example": "Isn’t it difficult to learn cooking by yourself?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Not an ordinary question, with a tone of consensus"
+                }
+            ]
         },
         {
             "meaning": "social isolation",
@@ -242,12 +396,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "relieve; alleviate",
             "guide": "Noun meaning \"to relieve, relieve\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Relieved stress."
+            "example": "Relieved stress.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "스트레스/고립감을 해소하다"
+                }
+            ]
         },
         {
             "meaning": "Popularize; popularize",
             "guide": "Noun, meaning \"popularization, popularization\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Smartphones are becoming popular very quickly."
+            "example": "Smartphones are becoming popular very quickly.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "대중화하다 / 대중화되다"
+                }
+            ]
         },
         {
             "meaning": "personal media",
@@ -257,7 +423,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "emergency",
             "guide": "Noun meaning \"emergency\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "In case of emergency, go to the hospital."
+            "example": "In case of emergency, go to the hospital.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "응급 상황이 생기다"
+                }
+            ]
         },
         {
             "meaning": "medical institution",
@@ -272,7 +444,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "addiction; addiction",
             "guide": "Noun meaning \"addiction, addiction\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Beware of cell phone addiction."
+            "example": "Beware of cell phone addiction.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "스마트폰 중독 / 중독되다"
+                }
+            ]
         },
         {
             "meaning": "uneasy",
@@ -282,22 +460,46 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Diagnosis",
             "guide": "Noun meaning \"diagnosis\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please accept expert diagnosis."
+            "example": "Please accept expert diagnosis.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "진단을 받다"
+                }
+            ]
         },
         {
             "meaning": "insomnia",
             "guide": "A noun meaning \"insomnia\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Insomnia occurred."
+            "example": "Insomnia occurred.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "불면증이 생기다"
+                }
+            ]
         },
         {
             "meaning": "worsening of vision",
             "guide": "Noun meaning \"deterioration of vision\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Cell phone use can be a cause of worsening vision."
+            "example": "Cell phone use can be a cause of worsening vision.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "시력이 악화되다"
+                }
+            ]
         },
         {
             "meaning": "Drunk driving",
             "guide": "A noun meaning \"drunk driving\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Drunk driving is dangerous."
+            "example": "Drunk driving is dangerous.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Driving after drinking is 음주 운전."
+                }
+            ]
         },
         {
             "meaning": "embarrassing; unnatural",
@@ -307,7 +509,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "communicate",
             "guide": "Verb expression meaning \"to communicate\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Communicate exclusively through social networks."
+            "example": "Communicate exclusively through social networks.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 소통하다"
+                }
+            ]
         },
         {
             "meaning": "daily",
@@ -317,17 +525,35 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "imagine",
             "guide": "Verb expression meaning \"to imagine\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Imagined the future life."
+            "example": "Imagined the future life.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "상상하기 어렵다"
+                }
+            ]
         },
         {
             "meaning": "different from the past",
             "guide": "Fixed expression meaning \"different from the past\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Unlike in the past, many things can be done easily."
+            "example": "Unlike in the past, many things can be done easily.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N와/과 달리"
+                }
+            ]
         },
         {
             "meaning": "thanks; due to",
             "guide": "Grammatical expression, meaning \"thank you, because of\". Don’t translate word for word, but understand the whole sentence according to its tone.",
-            "example": "Thanks to smartphones, it’s become more convenient."
+            "example": "Thanks to smartphones, it’s become more convenient.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use more for good results"
+                }
+            ]
         },
         {
             "meaning": "quickly",
@@ -342,12 +568,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "On the other hand; opposite",
             "guide": "Adverb meaning \"on the other hand, opposite\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Convenient but also problematic."
+            "example": "Convenient but also problematic.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "A한 반면 B하다"
+                }
+            ]
         },
         {
             "meaning": "Dependence",
             "guide": "Noun meaning \"degree of dependence\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Dependence on mobile phones has increased."
+            "example": "Dependence on mobile phones has increased.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "의존도가 높다/낮다"
+                }
+            ]
         },
         {
             "meaning": "interpersonal relationships",
@@ -357,7 +595,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "observe; understand; see",
             "guide": "Verb expression, meaning \"observe, understand, see\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Let’s look at convenience first."
+            "example": "Let’s look at convenience first.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The article is more objective than 보다"
+                }
+            ]
         },
         {
             "meaning": "Equipment",
@@ -372,12 +616,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "anytime; often",
             "guide": "Adverb meaning \"at any time, often\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Send messages to each other anytime."
+            "example": "Send messages to each other anytime.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "수시로 is not equal to 항상"
+                }
+            ]
         },
         {
             "meaning": "pass each other",
             "guide": "Verb expression meaning \"to pass on to each other\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Sent messages to each other."
+            "example": "Sent messages to each other.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "메시지/소식을 주고받다"
+                }
+            ]
         },
         {
             "meaning": "The most important thing is",
@@ -387,7 +643,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "data; traffic",
             "guide": "Noun, meaning \"data, flow\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Use the latest data."
+            "example": "Use the latest data.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Mobile phone context often refers to traffic"
+                }
+            ]
         },
         {
             "meaning": "discover",
@@ -402,12 +664,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "generalize; popularize",
             "guide": "Verb expression, meaning \"generalize, popularize\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Online banking has become popular."
+            "example": "Online banking has become popular.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "보편화하다→보편화되다"
+                }
+            ]
         },
         {
             "meaning": "make an impact",
             "guide": "Fixed expression meaning \"to have an impact\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It had a big impact on life."
+            "example": "It had a big impact on life.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 영향을 미치다"
+                }
+            ]
         },
         {
             "meaning": "news",
@@ -417,17 +691,35 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "less dialogue",
             "guide": "Fixed expression meaning \"less conversation\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There are fewer face-to-face conversations."
+            "example": "There are fewer face-to-face conversations.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "줄다→줄어들다"
+                }
+            ]
         },
         {
             "meaning": "cut off; interrupted",
             "guide": "Verb expression meaning \"to be cut off, interrupted\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Communication may break down."
+            "example": "Communication may break down.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "단절하다→단절되다"
+                }
+            ]
         },
         {
             "meaning": "Personal information leaked",
             "guide": "Noun meaning \"personal information leakage\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please be careful about leaking personal information."
+            "example": "Please be careful about leaking personal information.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "개인 정보가 유출되다"
+                }
+            ]
         },
         {
             "meaning": "Private life exposed",
@@ -447,12 +739,24 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Too much is not enough",
             "guide": "Hanja phrase meaning \"too much is not enough\". Memorizing the overall meaning is more natural than translating word for word.",
-            "example": "When using a smartphone, remember that too much is never enough."
+            "example": "When using a smartphone, remember that too much is never enough.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Too much is as bad as too little."
+                }
+            ]
         },
         {
             "meaning": "excessive",
             "guide": "Verb expression meaning \"over\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Overuse is not good."
+            "example": "Overuse is not good.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Used before a noun, as in 지나친 사용."
+                }
+            ]
         },
         {
             "meaning": "Insufficient",
@@ -507,7 +811,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Alien registration card",
             "guide": "Noun meaning \"alien registration card\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "An alien registration card is required."
+            "example": "An alien registration card is required.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "등록증, not 등록권"
+                }
+            ]
         },
         {
             "meaning": "USIM card; mobile phone card",
@@ -517,17 +827,35 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "in my own name",
             "guide": "Fixed expression meaning \"in one's own name\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It cannot be opened in my own name."
+            "example": "It cannot be opened in my own name.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "본인 이름으로 개통하다"
+                }
+            ]
         },
         {
             "meaning": "Tariff package",
             "guide": "Noun, meaning \"rate package\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please choose the package that suits you."
+            "example": "Please choose the package that suits you.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "요금제를 선택하다/바꾸다"
+                }
+            ]
         },
         {
             "meaning": "Data usage",
             "guide": "Noun meaning \"data usage\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Data usage is a lot."
+            "example": "Data usage is a lot.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "데이터 사용량이 많다/적다"
+                }
+            ]
         },
         {
             "meaning": "due to work; business",
@@ -537,7 +865,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Unlimited packages",
             "guide": "Noun meaning \"unlimited package\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Unlimited plans are more cost-effective."
+            "example": "Unlimited plans are more cost-effective.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "무제한 요금제가 유리하다"
+                }
+            ]
         },
         {
             "meaning": "voice call",
@@ -552,7 +886,13 @@ window.lessonGuideL3TranslationChunks.en["l3-14"] = {
         {
             "meaning": "Pay",
             "guide": "Fixed expression meaning \"to pay\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Pay the cell phone bill."
+            "example": "Pay the cell phone bill.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "휴대폰 요금을 내다"
+                }
+            ]
         }
     ],
     "dialogues": [

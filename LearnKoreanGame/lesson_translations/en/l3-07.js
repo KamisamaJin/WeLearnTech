@@ -42,22 +42,46 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "After-view; reflections",
             "guide": "Fixed expression, meaning \"reflections after viewing\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Tell us your thoughts after watching the performance."
+            "example": "Tell us your thoughts after watching the performance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연 감상 소감을 말하다"
+                }
+            ]
         },
         {
             "meaning": "Post-viewing comments",
             "guide": "Noun, meaning \"evaluation after viewing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I wrote a post-viewing review of the musical."
+            "example": "I wrote a post-viewing review of the musical.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "감상평 is often a written review or response."
+                }
+            ]
         },
         {
             "meaning": "Performance information",
             "guide": "Fixed expression meaning \"performance information\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I found the performance information online."
+            "example": "I found the performance information online.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연 정보를 검색하다"
+                }
+            ]
         },
         {
             "meaning": "Go and see",
             "guide": "Verb expression meaning \"to see\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I want to go see a musical when I have time."
+            "example": "I want to go see a musical when I have time.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/를 보러 가다"
+                }
+            ]
         },
         {
             "meaning": "drama",
@@ -82,7 +106,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "street performance",
             "guide": "Fixed expression meaning \"street performance\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Went to see a street performance on the weekend."
+            "example": "Went to see a street performance on the weekend.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "길거리에서 공연하다 / 버스킹하다"
+                }
+            ]
         },
         {
             "meaning": "art exhibition",
@@ -112,7 +142,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "talk lecture; lecture",
             "guide": "Fixed expression meaning \"conversation lecture, lecture\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Attended author talk lectures."
+            "example": "Attended author talk lectures.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "More for talks and conversations than music performances."
+                }
+            ]
         },
         {
             "meaning": "Lecture",
@@ -122,47 +158,117 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Search for show information",
             "guide": "Fixed expression meaning \"search for performance information\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I searched for show information on my phone."
+            "example": "I searched for show information on my phone.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "인터넷/문화포털에서 검색하다"
+                }
+            ]
         },
         {
             "meaning": "ticket",
             "guide": "Noun meaning \"ticket\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Buy tickets in advance."
+            "example": "Buy tickets in advance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "표를 예매하다/사다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "표 is native Korean; 티켓 is a loanword."
+                }
+            ]
         },
         {
             "meaning": "Booking",
             "guide": "Verb expression meaning \"to book\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Booked tickets online."
+            "example": "Booked tickets online.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연 표를 예매하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "예매 means buying or reserving in advance."
+                }
+            ]
         },
         {
             "meaning": "receive",
             "guide": "Verb expression meaning \"to receive\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please collect your tickets in front of the venue."
+            "example": "Please collect your tickets in front of the venue.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "표를 수령하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "More formal than 받다."
+                }
+            ]
         },
         {
             "meaning": "looking forward to",
             "guide": "Verb expression meaning \"to expect\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Looking forward to tomorrow's performance."
+            "example": "Looking forward to tomorrow's performance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/를 기대하다"
+                }
+            ]
         },
         {
             "meaning": "exciting",
             "guide": "Verb expression meaning \"to expect\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "This performance is really exciting."
+            "example": "This performance is really exciting.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "제가 기대해요, but 공연이 기대돼요."
+                },
+                {
+                    "type": "form",
+                    "text": "기대하다 → 기대되다"
+                }
+            ]
         },
         {
             "meaning": "touching",
             "guide": "Adjective meaning \"moving\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "The final scene is touching."
+            "example": "The final scene is touching.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "감동을 받다 is “be moved”; 감동적이다 is “moving.”"
+                }
+            ]
         },
         {
             "meaning": "Impressive",
             "guide": "Adjective meaning \"impressive\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "The actor's expressions were impressive."
+            "example": "The actor's expressions were impressive.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가장 인상적인 장면"
+                }
+            ]
         },
         {
             "meaning": "broadcast notification",
             "guide": "Noun meaning \"broadcast notification\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A radio announcement was played before the show."
+            "example": "A radio announcement was played before the show.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "안내 방송이 나오다"
+                }
+            ]
         },
         {
             "meaning": "immediately; soon",
@@ -172,52 +278,116 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "mobile phone",
             "guide": "Noun meaning \"mobile phone\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please turn off your cell phone during the performance."
+            "example": "Please turn off your cell phone during the performance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "휴대 전화 전원을 끄다"
+                }
+            ]
         },
         {
             "meaning": "power supply",
             "guide": "Noun meaning \"power source\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please turn off the power of your mobile phone."
+            "example": "Please turn off the power of your mobile phone.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전원을 켜다/끄다"
+                }
+            ]
         },
         {
             "meaning": "turn off",
             "guide": "Verb expression meaning \"to turn off\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Turn off your phone before the show."
+            "example": "Turn off your phone before the show.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "끄다 → 꺼요, 껐어요"
+                }
+            ]
         },
         {
             "meaning": "please turn off",
             "guide": "Fixed expression meaning \"please turn off\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please turn off the power."
+            "example": "Please turn off the power.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "전원을 꺼 주시기 바랍니다"
+                }
+            ]
         },
         {
             "meaning": "audience",
             "guide": "Noun meaning \"audience\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Staff let the audience in."
+            "example": "Staff let the audience in.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A person watching a performance is 관객."
+                }
+            ]
         },
         {
             "meaning": "performance venue",
             "guide": "A noun meaning \"performance venue\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Arrived at the performance venue early."
+            "example": "Arrived at the performance venue early.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연장에 입장하다"
+                }
+            ]
         },
         {
             "meaning": "Admission",
             "guide": "Verb expression meaning \"to enter\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Get in now."
+            "example": "Get in now.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연장에 입장하다"
+                }
+            ]
         },
         {
             "meaning": "let in",
             "guide": "A grammatical expression meaning \"to let in\". Don’t translate word for word, but understand the whole sentence according to its tone.",
-            "example": "The staff said to enter now."
+            "example": "The staff said to enter now.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "V-(으)라고 하다"
+                }
+            ]
         },
         {
             "meaning": "Ask if you like it",
             "guide": "A grammatical expression that means \"asking if you like it\". Don’t translate word for word, but understand the whole sentence according to its tone.",
-            "example": "A friend asked me if I like K-pop."
+            "example": "A friend asked me if I like K-pop.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "A/V-냐고 하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "좋아하다 becomes 좋아하냐고 in quoted questions."
+                }
+            ]
         },
         {
             "meaning": "What time does it start?",
             "guide": "Fixed expression meaning \"what time does it start\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "He asked what time the show started."
+            "example": "He asked what time the show started.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "몇 시에 시작해요?"
+                }
+            ]
         },
         {
             "meaning": "Express",
@@ -237,22 +407,46 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Contact often",
             "guide": "Verb expression meaning \"often contact\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "My parents let me keep in touch."
+            "example": "My parents let me keep in touch.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게/한테 연락하다"
+                }
+            ]
         },
         {
             "meaning": "free show",
             "guide": "Fixed expression meaning \"free performance\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There are a lot of good free gigs too."
+            "example": "There are a lot of good free gigs too.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "무료=free, 유료=paid"
+                }
+            ]
         },
         {
             "meaning": "Paid performance",
             "guide": "A fixed expression meaning \"a paid performance\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Free gigs are just as good as paid gigs."
+            "example": "Free gigs are just as good as paid gigs.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "유료=paid, 무료=free"
+                }
+            ]
         },
         {
             "meaning": "search; look for",
             "guide": "Verb expression, meaning \"to search, to look for\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "If you look carefully, you will get discounted performances."
+            "example": "If you look carefully, you will get discounted performances.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "정보를 찾아보다 means to look up information."
+                }
+            ]
         },
         {
             "meaning": "Hometown food",
@@ -272,7 +466,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "city; city center",
             "guide": "Noun, meaning \"city, city center\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The city center is not as crowded as it is on weekends."
+            "example": "The city center is not as crowded as it is on weekends.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It means a downtown or central area, not just inside a city."
+                }
+            ]
         },
         {
             "meaning": "singer",
@@ -292,7 +492,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "fluent",
             "guide": "Adjective meaning \"fluent\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "Miho speaks Korean as fluently as a Korean."
+            "example": "Miho speaks Korean as fluently as a Korean.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한국어를 유창하게 하다"
+                }
+            ]
         },
         {
             "meaning": "professional writer",
@@ -312,27 +518,57 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "acting; performance",
             "guide": "Noun meaning \"acting, performance\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The acting of the lead actors is very good."
+            "example": "The acting of the lead actors is very good.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "In a performance context, 연기 means acting."
+                }
+            ]
         },
         {
             "meaning": "scene; lens",
             "guide": "Noun, meaning \"scene, shot\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The most impressive scene is the last scene."
+            "example": "The most impressive scene is the last scene.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "인상적인/감동적인 장면"
+                }
+            ]
         },
         {
             "meaning": "expression",
             "guide": "Noun meaning \"expression\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Even the expressions of the actors can be seen clearly."
+            "example": "Even the expressions of the actors can be seen clearly.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "표정이 밝다/어둡다"
+                }
+            ]
         },
         {
             "meaning": "separate; parting",
             "guide": "Verb expression meaning \"separate, parting\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The protagonist finds his separated family."
+            "example": "The protagonist finds his separated family.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가족/친구와 헤어지다"
+                }
+            ]
         },
         {
             "meaning": "Recommended",
             "guide": "Verb expression meaning \"to recommend\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "A friend recommended this drama."
+            "example": "A friend recommended this drama.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 N을 추천하다"
+                }
+            ]
         },
         {
             "meaning": "Admission ticket",
@@ -342,17 +578,35 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Laughing and crying all the time",
             "guide": "Fixed expression meaning \"laughing and crying all the time\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I laughed and cried the whole time."
+            "example": "I laughed and cried the whole time.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "V-다가 V-다가 하다"
+                }
+            ]
         },
         {
             "meaning": "stay in memory",
             "guide": "Fixed expression meaning \"to remain in memory\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The last scene remains in the memory."
+            "example": "The last scene remains in the memory.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가장 기억에 남다"
+                }
+            ]
         },
         {
             "meaning": "near the stage",
             "guide": "Fixed expression meaning \"near the stage\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Watched a play close to the stage."
+            "example": "Watched a play close to the stage.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "무대 가까이에서 보다"
+                }
+            ]
         },
         {
             "meaning": "front seat",
@@ -372,7 +626,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "touching scene",
             "guide": "Fixed expression meaning \"a moving scene\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Tell me about the most touching scene."
+            "example": "Tell me about the most touching scene.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "감동적인 장면이 기억에 남다"
+                }
+            ]
         },
         {
             "meaning": "Invite",
@@ -382,22 +642,50 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "invited",
             "guide": "Verb expression meaning \"to be invited.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I was invited to a concert by a friend."
+            "example": "I was invited to a concert by a friend.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "초대하다=invitation; 초대받다=invited"
+                },
+                {
+                    "type": "form",
+                    "text": "초대하다 → 초대받다"
+                }
+            ]
         },
         {
             "meaning": "sitting",
             "guide": "Fixed expression meaning \"to sit\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Sit in the front row."
+            "example": "Sit in the front row.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "앉다 means sit down; 앉아 있다 means be seated."
+                }
+            ]
         },
         {
             "meaning": "invitation ticket; gift ticket",
             "guide": "Noun, meaning \"invitation ticket, complimentary ticket\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Received free tickets to the musical."
+            "example": "Received free tickets to the musical.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A ticket received after being invited."
+                }
+            ]
         },
         {
             "meaning": "Performance date and time",
             "guide": "Noun meaning \"performance date and time\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Show time is October 31st at 3pm."
+            "example": "Show time is October 31st at 3pm.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "On posters, this is often written without spaces."
+                }
+            ]
         },
         {
             "meaning": "performance location",
@@ -427,12 +715,24 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Refund",
             "guide": "Noun meaning \"refund\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Ticket refunds can be processed up to the day before."
+            "example": "Ticket refunds can be processed up to the day before.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "환불이 안 되다 / 환불받다"
+                }
+            ]
         },
         {
             "meaning": "that day",
             "guide": "Noun meaning \"that day\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "No changes or cancellations are allowed on the day."
+            "example": "No changes or cancellations are allowed on the day.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연 당일 / 당일 취소"
+                }
+            ]
         },
         {
             "meaning": "change",
@@ -442,7 +742,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Cancel",
             "guide": "Noun meaning \"to cancel\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is more difficult to cancel on the day of the show."
+            "example": "It is more difficult to cancel on the day of the show.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "예매를 취소하다"
+                }
+            ]
         },
         {
             "meaning": "Discount tickets",
@@ -467,12 +773,24 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Visiting fee; ticket fee",
             "guide": "Noun, meaning \"visit fee, ticket fee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The admission fee is discounted after 4pm."
+            "example": "The admission fee is discounted after 4pm.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "관람료 is the fee for an exhibition or performance."
+                }
+            ]
         },
         {
             "meaning": "Consultation",
             "guide": "Noun meaning \"consultation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please ask the museum."
+            "example": "Please ask the museum.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문의 전화 / 문의하다"
+                }
+            ]
         },
         {
             "meaning": "street performance",
@@ -502,17 +820,35 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "cultural day",
             "guide": "Fixed expression meaning \"cultured day\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Go see a show on a \"literary day\"."
+            "example": "Go see a show on a \"literary day\".",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Remember it as the name of a policy."
+                }
+            ]
         },
         {
             "meaning": "Last Wednesday of every month",
             "guide": "Fixed expression meaning \"the last Wednesday of every month\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "\"Culture Day\" is the last Wednesday of every month."
+            "example": "\"Culture Day\" is the last Wednesday of every month.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It means every month, not every week."
+                }
+            ]
         },
         {
             "meaning": "than usual",
             "guide": "Fixed expression meaning \"than usual\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "You can watch it at a cheaper price than usual."
+            "example": "You can watch it at a cheaper price than usual.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보통 때보다 싸다/많다"
+                }
+            ]
         },
         {
             "meaning": "cheap price",
@@ -522,12 +858,24 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "no burden",
             "guide": "Fixed expression meaning \"without burden\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "You can watch the exhibition without any burden."
+            "example": "You can watch the exhibition without any burden.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "부담 없이 즐기다"
+                }
+            ]
         },
         {
             "meaning": "get discount",
             "guide": "Fixed expression meaning \"to get a discount\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Jazz concert tickets are 50% off."
+            "example": "Jazz concert tickets are 50% off.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "50% 할인을 받다"
+                }
+            ]
         },
         {
             "meaning": "good opportunity",
@@ -547,17 +895,39 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Never been there once",
             "guide": "Fixed expression meaning \"never been there once\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I have never been to a museum once."
+            "example": "I have never been to a museum once.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한 번도 V-(으)ㄴ 적이 없다"
+                }
+            ]
         },
         {
             "meaning": "Experience accumulation",
             "guide": "Fixed expression meaning \"accumulation of experience\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Cultural life experience is being accumulated."
+            "example": "Cultural life experience is being accumulated.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "경험이 쌓이다"
+                },
+                {
+                    "type": "form",
+                    "text": "쌓다 → 쌓이다"
+                }
+            ]
         },
         {
             "meaning": "become familiar; adapt",
             "guide": "Verb expression meaning \"to become familiar with, to adapt to\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Gradually adapt to life in Korea."
+            "example": "Gradually adapt to life in Korea.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 익숙해지다"
+                }
+            ]
         },
         {
             "meaning": "Related agencies",
@@ -567,7 +937,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "direct consultation",
             "guide": "Verb expression meaning \"to consult directly.\" When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please contact the theater directly for performance times."
+            "example": "Please contact the theater directly for performance times.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기관에 직접 문의하다"
+                }
+            ]
         },
         {
             "meaning": "Official website; home page",
@@ -577,7 +953,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "put together",
             "guide": "Fixed expression meaning \"to put together\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "There are websites that gather show information together."
+            "example": "There are websites that gather show information together.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한 데 모아 놓은 정보"
+                }
+            ]
         },
         {
             "meaning": "Portal",
@@ -597,7 +979,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Performance reviews; impressions after viewing",
             "guide": "Fixed expression, meaning \"performance review, after-viewing impressions\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Made my choice after reading the show reviews."
+            "example": "Made my choice after reading the show reviews.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공연 후기를 남기다/읽다"
+                }
+            ]
         },
         {
             "meaning": "Choose",
@@ -607,7 +995,13 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Have reference value",
             "guide": "Fixed expression meaning \"with reference value\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Performance reviews are valuable for reference when making selections."
+            "example": "Performance reviews are valuable for reference when making selections.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "선택할 때 참고가 되다"
+                }
+            ]
         },
         {
             "meaning": "Culture related videos",
@@ -627,12 +1021,24 @@ window.lessonGuideL3TranslationChunks.en["l3-07"] = {
         {
             "meaning": "Member registration",
             "guide": "Fixed expression meaning \"membership registration\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "You can use it more conveniently after registering as a member."
+            "example": "You can use it more conveniently after registering as a member.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "가입하다 is a verb; 회원 가입 is a noun phrase."
+                }
+            ]
         },
         {
             "meaning": "attend; attend",
             "guide": "Verb expression meaning \"to attend, to attend\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Attended a talk lecture."
+            "example": "Attended a talk lecture.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Use 참석하다 for meetings or events; use 보다 for performances."
+                }
+            ]
         }
     ],
     "dialogues": [

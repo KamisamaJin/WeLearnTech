@@ -23,12 +23,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Work life",
             "guide": "Fixed expression meaning \"working life\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Working life is not easy."
+            "example": "Working life is not easy.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직장 생활에 적응하다"
+                }
+            ]
         },
         {
             "meaning": "seek advice",
             "guide": "Fixed expression meaning \"to seek advice\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Seeked advice on workplace life."
+            "example": "Seeked advice on workplace life.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에게 조언을 구하다"
+                }
+            ]
         },
         {
             "meaning": "How to live a good working life",
@@ -38,7 +50,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "work life balance",
             "guide": "Noun meaning \"work-life balance\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I’ve been paying attention to work-life balance lately."
+            "example": "I’ve been paying attention to work-life balance lately.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Short for work-life balance."
+                }
+            ]
         },
         {
             "meaning": "meeting",
@@ -48,32 +66,68 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Issue work instructions",
             "guide": "Fixed expression meaning \"giving work instructions\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The section chief issued work instructions."
+            "example": "The section chief issued work instructions.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "지시를 하다 means a superior gives an instruction."
+                }
+            ]
         },
         {
             "meaning": "accept work instructions",
             "guide": "Fixed expression meaning \"to receive work instructions\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Received work instructions from supervisor."
+            "example": "Received work instructions from supervisor.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "지시를 받다 means an employee receives an instruction."
+                }
+            ]
         },
         {
             "meaning": "Reporting work",
             "guide": "Fixed expression meaning \"reporting work\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Reported the work to the team leader."
+            "example": "Reported the work to the team leader.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "팀장님께 업무를 보고하다"
+                }
+            ]
         },
         {
             "meaning": "Fill out/make documents",
             "guide": "Fixed expression meaning \"to fill in/make a document\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Document is being created."
+            "example": "Document is being created.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서류/보고서/일지를 작성하다"
+                }
+            ]
         },
         {
             "meaning": "Approval",
             "guide": "Fixed expression meaning \"approval\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The minister approved it."
+            "example": "The minister approved it.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A superior gives approval with 결재하다."
+                }
+            ]
         },
         {
             "meaning": "Get approval",
             "guide": "Fixed expression meaning \"to obtain approval\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The report was approved."
+            "example": "The report was approved.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "An employee receives approval with 결재를 받다."
+                }
+            ]
         },
         {
             "meaning": "workplace; workshop",
@@ -108,12 +162,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Work log",
             "guide": "Fixed expression meaning \"work log\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Please fill in the work log."
+            "example": "Please fill in the work log.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "작업 일지를 작성하다/제출하다"
+                }
+            ]
         },
         {
             "meaning": "fill in; compose",
             "guide": "Verb expression meaning \"to fill in, write\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Completed the work log."
+            "example": "Completed the work log.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "In official documents, 작성하다 is better than 쓰다."
+                }
+            ]
         },
         {
             "meaning": "Submit",
@@ -123,12 +189,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "order; arrange",
             "guide": "Verb expression, meaning \"to order, to arrange\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The causative expression can be understood as \"making someone else do something\"."
+            "example": "The causative expression can be understood as \"making someone else do something\".",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사람에게 일을 시키다"
+                }
+            ]
         },
         {
             "meaning": "finishing; completion",
             "guide": "Verb expression meaning \"end, completion\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Today's homework is done."
+            "example": "Today's homework is done.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "일을/작업을 마무리하다"
+                }
+            ]
         },
         {
             "meaning": "team member; team member",
@@ -168,7 +246,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "live",
             "guide": "Verb expression meaning \"to live\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "A foreigner who has resided for more than 6 months."
+            "example": "A foreigner who has resided for more than 6 months.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한국에 6개월 이상 거주하다"
+                }
+            ]
         },
         {
             "meaning": "Document translation",
@@ -178,12 +262,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Still far from good; not ready yet",
             "guide": "Fixed expression, meaning \"still far from good, not yet good\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Is the document translated yet?"
+            "example": "Is the document translated yet?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Used when there is still a long way before something ends."
+                }
+            ]
         },
         {
             "meaning": "Almost done",
             "guide": "Fixed expression meaning \"almost done\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It's almost done now."
+            "example": "It's almost done now.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "끝나 가요 / 끝나 갑니다"
+                }
+            ]
         },
         {
             "meaning": "working method",
@@ -193,12 +289,32 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Gradually understand",
             "guide": "Verb expression meaning \"to gradually understand\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I am getting to know the workplace culture."
+            "example": "I am getting to know the workplace culture.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "알아 가고 있다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "The process of gradually getting to know something."
+                }
+            ]
         },
         {
             "meaning": "Gradually adapt",
             "guide": "Verb expression meaning \"gradually adapt\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Gradually adapting to company life."
+            "example": "Gradually adapting to company life.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사 생활에 적응해 가다"
+                },
+                {
+                    "type": "form",
+                    "text": "적응해 가고 있어요"
+                }
+            ]
         },
         {
             "meaning": "new employee",
@@ -218,17 +334,35 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Take charge of business",
             "guide": "Fixed expression meaning \"to master the business\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Is gradually taking control of the business."
+            "example": "Is gradually taking control of the business.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "업무 내용을 파악하다"
+                }
+            ]
         },
         {
             "meaning": "become familiar",
             "guide": "Verb expression meaning \"to become familiar with\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I am getting familiar with life in Korea."
+            "example": "I am getting familiar with life in Korea.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 익숙해지다"
+                }
+            ]
         },
         {
             "meaning": "Seniors in the workplace",
             "guide": "Fixed expression meaning \"senior in the workplace\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Seek advice from senior professionals."
+            "example": "Seek advice from senior professionals.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직장 선배에게 조언을 구하다"
+                }
+            ]
         },
         {
             "meaning": "minister",
@@ -248,7 +382,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "failed to do well",
             "guide": "Fixed expression meaning \"failed to do well\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The translation was not done well."
+            "example": "The translation was not done well.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "일을 제대로 하지 못하다"
+                }
+            ]
         },
         {
             "meaning": "Colleagues",
@@ -258,12 +398,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Why don't you ask?",
             "guide": "Fixed expression meaning \"Why didn't you ask?\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Why didn't you ask in advance?"
+            "example": "Why didn't you ask in advance?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Regretful advice about a past action."
+                }
+            ]
         },
         {
             "meaning": "embarrassed; embarrassed",
             "guide": "Adjective meaning \"shameful, embarrassed\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "I feel embarrassed asking others."
+            "example": "I feel embarrassed asking others.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "창피해서 / 창피했어요"
+                }
+            ]
         },
         {
             "meaning": "people around",
@@ -278,17 +430,35 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "work report",
             "guide": "Fixed expression meaning \"work report\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "To whom should work reports be made?"
+            "example": "To whom should work reports be made?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "업무 보고를 하다/받다"
+                }
+            ]
         },
         {
             "meaning": "boss",
             "guide": "Noun meaning \"superior\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I have several bosses, so it’s difficult."
+            "example": "I have several bosses, so it’s difficult.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A superior at work; not only the company president."
+                }
+            ]
         },
         {
             "meaning": "The deadline is tight",
             "guide": "Fixed expression meaning \"the deadline is very urgent\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The required completion date is too urgent."
+            "example": "The required completion date is too urgent.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It means the deadline is tight."
+                }
+            ]
         },
         {
             "meaning": "Difficulties in the workplace",
@@ -298,12 +468,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Apply for leave",
             "guide": "Fixed expression meaning \"to apply for leave\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Need to apply for leave."
+            "example": "Need to apply for leave.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "휴가 신청서를 내다"
+                }
+            ]
         },
         {
             "meaning": "go to work",
             "guide": "Fixed expression meaning \"to go to work\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I feel unwell and cannot go to work."
+            "example": "I feel unwell and cannot go to work.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It means going to the company, not simply working."
+                }
+            ]
         },
         {
             "meaning": "Leave application form",
@@ -313,7 +495,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "discuss",
             "guide": "Verb expression meaning \"to discuss\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Please discuss this with your colleagues first."
+            "example": "Please discuss this with your colleagues first.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "동료와 상의하다"
+                }
+            ]
         },
         {
             "meaning": "bad things",
@@ -328,22 +516,46 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "housework",
             "guide": "Noun meaning \"household affairs\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Housework is divided into half and half."
+            "example": "Housework is divided into half and half.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Not company work; it means housework or family matters."
+                }
+            ]
         },
         {
             "meaning": "share half",
             "guide": "Fixed expression meaning \"to share half and half\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Housework is shared half by one person."
+            "example": "Housework is shared half by one person.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집안일을 반반씩 나누다"
+                }
+            ]
         },
         {
             "meaning": "Recruitment announcement",
             "guide": "Fixed expression meaning \"recruitment announcement\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I read the job announcement."
+            "example": "I read the job announcement.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "모집 공고를 보다"
+                }
+            ]
         },
         {
             "meaning": "Occupation type",
             "guide": "Noun meaning \"type of occupation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "What type of occupation is it related to?"
+            "example": "What type of occupation is it related to?",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "직장 is a workplace; 직종 is a type of job."
+                }
+            ]
         },
         {
             "meaning": "office job",
@@ -378,12 +590,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "salary; remuneration",
             "guide": "Noun meaning \"wage, salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please confirm the salary conditions."
+            "example": "Please confirm the salary conditions.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A more formal word than 임금 or 월급."
+                }
+            ]
         },
         {
             "meaning": "annual salary",
             "guide": "Noun meaning \"annual salary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The annual salary has not increased, so it is hard."
+            "example": "The annual salary has not increased, so it is hard.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Pay calculated on a yearly basis."
+                }
+            ]
         },
         {
             "meaning": "weekly salary",
@@ -398,7 +622,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "allowance; subsidy",
             "guide": "Noun, meaning \"allowance, subsidy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You will receive a stipend for overtime work."
+            "example": "You will receive a stipend for overtime work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "야근 수당 / 주말 근무 수당"
+                }
+            ]
         },
         {
             "meaning": "bonus",
@@ -408,22 +638,46 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "feel stressed",
             "guide": "Fixed expression meaning \"to feel stressed\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Feeling stressed in relationships."
+            "example": "Feeling stressed in relationships.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "대인 관계에서 스트레스를 받다"
+                }
+            ]
         },
         {
             "meaning": "Difficult to persist",
             "guide": "Fixed expression meaning \"difficult to persist\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The hardest part to hold on to is relationships."
+            "example": "The hardest part to hold on to is relationships.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "버티기 힘든 부분"
+                }
+            ]
         },
         {
             "meaning": "interpersonal relationships",
             "guide": "Fixed expression meaning \"interpersonal relationships\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Relationships are important in the workplace."
+            "example": "Relationships are important in the workplace.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "대인 관계가 원만하다"
+                }
+            ]
         },
         {
             "meaning": "working overtime till late",
             "guide": "Noun, meaning \"working overtime until late\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Working overtime will accumulate fatigue."
+            "example": "Working overtime will accumulate fatigue.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Work done late at night."
+                }
+            ]
         },
         {
             "meaning": "working on weekends",
@@ -433,32 +687,68 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "accumulation of fatigue",
             "guide": "Fixed expression meaning \"accumulation of fatigue\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Unable to rest so fatigue accumulates."
+            "example": "Unable to rest so fatigue accumulates.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "피로가 쌓여서 힘들다"
+                }
+            ]
         },
         {
             "meaning": "Interest life",
             "guide": "Fixed expression meaning \"interested life\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Relieve stress through hobbies."
+            "example": "Relieve stress through hobbies.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "취미 생활로 스트레스를 풀다"
+                }
+            ]
         },
         {
             "meaning": "Get off work on time",
             "guide": "Fixed expression meaning \"get off work on time\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Get off work on time and on time."
+            "example": "Get off work on time and on time.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "정시에 출근하다/퇴근하다"
+                }
+            ]
         },
         {
             "meaning": "eating alone",
             "guide": "Noun meaning \"eating alone\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Eat alone to have your own time."
+            "example": "Eat alone to have your own time.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Short for 혼자 + 밥."
+                }
+            ]
         },
         {
             "meaning": "drinking alone",
             "guide": "Noun meaning \"drinking alone\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "He also drinks and rests alone."
+            "example": "He also drinks and rests alone.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Short for 혼자 + 술."
+                }
+            ]
         },
         {
             "meaning": "Watching a movie alone",
             "guide": "Noun meaning \"watching a movie alone\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Watch movies alone to relieve stress."
+            "example": "Watch movies alone to relieve stress.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Short for 혼자 + 영화."
+                }
+            ]
         },
         {
             "meaning": "Hobby club; interest society",
@@ -468,7 +758,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "gregarious; getting along",
             "guide": "Verb expression meaning \"to get along with others\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Get along well with people."
+            "example": "Get along well with people.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사람들과 잘 어울리다"
+                }
+            ]
         },
         {
             "meaning": "office worker",
@@ -478,12 +774,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "overcome; get through",
             "guide": "Verb expression meaning \"to overcome, to get through\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Difficulties need to be overcome."
+            "example": "Difficulties need to be overcome.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "어려움을 이겨 내다"
+                }
+            ]
         },
         {
             "meaning": "Questionnaire",
             "guide": "Fixed expression meaning \"questionnaire\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "A questionnaire survey was conducted."
+            "example": "A questionnaire survey was conducted.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "설문 조사를 실시하다"
+                }
+            ]
         },
         {
             "meaning": "implement; carry out",
@@ -493,17 +801,35 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "superior-subordinate relationship",
             "guide": "Fixed expression meaning \"superior-subordinate relationship\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It is said that the superior-subordinate relationship with the boss is difficult."
+            "example": "It is said that the superior-subordinate relationship with the boss is difficult.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "상사와의 상하 관계"
+                }
+            ]
         },
         {
             "meaning": "results; performance",
             "guide": "Noun, meaning \"results, performance\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "To achieve good results."
+            "example": "To achieve good results.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "좋은 성과를 얻다"
+                }
+            ]
         },
         {
             "meaning": "sense of burden; sense of pressure",
             "guide": "Noun, meaning \"sense of burden, pressure\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There is a sense of responsibility for results."
+            "example": "There is a sense of responsibility for results.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "성과에 대한 부담감"
+                }
+            ]
         },
         {
             "meaning": "overcome",
@@ -513,12 +839,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "relieve stress",
             "guide": "Fixed expression meaning \"to relieve stress\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Relieve stress through rest."
+            "example": "Relieve stress through rest.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "받다=stress generation; 풀다=stress relief"
+                }
+            ]
         },
         {
             "meaning": "recharge; restore energy",
             "guide": "Verb expression meaning \"to recharge, refresh\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Refresh your energy through a life of interest."
+            "example": "Refresh your energy through a life of interest.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A word for resting and recovering energy."
+                }
+            ]
         },
         {
             "meaning": "Live your professional life well",
@@ -538,7 +876,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Work content",
             "guide": "Fixed expression meaning \"the content of work\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "To accurately grasp the content of the work."
+            "example": "To accurately grasp the content of the work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "업무 내용을 정확하게 파악하다"
+                }
+            ]
         },
         {
             "meaning": "Accurate",
@@ -548,22 +892,46 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "sense of responsibility",
             "guide": "Noun meaning \"sense of responsibility\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Be responsible for what you do."
+            "example": "Be responsible for what you do.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "책임감이 강하다 / 부족하다"
+                }
+            ]
         },
         {
             "meaning": "complete; harmonious",
             "guide": "Adjective meaning \"completeness, harmony\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "Interpersonal relationships must be harmonious."
+            "example": "Interpersonal relationships must be harmonious.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "대인 관계가 원만하다"
+                }
+            ]
         },
         {
             "meaning": "get recognized",
             "guide": "Fixed expression meaning \"to be recognized\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I once wanted to be recognized in society."
+            "example": "I once wanted to be recognized in society.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사회에서 인정을 받다"
+                }
+            ]
         },
         {
             "meaning": "promotion",
             "guide": "Verb expression meaning \"to be promoted\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I had wanted to get promoted in the workplace."
+            "example": "I had wanted to get promoted in the workplace.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직장에서 승진하다"
+                }
+            ]
         },
         {
             "meaning": "high annual salary",
@@ -583,7 +951,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Work and personal life balance",
             "guide": "Fixed expression meaning \"balance between work and personal life\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Work life balance refers to the balance between work and personal life."
+            "example": "Work life balance refers to the balance between work and personal life.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The full expression behind 워라밸."
+                }
+            ]
         },
         {
             "meaning": "working overtime till late",
@@ -593,7 +967,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "have night life",
             "guide": "Fixed expression meaning \"to have an evening life\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Working people want to have an evening life."
+            "example": "Working people want to have an evening life.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A life where evening time is guaranteed."
+                }
+            ]
         },
         {
             "meaning": "laborer",
@@ -603,7 +983,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Weekly working hours",
             "guide": "Fixed expression meaning \"weekly working hours\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Maximum working hours per week is 52 hours."
+            "example": "Maximum working hours per week is 52 hours.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "주당 근로 시간을 줄이다"
+                }
+            ]
         },
         {
             "meaning": "Up to 52 hours",
@@ -613,12 +999,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "Pay attention to",
             "guide": "Verb expression meaning \"to attach importance to\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "A culture that values work-life balance has emerged."
+            "example": "A culture that values work-life balance has emerged.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/를 중시하다"
+                }
+            ]
         },
         {
             "meaning": "Existing; original",
             "guide": "Modifier, meaning \"existing, original\". Usually placed in front of a noun to qualify the following object.",
-            "example": "It is different from the existing concept of happiness."
+            "example": "It is different from the existing concept of happiness.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "기존의 is used before a noun."
+                }
+            ]
         },
         {
             "meaning": "concept",
@@ -628,7 +1026,13 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "small sure luck; small but certain happiness",
             "guide": "Noun, meaning \"small luck, small but certain happiness\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The term \"little luck\" was also coined."
+            "example": "The term \"little luck\" was also coined.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Short for “small but certain happiness.”"
+                }
+            ]
         },
         {
             "meaning": "small but certain happiness",
@@ -638,12 +1042,24 @@ window.lessonGuideL3TranslationChunks.en["l3-13"] = {
         {
             "meaning": "tired; tired",
             "guide": "Verb expression meaning \"tired, tired\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "In order not to be exhausted by working life, you need to take a break."
+            "example": "In order not to be exhausted by working life, you need to take a break.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직장 생활에 지치다"
+                }
+            ]
         },
         {
             "meaning": "Get permission",
             "guide": "Fixed expression meaning \"to obtain permission\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Permission is required before taking leave."
+            "example": "Permission is required before taking leave.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "상사에게 허락을 받다"
+                }
+            ]
         }
     ],
     "dialogues": [

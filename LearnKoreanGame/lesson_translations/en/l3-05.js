@@ -48,17 +48,39 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Apply for regular savings and add savings products",
             "guide": "Noun, meaning \"managing regular savings and adding savings products\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I consulted the bank about applying for savings products."
+            "example": "I consulted the bank about applying for savings products.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "적금에 가입하다"
+                }
+            ]
         },
         {
             "meaning": "spend money, spend money",
             "guide": "Noun meaning \"to spend money, to spend money\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I spent a lot of money on transportation this month."
+            "example": "I spent a lot of money on transportation this month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교통비에 돈을 지출하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "지출하다 is more formal than 쓰다"
+                }
+            ]
         },
         {
             "meaning": "Incur living expenses, need living expenses",
             "guide": "Noun, meaning \"to generate living expenses or to need living expenses\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Living alone will cost a lot of living expenses."
+            "example": "Living alone will cost a lot of living expenses.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활비가 많이 들다"
+                }
+            ]
         },
         {
             "meaning": "living expenses",
@@ -83,7 +105,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Expenditure items",
             "guide": "Noun meaning \"expenditure item\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please organize it by expenditure item."
+            "example": "Please organize it by expenditure item.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "지출 항목별로 정리하다"
+                }
+            ]
         },
         {
             "meaning": "taxi fare",
@@ -93,12 +121,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Transportation card recharge",
             "guide": "Noun, meaning \"traffic card recharge\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I recharged the transportation card with 10,000 won."
+            "example": "I recharged the transportation card with 10,000 won.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교통 카드를 충전하다"
+                }
+            ]
         },
         {
             "meaning": "transportation expenses",
             "guide": "Noun meaning \"travel expenses\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I spent 120,000 won on transportation this month."
+            "example": "I spent 120,000 won on transportation this month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교통비로 얼마를 쓰다"
+                }
+            ]
         },
         {
             "meaning": "Watch movies, watch movies",
@@ -118,7 +158,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Catering expenses, food expenses",
             "guide": "Noun, meaning \"catering expenses, food expenses\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "We guys spend a lot on food."
+            "example": "We guys spend a lot on food.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "식비가 많이 나오다"
+                }
+            ]
         },
         {
             "meaning": "coffee",
@@ -153,7 +199,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "communication fee",
             "guide": "Noun meaning \"communication fee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This month, only 27,000 won was spent on communication expenses."
+            "example": "This month, only 27,000 won was spent on communication expenses.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "통신비가 나오다"
+                }
+            ]
         },
         {
             "meaning": "Gift money",
@@ -163,7 +215,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Wedding and wedding expenses",
             "guide": "Noun, meaning \"expenses for weddings and weddings\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This month, weddings and weddings will cost more."
+            "example": "This month, weddings and weddings will cost more.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "경조사비가 들다"
+                }
+            ]
         },
         {
             "meaning": "Electricity bill",
@@ -173,17 +231,35 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Public expenses, water, electricity, coal and other miscellaneous expenses",
             "guide": "Noun, meaning \"public expenses, water, electricity, coal and other miscellaneous expenses\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Public charges are paid by automatic transfer."
+            "example": "Public charges are paid by automatic transfer.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공과금을 내다 / 자동 이체"
+                }
+            ]
         },
         {
             "meaning": "Write down what you want to buy in advance",
             "guide": "A noun meaning \"to write down what you want to buy in advance.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please write down what you want to buy in advance before shopping."
+            "example": "Please write down what you want to buy in advance before shopping.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "살 것만 메모하다"
+                }
+            ]
         },
         {
             "meaning": "Keeping household books and accounting",
             "guide": "Noun, meaning \"keeping household books and accounting\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "In order to reduce living expenses, accounting is being done."
+            "example": "In order to reduce living expenses, accounting is being done.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가계부를 쓰다"
+                }
+            ]
         },
         {
             "meaning": "Household accounting book, household account book",
@@ -198,7 +274,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Checkout, payment",
             "guide": "Noun meaning \"checkout, payment\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Paid with discount card."
+            "example": "Paid with discount card.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "카드로 결제하다"
+                }
+            ]
         },
         {
             "meaning": "Points",
@@ -213,42 +295,94 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "accumulate, accumulate",
             "guide": "Noun meaning \"accumulation, accumulation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A lot of points have been accumulated."
+            "example": "A lot of points have been accumulated.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "포인트를 적립하다"
+                }
+            ]
         },
         {
             "meaning": "impulse shopping",
             "guide": "A noun meaning \"impulse shopping\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Save money by not making impulse purchases."
+            "example": "Save money by not making impulse purchases.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "충동구매를 하다/줄이다"
+                }
+            ]
         },
         {
             "meaning": "More than expected...",
             "guide": "Noun meaning \"more than expected...\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Food expenses cost more than expected."
+            "example": "Food expenses cost more than expected.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "예상보다 많이/적게"
+                }
+            ]
         },
         {
             "meaning": "It’s only been a year since I bought it",
             "guide": "Noun, meaning \"just bought it a year ago\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It's only been a year since I bought it and it's already broken."
+            "example": "It's only been a year since I bought it and it's already broken.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "밖에 should be followed by 안/못/없다"
+                },
+                {
+                    "type": "collocation",
+                    "text": "산 지 N년 되다"
+                }
+            ]
         },
         {
             "meaning": "malfunction, break down",
             "guide": "A noun meaning \"to malfunction or break down.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Laptops break all the time."
+            "example": "Laptops break all the time.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "고장 나다 means break down; 고장 내다 means break something."
+                }
+            ]
         },
         {
             "meaning": "Five cups actually",
             "guide": "Noun, meaning \"even five cups\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I actually drink five cups of coffee a day."
+            "example": "I actually drink five cups of coffee a day.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "이나 means more than expected."
+                }
+            ]
         },
         {
             "meaning": "Only 27,000 won",
             "guide": "Noun meaning \"only 27,000 won\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This month, only 27,000 won was spent on communication expenses."
+            "example": "This month, only 27,000 won was spent on communication expenses.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "밖에 followed by negation"
+                }
+            ]
         },
         {
             "meaning": "heating bill",
             "guide": "Noun meaning \"heating bill\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Heating bills will be high in winter."
+            "example": "Heating bills will be high in winter.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "난방비가 나오다"
+                }
+            ]
         },
         {
             "meaning": "Time to learn Korean",
@@ -278,12 +412,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Search, query",
             "guide": "Noun meaning \"search, query\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Have to check the prices of children’s toys."
+            "example": "Have to check the prices of children’s toys.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "인터넷에서 검색하다"
+                }
+            ]
         },
         {
             "meaning": "second hand store",
             "guide": "Noun meaning \"second-hand store\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Go to a second-hand store to buy what you need cheaply."
+            "example": "Go to a second-hand store to buy what you need cheaply.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "중고 매장에서 사다"
+                }
+            ]
         },
         {
             "meaning": "needed things",
@@ -293,7 +439,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "buy cheap",
             "guide": "Noun meaning \"to buy cheaply\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Bought a used car cheaply."
+            "example": "Bought a used car cheaply.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "싸다=cheap; 싸게 사다=buy cheaply"
+                }
+            ]
         },
         {
             "meaning": "bank",
@@ -308,37 +460,79 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "air tickets",
             "guide": "Noun meaning \"air ticket\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It's cheaper to book flights in advance."
+            "example": "It's cheaper to book flights in advance.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "항공권을 예약하다"
+                }
+            ]
         },
         {
             "meaning": "Discounts",
             "guide": "Noun meaning \"discount activity\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I heard that air ticket discounts have started."
+            "example": "I heard that air ticket discounts have started.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "할인 행사가 시작되다"
+                }
+            ]
         },
         {
             "meaning": "start",
             "guide": "Noun meaning \"beginning\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The discount starts today."
+            "example": "The discount starts today.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "시작되다 means something starts; 시작하다 means start doing something."
+                }
+            ]
         },
         {
             "meaning": "Appointment, booking",
             "guide": "Noun meaning \"appointment, booking\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Gotta book a flight quickly."
+            "example": "Gotta book a flight quickly.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "항공권/호텔을 예약하다"
+                }
+            ]
         },
         {
             "meaning": "Repair it yourself",
             "guide": "Noun meaning \"to repair by oneself\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I heard that you can save money by repairing it yourself."
+            "example": "I heard that you can save money by repairing it yourself.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "직접 수리하다 / 직접 고치다"
+                }
+            ]
         },
         {
             "meaning": "repair",
             "guide": "A noun meaning \"to repair.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Repaired the chair myself."
+            "example": "Repaired the chair myself.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고장 난 것을 수리하다"
+                }
+            ]
         },
         {
             "meaning": "Save money",
             "guide": "Noun meaning \"to save money\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can save money by buying second hand."
+            "example": "You can save money by buying second hand.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비용/돈을 아끼다"
+                }
+            ]
         },
         {
             "meaning": "used car",
@@ -348,7 +542,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "buy",
             "guide": "Noun meaning \"to buy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Have experience in purchasing second-hand child care products."
+            "example": "Have experience in purchasing second-hand child care products.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "구입하다 is more formal than 사다"
+                }
+            ]
         },
         {
             "meaning": "school uniform",
@@ -358,7 +558,17 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Inherit and receive things used by others",
             "guide": "Noun, meaning \"to inherit or receive something used by others.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Received children's clothes from sister."
+            "example": "Received children's clothes from sister.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "누구에게 물려받다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "The nuance is receiving and using it, not buying it new."
+                }
+            ]
         },
         {
             "meaning": "News",
@@ -368,7 +578,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "reports, articles",
             "guide": "Noun, meaning \"report, article\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Read life information reports."
+            "example": "Read life information reports.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "신문 기사 / 생활 정보 기사"
+                }
+            ]
         },
         {
             "meaning": "life information",
@@ -378,12 +594,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Generate heating bill",
             "guide": "Noun meaning \"to generate a heating bill.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This month’s heating bill actually cost 290,000 won."
+            "example": "This month’s heating bill actually cost 290,000 won.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Expense bill says 나오다"
+                }
+            ]
         },
         {
             "meaning": "Turn on the boiler and heating",
             "guide": "Noun, meaning \"turn on the boiler, turn on the heating\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because it was cold, I kept the boiler on."
+            "example": "Because it was cold, I kept the boiler on.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보일러/에어컨/TV를 틀다"
+                }
+            ]
         },
         {
             "meaning": "Boilers and heating equipment",
@@ -393,12 +621,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "open, start",
             "guide": "Noun meaning \"to open, to start\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Don't turn on the TV too loud."
+            "example": "Don't turn on the TV too loud.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "TV를 크게 틀다"
+                }
+            ]
         },
         {
             "meaning": "Turn down the temperature",
             "guide": "Noun meaning \"to turn down the temperature.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If you want to reduce your heating bill, turn down the temperature."
+            "example": "If you want to reduce your heating bill, turn down the temperature.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "온도를 내리다 / 올리다"
+                }
+            ]
         },
         {
             "meaning": "temperature",
@@ -433,7 +673,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Shopping for groceries and daily necessities",
             "guide": "Noun, meaning \"buying vegetables and purchasing daily necessities\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Buying groceries at the market on weekends."
+            "example": "Buying groceries at the market on weekends.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "장을 보다 means grocery shopping, not just looking at a market."
+                }
+            ]
         },
         {
             "meaning": "shared bike",
@@ -448,17 +694,35 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "exploit, use",
             "guide": "Noun, meaning \"utilize, use\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Using public transportation can reduce transportation costs."
+            "example": "Using public transportation can reduce transportation costs.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "대중교통/공유 자전거를 이용하다"
+                }
+            ]
         },
         {
             "meaning": "buy cheap",
             "guide": "Noun meaning \"to buy cheaply\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Inexpensive display items are available."
+            "example": "Inexpensive display items are available.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "저렴하다 is more polite/formal than 싸다"
+                }
+            ]
         },
         {
             "meaning": "Display products and samples",
             "guide": "Noun, meaning \"display goods or samples\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Display items are cheaper than new items."
+            "example": "Display items are cheaper than new items.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Shown, so often cheaper than 새 상품"
+                }
+            ]
         },
         {
             "meaning": "new merchandise",
@@ -468,7 +732,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Price after discount",
             "guide": "Noun meaning \"discounted price\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Can be purchased at a discounted price."
+            "example": "Can be purchased at a discounted price.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "할인된 가격에 구입하다"
+                }
+            ]
         },
         {
             "meaning": "Physical store, actual store",
@@ -493,12 +763,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Requires fees, expenses",
             "guide": "Noun, meaning \"requires fee, expense\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Family travel costs a lot."
+            "example": "Family travel costs a lot.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "돈/비용이 들다"
+                }
+            ]
         },
         {
             "meaning": "Cost becomes a burden",
             "guide": "Noun meaning \"cost becomes a burden\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The cost of purchasing new products has become a burden."
+            "example": "The cost of purchasing new products has become a burden.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비용이 부담되다"
+                }
+            ]
         },
         {
             "meaning": "The cost is burdensome",
@@ -508,12 +790,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Reduce expenses",
             "guide": "Noun meaning \"to reduce expenses.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Using second hand can reduce costs."
+            "example": "Using second hand can reduce costs.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비용/지출을 줄이다"
+                }
+            ]
         },
         {
             "meaning": "Joint purchase, group purchase",
             "guide": "Noun, meaning \"joint purchase, group purchase\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can buy cheaper by using group buying."
+            "example": "You can buy cheaper by using group buying.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공동 구매를 이용하다"
+                }
+            ]
         },
         {
             "meaning": "second hand supplies",
@@ -528,7 +822,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Pick",
             "guide": "A noun meaning \"to select.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please choose what you need carefully."
+            "example": "Please choose what you need carefully.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "고르다 -> 골라요"
+                }
+            ]
         },
         {
             "meaning": "Quite the opposite, completely opposite",
@@ -538,7 +838,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Out-of-season merchandise, carry-over merchandise",
             "guide": "Noun, meaning \"off-season goods, carry-over goods\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Bought off-season items at discounted prices."
+            "example": "Bought off-season items at discounted prices.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이월 상품을 할인된 가격에 사다"
+                }
+            ]
         },
         {
             "meaning": "furniture",
@@ -553,7 +859,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Blemishes, scratches",
             "guide": "Noun meaning \"flaw, scratch\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Items with scratches may be cheaper."
+            "example": "Items with scratches may be cheaper.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "흠집이 나다"
+                }
+            ]
         },
         {
             "meaning": "scratches",
@@ -568,7 +880,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Buy two get one free product",
             "guide": "Noun, meaning \"buy two get one free product\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can get one more item if you buy the 2+1 event product."
+            "example": "You can get one more item if you buy the 2+1 event product.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A promotion where you buy two and get one more."
+                }
+            ]
         },
         {
             "meaning": "childcare products",
@@ -578,7 +896,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "second hand",
             "guide": "A noun meaning \"second-hand\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I think second hand ones are good too."
+            "example": "I think second hand ones are good too.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "중고차 / 중고 용품"
+                }
+            ]
         },
         {
             "meaning": "institution",
@@ -598,17 +922,35 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Object to",
             "guide": "Noun, meaning \"to...as an object\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A questionnaire survey was conducted among parents."
+            "example": "A questionnaire survey was conducted among parents.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N을/를 대상으로 조사하다"
+                }
+            ]
         },
         {
             "meaning": "Questionnaire",
             "guide": "Noun meaning \"questionnaire\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is a questionnaire survey about the experience of purchasing second-hand nursery products."
+            "example": "It is a questionnaire survey about the experience of purchasing second-hand nursery products.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "설문 조사를 실시하다"
+                }
+            ]
         },
         {
             "meaning": "implement, carry out",
             "guide": "Noun, meaning \"implementation, carrying out\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The agency conducted a questionnaire survey."
+            "example": "The agency conducted a questionnaire survey.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "조사/행사를 실시하다"
+                }
+            ]
         },
         {
             "meaning": "Buying experience",
@@ -618,7 +960,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Satisfied, agreeable",
             "guide": "Noun, meaning \"satisfaction, satisfaction\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The product purchased is satisfactory."
+            "example": "The product purchased is satisfactory.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "마음에 들다 / 안 들다"
+                }
+            ]
         },
         {
             "meaning": "average, ordinary",
@@ -628,7 +976,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Not good, not very good",
             "guide": "Noun, meaning \"not so good, not very good\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Not as good as expected."
+            "example": "Not as good as expected.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "별로예요 can be said alone as \"not very good\""
+                }
+            ]
         },
         {
             "meaning": "Have thoughts of purchasing again",
@@ -638,7 +992,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "occupy, occupy",
             "guide": "Noun, meaning \"occupy, occupy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "40% of the responses indicated that they would like to purchase again."
+            "example": "40% of the responses indicated that they would like to purchase again.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "40%를 차지하다"
+                }
+            ]
         },
         {
             "meaning": "Period of use, duration of use",
@@ -648,7 +1008,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "On the other hand, in addition",
             "guide": "Noun meaning \"on the other hand, additionally\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "On the other hand, people who have not purchased before are also interested."
+            "example": "On the other hand, people who have not purchased before are also interested.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한편, + 추가/대조 정보"
+                }
+            ]
         },
         {
             "meaning": "henceforth, later",
@@ -673,7 +1039,13 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "Regular savings, savings deposits",
             "guide": "Noun, meaning \"regular savings, savings deposits\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Deposit money into a savings product every month."
+            "example": "Deposit money into a savings product every month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "적금에 가입하다 / 돈을 넣다"
+                }
+            ]
         },
         {
             "meaning": "certain period",
@@ -688,12 +1060,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "entrust, deposit",
             "guide": "Noun, meaning \"entrust, deposit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Putting money in the bank will earn interest."
+            "example": "Putting money in the bank will earn interest.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "돈을 은행에 맡기다"
+                }
+            ]
         },
         {
             "meaning": "generate interest",
             "guide": "A noun meaning \"to generate interest.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Money deposited in a bank accrues interest."
+            "example": "Money deposited in a bank accrues interest.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "돈에 이자가 붙다"
+                }
+            ]
         },
         {
             "meaning": "interest rate",
@@ -703,27 +1087,61 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "every bank",
             "guide": "Noun meaning \"every bank\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Each bank has different interest rates, so please compare."
+            "example": "Each bank has different interest rates, so please compare.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N마다=every N"
+                }
+            ]
         },
         {
             "meaning": "Joining period, deposit period",
             "guide": "Noun, meaning \"joining period, deposit period\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If the deposit period is longer, the interest will be more."
+            "example": "If the deposit period is longer, the interest will be more.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "가입 기간이 길다/짧다"
+                }
+            ]
         },
         {
             "meaning": "regular savings",
             "guide": "A noun meaning \"regular savings.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If you want to save a sum of money, it is better to save regularly."
+            "example": "If you want to save a sum of money, it is better to save regularly.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Deposit a fixed amount on a set date."
+                }
+            ]
         },
         {
             "meaning": "free savings",
             "guide": "Noun meaning \"free savings\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If your income is not fixed, it is better to save freely."
+            "example": "If your income is not fixed, it is better to save freely.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The date and amount are relatively flexible."
+                }
+            ]
         },
         {
             "meaning": "divide, separate",
             "guide": "Noun meaning \"to divide, to separate\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Savings can be divided into regular savings and free savings."
+            "example": "Savings can be divided into regular savings and free savings.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "A와 B로 나누다"
+                },
+                {
+                    "type": "form",
+                    "text": "나누다 -> 나눌 수 있다"
+                }
+            ]
         },
         {
             "meaning": "monthly salary",
@@ -733,12 +1151,24 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "anticipate, anticipate",
             "guide": "Noun, meaning \"anticipation, anticipation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It’s hard to predict how much living expenses will cost."
+            "example": "It’s hard to predict how much living expenses will cost.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "얼마를 쓸지 예상하다"
+                }
+            ]
         },
         {
             "meaning": "Join, process, sign contract",
             "guide": "Noun, meaning \"to join, handle, sign a contract\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I went to the bank to apply for savings."
+            "example": "I went to the bank to apply for savings.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "적금/보험에 가입하다"
+                }
+            ]
         },
         {
             "meaning": "Passport",
@@ -753,12 +1183,28 @@ window.lessonGuideL3TranslationChunks.en["l3-05"] = {
         {
             "meaning": "receive consultation",
             "guide": "A noun meaning \"to be consulted.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is best to receive detailed consultation at the bank."
+            "example": "It is best to receive detailed consultation at the bank.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "은행에서 상담을 받다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "상담하다=consultation; 상담을 받다=receive consultation"
+                }
+            ]
         },
         {
             "meaning": "Reasonable, rational",
             "guide": "Noun, meaning \"reasonable, rational\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Compare prices and you can spend rationally."
+            "example": "Compare prices and you can spend rationally.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "합리적으로 소비하다"
+                }
+            ]
         }
     ],
     "dialogues": [

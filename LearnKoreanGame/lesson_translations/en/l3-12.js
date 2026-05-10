@@ -23,12 +23,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "traditional festival",
             "guide": "Fixed expression meaning \"traditional festival\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The theme of Lesson 12 is traditional festivals."
+            "example": "The theme of Lesson 12 is traditional festivals.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한국의 전통 명절"
+                }
+            ]
         },
         {
             "meaning": "Festival customs",
             "guide": "Fixed expression meaning \"festival customs\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Talk about holiday customs."
+            "example": "Talk about holiday customs.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "명절 풍습을 설명하다"
+                }
+            ]
         },
         {
             "meaning": "Hometown festival",
@@ -38,7 +50,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Gangneung Dragon Boat Festival",
             "guide": "Fixed expression meaning \"Gangneung Dragon Boat Festival\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Read about Gangneung Dano Festival."
+            "example": "Read about Gangneung Dano Festival.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A local festival name, different from Chinese Duanwu."
+                }
+            ]
         },
         {
             "meaning": "Spring Festival; Korean New Year",
@@ -48,7 +66,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "The fifteenth day of the first lunar month",
             "guide": "Fixed expression, meaning \"the fifteenth day of the first lunar month\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Eat nuts on the fifteenth day of the first lunar month."
+            "example": "Eat nuts on the fifteenth day of the first lunar month.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The 15th day of the first lunar month."
+                }
+            ]
         },
         {
             "meaning": "Mid-Autumn Festival; Autumn Eve",
@@ -63,12 +87,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "lunar calendar",
             "guide": "Noun meaning \"lunar calendar\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The Spring Festival falls on the first day of the first lunar month."
+            "example": "The Spring Festival falls on the first day of the first lunar month.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Seollal and Chuseok usually follow lunar dates."
+                }
+            ]
         },
         {
             "meaning": "Gregorian calendar",
             "guide": "Noun meaning \"Gregorian calendar\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The winter solstice is approximately December 21st in the Gregorian calendar."
+            "example": "The winter solstice is approximately December 21st in the Gregorian calendar.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "In the textbook, 동지 is around December on the solar calendar."
+                }
+            ]
         },
         {
             "meaning": "rice cake soup",
@@ -78,7 +114,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "nuts; cracked nuts",
             "guide": "Noun, meaning \"nut, cracked fruit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is said that eating nuts will not cause skin diseases."
+            "example": "It is said that eating nuts will not cause skin diseases.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Nuts bitten and eaten on the first full moon of the lunar year."
+                }
+            ]
         },
         {
             "meaning": "muffins",
@@ -93,12 +135,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Health and longevity",
             "guide": "Fixed expression meaning \"health and longevity\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Eat rice cake soup to pray for health and longevity."
+            "example": "Eat rice cake soup to pray for health and longevity.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "건강하게 오래 살기를 기원하다"
+                }
+            ]
         },
         {
             "meaning": "pray",
             "guide": "Verb expression meaning \"to pray\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "I pray that your family will be healthy."
+            "example": "I pray that your family will be healthy.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "건강/풍년/안전을 기원하다"
+                }
+            ]
         },
         {
             "meaning": "Skin diseases",
@@ -113,12 +167,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "bad luck; bad luck",
             "guide": "Fixed expression meaning \"bad luck, evil spirit\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It is said that red bean porridge can drive away bad luck."
+            "example": "It is said that red bean porridge can drive away bad luck.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "나쁜 기운을 쫓다"
+                }
+            ]
         },
         {
             "meaning": "drive away",
             "guide": "Verb expression meaning \"to drive away\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Drive away bad things."
+            "example": "Drive away bad things.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "It can drive away people or bad energy."
+                }
+            ]
         },
         {
             "meaning": "A year of farming",
@@ -163,27 +229,57 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Make a wish",
             "guide": "Fixed expression meaning \"to make a wish\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I made a wish while looking at the full moon."
+            "example": "I made a wish while looking at the full moon.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보름달을 보며 소원을 빌다"
+                }
+            ]
         },
         {
             "meaning": "newly harvested grains",
             "guide": "Noun meaning \"newly harvested grain\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Sacrifices were made with newly harvested grains."
+            "example": "Sacrifices were made with newly harvested grains.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "햇- means newly harvested or made that year."
+                }
+            ]
         },
         {
             "meaning": "new harvest fruits",
             "guide": "Noun meaning \"newly harvested fruit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Preparing new harvest fruits."
+            "example": "Preparing new harvest fruits.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "햇- means newly harvested or made that year."
+                }
+            ]
         },
         {
             "meaning": "hold a ceremony",
             "guide": "Fixed expression meaning \"to hold a ceremony\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Ceremonies are held on Qiuxi."
+            "example": "Ceremonies are held on Qiuxi.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "조상에게 차례를 지내다"
+                }
+            ]
         },
         {
             "meaning": "no matter how much; no matter how",
             "guide": "Adverb, meaning \"no matter how, no matter what\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "No matter how busy I am, I always go back to my hometown."
+            "example": "No matter how busy I am, I always go back to my hometown.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "아무리 A/V-어도"
+                }
+            ]
         },
         {
             "meaning": "activity; ceremony",
@@ -193,7 +289,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "carry out",
             "guide": "Verb expression meaning \"to proceed\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "The event went on as planned."
+            "example": "The event went on as planned.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "행사가 진행되다 is intransitive; 행사를 진행하다 is transitive."
+                }
+            ]
         },
         {
             "meaning": "breakfast",
@@ -203,7 +305,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "absent",
             "guide": "Verb expression meaning \"absence\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Don’t be absent if you are not feeling well."
+            "example": "Don’t be absent if you are not feeling well.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "수업에 결석하다"
+                }
+            ]
         },
         {
             "meaning": "tired",
@@ -233,22 +341,46 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "pack your luggage",
             "guide": "Fixed expression meaning \"to pack up\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Packing for moving."
+            "example": "Packing for moving.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이사 가려고 짐을 싸다"
+                }
+            ]
         },
         {
             "meaning": "move to",
             "guide": "Fixed expression meaning \"to move\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I found a good house so I'm moving."
+            "example": "I found a good house so I'm moving.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Move to a new home."
+                }
+            ]
         },
         {
             "meaning": "Looking for a house",
             "guide": "Fixed expression meaning \"looking for a house\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Found a good house."
+            "example": "Found a good house.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "집/방을 구하다"
+                }
+            ]
         },
         {
             "meaning": "Circumstances do not allow",
             "guide": "Fixed expression meaning \"the situation does not allow it\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Because the situation did not allow it, the store was closed."
+            "example": "Because the situation did not allow it, the store was closed.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사정이 안 돼서 못 가다"
+                }
+            ]
         },
         {
             "meaning": "Enter the company",
@@ -263,7 +395,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "become different",
             "guide": "Verb expression meaning \"to become different\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Things have changed since coming to Korea."
+            "example": "Things have changed since coming to Korea.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "달라진 것 / 달라진 점"
+                }
+            ]
         },
         {
             "meaning": "spicy food",
@@ -278,17 +416,35 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Can't say a word",
             "guide": "Fixed expression meaning \"can't say a word\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I couldn’t speak a word of Korean at first."
+            "example": "I couldn’t speak a word of Korean at first.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "한 마디 + 도 = one sentence"
+                }
+            ]
         },
         {
             "meaning": "to some extent",
             "guide": "Adverb meaning \"to some extent\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Can speak Korean to a certain extent."
+            "example": "Can speak Korean to a certain extent.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "어느 정도 할 수 있다"
+                }
+            ]
         },
         {
             "meaning": "generate interest; care",
             "guide": "Fixed expression meaning \"to generate interest or concern\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I became interested after watching a historical drama."
+            "example": "I became interested after watching a historical drama.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N에 관심을 가지다"
+                }
+            ]
         },
         {
             "meaning": "consecutive holidays; long vacation",
@@ -298,22 +454,46 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Parents' home in hometown",
             "guide": "Fixed expression meaning \"hometown, parents' home\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I went to my parents' home in my hometown and came back."
+            "example": "I went to my parents' home in my hometown and came back.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "부모님 댁에 다녀오다"
+                }
+            ]
         },
         {
             "meaning": "Been there and come back",
             "guide": "Verb expression, meaning \"going and coming back\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Went to my parents' house and came back."
+            "example": "Went to my parents' house and came back.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Going somewhere and then coming back."
+                }
+            ]
         },
         {
             "meaning": "Change of year; arrival of new year",
             "guide": "Fixed expression, meaning \"change of year, arrival of new year\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Eat rice cake soup when New Year comes."
+            "example": "Eat rice cake soup when New Year comes.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "해가 바뀔 때"
+                }
+            ]
         },
         {
             "meaning": "Increase one year in age",
             "guide": "Fixed expression meaning \"age increased by one year\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I think I need to eat rice cake soup to grow a year older."
+            "example": "I think I need to eat rice cake soup to grow a year older.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "For age, say 나이가 많아지다."
+                }
+            ]
         },
         {
             "meaning": "Korean age",
@@ -323,22 +503,46 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Thanks; thanks to...",
             "guide": "Adverb, meaning \"Thanks to, thanks to...\". Often used to modify action, degree, or the tone of an entire sentence.",
-            "example": "Thanks to the section chief for understanding Korean culture."
+            "example": "Thanks to the section chief for understanding Korean culture.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "N 덕분에 알게 되다"
+                }
+            ]
         },
         {
             "meaning": "Drive away bad luck",
             "guide": "Fixed expression meaning \"to drive away bad luck\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The red color of red bean porridge drives away bad luck."
+            "example": "The red color of red bean porridge drives away bad luck.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "팥죽의 붉은색이 나쁜 기운을 쫓다"
+                }
+            ]
         },
         {
             "meaning": "Return home",
             "guide": "A noun meaning \"returning home\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Many people return home during the festival."
+            "example": "Many people return home during the festival.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "귀성객 / 귀성 전쟁"
+                }
+            ]
         },
         {
             "meaning": "Homecoming War",
             "guide": "Fixed expression meaning \"homecoming battle\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The battle to return home begins."
+            "example": "The battle to return home begins.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Not a real war; it means holiday traffic congestion."
+                }
+            ]
         },
         {
             "meaning": "Returning guest",
@@ -353,7 +557,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Mid-Autumn Festival; another name for Qiu Xi",
             "guide": "Noun, meaning \"another name for Mid-Autumn Festival and Qiuxi Festival\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "No more, no less, I just want every day to be like the Mid-Autumn Festival."
+            "example": "No more, no less, I just want every day to be like the Mid-Autumn Festival.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "Another name for Chuseok."
+                }
+            ]
         },
         {
             "meaning": "highway",
@@ -373,12 +583,28 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "crowded",
             "guide": "Verb expression meaning \"to crowd\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Railway stations are crowded during festivals."
+            "example": "Railway stations are crowded during festivals.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기차역이 붐비다"
+                },
+                {
+                    "type": "form",
+                    "text": "붐벼요 / 붐빕니다"
+                }
+            ]
         },
         {
             "meaning": "reservation; pre-sale",
             "guide": "Noun, meaning \"booking, pre-sale\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Train tickets can only be purchased by reservation."
+            "example": "Train tickets can only be purchased by reservation.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기차표를 예매하다"
+                }
+            ]
         },
         {
             "meaning": "Contact",
@@ -393,17 +619,35 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Happy New Year; many blessings",
             "guide": "Fixed expression, meaning \"Happy New Year and many blessings\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Say Happy New Year to your elders."
+            "example": "Say Happy New Year to your elders.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A New Year greeting also used for elders."
+                }
+            ]
         },
         {
             "meaning": "Congratulations on the new year",
             "guide": "Noun, meaning \"Congratulations on the New Year.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Happy New Year written on the greeting card."
+            "example": "Happy New Year written on the greeting card.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "A Sino-Korean greeting used in cards or messages."
+                }
+            ]
         },
         {
             "meaning": "Peace",
             "guide": "Adjective meaning \"peace\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "I wish you health and peace in the new year."
+            "example": "I wish you health and peace in the new year.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "평안하시기 바랍니다"
+                }
+            ]
         },
         {
             "meaning": "something you want to do; wish",
@@ -413,27 +657,57 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "A rich Mid-Autumn Festival",
             "guide": "Fixed expression, meaning \"abundant Mid-Autumn Festival\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "I wish you a prosperous Mid-Autumn Festival."
+            "example": "I wish you a prosperous Mid-Autumn Festival.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "풍성한 한가위 보내세요"
+                }
+            ]
         },
         {
             "meaning": "New Year's greetings",
             "guide": "Verb expression, meaning \"to pay New Year greetings and salute\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "Children pay New Year greetings to their elders."
+            "example": "Children pay New Year greetings to their elders.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "어른께 세배하다"
+                }
+            ]
         },
         {
             "meaning": "collect lucky money",
             "guide": "Fixed expression, meaning \"collecting lucky money\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "After paying New Year greetings, I received the New Year's money."
+            "example": "After paying New Year greetings, I received the New Year's money.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "세배하고 세뱃돈을 받다"
+                }
+            ]
         },
         {
             "meaning": "wear new year clothes",
             "guide": "Fixed expression meaning \"wear New Year's clothes\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Wear New Year clothes during the Spring Festival."
+            "example": "Wear New Year clothes during the Spring Festival.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "New clothes worn on Seollal."
+                }
+            ]
         },
         {
             "meaning": "Say blessings",
             "guide": "Fixed expression meaning \"to say blessings\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Elders say blessings to their children."
+            "example": "Elders say blessings to their children.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "아이들에게 덕담을 해 주다"
+                }
+            ]
         },
         {
             "meaning": "Representative festivals",
@@ -448,12 +722,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "junior; subordinate",
             "guide": "Noun, meaning \"junior, inferior\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The younger generation pays New Year greetings to the elders."
+            "example": "The younger generation pays New Year greetings to the elders.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The opposite of 윗사람."
+                }
+            ]
         },
         {
             "meaning": "elder; superior",
             "guide": "Noun, meaning \"elder, superior\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Elders say blessings."
+            "example": "Elders say blessings.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "The opposite of 아랫사람."
+                }
+            ]
         },
         {
             "meaning": "ancestors",
@@ -463,22 +749,46 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Make waffles",
             "guide": "Fixed expression meaning \"to make waffles\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Make the muffins beautiful."
+            "example": "Make the muffins beautiful.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "송편은 만들다보다 빚다"
+                }
+            ]
         },
         {
             "meaning": "spread",
             "guide": "Verb expression meaning \"to spread\". When reviewing, remember the previous objects or scenes together so that they can be used directly in spoken English.",
-            "example": "This theory spreads."
+            "example": "This theory spreads.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "전해지는 말 / 전해지고 있다"
+                }
+            ]
         },
         {
             "meaning": "Times change",
             "guide": "Fixed expression meaning \"the times change\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "As times change, the look of the festival has also changed."
+            "example": "As times change, the look of the festival has also changed.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "시대가 바뀌면서"
+                }
+            ]
         },
         {
             "meaning": "SMS",
             "guide": "Fixed expression meaning \"text message\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Send holiday greetings via text message."
+            "example": "Send holiday greetings via text message.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문자 메시지로 보내다"
+                }
+            ]
         },
         {
             "meaning": "rest",
@@ -508,7 +818,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "Wash your hair with calamus water",
             "guide": "Fixed expression meaning \"wash your hair with calamus water\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "It is customary to wash your hair with calamus water during the Dragon Boat Festival."
+            "example": "It is customary to wash your hair with calamus water during the Dragon Boat Festival.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "창포물에 머리를 감는 풍습"
+                }
+            ]
         },
         {
             "meaning": "wrestling",
@@ -533,7 +849,13 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "UNESCO World Intangible Heritage",
             "guide": "Fixed expression meaning \"UNESCO World Intangible Heritage\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "The Gangneung Dragon Boat Festival has become a world intangible heritage."
+            "example": "The Gangneung Dragon Boat Festival has become a world intangible heritage.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "무형 means intangible, with no physical form."
+                }
+            ]
         },
         {
             "meaning": "cultural property; cultural heritage",
@@ -543,12 +865,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "village community",
             "guide": "Fixed expression meaning \"village community\". It is recommended to memorize the entire section and apply it directly in writing and speaking.",
-            "example": "Based on the beliefs of the village community."
+            "example": "Based on the beliefs of the village community.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "마을 공동체의 신앙"
+                }
+            ]
         },
         {
             "meaning": "good year; good harvest",
             "guide": "Noun, meaning \"good year, good harvest\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Pray for a good harvest."
+            "example": "Pray for a good harvest.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "풍년을 기원하다"
+                }
+            ]
         },
         {
             "meaning": "regional security",
@@ -573,12 +907,24 @@ window.lessonGuideL3TranslationChunks.en["l3-12"] = {
         {
             "meaning": "rich; rich",
             "guide": "Adjective meaning \"rich, rich\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "I wish you a prosperous Mid-Autumn Festival."
+            "example": "I wish you a prosperous Mid-Autumn Festival.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "풍성한 한가위"
+                }
+            ]
         },
         {
             "meaning": "full",
             "guide": "Adjective meaning \"full of\". It is mainly used to describe states, properties or feelings, and is suitable for making sentences with people, objects and situations.",
-            "example": "I wish you an autumn evening full of gratitude and happiness."
+            "example": "I wish you an autumn evening full of gratitude and happiness.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "감사와 행복이 가득한"
+                }
+            ]
         }
     ],
     "dialogues": [

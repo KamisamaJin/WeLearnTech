@@ -38,17 +38,39 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "receive consultation",
             "guide": "A noun meaning \"to be consulted.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I received counseling because of life problems."
+            "example": "I received counseling because of life problems.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활 상담을 받다 / 가족 상담을 받다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "상담하다=consultation; 상담을 받다=receive consultation"
+                }
+            ]
         },
         {
             "meaning": "Arrears of wages",
             "guide": "Noun meaning \"wage arrears\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Counseling is available regarding unpaid wages."
+            "example": "Counseling is available regarding unpaid wages.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "임금 체불 문제 / 임금이 체불되다"
+                }
+            ]
         },
         {
             "meaning": "Life consulting",
             "guide": "Noun meaning \"life consulting\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "When I first came to Korea, I received life counseling."
+            "example": "When I first came to Korea, I received life counseling.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활 상담을 받다"
+                }
+            ]
         },
         {
             "meaning": "family counseling",
@@ -58,12 +80,24 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Interpretation and translation services",
             "guide": "Noun meaning \"interpretation and translation services\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The center provides interpretation and translation services."
+            "example": "The center provides interpretation and translation services.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "통역=interpretation, 번역=written translation"
+                }
+            ]
         },
         {
             "meaning": "Job search consultation",
             "guide": "A noun meaning \"job search consultation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I received job search counseling to find a job."
+            "example": "I received job search counseling to find a job.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "구직 상담을 받다"
+                }
+            ]
         },
         {
             "meaning": "Entrepreneurship consulting",
@@ -73,12 +107,28 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "childcare",
             "guide": "Noun meaning \"to take care of children\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I need a place to keep my kids while I work."
+            "example": "I need a place to keep my kids while I work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "아이를 어린이집에 맡기다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "맡다=responsible/committed, 맡기다=entrusted"
+                }
+            ]
         },
         {
             "meaning": "Rent toys",
             "guide": "A noun meaning \"toy rental\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can rent toys at the Child Care Comprehensive Support Center."
+            "example": "You can rent toys at the Child Care Comprehensive Support Center.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "대여하다 is more formal, 빌리다 is more colloquial"
+                }
+            ]
         },
         {
             "meaning": "Parenting information",
@@ -88,7 +138,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "take care of the elderly",
             "guide": "Noun meaning \"care for the elderly\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Welfare centers take care of elderly people living alone."
+            "example": "Welfare centers take care of elderly people living alone.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "노인을 돌보다 / 돌봄 서비스"
+                }
+            ]
         },
         {
             "meaning": "Learn Korean culture",
@@ -118,12 +174,24 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Health check-up",
             "guide": "Noun meaning \"health check-up\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I received a physical examination at a public health center."
+            "example": "I received a physical examination at a public health center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "건강 검진을 받다"
+                }
+            ]
         },
         {
             "meaning": "Vaccination",
             "guide": "Noun meaning \"vaccination\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Children can receive vaccinations free of charge."
+            "example": "Children can receive vaccinations free of charge.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "예방 접종을 받다"
+                }
+            ]
         },
         {
             "meaning": "coffee shop",
@@ -158,17 +226,35 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Search, query",
             "guide": "Noun, meaning \"search, query\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Since I didn’t know if it was open, I checked the official website."
+            "example": "Since I didn’t know if it was open, I checked the official website.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "찾다 means look for; 찾아보다 means look up or check."
+                }
+            ]
         },
         {
             "meaning": "Public health centers, community health centers",
             "guide": "Noun meaning \"health center, community health center\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Vaccinations are given at public health centers."
+            "example": "Vaccinations are given at public health centers.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "보건소에서 접종을 받다 / 검진을 받다"
+                }
+            ]
         },
         {
             "meaning": "cost",
             "guide": "Noun meaning \"expense\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Do you know how much the course costs?"
+            "example": "Do you know how much the course costs?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "비용이 들다 / 비용을 내다"
+                }
+            ]
         },
         {
             "meaning": "free",
@@ -188,7 +274,17 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "employment, finding a job",
             "guide": "Noun meaning \"employment, finding a job\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I recently got a job, so I no longer receive consultations."
+            "example": "I recently got a job, so I no longer receive consultations.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사에 취직하다 / 취직 준비"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "취직하다 emphasizes \"finding a job\", 일하다 means \"job\""
+                }
+            ]
         },
         {
             "meaning": "Computer training class",
@@ -198,7 +294,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Change to course",
             "guide": "Noun meaning \"change to course\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because it was too difficult, I switched to a cooking class."
+            "example": "Because it was too difficult, I switched to a cooking class.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "요리 수업으로 바꾸다 / 다른 반으로 바꾸다"
+                }
+            ]
         },
         {
             "meaning": "Dictionary",
@@ -208,12 +310,28 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Phone disconnected",
             "guide": "Noun meaning \"telephone disconnection\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The phone was disconnected during the call."
+            "example": "The phone was disconnected during the call.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "끊다=hang up/cut off, 끊어지다=disconnect"
+                }
+            ]
         },
         {
             "meaning": "The book is wet",
             "guide": "Noun, meaning \"the book is wet\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It rained while I was reading and the book got wet."
+            "example": "It rained while I was reading and the book got wet.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "책이 비에 젖다"
+                },
+                {
+                    "type": "form",
+                    "text": "젖었어요 / 젖어서"
+                }
+            ]
         },
         {
             "meaning": "give up",
@@ -223,7 +341,17 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "stop, give up, continue doing",
             "guide": "Noun meaning \"to stop, to give up and to continue\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I kept learning yoga and stopped because I didn’t have time."
+            "example": "I kept learning yoga and stopped because I didn’t have time.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "회사를 그만두다 / 수업을 그만두다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "그만하다 means stop there; 그만두다 means stop doing something."
+                }
+            ]
         },
         {
             "meaning": "facilities, institutions",
@@ -233,7 +361,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "weekly",
             "guide": "Noun meaning \"weekly\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Classes are held every Tuesday and Thursday."
+            "example": "Classes are held every Tuesday and Thursday.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "매일=daily, 매주=weekly, 매달=monthly"
+                }
+            ]
         },
         {
             "meaning": "Projects, courses",
@@ -248,22 +382,58 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Accept applications",
             "guide": "A noun meaning \"to accept an application.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Applications will be accepted on the last week of each month."
+            "example": "Applications will be accepted on the last week of each month.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "신청을 마감하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "신청하다=application, 신청을 받다=accept application"
+                }
+            ]
         },
         {
             "meaning": "Detailed",
             "guide": "Noun meaning \"detailed\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Details are available on the official website."
+            "example": "Details are available on the official website.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "자세하다 is an adjective, 자세히 is an adverb"
+                }
+            ]
         },
         {
             "meaning": "It is written/explained on the official website",
             "guide": "Noun, meaning \"it is written/explained on the official website\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Class times are stated on the official website."
+            "example": "Class times are stated on the official website.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "홈페이지에 자세히 나와 있다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "나와 있다 can mean \"the content is written/displayed\""
+                }
+            ]
         },
         {
             "meaning": "Listen to lectures, attend classes",
             "guide": "Noun, meaning \"listen to lectures, attend classes\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I want to take a Computer 1 course."
+            "example": "I want to take a Computer 1 course.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "강좌를 수강하다 / 수강 신청"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "수강하다 is more formal than 듣다 and is used when registering for courses"
+                }
+            ]
         },
         {
             "meaning": "swimming",
@@ -283,7 +453,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Material fee",
             "guide": "Noun meaning \"material fee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "For Korean cooking classes, you only need to pay for the materials."
+            "example": "For Korean cooking classes, you only need to pay for the materials.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "재료비를 내다 / 재료비가 들다"
+                }
+            ]
         },
         {
             "meaning": "Interest class",
@@ -298,7 +474,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Discounts, offers",
             "guide": "Noun, meaning \"discount, discount\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "50% off for ages 65+."
+            "example": "50% off for ages 65+.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "할인을 받다 / 할인해 주다"
+                }
+            ]
         },
         {
             "meaning": "Lectures, courses",
@@ -318,7 +500,17 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "consultation, inquiry",
             "guide": "Noun, meaning \"consultation, inquiry\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Are there any other inquiries?"
+            "example": "Are there any other inquiries?",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "문의하다 / 문의 사항"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "문의 is a noun, 문의하다 is a verb"
+                }
+            ]
         },
         {
             "meaning": "Consultation matters",
@@ -343,7 +535,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "period, term",
             "guide": "Noun, meaning \"period, deadline\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The educational period is from July 2nd to July 19th."
+            "example": "The educational period is from July 2nd to July 19th.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기간은 ~부터 ~까지 / 기간을 연장하다"
+                }
+            ]
         },
         {
             "meaning": "Eligibility",
@@ -353,7 +551,17 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "live",
             "guide": "Noun meaning \"to live in\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This program is open to foreigners living in Seoul."
+            "example": "This program is open to foreigners living in Seoul.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서울에 거주하다 / 거주 외국인"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "거주하다 is more formal than 살다"
+                }
+            ]
         },
         {
             "meaning": "Business Korean",
@@ -363,7 +571,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Resume",
             "guide": "Noun meaning \"resume\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Learned how to write a resume."
+            "example": "Learned how to write a resume.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이력서를 쓰다 / 작성하다"
+                }
+            ]
         },
         {
             "meaning": "How to write and fill in",
@@ -373,27 +587,61 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "interview",
             "guide": "Noun meaning \"interview\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because it was difficult to prepare for the interview, I received counseling."
+            "example": "Because it was difficult to prepare for the interview, I received counseling.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "면접을 보다 / 준비하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Say 면접을 보다 when attending an interview"
+                }
+            ]
         },
         {
             "meaning": "Severance pay, severance compensation",
             "guide": "Noun, meaning \"severance pay, severance compensation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can also inquire about retirement benefits."
+            "example": "You can also inquire about retirement benefits.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "퇴직금을 받다 / 지급하다"
+                }
+            ]
         },
         {
             "meaning": "Work-related injuries and industrial disasters",
             "guide": "Noun, meaning \"work injury, industrial disaster\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "If you suffer a work-related injury, get medical advice."
+            "example": "If you suffer a work-related injury, get medical advice.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "산업 재해를 당하다 / 보상받다"
+                }
+            ]
         },
         {
             "meaning": "Entry and exit",
             "guide": "A noun meaning \"entry and exit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "We can also accept immigration-related consultations."
+            "example": "We can also accept immigration-related consultations.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "출입국 관리 / 출입국 관련 상담"
+                }
+            ]
         },
         {
             "meaning": "working conditions",
             "guide": "Noun meaning \"working conditions\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The working conditions and contract were different, so consultation was accepted."
+            "example": "The working conditions and contract were different, so consultation was accepted.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "근무 조건이 계약서와 다르다"
+                }
+            ]
         },
         {
             "meaning": "medical consultation",
@@ -403,22 +651,46 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "settle down, settle down",
             "guide": "Noun, meaning \"to settle down, to settle down.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Door-to-door consultation to help immigrants settle."
+            "example": "Door-to-door consultation to help immigrants settle.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "한국 생활에 정착하다 / 정착을 돕다"
+                }
+            ]
         },
         {
             "meaning": "Home consultation",
             "guide": "Noun, meaning \"home consultation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The center provides door-to-door consultation for marriage immigrants."
+            "example": "The center provides door-to-door consultation for marriage immigrants.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "방문 상담을 받다 / 신청하다"
+                }
+            ]
         },
         {
             "meaning": "marriage immigrants",
             "guide": "A noun meaning \"marriage immigrant\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Marriage immigrants can receive interpretation services."
+            "example": "Marriage immigrants can receive interpretation services.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "결혼 이민자를 대상으로 하다"
+                }
+            ]
         },
         {
             "meaning": "daily interpretation service",
             "guide": "Noun meaning \"life interpretation service\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Life interpretation service started."
+            "example": "Life interpretation service started.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활 통역 서비스를 제공받다"
+                }
+            ]
         },
         {
             "meaning": "multicultural family",
@@ -428,7 +700,17 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Support for visiting relatives at home",
             "guide": "Noun, meaning \"to return to one's parents' home to visit relatives and support\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Multicultural families can apply for family visit support."
+            "example": "Multicultural families can apply for family visit support.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "친정 방문 지원을 신청하다 / 받다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "친정 means a married woman's parental home."
+                }
+            ]
         },
         {
             "meaning": "Welfare Center",
@@ -438,7 +720,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "open, open, open",
             "guide": "Noun, meaning \"to open the door, to open, to open for business\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A new welfare center was opened."
+            "example": "A new welfare center was opened.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "기관이 문을 열다 can mean \"opening/opening\""
+                }
+            ]
         },
         {
             "meaning": "multicultural family",
@@ -473,7 +761,17 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "show, show",
             "guide": "Noun, meaning \"show, show\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Movies from various countries are screened."
+            "example": "Movies from various countries are screened.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "영화 상영 / 상영하다"
+                },
+                {
+                    "type": "form",
+                    "text": "상영돼요 / 상영됩니다"
+                }
+            ]
         },
         {
             "meaning": "display, exhibition",
@@ -488,17 +786,43 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "social integration",
             "guide": "Noun meaning \"social integration\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The center is used as a place for social integration."
+            "example": "The center is used as a place for social integration.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사회 통합의 장"
+                }
+            ]
         },
         {
             "meaning": "place, platform",
             "guide": "Noun, meaning \"place, platform\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Welfare centers can become platforms for encounters."
+            "example": "Welfare centers can become platforms for encounters.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "만남의 장 / 교류의 장"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Here 장 is \"place/platform\", not a quantifier"
+                }
+            ]
         },
         {
             "meaning": "to be used, to be used",
             "guide": "Noun, meaning \"to be used, to be used\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The first floor is used as a platform for social integration."
+            "example": "The first floor is used as a platform for social integration.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "~으로 활용되다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "활용하다 active, 활용되다 passive"
+                }
+            ]
         },
         {
             "meaning": "Comprehensive Welfare Center",
@@ -523,7 +847,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Difficulties in life, hardships in life",
             "guide": "Noun, meaning \"difficulties in life, difficulties in life\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Counseling helps with life difficulties."
+            "example": "Counseling helps with life difficulties.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "생활 고충을 상담받다 / 해결하다"
+                }
+            ]
         },
         {
             "meaning": "Teenagers who entered the country halfway",
@@ -543,17 +873,39 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Multicultural Immigration Plus Center",
             "guide": "Noun meaning \"Multicultural Immigration Plus Center\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A variety of administrative services are available at the Multicultural Immigration Plus Center."
+            "example": "A variety of administrative services are available at the Multicultural Immigration Plus Center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "행정 서비스를 한곳에서 제공받다"
+                }
+            ]
         },
         {
             "meaning": "be integrated",
             "guide": "Noun meaning \"to be integrated.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Multiple services are integrated into one centre."
+            "example": "Multiple services are integrated into one centre.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "하나로 통합되다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "통합하다 active, 통합되다 passive"
+                }
+            ]
         },
         {
             "meaning": "local governments, local governments",
             "guide": "Noun meaning \"local self-government group, local government\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Services provided by various local governments are integrated."
+            "example": "Services provided by various local governments are integrated.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "각 지자체 / 관련 지자체"
+                }
+            ]
         },
         {
             "meaning": "Legal Department",
@@ -573,7 +925,13 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "departments, divisions",
             "guide": "Noun, meaning \"department, ministry\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Integrate the services provided by each department separately."
+            "example": "Integrate the services provided by each department separately.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "각 부처 / 관련 부처"
+                }
+            ]
         },
         {
             "meaning": "Composite service organization",
@@ -583,17 +941,39 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "Alien registration",
             "guide": "Noun meaning \"alien registration\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Foreigner registration services can be handled at the center."
+            "example": "Foreigner registration services can be handled at the center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "외국인 등록 업무를 처리하다"
+                }
+            ]
         },
         {
             "meaning": "Extend period of stay",
             "guide": "Noun, meaning \"extending the period of stay\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can also inquire about extending your stay at the center."
+            "example": "You can also inquire about extending your stay at the center.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "체류 기간을 연장하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "체류=stay/residence, 기간=period"
+                }
+            ]
         },
         {
             "meaning": "employment permit",
             "guide": "Noun meaning \"permission to employ\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Services related to employment licensing are available."
+            "example": "Services related to employment licensing are available.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고용 허가를 받다"
+                }
+            ]
         },
         {
             "meaning": "Ministry of Women and Family",
@@ -608,22 +988,58 @@ window.lessonGuideL3TranslationChunks.en["l3-03"] = {
         {
             "meaning": "get provision, get service",
             "guide": "Noun, meaning \"to obtain provision, to receive service\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Get the services you need in one place."
+            "example": "Get the services you need in one place.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서비스를 제공받다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "제공하다=provide, 제공받다=get provided"
+                }
+            ]
         },
         {
             "meaning": "establish, establish",
             "guide": "Noun, meaning \"to establish, to establish.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Initially set up to operate in 10 territories."
+            "example": "Initially set up to operate in 10 territories.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "센터 설립 / 설립 당시"
+                },
+                {
+                    "type": "form",
+                    "text": "설립하다 / 설립되다"
+                }
+            ]
         },
         {
             "meaning": "Pilot operation",
             "guide": "Noun meaning \"pilot operation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It will initially operate on a pilot basis in 10 regions."
+            "example": "It will initially operate on a pilot basis in 10 regions.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "시범 운영 / 시범 사업"
+                }
+            ]
         },
         {
             "meaning": "gradually expand",
             "guide": "Noun meaning \"gradually expanding\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The service area is gradually expanding."
+            "example": "The service area is gradually expanding.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "서비스가 점차 확대되다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "확대하다 active, 확대되다 passive"
+                }
+            ]
         }
     ],
     "dialogues": [
