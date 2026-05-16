@@ -153,36 +153,40 @@ window.lessonGuideL2Translations.en = {
     "l2-09": {
       "title": "There Is a Restaurant Nearby That I Often Go To",
       "goals": [
-        "Talk about eating out, taste, and restaurant features.",
-        "Use A/V-(으)ㄹ 것 같다 to make a guess.",
-        "Use V-는 to modify a noun in the present tense."
+        "Describe food tastes such as fresh ingredients, refreshing broth, savory-spicy flavor, and bland taste.",
+        "Explain restaurant features and reasons for choosing a place, such as famous as a good restaurant, large portions, and good service.",
+        "Use A/V-(으)ㄹ 것 같다 to make a soft guess.",
+        "Use V-는 N to describe a restaurant you often go to, people waiting, and food you like.",
+        "Read a restaurant recommendation and a culture text about Korean delivery apps, then write a short restaurant introduction."
       ],
       "grammar": [
         {
           "meaning": "seems / looks like / probably",
-          "guide": "Use it to make a softer guess instead of stating something directly."
+          "guide": "Use A/V-(으)ㄹ 것 같다 to make a soft guess based on what you see or know."
         },
         {
-          "meaning": "a noun that someone does ...",
-          "guide": "Use -는 when a present-tense verb modifies a noun."
+          "meaning": "a noun that someone does/is doing",
+          "guide": "Use V-는 before a noun when a present-tense verb modifies it."
         }
       ]
     },
     "l2-10": {
       "title": "It Is Next to City Hall, and It Is Close",
       "goals": [
-        "Ask for and give directions.",
+        "Describe locations using words such as overpass, crosswalk, intersection, bus stop, and subway station.",
+        "Give directions with go left, go right, go straight, cross, and pass.",
         "Use A/V-는데 to give background before the main point.",
-        "Use A/V-기 때문에 to state a reason clearly."
+        "Use A/V-기 때문에 to state a reason clearly.",
+        "Read route instructions in an email and explain how to get to your home or another destination."
       ],
       "grammar": [
         {
-          "meaning": "and / but / since ...",
-          "guide": "Use it to set up background, contrast, or a reason before continuing."
+          "meaning": "and / but / since ...; background before the main point",
+          "guide": "Use A/V-는데 to set up background, a situation, or a mild contrast before the main point."
         },
         {
           "meaning": "because ...",
-          "guide": "A clear and slightly formal way to give a reason."
+          "guide": "Use A/V-기 때문에 to state a reason clearly. It is a little more formal than -아서/어서."
         }
       ]
     },
@@ -387,6 +391,46 @@ window.lessonGuideL2Translations.en = {
       {
         "meaning": "decide/agree to ...",
         "guide": "Use V-기로 하다 for a plan, decision, or agreement that has already been made."
+      }
+    ]
+  },
+  "l2-09": {
+    "title": "There Is a Restaurant Nearby That I Often Go To",
+    "goals": [
+      "Describe food tastes such as fresh ingredients, refreshing broth, savory-spicy flavor, and bland taste.",
+      "Explain restaurant features and reasons for choosing a place, such as famous as a good restaurant, large portions, and good service.",
+      "Use A/V-(으)ㄹ 것 같다 to make a soft guess.",
+      "Use V-는 N to describe a restaurant you often go to, people waiting, and food you like.",
+      "Read a restaurant recommendation and a culture text about Korean delivery apps, then write a short restaurant introduction."
+    ],
+    "grammar": [
+      {
+        "meaning": "seems / looks like / probably",
+        "guide": "Use A/V-(으)ㄹ 것 같다 to make a soft guess based on what you see or know."
+      },
+      {
+        "meaning": "a noun that someone does/is doing",
+        "guide": "Use V-는 before a noun when a present-tense verb modifies it."
+      }
+    ]
+  },
+  "l2-10": {
+    "title": "It Is Next to City Hall, and It Is Close",
+    "goals": [
+      "Describe locations using words such as overpass, crosswalk, intersection, bus stop, and subway station.",
+      "Give directions with go left, go right, go straight, cross, and pass.",
+      "Use A/V-는데 to give background before the main point.",
+      "Use A/V-기 때문에 to state a reason clearly.",
+      "Read route instructions in an email and explain how to get to your home or another destination."
+    ],
+    "grammar": [
+      {
+        "meaning": "and / but / since ...; background before the main point",
+        "guide": "Use A/V-는데 to set up background, a situation, or a mild contrast before the main point."
+      },
+      {
+        "meaning": "because ...",
+        "guide": "Use A/V-기 때문에 to state a reason clearly. It is a little more formal than -아서/어서."
       }
     ]
   }
