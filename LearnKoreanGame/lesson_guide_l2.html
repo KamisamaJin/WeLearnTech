@@ -1850,6 +1850,7 @@
             "문자를 보내다": "문짜를 보내다",
             "문자를 받다": "문짜를 받따",
             "문자를 지우다": "문짜를 지우다",
+            "놓지": "노치",
             "발생하다": "발쌩하다",
             "발생한 고장": "발쌩한 고장",
             "발전 가능성": "발쩐 가능성",
@@ -1866,6 +1867,8 @@
             "실제 모임": "실쩨 모임",
             "열대야": "열때야",
             "열쇠": "열쐬",
+            "어떻게": "어떠케",
+            "어떻게 오셨어요?": "어떠케 오셔써요",
             "우울증": "우울쯩",
             "월세": "월쎄",
             "의견을 솔직하게 말하다": "의겨늘 솔찌카게 말하다",
@@ -1879,6 +1882,7 @@
             "일정 기간": "일쩡 기간",
             "작업 일지": "자겁 일찌",
             "전화번호": "전화번호",
+            "좋지요": "조치요",
             "통화할 수 있다": "통화할 쑤 읻따",
             "통화할 수 있어요": "통화할 쑤 이써요",
             "출장 서비스": "출짱 서비스",
@@ -2729,12 +2733,13 @@
         }
 
         function scrollActiveTabIntoView() {
-            const activeButton = mainContent.querySelector(".tab-btn.active");
-            if (!activeButton) return;
-            activeButton.scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "center"
+            const tabsElement = getTabsElement();
+            const activeButton = tabsElement?.querySelector(".tab-btn.active");
+            if (!tabsElement || !activeButton) return;
+            const targetLeft = activeButton.offsetLeft - ((tabsElement.clientWidth - activeButton.offsetWidth) / 2);
+            tabsElement.scrollTo({
+                left: Math.max(0, targetLeft),
+                behavior: "smooth"
             });
         }
 

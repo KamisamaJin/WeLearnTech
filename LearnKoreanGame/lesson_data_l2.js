@@ -172,36 +172,38 @@ const lessonGuideL2 = {
       "titleKo": "많이 아프면 이 약을 드세요",
       "titleZh": "如果很疼，请吃这个药",
       "pages": "52-61",
-      "status": "draft",
+      "status": "refined",
       "progress": {
-        "vocabulary": "draft-p52-61",
-        "dialogue": "draft",
-        "culture": "draft"
+        "vocabulary": "refined-p52-p61",
+        "dialogue": "refined-p55-p61",
+        "culture": "reviewed-p60",
+        "practice": "refined-p55-p60"
       },
       "goals": [
-        "学习药店、症状和服药相关表达。",
-        "能用 A/V-(으)면 表示条件。",
-        "能用 V-아/어서 表示动作先后。"
+        "能够说身体不舒服和受伤的症状。",
+        "能够在药店说明症状、询问并理解用药方法。",
+        "能够用 A/V-(으)면 表达条件和建议。",
+        "能够用 V-아/어서 表达动作先后。"
       ],
       "grammar": [
         {
           "pattern": "A/V-(으)면",
-          "zh": "如果……",
-          "guide": "提出条件，后句说明结果、建议或请求。"
+          "zh": "如果……；……的话",
+          "guide": "前句提出条件或假设，后句说结果、建议或计划。有收音用 -으면，没有收音用 -면。"
         },
         {
           "pattern": "V-아/어서",
           "zh": "……然后……",
-          "guide": "表示动作按时间顺序连接。"
+          "guide": "表示两个相关动作按时间顺序发生。前后主语通常相同，后句不能接命令或请求。"
         }
       ],
       "stats": {
-        "vocabulary": 23,
-        "dialogues": 1,
+        "vocabulary": 93,
+        "dialogues": 5,
         "culture": 1,
-        "practice": 4
+        "practice": 5
       },
-      "searchText": "l2-05 많이 아프면 이 약을 드세요 如果很疼，请吃这个药 약국 药店 휴일지킴이 약국 韩国也有节假日营业的药店。这种药店叫 휴일지킴이 약국。,晚上或公休日突然需要药时，可以通过网络或电话查找附近的值班药店。,买药时要准确说明症状，并确认服用方法。如果症状严重，最好去医院。 약국 药店 pharmacy 약사 药剂师 pharmacist 약 药 medicine 증상 症状 symptom 아프다 疼、不舒服 hurt / be sick 열이 나다 发烧 have a fever 기침하다 咳嗽 cough 콧물이 나다 流鼻涕 have a runny nose 목이 아프다 嗓子疼 have a sore throat 두통 头痛 headache 감기 感冒 cold 소화제 消化药 digestive medicine 진통제 止痛药 painkiller 알약 药片 pill 연고 药膏 ointment 바르다 涂 apply 드세요 请吃、请用 please take / eat 식후 饭后 after meals 식전 饭前 before meals 조언하다 建议 advise 놓지 放吧/别放 place it / do not place 어떻게 怎么 how 좋지요 好吧/不错吧 is good, right",
+      "searchText": "l2-05 많이 아프면 이 약을 드세요 如果很疼，请吃这个药 能够说身体不舒服和受伤的症状。 能够在药店说明症状、询问并理解用药方法。 能够用 A/V-(으)면 表达条件和建议。 能够用 V-아/어서 表达动作先后。 A/V-(으)면 如果……；……的话 前句提出条件或假设，后句说结果、建议或计划。有收音用 -으면，没有收音用 -면。 많이 아프면 병원에 가 보세요. 如果很疼，请去医院看看。 기침을 계속 하면 따뜻한 차를 마셔 보세요. 如果一直咳嗽，请喝点热茶看看。 시간이 있으면 밥 먹을까요? 如果有时间，要不要吃饭？ V-아/어서 ……然后…… 表示两个相关动作按时间顺序发生。前后主语通常相同，后句不能接命令或请求。 약국에 가서 소화제를 사 올게요. 我去药店买消化药回来。 편의점에서 도시락을 사서 먹었어요. 在便利店买了盒饭吃。 집에서 요리해서 먹어요. 在家做饭吃。 약국 药店 pharmacy 약 药 medicine 증상 症状 symptom 약국에서 약 사기 在药店买药 buying medicine at a pharmacy 휴일지킴이 약국 节假日值班药店 holiday duty pharmacy 아픈 친구에게 조언하다 给生病的朋友建议 to advise a sick friend 어디가 아프다 哪里疼；哪里不舒服 where it hurts 열이 나다 发烧 to have a fever 기침을 하다 咳嗽 to cough 콧물이 나다 流鼻涕 to have a runny nose 머리가 아프다 头疼 to have a headache 목이 붓다 喉咙肿 for the throat to be swollen 목이 아프다 嗓子疼 to have a sore throat 이가 아프다 牙疼 to have a toothache 팔이 부러지다 胳膊骨折 to break one’s arm 배가 아프다 肚子疼 to have a stomachache 설사를 하다 腹泻；拉肚子 to have diarrhea 다리를 다치다 腿受伤 to hurt one’s leg 지난 주말 上周末 last weekend 축구를 하다 踢足球 to play soccer 운동장 运动场 playground; sports field 넘어지다 摔倒 to fall down 많이 아프면 如果很疼 if it hurts a lot 병원에 가 보다 去医院看看 to try going to the hospital 계속 一直；持续 continuously; keep doing 따뜻한 차 热茶；温茶 warm tea 마시다 喝 to drink 배가 나오다 肚子凸出来；发胖 for one’s belly to stick out 잠이 안 오다 睡不着 cannot fall asleep 자전거를 타다 骑自行车 to ride a bicycle 커피를 조금만 마시다 只喝一点咖啡 to drink only a little coffee 마사지를 하다 按摩 to massage 해열제 退烧药 fever reducer 두통약 头痛药 headache medicine 감기약 感冒药 cold medicine 소화제 消化药 digestive medicine 파스 膏药；贴膏 pain relief patch 밴드 创可贴 bandage 소독약 消毒药水 disinfectant 연고 药膏 ointment 붙이다 贴 to attach; to put on 바르다 涂；抹 to apply 소화가 잘 안 되다 消化不好 to have indigestion 사 오다 买回来 to buy and bring back 편의점 便利店 convenience store 도시락 盒饭；便当 lunch box 사서 먹다 买来吃 to buy and eat 친구를 만나다 见朋友 to meet a friend 영화를 보다 看电影 to watch a movie 직접 亲自 directly; in person 제과점 面包店；糕点店 bakery 배달시키다 叫外卖；让配送 to order delivery 내려받다 下载 to download 수업이 끝나다 下课；课程结束 for class to end 제일 먼저 最先；首先 first of all 약사 药剂师 pharmacist 어떻게 오셨어요? 您怎么来了？哪里不舒服？ What brings you here? 언제부터 从什么时候开始 since when 오늘 아침부터 从今天早上开始 since this morning 하루에 두 번 一天两次 twice a day 아침과 저녁 早上和晚上 morning and evening 죽 粥 porridge 끓이다 煮；烧开 to boil; to cook 그래도 即使那样；还是 even so; still 집에 가서 푹 쉬다 回家好好休息 to go home and rest well 약 봉투 药袋 medicine envelope 귀하 敬启；收件人尊称 honorific addressee label 용법 用法；服用方法 directions for use 1일 2회 一天两次 twice per day 3일분 三天份 three days’ worth 식전 30분 饭前 30 分钟 30 minutes before meals 식후 30분 饭后 30 分钟 30 minutes after meals 식후 즉시 饭后立即 immediately after meals 인터넷에 질문을 하다 在网上提问 to ask a question online 댓글 评论；留言 comment 필리핀 菲律宾 the Philippines 겨울 날씨 冬天天气 winter weather 너무 춥다 太冷 to be too cold 편의점에서도 即使在便利店也 even at convenience stores 진통제 止痛药 painkiller 대부분 大部分 most 휴일 休息日；节假日 holiday 문을 열다 开门；营业 to open; to be open 홈페이지 网站；主页 website; homepage 접속하다 访问；连接 to access; to connect 찾을 수 있다 可以找到 can find 필요한 약 정보 需要的药品信息 needed medicine information 확인하다 确认 to check; to confirm 놓지 不要放 do not put 어떻게 怎么；如何 how 좋지요 好吧；不错吧 good, right? 회 次；回 time; occurrence 분 分钟；份 minute; portion 아프면 어떻게 해요? 如果不舒服怎么办？ 用条件表达给身体不舒服的人建议。 머리가 아프고 열이 나요. 头疼并且发烧。 많이 아프면 병원에 가 보세요. 如果很疼，请去医院看看。 어제부터 기침을 계속 해요. 从昨天开始一直咳嗽。 기침을 계속 하면 따뜻한 차를 마셔 보세요. 如果一直咳嗽，请喝点热茶看看。 요즘 밤에 잠이 안 와요. 最近晚上睡不着。 잠이 안 오면 커피를 조금만 마시세요. 如果睡不着，请少喝咖啡。 약국에 가서 사 올게요 去药店买回来 用 V-아/어서 表达先做一个动作，再做下一个相关动作。 아침부터 소화가 잘 안 돼요. 从早上开始消化不好。 약국에 가서 소화제를 사 올게요. 我去药店买消化药回来。 제이슨 씨, 점심 먹었어요? Jason，吃午饭了吗？ 네, 편의점에서 도시락을 사서 먹었어요. 吃了，在便利店买了盒饭吃。 주말에 뭐 했어요? 周末做了什么？ 친구를 만나서 같이 영화를 봤어요. 见了朋友，一起看了电影。 약국에서 약 사기 在药店买药 伊玲在药店说明肚子疼和腹泻，药剂师说明服药次数和饮食建议。 어떻게 오셨어요? 您哪里不舒服？ 배가 아프고 설사를 해요. 肚子疼并且腹泻。 언제부터 아팠어요? 从什么时候开始疼的？ 오늘 아침부터 아팠어요. 从今天早上开始疼。 그럼 이 약을 지금 드세요. 그래도 계속 아프면 하루에 두 번, 아침과 저녁에 드세요. 那请现在吃这个药。即使这样还一直疼的话，一天两次，早上和晚上吃。 그리고 죽을 끓여서 드세요. 还有，请煮粥吃。 약 봉투 읽기 阅读药袋 阅读药袋上的姓名、年龄、服药次数、天数和饭前饭后信息。 라민 귀하 拉敏收。 남 · 여 25세 男/女，25 岁。 1일 2회, 아침과 저녁, 3일분 一天两次，早上和晚上，三天份。 식후 30분 饭后 30 分钟。 저에게 한국의 겨울 날씨는 너무 추워요. 그래서 어제부터 기침을 하고 콧물이 나요. 열도 있어요. 对我来说，韩国冬天的天气太冷。所以从昨天开始咳嗽、流鼻涕，也发烧。 발음 연습 대화 发音练习对话 练习 ㅎ 音影响下的发音变化，并复习药店问答。 여기에 물건을 놓지 마세요. 请不要把东西放在这里。 네, 알겠습니다. 好的，知道了。 어떻게 오셨어요? 您哪里不舒服？ 머리가 아파요. 头疼。 같이 밥을 먹을까요? 一起吃饭吗？ 좋지요. 好啊。 휴일지킴이 약국 节假日值班药店 这篇文化文章介绍韩国买药的地点，以及假日需要药时可以查找 휴일지킴이 약국。 한국에서는 편의점에서도 해열제, 진통제, 소화제, 감기약 등을 살 수 있습니다. 하지만 대부분의 약들은 약국에서 삽니다. 在韩国，便利店也可以买退烧药、止痛药、消化药、感冒药等。但是大部分药是在药店购买。 휴일에 약이 필요하면 어떻게 할까요? 그러면 휴일지킴이 약국을 찾아보세요. 휴일지킴이 약국은 휴일에도 문을 엽니다. 假日需要药的话该怎么办呢？那就请查找节假日值班药店。节假日值班药店在假日也营业。 휴일지킴이 약국 홈페이지에 접속하면 휴일지킴이 약국을 찾을 수 있습니다. 그리고 필요한 약 정보도 확인할 수 있습니다. 访问节假日值班药店网站的话，可以找到节假日值班药店。并且也可以确认需要的药品信息。",
       "chunk": "lesson_chunks/l2-05.js"
     },
     {

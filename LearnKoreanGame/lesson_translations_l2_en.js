@@ -76,20 +76,21 @@ window.lessonGuideL2Translations.en = {
       ]
     },
     "l2-05": {
-      "title": "If It Hurts a Lot, Please Take This Medicine",
+      "title": "If It Hurts A Lot, Please Take This Medicine",
       "goals": [
-        "Talk about pharmacies, symptoms, and medicine.",
-        "Use A/V-(으)면 to express a condition.",
-        "Use V-아/어서 to connect actions in order."
+        "Say symptoms and injuries.",
+        "Explain symptoms at a pharmacy and understand dosage directions.",
+        "Use A/V-(으)면 to express conditions and advice.",
+        "Use V-아/어서 to connect sequential actions."
       ],
       "grammar": [
         {
           "meaning": "if / when ...",
-          "guide": "The first clause gives a condition, and the second gives a result, suggestion, or request."
+          "guide": "Use it to set a condition or assumption, then give a result, suggestion, or plan. Use -으면 after a stem with a final consonant and -면 after a stem without one."
         },
         {
           "meaning": "do ... and then ...",
-          "guide": "Use it when actions happen in sequence."
+          "guide": "Use it when two related actions happen in sequence. The subject is usually the same, and the following clause is not a command or request."
         }
       ]
     },
