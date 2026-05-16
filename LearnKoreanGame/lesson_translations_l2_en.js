@@ -133,18 +133,20 @@ window.lessonGuideL2Translations.en = {
     "l2-08": {
       "title": "I Decided to Take Korean Class Starting in September",
       "goals": [
-        "Talk about Korean class registration and study plans.",
-        "Use V-기 전에 to say before doing something.",
-        "Use V-기로 하다 to say a decision or plan."
+        "Read Korean class registration information such as course name, application period, course hours, capacity, and location.",
+        "Use V-기 전에 to say what should happen before another action.",
+        "Use V-기로 하다 to talk about study plans or agreements that have already been decided.",
+        "Explain Social Integration Program completion, evaluations, passing, retaking, and level promotion.",
+        "Read course information and text messages, and write a short text inviting a friend to apply together."
       ],
       "grammar": [
         {
           "meaning": "before doing ...",
-          "guide": "Attach it to a verb stem to show action order."
+          "guide": "Attach -기 전에 to a verb stem to mean before doing that action."
         },
         {
-          "meaning": "decide to ...",
-          "guide": "Use it for a personal decision, plan, or agreement."
+          "meaning": "decide/agree to ...",
+          "guide": "Use V-기로 하다 for a plan, decision, or agreement that has already been made."
         }
       ]
     },
@@ -328,5 +330,64 @@ window.lessonGuideL2Translations.en = {
         }
       ]
     }
+  },
+  "l2-06": {
+    "title": "I Feel Happy When I Eat Delicious Food",
+    "goals": [
+      "Talk about your mood and feelings.",
+      "Listen to a friend or family member’s situation and use -겠- to guess or show empathy.",
+      "Use A/V-(으)ㄹ 때 to describe when a feeling or action happens.",
+      "Read and write an email about life in Korea."
+    ],
+    "grammar": [
+      {
+        "meaning": "must be / would / will",
+        "guide": "Use -겠- to guess or react empathetically to someone else’s situation, plan, or experience."
+      },
+      {
+        "meaning": "when ...",
+        "guide": "Use A/V-(으)ㄹ 때 to describe the moment or period when an action or state happens."
+      }
+    ]
+  },
+  "l2-07": {
+    "title": "Since It Is a Housewarming, I Will Bring Detergent or Tissues",
+    "goals": [
+      "Invite friends to your home or a special event and respond naturally to invitations.",
+      "Explain basic etiquette before and during a visit to someone’s home or office.",
+      "Use V-(으)ㄹ래요? to ask willingness or suggest doing something together.",
+      "Use A/V-(으)니까 to give a reason before a suggestion, request, or decision.",
+      "Read an invitation email and write a short reply."
+    ],
+    "grammar": [
+      {
+        "meaning": "Would you like to ...? / Do you want to ...?",
+        "guide": "Use V-(으)ㄹ래요? in speech to ask willingness or gently suggest doing something together."
+      },
+      {
+        "meaning": "because / since ...",
+        "guide": "Use A/V-(으)니까 to give a reason, often before a suggestion, request, command, or decision."
+      }
+    ]
+  },
+  "l2-08": {
+    "title": "I Decided to Take Korean Class Starting in September",
+    "goals": [
+      "Read Korean class registration information such as course name, application period, course hours, capacity, and location.",
+      "Use V-기 전에 to say what should happen before another action.",
+      "Use V-기로 하다 to talk about study plans or agreements that have already been decided.",
+      "Explain Social Integration Program completion, evaluations, passing, retaking, and level promotion.",
+      "Read course information and text messages, and write a short text inviting a friend to apply together."
+    ],
+    "grammar": [
+      {
+        "meaning": "before doing ...",
+        "guide": "Attach -기 전에 to a verb stem to mean before doing that action."
+      },
+      {
+        "meaning": "decide/agree to ...",
+        "guide": "Use V-기로 하다 for a plan, decision, or agreement that has already been made."
+      }
+    ]
   }
 };

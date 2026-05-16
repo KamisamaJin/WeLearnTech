@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>KIIP L2 Lesson Guide</title>
+    <title>KIIP L3 Lesson Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -212,11 +212,6 @@
             background: var(--amber);
         }
 
-        .status-refined {
-            color: #071312;
-            background: var(--teal);
-        }
-
         .status-todo {
             color: var(--muted);
             background: rgba(255,255,255,0.08);
@@ -422,12 +417,8 @@
             box-shadow: 0 12px 26px rgba(0,0,0,0.22);
             backdrop-filter: blur(14px);
             overflow-x: auto;
-            overscroll-behavior-x: contain;
-            scroll-padding: 24px;
-            scroll-snap-type: x proximity;
             scrollbar-width: none;
-            -webkit-overflow-scrolling: touch;
-            touch-action: pan-x pan-y;
+            touch-action: pan-y;
         }
 
         .tabs::-webkit-scrollbar {
@@ -436,7 +427,6 @@
 
         .tab-btn {
             flex: 0 0 auto;
-            min-width: 74px;
             padding: 9px 13px;
             border: 1px solid var(--line);
             border-radius: 8px;
@@ -444,7 +434,6 @@
             background: rgba(255,255,255,0.04);
             cursor: pointer;
             font-weight: 800;
-            scroll-snap-align: start;
         }
 
         .tab-btn.active {
@@ -1093,11 +1082,6 @@
                 margin-left: -18px;
                 padding-right: 18px;
                 padding-left: 18px;
-                scroll-padding: 18px;
-            }
-
-            .tab-btn {
-                min-width: clamp(78px, 23vw, 106px);
             }
 
             .hero {
@@ -1175,7 +1159,7 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-title-row">
-                    <h1 class="sidebar-title">L2 Lesson Guide</h1>
+                    <h1 class="sidebar-title">L3 Lesson Guide</h1>
                     <div class="title-actions">
                         <a class="home-link" href="lesson_guide.html" title="返回首页" aria-label="返回首页">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1196,7 +1180,7 @@
         <div class="content-shell">
             <header class="mobile-header">
                 <button class="menu-toggle" id="menu-toggle" aria-label="Open lesson menu">☰</button>
-                <div class="mobile-title" id="mobile-title">L2 Lesson Guide</div>
+                <div class="mobile-title" id="mobile-title">L3 Lesson Guide</div>
                 <a class="home-link" href="lesson_guide.html" title="返回首页" aria-label="返回首页">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="m3 10.5 9-7 9 7"></path>
@@ -1210,19 +1194,13 @@
         </div>
     </div>
 
+    <script src="lesson_data_l3.js"></script>
+    <script src="lesson_translations_l3_en.js"></script>
     <script>
-        (function loadVersionedBaseScripts() {
-            const version = new URLSearchParams(window.location.search).get("v");
-            const suffix = version ? `?v=${encodeURIComponent(version)}` : "";
-            document.write(`<script src="lesson_data_l2.js${suffix}"><\/script>`);
-            document.write(`<script src="lesson_translations_l2_en.js${suffix}"><\/script>`);
-        })();
-    </script>
-    <script>
-        const lessons = lessonGuideL2.lessons;
-        const lessonTranslationPacks = window.lessonGuideL2Translations || {};
+        const lessons = lessonGuideL3.lessons;
+        const lessonTranslationPacks = window.lessonGuideL3Translations || {};
         const lessonTranslationChunkPaths = {
-            en: Object.fromEntries(lessons.filter(lesson => lesson.translationChunk).map(lesson => [lesson.id, lesson.translationChunk]))
+            en: Object.fromEntries(lessons.map(lesson => [lesson.id, `lesson_translations/en/${lesson.id}.js`]))
         };
         const lessonCache = new Map();
         const lessonLoadPromises = new Map();
@@ -1241,14 +1219,13 @@
         const appLocales = ["zh-CN", "en"];
         const messages = {
             "zh-CN": {
-                appTitle: "L2 Lesson Guide",
+                appTitle: "L3 Lesson Guide",
                 sidebarSubtitle: "单词、对话、文化文章中文伴学",
                 searchPlaceholder: "搜索课文、单词或中文...",
                 openLessonMenu: "打开课程菜单",
                 languageSettings: "语言设置",
                 languageLabel: "语言",
                 draft: "草稿",
-                refined: "精修",
                 todo: "待抽取",
                 noResults: "没有匹配的课文",
                 tabsOverview: "总览",
@@ -1293,14 +1270,13 @@
                 loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。"
             },
             en: {
-                appTitle: "L2 Lesson Guide",
+                appTitle: "L3 Lesson Guide",
                 sidebarSubtitle: "Vocabulary, dialogues, and culture notes",
                 searchPlaceholder: "Search lessons, words, or translations...",
                 openLessonMenu: "Open lesson menu",
                 languageSettings: "Language settings",
                 languageLabel: "Language",
                 draft: "Draft",
-                refined: "Refined",
                 todo: "To extract",
                 noResults: "No matching lessons",
                 tabsOverview: "Overview",
@@ -1703,7 +1679,7 @@
         }
 
         function getLessonTranslationChunk(locale, lessonId) {
-            return window.lessonGuideL2TranslationChunks?.[locale]?.[lessonId];
+            return window.lessonGuideL3TranslationChunks?.[locale]?.[lessonId];
         }
 
         function applyLessonTranslationPacks(lesson) {
@@ -1890,48 +1866,14 @@
             "결재를 받다": "결째를 받따",
             "결재를 하다": "결째를 하다",
             "결정하다": "결쩡하다",
-            "갈 수 없어서": "갈 쑤 업써서",
-            "갈 수 없다": "갈 쑤 업따",
             "고객의 실수": "고개긔 실쑤",
             "고부간의 갈등이 있다": "고부가늬 갈뜽이 읻따",
             "공연일시": "공여닐씨",
-            "국제 전화": "국쩨 전화",
             "구입 일자": "구입 일짜",
             "구직 활동": "구직 활똥",
-            "문자": "문짜",
-            "문자를 보내다": "문짜를 보내다",
-            "문자를 받다": "문짜를 받따",
-            "문자를 지우다": "문짜를 지우다",
-            "무슨 일": "무슨 닐",
-            "늦지 않게": "늗찌 안케",
-            "늦지 않게 도착하다": "늗찌 안케 도차카다",
-            "막히니까": "마키니까",
-            "길이 많이 막히니까 좀 기다려 줄래요?": "기리 마니 마키니까 좀 기다려 줄래요",
-            "괜찮지만": "괜찬치만",
-            "녹차도 괜찮지만 세제나 휴지는 어때요?": "녹차도 괜찬치만 세제나 휴지는 어때요",
-            "집들이": "집뜨리",
-            "집들이니까": "집뜨리니까",
-            "가져갈게요": "가져갈께요",
-            "세제나 휴지를 가져갈게요": "세제나 휴지를 가져갈께요",
-            "합격하면": "합껴카면",
-            "시험에 합격하면": "시허메 합껴카면",
-            "시험에 합격하면 3단계를 공부할 거예요.": "시허메 합껴카면 삼단계를 공부할 거예요",
-            "듣기로 했어요": "듣끼로 해써요",
-            "한국어 수업을 듣기로 했어요": "한구거 수어블 듣끼로 해써요",
-            "9월부터 한국어 수업을 듣기로 했어요": "구월부터 한구거 수어블 듣끼로 해써요",
-            "아쉽네요": "아쉼네요",
-            "수업을 계속 들을 거예요": "수어블 계속 드를 거예요",
-            "시간이 맞지 않다": "시가니 맏찌 안타",
-            "맛있는 음식": "마딘는 음식",
-            "맛있는 음식을 먹다": "마딘는 음시글 먹따",
-            "맛있는 음식을 먹을 때 행복해요": "마딘는 음시글 머글 때 행보캐요",
-            "먹을 때": "머글 때",
-            "놓지": "노치",
             "발생하다": "발쌩하다",
             "발생한 고장": "발쌩한 고장",
             "발전 가능성": "발쩐 가능성",
-            "보낼 수 있다": "보낼 쑤 읻따",
-            "보낼 수 있어요": "보낼 쑤 이써요",
             "방 두 개인 월세 빌라": "방 두 개인 월쎄 빌라",
             "사고가 발생하다": "사고가 발쌩하다",
             "솔직하다": "솔찌카다",
@@ -1943,8 +1885,6 @@
             "실제 모임": "실쩨 모임",
             "열대야": "열때야",
             "열쇠": "열쐬",
-            "어떻게": "어떠케",
-            "어떻게 오셨어요?": "어떠케 오셔써요",
             "우울증": "우울쯩",
             "월세": "월쎄",
             "의견을 솔직하게 말하다": "의겨늘 솔찌카게 말하다",
@@ -1957,12 +1897,6 @@
             "일주일에 서너 번": "일쭈이레 서너 번",
             "일정 기간": "일쩡 기간",
             "작업 일지": "자겁 일찌",
-            "전화번호": "전화번호",
-            "즐겁겠네요": "즐겁껜네요",
-            "좋겠네요": "조켄네요",
-            "좋지요": "조치요",
-            "통화할 수 있다": "통화할 쑤 읻따",
-            "통화할 수 있어요": "통화할 쑤 이써요",
             "출장 서비스": "출짱 서비스",
             "출장비": "출짱비",
             "취미 활동": "취미 활똥",
@@ -2343,7 +2277,7 @@
                 lessonLoadPromises.set(meta.id, (async () => {
                     await loadScript(meta.chunk);
                     await loadLessonTranslation(translationLocale, meta.id);
-                    const chunk = window.lessonGuideL2LessonChunks?.[meta.id];
+                    const chunk = window.lessonGuideL3LessonChunks?.[meta.id];
                     if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
 
                     const lesson = applyLessonTranslationPacks(normalizeLesson({
@@ -2366,9 +2300,7 @@
         }
 
         function statusLabel(status) {
-            if (status === "draft") return t("draft");
-            if (status === "refined") return t("refined");
-            return t("todo");
+            return status === "draft" ? t("draft") : t("todo");
         }
 
         function languageIcon() {
@@ -2475,7 +2407,7 @@
 
             lessonList.innerHTML = filtered.map(lesson => `
                 <button class="lesson-item ${lesson.id === activeLessonId ? "active" : ""} ${lesson.status === "todo" ? "todo" : ""}" data-lesson-id="${escapeHtml(lesson.id)}">
-                    <span class="lesson-number">L2-${String(lesson.number).padStart(2, "0")}</span>
+                    <span class="lesson-number">L3-${String(lesson.number).padStart(2, "0")}</span>
                     <span class="lesson-name">
                         <span class="lesson-ko">${escapeHtml(lesson.titleKo)}</span>
                         <span class="lesson-zh">${escapeHtml(lessonTitleTranslation(lesson))}</span>
@@ -2490,7 +2422,7 @@
                 <section class="hero">
                     <div>
                         <div class="eyebrow">
-                            <span class="level-badge">KIIP L2-${String(lesson.number).padStart(2, "0")}</span>
+                            <span class="level-badge">KIIP L3-${String(lesson.number).padStart(2, "0")}</span>
                             ${lesson.pages ? `<span class="page-badge">p.${escapeHtml(lesson.pages)}</span>` : ""}
                             <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
                         </div>
@@ -2810,22 +2742,10 @@
             }
         }
 
-        function scrollActiveTabIntoView() {
-            const tabsElement = getTabsElement();
-            const activeButton = tabsElement?.querySelector(".tab-btn.active");
-            if (!tabsElement || !activeButton) return;
-            const targetLeft = activeButton.offsetLeft - ((tabsElement.clientWidth - activeButton.offsetWidth) / 2);
-            tabsElement.scrollTo({
-                left: Math.max(0, targetLeft),
-                behavior: "smooth"
-            });
-        }
-
         function renderLoadedLesson(lesson, scrollTarget) {
-            mobileTitle.textContent = `L2-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
+            mobileTitle.textContent = `L3-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
             mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
             scrollMainContent(scrollTarget);
-            window.requestAnimationFrame(scrollActiveTabIntoView);
         }
 
         async function renderMain(options = {}) {
@@ -2841,7 +2761,7 @@
                 return;
             }
 
-            mobileTitle.textContent = `L2-${String(lessonMeta.number).padStart(2, "0")} ${lessonMeta.titleKo}`;
+            mobileTitle.textContent = `L3-${String(lessonMeta.number).padStart(2, "0")} ${lessonMeta.titleKo}`;
             mainContent.innerHTML = renderHero(lessonMeta) + renderLoading(lessonMeta);
             scrollMainContent(scrollTarget);
 
@@ -2920,9 +2840,9 @@
 
             const target = event.target instanceof Element ? event.target : event.target.parentElement;
             if (!target) return false;
-            if (target.closest(".tabs")) return false;
+            const startedOnTabs = Boolean(target.closest(".tabs"));
             const interactive = target.closest("a, button, input, textarea, select, summary");
-            return !interactive;
+            return startedOnTabs || !interactive;
         }
 
         mainContent.addEventListener("touchstart", event => {
