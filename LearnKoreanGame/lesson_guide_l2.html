@@ -2842,9 +2842,9 @@
 
             const target = event.target instanceof Element ? event.target : event.target.parentElement;
             if (!target) return false;
-            const startedOnTabs = Boolean(target.closest(".tabs"));
+            if (target.closest(".tabs")) return false;
             const interactive = target.closest("a, button, input, textarea, select, summary");
-            return startedOnTabs || !interactive;
+            return !interactive;
         }
 
         mainContent.addEventListener("touchstart", event => {
