@@ -934,6 +934,7 @@ summary {
     color: var(--soft);
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.5;
+    white-space: pre-line;
 }
 
 .role-task-grid {

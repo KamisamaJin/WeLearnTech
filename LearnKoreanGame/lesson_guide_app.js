@@ -498,37 +498,54 @@ function dialogueRolePlays(dialogue) {
     }
 
     if (dialogue.drills?.length) {
+        const firstAnswer = dialogue.drills.map(drill => drill.answerKo).filter(Boolean)[0] || "";
         return [{
-            title: "场景练习",
-            promptZh: "参考下面的替换练习，用本课表达完成一段回答。",
-            answerKo: dialogue.drills.map(drill => drill.answerKo).filter(Boolean).join(" / "),
+            title: "应用练习",
+            promptZh: "先读原对话，再选一个提示换成自己的情况说出来。",
+            answerKo: firstAnswer,
+            generatedFrom: "drills",
             translations: {
                 en: {
-                    title: "Scene Practice",
-                    prompt: "Use the substitution practice below to complete a response with this lesson's expression."
+                    title: "Application Practice",
+                    prompt: "Read the dialogue first, then choose one cue and say it with your own situation."
                 }
             }
         }];
     }
 
-    const dialogueLines = (dialogue.lines || [])
-        .map(line => line.ko)
-        .filter(Boolean);
+    const dialogueLines = compactDialogueLines(dialogue);
     if (dialogueLines.length) {
+        const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker).filter(Boolean)));
+        const isReadingStyle = speakers.length <= 1 || speakers.some(speaker => ["본문", "질문", "답", "제목", "안내", "표"].includes(speaker));
+        const promptZh = isReadingStyle
+            ? "把这段内容用 2-3 句韩语复述，先说主题，再说关键信息。"
+            : `按 ${speakers.slice(0, 2).join(" / ")} 的角色重说，再把人物或场景换成自己的情况。`;
+        const promptEn = isReadingStyle
+            ? "Retell this content in 2-3 Korean sentences: topic first, then key details."
+            : `Practice the roles ${speakers.slice(0, 2).join(" / ")}, then replace the people or situation.`;
         return [{
-            title: "对话复述",
-            promptZh: "用本课表达复述这段对话，也可以替换人物或场景。",
-            answerKo: dialogueLines.join(" "),
+            title: isReadingStyle ? "内容复述" : "角色复述",
+            promptZh,
+            answerKo: dialogueLines.join("\n"),
+            generatedFrom: "dialogue-lines",
             translations: {
                 en: {
-                    title: "Dialogue Retelling",
-                    prompt: "Retell this dialogue with the lesson expression, or replace the people or situation."
+                    title: isReadingStyle ? "Content Retelling" : "Role Retelling",
+                    prompt: promptEn
                 }
             }
         }];
     }
 
     return [];
+}
+
+function compactDialogueLines(dialogue, limit = 4) {
+    return (dialogue.lines || [])
+        .filter(line => line.ko)
+        .slice(0, limit)
+        .map(line => line.speaker ? `${line.speaker}: ${line.ko}` : line.ko)
+        .filter(Boolean);
 }
 
 function dialogueDrills(dialogue) {
@@ -552,6 +569,18 @@ function dialogueDrills(dialogue) {
 function dialogueSideDrills(dialogue, rolePlays) {
     const drills = dialogueDrills(dialogue);
     if (drills.length) return drills;
+
+    const generatedLineDrills = compactDialogueLines(dialogue, 2).map(line => ({
+        pattern: dialogue.focus || t("patternLabel"),
+        promptZh: "替换人物或场景后重说这句。",
+        answerKo: line.replace(/^[^:]+:\s*/, ""),
+        translations: {
+            en: {
+                prompt: "Replace the person or situation and say this sentence again."
+            }
+        }
+    }));
+    if (generatedLineDrills.length) return generatedLineDrills;
 
     const roleAnswers = (rolePlays || [])
         .map(task => task.answerKo)
@@ -1496,10 +1525,25 @@ function normalizeLesson(lesson) {
     };
 }
 
+function isLessonDialogue(dialogue) {
+    const sourceText = [
+        dialogue?.source,
+        dialogue?.focus,
+        dialogue?.title
+    ].filter(Boolean).join(" ");
+
+    return !/(읽기|쓰기|발음)/.test(sourceText);
+}
+
+function lessonDialogues(lesson) {
+    return (lesson.dialogues || []).filter(isLessonDialogue);
+}
+
 function getLessonStats(lesson) {
+    const dialogueCount = lessonDialogues(lesson).length;
     return {
         vocabulary: lesson.vocabulary?.length || lesson.stats?.vocabulary || 0,
-        dialogues: lesson.dialogues?.length || lesson.stats?.dialogues || 0,
+        dialogues: Array.isArray(lesson.dialogues) ? dialogueCount : (lesson.stats?.dialogues || 0),
         culture: lesson.culture ? 1 : lesson.stats?.culture || 0,
         practice: lesson.practice?.length || lesson.stats?.practice || 0
     };
@@ -1798,16 +1842,17 @@ function renderVocabulary(lesson) {
 }
 
 function renderDialogue(lesson) {
-    if (!lesson.dialogues?.length) return renderTodo(t("dialoguePendingTitle"), t("dialoguePendingBody"));
+    const dialogues = lessonDialogues(lesson);
+    if (!dialogues.length) return renderTodo(t("dialoguePendingTitle"), t("dialoguePendingBody"));
 
-    const lineCount = lesson.dialogues.reduce((total, dialogue) => total + (dialogue.lines?.length || 0), 0);
+    const lineCount = dialogues.reduce((total, dialogue) => total + (dialogue.lines?.length || 0), 0);
 
     return `
         <div class="toolbar">
-            <div class="muted">${escapeHtml(tf("dialogueToolbar", { dialogues: lesson.dialogues.length, lines: lineCount }))}</div>
+            <div class="muted">${escapeHtml(tf("dialogueToolbar", { dialogues: dialogues.length, lines: lineCount }))}</div>
             <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
         </div>
-        ${lesson.dialogues.map(dialogue => {
+        ${dialogues.map(dialogue => {
             const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
             const scene = dialogueScene(dialogue);
             const learningPoints = dialogueLearningPoints(dialogue);
