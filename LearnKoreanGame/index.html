@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=word-link-scheduler-2">
 </head>
 <body>
     <div class="app-container">
@@ -25,26 +25,41 @@
                 </div>
                 <div class="header-right">
                     <select id="level-selector" class="level-dropdown">
-                        <option value="L0">KIIP Level 0 (기초)</option>
                         <option value="L1" selected>KIIP Level 1 (초급1)</option>
                         <option value="L2">KIIP Level 2 (초급2)</option>
                         <option value="L3">KIIP Level 3 (중급1)</option>
                         <option value="L4">KIIP Level 4 (중급2)</option>
-                        <option value="L5">KIIP Level 5 (한국사회)</option>
                     </select>
                     <div class="score-container">
                         <span class="score-label" id="ui-global-score">Total EXP</span>
                         <span class="score-value" id="global-score">0</span>
                     </div>
-                    <button id="wiki-btn" class="btn-icon" title="Grammar Wiki" onclick="window.open('grammar_wiki.html', '_blank')">
-                        📚
+                    <button id="wiki-btn" class="btn-icon" title="Grammar Wiki" aria-label="Open Grammar Wiki" onclick="window.open('grammar_wiki.html', '_blank')">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="control-icon">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
+                            <path d="M8 7h8"></path>
+                            <path d="M8 11h6"></path>
+                        </svg>
                     </button>
-                    <button id="lesson-guide-btn" class="btn-icon" title="Lesson Guide" onclick="window.open('lesson_guide.html', '_blank')">
-                        课
+                    <button id="lesson-guide-btn" class="btn-icon" title="Lesson Guide" aria-label="Open Lesson Guide" onclick="window.open('lesson_guide.html', '_blank')">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="control-icon">
+                            <path d="M4 5h16"></path>
+                            <path d="M4 9h16"></path>
+                            <path d="M7 13h10"></path>
+                            <path d="M8 17h8"></path>
+                            <path d="M6 5v14"></path>
+                            <path d="M18 5v14"></path>
+                        </svg>
                     </button>
-                    <button id="lang-toggle" class="btn-icon" title="Toggle Language">
+                    <button id="lang-toggle" class="btn-icon language-control" title="Toggle Language" aria-label="Toggle Language">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M2 12h20"></path>
+                            <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+                            <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+                        </svg>
                         <span id="current-lang-text">EN</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></svg>
                     </button>
                 </div>
             </header>
@@ -64,6 +79,11 @@
                             <div class="card-icon">🎧</div>
                             <h3 id="ui-mode-sonic">Sonic Catch</h3>
                             <p id="ui-desc-sonic">Listen and identify</p>
+                        </div>
+                        <div class="menu-card" data-mode="wordLink">
+                            <div class="card-icon">🔗</div>
+                            <h3 id="ui-mode-link">Word Link</h3>
+                            <p id="ui-desc-link">Connect Korean to meaning</p>
                         </div>
                         <div class="menu-card" data-mode="sentenceBuilder">
                             <div class="card-icon">🧩</div>
@@ -146,6 +166,6 @@
     </div>
     
     <script src="data.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=word-link-scheduler-2"></script>
 </body>
 </html>

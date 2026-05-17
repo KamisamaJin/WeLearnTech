@@ -34,6 +34,10 @@ const localeNames = {
     "zh-CN": "中文",
     en: "English"
 };
+const localeShortNames = {
+    "zh-CN": "中文",
+    en: "EN"
+};
 const appLocales = ["zh-CN", "en"];
 const messages = {
     "zh-CN": {
@@ -1652,6 +1656,7 @@ function renderLanguageSwitchers() {
         switcher.innerHTML = `
             <button class="language-toggle" type="button" data-language-toggle aria-label="${escapeHtml(t("languageSettings"))}" title="${escapeHtml(t("languageSettings"))}" aria-expanded="${isOpen ? "true" : "false"}">
                 ${languageIcon()}
+                <span class="language-toggle-text">${escapeHtml(localeShortNames[translationLocale] || translationLocale)}</span>
             </button>
             <div class="language-menu" data-language-menu ${isOpen ? "" : "hidden"}>
                 <div class="language-section">

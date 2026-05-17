@@ -106,9 +106,13 @@
         }
 
         .locale-toggle {
-            min-width: 54px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            min-width: 76px;
             height: 42px;
-            padding: 0 12px;
+            padding: 0 13px;
             border: 1px solid var(--line);
             border-radius: 8px;
             color: var(--soft);
@@ -117,6 +121,22 @@
             font-weight: 900;
             cursor: pointer;
             transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .locale-toggle svg {
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            opacity: 0.72;
+        }
+
+        .locale-toggle-text {
+            min-width: 30px;
+            text-align: center;
         }
 
         .locale-toggle:hover {
@@ -315,7 +335,15 @@
                 </span>
             </a>
             <div class="top-actions">
-                <button class="locale-toggle" id="locale-toggle" type="button">EN</button>
+                <button class="locale-toggle" id="locale-toggle" type="button">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M2 12h20"></path>
+                        <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+                        <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+                    </svg>
+                    <span class="locale-toggle-text" id="locale-toggle-text">中文</span>
+                </button>
                 <a class="icon-link" href="grammar_wiki.html" data-i18n-title="grammarWiki" data-i18n-aria="grammarWiki">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
@@ -386,7 +414,7 @@
                 brandSubtitle: "Level 1-4 单词、对话、文化和练习入口",
                 grammarWiki: "Grammar Wiki",
                 languageToggle: "切换到英文",
-                languageToggleText: "EN",
+                languageToggleText: "中文",
                 headline: "选择学习级别",
                 summaryCopy: "按 Level 进入课程导学，查看每课的单词、对话、文化文章、练习和发音。",
                 levelGridAria: "Level 入口",
@@ -407,7 +435,7 @@
                 brandSubtitle: "Level 1-4 vocabulary, dialogues, culture, and practice",
                 grammarWiki: "Grammar Wiki",
                 languageToggle: "Switch to Chinese",
-                languageToggleText: "中文",
+                languageToggleText: "EN",
                 headline: "Choose A Level",
                 summaryCopy: "Open a level to study each lesson's vocabulary, dialogues, culture texts, practice, and pronunciation.",
                 levelGridAria: "Level entries",
@@ -446,8 +474,9 @@
             });
 
             const toggle = document.getElementById("locale-toggle");
+            const toggleText = document.getElementById("locale-toggle-text");
             if (toggle) {
-                toggle.textContent = dictionary.languageToggleText;
+                if (toggleText) toggleText.textContent = dictionary.languageToggleText;
                 toggle.setAttribute("aria-label", dictionary.languageToggle);
                 toggle.setAttribute("title", dictionary.languageToggle);
             }

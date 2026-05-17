@@ -20,12 +20,14 @@ function loadDataByLevel() {
     activeSentencePool = shuffleArray(sentenceDB);
 }
 
+const localeStorageKey = 'lessonGuideLocale';
 const uiStrings = {
     'EN': {
         scoreLabel: 'Total EXP', startBtn: 'Start Game', restartBtn: 'Play Again', menuBtn: 'Back to Menu',
         modes: {
             wordPop: { title: 'Word Pop', desc: 'Match falling words before they hit the bottom.' },
             sonicCatch: { title: 'Sonic Catch', desc: 'Listen to the pronunciation and select the correct meaning.' },
+            wordLink: { title: 'Word Link', desc: 'Connect five Korean words to their meanings.' },
             sentenceBuilder: { title: 'Sentence Builder', desc: 'Rearrange the blocks to form the correct Korean sentence.' },
             survival: { title: 'Boss Survival', desc: 'Endless mode! Don\'t let the words drop. You have 3 lives.' }
         }
@@ -35,13 +37,26 @@ const uiStrings = {
         modes: {
             wordPop: { title: '词汇消消乐', desc: '在单词掉落到底部前，选出它的正确意思。' },
             sonicCatch: { title: '听音辨位', desc: '聆听韩语发音，选出正确的翻译。' },
+            wordLink: { title: '连线消消乐', desc: '选择左边韩语词，再选择右边中文意思，正确就消除。' },
             sentenceBuilder: { title: '句子接龙', desc: '将打乱的韩语词块拖拽排序，还原正确句型。' },
             survival: { title: '终极生存战', desc: '无尽挑战！漏掉单词会扣血，你有 3 条命。' }
         }
     }
 };
 
-let currentLang = 'EN';
+function localeToGameLang(locale) {
+    return locale === 'en' ? 'EN' : 'ZH';
+}
+
+function gameLangToLocale(lang) {
+    return lang === 'EN' ? 'en' : 'zh-CN';
+}
+
+function languageLabel(lang) {
+    return lang === 'EN' ? 'EN' : '中文';
+}
+
+let currentLang = localeToGameLang(localStorage.getItem(localeStorageKey));
 let globalScore = 0;
 let currentMode = null; // 'wordPop', 'sonicCatch', 'sentenceBuilder', 'survival'
 let isPlaying = false;
@@ -69,6 +84,7 @@ const overlayStart = document.getElementById('overlay-start');
 const overlayGameover = document.getElementById('overlay-gameover');
 
 // Game UI Elements
+const gameInfoBar = document.querySelector('.game-info-bar');
 const playArea = document.getElementById('play-area');
 const optionsGrid = document.getElementById('options-grid');
 const playerLifeEl = document.getElementById('player-life');
@@ -87,6 +103,9 @@ document.getElementById('btn-restart').addEventListener('click', startGame);
 // Init Language Toggle
 langToggleBtn.addEventListener('click', () => {
     currentLang = currentLang === 'EN' ? 'ZH' : 'EN';
+    localStorage.setItem(localeStorageKey, gameLangToLocale(currentLang));
+    localStorage.setItem('lessonGuideUiLocale', gameLangToLocale(currentLang));
+    localStorage.setItem('lessonGuideTranslationLocale', gameLangToLocale(currentLang));
     updateUILanguage();
 });
 
@@ -99,7 +118,10 @@ document.querySelectorAll('.menu-card').forEach(card => {
 });
 
 function updateUILanguage() {
-    currentLangText.textContent = currentLang;
+    document.documentElement.lang = currentLang === 'EN' ? 'en' : 'zh-CN';
+    currentLangText.textContent = languageLabel(currentLang);
+    langToggleBtn.setAttribute('aria-label', currentLang === 'EN' ? 'Switch to Chinese' : '切换到英文');
+    langToggleBtn.setAttribute('title', currentLang === 'EN' ? 'Switch to Chinese' : '切换到英文');
     const s = uiStrings[currentLang];
     uiGlobalScoreEl.textContent = s.scoreLabel;
     
@@ -113,6 +135,8 @@ function updateUILanguage() {
     document.getElementById('ui-desc-word').textContent = s.modes.wordPop.desc;
     document.getElementById('ui-mode-sonic').textContent = s.modes.sonicCatch.title;
     document.getElementById('ui-desc-sonic').textContent = s.modes.sonicCatch.desc;
+    document.getElementById('ui-mode-link').textContent = s.modes.wordLink.title;
+    document.getElementById('ui-desc-link').textContent = s.modes.wordLink.desc;
     document.getElementById('ui-mode-sentence').textContent = s.modes.sentenceBuilder.title;
     document.getElementById('ui-desc-sentence').textContent = s.modes.sentenceBuilder.desc;
     document.getElementById('ui-mode-survival').textContent = s.modes.survival.title;
@@ -124,6 +148,14 @@ function updateUILanguage() {
         currentModeBadge.textContent = currentLang === 'EN' ? 'Main Menu' : '游戏大厅';
     }
 }
+
+window.addEventListener('storage', event => {
+    if (event.key !== localeStorageKey) return;
+    const nextLang = localeToGameLang(event.newValue);
+    if (nextLang === currentLang) return;
+    currentLang = nextLang;
+    updateUILanguage();
+});
 
 function showMenu() {
     isPlaying = false;
@@ -139,7 +171,7 @@ function showStartScreen() {
     document.getElementById('start-desc').textContent = s.desc;
     
     // Set icon based on mode
-    const iconMap = { wordPop: '🎯', sonicCatch: '🎧', sentenceBuilder: '🧩', survival: '🐉' };
+    const iconMap = { wordPop: '🎯', sonicCatch: '🎧', wordLink: '🔗', sentenceBuilder: '🧩', survival: '🐉' };
     document.getElementById('start-icon').textContent = iconMap[currentMode];
     
     currentModeBadge.textContent = s.title;
@@ -163,6 +195,7 @@ function startGame() {
     hideAllScreens();
     
     loadDataByLevel(); // Load data based on selected level before starting
+    if (currentMode === 'wordLink') resetWordLinkScheduler();
     
     if (currentMode === 'sentenceBuilder') {
         screenSentence.classList.add('active');
@@ -171,6 +204,9 @@ function startGame() {
         screenGameplay.classList.add('active');
         playArea.innerHTML = '';
         optionsGrid.innerHTML = '';
+        playArea.classList.remove('word-link-area');
+        optionsGrid.classList.remove('hidden');
+        gameInfoBar.classList.remove('hidden');
         
         if (currentMode === 'survival') {
             playerLifeEl.classList.remove('hidden');
@@ -181,6 +217,8 @@ function startGame() {
 
         if (currentMode === 'sonicCatch') {
             setupSonicCatch();
+        } else if (currentMode === 'wordLink') {
+            setupWordLink();
         } else {
             // Word Pop or Survival
             spawnFallingWord();
@@ -374,6 +412,298 @@ function handleVocabClick(selected, correct, btn) {
             gameOver();
         }
     }
+}
+
+// ---------------------------------------------------------
+// MODE 5: Word Link
+// ---------------------------------------------------------
+const WORD_LINK_GROUP_SIZE = 5;
+const WORD_LINK_RECENT_MAX = 20;
+const WORD_LINK_REVIEW_DELAY = 2;
+const WORD_LINK_REVIEW_PER_GROUP = 2;
+let wordLinkSelected = null;
+let wordLinkRemaining = 0;
+let wordLinkMatched = 0;
+let wordLinkGroupIndex = 0;
+let wordLinkCurrentGroupSize = WORD_LINK_GROUP_SIZE;
+let wordLinkQueue = [];
+let wordLinkRecentKeys = [];
+let wordLinkReviewQueue = [];
+
+function resetWordLinkScheduler() {
+    wordLinkSelected = null;
+    wordLinkRemaining = 0;
+    wordLinkMatched = 0;
+    wordLinkGroupIndex = 0;
+    wordLinkCurrentGroupSize = Math.min(WORD_LINK_GROUP_SIZE, vocabDB.length);
+    wordLinkQueue = shuffleArray(vocabDB);
+    wordLinkRecentKeys = [];
+    wordLinkReviewQueue = [];
+}
+
+function getWordLinkKey(item) {
+    return item.ko;
+}
+
+function getWordLinkItemByKey(key) {
+    return vocabDB.find(item => getWordLinkKey(item) === key);
+}
+
+function refillWordLinkQueue(excludedKeys = new Set()) {
+    const freshItems = vocabDB.filter(item => !excludedKeys.has(getWordLinkKey(item)));
+    wordLinkQueue = shuffleArray(freshItems.length > 0 ? freshItems : vocabDB);
+}
+
+function pullWordLinkItems(count, excludedKeys, avoidRecent = true) {
+    const picked = [];
+    const recentKeys = avoidRecent ? new Set(wordLinkRecentKeys) : new Set();
+
+    while (picked.length < count && vocabDB.length > 0) {
+        if (wordLinkQueue.length === 0) {
+            refillWordLinkQueue(new Set([...excludedKeys, ...recentKeys]));
+        }
+
+        const blockedKeys = new Set([...excludedKeys, ...recentKeys]);
+        let index = wordLinkQueue.findIndex(item => !blockedKeys.has(getWordLinkKey(item)));
+
+        if (index === -1) {
+            if (avoidRecent) break;
+
+            refillWordLinkQueue(excludedKeys);
+            index = wordLinkQueue.findIndex(item => !excludedKeys.has(getWordLinkKey(item)));
+            if (index === -1) break;
+        }
+
+        const [item] = wordLinkQueue.splice(index, 1);
+        const key = getWordLinkKey(item);
+        picked.push(item);
+        excludedKeys.add(key);
+    }
+
+    return picked;
+}
+
+function rememberWordLinkGroup(group) {
+    const recentLimit = Math.min(WORD_LINK_RECENT_MAX, Math.max(0, vocabDB.length - wordLinkCurrentGroupSize));
+
+    group.forEach(item => {
+        const key = getWordLinkKey(item);
+        wordLinkRecentKeys = wordLinkRecentKeys.filter(recentKey => recentKey !== key);
+        wordLinkRecentKeys.push(key);
+    });
+
+    if (wordLinkRecentKeys.length > recentLimit) {
+        wordLinkRecentKeys = wordLinkRecentKeys.slice(-recentLimit);
+    }
+}
+
+function queueWordLinkReview(key) {
+    const item = getWordLinkItemByKey(key);
+    if (!item) return;
+
+    wordLinkReviewQueue = wordLinkReviewQueue.filter(entry => getWordLinkKey(entry.item) !== key);
+    wordLinkReviewQueue.push({
+        item,
+        availableAtGroup: wordLinkGroupIndex + WORD_LINK_REVIEW_DELAY
+    });
+}
+
+function takeWordLinkGroup() {
+    wordLinkCurrentGroupSize = Math.min(WORD_LINK_GROUP_SIZE, vocabDB.length);
+    if (wordLinkCurrentGroupSize === 0) {
+        return [];
+    }
+
+    const group = [];
+    const selectedKeys = new Set();
+    const dueReviews = shuffleArray(
+        wordLinkReviewQueue.filter(entry => entry.availableAtGroup <= wordLinkGroupIndex)
+    );
+
+    dueReviews.forEach(entry => {
+        if (group.length >= Math.min(WORD_LINK_REVIEW_PER_GROUP, wordLinkCurrentGroupSize)) return;
+
+        const key = getWordLinkKey(entry.item);
+        if (selectedKeys.has(key)) return;
+
+        group.push(entry.item);
+        selectedKeys.add(key);
+    });
+
+    if (selectedKeys.size > 0) {
+        wordLinkReviewQueue = wordLinkReviewQueue.filter(entry => !selectedKeys.has(getWordLinkKey(entry.item)));
+        wordLinkQueue = wordLinkQueue.filter(item => !selectedKeys.has(getWordLinkKey(item)));
+    }
+
+    group.push(...pullWordLinkItems(wordLinkCurrentGroupSize - group.length, selectedKeys, true));
+
+    if (group.length < wordLinkCurrentGroupSize) {
+        group.push(...pullWordLinkItems(wordLinkCurrentGroupSize - group.length, selectedKeys, false));
+    }
+
+    rememberWordLinkGroup(group);
+    return group;
+}
+
+function setupWordLink() {
+    playArea.innerHTML = '';
+    optionsGrid.innerHTML = '';
+    optionsGrid.classList.add('hidden');
+    gameInfoBar.classList.add('hidden');
+    playArea.classList.add('word-link-area');
+
+    wordLinkGroupIndex++;
+    const group = takeWordLinkGroup();
+    wordLinkRemaining = group.length;
+    wordLinkMatched = 0;
+    wordLinkSelected = null;
+
+    const langKey = currentLang.toLowerCase();
+    const board = document.createElement('div');
+    board.className = 'word-link-board';
+    board.innerHTML = `
+        <div class="word-link-hud">
+            <div class="word-link-round">
+                <span class="word-link-label">${currentLang === 'EN' ? 'Group' : '第'} ${wordLinkGroupIndex}${currentLang === 'EN' ? '' : ' 组'}</span>
+                <strong data-word-link-progress>0/${group.length}</strong>
+            </div>
+            <div class="word-link-status" aria-live="polite">${currentLang === 'EN' ? 'Select a Korean word, then its meaning.' : '先选韩语词，再选对应意思'}</div>
+            <div class="word-link-round-score">+<span data-word-link-score>0</span></div>
+        </div>
+        <div class="word-link-stage">
+            <svg class="word-link-lines" aria-hidden="true"></svg>
+            <section class="word-link-panel">
+                <div class="word-link-panel-label">한국어</div>
+                <div class="word-link-column" data-side="left"></div>
+            </section>
+            <section class="word-link-panel">
+                <div class="word-link-panel-label">${currentLang === 'EN' ? 'Meaning' : '意思'}</div>
+                <div class="word-link-column" data-side="right"></div>
+            </section>
+        </div>
+    `;
+
+    const leftColumn = board.querySelector('[data-side="left"]');
+    const rightColumn = board.querySelector('[data-side="right"]');
+    const leftWords = shuffleArray(group);
+    const rightWords = shuffleArray(group);
+
+    leftWords.forEach(item => {
+        leftColumn.appendChild(createWordLinkCard(item, 'left', item.ko));
+    });
+
+    rightWords.forEach(item => {
+        rightColumn.appendChild(createWordLinkCard(item, 'right', item[langKey]));
+    });
+
+    playArea.appendChild(board);
+}
+
+function createWordLinkCard(item, side, text) {
+    const button = document.createElement('button');
+    button.className = `word-link-card ${side === 'left' ? 'ko' : 'meaning'}`;
+    button.type = 'button';
+    button.textContent = text;
+    button.dataset.ko = item.ko;
+    button.dataset.side = side;
+    button.onclick = () => handleWordLinkSelect(button);
+    return button;
+}
+
+function handleWordLinkSelect(button) {
+    if (!isPlaying || button.classList.contains('matched')) return;
+
+    const side = button.dataset.side;
+    const board = button.closest('.word-link-board');
+
+    if (!wordLinkSelected || wordLinkSelected.dataset.side === side) {
+        board.querySelectorAll(`.word-link-card[data-side="${side}"]`).forEach(card => card.classList.remove('selected'));
+        button.classList.add('selected');
+        wordLinkSelected = button;
+        return;
+    }
+
+    const left = side === 'left' ? button : wordLinkSelected;
+    const right = side === 'right' ? button : wordLinkSelected;
+
+    if (left.dataset.ko === right.dataset.ko) {
+        handleWordLinkCorrect(board, left, right);
+    } else {
+        handleWordLinkWrong(board, left, right);
+    }
+}
+
+function handleWordLinkCorrect(board, left, right) {
+    drawWordLinkLine(board, left, right);
+    [left, right].forEach(card => {
+        card.classList.remove('selected', 'wrong');
+        card.classList.add('matched');
+        card.disabled = true;
+    });
+    score += 1;
+    globalScore += 1;
+    globalScoreEl.textContent = globalScore;
+    showFloatingText(right, '+1');
+    wordLinkSelected = null;
+    wordLinkRemaining--;
+    wordLinkMatched++;
+    updateWordLinkStatus(board, currentLang === 'EN' ? 'Matched!' : '匹配正确');
+    updateWordLinkHud(board);
+
+    setTimeout(() => {
+        left.classList.add('removed');
+        right.classList.add('removed');
+    }, 140);
+
+    setTimeout(() => {
+        left.remove();
+        right.remove();
+    }, 300);
+
+    if (wordLinkRemaining <= 0) {
+        board.classList.add('complete');
+        updateWordLinkStatus(board, currentLang === 'EN' ? 'Nice. Loading next group...' : '很好，准备下一组...');
+        setTimeout(setupWordLink, 950);
+    }
+}
+
+function handleWordLinkWrong(board, left, right) {
+    [left, right].forEach(card => card.classList.add('wrong'));
+    queueWordLinkReview(left.dataset.ko);
+    updateWordLinkStatus(board, currentLang === 'EN' ? 'Try another meaning.' : '不对，换一个解释试试');
+
+    setTimeout(() => {
+        [left, right].forEach(card => card.classList.remove('selected', 'wrong'));
+        wordLinkSelected = null;
+    }, 520);
+}
+
+function updateWordLinkStatus(board, message) {
+    const status = board.querySelector('.word-link-status');
+    status.textContent = message;
+}
+
+function updateWordLinkHud(board) {
+    const progress = board.querySelector('[data-word-link-progress]');
+    const roundScore = board.querySelector('[data-word-link-score]');
+    if (progress) progress.textContent = `${wordLinkMatched}/${wordLinkCurrentGroupSize}`;
+    if (roundScore) roundScore.textContent = wordLinkMatched;
+}
+
+function drawWordLinkLine(board, left, right) {
+    const stage = board.querySelector('.word-link-stage');
+    const svg = board.querySelector('.word-link-lines');
+    const boardRect = stage.getBoundingClientRect();
+    const leftRect = left.getBoundingClientRect();
+    const rightRect = right.getBoundingClientRect();
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', leftRect.right - boardRect.left);
+    line.setAttribute('y1', leftRect.top + leftRect.height / 2 - boardRect.top);
+    line.setAttribute('x2', rightRect.left - boardRect.left);
+    line.setAttribute('y2', rightRect.top + rightRect.height / 2 - boardRect.top);
+    line.setAttribute('class', 'word-link-line');
+    svg.appendChild(line);
+    setTimeout(() => line.remove(), 420);
 }
 
 // ---------------------------------------------------------

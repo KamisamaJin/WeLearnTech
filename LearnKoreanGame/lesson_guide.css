@@ -57,7 +57,7 @@ button, input {
 
 .sidebar-title-row {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 12px;
 }
@@ -70,10 +70,14 @@ button, input {
 }
 
 .sidebar-title {
+    min-width: 0;
     margin: 0;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     line-height: 1.15;
     color: var(--teal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .home-link {
@@ -258,25 +262,37 @@ button, input {
 }
 
 .language-toggle {
-    display: inline-grid;
-    place-items: center;
-    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 74px;
     height: 40px;
+    padding: 0 11px;
     border: 1px solid var(--line);
     border-radius: 8px;
     color: var(--text);
     background: rgba(244, 239, 231, 0.05);
     cursor: pointer;
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 900;
 }
 
 .language-toggle svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     stroke: currentColor;
     fill: none;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+    opacity: 0.72;
+}
+
+.language-toggle-text {
+    min-width: 30px;
+    text-align: center;
 }
 
 .language-menu {
