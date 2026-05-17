@@ -9,6 +9,21 @@
     }
   });
 
+  const posEn = {
+    "代词": "pronoun",
+    "副词": "adverb",
+    "动词": "verb",
+    "动词短语": "verb phrase",
+    "句型表达": "sentence pattern",
+    "名词": "noun",
+    "名词短语": "noun phrase",
+    "地址表达": "address expression",
+    "形容词": "adjective",
+    "形容词短语": "adjective phrase",
+    "感叹词": "interjection",
+    "语法表达": "grammar expression"
+  };
+
   const vocab = (ko, zh, pos, page, source, exampleKo, exampleZh, enMeaning, enExample, tips = []) => ({
     ko,
     zh,
@@ -21,7 +36,7 @@
     translations: {
       en: {
         meaning: enMeaning,
-        pos,
+        pos: posEn[pos] || pos,
         example: enExample,
         tips: tips.map((tip) => ({
           type: tip[0],

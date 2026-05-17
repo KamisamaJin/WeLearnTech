@@ -193,144 +193,160 @@ window.lessonGuideL2Translations.en = {
     "l2-11": {
       "title": "I Make a Wish While Looking at the Full Moon",
       "goals": [
-        "Talk about holidays and holiday activities.",
-        "Use A-게 to make an adverbial expression.",
-        "Use V-(으)면서 to say two actions happen at the same time."
+        "Describe common family activities and traditional games for holidays such as Seollal and Chuseok.",
+        "Use A-게 to describe the manner or state of an action, such as 재미있게, 짧게, and 따뜻하게.",
+        "Use V-(으)면서 to say the same subject does two actions at the same time.",
+        "Read a culture text about Korean holidays and briefly introduce a hometown holiday in Korean.",
+        "Use holiday expressions naturally, including 보름달을 보면서 소원을 빌다, 차례를 지내다, and 세배를 하다."
       ],
       "grammar": [
         {
-          "meaning": "in a ... way",
-          "guide": "It turns an adjective into an adverb-like expression."
+          "meaning": "in a ... way; ...-ly",
+          "guide": "Attach -게 to an adjective and place it before a verb to describe the manner, state, or degree of the action."
         },
         {
-          "meaning": "while doing ...",
-          "guide": "The same subject does two actions at the same time."
+          "meaning": "while doing ...; doing ... at the same time",
+          "guide": "Use V-(으)면서 when the same subject does two actions at the same time. Use -으면서 after a final consonant and -면서 after a vowel."
         }
       ]
     },
     "l2-12": {
       "title": "I Tend to Make Mistakes Often",
       "goals": [
-        "Talk about mistakes, experiences, and tendencies.",
-        "Use V-(으)ㄴ 적이 있다 to say you have done something before.",
-        "Use A/V-는 편이다 to describe a general tendency."
+        "Describe mistakes, misunderstandings, and feelings from life in Korea.",
+        "Use V-(으)ㄴ 적이 있다 to say you have had a certain experience before.",
+        "Use A/V-는 편이다 to describe habits, personality, or tendencies softly.",
+        "Read an experience about a transit-card balance problem and write your own mistake experience in Korea.",
+        "Understand Korean uses of 우리 in expressions such as 우리 가족, 우리 회사, and 우리 반."
       ],
       "grammar": [
         {
-          "meaning": "have done ... before",
-          "guide": "Use it to talk about a past experience."
+          "meaning": "have done ... before; have had the experience of ...",
+          "guide": "Use V-(으)ㄴ 적이 있다 to talk about a past experience. Use -은 적이 있다 after a final consonant and -ㄴ 적이 있다 after a vowel."
         },
         {
-          "meaning": "tend to be / tend to do ...",
-          "guide": "A softer way to describe a tendency without sounding absolute."
+          "meaning": "tend to be/do ...; rather / on the ... side",
+          "guide": "Use A/V-는 편이다 to describe a general tendency without sounding absolute. Verbs usually take -는 편이다, while adjectives use their noun-modifying form."
         }
       ]
     },
     "l2-13": {
       "title": "I Would Like to Send a Package",
       "goals": [
-        "Use expressions for the post office and bank.",
-        "Use V-(으)려고 하다 to say what you intend to do.",
-        "Use V-아/어야 되다 to say something is necessary."
+        "Explain what to do at the post office when sending letters, packages, parcel deliveries, and EMS.",
+        "Describe bank services such as opening an account, deposits and withdrawals, transfers, currency exchange, cards, and utility payments.",
+        "Use V-(으)려고 하다 to express intentions or plans.",
+        "Use V-아/어야 되다 to explain required steps, procedures, or necessary conditions.",
+        "Read post office service-hour information and understand the basics of Korean road-name addresses."
       ],
       "grammar": [
         {
-          "meaning": "intend to / plan to ...",
-          "guide": "Use it to state what you are preparing or trying to do."
+          "meaning": "intend to ...; plan to ...",
+          "guide": "Use V-(으)려고 하다 when the speaker has an intention or plan. Use -으려고 하다 after a final consonant and -려고 하다 after a vowel."
         },
         {
-          "meaning": "must / have to ...",
-          "guide": "Use it for requirements or necessary conditions."
+          "meaning": "must ...; have to ...",
+          "guide": "Use V-아/어야 되다 to say an action is required or necessary. It is common for procedures, conditions, and rules."
         }
       ]
     },
     "l2-14": {
       "title": "What Should I Do to Apply for a Visa Extension?",
       "goals": [
-        "Use expressions for public offices and application forms.",
-        "Use V-아/어도 되다 to ask or give permission.",
-        "Use V-(으)려면 to explain conditions for doing something."
+        "Describe services handled at district offices, administrative welfare centers, community service centers, public health centers, and Immigration Offices.",
+        "Use V-아/어도 되다 to ask or say that something is allowed.",
+        "Use V-(으)려면 to explain what is needed if someone wants to do something.",
+        "Ask about visa extension, alien registration card reissuance, required documents, and fees at an Immigration Office.",
+        "Read the main fields of an integrated application form and understand Immigration Office reservation rules."
       ],
       "grammar": [
         {
-          "meaning": "may / be allowed to ...",
-          "guide": "Use it to ask about or give permission."
+          "meaning": "may ...; be allowed to ...",
+          "guide": "Use V-아/어도 되다 to ask for or give permission. For a negative answer, use V-(으)면 안 되다."
         },
         {
-          "meaning": "if you want to ...",
-          "guide": "The first clause gives the goal, and the second explains the condition or method."
+          "meaning": "if you want to ...; in order to ...",
+          "guide": "Use V-(으)려면 to state a condition needed to achieve something. Use -으려면 after a final consonant and -려면 after a vowel."
         }
       ]
     },
     "l2-15": {
       "title": "I Am Doing Translation Work at a Trading Company",
       "goals": [
-        "Talk about work, positions, and tasks.",
-        "Use V-고 있다 for an ongoing action.",
-        "Use V-(으)ㄴ to modify a noun with a completed action."
+        "Name common objects, IDs, and equipment used in offices and factories.",
+        "Describe current work or an ongoing state in the workplace.",
+        "Use V-고 있다 to express an action in progress or an ongoing state.",
+        "Use V-(으)ㄴ to modify a noun with a completed past action.",
+        "Read a workplace task email and understand common job-title order in Korean companies."
       ],
       "grammar": [
         {
-          "meaning": "be doing ...",
-          "guide": "Use it for an action in progress or an ongoing state."
+          "meaning": "be doing ...; be in an ongoing state",
+          "guide": "Use V-고 있다 for an action in progress or an ongoing state. With work, residence, or occupation, it often means someone is currently doing or living somewhere."
         },
         {
-          "meaning": "a noun that was/did ...",
-          "guide": "Use it when a past or completed verb modifies a noun."
+          "meaning": "a noun modified by a completed past action",
+          "guide": "Use V-(으)ㄴ before a noun to describe it with a completed action. Use -은 after many final consonants and -ㄴ after a vowel; 오다 becomes 온 and 하다 becomes 한."
         }
       ]
     },
     "l2-16": {
       "title": "You Can Bring Family or Friends to That Event",
       "goals": [
-        "Talk about events, posters, and bulletin boards.",
-        "Use V-(으)ㄹ to modify a noun with a future action.",
-        "Use A/V-거든요 to add a reason the listener may not know."
+        "Read event posters for dates, target participants, fees, things to prepare, locations, and inquiry information.",
+        "Use V-(으)ㄹ to modify a noun with a future action, plan, or intended object.",
+        "Use A/V-거든요 to add a reason or background information in conversation.",
+        "Read bulletin-board notices about resident meetings, club recruitment, lost items, and job openings.",
+        "Introduce Together Day and describe an event you want to attend."
       ],
       "grammar": [
         {
-          "meaning": "a noun that will ...",
-          "guide": "Use it when a future action modifies a noun."
+          "meaning": "a noun modified by a future action",
+          "guide": "Use V-(으)ㄹ before a noun to describe a future action, plan, intention, or guess. Use -을 after many final consonants and -ㄹ after a vowel."
         },
         {
-          "meaning": "you see, because ...",
-          "guide": "Use it to add a reason or background information."
+          "meaning": "you see, because ...; the thing is ...",
+          "guide": "Use A/V-거든요 in conversation to add a reason or background information the listener may not know."
         }
       ]
     },
     "l2-17": {
-      "title": "I Wish I Could Sleep Well",
+      "title": "I Hope I Can Sleep Well",
       "goals": [
-        "Talk about healthy habits and symptoms.",
-        "Use A/V-(으)면 좋겠다 to express a wish.",
-        "Use N에 for time, place, direction, or target depending on context."
+        "Describe healthy lifestyle habits such as getting enough sleep, balanced meals, regular eating, and steady exercise.",
+        "Describe common symptoms such as poor complexion, lack of energy, dizziness, loss of appetite, fever, and indigestion.",
+        "Use A/V-(으)면 좋겠다 to express hopes, wishes, or desired situations.",
+        "Use N에 좋다/안 좋다 to say what food or behavior is good or bad for a body part, health, or recovery.",
+        "Read a text about healthy lifestyle habits and understand Korean folk-remedy culture."
       ],
       "grammar": [
         {
-          "meaning": "I wish ... / it would be nice if ...",
-          "guide": "Use it to express a hope or wish."
+          "meaning": "I hope ...; it would be nice if ...",
+          "guide": "Use A/V-(으)면 좋겠다 to express a hope, wish, or desired situation. Use -으면 좋겠다 after many final consonants and -면 좋겠다 after a vowel."
         },
         {
-          "meaning": "at / on / to / for ...",
-          "guide": "The exact meaning depends on the noun and sentence context."
+          "meaning": "for ...; good/bad for ...",
+          "guide": "Use N에 with 좋다 or 안 좋다 to say something is good or bad for a body part, health, recovery, or a symptom. Use 사람에게 when the target is a person."
         }
       ]
     },
     "l2-18": {
       "title": "How About Applying for This Class?",
       "goals": [
-        "Talk about cultural center classes and registration.",
-        "Use V-는 게 어때요? to make a suggestion.",
-        "Use A-아/어 보이다 to say how something looks."
+        "Talk about culture center classes and the courses you want to take.",
+        "Explain the steps for applying for a class online, from looking up programs to paying the course fee.",
+        "Use V-는 게 어때요? to make soft suggestions or give advice.",
+        "Use A-아/어 보이다 to describe how a person, class, or object looks based on appearance.",
+        "Read a culture course recruitment notice and understand Korea's Culture Day."
       ],
       "grammar": [
         {
-          "meaning": "how about doing ...?",
-          "guide": "A soft way to make a suggestion."
+          "meaning": "How about doing ...?",
+          "guide": "Use V-는 게 어때요? to make a soft suggestion or give advice. Attach -는 게 어때요? to the verb stem."
         },
         {
           "meaning": "looks / seems ...",
-          "guide": "Use it to judge based on appearance or visible state."
+          "guide": "Use A-아/어 보이다 to describe an impression based on what someone or something looks like."
         }
       ]
     }
@@ -431,6 +447,166 @@ window.lessonGuideL2Translations.en = {
       {
         "meaning": "because ...",
         "guide": "Use A/V-기 때문에 to state a reason clearly. It is a little more formal than -아서/어서."
+      }
+    ]
+  },
+  "l2-11": {
+    "title": "I Make a Wish While Looking at the Full Moon",
+    "goals": [
+      "Describe common family activities and traditional games for holidays such as Seollal and Chuseok.",
+      "Use A-게 to describe the manner or state of an action, such as 재미있게, 짧게, and 따뜻하게.",
+      "Use V-(으)면서 to say the same subject does two actions at the same time.",
+      "Read a culture text about Korean holidays and briefly introduce a hometown holiday in Korean.",
+      "Use holiday expressions naturally, including 보름달을 보면서 소원을 빌다, 차례를 지내다, and 세배를 하다."
+    ],
+    "grammar": [
+      {
+        "meaning": "in a ... way; ...-ly",
+        "guide": "Attach -게 to an adjective and place it before a verb to describe the manner, state, or degree of the action."
+      },
+      {
+        "meaning": "while doing ...; doing ... at the same time",
+        "guide": "Use V-(으)면서 when the same subject does two actions at the same time. Use -으면서 after a final consonant and -면서 after a vowel."
+      }
+    ]
+  },
+  "l2-12": {
+    "title": "I Tend to Make Mistakes Often",
+    "goals": [
+      "Describe mistakes, misunderstandings, and feelings from life in Korea.",
+      "Use V-(으)ㄴ 적이 있다 to say you have had a certain experience before.",
+      "Use A/V-는 편이다 to describe habits, personality, or tendencies softly.",
+      "Read an experience about a transit-card balance problem and write your own mistake experience in Korea.",
+      "Understand Korean uses of 우리 in expressions such as 우리 가족, 우리 회사, and 우리 반."
+    ],
+    "grammar": [
+      {
+        "meaning": "have done ... before; have had the experience of ...",
+        "guide": "Use V-(으)ㄴ 적이 있다 to talk about a past experience. Use -은 적이 있다 after a final consonant and -ㄴ 적이 있다 after a vowel."
+      },
+      {
+        "meaning": "tend to be/do ...; rather / on the ... side",
+        "guide": "Use A/V-는 편이다 to describe a general tendency without sounding absolute. Verbs usually take -는 편이다, while adjectives use their noun-modifying form."
+      }
+    ]
+  },
+  "l2-13": {
+    "title": "I Would Like to Send a Package",
+    "goals": [
+      "Explain what to do at the post office when sending letters, packages, parcel deliveries, and EMS.",
+      "Describe bank services such as opening an account, deposits and withdrawals, transfers, currency exchange, cards, and utility payments.",
+      "Use V-(으)려고 하다 to express intentions or plans.",
+      "Use V-아/어야 되다 to explain required steps, procedures, or necessary conditions.",
+      "Read post office service-hour information and understand the basics of Korean road-name addresses."
+    ],
+    "grammar": [
+      {
+        "meaning": "intend to ...; plan to ...",
+        "guide": "Use V-(으)려고 하다 when the speaker has an intention or plan. Use -으려고 하다 after a final consonant and -려고 하다 after a vowel."
+      },
+      {
+        "meaning": "must ...; have to ...",
+        "guide": "Use V-아/어야 되다 to say an action is required or necessary. It is common for procedures, conditions, and rules."
+      }
+    ]
+  },
+  "l2-14": {
+    "title": "What Should I Do to Apply for a Visa Extension?",
+    "goals": [
+      "Describe services handled at district offices, administrative welfare centers, community service centers, public health centers, and Immigration Offices.",
+      "Use V-아/어도 되다 to ask or say that something is allowed.",
+      "Use V-(으)려면 to explain what is needed if someone wants to do something.",
+      "Ask about visa extension, alien registration card reissuance, required documents, and fees at an Immigration Office.",
+      "Read the main fields of an integrated application form and understand Immigration Office reservation rules."
+    ],
+    "grammar": [
+      {
+        "meaning": "may ...; be allowed to ...",
+        "guide": "Use V-아/어도 되다 to ask for or give permission. For a negative answer, use V-(으)면 안 되다."
+      },
+      {
+        "meaning": "if you want to ...; in order to ...",
+        "guide": "Use V-(으)려면 to state a condition needed to achieve something. Use -으려면 after a final consonant and -려면 after a vowel."
+      }
+    ]
+  },
+  "l2-15": {
+    "title": "I Am Doing Translation Work at a Trading Company",
+    "goals": [
+      "Name common objects, IDs, and equipment used in offices and factories.",
+      "Describe current work or an ongoing state in the workplace.",
+      "Use V-고 있다 to express an action in progress or an ongoing state.",
+      "Use V-(으)ㄴ to modify a noun with a completed past action.",
+      "Read a workplace task email and understand common job-title order in Korean companies."
+    ],
+    "grammar": [
+      {
+        "meaning": "be doing ...; be in an ongoing state",
+        "guide": "Use V-고 있다 for an action in progress or an ongoing state. With work, residence, or occupation, it often means someone is currently doing or living somewhere."
+      },
+      {
+        "meaning": "a noun modified by a completed past action",
+        "guide": "Use V-(으)ㄴ before a noun to describe it with a completed action. Use -은 after many final consonants and -ㄴ after a vowel; 오다 becomes 온 and 하다 becomes 한."
+      }
+    ]
+  },
+  "l2-16": {
+    "title": "You Can Bring Family or Friends to That Event",
+    "goals": [
+      "Read event posters for dates, target participants, fees, things to prepare, locations, and inquiry information.",
+      "Use V-(으)ㄹ to modify a noun with a future action, plan, or intended object.",
+      "Use A/V-거든요 to add a reason or background information in conversation.",
+      "Read bulletin-board notices about resident meetings, club recruitment, lost items, and job openings.",
+      "Introduce Together Day and describe an event you want to attend."
+    ],
+    "grammar": [
+      {
+        "meaning": "a noun modified by a future action",
+        "guide": "Use V-(으)ㄹ before a noun to describe a future action, plan, intention, or guess. Use -을 after many final consonants and -ㄹ after a vowel."
+      },
+      {
+        "meaning": "you see, because ...; the thing is ...",
+        "guide": "Use A/V-거든요 in conversation to add a reason or background information the listener may not know."
+      }
+    ]
+  },
+  "l2-17": {
+    "title": "I Hope I Can Sleep Well",
+    "goals": [
+      "Describe healthy lifestyle habits such as getting enough sleep, balanced meals, regular eating, and steady exercise.",
+      "Describe common symptoms such as poor complexion, lack of energy, dizziness, loss of appetite, fever, and indigestion.",
+      "Use A/V-(으)면 좋겠다 to express hopes, wishes, or desired situations.",
+      "Use N에 좋다/안 좋다 to say what food or behavior is good or bad for a body part, health, or recovery.",
+      "Read a text about healthy lifestyle habits and understand Korean folk-remedy culture."
+    ],
+    "grammar": [
+      {
+        "meaning": "I hope ...; it would be nice if ...",
+        "guide": "Use A/V-(으)면 좋겠다 to express a hope, wish, or desired situation. Use -으면 좋겠다 after many final consonants and -면 좋겠다 after a vowel."
+      },
+      {
+        "meaning": "for ...; good/bad for ...",
+        "guide": "Use N에 with 좋다 or 안 좋다 to say something is good or bad for a body part, health, recovery, or a symptom. Use 사람에게 when the target is a person."
+      }
+    ]
+  },
+  "l2-18": {
+    "title": "How About Applying for This Class?",
+    "goals": [
+      "Talk about culture center classes and the courses you want to take.",
+      "Explain the steps for applying for a class online, from looking up programs to paying the course fee.",
+      "Use V-는 게 어때요? to make soft suggestions or give advice.",
+      "Use A-아/어 보이다 to describe how a person, class, or object looks based on appearance.",
+      "Read a culture course recruitment notice and understand Korea's Culture Day."
+    ],
+    "grammar": [
+      {
+        "meaning": "How about doing ...?",
+        "guide": "Use V-는 게 어때요? to make a soft suggestion or give advice. Attach -는 게 어때요? to the verb stem."
+      },
+      {
+        "meaning": "looks / seems ...",
+        "guide": "Use A-아/어 보이다 to describe an impression based on what someone or something looks like."
       }
     ]
   }

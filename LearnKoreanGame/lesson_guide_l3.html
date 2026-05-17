@@ -417,8 +417,12 @@
             box-shadow: 0 12px 26px rgba(0,0,0,0.22);
             backdrop-filter: blur(14px);
             overflow-x: auto;
+            overscroll-behavior-x: contain;
+            scroll-padding: 24px;
+            scroll-snap-type: x proximity;
             scrollbar-width: none;
-            touch-action: pan-y;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-x pan-y;
         }
 
         .tabs::-webkit-scrollbar {
@@ -427,6 +431,7 @@
 
         .tab-btn {
             flex: 0 0 auto;
+            min-width: 74px;
             padding: 9px 13px;
             border: 1px solid var(--line);
             border-radius: 8px;
@@ -434,6 +439,7 @@
             background: rgba(255,255,255,0.04);
             cursor: pointer;
             font-weight: 800;
+            scroll-snap-align: start;
         }
 
         .tab-btn.active {
@@ -1082,6 +1088,11 @@
                 margin-left: -18px;
                 padding-right: 18px;
                 padding-left: 18px;
+                scroll-padding: 18px;
+            }
+
+            .tab-btn {
+                min-width: clamp(78px, 23vw, 106px);
             }
 
             .hero {
@@ -1194,8 +1205,15 @@
         </div>
     </div>
 
-    <script src="lesson_data_l3.js"></script>
-    <script src="lesson_translations_l3_en.js"></script>
+    <script>
+        (function loadVersionedBaseScripts() {
+            const version = new URLSearchParams(window.location.search).get("v");
+            const suffix = version ? `?v=${encodeURIComponent(version)}` : "";
+            document.write(`<script src="lesson_guide_shared_tabs.js${suffix}"><\/script>`);
+            document.write(`<script src="lesson_data_l3.js${suffix}"><\/script>`);
+            document.write(`<script src="lesson_translations_l3_en.js${suffix}"><\/script>`);
+        })();
+    </script>
     <script>
         const lessons = lessonGuideL3.lessons;
         const lessonTranslationPacks = window.lessonGuideL3Translations || {};
@@ -2716,36 +2734,26 @@
         }
 
         function getTabsElement() {
-            return mainContent.querySelector(".tabs");
+            return lessonGuideStickyTabs.getTabsElement(mainContent);
         }
 
         function tabsAreSticky() {
-            const tabsElement = getTabsElement();
-            if (!tabsElement) return false;
-
-            const tabsTop = tabsElement.getBoundingClientRect().top;
-            const contentTop = mainContent.getBoundingClientRect().top;
-            return tabsTop <= contentTop + 1 || mainContent.scrollTop >= tabsElement.offsetTop - 1;
+            return lessonGuideStickyTabs.tabsAreSticky(mainContent);
         }
 
         function scrollMainContent(target) {
-            if (target === "tabs") {
-                const tabsElement = getTabsElement();
-                if (tabsElement) {
-                    mainContent.scrollTo({ top: tabsElement.offsetTop, behavior: "auto" });
-                }
-                return;
-            }
+            lessonGuideStickyTabs.scrollMainContent(mainContent, target);
+        }
 
-            if (target !== "preserve") {
-                mainContent.scrollTo({ top: 0, behavior: "smooth" });
-            }
+        function scrollActiveTabIntoView() {
+            lessonGuideStickyTabs.keepActiveTabVisible(mainContent);
         }
 
         function renderLoadedLesson(lesson, scrollTarget) {
             mobileTitle.textContent = `L3-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
             mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
             scrollMainContent(scrollTarget);
+            window.requestAnimationFrame(scrollActiveTabIntoView);
         }
 
         async function renderMain(options = {}) {
@@ -2836,13 +2844,10 @@
         });
 
         function canStartTabSwipe(event) {
-            if (!mobileSwipeQuery.matches || sidebar.classList.contains("open")) return false;
-
-            const target = event.target instanceof Element ? event.target : event.target.parentElement;
-            if (!target) return false;
-            const startedOnTabs = Boolean(target.closest(".tabs"));
-            const interactive = target.closest("a, button, input, textarea, select, summary");
-            return startedOnTabs || !interactive;
+            return lessonGuideStickyTabs.canStartTabSwipe(event, {
+                mobileQuery: mobileSwipeQuery,
+                sidebar
+            });
         }
 
         mainContent.addEventListener("touchstart", event => {
@@ -2862,16 +2867,10 @@
             if (!tabSwipeState.tracking || event.changedTouches.length !== 1) return;
 
             tabSwipeState.tracking = false;
-            const touch = event.changedTouches[0];
-            const deltaX = touch.clientX - tabSwipeState.startX;
-            const deltaY = touch.clientY - tabSwipeState.startY;
-            const absX = Math.abs(deltaX);
-            const absY = Math.abs(deltaY);
-            const elapsed = Date.now() - tabSwipeState.startedAt;
+            const direction = lessonGuideStickyTabs.shouldSwitchTabFromSwipe(tabSwipeState, event.changedTouches[0]);
+            if (!direction) return;
 
-            if (elapsed > 900 || absX < 54 || absX < absY * 1.35) return;
-
-            switchAdjacentTab(deltaX < 0 ? 1 : -1, {
+            switchAdjacentTab(direction, {
                 keepSticky: true
             });
         }, { passive: true });
