@@ -7,18 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #121417;
-            --panel: #191d23;
-            --panel-soft: #20252d;
-            --line: rgba(255,255,255,0.11);
-            --text: #f7f4ee;
-            --soft: #cdd3dd;
-            --muted: #9aa3b2;
-            --teal: #2dd4bf;
-            --amber: #fbbf24;
-            --rose: #fb7185;
-            --green: #4ade80;
-            --shadow: rgba(0,0,0,0.24);
+            --bg: #0f1117;
+            --panel: #171b22;
+            --panel-soft: #202632;
+            --line: rgba(226, 232, 240, 0.1);
+            --text: #f6f1e8;
+            --soft: #c9d2df;
+            --muted: #8f9aab;
+            --teal: #5fd2c6;
+            --teal-rgb: 95, 210, 198;
+            --amber: #cda45e;
+            --amber-rgb: 205, 164, 94;
+            --rose: #d9827a;
+            --green: #8fbd9a;
+            --shadow: rgba(0,0,0,0.32);
         }
 
         * { box-sizing: border-box; }
@@ -27,7 +29,9 @@
             margin: 0;
             min-height: 100vh;
             color: var(--text);
-            background: var(--bg);
+            background:
+                linear-gradient(180deg, #0f1117 0%, #111821 48%, #0f1117 100%),
+                var(--bg);
             font-family: 'Outfit', 'Noto Sans KR', sans-serif;
         }
 
@@ -52,7 +56,7 @@
             gap: 16px;
             padding: 18px clamp(18px, 4vw, 48px);
             border-bottom: 1px solid var(--line);
-            background: rgba(18, 20, 23, 0.94);
+            background: rgba(15, 17, 23, 0.94);
             backdrop-filter: blur(14px);
         }
 
@@ -69,8 +73,8 @@
             width: 42px;
             height: 42px;
             border-radius: 8px;
-            color: #071312;
-            background: var(--teal);
+            color: #0d1715;
+            background: linear-gradient(180deg, #74ddd4, var(--teal));
             font-weight: 900;
         }
 
@@ -101,6 +105,26 @@
             flex: 0 0 auto;
         }
 
+        .locale-toggle {
+            min-width: 54px;
+            height: 42px;
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: var(--soft);
+            background: rgba(244, 239, 231, 0.045);
+            font: inherit;
+            font-weight: 900;
+            cursor: pointer;
+            transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .locale-toggle:hover {
+            color: var(--teal);
+            border-color: rgba(var(--teal-rgb), 0.44);
+            background: rgba(var(--teal-rgb), 0.1);
+        }
+
         .icon-link {
             display: inline-grid;
             place-items: center;
@@ -109,14 +133,14 @@
             border: 1px solid var(--line);
             border-radius: 8px;
             color: var(--soft);
-            background: rgba(255,255,255,0.04);
+            background: rgba(244, 239, 231, 0.045);
             transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
         }
 
         .icon-link:hover {
             color: var(--teal);
-            border-color: rgba(45, 212, 191, 0.45);
-            background: rgba(45, 212, 191, 0.1);
+            border-color: rgba(var(--teal-rgb), 0.44);
+            background: rgba(var(--teal-rgb), 0.1);
         }
 
         .icon-link svg {
@@ -130,17 +154,14 @@
         }
 
         .main {
-            width: min(1180px, 100%);
+            width: min(900px, 100%);
             margin: 0 auto;
-            padding: clamp(22px, 4vw, 46px) clamp(16px, 4vw, 34px) 44px;
+            padding: clamp(22px, 4vw, 42px) clamp(16px, 4vw, 30px) 38px;
         }
 
         .summary-row {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            gap: 18px;
-            align-items: end;
-            margin-bottom: 22px;
+            max-width: 680px;
+            margin-bottom: 20px;
         }
 
         .eyebrow {
@@ -154,165 +175,59 @@
 
         .headline {
             margin: 0;
-            font-size: clamp(2rem, 6vw, 4.8rem);
-            line-height: 0.98;
+            font-size: clamp(2rem, 5vw, 3.6rem);
+            line-height: 1.02;
             letter-spacing: 0;
         }
 
         .summary-copy {
-            max-width: 620px;
-            margin: 12px 0 0;
+            max-width: 640px;
+            margin: 10px 0 0;
             color: var(--soft);
-            font-size: clamp(1rem, 2.2vw, 1.2rem);
-            line-height: 1.65;
-        }
-
-        .progress-panel {
-            min-width: 220px;
-            padding: 16px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: var(--panel);
-        }
-
-        .progress-number {
-            display: block;
-            color: var(--teal);
-            font-size: 2.25rem;
-            line-height: 1;
-            font-weight: 900;
-        }
-
-        .progress-label {
-            display: block;
-            margin-top: 7px;
-            color: var(--muted);
-            font-weight: 800;
+            font-size: clamp(0.98rem, 2vw, 1.08rem);
+            line-height: 1.6;
         }
 
         .level-grid {
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 14px;
-            margin-top: 26px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 18px;
         }
 
         .level-card {
-            min-height: 310px;
+            min-height: 188px;
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            padding: 16px;
             border: 1px solid var(--line);
             border-radius: 8px;
             background: var(--panel);
-            box-shadow: 0 18px 36px var(--shadow);
+            box-shadow: 0 10px 24px var(--shadow);
         }
 
         .level-card.is-ready {
-            border-color: rgba(45, 212, 191, 0.42);
-            background: linear-gradient(180deg, rgba(45, 212, 191, 0.09), var(--panel) 42%);
+            border-color: rgba(var(--teal-rgb), 0.28);
+            background: var(--panel);
         }
-
-        .level-card.is-progress {
-            border-color: rgba(251, 191, 36, 0.38);
-            background: linear-gradient(180deg, rgba(251, 191, 36, 0.08), var(--panel) 42%);
-        }
-
-        .level-top {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 18px;
-        }
-
-        .level-badge {
-            display: inline-grid;
-            place-items: center;
-            min-width: 72px;
-            height: 44px;
-            padding: 0 12px;
-            border-radius: 8px;
-            color: #071312;
-            background: var(--teal);
-            font-weight: 900;
-        }
-
-        .status {
-            display: inline-flex;
-            align-items: center;
-            min-height: 34px;
-            padding: 7px 10px;
-            border-radius: 8px;
-            color: var(--soft);
-            background: rgba(255,255,255,0.06);
-            font-size: 0.82rem;
-            font-weight: 900;
-            white-space: nowrap;
-        }
-
-        .status.ready { color: #071312; background: var(--green); }
-        .status.progress { color: #151008; background: var(--amber); }
-        .status.soon { color: var(--muted); }
 
         .level-title {
             margin: 0;
-            font-size: clamp(1.35rem, 2.5vw, 2rem);
+            font-size: clamp(1.28rem, 2.2vw, 1.7rem);
             line-height: 1.1;
         }
 
         .level-subtitle {
-            margin: 8px 0 0;
+            margin: 6px 0 0;
             color: var(--muted);
             font-weight: 800;
         }
 
-        .level-meta {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 9px;
-            margin: 18px 0;
-        }
-
-        .meta-item {
-            min-height: 68px;
-            padding: 11px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            background: rgba(255,255,255,0.035);
-        }
-
-        .meta-value {
-            display: block;
-            color: var(--teal);
-            font-size: 1.35rem;
-            line-height: 1;
-            font-weight: 900;
-        }
-
-        .meta-label {
-            display: block;
-            margin-top: 7px;
+        .level-note {
+            margin: 10px 0 0;
             color: var(--muted);
-            font-size: 0.82rem;
+            font-size: 0.95rem;
             font-weight: 800;
-        }
-
-        .feature-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: auto;
-            padding-top: 4px;
-        }
-
-        .feature-chip {
-            padding: 7px 9px;
-            border-radius: 8px;
-            color: var(--soft);
-            background: var(--panel-soft);
-            font-size: 0.8rem;
-            font-weight: 900;
         }
 
         .card-action {
@@ -320,12 +235,12 @@
             align-items: center;
             justify-content: space-between;
             gap: 12px;
-            margin-top: 18px;
-            min-height: 48px;
-            padding: 0 14px;
+            margin-top: 16px;
+            min-height: 44px;
+            padding: 0 13px;
             border-radius: 8px;
-            color: #071312;
-            background: var(--teal);
+            color: #0d1715;
+            background: linear-gradient(180deg, #74ddd4, var(--teal));
             font-weight: 900;
             transition: transform 0.2s ease, filter 0.2s ease;
         }
@@ -337,7 +252,7 @@
 
         .card-action.disabled {
             color: var(--muted);
-            background: rgba(255,255,255,0.06);
+            background: rgba(244, 239, 231, 0.06);
             pointer-events: none;
         }
 
@@ -362,16 +277,16 @@
                 padding: 14px 16px;
             }
 
-            .brand-subtitle {
-                display: none;
+            .main {
+                padding: 20px 14px 30px;
             }
 
             .summary-row {
-                grid-template-columns: 1fr;
+                margin-bottom: 18px;
             }
 
-            .progress-panel {
-                min-width: 0;
+            .brand-subtitle {
+                display: none;
             }
 
             .level-grid {
@@ -380,6 +295,11 @@
 
             .level-card {
                 min-height: auto;
+                padding: 16px;
+            }
+
+            .card-action {
+                margin-top: 14px;
             }
         }
     </style>
@@ -387,15 +307,16 @@
 <body>
     <div class="page">
         <header class="topbar">
-            <a class="brand" href="lesson_guide.html" aria-label="KIIP Lesson Guide 首页">
+            <a class="brand" href="lesson_guide.html" data-i18n-aria="brandAria">
                 <span class="brand-mark">KIIP</span>
                 <span class="brand-text">
                     <h1 class="brand-title">Lesson Guide</h1>
-                    <p class="brand-subtitle">Level 1-4 单词、对话、文化和练习入口</p>
+                    <p class="brand-subtitle" data-i18n="brandSubtitle">Level 1-4 单词、对话、文化和练习入口</p>
                 </span>
             </a>
             <div class="top-actions">
-                <a class="icon-link" href="grammar_wiki.html" title="Grammar Wiki" aria-label="Grammar Wiki">
+                <button class="locale-toggle" id="locale-toggle" type="button">EN</button>
+                <a class="icon-link" href="grammar_wiki.html" data-i18n-title="grammarWiki" data-i18n-aria="grammarWiki">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                         <path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"></path>
@@ -408,67 +329,25 @@
             <section class="summary-row" aria-labelledby="home-title">
                 <div>
                     <p class="eyebrow">KIIP Textbook Companion</p>
-                    <h2 class="headline" id="home-title">选择学习级别</h2>
-                    <p class="summary-copy">进入对应 Level 后，可以按课查看单词、对话、文化文章和练习。Level 2 与 Level 3 会继续沿用详情页里的搜索、语言切换和发音功能。</p>
-                </div>
-                <div class="progress-panel" aria-label="当前可用进度">
-                    <span class="progress-number">2</span>
-                    <span class="progress-label">个 Level 已接入</span>
+                    <h2 class="headline" id="home-title" data-i18n="headline">选择学习级别</h2>
+                    <p class="summary-copy" data-i18n="summaryCopy">按 Level 进入课程导学，查看每课的单词、对话、文化文章、练习和发音。</p>
                 </div>
             </section>
 
-            <section class="level-grid" aria-label="Level 入口">
+            <section class="level-grid" data-i18n-aria="levelGridAria">
                 <article class="level-card">
-                    <div class="level-top">
-                        <span class="level-badge">L1</span>
-                        <span class="status soon">准备中</span>
-                    </div>
                     <h3 class="level-title">KIIP Level 1</h3>
-                    <p class="level-subtitle">초급 1 · 基础入门</p>
-                    <div class="level-meta">
-                        <div class="meta-item">
-                            <span class="meta-value">-</span>
-                            <span class="meta-label">课程</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-value">0</span>
-                            <span class="meta-label">已接入</span>
-                        </div>
-                    </div>
-                    <div class="feature-row">
-                        <span class="feature-chip">单词</span>
-                        <span class="feature-chip">对话</span>
-                        <span class="feature-chip">文化</span>
-                        <span class="feature-chip">练习</span>
-                    </div>
-                    <span class="card-action disabled">即将开放</span>
+                    <p class="level-subtitle" data-i18n="level1Subtitle">초급 1 · 基础入门</p>
+                    <p class="level-note" data-i18n="preparing">准备接入</p>
+                    <span class="card-action disabled" data-i18n="comingSoon">即将开放</span>
                 </article>
 
-                <article class="level-card is-progress">
-                    <div class="level-top">
-                        <span class="level-badge">L2</span>
-                        <span class="status progress">精修中</span>
-                    </div>
+                <article class="level-card is-ready">
                     <h3 class="level-title">KIIP Level 2</h3>
-                    <p class="level-subtitle">초급 2 · 生活表达扩展</p>
-                    <div class="level-meta">
-                        <div class="meta-item">
-                            <span class="meta-value">18</span>
-                            <span class="meta-label">课程</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-value">5</span>
-                            <span class="meta-label">精修到</span>
-                        </div>
-                    </div>
-                    <div class="feature-row">
-                        <span class="feature-chip">单词</span>
-                        <span class="feature-chip">对话</span>
-                        <span class="feature-chip">文化</span>
-                        <span class="feature-chip">练习</span>
-                    </div>
-                    <a class="card-action" href="lesson_guide_l2.html">
-                        <span>进入 Level 2</span>
+                    <p class="level-subtitle" data-i18n="level2Subtitle">초급 2 · 生活表达扩展</p>
+                    <p class="level-note" data-i18n="level2Note">18 课已接入</p>
+                    <a class="card-action" href="lesson_guide_l2.html?v=palette-graphite-3">
+                        <span data-i18n="enterLevel2">进入 Level 2</span>
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m13 6 6 6-6 6"></path>
@@ -477,30 +356,11 @@
                 </article>
 
                 <article class="level-card is-ready">
-                    <div class="level-top">
-                        <span class="level-badge">L3</span>
-                        <span class="status ready">可学习</span>
-                    </div>
                     <h3 class="level-title">KIIP Level 3</h3>
-                    <p class="level-subtitle">중급 1 · 中级表达和文化</p>
-                    <div class="level-meta">
-                        <div class="meta-item">
-                            <span class="meta-value">16</span>
-                            <span class="meta-label">课程</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-value">16</span>
-                            <span class="meta-label">已接入</span>
-                        </div>
-                    </div>
-                    <div class="feature-row">
-                        <span class="feature-chip">单词</span>
-                        <span class="feature-chip">对话</span>
-                        <span class="feature-chip">文化</span>
-                        <span class="feature-chip">练习</span>
-                    </div>
-                    <a class="card-action" href="lesson_guide_l3.html">
-                        <span>进入 Level 3</span>
+                    <p class="level-subtitle" data-i18n="level3Subtitle">중급 1 · 中级表达和文化</p>
+                    <p class="level-note" data-i18n="level3Note">16 课已接入</p>
+                    <a class="card-action" href="lesson_guide_l3.html?v=palette-graphite-3">
+                        <span data-i18n="enterLevel3">进入 Level 3</span>
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m13 6 6 6-6 6"></path>
@@ -509,32 +369,103 @@
                 </article>
 
                 <article class="level-card">
-                    <div class="level-top">
-                        <span class="level-badge">L4</span>
-                        <span class="status soon">准备中</span>
-                    </div>
                     <h3 class="level-title">KIIP Level 4</h3>
-                    <p class="level-subtitle">중급 2 · 高阶主题表达</p>
-                    <div class="level-meta">
-                        <div class="meta-item">
-                            <span class="meta-value">-</span>
-                            <span class="meta-label">课程</span>
-                        </div>
-                        <div class="meta-item">
-                            <span class="meta-value">0</span>
-                            <span class="meta-label">已接入</span>
-                        </div>
-                    </div>
-                    <div class="feature-row">
-                        <span class="feature-chip">单词</span>
-                        <span class="feature-chip">对话</span>
-                        <span class="feature-chip">文化</span>
-                        <span class="feature-chip">练习</span>
-                    </div>
-                    <span class="card-action disabled">即将开放</span>
+                    <p class="level-subtitle" data-i18n="level4Subtitle">중급 2 · 高阶主题表达</p>
+                    <p class="level-note" data-i18n="preparing">准备接入</p>
+                    <span class="card-action disabled" data-i18n="comingSoon">即将开放</span>
                 </article>
             </section>
         </main>
     </div>
+    <script>
+        const localeStorageKey = "lessonGuideLocale";
+        const translations = {
+            "zh-CN": {
+                pageTitle: "KIIP Lesson Guide",
+                brandAria: "KIIP Lesson Guide 首页",
+                brandSubtitle: "Level 1-4 单词、对话、文化和练习入口",
+                grammarWiki: "Grammar Wiki",
+                languageToggle: "切换到英文",
+                languageToggleText: "EN",
+                headline: "选择学习级别",
+                summaryCopy: "按 Level 进入课程导学，查看每课的单词、对话、文化文章、练习和发音。",
+                levelGridAria: "Level 入口",
+                preparing: "准备接入",
+                comingSoon: "即将开放",
+                level1Subtitle: "초급 1 · 基础入门",
+                level2Subtitle: "초급 2 · 生活表达扩展",
+                level3Subtitle: "중급 1 · 中级表达和文化",
+                level4Subtitle: "중급 2 · 高阶主题表达",
+                level2Note: "18 课已接入",
+                level3Note: "16 课已接入",
+                enterLevel2: "进入 Level 2",
+                enterLevel3: "进入 Level 3"
+            },
+            en: {
+                pageTitle: "KIIP Lesson Guide",
+                brandAria: "KIIP Lesson Guide home",
+                brandSubtitle: "Level 1-4 vocabulary, dialogues, culture, and practice",
+                grammarWiki: "Grammar Wiki",
+                languageToggle: "Switch to Chinese",
+                languageToggleText: "中文",
+                headline: "Choose A Level",
+                summaryCopy: "Open a level to study each lesson's vocabulary, dialogues, culture texts, practice, and pronunciation.",
+                levelGridAria: "Level entries",
+                preparing: "Preparing",
+                comingSoon: "Coming soon",
+                level1Subtitle: "Beginner 1 · First steps",
+                level2Subtitle: "Beginner 2 · Everyday expressions",
+                level3Subtitle: "Intermediate 1 · Expressions and culture",
+                level4Subtitle: "Intermediate 2 · Advanced topics",
+                level2Note: "18 lessons available",
+                level3Note: "16 lessons available",
+                enterLevel2: "Open Level 2",
+                enterLevel3: "Open Level 3"
+            }
+        };
+
+        function activeLocale() {
+            return localStorage.getItem(localeStorageKey) === "en" ? "en" : "zh-CN";
+        }
+
+        function applyLocale(locale) {
+            const dictionary = translations[locale] || translations["zh-CN"];
+            document.documentElement.lang = locale;
+            document.title = dictionary.pageTitle;
+
+            document.querySelectorAll("[data-i18n]").forEach(element => {
+                element.textContent = dictionary[element.dataset.i18n] || "";
+            });
+
+            document.querySelectorAll("[data-i18n-aria]").forEach(element => {
+                element.setAttribute("aria-label", dictionary[element.dataset.i18nAria] || "");
+            });
+
+            document.querySelectorAll("[data-i18n-title]").forEach(element => {
+                element.setAttribute("title", dictionary[element.dataset.i18nTitle] || "");
+            });
+
+            const toggle = document.getElementById("locale-toggle");
+            if (toggle) {
+                toggle.textContent = dictionary.languageToggleText;
+                toggle.setAttribute("aria-label", dictionary.languageToggle);
+                toggle.setAttribute("title", dictionary.languageToggle);
+            }
+        }
+
+        document.getElementById("locale-toggle")?.addEventListener("click", () => {
+            const nextLocale = activeLocale() === "zh-CN" ? "en" : "zh-CN";
+            localStorage.setItem(localeStorageKey, nextLocale);
+            localStorage.setItem("lessonGuideUiLocale", nextLocale);
+            localStorage.setItem("lessonGuideTranslationLocale", nextLocale);
+            applyLocale(nextLocale);
+        });
+
+        window.addEventListener("storage", event => {
+            if (event.key === localeStorageKey) applyLocale(activeLocale());
+        });
+
+        applyLocale(activeLocale());
+    </script>
 </body>
 </html>

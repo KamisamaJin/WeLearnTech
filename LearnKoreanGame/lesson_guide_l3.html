@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>KIIP L3 Lesson Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lesson_guide.css">
+    <script>
+        (function loadVersionedLessonGuideStyles() {
+            const version = new URLSearchParams(window.location.search).get("v");
+            const suffix = version ? "?v=" + encodeURIComponent(version) : "";
+            document.write('<link rel="stylesheet" href="lesson_guide.css' + suffix + '">');
+        })();
+    </script>
 </head>
 <body>
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
