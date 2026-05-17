@@ -136,7 +136,7 @@ button, input {
 .lesson-item {
     width: 100%;
     display: grid;
-    grid-template-columns: 32px minmax(0, 1fr) auto;
+    grid-template-columns: 32px minmax(0, 1fr);
     gap: 10px;
     align-items: center;
     padding: 10px 11px;
@@ -209,30 +209,6 @@ button, input {
     color: var(--muted);
     font-size: 0.82rem;
     line-height: 1.2;
-}
-
-.status-pill {
-    padding: 4px 7px;
-    border-radius: 6px;
-    font-size: 0.68rem;
-    font-weight: 800;
-    white-space: nowrap;
-    justify-self: end;
-}
-
-.status-draft {
-    color: #1a1308;
-    background: var(--amber);
-}
-
-.status-refined {
-    color: #0d1715;
-    background: var(--teal);
-}
-
-.status-todo {
-    color: var(--muted);
-    background: rgba(244, 239, 231, 0.08);
 }
 
 .content-shell {

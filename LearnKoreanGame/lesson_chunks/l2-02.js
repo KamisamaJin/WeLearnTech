@@ -2518,13 +2518,57 @@ window.lessonGuideL2LessonChunks["l2-02"] = {
           }
         }
       ],
-      "learningPoints": [],
+      "learningPoints": [
+        "V-(으)ㄹ게요 是说话人主动承担或承诺自己要做的事。",
+        "금방 치울게요、제가 바닥을 쓸게요 都是在回应当前情况。",
+        "다음부터 일찍 올게요 用来承诺以后改正。"
+      ],
+      "rolePlays": [
+        {
+          "title": "집안일 맡기",
+          "promptZh": "朋友问谁来做家务，你主动说“我来擦桌子/我来扫地”。",
+          "answerKo": "제가 책상을 닦을게요. 제가 바닥을 쓸게요.",
+          "translations": {
+            "en": {
+              "title": "Taking Chores",
+              "prompt": "Your friend asks who will do the chores. Volunteer to wipe the desk and sweep the floor."
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "V-(으)ㄹ게요",
+          "promptZh": "用 치우다 回答“我马上收拾”。",
+          "answerKo": "금방 치울게요.",
+          "translations": {
+            "en": {
+              "prompt": "Use 치우다 to say “I will tidy it right away.”"
+            }
+          }
+        },
+        {
+          "pattern": "제가 ...-(으)ㄹ게요",
+          "promptZh": "说“我来扫地”。",
+          "answerKo": "제가 바닥을 쓸게요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “I will sweep the floor.”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Volunteering To Do Something",
           "titleZh": "Volunteering To Do Something",
           "purpose": "Practice using V-(으)ㄹ게요 to volunteer for chores or promise a change.",
-          "scene": "Practice using V-(으)ㄹ게요 to volunteer for chores or promise a change."
+          "scene": "Practice using V-(으)ㄹ게요 to volunteer for chores or promise a change.",
+          "learningPoints": [
+            "V-(으)ㄹ게요 means the speaker volunteers or promises to do something.",
+            "금방 치울게요 and 제가 바닥을 쓸게요 respond to the current situation.",
+            "다음부터 일찍 올게요 is used to promise a future change."
+          ]
         }
       }
     },
@@ -2616,13 +2660,57 @@ window.lessonGuideL2LessonChunks["l2-02"] = {
           }
         }
       ],
-      "learningPoints": [],
+      "learningPoints": [
+        "V-(으)ㄴ 다음에 前面放先做的动作。",
+        "청소를 한 다음에 쓰레기를 버리세요 把“打扫”和“扔垃圾”的顺序说清楚。",
+        "끝낸 다음에、쉰 다음에 都可以直接接后面的计划。"
+      ],
+      "rolePlays": [
+        {
+          "title": "순서 정하기",
+          "promptZh": "说明“洗完衣服后打扫房间”。",
+          "answerKo": "빨래를 한 다음에 방을 청소할 거예요.",
+          "translations": {
+            "en": {
+              "title": "Setting Order",
+              "prompt": "Say “I will clean the room after doing laundry.”"
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "V-(으)ㄴ 다음에",
+          "promptZh": "说“做完作业后休息”。",
+          "answerKo": "숙제를 한 다음에 쉴 거예요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “I will rest after doing homework.”"
+            }
+          }
+        },
+        {
+          "pattern": "V-(으)ㄴ 다음에",
+          "promptZh": "说“吃完饭后洗碗”。",
+          "answerKo": "밥을 먹은 다음에 설거지를 할 거예요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “I will wash the dishes after eating.”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Talking About Order",
           "titleZh": "Talking About Order",
           "purpose": "Practice saying “after doing A, do B.”",
-          "scene": "Practice saying “after doing A, do B.”"
+          "scene": "Practice saying “after doing A, do B.”",
+          "learningPoints": [
+            "V-(으)ㄴ 다음에 puts the earlier action before the expression.",
+            "청소를 한 다음에 쓰레기를 버리세요 clearly orders cleaning before taking out the trash.",
+            "끝낸 다음에 and 쉰 다음에 can connect directly to the next plan."
+          ]
         }
       }
     },
@@ -2687,13 +2775,57 @@ window.lessonGuideL2LessonChunks["l2-02"] = {
           }
         }
       ],
-      "learningPoints": [],
+      "learningPoints": [
+        "같이 집을 치워요 用 치우다 表示把空间或东西收拾好。",
+        "내가 청소할게요 是主动分担；치워 주세요 是请对方帮忙。",
+        "물건을 치운 다음에 설거지를 할까요? 同时练习顺序和提议。"
+      ],
+      "rolePlays": [
+        {
+          "title": "집안일 나누기",
+          "promptZh": "和室友分工：你打扫，对方整理东西，最后你来扔垃圾。",
+          "answerKo": "제가 청소할게요. 물건들을 치워 주세요. 쓰레기는 제가 버릴게요.",
+          "translations": {
+            "en": {
+              "title": "Dividing Chores",
+              "prompt": "Divide chores with a roommate: you clean, the roommate clears things away, and you take out the trash."
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "V-(으)ㄹ게요",
+          "promptZh": "说“垃圾我来扔”。",
+          "answerKo": "쓰레기는 제가 버릴게요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “I will take out the trash.”"
+            }
+          }
+        },
+        {
+          "pattern": "V-(으)ㄴ 다음에",
+          "promptZh": "说“收拾完东西后洗碗”。",
+          "answerKo": "물건을 치운 다음에 설거지를 할게요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “I will wash the dishes after clearing things away.”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "I Will Take Out The Trash",
           "titleZh": "I Will Take Out The Trash",
           "purpose": "Discuss how to divide cleaning, tidying, and dishwashing in a dormitory.",
-          "scene": "Discuss how to divide cleaning, tidying, and dishwashing in a dormitory."
+          "scene": "Discuss how to divide cleaning, tidying, and dishwashing in a dormitory.",
+          "learningPoints": [
+            "같이 집을 치워요 uses 치우다 to mean tidying a space or clearing things away.",
+            "내가 청소할게요 volunteers for a task; 치워 주세요 asks someone else for help.",
+            "물건을 치운 다음에 설거지를 할까요? practices both sequence and suggestion."
+          ]
         }
       }
     },
@@ -2771,13 +2903,57 @@ window.lessonGuideL2LessonChunks["l2-02"] = {
           }
         }
       ],
-      "learningPoints": [],
+      "learningPoints": [
+        "살게요 常读成 [살께요]，-ㄹ게요 的 게 会听起来更紧。",
+        "올게요、돌릴게요 也要注意同样的紧音感觉。",
+        "这些句子既练发音，也复习“我来做”的承诺表达。"
+      ],
+      "rolePlays": [
+        {
+          "title": "-ㄹ게요 따라 말하기",
+          "promptZh": "用 커피를 사다 / 일찍 오다 / 청소기를 돌리다 各说一句承诺。",
+          "answerKo": "제가 커피를 살게요. 다음부터 일찍 올게요. 제가 청소기를 돌릴게요.",
+          "translations": {
+            "en": {
+              "title": "Repeat -ㄹ게요",
+              "prompt": "Use 커피를 사다, 일찍 오다, and 청소기를 돌리다 to make one promise each."
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "V-(으)ㄹ게요 발음",
+          "promptZh": "读“제가 커피를 살게요”。",
+          "answerKo": "제가 커피를 살게요.",
+          "translations": {
+            "en": {
+              "prompt": "Read “제가 커피를 살게요.”"
+            }
+          }
+        },
+        {
+          "pattern": "V-(으)ㄹ게요 발음",
+          "promptZh": "读“다음부터 일찍 올게요”。",
+          "answerKo": "다음부터 일찍 올게요.",
+          "translations": {
+            "en": {
+              "prompt": "Read “다음부터 일찍 올게요.”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Pronunciation Practice",
           "titleZh": "Pronunciation Practice",
           "purpose": "Practice the actual pronunciation of -ㄹ게요.",
-          "scene": "Practice the actual pronunciation of -ㄹ게요."
+          "scene": "Practice the actual pronunciation of -ㄹ게요.",
+          "learningPoints": [
+            "살게요 is often pronounced [살께요], with 게 sounding tense.",
+            "올게요 and 돌릴게요 have the same tense-sounding 게.",
+            "These sentences practice pronunciation and review volunteering with “I will do it.”"
+          ]
         }
       }
     }

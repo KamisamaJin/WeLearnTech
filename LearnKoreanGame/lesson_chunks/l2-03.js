@@ -3408,10 +3408,55 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
           }
         }
       ],
+      "learningPoints": [
+        "N이나 连接名词，用来给出可选项。",
+        "옷이나 액세서리처럼 前后都要放名词。",
+        "못 먹어요 后面可以接“那就 A나 B”来给建议。"
+      ],
+      "rolePlays": [
+        {
+          "title": "선물 추천하기",
+          "promptZh": "朋友要买生日礼物，建议“包或者围巾”。",
+          "answerKo": "가방이나 목도리를 선물하세요.",
+          "translations": {
+            "en": {
+              "title": "Recommending A Gift",
+              "prompt": "Your friend wants to buy a birthday gift. Suggest a bag or a scarf."
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "N이나 N",
+          "promptZh": "说“夹克或者大衣”。",
+          "answerKo": "점퍼나 코트",
+          "translations": {
+            "en": {
+              "prompt": "Say “a jacket or a coat.”"
+            }
+          }
+        },
+        {
+          "pattern": "N이나 N을/를 드세요",
+          "promptZh": "说“请吃参鸡汤或者刀削面”。",
+          "answerKo": "삼계탕이나 칼국수를 드세요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “Please have samgyetang or kalguksu.”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Choosing With N이나",
-          "scene": "Use N이나 to suggest or choose between two options."
+          "scene": "Use N이나 to suggest or choose between two options.",
+          "learningPoints": [
+            "N이나 connects nouns to give options.",
+            "In 옷이나 액세서리, both sides are nouns.",
+            "After 못 먹어요, you can suggest “then A or B.”"
+          ]
         }
       }
     },
@@ -3496,10 +3541,55 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
           }
         }
       ],
+      "learningPoints": [
+        "V-아/어 보다 可表示试穿、试吃、去过。",
+        "입어 보세요 是服装店里最常用的试穿建议。",
+        "아직 못 먹어 봤어요 表示“还没试过/还没吃过”。"
+      ],
+      "rolePlays": [
+        {
+          "title": "경험 묻기",
+          "promptZh": "问朋友去过济州岛没有、吃过参鸡汤没有。",
+          "answerKo": "제주도에 가 봤어요? 삼계탕을 먹어 봤어요?",
+          "translations": {
+            "en": {
+              "title": "Asking About Experience",
+              "prompt": "Ask whether your friend has been to Jeju Island and tried samgyetang."
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "V-아/어 보세요",
+          "promptZh": "说“请试穿这件”。",
+          "answerKo": "이걸 한번 입어 보세요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “Please try this one on.”"
+            }
+          }
+        },
+        {
+          "pattern": "V-아/어 봤어요?",
+          "promptZh": "说“去过济州岛吗？”",
+          "answerKo": "제주도에 가 봤어요?",
+          "translations": {
+            "en": {
+              "prompt": "Say “Have you been to Jeju Island?”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Please Try It On",
-          "scene": "Ask about experience or suggest trying on, eating, or visiting something."
+          "scene": "Ask about experience or suggest trying on, eating, or visiting something.",
+          "learningPoints": [
+            "V-아/어 보다 can mean trying on, trying food, or having been somewhere.",
+            "입어 보세요 is the most common try-on suggestion in a clothing store.",
+            "아직 못 먹어 봤어요 means “I have not tried/eaten it yet.”"
+          ]
         }
       }
     },
@@ -3590,10 +3680,37 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
           }
         }
       ],
+      "drills": [
+        {
+          "pattern": "N이나 N 있어요?",
+          "promptZh": "说“有正装裙子或者裤子吗？”",
+          "answerKo": "정장 치마나 바지 있어요?",
+          "translations": {
+            "en": {
+              "prompt": "Say “Do you have formal skirts or pants?”"
+            }
+          }
+        },
+        {
+          "pattern": "더 A-(으)ㄴ N 있어요?",
+          "promptZh": "说“有更大的尺码吗？”",
+          "answerKo": "더 큰 사이즈 있어요?",
+          "translations": {
+            "en": {
+              "prompt": "Say “Do you have a bigger size?”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Please Try This One On",
-          "scene": "Huyen asks a clerk for formal clothes to wear at a wedding and asks for a bigger size."
+          "scene": "Huyen asks a clerk for formal clothes to wear at a wedding and asks for a bigger size.",
+          "learningPoints": [
+            "Clerks often open with 어떤 옷을 찾으세요?",
+            "Use 결혼식에서 입을 거예요 to say what you will wear it for.",
+            "When the size does not fit, say 더 큰 사이즈 있어요?"
+          ]
         }
       }
     },
@@ -3678,10 +3795,55 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
           }
         }
       ],
+      "learningPoints": [
+        "짧아요 要注意 받침 ㄼ 后接 아요 的变化。",
+        "가 봤어요 是 가다 + 보다 的经验表达。",
+        "찾으세요 是店员常用的尊敬问句。"
+      ],
+      "rolePlays": [
+        {
+          "title": "옷 가게 발음 연습",
+          "promptZh": "用 짧아요 / 가 봤어요 / 찾으세요 各说一句。",
+          "answerKo": "이 바지는 좀 짧아요. 제주도에 가 봤어요? 어떤 옷을 찾으세요?",
+          "translations": {
+            "en": {
+              "title": "Clothing Store Pronunciation",
+              "prompt": "Use 짧아요, 가 봤어요, and 찾으세요 in one sentence each."
+            }
+          }
+        }
+      ],
+      "drills": [
+        {
+          "pattern": "A-아요/어요",
+          "promptZh": "说“这条裤子有点短”。",
+          "answerKo": "이 바지는 좀 짧아요.",
+          "translations": {
+            "en": {
+              "prompt": "Say “These pants are a bit short.”"
+            }
+          }
+        },
+        {
+          "pattern": "어떤 N을/를 찾으세요?",
+          "promptZh": "说“您找什么衣服？”",
+          "answerKo": "어떤 옷을 찾으세요?",
+          "translations": {
+            "en": {
+              "prompt": "Say “What clothes are you looking for?”"
+            }
+          }
+        }
+      ],
       "translations": {
         "en": {
           "title": "Pronunciation Practice Dialogue",
-          "scene": "Practice the three key pronunciations and review clothing-store questions."
+          "scene": "Practice the three key pronunciations and review clothing-store questions.",
+          "learningPoints": [
+            "In 짧아요, pay attention to how final ㄼ changes before 아요.",
+            "가 봤어요 is 가다 + 보다 for experience.",
+            "찾으세요 is a polite question clerks often use."
+          ]
         }
       }
     }

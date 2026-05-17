@@ -420,11 +420,172 @@ function wordExampleTranslation(item) {
 }
 
 function lineTranslation(line) {
+    if (translationLocale === "en" && line?.en) return line.en;
     return getLocalizedValue(line, "translation", "zh");
 }
 
 function lineGuide(line) {
-    return getLocalizedValue(line, "guide", "guide");
+    if (translationLocale === "en" && line?.noteEn) return line.noteEn;
+    const guide = getLocalizedValue(line, "guide", "guide");
+    return guide || line?.noteZh || "";
+}
+
+function dialogueLearningPoints(dialogue) {
+    const points = localizedArray(dialogue, "learningPoints", "learningPoints");
+    if (points.length) return points;
+
+    const guide = translationLocale === "en"
+        ? dialogue.guideEn || dialogue.guideZh
+        : dialogue.guideZh || dialogue.guideEn;
+    if (guide) return [guide];
+
+    return (dialogue.lines || [])
+        .map(lineGuide)
+        .filter(Boolean)
+        .slice(0, 3);
+}
+
+function dialogueRolePlays(dialogue) {
+    if (dialogue.rolePlays?.length) return dialogue.rolePlays;
+
+    if (dialogue.roleplay) {
+        return [{
+            title: "场景练习",
+            promptZh: dialogue.roleplay.promptZh || dialogue.roleplay.promptKo || "",
+            answerKo: (dialogue.roleplay.cues || []).join(" / "),
+            translations: {
+                en: {
+                    title: "Scene Practice",
+                    prompt: dialogue.roleplay.translations?.en?.prompt || dialogue.roleplay.promptKo || dialogue.roleplay.promptZh || ""
+                }
+            }
+        }];
+    }
+
+    if (dialogue.roleplayZh || dialogue.roleplayKo || dialogue.roleplayEn) {
+        return [{
+            title: "场景练习",
+            promptZh: dialogue.roleplayZh || dialogue.roleplayKo || "",
+            answerKo: (dialogue.substitutions || []).join(" / "),
+            translations: {
+                en: {
+                    title: "Scene Practice",
+                    prompt: dialogue.roleplayEn || dialogue.roleplayKo || dialogue.roleplayZh || ""
+                }
+            }
+        }];
+    }
+
+    const isPronunciationDialogue = [dialogue.title, dialogue.focus, dialogue.source]
+        .filter(Boolean)
+        .some(text => String(text).includes("발음"));
+    const pronunciationLines = (dialogue.lines || [])
+        .filter(line => isPronunciationDialogue || line.speaker === "발음" || /\[[^\]]+\]/.test(line.ko || ""))
+        .map(line => line.ko)
+        .filter(Boolean);
+    if (pronunciationLines.length) {
+        return [{
+            title: "发音跟读",
+            promptZh: "跟读本页重点发音，再选一句完整句子读出来。",
+            answerKo: pronunciationLines.join(" / "),
+            translations: {
+                en: {
+                    title: "Pronunciation Shadowing",
+                    prompt: "Repeat the key pronunciations, then read one complete sentence aloud."
+                }
+            }
+        }];
+    }
+
+    if (dialogue.drills?.length) {
+        return [{
+            title: "场景练习",
+            promptZh: "参考下面的替换练习，用本课表达完成一段回答。",
+            answerKo: dialogue.drills.map(drill => drill.answerKo).filter(Boolean).join(" / "),
+            translations: {
+                en: {
+                    title: "Scene Practice",
+                    prompt: "Use the substitution practice below to complete a response with this lesson's expression."
+                }
+            }
+        }];
+    }
+
+    const dialogueLines = (dialogue.lines || [])
+        .map(line => line.ko)
+        .filter(Boolean);
+    if (dialogueLines.length) {
+        return [{
+            title: "对话复述",
+            promptZh: "用本课表达复述这段对话，也可以替换人物或场景。",
+            answerKo: dialogueLines.join(" "),
+            translations: {
+                en: {
+                    title: "Dialogue Retelling",
+                    prompt: "Retell this dialogue with the lesson expression, or replace the people or situation."
+                }
+            }
+        }];
+    }
+
+    return [];
+}
+
+function dialogueDrills(dialogue) {
+    if (dialogue.drills?.length) return dialogue.drills;
+
+    const cues = dialogue.roleplay?.cues?.length ? dialogue.roleplay.cues : dialogue.substitutions;
+    if (!cues?.length) return [];
+
+    return cues.map(cue => ({
+        pattern: dialogue.focus || t("patternLabel"),
+        promptZh: "替换练习",
+        answerKo: cue,
+        translations: {
+            en: {
+                prompt: "Substitution practice"
+            }
+        }
+    }));
+}
+
+function dialogueSideDrills(dialogue, rolePlays) {
+    const drills = dialogueDrills(dialogue);
+    if (drills.length) return drills;
+
+    const roleAnswers = (rolePlays || [])
+        .map(task => task.answerKo)
+        .filter(Boolean);
+    if (roleAnswers.length) {
+        return roleAnswers.map(answerKo => ({
+            pattern: dialogue.focus || t("patternLabel"),
+            promptZh: "用本课表达再说一遍。",
+            answerKo,
+            translations: {
+                en: {
+                    prompt: "Say it again using this lesson's expression."
+                }
+            }
+        }));
+    }
+
+    const isPronunciationDialogue = [dialogue.title, dialogue.focus, dialogue.source]
+        .filter(Boolean)
+        .some(text => String(text).includes("발음"));
+    const pronunciationLines = (dialogue.lines || [])
+        .filter(line => isPronunciationDialogue || line.speaker === "발음" || /\[[^\]]+\]/.test(line.ko || ""))
+        .map(line => line.ko)
+        .filter(Boolean);
+    return pronunciationLines.map(answerKo => ({
+        pattern: dialogue.focus || "발음",
+        promptZh: "跟读发音。",
+        answerKo,
+        translations: {
+            en: {
+                prompt: "Repeat the pronunciation."
+            }
+        }
+    }));
 }
 
 function cultureTranslation(item, key) {
@@ -1430,12 +1591,6 @@ function preloadNextLesson(lessonId) {
     loadLesson(next.id).catch(() => {});
 }
 
-function statusLabel(status) {
-    if (status === "draft") return t("draft");
-    if (status === "refined") return t("refined");
-    return t("todo");
-}
-
 function languageIcon() {
     return `
         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1545,7 +1700,6 @@ function renderLessonList() {
                 <span class="lesson-ko">${escapeHtml(lesson.titleKo)}</span>
                 <span class="lesson-zh">${escapeHtml(lessonTitleTranslation(lesson))}</span>
             </span>
-            <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
         </button>
     `).join("") || `<div class="todo-panel">${escapeHtml(t("noResults"))}</div>`;
 }
@@ -1557,7 +1711,6 @@ function renderHero(lesson) {
                 <div class="eyebrow">
                     <span class="level-badge">KIIP ${level}-${String(lesson.number).padStart(2, "0")}</span>
                     ${lesson.pages ? `<span class="page-badge">p.${escapeHtml(lesson.pages)}</span>` : ""}
-                    <span class="status-pill status-${escapeHtml(lesson.status)}">${statusLabel(lesson.status)}</span>
                 </div>
                 <h1>${escapeHtml(lesson.titleKo)}</h1>
                 <p class="hero-zh">${escapeHtml(lessonTitleTranslation(lesson))}</p>
@@ -1657,7 +1810,9 @@ function renderDialogue(lesson) {
         ${lesson.dialogues.map(dialogue => {
             const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
             const scene = dialogueScene(dialogue);
-            const learningPoints = localizedArray(dialogue, "learningPoints", "learningPoints");
+            const learningPoints = dialogueLearningPoints(dialogue);
+            const rolePlays = dialogueRolePlays(dialogue);
+            const drills = dialogueSideDrills(dialogue, rolePlays);
 
             return `
                 <section class="content-card dialogue-card">
@@ -1710,11 +1865,11 @@ function renderDialogue(lesson) {
                                     </ul>
                                 </section>
                             ` : ""}
-                            ${dialogue.rolePlays?.length ? `
+                            ${rolePlays.length ? `
                                 <details class="dialogue-mini-panel" open>
                                     <summary>${escapeHtml(t("rolePractice"))}</summary>
                                     <div class="role-task-grid">
-                                        ${dialogue.rolePlays.map(task => `
+                                        ${rolePlays.map(task => `
                                             <div class="role-task">
                                                 <h3>${escapeHtml(taskTitle(task))}</h3>
                                                 ${showChinese ? `<div class="muted">${escapeHtml(taskPrompt(task))}</div>` : ""}
@@ -1724,10 +1879,10 @@ function renderDialogue(lesson) {
                                     </div>
                                 </details>
                             ` : ""}
-                            ${dialogue.drills?.length ? `
+                            ${drills.length ? `
                                 <details class="dialogue-mini-panel">
                                     <summary>${escapeHtml(t("substitutionPractice"))}</summary>
-                                    ${(dialogue.drills || []).map(drill => `
+                                    ${drills.map(drill => `
                                         <div class="drill">
                                             ${showChinese ? `<div>${escapeHtml(taskPrompt(drill))}</div>` : ""}
                                             <div class="muted">${escapeHtml(t("patternLabel"))}：${escapeHtml(drill.pattern)}</div>
