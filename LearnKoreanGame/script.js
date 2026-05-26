@@ -198,6 +198,7 @@ const uiGlobalScoreEl = document.getElementById('ui-global-score');
 const currentModeBadge = document.getElementById('current-mode-badge');
 const langToggleBtn = document.getElementById('lang-toggle');
 const currentLangText = document.getElementById('current-lang-text');
+const appContainer = document.querySelector('.app-container');
 
 // Screens
 const screenMenu = document.getElementById('screen-menu');
@@ -286,6 +287,7 @@ function showMenu() {
     hideAllScreens();
     screenMenu.classList.add('active');
     updateUILanguage();
+    requestAnimationFrame(resetViewportScroll);
 }
 
 function showStartScreen() {
@@ -308,6 +310,12 @@ function hideAllScreens() {
     screenSentence.classList.remove('active');
     overlayStart.classList.add('hidden');
     overlayGameover.classList.add('hidden');
+}
+
+function resetViewportScroll() {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    if (appContainer) appContainer.scrollTop = 0;
 }
 
 function setGameLoading(isLoading) {
@@ -364,6 +372,8 @@ async function startGame() {
             requestAnimationFrame(gameLoop);
         }
     }
+
+    requestAnimationFrame(resetViewportScroll);
 }
 
 function gameOver() {
@@ -736,6 +746,7 @@ function setupWordLink() {
     });
 
     playArea.appendChild(board);
+    requestAnimationFrame(resetViewportScroll);
 }
 
 function createWordLinkCard(item, side, text) {

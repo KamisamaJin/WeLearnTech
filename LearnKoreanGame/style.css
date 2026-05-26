@@ -43,12 +43,19 @@ body {
     position: relative;
     display: flex; justify-content: center; align-items: center;
     background: radial-gradient(circle at 50% 50%, #151623 0%, #0b0c10 100%);
-    overflow: hidden;
+    overflow: clip;
 }
 
 .bg-shape {
     position: absolute; border-radius: 50%; filter: blur(80px);
     z-index: 0; animation: float 20s infinite ease-in-out alternate;
+    pointer-events: none;
+}
+
+@supports not (overflow: clip) {
+    .app-container {
+        overflow: hidden;
+    }
 }
 .shape-1 { width: 400px; height: 400px; background: var(--accent-primary); opacity: 0.15; top: -10%; left: -10%; }
 .shape-2 { width: 500px; height: 500px; background: var(--accent-secondary); opacity: 0.15; bottom: -20%; right: -10%; animation-delay: -5s; }
