@@ -1,0 +1,3 @@
+window.lessonGuidePronunciationOverrides = {
+    ...(window.lessonGuidePronunciationOverrides || {})
+};

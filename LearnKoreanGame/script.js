@@ -2,6 +2,28 @@ let vocabDB = [];
 let sentenceDB = [];
 let activeVocabPool = [];
 let activeSentencePool = [];
+const loadedDataScripts = new Set();
+const lessonGuideVocabCache = new Map();
+const lessonGuideVocabConfig = {
+    L2: {
+        dataScript: 'lesson_data_l2.js',
+        dataGlobal: 'lessonGuideL2',
+        chunksGlobal: 'lessonGuideL2LessonChunks',
+        hasEnglishVocab: true
+    },
+    L3: {
+        dataScript: 'lesson_data_l3.js',
+        dataGlobal: 'lessonGuideL3',
+        chunksGlobal: 'lessonGuideL3LessonChunks',
+        hasEnglishVocab: false
+    },
+    L4: {
+        dataScript: 'lesson_data_l4.js',
+        dataGlobal: 'lessonGuideL4',
+        chunksGlobal: 'lessonGuideL4LessonChunks',
+        hasEnglishVocab: true
+    }
+};
 
 function shuffleArray(array) {
     const arr = [...array];
@@ -12,9 +34,108 @@ function shuffleArray(array) {
     return arr;
 }
 
-function loadDataByLevel() {
+function versionedAsset(src) {
+    const version = new URLSearchParams(window.location.search).get('v');
+    return version ? `${src}?v=${encodeURIComponent(version)}` : src;
+}
+
+function loadScriptOnce(src) {
+    const absoluteSrc = new URL(versionedAsset(src), window.location.href).href;
+    if (loadedDataScripts.has(absoluteSrc)) return Promise.resolve();
+
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = absoluteSrc;
+        script.async = true;
+        script.onload = () => {
+            loadedDataScripts.add(absoluteSrc);
+            resolve();
+        };
+        script.onerror = () => reject(new Error(`Failed to load ${src}`));
+        document.head.appendChild(script);
+    });
+}
+
+function resolveLoadedGlobal(name) {
+    if (!name) return undefined;
+    if (window[name] !== undefined) return window[name];
+
+    try {
+        return window.eval(name);
+    } catch (_) {
+        return undefined;
+    }
+}
+
+function isGameVocabularyLabel(ko) {
+    if (ko === '어휘' || ko === '제목') return true;
+    if (/관련 어휘$|실천 어휘$|선거 어휘$/.test(ko)) return true;
+    if (/말과 관련된 한국 속담/.test(ko)) return true;
+    if (/(^|\s|\/)(V|A|N|동|형)[-/]/.test(ko)) return true;
+    return false;
+}
+
+function normalizeLessonGuideWord(item, lang = currentLang) {
+    const ko = String(item?.ko || '').trim();
+    const zh = String(item?.zh || '').trim();
+    const en = String(item?.translations?.en?.meaning || item?.en || '').trim();
+
+    if (!ko || !zh) return null;
+    if (lang === 'EN' && !en) return null;
+    if (isGameVocabularyLabel(ko)) return null;
+    return { ko, zh, en };
+}
+
+async function loadLessonGuideVocab(level, lang = currentLang) {
+    const cacheKey = `${level}:${lang}`;
+    if (lessonGuideVocabCache.has(cacheKey)) return lessonGuideVocabCache.get(cacheKey);
+
+    const guideConfig = lessonGuideVocabConfig[level];
+    if (!guideConfig) return [];
+    if (lang === 'EN' && !guideConfig.hasEnglishVocab) return [];
+
+    await loadScriptOnce(guideConfig.dataScript);
+    const lessonData = resolveLoadedGlobal(guideConfig.dataGlobal);
+    if (!lessonData?.lessons?.length) return [];
+
+    await Promise.all(lessonData.lessons
+        .filter(lesson => lesson.chunk)
+        .map(lesson => loadScriptOnce(lesson.chunk)));
+
+    const seen = new Set();
+    const words = [];
+    Object.values(window[guideConfig.chunksGlobal] || {}).forEach(lesson => {
+        (lesson.vocabulary || []).forEach(item => {
+            const normalized = normalizeLessonGuideWord(item, lang);
+            if (!normalized || seen.has(normalized.ko)) return;
+            seen.add(normalized.ko);
+            words.push(normalized);
+        });
+    });
+
+    lessonGuideVocabCache.set(cacheKey, words);
+    return words;
+}
+
+function currentModeUsesVocabulary() {
+    return Boolean(currentMode) && currentMode !== 'sentenceBuilder';
+}
+
+async function loadDataByLevel() {
     const level = document.getElementById('level-selector').value;
-    vocabDB = kiipData.vocab[level] || kiipData.vocab['L1'];
+    const fallbackVocab = kiipData.vocab[level] || kiipData.vocab['L1'];
+
+    vocabDB = fallbackVocab;
+    if (currentModeUsesVocabulary()) {
+        try {
+            const lessonGuideVocab = await loadLessonGuideVocab(level, currentLang);
+            vocabDB = lessonGuideVocab.length ? lessonGuideVocab : fallbackVocab;
+        } catch (error) {
+            console.warn(error);
+            vocabDB = fallbackVocab;
+        }
+    }
+
     sentenceDB = kiipData.sentences[level] || kiipData.sentences['L1'];
     activeVocabPool = shuffleArray(vocabDB);
     activeSentencePool = shuffleArray(sentenceDB);
@@ -24,6 +145,7 @@ const localeStorageKey = 'lessonGuideLocale';
 const uiStrings = {
     'EN': {
         scoreLabel: 'Total EXP', startBtn: 'Start Game', restartBtn: 'Play Again', menuBtn: 'Back to Menu',
+        loadingBtn: 'Loading...',
         modes: {
             wordPop: { title: 'Word Pop', desc: 'Match falling words before they hit the bottom.' },
             sonicCatch: { title: 'Sonic Catch', desc: 'Listen to the pronunciation and select the correct meaning.' },
@@ -34,6 +156,7 @@ const uiStrings = {
     },
     'ZH': {
         scoreLabel: '总经验', startBtn: '开始游戏', restartBtn: '再玩一次', menuBtn: '返回大厅',
+        loadingBtn: '加载中...',
         modes: {
             wordPop: { title: '词汇消消乐', desc: '在单词掉落到底部前，选出它的正确意思。' },
             sonicCatch: { title: '听音辨位', desc: '聆听韩语发音，选出正确的翻译。' },
@@ -187,14 +310,30 @@ function hideAllScreens() {
     overlayGameover.classList.add('hidden');
 }
 
-function startGame() {
+function setGameLoading(isLoading) {
+    document.getElementById('btn-start').disabled = isLoading;
+    document.getElementById('btn-restart').disabled = isLoading;
+    const strings = uiStrings[currentLang];
+    document.getElementById('ui-btn-start').textContent = isLoading ? strings.loadingBtn : strings.startBtn;
+    document.getElementById('ui-btn-restart').textContent = isLoading ? strings.loadingBtn : strings.restartBtn;
+}
+
+async function startGame() {
     score = 0;
     lives = 3;
     fallSpeed = currentMode === 'survival' ? 1.0 : 0.5;
     isPlaying = true;
+
+    setGameLoading(true);
+    try {
+        await loadDataByLevel(); // Load data based on selected level before starting
+    } finally {
+        setGameLoading(false);
+    }
+
+    if (!isPlaying) return;
     hideAllScreens();
-    
-    loadDataByLevel(); // Load data based on selected level before starting
+
     if (currentMode === 'wordLink') resetWordLinkScheduler();
     
     if (currentMode === 'sentenceBuilder') {

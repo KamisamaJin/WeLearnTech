@@ -45,6 +45,7 @@ const messages = {
         sidebarSubtitle: "单词、对话、文化文章中文伴学",
         searchPlaceholder: "搜索课文、单词或中文...",
         openLessonMenu: "打开课程菜单",
+        returnHome: "返回首页",
         languageSettings: "语言设置",
         languageLabel: "语言",
         lessonAriaLabel: "第 {number} 课：{title}",
@@ -98,6 +99,7 @@ const messages = {
         sidebarSubtitle: "Vocabulary, dialogues, and culture notes",
         searchPlaceholder: "Search lessons, words, or translations...",
         openLessonMenu: "Open lesson menu",
+        returnHome: "Back to home",
         languageSettings: "Language settings",
         languageLabel: "Language",
         lessonAriaLabel: "Lesson {number}: {title}",
@@ -429,7 +431,9 @@ function lineTranslation(line) {
 }
 
 function lineGuide(line) {
-    if (translationLocale === "en" && line?.noteEn) return line.noteEn;
+    if (translationLocale === "en") {
+        return line?.noteEn || line?.translations?.en?.guide || line?.translations?.en?.note || "";
+    }
     const guide = getLocalizedValue(line, "guide", "guide");
     return guide || line?.noteZh || "";
 }
@@ -622,6 +626,11 @@ function dialogueSideDrills(dialogue, rolePlays) {
 }
 
 function cultureTranslation(item, key) {
+    if (key === "translation") {
+        const localizedQuestion = item?.translations?.[translationLocale]?.question;
+        if (localizedQuestion) return localizedQuestion;
+    }
+
     const fallbackKeys = {
         translation: "zh",
         meaning: "zh",
@@ -694,11 +703,32 @@ function applyLessonTranslationPatch(lesson, locale, patch) {
     }
 }
 
+function applyEmbeddedNestedTranslations(lesson) {
+    (lesson.dialogues || []).forEach(dialogue => {
+        Object.entries(dialogue.translations || {}).forEach(([locale, patch]) => {
+            mergeArrayLocaleFields(dialogue.lines, locale, patch.lines);
+            mergeArrayLocaleFields(dialogue.rolePlays, locale, patch.rolePlays);
+            mergeArrayLocaleFields(dialogue.drills, locale, patch.drills);
+        });
+    });
+
+    const culture = Array.isArray(lesson.culture) ? lesson.culture[0] : lesson.culture;
+    if (!culture) return;
+
+    Object.entries(culture.translations || {}).forEach(([locale, patch]) => {
+        mergeArrayLocaleFields(culture.paragraphs, locale, patch.paragraphs);
+        mergeArrayLocaleFields(culture.keyTerms, locale, patch.keyTerms);
+        mergeArrayLocaleFields(culture.questions, locale, patch.questions);
+    });
+}
+
 function getLessonTranslationChunk(locale, lessonId) {
     return window[config.translationChunksGlobal]?.[locale]?.[lessonId];
 }
 
 function applyLessonTranslationPacks(lesson) {
+    applyEmbeddedNestedTranslations(lesson);
+
     Object.entries(lessonTranslationPacks).forEach(([locale, pack]) => {
         applyLessonTranslationPatch(lesson, locale, pack?.lessons?.[lesson.id]);
         applyLessonTranslationPatch(lesson, locale, getLessonTranslationChunk(locale, lesson.id));
@@ -1684,6 +1714,10 @@ function applyStaticLocale() {
     document.title = t("appTitle");
     document.querySelector(".sidebar-title").textContent = t("appTitle");
     document.querySelector(".sidebar-subtitle").textContent = t("sidebarSubtitle");
+    document.querySelectorAll(".home-link").forEach(link => {
+        link.title = t("returnHome");
+        link.setAttribute("aria-label", t("returnHome"));
+    });
     lessonSearch.placeholder = t("searchPlaceholder");
     menuToggle.setAttribute("aria-label", t("openLessonMenu"));
     renderLanguageSwitchers();
