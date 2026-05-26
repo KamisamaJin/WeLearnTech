@@ -15,7 +15,8 @@ const lessonGuideVocabConfig = {
         dataScript: 'lesson_data_l3.js',
         dataGlobal: 'lessonGuideL3',
         chunksGlobal: 'lessonGuideL3LessonChunks',
-        hasEnglishVocab: false
+        hasEnglishVocab: false,
+        allowMeaningFallback: true
     },
     L4: {
         dataScript: 'lesson_data_l4.js',
@@ -75,15 +76,15 @@ function isGameVocabularyLabel(ko) {
     return false;
 }
 
-function normalizeLessonGuideWord(item, lang = currentLang) {
+function normalizeLessonGuideWord(item, lang = currentLang, options = {}) {
     const ko = String(item?.ko || '').trim();
     const zh = String(item?.zh || '').trim();
     const en = String(item?.translations?.en?.meaning || item?.en || '').trim();
 
     if (!ko || !zh) return null;
-    if (lang === 'EN' && !en) return null;
+    if (lang === 'EN' && !en && !options.allowMeaningFallback) return null;
     if (isGameVocabularyLabel(ko)) return null;
-    return { ko, zh, en };
+    return { ko, zh, en: en || zh };
 }
 
 async function loadLessonGuideVocab(level, lang = currentLang) {
@@ -92,7 +93,7 @@ async function loadLessonGuideVocab(level, lang = currentLang) {
 
     const guideConfig = lessonGuideVocabConfig[level];
     if (!guideConfig) return [];
-    if (lang === 'EN' && !guideConfig.hasEnglishVocab) return [];
+    if (lang === 'EN' && !guideConfig.hasEnglishVocab && !guideConfig.allowMeaningFallback) return [];
 
     await loadScriptOnce(guideConfig.dataScript);
     const lessonData = resolveLoadedGlobal(guideConfig.dataGlobal);
@@ -106,7 +107,9 @@ async function loadLessonGuideVocab(level, lang = currentLang) {
     const words = [];
     Object.values(window[guideConfig.chunksGlobal] || {}).forEach(lesson => {
         (lesson.vocabulary || []).forEach(item => {
-            const normalized = normalizeLessonGuideWord(item, lang);
+            const normalized = normalizeLessonGuideWord(item, lang, {
+                allowMeaningFallback: Boolean(guideConfig.allowMeaningFallback)
+            });
             if (!normalized || seen.has(normalized.ko)) return;
             seen.add(normalized.ko);
             words.push(normalized);
