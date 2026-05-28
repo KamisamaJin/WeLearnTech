@@ -5,6 +5,12 @@ let activeSentencePool = [];
 const loadedDataScripts = new Set();
 const lessonGuideVocabCache = new Map();
 const lessonGuideVocabConfig = {
+    L1: {
+        dataScript: 'lesson_data_l1.js',
+        dataGlobal: 'lessonGuideL1',
+        chunksGlobal: 'lessonGuideL1LessonChunks',
+        hasEnglishVocab: true
+    },
     L2: {
         dataScript: 'lesson_data_l2.js',
         dataGlobal: 'lessonGuideL2',
