@@ -15,14 +15,21 @@ const lessonGuideVocabConfig = {
         dataScript: 'lesson_data_l2.js',
         dataGlobal: 'lessonGuideL2',
         chunksGlobal: 'lessonGuideL2LessonChunks',
-        hasEnglishVocab: true
+        hasEnglishVocab: true,
+        translationsScript: 'lesson_translations_l2_en.js',
+        translationsGlobal: 'lessonGuideL2Translations',
+        translationChunksGlobal: 'lessonGuideL2TranslationChunks',
+        translationChunkMode: 'field'
     },
     L3: {
         dataScript: 'lesson_data_l3.js',
         dataGlobal: 'lessonGuideL3',
         chunksGlobal: 'lessonGuideL3LessonChunks',
-        hasEnglishVocab: false,
-        allowMeaningFallback: true
+        hasEnglishVocab: true,
+        translationsScript: 'lesson_translations_l3_en.js',
+        translationsGlobal: 'lessonGuideL3Translations',
+        translationChunksGlobal: 'lessonGuideL3TranslationChunks',
+        translationChunkMode: 'all'
     },
     L4: {
         dataScript: 'lesson_data_l4.js',
@@ -109,6 +116,56 @@ function normalizeLessonGuideWord(item, lang = currentLang, options = {}) {
     };
 }
 
+function mergeLessonGuideLocaleFields(item, locale, fields) {
+    if (!item || !fields) return;
+    const cleaned = Object.fromEntries(Object.entries(fields).filter(([, value]) => value !== undefined));
+    if (!Object.keys(cleaned).length) return;
+    item.translations ||= {};
+    item.translations[locale] = {
+        ...(item.translations[locale] || {}),
+        ...cleaned
+    };
+}
+
+function applyLessonGuideTranslationPatch(lesson, locale, patch) {
+    if (!lesson || !patch?.vocabulary) return;
+    patch.vocabulary.forEach((fields, index) => {
+        mergeLessonGuideLocaleFields(lesson.vocabulary?.[index], locale, fields);
+    });
+}
+
+function lessonGuideTranslationChunkPath(lesson, guideConfig) {
+    if (guideConfig.translationChunkMode === 'all') {
+        return `lesson_translations/en/${lesson.id}.js`;
+    }
+    return lesson.translationChunk || '';
+}
+
+async function loadLessonGuideEnglishTranslations(guideConfig, lessons) {
+    if (!guideConfig.translationsScript && !guideConfig.translationChunksGlobal) return;
+
+    if (guideConfig.translationsScript) {
+        await loadScriptOnce(guideConfig.translationsScript);
+    }
+
+    const chunkPaths = lessons
+        .map(lesson => lessonGuideTranslationChunkPath(lesson, guideConfig))
+        .filter(Boolean);
+    await Promise.all(chunkPaths.map(path => loadScriptOnce(path)));
+}
+
+function applyLessonGuideEnglishTranslations(guideConfig, lessonData, lessonsById) {
+    const translationPack = resolveLoadedGlobal(guideConfig.translationsGlobal)?.en;
+    const translationChunks = window[guideConfig.translationChunksGlobal]?.en || {};
+
+    lessonData.lessons.forEach(meta => {
+        const lesson = lessonsById[meta.id];
+        if (!lesson) return;
+        applyLessonGuideTranslationPatch(lesson, 'en', translationPack?.lessons?.[meta.id]);
+        applyLessonGuideTranslationPatch(lesson, 'en', translationChunks[meta.id]);
+    });
+}
+
 async function loadLessonGuideVocab(level, lang = currentLang) {
     const cacheKey = `${level}:${lang}`;
     if (lessonGuideVocabCache.has(cacheKey)) return lessonGuideVocabCache.get(cacheKey);
@@ -125,9 +182,15 @@ async function loadLessonGuideVocab(level, lang = currentLang) {
         .filter(lesson => lesson.chunk)
         .map(lesson => loadScriptOnce(lesson.chunk)));
 
+    const lessonsById = window[guideConfig.chunksGlobal] || {};
+    if (lang === 'EN') {
+        await loadLessonGuideEnglishTranslations(guideConfig, lessonData.lessons);
+        applyLessonGuideEnglishTranslations(guideConfig, lessonData, lessonsById);
+    }
+
     const seen = new Set();
     const words = [];
-    Object.values(window[guideConfig.chunksGlobal] || {}).forEach(lesson => {
+    Object.values(lessonsById).forEach(lesson => {
         (lesson.vocabulary || []).forEach(item => {
             const normalized = normalizeLessonGuideWord(item, lang, {
                 allowMeaningFallback: Boolean(guideConfig.allowMeaningFallback)
