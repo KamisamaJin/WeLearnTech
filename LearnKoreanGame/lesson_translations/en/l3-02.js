@@ -21,24 +21,27 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
     ],
     "vocabulary": [
         {
-            "meaning": "character",
-            "guide": "Noun meaning \"character\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
+            "meaning": "personality",
             "example": "What is your personality like?",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "성격=character; 성적=achievement"
+                    "text": "Do not confuse 성격 (personality) with 성적 (grades)"
                 }
             ]
         },
         {
-            "meaning": "Outgoing",
-            "guide": "Noun meaning \"outgoing\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I am an extrovert."
+            "meaning": "outgoing",
+            "example": "I have an outgoing personality.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "성격이 외향적이에요 / 외향적인 사람"
+                }
+            ]
         },
         {
-            "meaning": "introversion",
-            "guide": "A noun meaning \"introvert.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
+            "meaning": "introverted",
             "example": "The child is very introverted.",
             "tips": [
                 {
@@ -48,9 +51,8 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "Positive and proactive",
-            "guide": "Noun, meaning \"active, active\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Need to take the initiative to talk to guests.",
+            "meaning": "active; proactive",
+            "example": "You need to talk actively with customers.",
             "tips": [
                 {
                     "type": "collocation",
@@ -58,19 +60,23 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "Active participation is not just about being in a positive mood"
+                    "text": "It means active participation, not just a positive mood"
                 }
             ]
         },
         {
-            "meaning": "passive, passive",
-            "guide": "Noun, meaning \"passive, passive\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because my personality is relatively passive, I am very worried."
+            "meaning": "passive; reserved",
+            "example": "I am worried because the child is rather passive.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "성격이 소극적이에요 / 소극적인 사람"
+                }
+            ]
         },
         {
-            "meaning": "Meticulous and serious",
-            "guide": "Noun, meaning \"meticulous and careful\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It has become very detailed recently.",
+            "meaning": "meticulous; careful",
+            "example": "You have become very meticulous lately.",
             "tips": [
                 {
                     "type": "collocation",
@@ -83,19 +89,28 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "Careless and careless",
-            "guide": "Noun, meaning \"careless, careless\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I used to be a little careless, but now I'm more careful."
+            "meaning": "to be careless; to be scatterbrained",
+            "example": "I used to be careless, but now I have become meticulous.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "덜렁거리는 사람 / 덜렁거리는 편이다"
+                }
+            ]
         },
         {
-            "meaning": "kind, gentle",
-            "guide": "Noun meaning \"kindness, gentleness\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Our family is very affectionate."
+            "meaning": "warm; affectionate",
+            "example": "Everyone in my family is warm and affectionate.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "성격이 다정해요 / 다정한 사람"
+                }
+            ]
         },
         {
-            "meaning": "cold, inexpressive",
-            "guide": "Noun, meaning \"cold, inexpressive\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Before marriage, I was less expressive.",
+            "meaning": "blunt; not expressive",
+            "example": "Before getting married, I was not very expressive.",
             "tips": [
                 {
                     "type": "collocation",
@@ -103,40 +118,33 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "Not necessarily angry, often refers to poor expression"
+                    "text": "It does not necessarily mean angry; often it just means not expressive"
                 }
             ]
         },
         {
-            "meaning": "Laid-back personality, not in a hurry",
-            "guide": "Noun, meaning \"laid-back and unhurried personality\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "When I was in my hometown, my personality was relatively slow and leisurely.",
+            "meaning": "relaxed; easygoing",
+            "example": "When I was in my hometown, I had a relaxed personality.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "느리다=slow; 느긋하다=not in a hurry"
+                    "text": "느리다 means slow; 느긋하다 means relaxed or not in a hurry"
                 }
             ]
         },
         {
-            "meaning": "Impatient",
-            "guide": "A noun meaning \"an impatient person\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I am impatient and often make mistakes.",
+            "meaning": "impatient; hasty",
+            "example": "I am impatient, so I often make mistakes.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "성격이 급하다 / 마음이 급하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "일이 급하다 means “the matter is urgent.”"
+                    "text": "일이 급하다 means the matter is urgent"
                 }
             ]
         },
         {
-            "meaning": "lively, active",
-            "guide": "Noun, meaning \"lively, active\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I became much more lively after learning Taekwondo.",
+            "meaning": "lively; active",
+            "example": "After learning taekwondo, I became much more lively.",
             "tips": [
                 {
                     "type": "collocation",
@@ -149,59 +157,66 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "Comfortable and convenient",
-            "guide": "Noun, meaning \"comfort, convenience\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Once you get familiar with the job, it becomes easier.",
+            "meaning": "comfortable; at ease",
+            "example": "After getting used to the work, I became more comfortable.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "마음이 편하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "편리하다 means convenient; 편하다 means comfortable or relaxed."
+                    "text": "편리하다 means convenient; 편하다 means comfortable or at ease"
                 }
             ]
         },
         {
-            "meaning": "Hard work, difficulty",
-            "guide": "Noun, meaning \"hard work, difficulty\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It was hard at first, but now it's easy."
-        },
-        {
-            "meaning": "become familiar and adaptable",
-            "guide": "Noun, meaning \"to become familiar with, to adapt to\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Now I have adapted to life in Korea very well.",
+            "meaning": "hard; difficult; tiring",
+            "example": "It was hard at first, but now it is comfortable.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "한국 생활에 익숙해지다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "일에 익숙해지다： often receive 에"
+                    "text": "일이 힘들다 / 생활이 힘들다"
                 }
             ]
         },
         {
-            "meaning": "mistake, error",
-            "guide": "Noun meaning \"mistake, error\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I often made mistakes before."
+            "meaning": "to become used to; to get familiar with",
+            "example": "Now I have become quite used to life in Korea.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "일에 익숙해지다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Use 에 for the thing you become used to"
+                }
+            ]
         },
         {
-            "meaning": "There's still a lot to learn",
-            "guide": "A noun meaning “there is still much to learn.” It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Thank you. I still have a lot to learn."
+            "meaning": "mistake",
+            "example": "I used to make mistakes often."
         },
         {
-            "meaning": "health",
-            "guide": "Noun meaning \"health\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because of exercise, I became healthy."
+            "meaning": "to still have a lot to learn",
+            "example": "Thank you. I still have a lot to learn.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "배울 게 많다"
+                }
+            ]
         },
         {
-            "meaning": "Good pronunciation",
-            "guide": "Noun meaning \"good pronunciation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My pronunciation has improved after listening to Korean more.",
+            "meaning": "healthy",
+            "example": "I became healthy because I exercised.",
+            "tips": [
+                {
+                    "type": "form",
+                    "text": "건강하다 → 건강해지다"
+                }
+            ]
+        },
+        {
+            "meaning": "to have good pronunciation",
+            "example": "After listening to a lot of Korean, my pronunciation improved.",
             "tips": [
                 {
                     "type": "collocation",
@@ -209,29 +224,23 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "발음 is pronounced as ㅁ"
+                    "text": "발음 is pronounced with a final ㅁ sound"
                 }
             ]
         },
         {
-            "meaning": "Onboarding",
-            "guide": "A noun meaning \"onboarding.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Before joining the company, working in the company was very unfamiliar.",
+            "meaning": "to join a company; to start a job",
+            "example": "Before joining the company, the work felt unfamiliar.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "회사에 입사하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "입사하다 means join a company; 출근하다 means go to work."
+                    "text": "입사하다 means to join a company; 출근하다 means to go to work"
                 }
             ]
         },
         {
-            "meaning": "get married",
-            "guide": "Noun meaning \"to marry\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My personality changed after I got married.",
+            "meaning": "to get married",
+            "example": "After getting married, my personality changed.",
             "tips": [
                 {
                     "type": "collocation",
@@ -240,44 +249,46 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "instead of, in exchange",
-            "guide": "Noun, meaning \"instead of, as an exchange\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Work on Sunday and have Monday off in exchange.",
+            "meaning": "instead of; in exchange for",
+            "example": "I work on Sunday, and in exchange I rest on Monday.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "V-는 대신에 / N 대신에"
+                    "text": "일하는 대신 쉬다"
                 },
                 {
                     "type": "pitfall",
-                    "text": "It can mean substitution or compensation."
+                    "text": "It can mean replacement or a trade-off"
                 }
             ]
         },
         {
-            "meaning": "take a long time",
-            "guide": "Noun meaning \"to take a long time\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Homework takes a long time.",
+            "meaning": "to take a long time",
+            "example": "Doing homework takes a long time.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "시간이 걸리다"
+                    "text": "시간이 오래 걸리다"
                 },
                 {
                     "type": "pitfall",
-                    "text": "don't say 시간을 걸리다"
+                    "text": "Use 시간이 걸리다, not 시간을 걸리다"
                 }
             ]
         },
         {
-            "meaning": "No mistakes",
-            "guide": "Noun meaning \"without mistakes\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although it took a long time, there were no mistakes."
+            "meaning": "to have no mistakes",
+            "example": "It takes a long time, but there are no mistakes.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "실수가 없다"
+                }
+            ]
         },
         {
-            "meaning": "visit, visit",
-            "guide": "Noun, meaning \"visit, visit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although I can't visit often, I call frequently.",
+            "meaning": "to visit someone respectfully",
+            "example": "I cannot visit often, but I call often.",
             "tips": [
                 {
                     "type": "collocation",
@@ -285,14 +296,13 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "Honorific words for 찾아가다/보다"
+                    "text": "This is the honorific form of 찾아가다 or 보다"
                 }
             ]
         },
         {
-            "meaning": "call you",
-            "guide": "Noun meaning \"to call you.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Call your parents often.",
+            "meaning": "to call someone respectfully",
+            "example": "I often call my parents.",
             "tips": [
                 {
                     "type": "collocation",
@@ -300,14 +310,13 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "For elders: 께 + 드리다"
+                    "text": "For elders or respected people, pair 께 with 드리다"
                 }
             ]
         },
         {
-            "meaning": "Accumulate experience",
-            "guide": "A noun meaning \"to accumulate experience.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although the work is hard, you can gain various experiences.",
+            "meaning": "to gain experience",
+            "example": "The work is hard, but I can gain various experience.",
             "tips": [
                 {
                     "type": "collocation",
@@ -316,156 +325,156 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "go to work",
-            "guide": "Noun meaning \"to go to work\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Do you also work on Sunday?",
+            "meaning": "to go to work",
+            "example": "Do you go to work on Sundays too?",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "출근하다=go to work; 퇴근하다=get off work"
+                    "text": "출근하다 means to go to work; 퇴근하다 means to leave work"
                 }
             ]
         },
         {
-            "meaning": "rest",
-            "guide": "Noun meaning \"to rest\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Closed on Monday."
-        },
-        {
-            "meaning": "work, duty",
-            "guide": "Noun, meaning \"work, duty\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Work on weekends in exchange for having weekdays off.",
+            "meaning": "to rest; to take a day off",
+            "example": "I rest on Mondays.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "주말에 근무하다 / 야간 근무"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "출근 is going to work; 근무 is working or being on duty."
+                    "text": "집에서 쉬다 / 월요일에 쉬다"
                 }
             ]
         },
         {
-            "meaning": "working days, weekdays",
-            "guide": "Noun meaning \"working day, weekday\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Weekdays off in exchange for working weekends."
-        },
-        {
-            "meaning": "Order takeout",
-            "guide": "Noun, meaning \"to order takeout\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Order takeout so I don’t cook it at home.",
+            "meaning": "to work; to be on duty",
+            "example": "I work on weekends, and in exchange I rest on weekdays.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "배달 음식을 시키다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "시키다 here means \"order food\""
+                    "text": "출근 is going to work; 근무 is working or being on duty"
                 }
             ]
         },
         {
-            "meaning": "good quality",
-            "guide": "Noun meaning \"good quality\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Although the price is expensive, the quality is good."
+            "meaning": "weekday",
+            "example": "I rest on weekdays, and in exchange I work on weekends."
         },
         {
-            "meaning": "Use the stairs, take the stairs",
-            "guide": "Noun meaning \"to use stairs, to take stairs\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Instead of taking the elevator, take the stairs."
-        },
-        {
-            "meaning": "trouble, distress",
-            "guide": "Noun, meaning \"trouble, distress\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Because my child’s personality is very distressing.",
+            "meaning": "to order food for delivery",
+            "example": "I order food, so I do not cook at home.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "고민이 있다 / 고민 때문에"
+                    "text": "치킨을 시켜 먹다"
                 },
                 {
                     "type": "pitfall",
-                    "text": "고민=trouble; 걱정=worry"
+                    "text": "시키다 means to order food in this expression"
                 }
             ]
         },
         {
-            "meaning": "Similar, similar appearance/similar personality",
-            "guide": "Noun, meaning \"like, similar in appearance/similar personality\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The child is like me and has a relatively introverted personality.",
+            "meaning": "to be good in quality",
+            "example": "It is expensive, but the quality is good.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "누구를 닮다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "Both appearance and personality are available"
+                    "text": "품질이 좋다"
                 }
             ]
         },
         {
-            "meaning": "school friends, classmates",
-            "guide": "Noun, meaning \"school friend, classmate\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I haven't been able to integrate with my school friends yet."
-        },
-        {
-            "meaning": "Get along, blend in",
-            "guide": "Noun, meaning \"get along, blend in\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It seems like I still can't blend in with my school friends.",
+            "meaning": "to use the stairs",
+            "example": "Instead of taking the elevator, I use the stairs.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "친구들과 어울리다 / 옷이 어울리다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "It can refer to being gregarious or suitable."
+                    "text": "계단을 이용하다"
                 }
             ]
         },
         {
-            "meaning": "Worry",
-            "guide": "Noun meaning \"to worry about\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
+            "meaning": "worry; concern",
+            "example": "I am worried because of my child's personality.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "고민 is a concern or dilemma; 걱정 is worry"
+                }
+            ]
+        },
+        {
+            "meaning": "to resemble; to take after",
+            "example": "The child takes after me and is introverted.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "엄마를 닮다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "It can describe resemblance in appearance or personality"
+                }
+            ]
+        },
+        {
+            "meaning": "school friend; classmate",
+            "example": "The child still cannot fit in with school friends.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "학교 친구"
+                }
+            ]
+        },
+        {
+            "meaning": "to get along; to fit in",
+            "example": "It seems the child still cannot fit in with school friends.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "친구들과 어울리다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "It can mean to fit in socially or to suit something"
+                }
+            ]
+        },
+        {
+            "meaning": "to be worrying; to be concerning",
             "example": "Really? You must be worried.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "걱정이 되다"
+                    "text": "아이가 걱정되다"
                 },
                 {
                     "type": "pitfall",
-                    "text": "걱정하다=worry; 걱정되다=worrying"
+                    "text": "걱정하다 means to worry; 걱정되다 means to be worrying or concerning"
                 }
             ]
         },
         {
-            "meaning": "Societies",
-            "guide": "Noun meaning \"community\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "How about letting your children participate in club activities?"
+            "meaning": "club; school club",
+            "example": "How about having the child join a club activity?"
         },
         {
-            "meaning": "Volunteer service",
-            "guide": "A noun meaning \"volunteer service.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "After volunteering, my personality became more cheerful."
+            "meaning": "volunteer service",
+            "example": "After doing volunteer work, the child became more cheerful."
         },
         {
-            "meaning": "let... do, arrange",
-            "guide": "Noun, meaning \"to make...do, arrange\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Try getting your kids involved in clubs or volunteering.",
+            "meaning": "to make someone do; to have someone do",
+            "example": "Try having the child do club or volunteer activities.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "It can mean \"let me do it\" or \"order food\"."
+                    "text": "It can mean to make someone do something or to order food"
                 }
             ]
         },
         {
-            "meaning": "Be cheerful, become clear",
-            "guide": "Noun, meaning \"to become cheerful, to become bright\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My personality seems to have become more outgoing and cheerful.",
+            "meaning": "to become cheerful; to brighten up",
+            "example": "The personality seems to have become outgoing and cheerful.",
             "tips": [
                 {
                     "type": "collocation",
@@ -479,13 +488,11 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
         },
         {
             "meaning": "habit",
-            "guide": "Noun meaning \"habit\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please help your children develop the habit of planning."
+            "example": "Help the child develop the habit of planning."
         },
         {
-            "meaning": "Make a plan",
-            "guide": "Noun meaning \"to make a plan.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Make a schedule and do things.",
+            "meaning": "to make a plan",
+            "example": "Make a schedule and then do the work.",
             "tips": [
                 {
                     "type": "collocation",
@@ -494,9 +501,8 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "stand up, stand up",
-            "guide": "Noun, meaning \"to stand up, to stand out.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I find it difficult to stand up in front of people.",
+            "meaning": "to step forward; to stand in front of others",
+            "example": "The child finds it hard to stand in front of people.",
             "tips": [
                 {
                     "type": "collocation",
@@ -504,24 +510,23 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "Take the initiative, not simply walk out"
+                    "text": "This means to step forward actively, not simply to go outside"
                 }
             ]
         },
         {
-            "meaning": "strange, unfamiliar",
-            "guide": "Noun, meaning \"strange, unfamiliar\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Everything was strange at first."
+            "meaning": "to guess; to infer",
+            "example": "Try to guess this person's personality.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "성격을 추측하다"
+                }
+            ]
         },
         {
-            "meaning": "conjecture, guess",
-            "guide": "Noun meaning \"guess, guess\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Please make some guesses about this person’s personality."
-        },
-        {
-            "meaning": "participate, participate",
-            "guide": "Noun, meaning \"to participate in, participate in\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Actively participate in class.",
+            "meaning": "to participate",
+            "example": "I actively participate in class.",
             "tips": [
                 {
                     "type": "collocation",
@@ -529,233 +534,295 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
                 },
                 {
                     "type": "pitfall",
-                    "text": "Participate in something often connected 에"
+                    "text": "Use 에 for the activity or event you participate in"
                 }
             ]
         },
         {
-            "meaning": "envy",
-            "guide": "Noun meaning \"envy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Friends envied Anna.",
+            "meaning": "to envy",
+            "example": "Friends envy Anna.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "친구를 부러워하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "The person you envy often picks up 을/를"
+                    "text": "The person or thing envied usually takes 을/를"
                 }
             ]
         },
         {
-            "meaning": "open, enlightened",
-            "guide": "Noun meaning \"open, enlightened\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It would be better if teachers were more open-minded.",
+            "meaning": "unfamiliar; strange",
+            "example": "At first, everything was unfamiliar.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "장소가 낯설다 / 사람이 낯설다"
+                }
+            ]
+        },
+        {
+            "meaning": "talent show",
+            "example": "I sang at the talent show.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "장기 means a special talent here, not an organ or janggi chess"
+                }
+            ]
+        },
+        {
+            "meaning": "open-minded",
+            "example": "It would be good for a teacher to be open-minded.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "개방적=open-minded; 외향적=outgoing"
+                    "text": "개방적 means open-minded; 외향적 means outgoing"
                 }
             ]
         },
         {
             "meaning": "conservative",
-            "guide": "Noun meaning \"conservative\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "This job is also suitable for conservative personalities."
-        },
-        {
-            "meaning": "Be cautious",
-            "guide": "Noun meaning \"prudent\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It would be better for the doctor to be more cautious.",
+            "example": "This job also suits a conservative personality.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "신중하게 생각하다"
+                    "text": "성격이 보수적이에요 / 보수적인 사람"
+                }
+            ]
+        },
+        {
+            "meaning": "careful; cautious",
+            "example": "It would be good for a doctor to be cautious.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "신중하게 결정하다"
                 },
                 {
                     "type": "pitfall",
-                    "text": "Be cautious, not timid"
+                    "text": "This means careful or cautious, not timid"
                 }
             ]
         },
         {
             "meaning": "sensitive",
-            "guide": "Noun meaning \"sensitive\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "He has a sensitive personality, so he can detect small changes.",
+            "example": "Because the person is sensitive, they notice small changes well.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "냄새에 예민하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "It can also mean \"easily annoyed/nervous\""
+                    "text": "It can also imply being touchy or easily bothered"
                 }
             ]
         },
         {
-            "meaning": "Very humorous",
-            "guide": "A noun meaning \"a sense of humor\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Our family has a great sense of humor.",
+            "meaning": "to have a good sense of humor",
+            "example": "My family has a good sense of humor.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "유머 감각이 있다 / 뛰어나다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "More natural: 유머 감각이 있다"
+                    "text": "유머 감각이 있다 is often more natural"
                 }
             ]
         },
         {
-            "meaning": "Thoughtful and attentive",
-            "guide": "Noun, meaning \"considerate, careful care\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It would be better if the social welfare worker was more considerate.",
+            "meaning": "considerate; attentive",
+            "example": "It would be good for a social worker to be considerate.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "Taking care of others is not 꼼꼼하다"
+                    "text": "This means considerate and caring, not simply meticulous"
                 }
             ]
         },
         {
-            "meaning": "Emotional and humane",
-            "guide": "Noun, meaning \"emphasis on emotion and human touch\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "That person is very affectionate, so he takes good care of others.",
+            "meaning": "warm-hearted; affectionate",
+            "example": "That person is warm-hearted and takes good care of people.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "정이 많은 사람"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "정 is the emotional bond or affection between people."
+                    "text": "정 is emotional warmth or attachment between people"
                 }
             ]
         },
         {
-            "meaning": "Strong sense of responsibility",
-            "guide": "Noun meaning \"strong sense of responsibility\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It would be better if civil servants have a strong sense of responsibility.",
+            "meaning": "to have a strong sense of responsibility",
+            "example": "It would be good for a public official to have a strong sense of responsibility.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "책임감은 강하다/있다 more natural"
+                    "text": "책임감이 강하다 or 책임감이 있다 sounds natural"
                 }
             ]
         },
         {
-            "meaning": "Strong curiosity",
-            "guide": "Noun meaning \"curious\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It is better if the interpreter is curious."
+            "meaning": "to be very curious",
+            "example": "It would be good for an interpreter to be very curious.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "호기심이 많은 사람 / 호기심이 많은 편이다"
+                }
+            ]
         },
         {
             "meaning": "teacher",
-            "guide": "Noun meaning \"teacher\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Teachers need to get along well with students."
+            "example": "Teachers need to get along well with students.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "교사가 되다 / 교사로 일하다"
+                }
+            ]
         },
         {
-            "meaning": "Immigration and Foreign Affairs Agency staff",
-            "guide": "A noun meaning \"employee of the Immigration and Foreign Affairs Office\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The staff of the Immigration and Immigration Agency need to be friendly."
+            "meaning": "immigration office employee",
+            "example": "Immigration office employees need to be kind.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "출입국·외국인청 직원"
+                }
+            ]
         },
         {
-            "meaning": "civil servant",
-            "guide": "Noun meaning \"civil servant\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It would be better if civil servants have a strong sense of responsibility."
+            "meaning": "public official",
+            "example": "It would be good for a public official to have a strong sense of responsibility.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "공무원이 되다 / 공무원으로 일하다"
+                }
+            ]
         },
         {
             "meaning": "interpreter",
-            "guide": "Noun meaning \"interpreter\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Interpreters must not only understand the language, but also the culture.",
+            "example": "Interpreters need to know not only languages but also cultures.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "통역 is spoken interpretation; 번역 is written translation."
+                    "text": "통역 is interpreting; 번역 is written translation"
                 }
             ]
         },
         {
-            "meaning": "Beautician/Hairdresser",
-            "guide": "Noun meaning \"beautician/hairdresser\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Beauticians often chat with customers."
+            "meaning": "hairdresser; beautician",
+            "example": "Hairdressers talk a lot with customers.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "미용사가 되다 / 미용사로 일하다"
+                }
+            ]
         },
         {
-            "meaning": "manicurist",
-            "guide": "A noun meaning \"manicurist\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Manicurists need to be meticulous."
+            "meaning": "nail artist",
+            "example": "Nail artists need to be meticulous.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "네일 아티스트가 되다 / 네일 아티스트로 일하다"
+                }
+            ]
         },
         {
-            "meaning": "social welfare division, social worker",
-            "guide": "Noun meaning \"social welfare engineer, social worker\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Social workers need to be considerate and responsible."
+            "meaning": "social worker",
+            "example": "Social workers need to be considerate and responsible.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "사회 복지사가 되다 / 사회 복지사로 일하다"
+                }
+            ]
         },
         {
             "meaning": "salesperson",
-            "guide": "Noun meaning \"salesperson\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I am a cosmetics salesperson."
-        },
-        {
-            "meaning": "New employees",
-            "guide": "A noun meaning \"new employee\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I'm a new employee who joined a month ago."
-        },
-        {
-            "meaning": "conversation, conversation",
-            "guide": "Noun meaning \"conversation, conversation.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Need to take the initiative to talk to guests.",
+            "example": "I am a cosmetics salesperson.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "손님과 대화하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "Talk to someone: 와/과 대화하다"
+                    "text": "판매원이 되다 / 판매원으로 일하다"
                 }
             ]
         },
         {
-            "meaning": "talk, communicate",
-            "guide": "Noun, meaning \"talk, exchange\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It's difficult to talk to someone you're meeting for the first time."
-        },
-        {
-            "meaning": "Cosmetics",
-            "guide": "Noun meaning \"cosmetics\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My job is to sell cosmetics."
-        },
-        {
-            "meaning": "sale, sale",
-            "guide": "Noun meaning \"to sell, to sell\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Do a job selling cosmetics."
-        },
-        {
-            "meaning": "Allowed to take leave, requested for leave",
-            "guide": "Noun, meaning \"to be allowed to take leave, to ask for leave\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I took leave last week and went back to my hometown.",
+            "meaning": "new employee",
+            "example": "I am a new employee who joined one month ago.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "휴가를 받다 / 휴가를 내다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "받다=approved; 내다=application"
+                    "text": "신입 사원이 되다 / 신입 사원으로 일하다"
                 }
             ]
         },
         {
-            "meaning": "Excited, excited, looking forward to",
-            "guide": "Noun, meaning \"excitement, excitement, anticipation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I arrived home with anticipation."
+            "meaning": "to talk; to have a conversation",
+            "example": "You need to talk actively with customers.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "친구와 대화하다"
+                },
+                {
+                    "type": "pitfall",
+                    "text": "Use 와/과 for the person you talk with"
+                }
+            ]
+        },
+        {
+            "meaning": "to talk; to have a conversation",
+            "example": "It is hard to talk with people I meet for work.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "이야기를 나누다"
+                }
+            ]
+        },
+        {
+            "meaning": "cosmetics",
+            "example": "My job is selling cosmetics."
+        },
+        {
+            "meaning": "to sell",
+            "example": "I work selling cosmetics.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "화장품을 판매하다"
+                }
+            ]
+        },
+        {
+            "meaning": "doctor",
+            "example": "It would be good for a doctor to be cautious.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "의사가 되다 / 의사는 신중하다"
+                }
+            ]
+        },
+        {
+            "meaning": "to get vacation time approved",
+            "example": "Last week I got time off and went to my hometown.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "받다 means to get approval; 내다 means to apply or request"
+                }
+            ]
+        },
+        {
+            "meaning": "to be excited; to feel thrilled",
+            "example": "I arrived home with an excited heart.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "마음이 설레다"
+                }
+            ]
         },
         {
             "meaning": "noisy",
-            "guide": "Noun meaning \"noisy\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The house is usually noisy, but it was quiet that day.",
+            "example": "My house is usually noisy, but that day it was quiet.",
             "tips": [
                 {
                     "type": "collocation",
@@ -768,89 +835,79 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "quarrel, quarrel",
-            "guide": "Noun meaning \"quarrel, quarrel\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My parents had a huge fight on their wedding anniversary.",
+            "meaning": "to quarrel; to argue",
+            "example": "My parents had a big argument on their wedding anniversary.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "친구와 다투다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "싸우다 more colloquial, more intense"
+                    "text": "싸우다 is more colloquial and stronger"
                 }
             ]
         },
         {
             "meaning": "wedding anniversary",
-            "guide": "Noun meaning \"wedding anniversary\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My parents had a fight on their wedding anniversary."
+            "example": "My parents argued on their wedding anniversary."
         },
         {
-            "meaning": "Hobby clubs, interest societies",
-            "guide": "Noun, meaning \"hobby association, interest society\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My father went to a fraternity meeting.",
+            "meaning": "hobby club; interest group",
+            "example": "My father went to a hobby club meeting.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "동호회에 가입하다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "동아리=school club; 동호회=similar interests"
+                    "text": "동아리 is often a school club; 동호회 is a hobby group"
                 }
             ]
         },
         {
-            "meaning": "management, operation",
-            "guide": "Noun, meaning \"operation, operation\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My father runs a travel agency."
-        },
-        {
-            "meaning": "late at night, very late",
-            "guide": "Noun meaning \"late night, very late\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Came back very late.",
+            "meaning": "to run; to operate",
+            "example": "My father runs a travel agency.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "밤늦게 들어오다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "늦게=late; 밤늦게=very late at night"
+                    "text": "동호회를 운영하다"
                 }
             ]
         },
         {
-            "meaning": "final, result",
-            "guide": "Noun, meaning \"final, result\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "As a result, he became angry and stopped talking."
+            "meaning": "late at night",
+            "example": "He came home late at night.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "늦게 means late; 밤늦게 means late at night"
+                }
+            ]
         },
         {
-            "meaning": "go out",
-            "guide": "A noun meaning \"going out\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "I saw my mother going out."
+            "meaning": "eventually; in the end",
+            "example": "In the end, she got angry and stopped talking."
+        },
+        {
+            "meaning": "to go out",
+            "example": "I saw my mother going out.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "밤늦게 외출하다"
+                }
+            ]
         },
         {
             "meaning": "gift",
-            "guide": "Noun meaning \"gift\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The father and brother went out to buy a gift for their mother."
+            "example": "My father and younger sibling went out to buy my mother a gift."
         },
         {
             "meaning": "dining table",
-            "guide": "Noun meaning \"dining table\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The family all sat at the dining table.",
+            "example": "The whole family sat in front of the dining table.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "식탁=dining table; 식당=restaurant/canteen"
+                    "text": "식탁 means dining table; 식당 means restaurant or cafeteria"
                 }
             ]
         },
         {
-            "meaning": "become different, change",
-            "guide": "Noun meaning \"to become different, to change\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
+            "meaning": "to change; to become different",
             "example": "I will change from now on.",
             "tips": [
                 {
@@ -864,30 +921,26 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "squinting, rolling eyes",
-            "guide": "Noun, meaning \"squinting, rolling eyes\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The mother glared and became happy.",
+            "meaning": "to glare; to give a sideways look",
+            "example": "Mother glared a little while still looking pleased.",
             "tips": [
                 {
                     "type": "pitfall",
-                    "text": "It's not tears, it's squinting"
+                    "text": "This means to glare, not to shed tears"
                 }
             ]
         },
         {
-            "meaning": "Advantages",
-            "guide": "Noun meaning \"advantage\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The advantage of my character is meticulousness."
+            "meaning": "strength; advantage",
+            "example": "The strength of my personality is being meticulous."
         },
         {
-            "meaning": "Disadvantages",
-            "guide": "Noun meaning \"shortcoming\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "My shortcoming is my short temper."
+            "meaning": "weakness; disadvantage",
+            "example": "My weakness is that I am impatient."
         },
         {
-            "meaning": "Choose a career",
-            "guide": "A noun meaning \"choosing a career.\" It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Understanding your own personality can help you choose a career.",
+            "meaning": "to choose a career",
+            "example": "Knowing your personality helps when choosing a career.",
             "tips": [
                 {
                     "type": "collocation",
@@ -896,123 +949,224 @@ window.lessonGuideL3TranslationChunks.en["l3-02"] = {
             ]
         },
         {
-            "meaning": "Worknet Korea Employment Information Network",
-            "guide": "Noun, meaning \"Worknet Korean Employment Information Network\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There are a variety of personality checks you can do on Worknet."
+            "meaning": "Worknet, Korea's employment information website",
+            "example": "On Worknet, you can take various personality tests."
         },
         {
             "meaning": "personality test",
-            "guide": "Noun meaning \"personality test\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "You can find a suitable career through personality tests.",
+            "example": "You can find a suitable job through a personality test.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "성격 검사를 하다 / 검사를 받다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "검사 can mean test, inspection"
+                    "text": "검사 can mean a test, examination, or checkup"
                 }
             ]
         },
         {
-            "meaning": "realistic",
-            "guide": "Noun meaning \"realistic\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Realistic types like things that are clear and orderly."
+            "meaning": "Realistic type",
+            "example": "The Realistic type likes clear and orderly things."
         },
         {
-            "meaning": "Inquiry",
-            "guide": "A noun meaning \"inquiring type\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Inquiring types enjoy observation and intellectual activities."
+            "meaning": "Investigative type",
+            "example": "The Investigative type likes observation and intellectual activities."
         },
         {
-            "meaning": "Artistic",
-            "guide": "Noun meaning \"artistic\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "There are also suitable career groups for artistic types."
+            "meaning": "Artistic type",
+            "example": "The Artistic type also has suitable career groups."
         },
         {
-            "meaning": "social type",
-            "guide": "Noun meaning \"social type\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Social types may be suitable for careers in helping people."
+            "meaning": "Social type",
+            "example": "The Social type may suit jobs that help people."
         },
         {
-            "meaning": "Enterprising",
-            "guide": "Noun meaning \"aggressive\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Go-getter personality traits are also listed on Worknet."
+            "meaning": "Enterprising type",
+            "example": "The Enterprising type's personality traits are also listed on Worknet."
         },
         {
             "meaning": "Conventional type",
-            "guide": "Noun meaning \"conventional type\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Routine types may like to work in an orderly manner."
+            "example": "The Conventional type may like orderly work."
         },
         {
-            "meaning": "Realistic and pragmatic",
-            "guide": "Noun, meaning \"realistic, pragmatic\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "People of this type are practical and cautious."
-        },
-        {
-            "meaning": "frank, forthright",
-            "guide": "Noun, meaning \"frank, straightforward\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Realistic and frank, but stubborn.",
-            "tips": [
-                {
-                    "type": "pitfall",
-                    "text": "직설적이다 is stronger than 솔직하다"
-                }
-            ]
-        },
-        {
-            "meaning": "Stubborn and strong-willed",
-            "guide": "Noun, meaning \"stubborn, strong-minded\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "That person is a bit stubborn.",
+            "meaning": "realistic; practical",
+            "example": "This type of person is realistic and cautious.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "고집이 세다 / 고집을 부리다"
-                },
-                {
-                    "type": "pitfall",
-                    "text": "세다 can express the degree of \"strong\""
+                    "text": "성격이 현실적이에요 / 현실적인 사람"
                 }
             ]
         },
         {
-            "meaning": "Analytical, good at analysis",
-            "guide": "Noun meaning \"analytical, analytical\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "The inquiring type is analytical and independent."
+            "meaning": "honest; frank",
+            "example": "The Realistic type is frank but tends to be stubborn.",
+            "tips": [
+                {
+                    "type": "pitfall",
+                    "text": "직설적이다 is more blunt than 솔직하다"
+                }
+            ]
+        },
+        {
+            "meaning": "stubborn; strong-willed",
+            "example": "That person is a little stubborn.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "세다 can describe a strong degree"
+                }
+            ]
+        },
+        {
+            "meaning": "analytical",
+            "example": "The Investigative type tends to be analytical and independent.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "성격이 분석적이에요 / 분석적인 사람"
+                }
+            ]
         },
         {
             "meaning": "independent",
-            "guide": "Noun meaning \"independence\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "He is an independent character."
-        },
-        {
-            "meaning": "Occupational groups, occupational categories",
-            "guide": "Noun, meaning \"occupational group, occupational category\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Occupational categories that match personality traits are listed."
-        },
-        {
-            "meaning": "Reference",
-            "guide": "Noun meaning \"reference\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "A reference to Worknet also makes sense."
-        },
-        {
-            "meaning": "meaningful",
-            "guide": "Noun meaning \"meaningful\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "It makes sense to learn about careers that suit your personality."
-        },
-        {
-            "meaning": "Talent show",
-            "guide": "A noun meaning \"talent show\". It can be used as the subject or object of a sentence. When reviewing, pay attention to the life scenes in which it often appears.",
-            "example": "Sung a song in a talent show.",
+            "example": "He has an independent personality.",
             "tips": [
                 {
                     "type": "collocation",
-                    "text": "장기 자랑을 하다 / 장기 자랑 대회"
-                },
+                    "text": "성격이 독립적이에요 / 독립적인 사람"
+                }
+            ]
+        },
+        {
+            "meaning": "career group; occupational category",
+            "example": "Career groups that match personality traits are listed."
+        },
+        {
+            "meaning": "to refer to; to consult",
+            "example": "Referring to Worknet is also meaningful.",
+            "tips": [
                 {
-                    "type": "pitfall",
-                    "text": "장기 means a special talent here, not an organ or janggi."
+                    "type": "collocation",
+                    "text": "워크넷을 참고하다"
+                }
+            ]
+        },
+        {
+            "meaning": "to be meaningful",
+            "example": "Finding a career that fits your personality is meaningful.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "의미가 있다"
+                }
+            ]
+        },
+        {
+            "meaning": "clear; definite",
+            "example": "The Realistic type likes clear and orderly things.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "분명하고 질서 있는 것"
+                }
+            ]
+        },
+        {
+            "meaning": "to be orderly",
+            "example": "The Realistic type likes orderly things.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "질서 있는 것 / 질서 있는 생활"
+                }
+            ]
+        },
+        {
+            "meaning": "technician",
+            "example": "The Realistic type suits jobs such as technician.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "기술자로 일하다"
+                }
+            ]
+        },
+        {
+            "meaning": "farmer",
+            "example": "A farmer may suit a Realistic personality.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "농부가 되다"
+                }
+            ]
+        },
+        {
+            "meaning": "soldier",
+            "example": "Soldier is listed in the Realistic career group.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "군인으로 일하다"
+                }
+            ]
+        },
+        {
+            "meaning": "police officer",
+            "example": "Police work suits the Realistic type.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "경찰이 되다"
+                }
+            ]
+        },
+        {
+            "meaning": "athlete",
+            "example": "Athlete is also in the Realistic career group.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "운동선수가 되다"
+                }
+            ]
+        },
+        {
+            "meaning": "observation",
+            "example": "The Investigative type likes observation and intellectual activities.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "관찰과 지적인 활동"
+                }
+            ]
+        },
+        {
+            "meaning": "intellectual activity",
+            "example": "The Investigative type likes intellectual activities.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "관찰과 지적 활동을 좋아하다"
+                }
+            ]
+        },
+        {
+            "meaning": "scholar",
+            "example": "The Investigative type suits jobs such as scholar.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "학자가 되다"
+                }
+            ]
+        },
+        {
+            "meaning": "analyst",
+            "example": "The Investigative type suits jobs such as analyst.",
+            "tips": [
+                {
+                    "type": "collocation",
+                    "text": "분석가로 일하다"
                 }
             ]
         }
