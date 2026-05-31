@@ -516,7 +516,7 @@ function setupSonicCatch() {
     speakerBtn.addEventListener('click', () => {
         if (!currentItem) return;
         speakerBtn.classList.add('playing');
-        speakKorean(currentItem.ko);
+        speakKorean(currentItem.ko, { mode: 'word' });
         setTimeout(() => speakerBtn.classList.remove('playing'), 1000);
     });
 
@@ -540,13 +540,119 @@ function nextSonicCatchRound() {
     }, 500);
 }
 
-function speakKorean(text) {
-    if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance(text);
+let gameSpeechRunId = 0;
+let gamePreferredKoreanVoice = null;
+let gameKoreanVoicePromise = null;
+
+function hasHangulText(value) {
+    return /[가-힣]/.test(String(value || ''));
+}
+
+function normalizeSpeechText(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function scoreGameKoreanVoice(voice) {
+    const name = voice.name.toLowerCase();
+    const lang = voice.lang?.toLowerCase() || '';
+    const femaleHints = ['sora', 'yuna', 'sunhi', 'heami', 'nara', 'kyuri', 'jimin', 'ji-min', 'female', '여성'];
+    const naturalHints = ['natural', 'neural', 'premium', 'enhanced', 'online', 'google', 'microsoft'];
+    const roboticHints = ['compact', 'male', 'hyunsu', 'injoon', 'hoon', 'minjun', '남성'];
+    const femaleScore = femaleHints.reduce((score, hint, index) => score + (name.includes(hint) ? 120 - index : 0), 0);
+    const naturalScore = naturalHints.reduce((score, hint, index) => score + (name.includes(hint) ? 70 - index : 0), 0);
+    const roboticPenalty = roboticHints.reduce((score, hint) => score + (name.includes(hint) ? 80 : 0), 0);
+    const koKrScore = lang === 'ko-kr' ? 30 : 0;
+    return femaleScore + naturalScore + koKrScore - roboticPenalty;
+}
+
+function pickGameKoreanVoice() {
+    if (!('speechSynthesis' in window)) return null;
+    const voices = window.speechSynthesis.getVoices?.() || [];
+    const koreanVoices = voices.filter(voice => voice.lang?.toLowerCase().startsWith('ko'));
+    if (!koreanVoices.length) return null;
+
+    const rankedVoices = koreanVoices
+        .map(voice => ({ voice, score: scoreGameKoreanVoice(voice) }))
+        .sort((a, b) => b.score - a.score);
+    gamePreferredKoreanVoice = rankedVoices[0].score > 35
+        ? rankedVoices[0].voice
+        : koreanVoices[1] || rankedVoices[0].voice;
+    return gamePreferredKoreanVoice;
+}
+
+function waitForGameKoreanVoice() {
+    if (!('speechSynthesis' in window)) return Promise.resolve(null);
+    const readyVoice = gamePreferredKoreanVoice || pickGameKoreanVoice();
+    if (readyVoice) return Promise.resolve(readyVoice);
+    if (gameKoreanVoicePromise) return gameKoreanVoicePromise;
+
+    gameKoreanVoicePromise = new Promise(resolve => {
+        const finish = () => {
+            const voice = pickGameKoreanVoice();
+            if (!voice) return;
+            cleanup();
+            resolve(voice);
+        };
+        const cleanup = () => {
+            window.clearTimeout(timeoutId);
+            window.speechSynthesis.removeEventListener?.('voiceschanged', finish);
+        };
+        const timeoutId = window.setTimeout(() => {
+            cleanup();
+            resolve(pickGameKoreanVoice());
+        }, 1600);
+
+        window.speechSynthesis.addEventListener?.('voiceschanged', finish);
+        window.speechSynthesis.getVoices?.();
+    }).finally(() => {
+        gameKoreanVoicePromise = null;
+    });
+
+    return gameKoreanVoicePromise;
+}
+
+function splitGameKoreanSpeech(text, mode) {
+    const normalized = normalizeSpeechText(text);
+    if (!normalized || mode === 'word' || normalized.length < 24) return [normalized].filter(Boolean);
+
+    const protectedText = normalized.replace(/([.?!])\s+/g, '$1|');
+    const chunks = protectedText.split('|').flatMap(part => {
+        if (part.length < 30) return [part];
+        return part
+            .replace(/(는데|은데|인데|지만|면서|으면|고)\s+/g, '$1|')
+            .split('|');
+    });
+
+    return chunks.map(chunk => chunk.trim()).filter(Boolean);
+}
+
+async function speakKorean(text, options = {}) {
+    if (!('speechSynthesis' in window)) return;
+    const mode = options.mode || 'word';
+    const normalizedText = normalizeSpeechText(text);
+    if (!hasHangulText(normalizedText)) return;
+
+    const runId = ++gameSpeechRunId;
+    window.speechSynthesis.cancel();
+
+    const voice = await waitForGameKoreanVoice();
+    if (runId !== gameSpeechRunId || !voice) return;
+
+    const chunks = splitGameKoreanSpeech(normalizedText, mode);
+    const speakChunk = index => {
+        if (runId !== gameSpeechRunId || index >= chunks.length) return;
+
+        const utterance = new SpeechSynthesisUtterance(chunks[index]);
         utterance.lang = 'ko-KR';
-        utterance.rate = 0.9; // Slightly slower for learning
+        utterance.rate = mode === 'sentence' ? 0.78 : 0.82;
+        utterance.pitch = mode === 'sentence' ? 0.92 : 0.98;
+        utterance.volume = 1;
+        utterance.voice = voice;
+        utterance.onend = () => window.setTimeout(() => speakChunk(index + 1), mode === 'sentence' ? 90 : 0);
         window.speechSynthesis.speak(utterance);
-    }
+    };
+
+    speakChunk(0);
 }
 
 // ---------------------------------------------------------
@@ -1054,7 +1160,7 @@ function renderSentenceGapQuestion() {
     const board = playArea.querySelector('.sentence-gap-board');
     const speakButton = board.querySelector('[data-gap-speak]');
     if (speakButton) {
-        speakButton.addEventListener('click', () => speakKorean(question.exampleKo));
+        speakButton.addEventListener('click', () => speakKorean(question.exampleKo, { mode: 'sentence' }));
     }
     board.querySelectorAll('[data-gap-option]').forEach(button => {
         button.addEventListener('click', () => handleSentenceGapAnswer(button));
