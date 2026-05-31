@@ -86,11 +86,27 @@ function normalizeLessonGuideWord(item, lang = currentLang, options = {}) {
     const ko = String(item?.ko || '').trim();
     const zh = String(item?.zh || '').trim();
     const en = String(item?.translations?.en?.meaning || item?.en || '').trim();
+    const exampleKo = String(item?.exampleKo || '').trim();
+    const exampleZh = String(item?.exampleZh || '').trim();
+    const exampleEn = String(item?.translations?.en?.example || item?.exampleEn || '').trim();
 
     if (!ko || !zh) return null;
     if (lang === 'EN' && !en && !options.allowMeaningFallback) return null;
     if (isGameVocabularyLabel(ko)) return null;
-    return { ko, zh, en: en || zh };
+    return {
+        ko,
+        zh,
+        en: en || zh,
+        hasEnglishMeaning: Boolean(en),
+        hasEnglishExample: Boolean(exampleEn),
+        exampleKo,
+        exampleZh,
+        exampleEn,
+        pos: item?.pos || '',
+        page: item?.page || '',
+        source: item?.source || '',
+        cloze: item?.cloze
+    };
 }
 
 async function loadLessonGuideVocab(level, lang = currentLang) {
@@ -159,6 +175,7 @@ const uiStrings = {
             wordPop: { title: 'Word Pop', desc: 'Match falling words before they hit the bottom.' },
             sonicCatch: { title: 'Sonic Catch', desc: 'Listen to the pronunciation and select the correct meaning.' },
             wordLink: { title: 'Word Link', desc: 'Connect five Korean words to their meanings.' },
+            sentenceGap: { title: 'Sentence Gap', desc: 'Fill the missing Korean word in real example sentences.' },
             sentenceBuilder: { title: 'Sentence Builder', desc: 'Rearrange the blocks to form the correct Korean sentence.' },
             survival: { title: 'Boss Survival', desc: 'Endless mode! Don\'t let the words drop. You have 3 lives.' }
         }
@@ -170,6 +187,7 @@ const uiStrings = {
             wordPop: { title: '词汇消消乐', desc: '在单词掉落到底部前，选出它的正确意思。' },
             sonicCatch: { title: '听音辨位', desc: '聆听韩语发音，选出正确的翻译。' },
             wordLink: { title: '连线消消乐', desc: '选择左边韩语词，再选择右边中文意思，正确就消除。' },
+            sentenceGap: { title: '例句补空', desc: '在真实例句里补回缺失的韩语词。' },
             sentenceBuilder: { title: '句子接龙', desc: '将打乱的韩语词块拖拽排序，还原正确句型。' },
             survival: { title: '终极生存战', desc: '无尽挑战！漏掉单词会扣血，你有 3 条命。' }
         }
@@ -186,6 +204,15 @@ function gameLangToLocale(lang) {
 
 function languageLabel(lang) {
     return lang === 'EN' ? 'EN' : '中文';
+}
+
+function escapeHtml(value) {
+    return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
 }
 
 let currentLang = localeToGameLang(localStorage.getItem(localeStorageKey));
@@ -270,6 +297,8 @@ function updateUILanguage() {
     document.getElementById('ui-desc-sonic').textContent = s.modes.sonicCatch.desc;
     document.getElementById('ui-mode-link').textContent = s.modes.wordLink.title;
     document.getElementById('ui-desc-link').textContent = s.modes.wordLink.desc;
+    document.getElementById('ui-mode-gap').textContent = s.modes.sentenceGap.title;
+    document.getElementById('ui-desc-gap').textContent = s.modes.sentenceGap.desc;
     document.getElementById('ui-mode-sentence').textContent = s.modes.sentenceBuilder.title;
     document.getElementById('ui-desc-sentence').textContent = s.modes.sentenceBuilder.desc;
     document.getElementById('ui-mode-survival').textContent = s.modes.survival.title;
@@ -305,7 +334,7 @@ function showStartScreen() {
     document.getElementById('start-desc').textContent = s.desc;
     
     // Set icon based on mode
-    const iconMap = { wordPop: '🎯', sonicCatch: '🎧', wordLink: '🔗', sentenceBuilder: '🧩', survival: '🐉' };
+    const iconMap = { wordPop: '🎯', sonicCatch: '🎧', wordLink: '🔗', sentenceGap: '✍️', sentenceBuilder: '🧩', survival: '🐉' };
     document.getElementById('start-icon').textContent = iconMap[currentMode];
     
     currentModeBadge.textContent = s.title;
@@ -352,6 +381,7 @@ async function startGame() {
     hideAllScreens();
 
     if (currentMode === 'wordLink') resetWordLinkScheduler();
+    if (currentMode === 'sentenceGap') resetSentenceGapScheduler();
     
     if (currentMode === 'sentenceBuilder') {
         screenSentence.classList.add('active');
@@ -361,6 +391,7 @@ async function startGame() {
         playArea.innerHTML = '';
         optionsGrid.innerHTML = '';
         playArea.classList.remove('word-link-area');
+        playArea.classList.remove('sentence-gap-area');
         optionsGrid.classList.remove('hidden');
         gameInfoBar.classList.remove('hidden');
         
@@ -375,6 +406,8 @@ async function startGame() {
             setupSonicCatch();
         } else if (currentMode === 'wordLink') {
             setupWordLink();
+        } else if (currentMode === 'sentenceGap') {
+            setupSentenceGap();
         } else {
             // Word Pop or Survival
             spawnFallingWord();
@@ -708,6 +741,7 @@ function setupWordLink() {
     optionsGrid.innerHTML = '';
     optionsGrid.classList.add('hidden');
     gameInfoBar.classList.add('hidden');
+    playArea.classList.remove('sentence-gap-area');
     playArea.classList.add('word-link-area');
 
     wordLinkGroupIndex++;
@@ -863,6 +897,269 @@ function drawWordLinkLine(board, left, right) {
     line.setAttribute('class', 'word-link-line');
     svg.appendChild(line);
     setTimeout(() => line.remove(), 420);
+}
+
+// ---------------------------------------------------------
+// MODE 6: Sentence Gap
+// ---------------------------------------------------------
+const SENTENCE_GAP_ROUND_SIZE = 10;
+const SENTENCE_GAP_RECENT_MAX = 30;
+let sentenceGapRound = [];
+let sentenceGapIndex = 0;
+let sentenceGapCorrect = 0;
+let sentenceGapReviewItems = [];
+let sentenceGapRecentKeys = [];
+let sentenceGapMistakes = [];
+
+function resetSentenceGapScheduler() {
+    sentenceGapRound = [];
+    sentenceGapIndex = 0;
+    sentenceGapCorrect = 0;
+    sentenceGapRecentKeys = [];
+    sentenceGapMistakes = [];
+}
+
+function sentenceGapStrings() {
+    return currentLang === 'EN'
+        ? {
+            question: 'Question',
+            of: 'of',
+            score: 'Score',
+            prompt: 'Choose the Korean word that completes the sentence.',
+            correct: 'Nice fit.',
+            wrong: 'Not this one. Review the full sentence.',
+            continue: 'Continue',
+            finish: 'Round complete',
+            loadingNext: 'Next sentence...',
+            noData: 'Not enough example sentences for this level yet.'
+        }
+        : {
+            question: '第',
+            of: '题 / 共',
+            score: '得分',
+            prompt: '选择能补完整句子的韩语词。',
+            correct: '补得漂亮。',
+            wrong: '不是这个，看看完整句。',
+            continue: '继续',
+            finish: '本轮完成',
+            loadingNext: '下一题...',
+            noData: '这个等级的例句题目还不够。'
+        };
+}
+
+function createSentenceGapRound() {
+    const cloze = window.KLingoCloze;
+    if (!cloze) return [];
+
+    const reviewItems = sentenceGapReviewItems.splice(0, 3);
+    const sourceVocab = currentLang === 'EN'
+        ? vocabDB.filter(item => item.hasEnglishMeaning && item.hasEnglishExample)
+        : vocabDB;
+    const round = cloze.createClozeRound(sourceVocab, {
+        count: SENTENCE_GAP_ROUND_SIZE,
+        lang: currentLang,
+        reviewItems,
+        recentKeys: sentenceGapRecentKeys
+    });
+
+    round.forEach(question => {
+        sentenceGapRecentKeys = sentenceGapRecentKeys.filter(key => key !== question.key);
+        sentenceGapRecentKeys.push(question.key);
+    });
+    if (sentenceGapRecentKeys.length > SENTENCE_GAP_RECENT_MAX) {
+        sentenceGapRecentKeys = sentenceGapRecentKeys.slice(-SENTENCE_GAP_RECENT_MAX);
+    }
+
+    return round;
+}
+
+function setupSentenceGap() {
+    playArea.innerHTML = '';
+    optionsGrid.innerHTML = '';
+    optionsGrid.classList.add('hidden');
+    gameInfoBar.classList.add('hidden');
+    playArea.classList.remove('word-link-area');
+    playArea.classList.add('sentence-gap-area');
+
+    sentenceGapRound = createSentenceGapRound();
+    sentenceGapIndex = 0;
+    sentenceGapCorrect = 0;
+    sentenceGapMistakes = [];
+
+    if (!sentenceGapRound.length) {
+        renderSentenceGapEmpty();
+        return;
+    }
+
+    renderSentenceGapQuestion();
+}
+
+function renderSentenceGapEmpty() {
+    const text = sentenceGapStrings();
+    playArea.innerHTML = `
+        <section class="sentence-gap-board empty">
+            <div class="sentence-gap-empty-icon">✍️</div>
+            <h2>${text.noData}</h2>
+        </section>
+    `;
+}
+
+function renderSentenceGapQuestion() {
+    if (!isPlaying) return;
+    if (sentenceGapIndex >= sentenceGapRound.length) {
+        finishSentenceGapRound();
+        return;
+    }
+
+    const text = sentenceGapStrings();
+    const question = sentenceGapRound[sentenceGapIndex];
+    const numberLabel = currentLang === 'EN'
+        ? `${text.question} ${sentenceGapIndex + 1} ${text.of} ${sentenceGapRound.length}`
+        : `${text.question} ${sentenceGapIndex + 1} ${text.of} ${sentenceGapRound.length}`;
+
+    playArea.innerHTML = `
+        <section class="sentence-gap-board">
+            <div class="sentence-gap-hud">
+                <div class="sentence-gap-pill">${escapeHtml(numberLabel)}</div>
+                <div class="sentence-gap-status" data-gap-status>${escapeHtml(text.prompt)}</div>
+                <div class="sentence-gap-pill">${escapeHtml(text.score)} ${sentenceGapCorrect}/${sentenceGapRound.length}</div>
+            </div>
+            <div class="sentence-gap-card">
+                <div class="sentence-gap-card-top">
+                    <div class="sentence-gap-source">${escapeHtml(formatSentenceGapSource(question))}</div>
+                    <button class="sentence-gap-speak" type="button" data-gap-speak aria-label="${currentLang === 'EN' ? 'Play sentence' : '播放例句'}" title="${currentLang === 'EN' ? 'Play sentence' : '播放例句'}">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="sentence-gap-ko">${highlightSentenceGapBlank(question.promptKo)}</p>
+                <div class="sentence-gap-meaning">${escapeHtml(question.meaning)}</div>
+            </div>
+            <div class="sentence-gap-options">
+                ${question.options.map((option, index) => `
+                    <button class="sentence-gap-option" type="button" data-gap-option="${index}">
+                        ${escapeHtml(option.text)}
+                    </button>
+                `).join('')}
+            </div>
+            <div class="sentence-gap-review hidden" data-gap-review>
+                <div class="sentence-gap-answer">${escapeHtml(question.exampleKo)}</div>
+                <div class="sentence-gap-translation">${escapeHtml(question.translation)}</div>
+                <button class="sentence-gap-next" type="button" data-gap-next>${text.continue}</button>
+            </div>
+        </section>
+    `;
+
+    const board = playArea.querySelector('.sentence-gap-board');
+    const speakButton = board.querySelector('[data-gap-speak]');
+    if (speakButton) {
+        speakButton.addEventListener('click', () => speakKorean(question.exampleKo));
+    }
+    board.querySelectorAll('[data-gap-option]').forEach(button => {
+        button.addEventListener('click', () => handleSentenceGapAnswer(button));
+    });
+}
+
+function formatSentenceGapSource(question) {
+    const page = question.page ? `p.${question.page}` : '';
+    return [page, question.source].filter(Boolean).join(' · ');
+}
+
+function highlightSentenceGapBlank(sentence) {
+    const escaped = escapeHtml(sentence);
+    return escaped.replace('___', '<span class="sentence-gap-blank">___</span>');
+}
+
+function handleSentenceGapAnswer(button) {
+    if (!isPlaying) return;
+
+    const question = sentenceGapRound[sentenceGapIndex];
+    const option = question.options[Number(button.dataset.gapOption)];
+    const board = button.closest('.sentence-gap-board');
+    const status = board.querySelector('[data-gap-status]');
+    const review = board.querySelector('[data-gap-review]');
+    const next = board.querySelector('[data-gap-next]');
+    const text = sentenceGapStrings();
+
+    board.querySelectorAll('.sentence-gap-option').forEach(optionButton => {
+        optionButton.disabled = true;
+        const item = question.options[Number(optionButton.dataset.gapOption)];
+        if (item.correct) optionButton.classList.add('correct');
+    });
+
+    if (option.correct) {
+        sentenceGapCorrect++;
+        score += 2;
+        button.classList.add('correct');
+        status.textContent = text.correct;
+        review.classList.remove('hidden');
+        if (next) next.classList.add('hidden');
+        showFloatingText(button, '+2');
+        setTimeout(nextSentenceGapQuestion, 1100);
+        return;
+    }
+
+    button.classList.add('wrong');
+    status.textContent = text.wrong;
+    sentenceGapReviewItems = sentenceGapReviewItems.filter(item => item.key !== question.key);
+    if (question.sourceCard) sentenceGapReviewItems.push(question.sourceCard);
+    sentenceGapMistakes = sentenceGapMistakes.filter(item => item.key !== question.key);
+    sentenceGapMistakes.push(question);
+    review.classList.remove('hidden');
+    next.addEventListener('click', nextSentenceGapQuestion, { once: true });
+}
+
+function nextSentenceGapQuestion() {
+    sentenceGapIndex++;
+    renderSentenceGapQuestion();
+}
+
+function finishSentenceGapRound() {
+    const text = sentenceGapStrings();
+    const accuracy = sentenceGapRound.length
+        ? Math.round((sentenceGapCorrect / sentenceGapRound.length) * 100)
+        : 0;
+    isPlaying = false;
+    globalScore += score;
+    globalScoreEl.textContent = globalScore;
+    playArea.innerHTML = `
+        <section class="sentence-gap-board complete sentence-gap-summary">
+            <div class="sentence-gap-empty-icon">✓</div>
+            <h2>${escapeHtml(text.finish)}</h2>
+            <div class="sentence-gap-summary-score">${sentenceGapCorrect}/${sentenceGapRound.length} · ${accuracy}% · +${score}</div>
+            ${renderSentenceGapMistakes()}
+            <div class="sentence-gap-actions">
+                <button class="sentence-gap-next" type="button" data-gap-next-round>${escapeHtml(currentLang === 'EN' ? 'Next Round' : '下一轮')}</button>
+                <button class="sentence-gap-next secondary" type="button" data-gap-menu>${escapeHtml(currentLang === 'EN' ? 'Back to Menu' : '返回大厅')}</button>
+            </div>
+        </section>
+    `;
+    playArea.querySelector('[data-gap-next-round]')?.addEventListener('click', () => {
+        isPlaying = true;
+        score = 0;
+        setupSentenceGap();
+    });
+    playArea.querySelector('[data-gap-menu]')?.addEventListener('click', showMenu);
+}
+
+function renderSentenceGapMistakes() {
+    if (!sentenceGapMistakes.length) {
+        return `<p class="sentence-gap-summary-note">${escapeHtml(currentLang === 'EN' ? 'Clean round. No review items.' : '这一轮全对，没有错题。')}</p>`;
+    }
+
+    const title = currentLang === 'EN' ? 'Review next' : '下轮复习';
+    return `
+        <div class="sentence-gap-mistakes">
+            <div class="sentence-gap-mistake-title">${escapeHtml(title)}</div>
+            ${sentenceGapMistakes.slice(0, 5).map(item => `
+                <div class="sentence-gap-mistake-row">
+                    <strong>${escapeHtml(item.correctAnswer)}</strong>
+                    <span>${escapeHtml(item.meaning || item.translation)}</span>
+                </div>
+            `).join('')}
+        </div>
+    `;
 }
 
 // ---------------------------------------------------------
