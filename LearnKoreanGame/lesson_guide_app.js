@@ -33,10 +33,6 @@ const localeStorageKeys = {
     listeningSpeed: "lessonGuideListeningSpeed",
     listeningRepeat: "lessonGuideListeningRepeat"
 };
-const localeNames = {
-    "zh-CN": "中文",
-    en: "English"
-};
 const localeShortNames = {
     "zh-CN": "中文",
     en: "EN"
@@ -49,8 +45,8 @@ const messages = {
         searchPlaceholder: "搜索课文、单词或中文...",
         openLessonMenu: "打开课程菜单",
         returnHome: "返回首页",
-        languageSettings: "语言设置",
-        languageLabel: "语言",
+        switchToEnglish: "切换为英文",
+        switchToChinese: "切换为中文",
         lessonAriaLabel: "第 {number} 课：{title}",
         draft: "草稿",
         refined: "精修",
@@ -66,6 +62,7 @@ const messages = {
         statCulture: "文化文章",
         learningGoals: "学习目标",
         grammarLinks: "本课语法连接",
+        openGrammarDetail: "打开语法知识：{pattern}",
         grammarPending: "语法点会在该课 OCR 校对后补充。",
         sourcePending: "来源待补",
         posPending: "词性待补",
@@ -101,6 +98,7 @@ const messages = {
         listeningEmpty: "当前模式没有可播放的韩语内容。",
         listeningIdle: "选择模式后开始连续收听本课内容。",
         listeningPlaying: "正在播放 {current} / {total}",
+        listeningPreparing: "正在准备语音 {current} / {total}",
         listeningPaused: "已暂停 {current} / {total}",
         listeningEnded: "已播放完成",
         listeningModeLabel: "范围",
@@ -130,8 +128,8 @@ const messages = {
         searchPlaceholder: "Search lessons, words, or translations...",
         openLessonMenu: "Open lesson menu",
         returnHome: "Back to home",
-        languageSettings: "Language settings",
-        languageLabel: "Language",
+        switchToEnglish: "Switch to English",
+        switchToChinese: "Switch to Chinese",
         lessonAriaLabel: "Lesson {number}: {title}",
         draft: "Draft",
         refined: "Refined",
@@ -147,6 +145,7 @@ const messages = {
         statCulture: "Culture texts",
         learningGoals: "Learning Goals",
         grammarLinks: "Grammar Links",
+        openGrammarDetail: "Open grammar guide: {pattern}",
         grammarPending: "Grammar notes will be added after OCR review.",
         sourcePending: "Source pending",
         posPending: "POS pending",
@@ -182,6 +181,7 @@ const messages = {
         listeningEmpty: "This mode has no playable Korean content.",
         listeningIdle: "Choose a range and start listening through this lesson.",
         listeningPlaying: "Playing {current} / {total}",
+        listeningPreparing: "Preparing audio {current} / {total}",
         listeningPaused: "Paused {current} / {total}",
         listeningEnded: "Finished",
         listeningModeLabel: "Range",
@@ -342,7 +342,10 @@ const sidebarOverlay = document.getElementById("sidebar-overlay");
 const menuToggle = document.getElementById("menu-toggle");
 const mobileTitle = document.getElementById("mobile-title");
 
-let activeLessonId = lessons[0].id;
+const requestedLessonId = new URLSearchParams(window.location.search).get("lesson");
+let activeLessonId = lessons.some(lesson => lesson.id === requestedLessonId)
+    ? requestedLessonId
+    : lessons[0].id;
 let activeTab = "overview";
 const storedLocale = localStorage.getItem(localeStorageKeys.language);
 const legacyTranslationLocale = localStorage.getItem(localeStorageKeys.translation);
@@ -370,8 +373,14 @@ const listeningState = {
     index: 0,
     currentRef: "",
     error: "",
-    restartOnResume: false
+    restartOnResume: false,
+    engine: "web",
+    sessionId: ""
 };
+let nativeListeningReady = false;
+const nativeListeningDriver = window.lessonGuideNativeListening?.createDriver({
+    onStateChanged: applyNativeListeningState
+}) || null;
 let listeningWakeLock = null;
 let renderRunId = 0;
 const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
@@ -836,6 +845,10 @@ function grammarMeaning(item) {
 
 function grammarGuide(item) {
     return getLocalizedValue(item, "guide", "guide");
+}
+
+function grammarWikiHref(lesson, grammarIndex) {
+    return window.lessonGuideGrammarLinks?.hrefFor(lesson.id, grammarIndex) || "grammar_wiki.html";
 }
 
 function dialogueScene(dialogue) {
@@ -1712,6 +1725,96 @@ function setListeningError(message) {
     refreshListeningPlayer();
 }
 
+function nativeListeningIsActive() {
+    return listeningState.engine === "native" && nativeListeningReady;
+}
+
+function applyNativeListeningState(state) {
+    nativeListeningReady = true;
+    listeningState.engine = "native";
+    listeningState.sessionId = state.sessionId || listeningState.sessionId;
+    listeningState.status = state.status;
+    listeningState.lessonId = state.lessonId;
+    listeningState.index = state.index;
+    listeningState.currentRef = state.ref;
+    listeningState.error = state.error || "";
+    listeningState.restartOnResume = false;
+
+    const lesson = activeLoadedLesson();
+    if (lesson && lesson.id === state.lessonId && !listeningState.queue.length) {
+        listeningState.queue = buildListeningQueue(lesson);
+    }
+    if (listeningState.queue.length) {
+        listeningState.index = Math.min(listeningState.index, listeningState.queue.length - 1);
+    }
+
+    releaseListeningWakeLock();
+    if (state.status === "idle") clearListeningHighlight();
+    refreshListeningPlayer();
+    applyListeningHighlight();
+}
+
+async function initializeNativeListening() {
+    if (!nativeListeningDriver) return;
+
+    try {
+        nativeListeningReady = await nativeListeningDriver.connect();
+        if (!nativeListeningReady) return;
+
+        const state = await nativeListeningDriver.getState();
+        if (state.lessonId && lessons.some(lesson => lesson.id === state.lessonId)) {
+            activeLessonId = state.lessonId;
+            renderLessonList();
+            renderMain({ scrollTarget: "preserve" });
+        }
+        applyNativeListeningState(state);
+    } catch (error) {
+        nativeListeningReady = false;
+        console.debug?.("Native listening unavailable", error);
+    }
+}
+
+function nativeListeningPayload(lesson, queue, startIndex) {
+    return window.lessonGuideNativeListening.buildQueuePayload({
+        level,
+        lesson,
+        lessonTranslation: lessonTitleTranslation(lesson),
+        queue,
+        startIndex,
+        settings: {
+            mode: listeningState.mode,
+            speed: listeningState.speed,
+            repeat: listeningState.repeat,
+            translationLocale: listeningLanguage()
+        }
+    });
+}
+
+async function startNativeListening(lesson, startIndex, queue) {
+    const boundedIndex = Math.min(Math.max(startIndex, 0), queue.length - 1);
+    const payload = nativeListeningPayload(lesson, queue, boundedIndex);
+
+    listeningState.engine = "native";
+    listeningState.sessionId = payload.sessionId;
+    listeningState.status = "preparing";
+    listeningState.lessonId = lesson.id;
+    listeningState.queue = queue;
+    listeningState.index = boundedIndex;
+    listeningState.currentRef = queue[boundedIndex]?.ref || "";
+    listeningState.error = "";
+    listeningState.restartOnResume = false;
+    releaseListeningWakeLock();
+    refreshListeningPlayer();
+    applyListeningHighlight();
+
+    try {
+        await nativeListeningDriver.loadQueue(payload);
+        await nativeListeningDriver.play(boundedIndex);
+    } catch (error) {
+        setListeningError(error?.message || t("listeningUnavailable"));
+    }
+}
+
 async function requestListeningWakeLock() {
     if (!navigator.wakeLock?.request || document.visibilityState !== "visible") return;
     if (listeningWakeLock) return;
@@ -1740,7 +1843,9 @@ function releaseListeningWakeLock() {
 
 function stopListening(options = {}) {
     const { render = true, clearError = true } = options;
-    if ("speechSynthesis" in window) {
+    if (nativeListeningIsActive()) {
+        nativeListeningDriver.stop().catch(error => console.debug?.("Native listening stop failed", error));
+    } else if ("speechSynthesis" in window) {
         window.speechSynthesis.cancel();
     }
     speechRunId += 1;
@@ -1748,6 +1853,7 @@ function stopListening(options = {}) {
     listeningState.index = 0;
     listeningState.currentRef = "";
     listeningState.restartOnResume = false;
+    listeningState.sessionId = "";
     if (clearError) listeningState.error = "";
     releaseListeningWakeLock();
     clearListeningHighlight();
@@ -1897,7 +2003,7 @@ async function playListeningLoop(runId) {
     refreshListeningPlayer();
 }
 
-async function startListening(lesson, startIndex = 0) {
+async function startWebListening(lesson, startIndex = 0) {
     if (!("speechSynthesis" in window)) {
         setListeningError(t("listeningUnavailable"));
         return;
@@ -1912,6 +2018,7 @@ async function startListening(lesson, startIndex = 0) {
     window.speechSynthesis.cancel();
     const runId = ++speechRunId;
     listeningState.status = "playing";
+    listeningState.engine = "web";
     listeningState.lessonId = lesson.id;
     listeningState.queue = queue;
     listeningState.index = Math.min(Math.max(startIndex, 0), queue.length - 1);
@@ -1936,17 +2043,49 @@ async function startListening(lesson, startIndex = 0) {
     playListeningLoop(runId);
 }
 
+async function startListening(lesson, startIndex = 0) {
+    const queue = buildListeningQueue(lesson);
+    if (!queue.length) {
+        setListeningError(t("listeningEmpty"));
+        return;
+    }
+
+    if (nativeListeningDriver) {
+        try {
+            nativeListeningReady = nativeListeningReady || await nativeListeningDriver.connect();
+        } catch (_) {
+            nativeListeningReady = false;
+        }
+    }
+
+    if (nativeListeningReady) {
+        await startNativeListening(lesson, startIndex, queue);
+        return;
+    }
+    await startWebListening(lesson, startIndex);
+}
+
 function pauseListening() {
     if (listeningState.status !== "playing") return;
     listeningState.status = "paused";
     listeningState.restartOnResume = false;
-    window.speechSynthesis.pause();
+    if (nativeListeningIsActive()) {
+        nativeListeningDriver.pause().catch(error => setListeningError(error?.message || t("listeningUnavailable")));
+    } else {
+        window.speechSynthesis.pause();
+    }
     releaseListeningWakeLock();
     refreshListeningPlayer();
 }
 
 function resumeListening() {
     if (listeningState.status !== "paused") return;
+    if (nativeListeningIsActive()) {
+        listeningState.status = "playing";
+        nativeListeningDriver.resume().catch(error => setListeningError(error?.message || t("listeningUnavailable")));
+        refreshListeningPlayer();
+        return;
+    }
     if (listeningState.restartOnResume) {
         const lesson = activeLoadedLesson();
         if (!lesson) return;
@@ -1961,6 +2100,14 @@ function resumeListening() {
 
 function restartListeningAfterSettingChange() {
     if (!["playing", "paused"].includes(listeningState.status)) return;
+
+    if (nativeListeningIsActive()) {
+        nativeListeningDriver.updateSettings({
+            speed: listeningState.speed,
+            repeat: listeningState.repeat
+        }).catch(error => setListeningError(error?.message || t("listeningUnavailable")));
+        return;
+    }
 
     const lesson = activeLoadedLesson();
     if (!lesson) return;
@@ -1979,6 +2126,7 @@ function restartListeningAfterSettingChange() {
 
 function suspendListeningForBackground() {
     if (!["playing", "paused"].includes(listeningState.status)) return;
+    if (nativeListeningIsActive()) return;
 
     if ("speechSynthesis" in window) {
         window.speechSynthesis.cancel();
@@ -1991,6 +2139,12 @@ function suspendListeningForBackground() {
 }
 
 function repairListeningAfterForeground() {
+    if (nativeListeningIsActive()) {
+        nativeListeningDriver.getState()
+            .then(applyNativeListeningState)
+            .catch(error => console.debug?.("Native listening state sync failed", error));
+        return;
+    }
     if (listeningState.status !== "playing") return;
     if (!("speechSynthesis" in window)) return;
 
@@ -2014,6 +2168,15 @@ function jumpListening(lesson, direction) {
         ? listeningState.index
         : 0;
     const nextIndex = Math.min(Math.max(currentIndex + direction, 0), queue.length - 1);
+    if (nativeListeningIsActive()) {
+        listeningState.index = nextIndex;
+        listeningState.currentRef = queue[nextIndex]?.ref || "";
+        nativeListeningDriver.skipTo(nextIndex)
+            .catch(error => setListeningError(error?.message || t("listeningUnavailable")));
+        refreshListeningPlayer();
+        applyListeningHighlight();
+        return;
+    }
     startListening(lesson, nextIndex);
 }
 
@@ -2167,15 +2330,16 @@ function buildListeningQueue(lesson, mode = listeningState.mode) {
 }
 
 function listeningIsActiveForLesson(lesson) {
-    return listeningState.lessonId === lesson.id && ["playing", "paused", "ended"].includes(listeningState.status);
+    return listeningState.lessonId === lesson.id && ["preparing", "playing", "paused", "ended"].includes(listeningState.status);
 }
 
 function listeningStatusText(total) {
     if (listeningState.error) return listeningState.error;
-    if (!("speechSynthesis" in window)) return t("listeningUnavailable");
+    if (!("speechSynthesis" in window) && !nativeListeningReady) return t("listeningUnavailable");
     if (!total) return t("listeningEmpty");
 
     const current = Math.min(listeningState.index + 1, total);
+    if (listeningState.status === "preparing") return tf("listeningPreparing", { current, total });
     if (listeningState.status === "playing") return tf("listeningPlaying", { current, total });
     if (listeningState.status === "paused") return tf("listeningPaused", { current, total });
     if (listeningState.status === "ended") return t("listeningEnded");
@@ -2233,7 +2397,7 @@ function renderListeningPlayer(lesson) {
     const active = listeningIsActiveForLesson(lesson);
     const status = active ? listeningState.status : "idle";
     const currentItem = active ? queue[listeningState.index] : null;
-    const canSpeak = "speechSynthesis" in window;
+    const canSpeak = "speechSynthesis" in window || nativeListeningReady;
     const isPlaying = status === "playing";
     const isPaused = status === "paused";
 
@@ -2386,30 +2550,17 @@ function languageIcon() {
 
 function renderLanguageSwitchers() {
     document.querySelectorAll("[data-language-switcher]").forEach(switcher => {
-        const isOpen = switcher.querySelector(".language-menu:not([hidden])");
+        const nextLocale = translationLocale === "zh-CN" ? "en" : "zh-CN";
+        const switchLabel = nextLocale === "en" ? t("switchToEnglish") : t("switchToChinese");
         switcher.innerHTML = `
-            <button class="language-toggle" type="button" data-language-toggle aria-label="${escapeHtml(t("languageSettings"))}" title="${escapeHtml(t("languageSettings"))}" aria-expanded="${isOpen ? "true" : "false"}">
+            <button class="language-toggle" type="button" data-language-toggle
+                data-next-locale="${nextLocale}"
+                aria-label="${escapeHtml(switchLabel)}"
+                title="${escapeHtml(switchLabel)}">
                 ${languageIcon()}
                 <span class="language-toggle-text">${escapeHtml(localeShortNames[translationLocale] || translationLocale)}</span>
             </button>
-            <div class="language-menu" data-language-menu ${isOpen ? "" : "hidden"}>
-                <div class="language-section">
-                    <p class="language-section-title">${escapeHtml(t("languageLabel"))}</p>
-                    ${appLocales.map(locale => `
-                        <button class="language-option ${locale === translationLocale ? "active" : ""}" type="button" data-locale-value="${escapeHtml(locale)}">
-                            ${escapeHtml(localeNames[locale])}
-                        </button>
-                    `).join("")}
-                </div>
-            </div>
         `;
-    });
-}
-
-function closeLanguageMenus() {
-    document.querySelectorAll("[data-language-menu]").forEach(menu => {
-        menu.hidden = true;
-        menu.previousElementSibling?.setAttribute("aria-expanded", "false");
     });
 }
 
@@ -2429,6 +2580,10 @@ function applyStaticLocale() {
 
 function setLocale(locale) {
     if (!appLocales.includes(locale)) return;
+
+    if (["preparing", "playing", "paused"].includes(listeningState.status)) {
+        stopListening({ render: false });
+    }
 
     uiLocale = locale;
     translationLocale = locale;
@@ -2541,11 +2696,18 @@ function renderOverview(lesson) {
 
         <section class="content-card">
             <h2>${escapeHtml(t("grammarLinks"))}</h2>
-            ${(lesson.grammar || []).length ? lesson.grammar.map(item => `
-                <div class="grammar-row">
-                    <div class="pattern">${escapeHtml(item.pattern)} · ${escapeHtml(grammarMeaning(item))}</div>
-                    <div class="muted">${escapeHtml(grammarGuide(item))}</div>
-                </div>
+            ${(lesson.grammar || []).length ? lesson.grammar.map((item, grammarIndex) => `
+                <a class="grammar-row grammar-link" href="${escapeHtml(grammarWikiHref(lesson, grammarIndex))}"
+                    aria-label="${escapeHtml(tf("openGrammarDetail", { pattern: item.pattern }))}">
+                    <span class="grammar-link-copy">
+                        <span class="pattern">${escapeHtml(item.pattern)} · ${escapeHtml(grammarMeaning(item))}</span>
+                        <span class="muted">${escapeHtml(grammarGuide(item))}</span>
+                    </span>
+                    <svg class="grammar-link-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14"></path>
+                        <path d="m13 6 6 6-6 6"></path>
+                    </svg>
+                </a>
             `).join("") : `<p class="muted">${escapeHtml(t("grammarPending"))}</p>`}
         </section>
     `;
@@ -2811,6 +2973,11 @@ function scrollActiveTabIntoView() {
 }
 
 function renderLoadedLesson(lesson, scrollTarget) {
+    if (nativeListeningIsActive() && listeningState.lessonId === lesson.id && !listeningState.queue.length) {
+        listeningState.queue = buildListeningQueue(lesson);
+        listeningState.index = Math.min(listeningState.index, Math.max(listeningState.queue.length - 1, 0));
+        listeningState.currentRef = listeningState.queue[listeningState.index]?.ref || listeningState.currentRef;
+    }
     mobileTitle.textContent = `${level}-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
     mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
     scrollMainContent(scrollTarget);
@@ -2996,33 +3163,10 @@ sidebarOverlay.addEventListener("click", closeSidebar);
 document.addEventListener("click", event => {
     const toggle = event.target.closest("[data-language-toggle]");
     if (toggle) {
-        const switcher = toggle.closest("[data-language-switcher]");
-        const menu = switcher?.querySelector("[data-language-menu]");
-        const shouldOpen = Boolean(menu?.hidden);
-        closeLanguageMenus();
-        if (menu) {
-            menu.hidden = !shouldOpen;
-            toggle.setAttribute("aria-expanded", String(shouldOpen));
-        }
+        setLocale(toggle.dataset.nextLocale);
         event.stopPropagation();
         return;
     }
-
-    const localeOption = event.target.closest("[data-locale-value]");
-    if (localeOption) {
-        setLocale(localeOption.dataset.localeValue);
-        closeLanguageMenus();
-        event.stopPropagation();
-        return;
-    }
-
-    if (!event.target.closest("[data-language-switcher]")) {
-        closeLanguageMenus();
-    }
-});
-
-document.addEventListener("keydown", event => {
-    if (event.key === "Escape") closeLanguageMenus();
 });
 
 document.addEventListener("visibilitychange", () => {
@@ -3040,4 +3184,5 @@ lessons.forEach(applyLessonTranslationPacks);
 applyStaticLocale();
 renderLessonList();
 renderMain();
+initializeNativeListening();
 })();

@@ -72,6 +72,10 @@
             l1_041: [["여기에서 잠시 쉽시다.", "在这里休息一会儿吧。", "Let's rest here for a while."]],
             l1_042: [["두 시간마다 이 약을 드세요.", "请每两小时吃一次这个药。", "Take this medicine every two hours."]],
             l1_043: [["오늘은 현금만 받아요.", "今天只收现金。", "We only accept cash today."]],
+            l1_044: [["저는 스무 살이고 동생은 열여덟 살이에요.", "我二十岁，弟弟十八岁。", "I am twenty, and my younger sibling is eighteen."]],
+            l1_045: [["공책 두 권하고 종이 다섯 장이 필요해요.", "需要两本练习册和五张纸。", "I need two notebooks and five sheets of paper."]],
+            l1_046: [["이 가방은 오만 원이에요.", "这个包五万韩元。", "This bag is fifty thousand won."]],
+            l1_047: [["내일은 흐리고 비가 올 거예요.", "明天多云并且会下雨。", "It will be cloudy and rainy tomorrow."]],
 
             l2_001: [["제가 만든 음식이에요.", "这是我做的食物。", "This is food that I made."]],
             l2_002: [
@@ -308,6 +312,14 @@
                 translations: {
                     "zh-CN": { title: "助词与强调", explanation: "先判断名词在句中的角色，再选择主题、主语、宾语或补助词。高级表达常借助조차、야말로、커녕等助词改变焦点和语气。" },
                     en: { title: "Particles and focus", explanation: "Identify the noun's role before choosing a topic, subject, object, or auxiliary particle. Advanced particles such as 조차, 야말로, and 커녕 shift focus and emphasis." },
+                },
+            },
+            {
+                id: "numbers-shopping-weather",
+                members: ["l1_044", "l1_045", "l1_046", "l1_047"],
+                translations: {
+                    "zh-CN": { title: "数字、购物与天气", explanation: "基础生活表达要区分固有数词与汉字数词，并根据对象选择量词。购物时用얼마询价；谈天气时用어때요询问状态，再用天气形容词或비/눈이 오다回答。" },
+                    en: { title: "Numbers, shopping, and weather", explanation: "Basic daily expressions distinguish native and Sino-Korean numbers and pair objects with suitable counters. Use 얼마 for prices and 어때요 for weather conditions, then answer with weather adjectives or 비/눈이 오다." },
                 },
             },
             {

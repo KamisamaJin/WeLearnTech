@@ -15,7 +15,7 @@ const app = require(path.join(projectRoot, "grammar_wiki_app.js"));
 const enrichment = require(path.join(projectRoot, "grammar_enrichment.js"));
 
 test("all grammar entries have complete Chinese and English content", () => {
-    assert.equal(grammarDB.length, 181);
+    assert.equal(grammarDB.length, 185);
     assert.equal(new Set(grammarDB.map(item => item.id)).size, grammarDB.length);
 
     grammarDB.forEach(item => {
@@ -61,7 +61,7 @@ test("search indexes Korean plus the active translation only", () => {
 
 test("every grammar point has at least three localized examples", () => {
     assert.equal(Object.keys(enrichment.extraExamples).length, grammarDB.length);
-    assert.equal(Object.values(enrichment.extraExamples).flat().length, 218);
+    assert.equal(Object.values(enrichment.extraExamples).flat().length, 222);
 
     grammarDB.forEach(item => {
         const examples = app.allExamplesFor(item, enrichment);

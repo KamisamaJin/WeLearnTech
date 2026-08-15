@@ -8,12 +8,11 @@
 })(typeof window !== "undefined" ? window : globalThis, function createGrammarWiki(root) {
     const appLocales = ["zh-CN", "en"];
     const localeStorageKey = "lessonGuideLocale";
-    const localeNames = { "zh-CN": "中文", en: "English" };
     const localeShortNames = { "zh-CN": "中", en: "EN" };
     const messages = {
         "zh-CN": {
-            pageTitle: "K-Lingo 韩语语法百科",
-            sidebarTitle: "语法百科",
+            pageTitle: "KIIP Gramma Wiki",
+            sidebarTitle: "KIIP Gramma Wiki",
             guideTitle: "课程导学首页",
             guideSubtitle: "Level 1-4 · 单词 · 对话 · 文化",
             guideAria: "打开课程导学首页",
@@ -23,7 +22,7 @@
             levelL2: "L2 初级2",
             levelL3: "L3 中级1",
             levelL4: "L4 中级2",
-            emptyTitle: "K-Lingo 韩语语法百科",
+            emptyTitle: "KIIP Gramma Wiki",
             emptyBody: "从菜单选择一个语法点开始学习。",
             noResults: "没有匹配的语法点",
             meaningRules: "含义与结合规则",
@@ -33,16 +32,17 @@
             openRelated: "打开相关语法",
             previous: "上一条",
             next: "下一条",
-            languageSettings: "语言设置",
-            languageLabel: "显示语言",
+            switchToEnglish: "切换为英文",
+            switchToChinese: "切换为中文",
+            returnToLesson: "返回本课课程导学",
             openMenu: "打开语法菜单",
             closeMenu: "关闭语法菜单",
             contentPending: "中文内容待补",
             extraGrammar: "补充语法",
         },
         en: {
-            pageTitle: "K-Lingo Korean Grammar Wiki",
-            sidebarTitle: "Grammar Wiki",
+            pageTitle: "KIIP Gramma Wiki",
+            sidebarTitle: "KIIP Gramma Wiki",
             guideTitle: "Lesson Guide Home",
             guideSubtitle: "Level 1-4 · Vocabulary · Dialogue · Culture",
             guideAria: "Open Lesson Guide home",
@@ -52,7 +52,7 @@
             levelL2: "L2 Beginner 2",
             levelL3: "L3 Intermediate 1",
             levelL4: "L4 Intermediate 2",
-            emptyTitle: "K-Lingo Korean Grammar Wiki",
+            emptyTitle: "KIIP Gramma Wiki",
             emptyBody: "Choose a grammar point from the menu to start learning.",
             noResults: "No matching grammar points",
             meaningRules: "Meaning & Rules",
@@ -62,8 +62,9 @@
             openRelated: "Open related grammar",
             previous: "Previous",
             next: "Next",
-            languageSettings: "Language settings",
-            languageLabel: "Display language",
+            switchToEnglish: "Switch to English",
+            switchToChinese: "Switch to Chinese",
+            returnToLesson: "Return to this lesson",
             openMenu: "Open grammar menu",
             closeMenu: "Close grammar menu",
             contentPending: "English content pending",
@@ -184,6 +185,12 @@
         let currentItemId = null;
         let detailTitleObserver = null;
         let currentLocale = normalizeLocale(root.localStorage?.getItem(localeStorageKey));
+        const pageParams = new URLSearchParams(root.location?.search || "");
+        const requestedGrammarId = pageParams.get("grammar");
+        const sourceLessonId = pageParams.get("lesson") || "";
+        const openedFromLessonGuide = pageParams.get("source") === "lesson-guide"
+            && /^l[1-4]-\d{2}$/.test(sourceLessonId);
+        const lessonReturnButtons = [...document.querySelectorAll("[data-lesson-return]")];
 
         function t(key) {
             return messages[currentLocale]?.[key] || messages["zh-CN"][key] || key;
@@ -202,36 +209,18 @@
             return items.find(item => item.id === currentItemId) || null;
         }
 
-        function closeLanguageMenus(except = null) {
-            document.querySelectorAll("[data-language-menu]").forEach(menu => {
-                if (menu === except) return;
-                menu.hidden = true;
-                menu.previousElementSibling?.setAttribute("aria-expanded", "false");
-            });
-        }
-
         function renderLanguageSwitchers() {
             document.querySelectorAll("[data-language-switcher]").forEach(switcher => {
-                const expanded = switcher.querySelector("[data-language-menu]:not([hidden])") !== null;
-                const desktop = switcher.dataset.languageVariant === "desktop";
-                const label = desktop ? localeNames[currentLocale] : localeShortNames[currentLocale];
+                const nextLocale = currentLocale === "zh-CN" ? "en" : "zh-CN";
+                const switchLabel = nextLocale === "en" ? t("switchToEnglish") : t("switchToChinese");
                 switcher.innerHTML = `
                     <button class="language-toggle" type="button" data-language-toggle
-                        aria-label="${escapeHtml(t("languageSettings"))}"
-                        title="${escapeHtml(t("languageSettings"))}"
-                        aria-expanded="${expanded ? "true" : "false"}">
+                        data-next-locale="${nextLocale}"
+                        aria-label="${escapeHtml(switchLabel)}"
+                        title="${escapeHtml(switchLabel)}">
                         ${languageIcon()}
-                        <span>${escapeHtml(label)}</span>
+                        <span>${escapeHtml(localeShortNames[currentLocale])}</span>
                     </button>
-                    <div class="language-menu" data-language-menu ${expanded ? "" : "hidden"}>
-                        <p>${escapeHtml(t("languageLabel"))}</p>
-                        ${appLocales.map(locale => `
-                            <button class="language-option ${locale === currentLocale ? "active" : ""}"
-                                type="button" data-locale-value="${locale}">
-                                ${escapeHtml(localeNames[locale])}
-                            </button>
-                        `).join("")}
-                    </div>
                 `;
             });
         }
@@ -246,6 +235,10 @@
                 link.setAttribute("aria-label", t("guideAria"));
                 link.title = t("guideAria");
             });
+            lessonReturnButtons.forEach(button => {
+                button.setAttribute("aria-label", t("returnToLesson"));
+                button.title = t("returnToLesson");
+            });
             searchInput.placeholder = t("searchPlaceholder");
             document.querySelector('[data-level="all"]').textContent = t("allLevels");
             ["L1", "L2", "L3", "L4"].forEach(level => {
@@ -257,6 +250,32 @@
             if (emptyBody) emptyBody.textContent = t("emptyBody");
             menuToggle.setAttribute("aria-label", sidebar.classList.contains("open") ? t("closeMenu") : t("openMenu"));
             renderLanguageSwitchers();
+        }
+
+        function lessonGuideReturnHref() {
+            const levelMatch = sourceLessonId.match(/^l([1-4])-/);
+            if (!levelMatch) return "lesson_guide.html";
+            const params = new URLSearchParams({ lesson: sourceLessonId, v: "grammar-links-2" });
+            return `lesson_guide_l${levelMatch[1]}.html?${params.toString()}`;
+        }
+
+        function hasLessonGuideReferrer() {
+            if (!document.referrer || !root.location?.origin) return false;
+            try {
+                const referrer = new URL(document.referrer);
+                return referrer.origin === root.location.origin
+                    && /\/lesson_guide_l[1-4]\.html$/.test(referrer.pathname);
+            } catch (_error) {
+                return false;
+            }
+        }
+
+        function returnToLessonGuide() {
+            if (hasLessonGuideReferrer() && root.history?.length > 1) {
+                root.history.back();
+                return;
+            }
+            root.location.assign(lessonGuideReturnHref());
         }
 
         function getFilteredItems(query = searchInput.value) {
@@ -292,6 +311,7 @@
                     const entry = document.createElement("li");
                     entry.className = `nav-item${item.id === currentItemId ? " active" : ""}`;
                     entry.dataset.grammarId = item.id;
+                    if (item.id === currentItemId) entry.setAttribute("aria-current", "page");
                     entry.innerHTML = `
                         <span class="nav-level ${item.level.toLowerCase()}">${escapeHtml(item.level)}</span>
                         <span class="nav-title" lang="ko">${escapeHtml(item.title)}</span>
@@ -323,8 +343,16 @@
             document.getElementById("next-label").textContent = next?.title || t("next");
         }
 
+        function syncGrammarUrl(item) {
+            if (!root.history?.replaceState || !root.location?.href) return;
+            const url = new URL(root.location.href);
+            url.searchParams.set("grammar", item.id);
+            root.history.replaceState(root.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+        }
+
         function renderContent(item, options = {}) {
             currentItemId = item.id;
+            syncGrammarUrl(item);
             const previousScrollTop = mainContent.scrollTop;
             const translation = currentTranslation(item);
             const rules = (translation.rules || []).map(rule => `
@@ -437,10 +465,7 @@
 
         function setLocale(locale) {
             const nextLocale = normalizeLocale(locale);
-            if (nextLocale === currentLocale) {
-                closeLanguageMenus();
-                return;
-            }
+            if (nextLocale === currentLocale) return;
             currentLocale = nextLocale;
             root.localStorage?.setItem(localeStorageKey, currentLocale);
             root.localStorage?.setItem("lessonGuideUiLocale", currentLocale);
@@ -450,7 +475,6 @@
             renderNav();
             if (selectedItem) renderContent(selectedItem, { preserveScroll: true });
             else updateNavButtons();
-            closeLanguageMenus();
         }
 
         searchInput.addEventListener("input", () => {
@@ -464,6 +488,10 @@
         sidebarOverlay.addEventListener("click", () => toggleMenu(false));
         btnPrev.addEventListener("click", () => navigateDelta(-1));
         btnNext.addEventListener("click", () => navigateDelta(1));
+        lessonReturnButtons.forEach(button => {
+            button.hidden = !openedFromLessonGuide;
+            button.addEventListener("click", returnToLessonGuide);
+        });
         mainContent.addEventListener("click", event => {
             const relatedLink = event.target.closest("[data-related-id]");
             if (!relatedLink) return;
@@ -482,23 +510,12 @@
         document.addEventListener("click", event => {
             const toggle = event.target.closest("[data-language-toggle]");
             if (toggle) {
-                const menu = toggle.nextElementSibling;
-                const willOpen = menu.hidden;
-                closeLanguageMenus(menu);
-                menu.hidden = !willOpen;
-                toggle.setAttribute("aria-expanded", String(willOpen));
+                setLocale(toggle.dataset.nextLocale);
                 return;
             }
-            const option = event.target.closest("[data-locale-value]");
-            if (option) {
-                setLocale(option.dataset.localeValue);
-                return;
-            }
-            if (!event.target.closest("[data-language-switcher]")) closeLanguageMenus();
         });
         document.addEventListener("keydown", event => {
             if (event.key === "Escape") {
-                closeLanguageMenus();
                 if (sidebar.classList.contains("open") && root.innerWidth <= 768) toggleMenu(false);
             }
         });
@@ -529,8 +546,22 @@
         }, { passive: true });
 
         applyStaticLocale();
-        renderNav();
-        updateNavButtons();
+        const requestedItem = items.find(item => item.id === requestedGrammarId);
+        if (requestedItem) {
+            currentLevel = requestedItem.level;
+            currentItemId = requestedItem.id;
+            document.querySelectorAll(".level-filter-btn").forEach(button => {
+                button.classList.toggle("active", button.dataset.level === currentLevel);
+            });
+            renderNav();
+            renderContent(requestedItem);
+            root.requestAnimationFrame?.(() => {
+                navList.querySelector(`[data-grammar-id="${requestedItem.id}"]`)?.scrollIntoView({ block: "nearest" });
+            });
+        } else {
+            renderNav();
+            updateNavButtons();
+        }
     }
 
     return {

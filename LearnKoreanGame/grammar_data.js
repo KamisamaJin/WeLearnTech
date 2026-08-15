@@ -1979,6 +1979,214 @@ const grammarDB = [
         }
     },
     {
+        "id": "l1_044",
+        "category": "L1 - 5과: 오늘은 5월 5일이에요",
+        "level": "L1",
+        "title": "고유어 수 ① (하나~스물)",
+        "examples": [
+            {
+                "ko": "사과가 세 개 있어요.",
+                "translations": {
+                    "zh-CN": "有三个苹果。",
+                    "en": "There are three apples."
+                }
+            },
+            {
+                "ko": "학생이 열두 명이에요.",
+                "translations": {
+                    "zh-CN": "有十二名学生。",
+                    "en": "There are twelve students."
+                }
+            }
+        ],
+        "translations": {
+            "zh-CN": {
+                "description": "用于数人、物品和年龄的韩语固有数词",
+                "meaning": "一到二十的固有数词，以及接量词时的缩略形式",
+                "rules": [
+                    "1~10：하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열",
+                    "11~19：열 + 个位数；20 是 스물",
+                    "接量词时 하나、둘、셋、넷、스물变为 한、두、세、네、스무"
+                ],
+                "notes": [
+                    "人数常用 명/분，物品常用 개，年龄常用 살。",
+                    "不要说 하나 개，应说 한 개；不要说 스물 살，应说 스무 살。",
+                    "日期、电话号码和金额通常使用汉字数词，不使用这一组固有数词。"
+                ]
+            },
+            "en": {
+                "description": "Native Korean numbers for counting people, objects, and age",
+                "meaning": "Native Korean numbers from one to twenty and their shortened counter forms",
+                "rules": [
+                    "1-10: 하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열",
+                    "11-19: 열 + the ones digit; 20 is 스물",
+                    "Before counters, 하나, 둘, 셋, 넷, 스물 become 한, 두, 세, 네, 스무"
+                ],
+                "notes": [
+                    "Use 명/분 for people, 개 for objects, and 살 for age.",
+                    "Say 한 개 rather than 하나 개, and 스무 살 rather than 스물 살.",
+                    "Dates, phone numbers, and prices normally use Sino-Korean numbers instead."
+                ]
+            }
+        }
+    },
+    {
+        "id": "l1_045",
+        "category": "L1 - 8과: 칫솔하고 치약을 삽니다",
+        "level": "L1",
+        "title": "수량 + 단위",
+        "examples": [
+            {
+                "ko": "물 두 병하고 우유 한 개 주세요.",
+                "translations": {
+                    "zh-CN": "请给我两瓶水和一盒牛奶。",
+                    "en": "Please give me two bottles of water and one carton of milk."
+                }
+            },
+            {
+                "ko": "칫솔 세 개를 삽니다.",
+                "translations": {
+                    "zh-CN": "买三把牙刷。",
+                    "en": "I am buying three toothbrushes."
+                }
+            }
+        ],
+        "translations": {
+            "zh-CN": {
+                "description": "用“数词 + 量词”表达物品、人和容器的数量",
+                "meaning": "数量表达通常放在名词后，也可以用“数量 + 量词 + 의 + 名词”",
+                "rules": [
+                    "常用顺序：名词 + 数词 + 量词，例如 사과 세 개",
+                    "常用量词：개（个）、명/분（人）、병（瓶）、잔（杯）、권（册）、장（张）",
+                    "固有数词接量词时使用 한、두、세、네、스무"
+                ],
+                "notes": [
+                    "量词要根据所数对象选择，不能全部使用 개。",
+                    "분 是 명 的敬语形式，例如 손님 두 분。",
+                    "句中助词通常接在整个数量短语后：사과 세 개를 샀어요。"
+                ]
+            },
+            "en": {
+                "description": "Express quantities with a number and a counter",
+                "meaning": "Quantity phrases usually follow the noun being counted",
+                "rules": [
+                    "Common order: noun + number + counter, as in 사과 세 개",
+                    "Common counters: 개 (items), 명/분 (people), 병 (bottles), 잔 (cups), 권 (books), 장 (sheets)",
+                    "Use 한, 두, 세, 네, 스무 before counters"
+                ],
+                "notes": [
+                    "Choose a counter that matches the object; 개 is not used for everything.",
+                    "분 is the honorific counterpart of 명, as in 손님 두 분.",
+                    "Particles normally follow the complete quantity phrase: 사과 세 개를 샀어요."
+                ]
+            }
+        }
+    },
+    {
+        "id": "l1_046",
+        "category": "L1 - 8과: 칫솔하고 치약을 삽니다",
+        "level": "L1",
+        "title": "얼마예요? / 얼마입니까?",
+        "examples": [
+            {
+                "ko": "이 칫솔은 얼마예요?",
+                "translations": {
+                    "zh-CN": "这把牙刷多少钱？",
+                    "en": "How much is this toothbrush?"
+                }
+            },
+            {
+                "ko": "전부 얼마입니까?",
+                "translations": {
+                    "zh-CN": "一共多少钱？",
+                    "en": "How much is it altogether?"
+                }
+            }
+        ],
+        "translations": {
+            "zh-CN": {
+                "description": "询问价格或金额",
+                "meaning": "얼마 表示“多少（钱）”，예요 和 입니까 是不同正式程度的句尾",
+                "rules": [
+                    "日常礼貌表达：名词 + 은/는 얼마예요?",
+                    "更正式的表达：名词 + 은/는 얼마입니까?",
+                    "询问总价可以说 전부 얼마예요? 或 모두 얼마예요?"
+                ],
+                "notes": [
+                    "回答金额时使用汉字数词，例如 만 원이에요。",
+                    "얼마나 询问程度，얼마 询问数量或价格，两者不要混用。",
+                    "商店里也常省略主语，直接问 얼마예요?。"
+                ]
+            },
+            "en": {
+                "description": "Ask about a price or amount",
+                "meaning": "얼마 means how much; 예요 and 입니까 provide different levels of formality",
+                "rules": [
+                    "Everyday polite form: noun + 은/는 얼마예요?",
+                    "More formal form: noun + 은/는 얼마입니까?",
+                    "Ask for the total with 전부 얼마예요? or 모두 얼마예요?"
+                ],
+                "notes": [
+                    "Use Sino-Korean numbers for prices, for example 만 원이에요.",
+                    "얼마나 asks about degree, while 얼마 asks about quantity or price.",
+                    "In a shop, the subject is often omitted and speakers simply ask 얼마예요?."
+                ]
+            }
+        }
+    },
+    {
+        "id": "l1_047",
+        "category": "L1 - 15과: 오늘 날씨가 정말 덥네요",
+        "level": "L1",
+        "title": "날씨가 어때요?",
+        "examples": [
+            {
+                "ko": "오늘 날씨가 어때요?",
+                "translations": {
+                    "zh-CN": "今天天气怎么样？",
+                    "en": "How is the weather today?"
+                }
+            },
+            {
+                "ko": "맑지만 조금 추워요.",
+                "translations": {
+                    "zh-CN": "天气晴朗，但是有点冷。",
+                    "en": "It is clear, but a little cold."
+                }
+            }
+        ],
+        "translations": {
+            "zh-CN": {
+                "description": "询问并描述天气状况",
+                "meaning": "어때요? 是 어떻다 的礼貌口语形式，表示“怎么样”",
+                "rules": [
+                    "询问：오늘/내일 + 날씨가 어때요?",
+                    "回答：맑아요、흐려요、더워요、추워요、비가 와요、눈이 와요",
+                    "比较两个天气状况时可以连接 -지만 或 -고"
+                ],
+                "notes": [
+                    "어떻게 是“如何、怎样做”，어때요 是“状态怎么样”。",
+                    "描述体感时常加 많이、조금、너무 等程度副词。",
+                    "谈论天气变化可以说 날씨가 따뜻해졌어요。"
+                ]
+            },
+            "en": {
+                "description": "Ask about and describe weather conditions",
+                "meaning": "어때요? is the polite spoken form of 어떻다 and means how is it",
+                "rules": [
+                    "Ask with 오늘/내일 + 날씨가 어때요?",
+                    "Answer with 맑아요, 흐려요, 더워요, 추워요, 비가 와요, or 눈이 와요",
+                    "Connect contrasting or additional conditions with -지만 or -고"
+                ],
+                "notes": [
+                    "어떻게 asks how to do something; 어때요 asks what a condition is like.",
+                    "Degree adverbs such as 많이, 조금, and 너무 commonly describe how the weather feels.",
+                    "Use 날씨가 따뜻해졌어요 to describe a change in the weather."
+                ]
+            }
+        }
+    },
+    {
         "id": "l2_001",
         "category": "L2 - 1과: 제 고향은 경치가 아름다운 곳이에요",
         "level": "L2",
