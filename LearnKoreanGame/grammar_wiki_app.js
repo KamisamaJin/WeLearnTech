@@ -29,6 +29,8 @@
             meaningRules: "含义与结合规则",
             examples: "例句",
             deepDive: "深入解析",
+            relatedKnowledge: "相关知识点",
+            openRelated: "打开相关语法",
             previous: "上一条",
             next: "下一条",
             languageSettings: "语言设置",
@@ -56,6 +58,8 @@
             meaningRules: "Meaning & Rules",
             examples: "Examples",
             deepDive: "Deep Dive Notes",
+            relatedKnowledge: "Related Knowledge",
+            openRelated: "Open related grammar",
             previous: "Previous",
             next: "Next",
             languageSettings: "Language settings",
@@ -83,8 +87,44 @@
         );
     }
 
-    function searchTextFor(item, locale) {
+    function extraExamplesFor(item, enrichment = {}) {
+        return (enrichment.extraExamples?.[item?.id] || []).map(example => ({
+            ko: example[0],
+            translations: { "zh-CN": example[1], en: example[2] },
+        }));
+    }
+
+    function allExamplesFor(item, enrichment = {}) {
+        return [...(item?.examples || []), ...extraExamplesFor(item, enrichment)];
+    }
+
+    function knowledgeGroupsFor(item, locale, enrichment = {}, items = []) {
+        const selectedLocale = normalizeLocale(locale);
+        const itemIndexes = new Map(items.map((entry, index) => [entry.id, index]));
+        const currentIndex = itemIndexes.get(item?.id) ?? 0;
+
+        return (enrichment.knowledgeGroups || [])
+            .filter(group => group.members?.includes(item?.id))
+            .map(group => ({
+                id: group.id,
+                translation: group.translations?.[selectedLocale],
+                relatedItems: (group.members || [])
+                    .filter(id => id !== item.id && itemIndexes.has(id))
+                    .sort((left, right) => Math.abs(itemIndexes.get(left) - currentIndex) - Math.abs(itemIndexes.get(right) - currentIndex))
+                    .slice(0, 4)
+                    .map(id => items[itemIndexes.get(id)]),
+            }))
+            .filter(group => group.translation?.title && group.translation?.explanation);
+    }
+
+    function searchTextFor(item, locale, enrichment = {}) {
         const translation = translationFor(item, locale) || {};
+        const knowledgeText = (enrichment.knowledgeGroups || [])
+            .filter(group => group.members?.includes(item?.id))
+            .flatMap(group => {
+                const localized = group.translations?.[normalizeLocale(locale)] || {};
+                return [localized.title, localized.explanation];
+            });
         return [
             item?.title,
             localizedCategory(item?.category, locale),
@@ -92,13 +132,14 @@
             translation.meaning,
             ...(translation.rules || []),
             ...(translation.notes || []),
-            ...(item?.examples || []).flatMap(example => [example.ko, example.translations?.[normalizeLocale(locale)]]),
+            ...allExamplesFor(item, enrichment).flatMap(example => [example.ko, example.translations?.[normalizeLocale(locale)]]),
+            ...knowledgeText,
         ].filter(Boolean).join(" ").toLocaleLowerCase();
     }
 
-    function itemMatches(item, locale, query) {
+    function itemMatches(item, locale, query, enrichment = {}) {
         const normalizedQuery = String(query || "").trim().toLocaleLowerCase();
-        return !normalizedQuery || searchTextFor(item, locale).includes(normalizedQuery);
+        return !normalizedQuery || searchTextFor(item, locale, enrichment).includes(normalizedQuery);
     }
 
     function escapeHtml(value) {
@@ -121,7 +162,10 @@
         `;
     }
 
-    function mount(items = typeof grammarDB !== "undefined" ? grammarDB : []) {
+    function mount(
+        items = typeof grammarDB !== "undefined" ? grammarDB : [],
+        enrichment = root.grammarEnrichment || {},
+    ) {
         const document = root.document;
         if (!document || !Array.isArray(items)) return;
 
@@ -218,7 +262,7 @@
         function getFilteredItems(query = searchInput.value) {
             return items.filter(item => {
                 if (currentLevel !== "all" && item.level !== currentLevel) return false;
-                return itemMatches(item, currentLocale, query);
+                return itemMatches(item, currentLocale, query, enrichment);
             });
         }
 
@@ -286,13 +330,28 @@
             const rules = (translation.rules || []).map(rule => `
                 <div class="rule-card"><span class="localized-rule">${escapeHtml(rule)}</span></div>
             `).join("");
-            const examples = item.examples.map(example => `
+            const examples = allExamplesFor(item, enrichment).map(example => `
                 <div class="example-box">
                     <p class="ex-ko" lang="ko">${escapeHtml(example.ko)}</p>
                     <p class="ex-translation">${escapeHtml(example.translations?.[currentLocale] || t("contentPending"))}</p>
                 </div>
             `).join("");
             const notes = (translation.notes || []).map(note => `<li>${escapeHtml(note)}</li>`).join("");
+            const knowledge = knowledgeGroupsFor(item, currentLocale, enrichment, items).map(group => `
+                <article class="knowledge-topic">
+                    <h4>${escapeHtml(group.translation.title)}</h4>
+                    <p>${escapeHtml(group.translation.explanation)}</p>
+                    <div class="related-links">
+                        ${group.relatedItems.map(relatedItem => `
+                            <button class="related-link" type="button" data-related-id="${escapeHtml(relatedItem.id)}"
+                                aria-label="${escapeHtml(`${t("openRelated")}: ${relatedItem.title}`)}">
+                                <span class="nav-level ${relatedItem.level.toLowerCase()}">${escapeHtml(relatedItem.level)}</span>
+                                <span lang="ko">${escapeHtml(relatedItem.title)}</span>
+                            </button>
+                        `).join("")}
+                    </div>
+                </article>
+            `).join("");
 
             mainContent.innerHTML = `
                 <div class="grammar-header">
@@ -314,6 +373,10 @@
                 <section class="grammar-section deep-dive-section">
                     <h3>${escapeHtml(t("deepDive"))}</h3>
                     <ul class="notes-list">${notes}</ul>
+                </section>
+                <section class="grammar-section knowledge-section">
+                    <h3>${escapeHtml(t("relatedKnowledge"))}</h3>
+                    <div class="knowledge-list">${knowledge}</div>
                 </section>
             `;
 
@@ -401,6 +464,21 @@
         sidebarOverlay.addEventListener("click", () => toggleMenu(false));
         btnPrev.addEventListener("click", () => navigateDelta(-1));
         btnNext.addEventListener("click", () => navigateDelta(1));
+        mainContent.addEventListener("click", event => {
+            const relatedLink = event.target.closest("[data-related-id]");
+            if (!relatedLink) return;
+            const relatedItem = items.find(item => item.id === relatedLink.dataset.relatedId);
+            if (!relatedItem) return;
+            searchInput.value = "";
+            currentLevel = relatedItem.level;
+            document.querySelectorAll(".level-filter-btn").forEach(button => {
+                button.classList.toggle("active", button.dataset.level === currentLevel);
+            });
+            currentItemId = relatedItem.id;
+            renderNav();
+            renderContent(relatedItem);
+            navList.querySelector(`[data-grammar-id="${relatedItem.id}"]`)?.scrollIntoView({ block: "nearest" });
+        });
         document.addEventListener("click", event => {
             const toggle = event.target.closest("[data-language-toggle]");
             if (toggle) {
@@ -460,6 +538,9 @@
         messages,
         normalizeLocale,
         translationFor,
+        extraExamplesFor,
+        allExamplesFor,
+        knowledgeGroupsFor,
         localizedCategory,
         searchTextFor,
         itemMatches,

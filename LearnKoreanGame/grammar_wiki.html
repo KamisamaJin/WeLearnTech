@@ -381,6 +381,51 @@
         .notes-list li + li { margin-top: 8px; }
         .deep-dive-section { border-color: rgba(244, 114, 182, 0.42); }
         .deep-dive-section h3 { color: var(--accent); }
+        .knowledge-section { border-color: rgba(52, 211, 153, 0.36); }
+        .knowledge-section h3 { color: #34d399; }
+        .knowledge-list { display: grid; gap: 16px; }
+        .knowledge-topic {
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .knowledge-topic:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        .knowledge-topic h4 {
+            margin: 0 0 7px;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .knowledge-topic p {
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 11px;
+        }
+        .related-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            min-height: 34px;
+            padding: 6px 10px;
+            border: 1px solid rgba(52, 211, 153, 0.28);
+            border-radius: 6px;
+            background: rgba(52, 211, 153, 0.08);
+            color: var(--text-main);
+            font: 700 0.82rem/1.2 inherit;
+            cursor: pointer;
+        }
+        .related-link:hover {
+            border-color: #34d399;
+            background: rgba(52, 211, 153, 0.15);
+        }
+        .related-link .nav-level { font-size: 0.64rem; }
         /* Floating prev/next nav buttons */
         .nav-float-btns {
             position: fixed;
@@ -643,6 +688,7 @@
     </div>
 
     <script src="grammar_data.js"></script>
+    <script src="grammar_enrichment.js"></script>
     <script src="grammar_wiki_app.js"></script>
 </body>
 </html>

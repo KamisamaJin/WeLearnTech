@@ -1,0 +1,507 @@
+(function initGrammarEnrichment(root, factory) {
+    const data = factory();
+    if (typeof module === "object" && module.exports) module.exports = data;
+    if (root) root.grammarEnrichment = data;
+})(typeof window !== "undefined" ? window : globalThis, function createGrammarEnrichment() {
+    return {
+        extraExamples: {
+            l1_001: [["민수 씨는 회사원이에요.", "敏秀是公司职员。", "Minsu is an office worker."]],
+            l1_002: [["여기는 우리 교실이에요.", "这里是我们的教室。", "This is our classroom."]],
+            l1_003: [
+                ["방 안에 의자가 없어요.", "房间里没有椅子。", "There is no chair in the room."],
+                ["가방 안에 지갑이 있어요.", "包里有钱包。", "There is a wallet in the bag."],
+            ],
+            l1_004: [["고양이가 소파 위에 있어요.", "猫在沙发上。", "The cat is on the sofa."]],
+            l1_005: [["주말에 친구를 만나요.", "周末见朋友。", "I meet a friend on the weekend."]],
+            l1_006: [["한국어를 공부해요.", "学习韩语。", "I study Korean."]],
+            l1_007: [
+                ["오후에 도서관에 와요.", "下午来图书馆。", "I come to the library in the afternoon."],
+                ["주말에 시장에 가요.", "周末去市场。", "I go to the market on the weekend."],
+            ],
+            l1_008: [["회사에서 일해요.", "在公司工作。", "I work at a company."]],
+            l1_009: [["집에서 회사까지 버스로 가요.", "从家坐公交车到公司。", "I take the bus from home to work."]],
+            l1_010: [["월요일에 수업이 있어요.", "星期一有课。", "I have class on Monday."]],
+            l1_011: [
+                ["이것은 제 우산이 아니에요.", "这不是我的雨伞。", "This is not my umbrella."],
+                ["저분은 선생님이 아니에요.", "那位不是老师。", "That person is not a teacher."],
+            ],
+            l1_012: [
+                ["수업은 아홉 시부터 열두 시까지예요.", "课程从九点到十二点。", "Class is from nine to twelve."],
+                ["휴가는 월요일부터 금요일까지예요.", "假期从星期一到星期五。", "The vacation is from Monday to Friday."],
+            ],
+            l1_013: [["저는 커피를 마시지 않아요.", "我不喝咖啡。", "I do not drink coffee."]],
+            l1_014: [["오늘 아침을 안 먹었어요.", "今天没吃早饭。", "I did not eat breakfast today."]],
+            l1_015: [["여기에 이름을 쓰세요.", "请在这里写名字。", "Please write your name here."]],
+            l1_016: [["선생님은 무엇을 가르치십니까?", "老师教什么？", "What does the teacher teach?"]],
+            l1_017: [["이번 주말에 가족을 만나고 싶어요.", "这个周末想见家人。", "I want to see my family this weekend."]],
+            l1_018: [
+                ["내일 시험이 있습니다.", "明天有考试。", "There is an exam tomorrow."],
+                ["어디에서 일하십니까?", "您在哪里工作？", "Where do you work?"],
+            ],
+            l1_019: [["동생하고 공원에 갔어요.", "和弟弟去了公园。", "I went to the park with my younger sibling."]],
+            l1_020: [["오늘은 바람도 많이 불어요.", "今天风也很大。", "It is also very windy today."]],
+            l1_021: [["지난주에 서울에 갔어요.", "上周去了首尔。", "I went to Seoul last week."]],
+            l1_022: [
+                ["어머니께서 요리하세요.", "母亲在做饭。", "My mother is cooking."],
+                ["선생님이 교실에 들어오세요.", "老师走进教室。", "The teacher is entering the classroom."],
+            ],
+            l1_023: [["선생님께서 질문하셨어요.", "老师提问了。", "The teacher asked a question."]],
+            l1_024: [["피곤하지만 숙제를 했어요.", "虽然累，但还是做了作业。", "I was tired, but I did my homework."]],
+            l1_025: [["우리 사진을 찍어 주세요.", "请帮我们拍张照片。", "Please take a picture of us."]],
+            l1_026: [["동생에게 한국어를 가르쳐요.", "教弟弟韩语。", "I teach Korean to my younger sibling."]],
+            l1_027: [["오늘 저녁에 운동할 거예요.", "今天晚上打算运动。", "I am going to exercise this evening."]],
+            l1_028: [["이 방은 넓고 깨끗해요.", "这个房间又宽敞又干净。", "This room is spacious and clean."]],
+            l1_029: [["친구를 만나러 카페에 가요.", "去咖啡馆见朋友。", "I am going to a cafe to meet a friend."]],
+            l1_030: [["매일 지하철로 출근해요.", "每天坐地铁上班。", "I commute by subway every day."]],
+            l1_031: [["점심을 같이 먹을까요?", "要一起吃午饭吗？", "Shall we have lunch together?"]],
+            l1_032: [["감기에 걸려서 운동하지 못했어요.", "因为感冒没能运动。", "I could not exercise because I caught a cold."]],
+            l1_033: [["벌써 봄이 왔네요.", "春天已经来了呀。", "Spring has already arrived."]],
+            l1_034: [["저는 커피보다 차를 더 좋아해요.", "比起咖啡，我更喜欢茶。", "I like tea more than coffee."]],
+            l1_035: [
+                ["아침에 걷는 것은 건강에 좋아요.", "早上散步对健康有好处。", "Walking in the morning is good for your health."],
+                ["한국어로 이야기하는 것이 재미있어요.", "用韩语交谈很有趣。", "Speaking in Korean is fun."],
+            ],
+            l1_036: [["늦어서 택시를 탔어요.", "因为迟了，所以坐了出租车。", "I took a taxi because I was late."]],
+            l1_037: [
+                ["이 길로 쭉 가세요.", "请沿着这条路一直走。", "Go straight along this road."],
+                ["출구 쪽으로 가세요.", "请往出口方向走。", "Please go toward the exit."],
+            ],
+            l1_038: [["너무 걱정하지 마세요.", "请不要太担心。", "Please do not worry too much."]],
+            l1_039: [["지금 회의 중인데 나중에 전화할게요.", "我正在开会，稍后给你打电话。", "I am in a meeting, so I will call you later."]],
+            l1_040: [["이 가방이 민수 씨 것이지요?", "这个包是敏秀的吧？", "This bag is Minsu's, right?"]],
+            l1_041: [["여기에서 잠시 쉽시다.", "在这里休息一会儿吧。", "Let's rest here for a while."]],
+            l1_042: [["두 시간마다 이 약을 드세요.", "请每两小时吃一次这个药。", "Take this medicine every two hours."]],
+            l1_043: [["오늘은 현금만 받아요.", "今天只收现金。", "We only accept cash today."]],
+
+            l2_001: [["제가 만든 음식이에요.", "这是我做的食物。", "This is food that I made."]],
+            l2_002: [
+                ["사람들이 저를 반장이라고 해요.", "大家叫我班长。", "People call me the class president."],
+                ["이 꽃은 무궁화라고 합니다.", "这种花叫无穷花。", "This flower is called mugunghwa."],
+            ],
+            l2_003: [
+                ["샤워한 다음에 아침을 먹어요.", "洗澡后吃早饭。", "I eat breakfast after taking a shower."],
+                ["회의가 끝난 다음에 전화할게요.", "会议结束后我会打电话。", "I will call after the meeting ends."],
+            ],
+            l2_004: [["제가 문을 닫을게요.", "我来关门。", "I will close the door."]],
+            l2_005: [["주말에 영화나 볼까요?", "周末要不看个电影？", "Shall we watch a movie or something this weekend?"]],
+            l2_006: [["이 음식을 한번 먹어 보세요.", "请尝尝这个食物。", "Please try this food."]],
+            l2_007: [["저는 한글을 읽을 수 있어요.", "我会读韩文。", "I can read Hangul."]],
+            l2_008: [
+                ["내일 시간 있어?", "明天有时间吗？", "Do you have time tomorrow?"],
+                ["이거 정말 맛있어.", "这个真的很好吃。", "This is really delicious."],
+            ],
+            l2_009: [["시간이 있으면 같이 커피를 마셔요.", "有时间的话一起喝咖啡吧。", "If you have time, let's have coffee together."]],
+            l2_010: [
+                ["은행에 가서 돈을 찾았어요.", "去银行取了钱。", "I went to the bank and withdrew money."],
+                ["문을 열어서 방에 들어갔어요.", "打开门进了房间。", "I opened the door and entered the room."],
+            ],
+            l2_011: [["한국에 처음 왔을 때 많이 긴장했어요.", "第一次来韩国时非常紧张。", "I was very nervous when I first came to Korea."]],
+            l2_012: [
+                ["제가 도와드리겠습니다.", "我来帮您。", "I will help you."],
+                ["지금 출발하면 늦겠어요.", "现在出发的话，恐怕会迟到。", "If we leave now, we will probably be late."],
+            ],
+            l2_013: [["오늘 저녁에 뭐 먹을래요?", "今天晚上想吃什么？", "What would you like to eat tonight?"]],
+            l2_014: [["늦었으니까 택시를 타세요.", "因为晚了，请坐出租车吧。", "Since it is late, take a taxi."]],
+            l2_015: [["운동하기 전에 준비 운동을 해요.", "运动前做热身。", "I warm up before exercising."]],
+            l2_016: [["다음 달부터 저축하기로 했어요.", "决定从下个月开始存钱。", "I decided to start saving money next month."]],
+            l2_017: [["민수 씨는 지금 집에 있을 것 같아요.", "敏秀现在好像在家。", "I think Minsu is at home now."]],
+            l2_018: [["저기 서 있는 사람이 제 친구예요.", "站在那边的人是我的朋友。", "The person standing over there is my friend."]],
+            l2_019: [
+                ["부탁이 있는데 잠깐 시간 있어요?", "我有件事想拜托，你有一点时间吗？", "I have a favor to ask. Do you have a moment?"],
+                ["날씨가 추운데 창문을 닫을까요?", "天气很冷，要关窗吗？", "It is cold. Shall I close the window?"],
+            ],
+            l2_020: [["길이 막혔기 때문에 늦었어요.", "因为堵车，所以迟到了。", "I was late because of traffic."]],
+            l2_021: [["버스를 기다리면서 책을 읽었어요.", "一边等公交车一边看书。", "I read a book while waiting for the bus."]],
+            l2_022: [
+                ["아이가 쉽게 이해하게 설명했어요.", "讲解得让孩子容易理解。", "I explained it so the child could understand easily."],
+                ["방을 깨끗하게 청소했어요.", "把房间打扫干净了。", "I cleaned the room thoroughly."],
+            ],
+            l2_023: [["제주도에 가 본 적이 있어요.", "去过济州岛。", "I have been to Jeju Island."]],
+            l2_024: [
+                ["저는 아침을 일찍 먹는 편이에요.", "我一般比较早吃早饭。", "I tend to eat breakfast early."],
+                ["이 식당은 음식이 매운 편이에요.", "这家餐厅的菜比较辣。", "This restaurant's food tends to be spicy."],
+            ],
+            l2_025: [["한국어를 배우려고 한국에 왔어요.", "为了学韩语来到了韩国。", "I came to Korea to learn Korean."]],
+            l2_026: [["주말에 방을 청소하려고 해요.", "周末打算打扫房间。", "I intend to clean my room this weekend."]],
+            l2_027: [["이 약은 식후에 먹어야 해요.", "这个药必须饭后吃。", "You have to take this medicine after a meal."]],
+            l2_028: [["한국에서 일하려면 비자가 필요해요.", "想在韩国工作就需要签证。", "You need a visa if you want to work in Korea."]],
+            l2_029: [["여기에서 사진을 찍어도 돼요?", "可以在这里拍照吗？", "May I take pictures here?"]],
+            l2_030: [
+                ["지난주에 산 옷을 교환했어요.", "换了上周买的衣服。", "I exchanged the clothes I bought last week."],
+                ["아까 전화한 사람이 누구예요?", "刚才打电话的人是谁？", "Who was the person who called earlier?"],
+            ],
+            l2_031: [["학생들이 운동장에서 축구를 하고 있어요.", "学生们正在操场踢足球。", "The students are playing soccer on the field."]],
+            l2_032: [["내일 만날 사람에게 연락했어요.", "联系了明天要见的人。", "I contacted the person I will meet tomorrow."]],
+            l2_033: [["이 식당은 가격도 싸고 맛도 좋거든요.", "这家餐厅价格便宜，味道也好。", "This restaurant is inexpensive and the food is good, you see."]],
+            l2_034: [
+                ["가족이 모두 건강했으면 좋겠어요.", "希望家人都健康。", "I hope my whole family stays healthy."],
+                ["한국어를 더 잘했으면 좋겠어요.", "希望韩语说得更好。", "I wish I were better at Korean."],
+            ],
+            l2_035: [
+                ["하루에 물을 여덟 잔 마셔요.", "一天喝八杯水。", "I drink eight glasses of water a day."],
+                ["이 버스는 삼십 분에 한 대 와요.", "这辆公交车每三十分钟来一班。", "This bus comes once every thirty minutes."],
+            ],
+            l2_036: [
+                ["피곤하면 잠깐 쉬는 게 어때요?", "累的话休息一会儿怎么样？", "How about taking a short break if you are tired?"],
+                ["주말에 박물관에 가는 게 어때요?", "周末去博物馆怎么样？", "How about going to a museum this weekend?"],
+            ],
+            l2_037: [
+                ["오늘 기분이 좋아 보여요.", "你今天看起来心情很好。", "You look happy today."],
+                ["하늘이 흐려 보여요.", "天空看起来阴沉沉的。", "The sky looks cloudy."],
+            ],
+            l2_038: [["한국에 온 지 일 년이 됐어요.", "来韩国已经一年了。", "It has been a year since I came to Korea."]],
+            l2_039: [["주말에는 등산을 하거나 자전거를 타요.", "周末爬山或者骑自行车。", "On weekends, I hike or ride a bicycle."]],
+            l2_040: [["방학 동안 아르바이트를 했어요.", "假期期间打了工。", "I worked part-time during vacation."]],
+            l2_041: [["지금 보고서를 쓰는 중이에요.", "现在正在写报告。", "I am in the middle of writing a report."]],
+
+            l3_001: [["신청서만 내면 돼요.", "只要提交申请表就可以。", "You only need to submit the application form."]],
+            l3_002: [
+                ["비도 오고 해서 집에 있었어요.", "因为下雨等原因，就待在家里了。", "It was raining and all, so I stayed home."],
+                ["일이 많고 해서 점심도 못 먹었어요.", "因为工作很多等原因，连午饭也没吃。", "I had a lot of work and all, so I could not even eat lunch."],
+            ],
+            l3_003: [["차는 편한 대신에 유지비가 많이 들어요.", "汽车虽然方便，但保养费用很高。", "A car is convenient, but it costs a lot to maintain."]],
+            l3_004: [["날씨가 점점 따뜻해졌어요.", "天气渐渐变暖了。", "The weather has gradually become warmer."]],
+            l3_005: [["버스가 언제 오는지 알아요?", "你知道公交车什么时候来吗？", "Do you know when the bus is coming?"]],
+            l3_006: [["길을 걷다가 친구를 만났어요.", "走在路上时遇到了朋友。", "I ran into a friend while walking down the street."]],
+            l3_007: [["이 책은 초보자가 읽을 만해요.", "这本书值得初学者阅读。", "This book is worth reading for beginners."]],
+            l3_008: [
+                ["지갑을 놓고 와 가지고 친구에게 돈을 빌렸어요.", "因为忘带钱包，向朋友借了钱。", "I left my wallet behind, so I borrowed money from a friend."],
+                ["우산을 안 가져와 가지고 비를 맞았어요.", "因为没带雨伞，淋了雨。", "I did not bring an umbrella, so I got caught in the rain."],
+            ],
+            l3_009: [["지수 씨가 내일 늦는다고 했어요.", "智秀说明天会晚到。", "Jisu said that she would be late tomorrow."]],
+            l3_010: [["냉장고에 물밖에 없어요.", "冰箱里只有水。", "There is nothing but water in the refrigerator."]],
+            l3_011: [["친구가 주말에 여행을 가자고 했어요.", "朋友提议周末去旅行。", "My friend suggested taking a trip this weekend."]],
+            l3_012: [["창문이 바람에 열렸어요.", "窗户被风吹开了。", "The window was opened by the wind."]],
+            l3_013: [["의사가 술을 마시지 말라고 했어요.", "医生叫我不要喝酒。", "The doctor told me not to drink alcohol."]],
+            l3_014: [["민수 씨가 왜 늦었냐고 물었어요.", "敏秀问为什么迟到了。", "Minsu asked why I was late."]],
+            l3_015: [
+                ["건강은 돈만큼 중요해요.", "健康和金钱一样重要。", "Health is as important as money."],
+                ["올해는 작년만큼 춥지 않아요.", "今年没有去年那么冷。", "This year is not as cold as last year."],
+            ],
+            l3_016: [["엄마가 아이에게 채소를 먹였어요.", "妈妈让孩子吃了蔬菜。", "The mother made the child eat vegetables."]],
+            l3_017: [["회의가 몇 시에 끝나나요?", "会议几点结束呢？", "What time does the meeting end?"]],
+            l3_018: [
+                ["잠을 못 자서 그런지 머리가 아파요.", "可能是因为没睡好，头很疼。", "Maybe because I did not sleep, I have a headache."],
+                ["날씨가 추워서 그런지 길에 사람이 없어요.", "可能因为天气冷，路上没有人。", "Perhaps because it is cold, there is no one on the street."],
+            ],
+            l3_019: [["건강을 지키기 위해서 매일 운동해요.", "为了保持健康，每天运动。", "I exercise every day to stay healthy."]],
+            l3_020: [["손님이 오기 전에 방을 청소해 놓았어요.", "客人来之前把房间打扫好了。", "I cleaned the room in advance before the guests arrived."]],
+            l3_021: [["이 집은 넓은 데다가 교통도 편리해요.", "这套房子不仅宽敞，交通也方便。", "This house is spacious, and on top of that, transportation is convenient."]],
+            l3_022: [
+                ["물은 섭씨 백 도에서 끓는다.", "水在摄氏一百度沸腾。", "Water boils at one hundred degrees Celsius."],
+                ["나는 주말마다 도서관에 간다.", "我每个周末都去图书馆。", "I go to the library every weekend."],
+            ],
+            l3_023: [["다음 달부터 한국에서 일하게 되었어요.", "从下个月开始，我将在韩国工作。", "I have come to work in Korea starting next month."]],
+            l3_024: [["비가 와도 운동하러 갈 거예요.", "即使下雨也会去运动。", "I will go exercise even if it rains."]],
+            l3_025: [["부모님은 제가 스스로 결정하게 하셨어요.", "父母让我自己决定。", "My parents let me decide for myself."]],
+            l3_026: [
+                ["한국어 실력이 조금씩 늘어 가고 있어요.", "韩语水平正在一点点提高。", "My Korean is gradually improving."],
+                ["이 전통은 오랫동안 이어져 왔어요.", "这个传统长期延续至今。", "This tradition has continued for a long time."],
+            ],
+            l3_027: [
+                ["회원증이 있어야 들어갈 수 있어요.", "必须有会员证才能进去。", "You can enter only if you have a membership card."],
+                ["직접 해 봐야 방법을 알 수 있어요.", "必须亲自试过才能知道方法。", "You have to try it yourself to understand how it works."],
+            ],
+            l3_028: [["그 식당 음식이 정말 맛있잖아요.", "那家餐厅的菜真的很好吃嘛。", "That restaurant's food is really good, as you know."]],
+            l3_029: [["저도 막 전화하려던 참이었어요.", "我也正打算打电话。", "I was just about to call too."]],
+            l3_030: [["집에 도착하자마자 샤워했어요.", "一到家就洗澡了。", "I took a shower as soon as I got home."]],
+            l3_031: [["지금 출발해도 늦을 텐데요.", "现在出发恐怕也会迟到。", "Even if we leave now, we will probably be late."]],
+            l3_032: [["벽에 사진이 걸려 있어요.", "墙上挂着照片。", "A picture is hanging on the wall."]],
+            l3_033: [["신발을 신은 채로 방에 들어왔어요.", "穿着鞋就进了房间。", "He entered the room with his shoes still on."]],
+            l3_034: [["제가 먼저 갈 테니까 천천히 오세요.", "我先走，你慢慢来吧。", "I will go ahead, so take your time."]],
+            l3_035: [["시간이 없으면 김밥이라도 먹어요.", "没时间的话，至少吃点紫菜包饭吧。", "If you do not have time, at least eat some gimbap."]],
+            l3_036: [["수업이 끝나기가 무섭게 학생들이 나갔어요.", "课一结束，学生们就出去了。", "The students left the instant class ended."]],
+            l3_037: [["제가 잘하기는요. 아직 멀었어요.", "我哪算做得好，还差得远呢。", "Me, good at it? I still have a long way to go."]],
+            l3_038: [["길이 막히길래 지하철을 탔어요.", "因为看到堵车，就坐了地铁。", "The traffic was backed up, so I took the subway."]],
+            l3_039: [["민수 씨가 곧 도착한대요.", "听说敏秀马上到。", "They say Minsu will arrive soon."]],
+            l3_040: [["제주도의 바다가 정말 아름답더라고요.", "我亲眼看到济州岛的海真的很美。", "I found that the sea around Jeju was truly beautiful."]],
+            l3_041: [["휴대폰을 잃어버리고 말았어요.", "最终还是把手机弄丢了。", "I ended up losing my phone."]],
+            l3_042: [["어릴 때 살았던 동네에 다시 갔어요.", "又去了小时候住过的社区。", "I went back to the neighborhood where I had lived as a child."]],
+
+            l4_001: [["한국어는 공부할수록 재미있어요.", "韩语越学越有趣。", "Korean becomes more interesting the more I study it."]],
+            l4_002: [["늦잠을 자느라고 아침을 못 먹었어요.", "因为睡懒觉，没能吃早饭。", "I could not eat breakfast because I overslept."]],
+            l4_003: [["이 제품은 가격이 쌀 뿐만 아니라 품질도 좋아요.", "这个产品不仅价格便宜，质量也好。", "This product is not only inexpensive but also high quality."]],
+            l4_004: [["버스가 끊겨서 택시를 탈 수밖에 없었어요.", "公交车停运了，只好坐出租车。", "The buses had stopped running, so I had no choice but to take a taxi."]],
+            l4_005: [["그 사람이 외국인일 줄 몰랐어요.", "没想到那个人是外国人。", "I did not know that person was a foreigner."]],
+            l4_006: [["어릴 때 가족과 바다에 가곤 했어요.", "小时候常和家人去海边。", "I used to go to the sea with my family as a child."]],
+            l4_007: [
+                ["너무 긴장한 나머지 이름도 잊어버렸어요.", "因为过度紧张，连名字都忘了。", "I was so nervous that I even forgot the name."],
+                ["화가 난 나머지 문을 세게 닫았어요.", "因为太生气，用力关上了门。", "I was so angry that I slammed the door."],
+            ],
+            l4_008: [["약을 먹었더니 열이 내렸어요.", "吃药后烧退了。", "After I took the medicine, my fever went down."]],
+            l4_009: [["버스로 가든지 지하철로 가든지 한 시간쯤 걸려요.", "无论坐公交还是地铁，都需要一个小时左右。", "Whether you go by bus or subway, it takes about an hour."]],
+            l4_010: [["그 아이가 얼마나 빨리 달리는지 몰라요.", "你不知道那个孩子跑得有多快。", "You would not believe how fast that child runs."]],
+            l4_011: [["목소리가 들리지 않을 정도로 음악이 컸어요.", "音乐大到听不见说话声。", "The music was so loud that I could not hear the voices."]],
+            l4_012: [["할머니가 자주 만들어 주시던 음식이에요.", "这是奶奶以前常给我做的食物。", "This is a dish my grandmother used to make for me."]],
+            l4_013: [
+                ["약속 시간은 지키되 무리하지 마세요.", "要遵守约定时间，但不要勉强自己。", "Keep the appointment time, but do not overexert yourself."],
+                ["환경을 보호하되 생활의 편리함도 고려해야 해요.", "既要保护环境，也要考虑生活便利。", "We should protect the environment while also considering everyday convenience."],
+            ],
+            l4_014: [["밤새 공부했더니 너무 피곤해요.", "学习了一整夜之后非常累。", "I studied all night, and now I am exhausted."]],
+            l4_015: [["장도 볼 겸 시장에 다녀왔어요.", "顺便买菜，去了一趟市场。", "I went to the market partly to buy groceries."]],
+            l4_016: [["다음 달에 이사한다면서요?", "听说你下个月搬家？", "I heard you are moving next month, right?"]],
+            l4_017: [["계단에서 넘어질 뻔했어요.", "差点从楼梯上摔倒。", "I almost fell on the stairs."]],
+            l4_018: [["폭설로 인해서 비행기가 취소됐어요.", "由于暴雪，航班被取消了。", "The flight was canceled due to heavy snow."]],
+            l4_019: [["그는 다 아는 척했어요.", "他装作什么都知道。", "He pretended to know everything."]],
+            l4_020: [
+                ["마지막 기회를 놓치고 말았어요.", "最终错过了最后的机会。", "I ended up missing the last opportunity."],
+                ["열심히 준비했지만 결국 떨어지고 말았어요.", "虽然认真准备了，但最终还是落选了。", "I prepared hard, but I ended up failing."],
+            ],
+            l4_021: [["누구나 실수하기 마련이에요.", "任何人都难免犯错。", "Everyone is bound to make mistakes."]],
+            l4_022: [
+                ["그 사람의 이름조차 기억나지 않아요.", "连那个人的名字都想不起来。", "I cannot even remember that person's name."],
+                ["너무 바빠서 점심조차 못 먹었어요.", "忙得连午饭都没吃。", "I was so busy that I could not even eat lunch."],
+            ],
+            l4_023: [["지금이야말로 시작할 때입니다.", "现在正是开始的时候。", "Now is exactly the time to begin."]],
+            l4_024: [["불이 꺼진 걸 보니 모두 퇴근했나 봐요.", "看灯都关了，大家好像都下班了。", "The lights are off, so it seems everyone has gone home."]],
+            l4_025: [
+                ["포기하지 않는 한 기회는 있어요.", "只要不放弃，就有机会。", "As long as you do not give up, there is a chance."],
+                ["비가 오지 않는 한 행사는 예정대로 진행됩니다.", "只要不下雨，活动就按计划进行。", "The event will proceed as scheduled as long as it does not rain."],
+            ],
+            l4_026: [["아이들이 안전하게 놀 수 있도록 울타리를 설치했어요.", "为了让孩子们安全玩耍，安装了围栏。", "We installed a fence so that the children could play safely."]],
+            l4_027: [
+                ["신청 기간이 끝났으므로 더 이상 접수할 수 없습니다.", "申请期已结束，因此无法继续受理。", "The application period has ended, so no more submissions can be accepted."],
+                ["제품에 결함이 있으므로 환불해 드리겠습니다.", "产品有缺陷，因此我们会为您退款。", "The product is defective, so we will issue a refund."],
+            ],
+            l4_028: [
+                ["사과는커녕 변명만 했어요.", "别说道歉了，他只是在辩解。", "Far from apologizing, he only made excuses."],
+                ["여행은커녕 주말에도 출근했어요.", "别说旅行了，周末也去上班了。", "Far from taking a trip, I even went to work on the weekend."],
+            ],
+            l4_029: [
+                ["처음에는 누구나 실수하는 법이에요.", "刚开始时任何人都会犯错。", "Everyone naturally makes mistakes at first."],
+                ["사람은 경험을 통해 배우는 법입니다.", "人总是通过经验学习。", "People naturally learn through experience."],
+            ],
+            l4_030: [
+                ["그는 매일 운동하다시피 해요.", "他几乎每天都运动。", "He exercises practically every day."],
+                ["보시다시피 문제가 많이 해결되었습니다.", "正如您所见，很多问题已经解决。", "As you can see, many problems have been resolved."],
+            ],
+            l4_031: [["길이 막힐지도 모르니 일찍 출발하세요.", "可能会堵车，请早点出发。", "Traffic might be heavy, so leave early."]],
+            l4_032: [["이 동네 사람치고 그 식당을 모르는 사람이 없어요.", "这个社区的人没有不知道那家餐厅的。", "There is no one in this neighborhood who does not know that restaurant."]],
+            l4_033: [["동의하지 않는 것은 거절한 셈이에요.", "不表示同意就等于拒绝。", "Not agreeing amounts to refusing."]],
+            l4_034: [["제 실수로 일이 늦어진 탓에 모두가 기다렸어요.", "由于我的失误耽搁了工作，大家都在等。", "Everyone had to wait because my mistake delayed the work."]],
+            l4_035: [["비가 오는데도 사람들이 많았어요.", "尽管下雨，人还是很多。", "There were many people even though it was raining."]],
+            l4_036: [["그때 솔직하게 말할 걸 그랬어요.", "那时真应该坦白说出来。", "I should have been honest then."]],
+            l4_037: [["그가 약속을 잊었을 리가 없어요.", "他不可能忘记约定。", "There is no way he forgot the appointment."]],
+            l4_038: [["아이가 깰까 봐 조용히 이야기했어요.", "怕孩子醒来，所以小声说话。", "I spoke quietly because I was afraid the child might wake up."]],
+            l4_039: [["너무 바빠서 쉬려야 쉴 수가 없었어요.", "太忙了，想休息也休息不了。", "I was so busy that I could not rest even if I wanted to."]],
+            l4_040: [["지금 출발해도 막차를 놓칠 테니 가나 마나예요.", "现在出发也会错过末班车，去不去都一样。", "Even if we leave now, we will miss the last train, so there is no point in going."]],
+            l4_041: [["시간이 더 있었다면 결과가 달라졌을 거예요.", "如果时间更多，结果可能会不同。", "If we had had more time, the result would have been different."]],
+            l4_042: [["물론 도와드리고말고요.", "当然会帮您。", "Of course I will help you."]],
+            l4_043: [["이 문제는 혼자 해결하기에는 너무 복잡해요.", "这个问题一个人解决太复杂了。", "This problem is too complicated to solve alone."]],
+            l4_044: [["그렇게 기다리느니 차라리 걸어가겠어요.", "与其那样等，不如走着去。", "Rather than wait like that, I would walk instead."]],
+            l4_045: [["은행에 가는 김에 우체국에도 들렀어요.", "去银行时顺便去了邮局。", "While I was going to the bank, I also stopped by the post office."]],
+            l4_046: [["불이 켜진 걸 보니 아직 사람이 있는 모양이에요.", "看灯还亮着，好像还有人在。", "The lights are on, so it appears someone is still there."]],
+            l4_047: [["사고가 나는 바람에 길이 막혔어요.", "因为发生事故，道路堵塞了。", "The road was blocked because an accident occurred."]],
+            l4_048: [["한국에서 살다 보니 매운 음식에 익숙해졌어요.", "在韩国生活着生活着，就习惯了辣味食物。", "After living in Korea, I became accustomed to spicy food."]],
+            l4_049: [["그렇게 서두르다가는 실수할 거예요.", "那样着急下去会犯错的。", "If you keep rushing like that, you will make a mistake."]],
+            l4_050: [["괜찮다니까 자꾸 걱정하지 마세요.", "都说没事了，请不要一直担心。", "I am telling you it is fine, so stop worrying."]],
+            l4_051: [["아이가 엄마에게 물을 달라고 했어요.", "孩子向妈妈要水。", "The child asked their mother for water."]],
+            l4_052: [["힘들더라도 끝까지 해 보세요.", "即使困难，也请坚持做到最后。", "Even if it is difficult, try to finish it."]],
+            l4_053: [["선생님이 민수에게 창문을 닫아 주라고 했어요.", "老师叫敏秀帮忙关窗。", "The teacher told Minsu to close the window for someone."]],
+            l4_054: [["이제 와서 사과해서야 무슨 소용이 있어요?", "事到如今才道歉有什么用？", "What good is apologizing only now?"]],
+            l4_055: [["조금만 더 일찍 출발했더라면 기차를 탔을 텐데요.", "如果再早一点出发，就能赶上火车了。", "If we had left a little earlier, we would have caught the train."]],
+        },
+        knowledgeGroups: [
+            {
+                id: "core-particles",
+                members: ["l1_001", "l1_004", "l1_006", "l1_020", "l1_023", "l1_026", "l1_034", "l1_042", "l1_043", "l2_005", "l2_035", "l3_010", "l3_015", "l3_035", "l4_022", "l4_023", "l4_028", "l4_032"],
+                translations: {
+                    "zh-CN": { title: "助词与强调", explanation: "先判断名词在句中的角色，再选择主题、主语、宾语或补助词。高级表达常借助조차、야말로、커녕等助词改变焦点和语气。" },
+                    en: { title: "Particles and focus", explanation: "Identify the noun's role before choosing a topic, subject, object, or auxiliary particle. Advanced particles such as 조차, 야말로, and 커녕 shift focus and emphasis." },
+                },
+            },
+            {
+                id: "copula-and-naming",
+                members: ["l1_002", "l1_011", "l2_002"],
+                translations: {
+                    "zh-CN": { title: "判断、否定与命名", explanation: "이에요/예요用于肯定判断，이/가 아니다用于否定判断；(이)라고 하다则把名称或身份作为引用内容表达。" },
+                    en: { title: "Identity, negation, and naming", explanation: "이에요/예요 makes an affirmative identification, 이/가 아니다 negates it, and (이)라고 하다 presents a name or identity as quoted content." },
+                },
+            },
+            {
+                id: "place-time-direction",
+                members: ["l1_003", "l1_007", "l1_008", "l1_009", "l1_010", "l1_012", "l1_030", "l1_037", "l2_035"],
+                translations: {
+                    "zh-CN": { title: "地点、时间与移动", explanation: "에标记存在地点、目的地或时间点，에서标记动作场所或出发点，(으)로强调手段或方向；부터/까지表示范围边界。" },
+                    en: { title: "Place, time, and movement", explanation: "에 marks existence, destinations, or points in time; 에서 marks an action location or origin; (으)로 highlights means or direction; 부터/까지 set range boundaries." },
+                },
+            },
+            {
+                id: "speech-levels-honorifics",
+                members: ["l1_005", "l1_015", "l1_016", "l1_018", "l1_022", "l1_023", "l1_040", "l1_041", "l2_008"],
+                translations: {
+                    "zh-CN": { title: "语体与敬语", explanation: "句尾决定礼貌程度，-(으)시-和께서体现对主语的尊敬。选择语体时要同时考虑场合、听者关系和主语身份。" },
+                    en: { title: "Speech levels and honorifics", explanation: "Sentence endings set politeness, while -(으)시- and 께서 honor the subject. Choose a style by considering the setting, listener relationship, and subject." },
+                },
+            },
+            {
+                id: "negation-prohibition-inability",
+                members: ["l1_013", "l1_014", "l1_032", "l1_038", "l2_007", "l4_004", "l4_037", "l4_039"],
+                translations: {
+                    "zh-CN": { title: "否定、禁止与不能", explanation: "안/지 않다表示一般否定，못/지 못하다强调能力或条件不足，지 말다用于禁止。高级形式还可表达“别无选择”或“绝不可能”。" },
+                    en: { title: "Negation, prohibition, and inability", explanation: "안/지 않다 gives ordinary negation, 못/지 못하다 signals inability, and 지 말다 prohibits an action. Advanced forms can express no alternative or impossibility." },
+                },
+            },
+            {
+                id: "wants-plans-suggestions",
+                members: ["l1_017", "l1_025", "l1_027", "l1_029", "l1_031", "l1_041", "l2_004", "l2_013", "l2_016", "l2_025", "l2_026", "l2_028", "l2_036", "l3_019", "l3_029", "l3_034"],
+                translations: {
+                    "zh-CN": { title: "愿望、计划与提议", explanation: "고 싶다表达个人愿望，(으)려고 하다和기로 하다表达计划或决定，(으)ㄹ게요带有面向听者的承诺；建议和提议要注意主语限制。" },
+                    en: { title: "Wants, plans, and suggestions", explanation: "고 싶다 expresses a personal wish, (으)려고 하다 and 기로 하다 express plans or decisions, and (으)ㄹ게요 makes a listener-oriented promise. Suggestions have subject restrictions." },
+                },
+            },
+            {
+                id: "basic-connectors",
+                members: ["l1_019", "l1_024", "l1_028", "l1_036", "l1_039", "l2_010", "l2_014", "l2_019", "l2_020", "l3_002", "l3_008", "l3_018", "l3_021", "l3_024"],
+                translations: {
+                    "zh-CN": { title: "连接与句间关系", explanation: "고用于并列，지만用于转折，아/어서和(으)니까用于原因或顺序，(으)ㄴ/는데常先提供背景。先判断两句的逻辑关系再选连接形式。" },
+                    en: { title: "Clause connections", explanation: "고 coordinates, 지만 contrasts, 아/어서 and (으)니까 mark cause or sequence, and (으)ㄴ/는데 often supplies background. Choose after identifying the clause relationship." },
+                },
+            },
+            {
+                id: "tense-nominalization-reaction",
+                members: ["l1_021", "l1_033", "l1_035", "l2_001", "l2_018", "l2_030", "l2_032", "l3_022", "l3_042", "l4_005", "l4_006", "l4_012"],
+                translations: {
+                    "zh-CN": { title: "时态、定语与回想", explanation: "时态不仅体现在句尾，也会改变定语词尾。는 것把动作名词化，던/았던则从现在回看过去的持续、习惯或已完成经历。" },
+                    en: { title: "Tense, modifiers, and recollection", explanation: "Tense appears in modifier endings as well as sentence endings. 는 것 nominalizes actions, while 던/았던 looks back on ongoing, habitual, or completed past experience." },
+                },
+            },
+            {
+                id: "sequence-and-timing",
+                members: ["l2_003", "l2_010", "l2_011", "l2_015", "l2_038", "l2_040", "l3_006", "l3_030", "l3_036", "l4_008", "l4_014", "l4_045", "l4_048"],
+                translations: {
+                    "zh-CN": { title: "动作顺序与时间关系", explanation: "다음에、후에和기 전에明确先后顺序，다가表示进行中的转换或中断，자마자强调紧接发生；더니和다 보니还包含观察结果。" },
+                    en: { title: "Sequence and timing", explanation: "다음에, 후에, and 기 전에 state sequence, 다가 marks a switch or interruption, and 자마자 stresses immediacy. 더니 and 다 보니 also introduce observed results." },
+                },
+            },
+            {
+                id: "ability-experience-evaluation",
+                members: ["l2_006", "l2_007", "l2_023", "l3_007", "l3_015", "l4_005", "l4_011", "l4_030", "l4_033", "l4_043"],
+                translations: {
+                    "zh-CN": { title: "能力、经验与评价", explanation: "수 있다表示能力或可能，아/어 보다和(으)ㄴ 적이 있다连接尝试与经验；만하다、정도로和셈이다用于对程度或结果作评价。" },
+                    en: { title: "Ability, experience, and evaluation", explanation: "수 있다 marks ability or possibility, while 아/어 보다 and (으)ㄴ 적이 있다 cover attempts and experience. 만하다, 정도로, and 셈이다 evaluate degree or outcome." },
+                },
+            },
+            {
+                id: "conditions-requirements-permission",
+                members: ["l2_009", "l2_014", "l2_027", "l2_028", "l2_029", "l2_033", "l3_001", "l3_027", "l3_034", "l4_025", "l4_041", "l4_049", "l4_052", "l4_054"],
+                translations: {
+                    "zh-CN": { title: "条件、必要与许可", explanation: "(으)면提出一般条件，아/어야强调必要条件，(으)려면围绕目标提出前提，아/어도 되다表达许可。高级条件式还可表达假设、限制和警告。" },
+                    en: { title: "Conditions, requirements, and permission", explanation: "(으)면 gives a general condition, 아/어야 a requirement, (으)려면 a goal-based prerequisite, and 아/어도 되다 permission. Advanced forms add hypotheses, limits, and warnings." },
+                },
+            },
+            {
+                id: "simultaneous-manner-progress",
+                members: ["l2_021", "l2_022", "l2_031", "l2_041", "l3_026", "l3_032", "l3_033", "l4_015", "l4_026"],
+                translations: {
+                    "zh-CN": { title: "方式、进行与状态", explanation: "(으)면서表示同时动作，게说明方式或结果状态，고 있다强调进行，아/어 있다强调动作完成后的状态；채로则保持原状态继续另一动作。" },
+                    en: { title: "Manner, progress, and state", explanation: "(으)면서 marks simultaneous actions, 게 describes manner or result, 고 있다 ongoing action, and 아/어 있다 a resulting state. 채로 keeps a state while another action occurs." },
+                },
+            },
+            {
+                id: "tendency-frequency-alternatives",
+                members: ["l2_005", "l2_024", "l2_035", "l2_039", "l2_040", "l3_010", "l3_035", "l4_006", "l4_009", "l4_032"],
+                translations: {
+                    "zh-CN": { title: "倾向、频率与选择", explanation: "는 편이다描述总体倾向，마다和에可表达频率，거나、(이)나和든지提供选择。밖에和(이)라도则分别强调限制与退而求其次。" },
+                    en: { title: "Tendency, frequency, and alternatives", explanation: "는 편이다 describes a general tendency, while 마다 and 에 can mark frequency. 거나, (이)나, and 든지 offer alternatives; 밖에 and (이)라도 add limitation or fallback." },
+                },
+            },
+            {
+                id: "guess-appearance-evidence",
+                members: ["l2_012", "l2_017", "l2_034", "l2_037", "l3_005", "l3_017", "l3_031", "l3_038", "l3_040", "l4_016", "l4_024", "l4_031", "l4_037", "l4_046", "l4_050"],
+                translations: {
+                    "zh-CN": { title: "推测、观察与依据", explanation: "것 같다用于中性推测，아/어 보이다依据外观判断，나 보다和모양이다依据可见线索推断；더라고요强调说话者亲身观察到的事实。" },
+                    en: { title: "Guessing, observation, and evidence", explanation: "것 같다 is neutral conjecture, 아/어 보이다 judges appearance, and 나 보다 or 모양이다 infer from evidence. 더라고요 reports something personally observed." },
+                },
+            },
+            {
+                id: "quoted-speech",
+                members: ["l2_002", "l3_009", "l3_011", "l3_013", "l3_014", "l3_039", "l4_016", "l4_050", "l4_051", "l4_053"],
+                translations: {
+                    "zh-CN": { title: "间接引语", explanation: "陈述、提议、命令和疑问分别使用다고/라고、자고、(으)라고、냐고。缩略形式대요/래요/재요常见于口语转述，请求给予物品或帮助时要区分달라고与주라고。" },
+                    en: { title: "Reported speech", explanation: "Statements, suggestions, commands, and questions use 다고/라고, 자고, (으)라고, and 냐고. Spoken contractions include 대요/래요/재요; requests distinguish 달라고 from 주라고." },
+                },
+            },
+            {
+                id: "voice-and-causation",
+                members: ["l3_012", "l3_016", "l3_025", "l4_053"],
+                translations: {
+                    "zh-CN": { title: "被动与使动", explanation: "被动关注动作的承受者，使动关注让别人做某事。词汇型使动与게 하다的语感不同，前者常更直接，后者更强调安排或促成。" },
+                    en: { title: "Passive and causative voice", explanation: "The passive focuses on the affected participant; the causative makes someone act. Lexical causatives often feel more direct, while 게 하다 highlights arranging or causing an action." },
+                },
+            },
+            {
+                id: "purpose-preparation-result",
+                members: ["l2_025", "l2_026", "l3_019", "l3_020", "l3_023", "l3_025", "l3_029", "l3_034", "l4_015", "l4_026", "l4_045"],
+                translations: {
+                    "zh-CN": { title: "目的、准备与结果", explanation: "(으)려고和기 위해서说明目的，아/어 놓다强调事先完成并保持结果，게 되다表示非单纯主观意志导致的新结果。" },
+                    en: { title: "Purpose, preparation, and outcome", explanation: "(으)려고 and 기 위해서 state purpose, 아/어 놓다 marks advance preparation with a maintained result, and 게 되다 presents an outcome beyond simple personal intention." },
+                },
+            },
+            {
+                id: "contrast-concession-addition",
+                members: ["l1_024", "l2_019", "l3_003", "l3_021", "l3_024", "l4_003", "l4_013", "l4_027", "l4_035", "l4_052"],
+                translations: {
+                    "zh-CN": { title: "转折、让步与递进", explanation: "지만表示直接转折，대신에突出交换关系，데다가表示递进补充；아/어도、는데도和더라도从普通让步逐渐增强语气或假设性。" },
+                    en: { title: "Contrast, concession, and addition", explanation: "지만 gives direct contrast, 대신에 highlights a trade-off, and 데다가 adds another point. 아/어도, 는데도, and 더라도 move from ordinary concession toward stronger or hypothetical concession." },
+                },
+            },
+            {
+                id: "cause-and-consequence",
+                members: ["l1_036", "l2_014", "l2_020", "l3_002", "l3_008", "l3_018", "l3_038", "l4_002", "l4_007", "l4_018", "l4_027", "l4_034", "l4_047"],
+                translations: {
+                    "zh-CN": { title: "原因与后果", explanation: "不同因果形式带有不同语域和责任感：아/어서最中性，느라고常连接负面后果，탓에带有归责，바람에强调意外原因，(으)므로偏正式书面语。" },
+                    en: { title: "Cause and consequence", explanation: "Cause forms differ in register and blame: 아/어서 is neutral, 느라고 often leads to a negative result, 탓에 assigns fault, 바람에 marks an unexpected cause, and (으)므로 is formal." },
+                },
+            },
+            {
+                id: "change-completion-accumulation",
+                members: ["l3_004", "l3_023", "l3_026", "l3_032", "l3_041", "l4_001", "l4_008", "l4_014", "l4_020", "l4_048"],
+                translations: {
+                    "zh-CN": { title: "变化、持续与完成", explanation: "아/어지다描述状态变化，아/어 가다/오다展示变化方向，아/어 버리다和고 말다强调动作彻底完成，(으)ㄹ수록与다 보니体现过程中的累积变化。" },
+                    en: { title: "Change, continuation, and completion", explanation: "아/어지다 describes a state change, 아/어 가다/오다 its direction, and 아/어 버리다 or 고 말다 emphatic completion. (으)ㄹ수록 and 다 보니 show accumulated change." },
+                },
+            },
+            {
+                id: "written-style-and-general-truths",
+                members: ["l3_022", "l4_013", "l4_021", "l4_027", "l4_029", "l4_030", "l4_042"],
+                translations: {
+                    "zh-CN": { title: "书面语与一般判断", explanation: "한다体常用于文章、报道和说明；(으)므로、되偏正式连接。기 마련이다和는 법이다把经验概括为一般规律，但语气强度略有不同。" },
+                    en: { title: "Written style and general truths", explanation: "The 한다 style appears in articles and explanations, while (으)므로 and 되 are formal connectors. 기 마련이다 and 는 법이다 generalize experience as a natural rule with slightly different force." },
+                },
+            },
+            {
+                id: "emphasis-and-extremes",
+                members: ["l3_010", "l3_028", "l3_035", "l3_036", "l3_037", "l4_010", "l4_022", "l4_023", "l4_028", "l4_032", "l4_039", "l4_040", "l4_042", "l4_044"],
+                translations: {
+                    "zh-CN": { title: "强调、极端与反驳", explanation: "조차、야말로和커녕通过焦点助词加强语气；기는요和고말고用于强烈反驳或肯定，느니 차라리表达在不理想选项中的明确取舍。" },
+                    en: { title: "Emphasis, extremes, and rebuttal", explanation: "조차, 야말로, and 커녕 intensify focus. 기는요 and 고말고 strongly reject or affirm, while 느니 차라리 makes a clear choice between undesirable alternatives." },
+                },
+            },
+            {
+                id: "regret-counterfactual-risk",
+                members: ["l4_017", "l4_020", "l4_031", "l4_036", "l4_038", "l4_041", "l4_049", "l4_055"],
+                translations: {
+                    "zh-CN": { title: "险些、担忧与反事实", explanation: "(으)ㄹ 뻔하다描述险些发生，(으)ㄹ까 봐表达担忧，(으)ㄹ 걸 그랬다表达后悔；았/었더라면用于与事实相反的过去条件。" },
+                    en: { title: "Near misses, worry, and counterfactuals", explanation: "(으)ㄹ 뻔하다 marks a near miss, (으)ㄹ까 봐 worry, and (으)ㄹ 걸 그랬다 regret. 았/었더라면 introduces a past condition contrary to fact." },
+                },
+            },
+            {
+                id: "appearance-pretense-assessment",
+                members: ["l2_017", "l2_037", "l3_007", "l3_040", "l4_019", "l4_024", "l4_033", "l4_046"],
+                translations: {
+                    "zh-CN": { title: "外观、假装与判断", explanation: "아/어 보이다描述看起来的状态，척하다表示有意识地假装，나 보다和모양이다则从迹象推断。注意外观描述和证据推测不是同一种判断。" },
+                    en: { title: "Appearance, pretense, and assessment", explanation: "아/어 보이다 describes how something looks, 척하다 deliberate pretense, and 나 보다 or 모양이다 inference from signs. Appearance and evidence-based inference are distinct." },
+                },
+            },
+            {
+                id: "limits-and-inevitability",
+                members: ["l4_003", "l4_004", "l4_021", "l4_025", "l4_029", "l4_037", "l4_039", "l4_040", "l4_043", "l4_054"],
+                translations: {
+                    "zh-CN": { title: "限制、必然与无效", explanation: "수밖에 없다强调没有其他选择，기 마련이다和는 법이다表达自然规律；(으)나 마나与아/어서야可表示做了也无效或条件远远不足。" },
+                    en: { title: "Limits, inevitability, and futility", explanation: "수밖에 없다 leaves no alternative, while 기 마련이다 and 는 법이다 state natural tendencies. (으)나 마나 and 아/어서야 can show that an action is futile or insufficient." },
+                },
+            },
+        ],
+    };
+});

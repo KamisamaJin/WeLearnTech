@@ -12,6 +12,7 @@ vm.runInContext(`${dataSource}\n;globalThis.__grammarDB = grammarDB;`, context);
 
 const grammarDB = context.__grammarDB;
 const app = require(path.join(projectRoot, "grammar_wiki_app.js"));
+const enrichment = require(path.join(projectRoot, "grammar_enrichment.js"));
 
 test("all grammar entries have complete Chinese and English content", () => {
     assert.equal(grammarDB.length, 181);
@@ -56,6 +57,48 @@ test("search indexes Korean plus the active translation only", () => {
     assert.equal(app.itemMatches(first, "en", "主题助词"), false);
     assert.equal(app.itemMatches(first, "zh-CN", "저는 학생입니다"), true);
     assert.equal(app.itemMatches(first, "en", "저는 학생입니다"), true);
+});
+
+test("every grammar point has at least three localized examples", () => {
+    assert.equal(Object.keys(enrichment.extraExamples).length, grammarDB.length);
+    assert.equal(Object.values(enrichment.extraExamples).flat().length, 218);
+
+    grammarDB.forEach(item => {
+        const examples = app.allExamplesFor(item, enrichment);
+        assert.ok(examples.length >= 3, `${item.id} has only ${examples.length} examples`);
+        examples.forEach((example, index) => {
+            assert.ok(example.ko, `${item.id} example ${index} missing Korean`);
+            assert.ok(example.translations?.["zh-CN"], `${item.id} example ${index} missing Chinese`);
+            assert.ok(example.translations?.en, `${item.id} example ${index} missing English`);
+        });
+    });
+});
+
+test("knowledge groups cover every grammar point with valid links", () => {
+    const ids = new Set(grammarDB.map(item => item.id));
+    const coveredIds = new Set();
+
+    enrichment.knowledgeGroups.forEach(group => {
+        assert.ok(group.translations?.["zh-CN"]?.explanation, `${group.id} missing Chinese explanation`);
+        assert.ok(group.translations?.en?.explanation, `${group.id} missing English explanation`);
+        group.members.forEach(id => {
+            assert.ok(ids.has(id), `${group.id} references unknown grammar ${id}`);
+            coveredIds.add(id);
+        });
+    });
+
+    assert.equal(coveredIds.size, grammarDB.length);
+    const related = app.knowledgeGroupsFor(grammarDB[0], "zh-CN", enrichment, grammarDB);
+    assert.ok(related.length > 0);
+    assert.ok(related[0].relatedItems.length > 0);
+});
+
+test("enriched examples and knowledge text follow search language isolation", () => {
+    const first = grammarDB[0];
+    assert.equal(app.itemMatches(first, "zh-CN", "敏秀是公司职员", enrichment), true);
+    assert.equal(app.itemMatches(first, "zh-CN", "Particles and focus", enrichment), false);
+    assert.equal(app.itemMatches(first, "en", "Particles and focus", enrichment), true);
+    assert.equal(app.itemMatches(first, "en", "助词与强调", enrichment), false);
 });
 
 test("extra grammar category follows the active display language", () => {
