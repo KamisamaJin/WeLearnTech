@@ -28,7 +28,10 @@ const localeStorageKeys = {
     language: "lessonGuideLocale",
     ui: "lessonGuideUiLocale",
     translation: "lessonGuideTranslationLocale",
-    showTranslation: "lessonGuideShowTranslation"
+    showTranslation: "lessonGuideShowTranslation",
+    listeningMode: "lessonGuideListeningMode",
+    listeningSpeed: "lessonGuideListeningSpeed",
+    listeningRepeat: "lessonGuideListeningRepeat"
 };
 const localeNames = {
     "zh-CN": "中文",
@@ -92,7 +95,34 @@ const messages = {
         answer: "参考答案",
         loadingTitle: "正在加载课程数据",
         loadErrorTitle: "课程数据加载失败",
-        loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。"
+        loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。",
+        listeningTitle: "收听模式",
+        listeningUnavailable: "当前浏览器没有可用韩语语音。",
+        listeningEmpty: "当前模式没有可播放的韩语内容。",
+        listeningIdle: "选择模式后开始连续收听本课内容。",
+        listeningPlaying: "正在播放 {current} / {total}",
+        listeningPaused: "已暂停 {current} / {total}",
+        listeningEnded: "已播放完成",
+        listeningModeLabel: "范围",
+        listeningSpeedLabel: "语速",
+        listeningRepeatLabel: "重复",
+        listeningStart: "开始",
+        listeningPause: "暂停",
+        listeningResume: "继续",
+        listeningStop: "停止",
+        listeningPrevious: "上一句",
+        listeningNext: "下一句",
+        listeningModeLesson: "本课",
+        listeningModeVocabulary: "单词",
+        listeningModeDialogue: "对话",
+        listeningModeCulture: "文化",
+        listeningSpeedSlow: "慢",
+        listeningSpeedNormal: "正常",
+        listeningSpeedFast: "快",
+        listeningRepeatOnce: "1 次",
+        listeningRepeatTwice: "2 次",
+        listeningRepeatThrice: "3 次",
+        listeningNow: "正在收听"
     },
     en: {
         appTitle: config.title || `${level} Lesson Guide`,
@@ -146,7 +176,34 @@ const messages = {
         answer: "Answer",
         loadingTitle: "Loading lesson data",
         loadErrorTitle: "Lesson data failed to load",
-        loadErrorBody: "{title}'s chunk file did not load. Please refresh and try again."
+        loadErrorBody: "{title}'s chunk file did not load. Please refresh and try again.",
+        listeningTitle: "Listening Mode",
+        listeningUnavailable: "No Korean voice is available in this browser.",
+        listeningEmpty: "This mode has no playable Korean content.",
+        listeningIdle: "Choose a range and start listening through this lesson.",
+        listeningPlaying: "Playing {current} / {total}",
+        listeningPaused: "Paused {current} / {total}",
+        listeningEnded: "Finished",
+        listeningModeLabel: "Range",
+        listeningSpeedLabel: "Speed",
+        listeningRepeatLabel: "Repeat",
+        listeningStart: "Start",
+        listeningPause: "Pause",
+        listeningResume: "Resume",
+        listeningStop: "Stop",
+        listeningPrevious: "Previous",
+        listeningNext: "Next",
+        listeningModeLesson: "Lesson",
+        listeningModeVocabulary: "Words",
+        listeningModeDialogue: "Dialogue",
+        listeningModeCulture: "Culture",
+        listeningSpeedSlow: "Slow",
+        listeningSpeedNormal: "Normal",
+        listeningSpeedFast: "Fast",
+        listeningRepeatOnce: "1x",
+        listeningRepeatTwice: "2x",
+        listeningRepeatThrice: "3x",
+        listeningNow: "Listening"
     }
 };
 const wordPosLabels = {
@@ -260,6 +317,22 @@ const tabs = [
     { id: "culture", labelKey: "tabsCulture" },
     { id: "practice", labelKey: "tabsPractice" }
 ];
+const listeningModes = [
+    { id: "lesson", labelKey: "listeningModeLesson" },
+    { id: "vocabulary", labelKey: "listeningModeVocabulary" },
+    { id: "dialogue", labelKey: "listeningModeDialogue" },
+    { id: "culture", labelKey: "listeningModeCulture" }
+];
+const listeningSpeeds = [
+    { id: "slow", labelKey: "listeningSpeedSlow", sentenceRate: 0.68, wordRate: 0.74 },
+    { id: "normal", labelKey: "listeningSpeedNormal", sentenceRate: 0.78, wordRate: 0.82 },
+    { id: "fast", labelKey: "listeningSpeedFast", sentenceRate: 0.88, wordRate: 0.92 }
+];
+const listeningRepeats = [
+    { value: 1, labelKey: "listeningRepeatOnce" },
+    { value: 2, labelKey: "listeningRepeatTwice" },
+    { value: 3, labelKey: "listeningRepeatThrice" }
+];
 
 const lessonList = document.getElementById("lesson-list");
 const mainContent = document.getElementById("main-content");
@@ -284,6 +357,20 @@ const initialLocale = appLocales.includes(storedLocale)
 let uiLocale = initialLocale;
 let translationLocale = initialLocale;
 let showChinese = localStorage.getItem(localeStorageKeys.showTranslation) !== "false";
+const storedListeningMode = localStorage.getItem(localeStorageKeys.listeningMode);
+const storedListeningSpeed = localStorage.getItem(localeStorageKeys.listeningSpeed);
+const storedListeningRepeat = Number(localStorage.getItem(localeStorageKeys.listeningRepeat));
+const listeningState = {
+    status: "idle",
+    lessonId: null,
+    mode: listeningModes.some(mode => mode.id === storedListeningMode) ? storedListeningMode : "lesson",
+    speed: listeningSpeeds.some(speed => speed.id === storedListeningSpeed) ? storedListeningSpeed : "normal",
+    repeat: listeningRepeats.some(repeat => repeat.value === storedListeningRepeat) ? storedListeningRepeat : 1,
+    queue: [],
+    index: 0,
+    currentRef: "",
+    error: ""
+};
 let renderRunId = 0;
 const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
 const tabSwipeState = {
@@ -1426,6 +1513,7 @@ function koreanPronunciation(value) {
 
 let speechRunId = 0;
 let preferredKoreanVoice = null;
+const preferredListeningVoices = {};
 let koreanVoicePromise = null;
 
 function scoreKoreanVoice(voice) {
@@ -1454,6 +1542,41 @@ function pickKoreanVoice() {
         ? rankedVoices[0].voice
         : koreanVoices[1] || rankedVoices[0].voice;
     return preferredKoreanVoice;
+}
+
+function scoreListeningVoice(voice, lang) {
+    const name = voice.name.toLowerCase();
+    const voiceLang = voice.lang?.toLowerCase() || "";
+    const langPrefix = lang.toLowerCase().split("-")[0];
+    const exactLangScore = voiceLang === lang.toLowerCase() ? 90 : 0;
+    const prefixLangScore = voiceLang.startsWith(langPrefix) ? 45 : 0;
+    const naturalHints = ["natural", "neural", "premium", "enhanced", "online", "google", "microsoft", "siri"];
+    const softerHints = ["female", "woman", "sora", "yuna", "tingting", "mei-jia", "meijia", "sin-ji", "samantha", "zira", "aria", "jenny", "xiaoxiao", "xiaoyi", "xiaobei", "晓晓", "晓伊"];
+    const roboticHints = ["compact", "male", "robot", "legacy"];
+    const naturalScore = naturalHints.reduce((score, hint, index) => score + (name.includes(hint) ? 70 - index : 0), 0);
+    const softerScore = softerHints.reduce((score, hint, index) => score + (name.includes(hint) ? 34 - index : 0), 0);
+    const roboticPenalty = roboticHints.reduce((score, hint) => score + (name.includes(hint) ? 55 : 0), 0);
+
+    return exactLangScore + prefixLangScore + naturalScore + softerScore - roboticPenalty;
+}
+
+function pickListeningVoice(lang) {
+    if (!("speechSynthesis" in window) || !lang) return null;
+    if (lang === "ko-KR") return preferredKoreanVoice || pickKoreanVoice();
+    if (preferredListeningVoices[lang]) return preferredListeningVoices[lang];
+
+    const voices = window.speechSynthesis.getVoices?.() || [];
+    const langPrefix = lang.toLowerCase().split("-")[0];
+    const matchingVoices = voices.filter(voice => {
+        const voiceLang = voice.lang?.toLowerCase() || "";
+        return voiceLang === lang.toLowerCase() || voiceLang.startsWith(langPrefix);
+    });
+    if (!matchingVoices.length) return null;
+
+    preferredListeningVoices[lang] = matchingVoices
+        .map(voice => ({ voice, score: scoreListeningVoice(voice, lang) }))
+        .sort((a, b) => b.score - a.score)[0].voice;
+    return preferredListeningVoices[lang];
 }
 
 function waitForKoreanVoice() {
@@ -1505,6 +1628,8 @@ function splitKoreanSpeech(text, mode) {
 async function speakKorean(text, options = {}) {
     if (!("speechSynthesis" in window) || !text) return;
 
+    stopListening({ render: true });
+
     const mode = options.mode || "word";
     const normalizedText = normalizeKoreanSpeechText(text);
     if (!hasHangul(normalizedText)) return;
@@ -1547,6 +1672,263 @@ async function speakKorean(text, options = {}) {
     speakChunk(0);
 }
 
+function clearListeningHighlight() {
+    document.querySelectorAll(".is-listening-current").forEach(element => {
+        element.classList.remove("is-listening-current");
+    });
+}
+
+function applyListeningHighlight() {
+    clearListeningHighlight();
+    if (!listeningState.currentRef || listeningState.status === "idle") return;
+
+    document.querySelectorAll("[data-listening-ref]").forEach(element => {
+        if (element.dataset.listeningRef === listeningState.currentRef) {
+            element.classList.add("is-listening-current");
+        }
+    });
+}
+
+function activeLoadedLesson() {
+    return lessonCache.get(activeLessonId);
+}
+
+function refreshListeningPlayer() {
+    const lesson = activeLoadedLesson();
+    const player = document.querySelector("[data-listening-player]");
+    if (!lesson || !player) return;
+
+    player.outerHTML = renderListeningPlayer(lesson);
+    applyListeningHighlight();
+}
+
+function setListeningError(message) {
+    listeningState.status = "idle";
+    listeningState.error = message;
+    listeningState.currentRef = "";
+    refreshListeningPlayer();
+}
+
+function stopListening(options = {}) {
+    const { render = true, clearError = true } = options;
+    if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+    }
+    speechRunId += 1;
+    listeningState.status = "idle";
+    listeningState.index = 0;
+    listeningState.currentRef = "";
+    if (clearError) listeningState.error = "";
+    clearListeningHighlight();
+    if (render) refreshListeningPlayer();
+}
+
+function listeningRateForItem(item) {
+    if (item.lang !== "ko-KR") return 1;
+
+    const speed = listeningSpeedConfig();
+    return item.mode === "word" ? speed.wordRate : speed.sentenceRate;
+}
+
+function splitListeningSpeech(text, item) {
+    if (item.lang === "ko-KR") return splitKoreanSpeech(text, item.mode);
+
+    const normalized = String(text || "").replace(/\s+/g, " ").trim();
+    if (!normalized || normalized.length < 42) return [normalized].filter(Boolean);
+
+    return normalized
+        .replace(/([。！？.!?])\s*/g, "$1|")
+        .split("|")
+        .flatMap(part => {
+            if (part.length < 56) return [part];
+            return part.replace(/([，,；;])\s*/g, "$1|").split("|");
+        })
+        .map(chunk => chunk.trim())
+        .filter(Boolean);
+}
+
+function listeningPitchForItem(item) {
+    if (item.lang === "ko-KR") return item.mode === "sentence" ? 0.92 : 0.98;
+    if (item.lang === "zh-CN") return 1;
+    return 0.98;
+}
+
+function speakListeningItem(item, runId) {
+    const chunks = splitListeningSpeech(item.text, item);
+    const rate = listeningRateForItem(item);
+
+    return new Promise(resolve => {
+        const speakChunk = index => {
+            if (runId !== speechRunId || listeningState.status === "idle") {
+                resolve(false);
+                return;
+            }
+
+            if (index >= chunks.length) {
+                resolve(true);
+                return;
+            }
+
+            const utterance = new SpeechSynthesisUtterance(chunks[index]);
+            utterance.lang = item.lang;
+            utterance.rate = rate;
+            utterance.pitch = listeningPitchForItem(item);
+            utterance.volume = 1;
+            if (item.voice) utterance.voice = item.voice;
+            utterance.onend = () => window.setTimeout(() => speakChunk(index + 1), item.mode === "sentence" ? 90 : 0);
+            utterance.onerror = () => resolve(false);
+            window.speechSynthesis.speak(utterance);
+        };
+
+        speakChunk(0);
+    });
+}
+
+function waitUntilListeningPlaying(runId) {
+    return new Promise(resolve => {
+        const check = () => {
+            if (runId !== speechRunId || listeningState.status === "idle") {
+                resolve(false);
+                return;
+            }
+            if (listeningState.status === "playing") {
+                resolve(true);
+                return;
+            }
+            window.setTimeout(check, 100);
+        };
+
+        check();
+    });
+}
+
+function waitForListeningDelay(ms, runId) {
+    return new Promise(resolve => {
+        let remaining = ms;
+        let lastTick = Date.now();
+
+        const check = () => {
+            if (runId !== speechRunId || listeningState.status === "idle") {
+                resolve(false);
+                return;
+            }
+            if (listeningState.status === "paused") {
+                lastTick = Date.now();
+                window.setTimeout(check, 100);
+                return;
+            }
+
+            const now = Date.now();
+            remaining -= now - lastTick;
+            lastTick = now;
+            if (remaining <= 0) {
+                resolve(true);
+                return;
+            }
+
+            window.setTimeout(check, Math.min(remaining, 100));
+        };
+
+        check();
+    });
+}
+
+async function playListeningLoop(runId) {
+    while (runId === speechRunId && listeningState.status !== "idle" && listeningState.index < listeningState.queue.length) {
+        const canPlay = await waitUntilListeningPlaying(runId);
+        if (!canPlay) return;
+
+        const item = listeningState.queue[listeningState.index];
+        listeningState.currentRef = item.ref;
+        listeningState.error = "";
+        refreshListeningPlayer();
+        applyListeningHighlight();
+
+        for (let repeatIndex = 0; repeatIndex < listeningState.repeat; repeatIndex += 1) {
+            const completed = await speakListeningItem(item, runId);
+            if (!completed || runId !== speechRunId || listeningState.status === "idle") return;
+            if (repeatIndex < listeningState.repeat - 1) {
+                const canContinueRepeat = await waitForListeningDelay(360, runId);
+                if (!canContinueRepeat) return;
+            }
+        }
+
+        const canContinue = await waitForListeningDelay(item.pauseAfterMs, runId);
+        if (!canContinue) return;
+        listeningState.index += 1;
+    }
+
+    if (runId !== speechRunId || listeningState.status === "idle") return;
+    listeningState.status = "ended";
+    listeningState.currentRef = "";
+    clearListeningHighlight();
+    refreshListeningPlayer();
+}
+
+async function startListening(lesson, startIndex = 0) {
+    if (!("speechSynthesis" in window)) {
+        setListeningError(t("listeningUnavailable"));
+        return;
+    }
+
+    const queue = buildListeningQueue(lesson);
+    if (!queue.length) {
+        setListeningError(t("listeningEmpty"));
+        return;
+    }
+
+    window.speechSynthesis.cancel();
+    const runId = ++speechRunId;
+    listeningState.status = "playing";
+    listeningState.lessonId = lesson.id;
+    listeningState.queue = queue;
+    listeningState.index = Math.min(Math.max(startIndex, 0), queue.length - 1);
+    listeningState.currentRef = "";
+    listeningState.error = "";
+    refreshListeningPlayer();
+
+    const voice = await waitForKoreanVoice();
+    if (runId !== speechRunId || listeningState.status === "idle") return;
+    if (!voice) {
+        setListeningError(t("listeningUnavailable"));
+        return;
+    }
+    listeningState.queue.forEach(item => {
+        item.voice = item.lang === "ko-KR"
+            ? voice
+            : pickListeningVoice(item.lang);
+    });
+
+    playListeningLoop(runId);
+}
+
+function pauseListening() {
+    if (listeningState.status !== "playing") return;
+    listeningState.status = "paused";
+    window.speechSynthesis.pause();
+    refreshListeningPlayer();
+}
+
+function resumeListening() {
+    if (listeningState.status !== "paused") return;
+    listeningState.status = "playing";
+    window.speechSynthesis.resume();
+    refreshListeningPlayer();
+}
+
+function jumpListening(lesson, direction) {
+    const queue = listeningState.lessonId === lesson.id && listeningState.queue.length
+        ? listeningState.queue
+        : buildListeningQueue(lesson);
+    if (!queue.length) return;
+
+    const currentIndex = listeningState.lessonId === lesson.id
+        ? listeningState.index
+        : 0;
+    const nextIndex = Math.min(Math.max(currentIndex + direction, 0), queue.length - 1);
+    startListening(lesson, nextIndex);
+}
+
 function normalizeLesson(lesson) {
     return {
         goals: [],
@@ -1581,6 +1963,240 @@ function getLessonStats(lesson) {
         culture: lesson.culture ? 1 : lesson.stats?.culture || 0,
         practice: lesson.practice?.length || lesson.stats?.practice || 0
     };
+}
+
+function listeningSpeedConfig() {
+    return listeningSpeeds.find(speed => speed.id === listeningState.speed) || listeningSpeeds[1];
+}
+
+function listeningLanguage() {
+    return translationLocale === "en" ? "en-US" : "zh-CN";
+}
+
+function normalizeListeningText(text, lang) {
+    if (lang === "ko-KR") return normalizeKoreanSpeechText(text);
+    return String(text || "")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function listeningItem(id, ref, section, label, text, mode = "sentence", pauseAfterMs = 700, lang = "ko-KR") {
+    const normalizedText = normalizeListeningText(text, lang);
+    if (lang === "ko-KR" ? !hasHangul(normalizedText) : !normalizedText) return null;
+
+    return {
+        id,
+        ref,
+        section,
+        label,
+        text: normalizedText,
+        lang,
+        mode,
+        pauseAfterMs
+    };
+}
+
+function translationListeningItem(id, ref, section, label, text, pauseAfterMs = 760) {
+    return listeningItem(id, ref, section, label, text, "translation", pauseAfterMs, listeningLanguage());
+}
+
+function pushListeningPair(queue, koreanItem, translationItem) {
+    if (koreanItem) queue.push(koreanItem);
+    if (translationItem) queue.push(translationItem);
+}
+
+function buildListeningQueue(lesson, mode = listeningState.mode) {
+    const queue = [];
+    const include = section => mode === "lesson" || mode === section;
+    const titleItem = listeningItem("lesson-title", "lesson-title", "overview", t("listeningModeLesson"), lesson.titleKo, "sentence", 900);
+    const titleTranslationItem = translationListeningItem("lesson-title-translation", "lesson-title", "overview", t("listeningModeLesson"), lessonTitleTranslation(lesson), 900);
+
+    if (mode === "lesson") pushListeningPair(queue, titleItem, titleTranslationItem);
+
+    if (include("vocabulary")) {
+        (lesson.vocabulary || []).forEach((item, index) => {
+            const ref = `vocab-${index}`;
+            const word = listeningItem(`vocab-${index}-word`, ref, "vocabulary", t("tabsVocabulary"), item.ko, "word", 420);
+            const wordTranslation = translationListeningItem(`vocab-${index}-word-translation`, ref, "vocabulary", t("tabsVocabulary"), wordMeaning(item), 560);
+            const example = listeningItem(`vocab-${index}-example`, ref, "vocabulary", t("tabsVocabulary"), item.exampleKo, "sentence", 820);
+            const exampleTranslation = translationListeningItem(`vocab-${index}-example-translation`, ref, "vocabulary", t("tabsVocabulary"), wordExampleTranslation(item), 820);
+            pushListeningPair(queue, word, wordTranslation);
+            pushListeningPair(queue, example, exampleTranslation);
+        });
+    }
+
+    if (include("dialogue")) {
+        lessonDialogues(lesson).forEach((dialogue, dialogueIndex) => {
+            (dialogue.lines || []).forEach((line, lineIndex) => {
+                const ref = `dialogue-${dialogueIndex}-line-${lineIndex}`;
+                const lineItem = listeningItem(
+                    `dialogue-${dialogueIndex}-line-${lineIndex}`,
+                    ref,
+                    "dialogue",
+                    dialogue.title || t("tabsDialogue"),
+                    line.ko,
+                    "sentence",
+                    900
+                );
+                const lineTranslationItem = translationListeningItem(
+                    `dialogue-${dialogueIndex}-line-${lineIndex}-translation`,
+                    ref,
+                    "dialogue",
+                    dialogue.title || t("tabsDialogue"),
+                    lineTranslation(line),
+                    900
+                );
+                pushListeningPair(queue, lineItem, lineTranslationItem);
+            });
+        });
+    }
+
+    if (include("culture") && lesson.culture) {
+        (lesson.culture.paragraphs || []).forEach((paragraph, index) => {
+            const ref = `culture-paragraph-${index}`;
+            const paragraphItem = listeningItem(
+                `culture-paragraph-${index}`,
+                ref,
+                "culture",
+                cultureTitleTranslation(lesson.culture) || t("tabsCulture"),
+                paragraph.ko,
+                "sentence",
+                1100
+            );
+            const paragraphTranslationItem = translationListeningItem(
+                `culture-paragraph-${index}-translation`,
+                ref,
+                "culture",
+                cultureTitleTranslation(lesson.culture) || t("tabsCulture"),
+                cultureTranslation(paragraph, "translation"),
+                1100
+            );
+            pushListeningPair(queue, paragraphItem, paragraphTranslationItem);
+        });
+    }
+
+    return queue;
+}
+
+function listeningIsActiveForLesson(lesson) {
+    return listeningState.lessonId === lesson.id && ["playing", "paused", "ended"].includes(listeningState.status);
+}
+
+function listeningStatusText(total) {
+    if (listeningState.error) return listeningState.error;
+    if (!("speechSynthesis" in window)) return t("listeningUnavailable");
+    if (!total) return t("listeningEmpty");
+
+    const current = Math.min(listeningState.index + 1, total);
+    if (listeningState.status === "playing") return tf("listeningPlaying", { current, total });
+    if (listeningState.status === "paused") return tf("listeningPaused", { current, total });
+    if (listeningState.status === "ended") return t("listeningEnded");
+    return t("listeningIdle");
+}
+
+function playIcon() {
+    return `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z"></path>
+        </svg>
+    `;
+}
+
+function pauseIcon() {
+    return `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 5h4v14H7z"></path>
+            <path d="M13 5h4v14h-4z"></path>
+        </svg>
+    `;
+}
+
+function stopIcon() {
+    return `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 7h10v10H7z"></path>
+        </svg>
+    `;
+}
+
+function previousIcon() {
+    return `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 5h2v14H6z"></path>
+            <path d="m19 5-10 7 10 7z"></path>
+        </svg>
+    `;
+}
+
+function nextIcon() {
+    return `
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16 5h2v14h-2z"></path>
+            <path d="m5 5 10 7-10 7z"></path>
+        </svg>
+    `;
+}
+
+function renderListeningPlayer(lesson) {
+    const queue = listeningIsActiveForLesson(lesson)
+        ? listeningState.queue
+        : buildListeningQueue(lesson);
+    const total = queue.length;
+    const active = listeningIsActiveForLesson(lesson);
+    const status = active ? listeningState.status : "idle";
+    const currentItem = active ? queue[listeningState.index] : null;
+    const canSpeak = "speechSynthesis" in window;
+    const isPlaying = status === "playing";
+    const isPaused = status === "paused";
+
+    return `
+        <section class="listening-player ${isPlaying ? "is-playing" : ""}" data-listening-player>
+            <div class="listening-main">
+                <div class="listening-heading">
+                    <span class="listening-kicker">${escapeHtml(t("listeningTitle"))}</span>
+                    <span class="listening-status">${escapeHtml(active ? listeningStatusText(total) : listeningStatusText(buildListeningQueue(lesson).length))}</span>
+                </div>
+                <div class="listening-now" title="${escapeHtml(currentItem?.text || "")}">
+                    ${currentItem ? `<span>${escapeHtml(t("listeningNow"))}</span>${escapeHtml(currentItem.text)}` : escapeHtml(t("listeningIdle"))}
+                </div>
+            </div>
+            <div class="listening-settings" aria-label="${escapeHtml(t("listeningTitle"))}">
+                <label>
+                    <span>${escapeHtml(t("listeningModeLabel"))}</span>
+                    <select data-listening-setting="mode">
+                        ${listeningModes.map(mode => `<option value="${escapeHtml(mode.id)}" ${mode.id === listeningState.mode ? "selected" : ""}>${escapeHtml(t(mode.labelKey))}</option>`).join("")}
+                    </select>
+                </label>
+                <label>
+                    <span>${escapeHtml(t("listeningSpeedLabel"))}</span>
+                    <select data-listening-setting="speed">
+                        ${listeningSpeeds.map(speed => `<option value="${escapeHtml(speed.id)}" ${speed.id === listeningState.speed ? "selected" : ""}>${escapeHtml(t(speed.labelKey))}</option>`).join("")}
+                    </select>
+                </label>
+                <label>
+                    <span>${escapeHtml(t("listeningRepeatLabel"))}</span>
+                    <select data-listening-setting="repeat">
+                        ${listeningRepeats.map(repeat => `<option value="${repeat.value}" ${repeat.value === listeningState.repeat ? "selected" : ""}>${escapeHtml(t(repeat.labelKey))}</option>`).join("")}
+                    </select>
+                </label>
+            </div>
+            <div class="listening-controls">
+                <button class="listening-icon-btn" type="button" data-listening-action="previous" aria-label="${escapeHtml(t("listeningPrevious"))}" title="${escapeHtml(t("listeningPrevious"))}" ${active && total ? "" : "disabled"}>
+                    ${previousIcon()}
+                </button>
+                <button class="listening-primary-btn" type="button" data-listening-action="${isPlaying ? "pause" : isPaused ? "resume" : "start"}" ${canSpeak && total ? "" : "disabled"}>
+                    ${isPlaying ? pauseIcon() : playIcon()}
+                    <span>${escapeHtml(isPlaying ? t("listeningPause") : isPaused ? t("listeningResume") : t("listeningStart"))}</span>
+                </button>
+                <button class="listening-icon-btn" type="button" data-listening-action="next" aria-label="${escapeHtml(t("listeningNext"))}" title="${escapeHtml(t("listeningNext"))}" ${active && total ? "" : "disabled"}>
+                    ${nextIcon()}
+                </button>
+                <button class="listening-icon-btn" type="button" data-listening-action="stop" aria-label="${escapeHtml(t("listeningStop"))}" title="${escapeHtml(t("listeningStop"))}" ${active ? "" : "disabled"}>
+                    ${stopIcon()}
+                </button>
+            </div>
+        </section>
+    `;
 }
 
 function getLessonMeta(lessonId = activeLessonId) {
@@ -1790,7 +2406,7 @@ function renderLessonList() {
 function renderHero(lesson) {
     return `
         <section class="hero">
-            <div>
+            <div data-listening-ref="lesson-title">
                 <div class="eyebrow">
                     <span class="level-badge">KIIP ${level}-${String(lesson.number).padStart(2, "0")}</span>
                     ${lesson.pages ? `<span class="page-badge">p.${escapeHtml(lesson.pages)}</span>` : ""}
@@ -1799,6 +2415,7 @@ function renderHero(lesson) {
                 <p class="hero-zh">${escapeHtml(lessonTitleTranslation(lesson))}</p>
             </div>
         </section>
+        ${renderListeningPlayer(lesson)}
         <nav class="tabs">
             ${tabs.map(tab => `<button class="tab-btn ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}">${escapeHtml(t(tab.labelKey))}</button>`).join("")}
         </nav>
@@ -1853,8 +2470,8 @@ function renderVocabulary(lesson) {
             <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
         </div>
         <div class="vocab-grid">
-            ${lesson.vocabulary.map(item => `
-                <article class="word-card">
+            ${lesson.vocabulary.map((item, index) => `
+                <article class="word-card" data-listening-ref="vocab-${index}">
                     <div class="word-top">
                         <div class="word-title-line">
                             <div class="word-ko">${escapeHtml(item.ko)}</div>
@@ -1891,7 +2508,7 @@ function renderDialogue(lesson) {
             <div class="muted">${escapeHtml(tf("dialogueToolbar", { dialogues: dialogues.length, lines: lineCount }))}</div>
             <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
         </div>
-        ${dialogues.map(dialogue => {
+        ${dialogues.map((dialogue, dialogueIndex) => {
             const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
             const scene = dialogueScene(dialogue);
             const learningPoints = dialogueLearningPoints(dialogue);
@@ -1920,7 +2537,7 @@ function renderDialogue(lesson) {
                         <div class="dialogue-transcript">
                             <div class="dialogue-panel-title">${escapeHtml(t("dialoguePanelTitle"))}</div>
                             ${(dialogue.lines || []).map((line, index) => `
-                                <div class="line-card">
+                                <div class="line-card" data-listening-ref="dialogue-${dialogueIndex}-line-${index}">
                                     <div class="line-index">${index + 1}</div>
                                     <div class="line-body">
                                         <div class="line-speaker-row">
@@ -1996,8 +2613,8 @@ function renderCulture(lesson) {
             </div>
             <div class="culture-summary">${escapeHtml(cultureSummary(culture))}</div>
             <h2>${escapeHtml(t("originalAndTranslation"))}</h2>
-            ${(culture.paragraphs || []).map(paragraph => `
-                <div class="paragraph-block">
+            ${(culture.paragraphs || []).map((paragraph, index) => `
+                <div class="paragraph-block" data-listening-ref="culture-paragraph-${index}">
                     <span class="paragraph-label">${escapeHtml(t("originalLabel"))}</span>
                     <div class="paragraph-ko">${escapeHtml(paragraph.ko)}</div>
                     <span class="paragraph-label">${escapeHtml(t("translationLabel"))}</span>
@@ -2107,7 +2724,10 @@ function renderLoadedLesson(lesson, scrollTarget) {
     mobileTitle.textContent = `${level}-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
     mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
     scrollMainContent(scrollTarget);
-    window.requestAnimationFrame(scrollActiveTabIntoView);
+    window.requestAnimationFrame(() => {
+        scrollActiveTabIntoView();
+        applyListeningHighlight();
+    });
 }
 
 async function renderMain(options = {}) {
@@ -2165,6 +2785,7 @@ function closeSidebar() {
 lessonList.addEventListener("click", event => {
     const button = event.target.closest("[data-lesson-id]");
     if (!button) return;
+    if (button.dataset.lessonId !== activeLessonId) stopListening({ render: false });
     activeLessonId = button.dataset.lessonId;
     activeTab = "overview";
     renderLessonList();
@@ -2173,6 +2794,21 @@ lessonList.addEventListener("click", event => {
 });
 
 mainContent.addEventListener("click", event => {
+    const listeningActionButton = event.target.closest("[data-listening-action]");
+    if (listeningActionButton) {
+        const lesson = activeLoadedLesson();
+        if (!lesson) return;
+
+        const action = listeningActionButton.dataset.listeningAction;
+        if (action === "start") startListening(lesson);
+        if (action === "pause") pauseListening();
+        if (action === "resume") resumeListening();
+        if (action === "stop") stopListening();
+        if (action === "previous") jumpListening(lesson, -1);
+        if (action === "next") jumpListening(lesson, 1);
+        return;
+    }
+
     const tabButton = event.target.closest("[data-tab]");
     if (tabButton) {
         switchTab(tabButton.dataset.tab, {
@@ -2195,6 +2831,31 @@ mainContent.addEventListener("click", event => {
         localStorage.setItem(localeStorageKeys.showTranslation, String(showChinese));
         renderMain();
     }
+});
+
+mainContent.addEventListener("change", event => {
+    const setting = event.target.closest("[data-listening-setting]");
+    if (!setting) return;
+
+    const key = setting.dataset.listeningSetting;
+    if (key === "mode" && listeningModes.some(mode => mode.id === setting.value)) {
+        stopListening({ render: false });
+        listeningState.mode = setting.value;
+        localStorage.setItem(localeStorageKeys.listeningMode, listeningState.mode);
+    }
+    if (key === "speed" && listeningSpeeds.some(speed => speed.id === setting.value)) {
+        listeningState.speed = setting.value;
+        localStorage.setItem(localeStorageKeys.listeningSpeed, listeningState.speed);
+    }
+    if (key === "repeat") {
+        const repeat = Number(setting.value);
+        if (listeningRepeats.some(item => item.value === repeat)) {
+            listeningState.repeat = repeat;
+            localStorage.setItem(localeStorageKeys.listeningRepeat, String(listeningState.repeat));
+        }
+    }
+
+    refreshListeningPlayer();
 });
 
 function canStartTabSwipe(event) {
