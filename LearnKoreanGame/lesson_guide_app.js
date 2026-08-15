@@ -369,7 +369,8 @@ const listeningState = {
     queue: [],
     index: 0,
     currentRef: "",
-    error: ""
+    error: "",
+    restartOnResume: false
 };
 let renderRunId = 0;
 const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
@@ -1718,6 +1719,7 @@ function stopListening(options = {}) {
     listeningState.status = "idle";
     listeningState.index = 0;
     listeningState.currentRef = "";
+    listeningState.restartOnResume = false;
     if (clearError) listeningState.error = "";
     clearListeningHighlight();
     if (render) refreshListeningPlayer();
@@ -1885,6 +1887,7 @@ async function startListening(lesson, startIndex = 0) {
     listeningState.index = Math.min(Math.max(startIndex, 0), queue.length - 1);
     listeningState.currentRef = "";
     listeningState.error = "";
+    listeningState.restartOnResume = false;
     refreshListeningPlayer();
 
     const voice = await waitForKoreanVoice();
@@ -1905,14 +1908,39 @@ async function startListening(lesson, startIndex = 0) {
 function pauseListening() {
     if (listeningState.status !== "playing") return;
     listeningState.status = "paused";
+    listeningState.restartOnResume = false;
     window.speechSynthesis.pause();
     refreshListeningPlayer();
 }
 
 function resumeListening() {
     if (listeningState.status !== "paused") return;
+    if (listeningState.restartOnResume) {
+        const lesson = activeLoadedLesson();
+        if (!lesson) return;
+        startListening(lesson, listeningState.index);
+        return;
+    }
     listeningState.status = "playing";
     window.speechSynthesis.resume();
+    refreshListeningPlayer();
+}
+
+function restartListeningAfterSettingChange() {
+    if (!["playing", "paused"].includes(listeningState.status)) return;
+
+    const lesson = activeLoadedLesson();
+    if (!lesson) return;
+    const currentIndex = listeningState.index;
+
+    if (listeningState.status === "playing") {
+        startListening(lesson, currentIndex);
+        return;
+    }
+
+    window.speechSynthesis.cancel();
+    speechRunId += 1;
+    listeningState.restartOnResume = true;
     refreshListeningPlayer();
 }
 
@@ -2846,12 +2874,14 @@ mainContent.addEventListener("change", event => {
     if (key === "speed" && listeningSpeeds.some(speed => speed.id === setting.value)) {
         listeningState.speed = setting.value;
         localStorage.setItem(localeStorageKeys.listeningSpeed, listeningState.speed);
+        restartListeningAfterSettingChange();
     }
     if (key === "repeat") {
         const repeat = Number(setting.value);
         if (listeningRepeats.some(item => item.value === repeat)) {
             listeningState.repeat = repeat;
             localStorage.setItem(localeStorageKeys.listeningRepeat, String(listeningState.repeat));
+            restartListeningAfterSettingChange();
         }
     }
 
