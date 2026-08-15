@@ -1977,6 +1977,33 @@ function restartListeningAfterSettingChange() {
     refreshListeningPlayer();
 }
 
+function suspendListeningForBackground() {
+    if (!["playing", "paused"].includes(listeningState.status)) return;
+
+    if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+    }
+    speechRunId += 1;
+    listeningState.status = "paused";
+    listeningState.restartOnResume = true;
+    releaseListeningWakeLock();
+    refreshListeningPlayer();
+}
+
+function repairListeningAfterForeground() {
+    if (listeningState.status !== "playing") return;
+    if (!("speechSynthesis" in window)) return;
+
+    window.setTimeout(() => {
+        if (document.visibilityState !== "visible" || listeningState.status !== "playing") return;
+        if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+            requestListeningWakeLock();
+            return;
+        }
+        suspendListeningForBackground();
+    }, 250);
+}
+
 function jumpListening(lesson, direction) {
     const queue = listeningState.lessonId === lesson.id && listeningState.queue.length
         ? listeningState.queue
@@ -2999,9 +3026,11 @@ document.addEventListener("keydown", event => {
 });
 
 document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible" && listeningState.status === "playing") {
-        requestListeningWakeLock();
+    if (document.visibilityState === "hidden") {
+        suspendListeningForBackground();
+        return;
     }
+    repairListeningAfterForeground();
 });
 
 if (!lessons.length) {
