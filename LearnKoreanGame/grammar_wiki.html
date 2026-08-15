@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -42,7 +42,7 @@
         .sidebar-header-top {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
             gap: 12px;
         }
         .sidebar-header h1 {
@@ -50,6 +50,72 @@
             font-size: 1.5rem;
             color: var(--primary);
             text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+        }
+        .language-switcher {
+            position: relative;
+            flex-shrink: 0;
+        }
+        .language-toggle {
+            min-width: 86px;
+            height: 36px;
+            padding: 0 10px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 7px;
+            background: rgba(15, 23, 42, 0.72);
+            color: var(--text-main);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font: 700 0.8rem/1 inherit;
+            cursor: pointer;
+        }
+        .language-toggle:hover,
+        .language-toggle[aria-expanded="true"] {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.12);
+        }
+        .language-toggle svg {
+            width: 17px;
+            height: 17px;
+            stroke: currentColor;
+            stroke-width: 1.8;
+            fill: none;
+        }
+        .language-menu {
+            position: absolute;
+            top: calc(100% + 7px);
+            right: 0;
+            z-index: 300;
+            width: 160px;
+            padding: 7px;
+            border: 1px solid rgba(148, 163, 184, 0.24);
+            border-radius: 8px;
+            background: #111827;
+            box-shadow: 0 16px 34px rgba(0, 0, 0, 0.42);
+        }
+        .language-menu[hidden] { display: none; }
+        .language-menu p {
+            margin: 3px 7px 7px;
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 700;
+        }
+        .language-option {
+            width: 100%;
+            padding: 8px 10px;
+            border: 0;
+            border-radius: 6px;
+            background: transparent;
+            color: var(--text-main);
+            text-align: left;
+            font: 700 0.86rem/1.2 inherit;
+            cursor: pointer;
+        }
+        .language-option:hover { background: rgba(255, 255, 255, 0.07); }
+        .language-option.active {
+            background: rgba(56, 189, 248, 0.16);
+            color: var(--primary);
         }
         .guide-link {
             display: flex;
@@ -141,6 +207,11 @@
             padding: 10px 0;
             margin: 0;
             list-style: none;
+        }
+        .nav-empty {
+            padding: 24px 20px;
+            color: var(--text-muted);
+            line-height: 1.5;
         }
         .nav-category {
             padding: 10px 20px;
@@ -236,12 +307,13 @@
             display: flex;
             align-items: baseline;
         }
-        .header-zh {
-            font-size: 0.9rem;
+        .grammar-description,
+        .localized-meaning {
             color: var(--text-muted);
-            margin-left: 8px;
-            font-weight: 500;
+            line-height: 1.65;
         }
+        .grammar-description { margin: 7px 0 0; }
+        .localized-meaning { margin: 0 0 14px; }
         .examples-container {
             display: flex;
             flex-direction: column;
@@ -258,8 +330,7 @@
             gap: 4px;
         }
         .ex-ko { font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0; }
-        .ex-en { color: var(--text-muted); margin: 0; font-size: 0.95rem; }
-        .ex-zh { color: var(--text-muted); margin: 0; font-size: 0.85rem; }
+        .ex-translation { color: var(--text-muted); margin: 0; font-size: 0.95rem; line-height: 1.5; }
         .level-filters {
             display: flex;
             gap: 6px;
@@ -286,22 +357,6 @@
         .level-filter-btn.active[data-level='L2'] { background: rgba(56,189,248,0.5); color: #fff; }
         .level-filter-btn.active[data-level='L3'] { background: rgba(251,191,36,0.5); color: #fff; }
         .level-filter-btn.active[data-level='L4'] { background: rgba(244,114,182,0.5); color: #fff; }
-        .meaning-box {
-            margin-bottom: 12px;
-            line-height: 1.5;
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-        .meaning-en {
-            font-size: 1.15rem;
-            color: #fff;
-            font-weight: 500;
-        }
-        .meaning-zh {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
         .rules-container {
             display: flex;
             flex-direction: column;
@@ -316,21 +371,16 @@
             flex-direction: column;
             gap: 4px;
         }
-        .rule-en { font-size: 1.05rem; font-weight: 700; color: #fff; font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
-        .rule-zh { font-size: 0.85rem; color: var(--text-muted); font-family: 'Outfit', 'Noto Sans KR', sans-serif; }
-        .note-line {
-            margin: 0 0 12px 0;
-            line-height: 1.6;
-        }
-        .note-en {
-            font-size: 0.95rem;
+        .localized-rule { font-size: 1rem; font-weight: 700; color: #fff; line-height: 1.5; }
+        .notes-list {
+            margin: 0;
+            padding-left: 1.25rem;
             color: #e2e8f0;
+            line-height: 1.7;
         }
-        .note-zh {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-        .note-line:last-child { margin-bottom: 0; }
+        .notes-list li + li { margin-top: 8px; }
+        .deep-dive-section { border-color: rgba(244, 114, 182, 0.42); }
+        .deep-dive-section h3 { color: var(--accent); }
         /* Floating prev/next nav buttons */
         .nav-float-btns {
             position: fixed;
@@ -465,6 +515,17 @@
             border-color: rgba(56, 189, 248, 0.55);
             background: rgba(56, 189, 248, 0.18);
         }
+        .mobile-language-switcher { margin-right: 8px; }
+        .mobile-language-switcher .language-toggle {
+            width: 44px;
+            min-width: 44px;
+            padding: 0 5px;
+            gap: 4px;
+        }
+        .mobile-language-switcher .language-toggle svg {
+            width: 15px;
+            height: 15px;
+        }
         .menu-toggle {
             width: 36px;
             height: 36px;
@@ -506,35 +567,37 @@
             .sidebar-header { padding-top: 25px; }
         }
         @media (max-width: 420px) {
-            .mobile-guide-link {
-                margin-right: 10px;
-            }
+            .mobile-header { padding: 12px 14px; }
+            .mobile-title-brand { font-size: 1.05rem; }
+            .mobile-guide-link { margin-right: 6px; }
+            .mobile-language-switcher { margin-right: 4px; }
         }
     </style>
 </head>
 <body>
-    <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMenu()"></div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="sidebar-header-top">
-                <h1>Grammar Wiki</h1>
+                <h1 class="sidebar-title">语法百科</h1>
+                <div class="language-switcher" data-language-switcher data-language-variant="desktop"></div>
             </div>
-            <a class="guide-link" href="lesson_guide.html" aria-label="Open Lesson Guide home">
+            <a class="guide-link" href="lesson_guide.html" data-guide-link aria-label="打开课程导学首页">
                 <span class="guide-badge">KIIP</span>
                 <span class="guide-copy">
-                    <strong>课程导学首页</strong>
-                    <small>Level 1-4 · 单词 · 对话 · 文化</small>
+                    <strong data-guide-title>课程导学首页</strong>
+                    <small data-guide-subtitle>Level 1-4 · 单词 · 对话 · 文化</small>
                 </span>
                 <span class="guide-arrow">→</span>
             </a>
             <input type="text" id="search" class="search-box" placeholder="Search grammar...">
         </div>
         <div class="level-filters" id="level-filters">
-            <button class="level-filter-btn active" data-level="all" onclick="setLevelFilter('all')">All</button>
-            <button class="level-filter-btn" data-level="L1" onclick="setLevelFilter('L1')">L1 초급1</button>
-            <button class="level-filter-btn" data-level="L2" onclick="setLevelFilter('L2')">L2 초급2</button>
-            <button class="level-filter-btn" data-level="L3" onclick="setLevelFilter('L3')">L3 중급1</button>
-            <button class="level-filter-btn" data-level="L4" onclick="setLevelFilter('L4')">L4 중급2</button>
+            <button class="level-filter-btn active" data-level="all">全部</button>
+            <button class="level-filter-btn" data-level="L1">L1 初级1</button>
+            <button class="level-filter-btn" data-level="L2">L2 初级2</button>
+            <button class="level-filter-btn" data-level="L3">L3 中级1</button>
+            <button class="level-filter-btn" data-level="L4">L4 中级2</button>
         </div>
         <ul class="nav-list" id="nav-list">
             <!-- Populated via JS -->
@@ -550,28 +613,29 @@
                     <span class="mobile-detail-text" id="mobile-detail-text"></span>
                 </span>
             </div>
-            <a class="mobile-guide-link" href="lesson_guide.html" title="Lesson Guide 首页" aria-label="Open Lesson Guide home">
+            <a class="mobile-guide-link" href="lesson_guide.html" data-guide-link title="课程导学首页" aria-label="打开课程导学首页">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12 7v14"></path>
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H12V5H6.5A2.5 2.5 0 0 0 4 7.5v12Z"></path>
                     <path d="M20 19.5A2.5 2.5 0 0 0 17.5 17H12V5h5.5A2.5 2.5 0 0 1 20 7.5v12Z"></path>
                 </svg>
             </a>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="language-switcher mobile-language-switcher" data-language-switcher></div>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-label="打开语法菜单">☰</button>
         </div>
         <div class="main-content" id="main-content">
             <div class="empty-state">
-                <h2>K-Lingo Grammar Encyclopedia</h2>
-                <p>Select a grammar point from the menu to deep dive.</p>
+                <h2 data-empty-title>K-Lingo 韩语语法百科</h2>
+                <p data-empty-body>从菜单选择一个语法点开始学习。</p>
             </div>
         </div>
         <!-- Floating prev/next navigation -->
         <div class="nav-float-btns" id="nav-float-btns">
-            <button class="nav-float-btn" id="btn-prev" onclick="navigateDelta(-1); this.blur();">
+            <button class="nav-float-btn" id="btn-prev" type="button">
                 <span class="btn-icon">←</span>
                 <span class="btn-label" id="prev-label">Prev</span>
             </button>
-            <button class="nav-float-btn" id="btn-next" onclick="navigateDelta(1); this.blur();">
+            <button class="nav-float-btn" id="btn-next" type="button">
                 <span class="btn-label" id="next-label">Next</span>
                 <span class="btn-icon">→</span>
             </button>
@@ -579,349 +643,6 @@
     </div>
 
     <script src="grammar_data.js"></script>
-    <script>
-        const navList = document.getElementById('nav-list');
-        const mainContent = document.getElementById('main-content');
-        const searchInput = document.getElementById('search');
-        const sidebar = document.getElementById('sidebar');
-        const sidebarOverlay = document.getElementById('sidebar-overlay');
-        const mobileHeader = document.getElementById('mobile-header');
-        const mobileDetailLevel = document.getElementById('mobile-detail-level');
-        const mobileDetailText = document.getElementById('mobile-detail-text');
-        let currentLevel = 'all';
-        let currentItemId = null;
-        let detailTitleObserver = null;
-
-        function getFilteredItems() {
-            const q = searchInput.value.toLowerCase();
-            return grammarDB.filter(i => {
-                if (currentLevel !== 'all' && i.level !== currentLevel) return false;
-                if (!q) return true;
-                return i.title.toLowerCase().includes(q) ||
-                       i.desc.toLowerCase().includes(q) ||
-                       i.meaning_zh.includes(searchInput.value) ||
-                       i.meaning_en.toLowerCase().includes(q);
-            });
-        }
-
-        function navigateDelta(delta) {
-            const items = getFilteredItems();
-            const idx = items.findIndex(i => i.id === currentItemId);
-            if (idx === -1) return;
-            const next = items[idx + delta];
-            if (!next) return;
-            // Sync sidebar active state
-            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-            const navItems = navList.querySelectorAll('.nav-item');
-            navItems.forEach(el => {
-                if (el.querySelector('.nav-title') && el.querySelector('.nav-title').textContent === next.title) {
-                    el.classList.add('active');
-                    el.scrollIntoView({ block: 'nearest' });
-                }
-            });
-            renderContent(next);
-        }
-
-        function updateNavButtons() {
-            const items = getFilteredItems();
-            const idx = items.findIndex(i => i.id === currentItemId);
-            const floatBtns = document.getElementById('nav-float-btns');
-            const btnPrev = document.getElementById('btn-prev');
-            const btnNext = document.getElementById('btn-next');
-            const prevLabel = document.getElementById('prev-label');
-            const nextLabel = document.getElementById('next-label');
-
-            if (currentItemId && items.length > 1) {
-                floatBtns.classList.add('visible');
-            } else {
-                floatBtns.classList.remove('visible');
-                return;
-            }
-
-            const prevItem = items[idx - 1];
-            const nextItem = items[idx + 1];
-
-            if (prevItem) {
-                btnPrev.classList.remove('disabled');
-                prevLabel.textContent = prevItem.title;
-            } else {
-                btnPrev.classList.add('disabled');
-                prevLabel.textContent = 'Prev';
-            }
-
-            if (nextItem) {
-                btnNext.classList.remove('disabled');
-                nextLabel.textContent = nextItem.title;
-            } else {
-                btnNext.classList.add('disabled');
-                nextLabel.textContent = 'Next';
-            }
-        }
-
-        function setMobileHeaderDetail(item, showDetail) {
-            mobileDetailLevel.className = 'badge-level ' + item.level.toLowerCase();
-            mobileDetailLevel.textContent = item.level;
-            mobileDetailText.textContent = item.title;
-            mobileHeader.classList.toggle('show-detail-title', showDetail && window.innerWidth <= 768);
-        }
-
-        function resetMobileHeaderTitle() {
-            mobileHeader.classList.remove('show-detail-title');
-            mobileDetailLevel.className = 'badge-level';
-            mobileDetailLevel.textContent = '';
-            mobileDetailText.textContent = '';
-        }
-
-        function watchDetailTitle(item) {
-            if (detailTitleObserver) {
-                detailTitleObserver.disconnect();
-                detailTitleObserver = null;
-            }
-
-            const detailHeader = mainContent.querySelector('.grammar-header');
-            if (!detailHeader) {
-                resetMobileHeaderTitle();
-                return;
-            }
-
-            setMobileHeaderDetail(item, false);
-
-            if (!('IntersectionObserver' in window)) {
-                return;
-            }
-
-            detailTitleObserver = new IntersectionObserver(entries => {
-                const isHeaderVisible = entries[0].isIntersecting;
-                const isScrolledPastHeader = mainContent.scrollTop > detailHeader.offsetTop;
-                setMobileHeaderDetail(item, !isHeaderVisible && isScrolledPastHeader);
-            }, {
-                root: mainContent,
-                threshold: 0
-            });
-
-            detailTitleObserver.observe(detailHeader);
-        }
-
-        function toggleMenu() {
-            sidebar.classList.toggle('open');
-            sidebarOverlay.classList.toggle('open');
-        }
-
-        function setLevelFilter(level) {
-            currentLevel = level;
-            document.querySelectorAll('.level-filter-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector(`.level-filter-btn[data-level="${level}"]`).classList.add('active');
-            renderNav(searchInput.value);
-        }
-
-        function renderNav(query = '') {
-            navList.innerHTML = '';
-            const q = query.toLowerCase();
-            const categories = {};
-            grammarDB.forEach(item => {
-                if (currentLevel !== 'all' && item.level !== currentLevel) return;
-                if (!categories[item.category]) categories[item.category] = [];
-                categories[item.category].push(item);
-            });
-
-            for (const [cat, items] of Object.entries(categories)) {
-                const filtered = items.filter(i => 
-                    i.title.toLowerCase().includes(q) || 
-                    i.desc.toLowerCase().includes(q) ||
-                    i.meaning_zh.includes(query) ||
-                    i.meaning_en.toLowerCase().includes(q)
-                );
-                if (filtered.length > 0) {
-                    const catEl = document.createElement('li');
-                    catEl.className = 'nav-category';
-                    catEl.textContent = cat;
-                    navList.appendChild(catEl);
-                    filtered.forEach(item => {
-                        const li = document.createElement('li');
-                        li.className = 'nav-item';
-                        const lvSpan = document.createElement('span');
-                        lvSpan.className = 'nav-level ' + item.level.toLowerCase();
-                        lvSpan.textContent = item.level;
-                        const titleSpan = document.createElement('span');
-                        titleSpan.className = 'nav-title';
-                        titleSpan.textContent = item.title;
-                        li.appendChild(lvSpan);
-                        li.appendChild(titleSpan);
-                        li.onclick = () => {
-                            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-                            li.classList.add('active');
-                            renderContent(item);
-                            if (window.innerWidth <= 768) {
-                                toggleMenu(); // auto-close on mobile
-                            }
-                        };
-                        navList.appendChild(li);
-                    });
-                }
-            }
-        }
-
-        function renderContent(item) {
-            currentItemId = item.id;
-            // Scroll to top
-            document.getElementById('main-content').scrollTo({ top: 0, behavior: 'smooth' });
-            let examplesHtml = item.examples.map(ex => `
-                <div class="example-box">
-                    <p class="ex-ko">${ex.ko}</p>
-                    <p class="ex-en">${ex.en}</p>
-                    <p class="ex-zh">${ex.zh}</p>
-                </div>
-            `).join('');
-
-            let rulesHtml = item.rules.map(r => {
-                if (typeof r === 'object' && r.zh) {
-                    return `<div class="rule-card"><span class="rule-en">${r.en}</span><span class="rule-zh">${r.zh}</span></div>`;
-                }
-                return `<div class="rule-card"><span class="rule-en">${r}</span></div>`;
-            }).join('');
-
-            let notesHtml = '';
-            if (item.notes) {
-                let blocks = item.notes.split('\n\n');
-                let enBlock = blocks.find(b => b.includes('💡'));
-                let zhBlock = blocks.find(b => b.includes('⚠'));
-                
-                let orderedBlocks = [];
-                if (enBlock) orderedBlocks.push(enBlock);
-                if (zhBlock) orderedBlocks.push(zhBlock);
-                
-                notesHtml = orderedBlocks.map(block => {
-                    let lines = block.split('\n');
-                    let isEn = block.includes('💡');
-                    let cls = isEn ? 'note-en' : 'note-zh';
-                    
-                    let html = '';
-                    let inList = false;
-                    
-                    lines.forEach(line => {
-                        let trimmed = line.trim();
-                        if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
-                            if (!inList) {
-                                html += `<ul class="${cls}" style="margin-top: 5px; margin-bottom: 15px; padding-left: 25px;">`;
-                                inList = true;
-                            }
-                            html += `<li style="margin-bottom: 8px; line-height: 1.6;">${trimmed.substring(1).trim()}</li>`;
-                        } else {
-                            if (inList) {
-                                html += `</ul>`;
-                                inList = false;
-                            }
-                            html += `<p class="${cls}" style="margin-bottom: 10px; font-weight: bold; font-size: 1.05rem;">${trimmed}</p>`;
-                        }
-                    });
-                    
-                    if (inList) html += `</ul>`;
-                    
-                    return html;
-                }).join('');
-            }
-
-            mainContent.innerHTML = `
-                <div class="grammar-header">
-                    <div class="title-row">
-                        <span class="badge-level ${item.level.toLowerCase()}">${item.level}</span>
-                        <h2 class="grammar-title">${item.title}</h2>
-                    </div>
-                    <p style="font-size: 0.95rem; color: #cbd5e1; margin-top: 3px;">${item.desc} ${item.desc_zh ? `<span style="font-size: 0.85rem; color: rgba(203, 213, 225, 0.6); margin-left: 6px;">(${item.desc_zh})</span>` : ''}</p>
-                </div>
-                
-                <div class="grammar-section">
-                    <h3>Meaning & Rules <span class="header-zh">(含义与结合规则)</span></h3>
-                    <div class="meaning-box">
-                        <span class="meaning-en">${item.meaning_en}</span>
-                        <span class="meaning-zh">${item.meaning_zh}</span>
-                    </div>
-
-                    <div class="rules-container">
-                        ${rulesHtml}
-                    </div>
-                </div>
-
-                <div class="grammar-section">
-                    <h3>Examples <span class="header-zh">(例句)</span></h3>
-                    <div class="examples-container">
-                        ${examplesHtml}
-                    </div>
-                </div>
-                
-                ${item.notes ? `
-                <div class="grammar-section" style="border-color: var(--accent);">
-                    <h3 style="color: var(--accent);">Deep Dive Notes <span class="header-zh" style="color: rgba(244,114,182,0.7);">(深入解析)</span></h3>
-                    ${notesHtml}
-                </div>
-                ` : ''}
-            `;
-            updateNavButtons();
-            watchDetailTitle(item);
-        }
-
-        searchInput.addEventListener('input', (e) => renderNav(e.target.value));
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                mobileHeader.classList.remove('show-detail-title');
-            }
-        });
-        renderNav();
-
-        // Mobile swipe gesture logic
-        const levels = ['all', 'L1', 'L2', 'L3', 'L4'];
-        let touchStartX = 0;
-        let touchEndX = 0;
-        let touchStartY = 0;
-        let touchEndY = 0;
-        let touchStartTarget = null;
-
-        document.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-            touchStartY = e.changedTouches[0].screenY;
-            touchStartTarget = e.target;
-        }, {passive: true});
-
-        document.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            touchEndY = e.changedTouches[0].screenY;
-            handleSwipe();
-        }, {passive: true});
-
-        function handleSwipe() {
-            const deltaX = touchEndX - touchStartX;
-            const deltaY = touchEndY - touchStartY;
-            const threshold = 50;
-            const isMobile = window.innerWidth <= 768;
-
-            if (!isMobile) return;
-
-            // Only trigger for clearly horizontal swipes
-            if (Math.abs(deltaX) <= Math.abs(deltaY) * 1.5) return;
-
-            const insideSidebar = sidebar.contains(touchStartTarget);
-
-            if (insideSidebar && sidebar.classList.contains('open')) {
-                // Swipe inside sidebar → cycle level tabs
-                const currentIndex = levels.indexOf(currentLevel);
-                if (deltaX < -threshold) {
-                    // Swipe left → next level
-                    const nextIndex = (currentIndex + 1) % levels.length;
-                    setLevelFilter(levels[nextIndex]);
-                } else if (deltaX > threshold) {
-                    // Swipe right → previous level
-                    const prevIndex = (currentIndex - 1 + levels.length) % levels.length;
-                    setLevelFilter(levels[prevIndex]);
-                }
-            } else {
-                // Swipe on main content → open/close sidebar
-                if (deltaX > threshold) {
-                    if (!sidebar.classList.contains('open')) toggleMenu();
-                } else if (deltaX < -threshold) {
-                    if (sidebar.classList.contains('open')) toggleMenu();
-                }
-            }
-        }
-    </script>
+    <script src="grammar_wiki_app.js"></script>
 </body>
 </html>
