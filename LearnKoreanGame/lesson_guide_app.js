@@ -372,6 +372,7 @@ const listeningState = {
     error: "",
     restartOnResume: false
 };
+let listeningWakeLock = null;
 let renderRunId = 0;
 const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
 const tabSwipeState = {
@@ -1707,7 +1708,34 @@ function setListeningError(message) {
     listeningState.status = "idle";
     listeningState.error = message;
     listeningState.currentRef = "";
+    releaseListeningWakeLock();
     refreshListeningPlayer();
+}
+
+async function requestListeningWakeLock() {
+    if (!navigator.wakeLock?.request || document.visibilityState !== "visible") return;
+    if (listeningWakeLock) return;
+
+    try {
+        const wakeLock = await navigator.wakeLock.request("screen");
+        if (listeningState.status !== "playing") {
+            wakeLock.release?.().catch?.(() => {});
+            return;
+        }
+        listeningWakeLock = wakeLock;
+        wakeLock.addEventListener?.("release", () => {
+            if (listeningWakeLock === wakeLock) listeningWakeLock = null;
+        });
+    } catch (error) {
+        console.debug?.("Screen wake lock unavailable", error);
+    }
+}
+
+function releaseListeningWakeLock() {
+    if (!listeningWakeLock) return;
+    const wakeLock = listeningWakeLock;
+    listeningWakeLock = null;
+    wakeLock.release?.().catch?.(() => {});
 }
 
 function stopListening(options = {}) {
@@ -1721,6 +1749,7 @@ function stopListening(options = {}) {
     listeningState.currentRef = "";
     listeningState.restartOnResume = false;
     if (clearError) listeningState.error = "";
+    releaseListeningWakeLock();
     clearListeningHighlight();
     if (render) refreshListeningPlayer();
 }
@@ -1863,6 +1892,7 @@ async function playListeningLoop(runId) {
     if (runId !== speechRunId || listeningState.status === "idle") return;
     listeningState.status = "ended";
     listeningState.currentRef = "";
+    releaseListeningWakeLock();
     clearListeningHighlight();
     refreshListeningPlayer();
 }
@@ -1888,6 +1918,7 @@ async function startListening(lesson, startIndex = 0) {
     listeningState.currentRef = "";
     listeningState.error = "";
     listeningState.restartOnResume = false;
+    requestListeningWakeLock();
     refreshListeningPlayer();
 
     const voice = await waitForKoreanVoice();
@@ -1910,6 +1941,7 @@ function pauseListening() {
     listeningState.status = "paused";
     listeningState.restartOnResume = false;
     window.speechSynthesis.pause();
+    releaseListeningWakeLock();
     refreshListeningPlayer();
 }
 
@@ -1922,6 +1954,7 @@ function resumeListening() {
         return;
     }
     listeningState.status = "playing";
+    requestListeningWakeLock();
     window.speechSynthesis.resume();
     refreshListeningPlayer();
 }
@@ -2185,7 +2218,7 @@ function renderListeningPlayer(lesson) {
                     <span class="listening-status">${escapeHtml(active ? listeningStatusText(total) : listeningStatusText(buildListeningQueue(lesson).length))}</span>
                 </div>
                 <div class="listening-now" title="${escapeHtml(currentItem?.text || "")}">
-                    ${currentItem ? `<span>${escapeHtml(t("listeningNow"))}</span>${escapeHtml(currentItem.text)}` : escapeHtml(t("listeningIdle"))}
+                    ${currentItem ? `<span>${escapeHtml(t("listeningNow"))}</span>${escapeHtml(currentItem.text)}` : ""}
                 </div>
             </div>
             <div class="listening-settings" aria-label="${escapeHtml(t("listeningTitle"))}">
@@ -2434,7 +2467,7 @@ function renderLessonList() {
 function renderHero(lesson) {
     return `
         <section class="hero">
-            <div data-listening-ref="lesson-title">
+            <div class="hero-copy" data-listening-ref="lesson-title">
                 <div class="eyebrow">
                     <span class="level-badge">KIIP ${level}-${String(lesson.number).padStart(2, "0")}</span>
                     ${lesson.pages ? `<span class="page-badge">p.${escapeHtml(lesson.pages)}</span>` : ""}
@@ -2442,8 +2475,10 @@ function renderHero(lesson) {
                 <h1>${escapeHtml(lesson.titleKo)}</h1>
                 <p class="hero-zh">${escapeHtml(lessonTitleTranslation(lesson))}</p>
             </div>
+            <div class="hero-listening">
+                ${renderListeningPlayer(lesson)}
+            </div>
         </section>
-        ${renderListeningPlayer(lesson)}
         <nav class="tabs">
             ${tabs.map(tab => `<button class="tab-btn ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}">${escapeHtml(t(tab.labelKey))}</button>`).join("")}
         </nav>
@@ -2961,6 +2996,12 @@ document.addEventListener("click", event => {
 
 document.addEventListener("keydown", event => {
     if (event.key === "Escape") closeLanguageMenus();
+});
+
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible" && listeningState.status === "playing") {
+        requestListeningWakeLock();
+    }
 });
 
 if (!lessons.length) {
