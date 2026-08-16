@@ -5,6 +5,8 @@
 })(typeof window !== "undefined" ? window : globalThis, function createListeningFloatingApi() {
     const activeStatuses = new Set(["playing", "paused"]);
     const minimumVisibleMs = 3000;
+    const playerEnterRatio = 0.05;
+    const playerExitRatio = 0.01;
 
     function visibleRatio(rect, rootRect) {
         if (!rect || !rootRect || rect.width <= 0 || rect.height <= 0) return 0;
@@ -19,6 +21,13 @@
 
     function isIntersecting(rect, rootRect) {
         return visibleRatio(rect, rootRect) > 0;
+    }
+
+    function resolvePlayerVisible(ratio, wasVisible) {
+        const normalizedRatio = Math.max(0, Math.min(1, Number(ratio) || 0));
+        return wasVisible
+            ? normalizedRatio > playerExitRatio
+            : normalizedRatio >= playerEnterRatio;
     }
 
     function shouldShow({ status, playerVisible, lessonMatches }) {
@@ -93,9 +102,12 @@
     return Object.freeze({
         activeStatuses,
         minimumVisibleMs,
+        playerEnterRatio,
+        playerExitRatio,
         visibleRatio,
         isVisible,
         isIntersecting,
+        resolvePlayerVisible,
         shouldShow,
         createDisplayLatch
     });

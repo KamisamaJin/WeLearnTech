@@ -22,6 +22,11 @@
         );
     }
 
+    function continuedRef({ nextRef, currentRef, lastFollowedRef }) {
+        if (!nextRef) return "";
+        return nextRef === currentRef || nextRef === lastFollowedRef ? nextRef : "";
+    }
+
     function scrollPlan(targetRect, rootRect, options = {}) {
         if (!targetRect || !rootRect || rootRect.height <= 0) {
             return { shouldScroll: false, behavior: "auto" };
@@ -46,5 +51,5 @@
         };
     }
 
-    return Object.freeze({ sectionTabs, tabForItem, shouldFollow, scrollPlan });
+    return Object.freeze({ sectionTabs, tabForItem, shouldFollow, continuedRef, scrollPlan });
 });

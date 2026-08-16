@@ -403,6 +403,7 @@ const sleepTimerScheduler = sleepTimerApi.createScheduler({
 });
 let nativeListeningReady = false;
 let listeningPlayerObserver = null;
+let listeningPlayerObservationRunId = 0;
 let listeningPlayerVisible = true;
 let floatingListeningVisible = false;
 const floatingListeningDisplayLatch = listeningFloatingApi.createDisplayLatch({
@@ -1735,7 +1736,7 @@ function paintFloatingListeningControls() {
     floatingListeningControls.hidden = !visible;
     mainContent.classList.toggle("has-floating-listening-controls", visible);
     if (!visible) {
-        floatingListeningControls.innerHTML = "";
+        if (floatingListeningControls.firstChild) floatingListeningControls.innerHTML = "";
         return;
     }
 
@@ -1743,22 +1744,38 @@ function paintFloatingListeningControls() {
     const total = listeningState.queue.length;
     const atStart = listeningState.index <= 0;
     const atEnd = listeningState.index >= total - 1;
-    floatingListeningControls.innerHTML = `
+    if (!floatingListeningControls.querySelector(".floating-listening-controls__bar")) {
+        floatingListeningControls.innerHTML = `
         <div class="floating-listening-controls__bar" role="group" aria-label="${escapeHtml(t("listeningTitle"))}">
-            <button class="floating-listening-btn" type="button" data-listening-action="previous"
-                aria-label="${escapeHtml(t("listeningPrevious"))}" title="${escapeHtml(t("listeningPrevious"))}" ${atStart ? "disabled" : ""}>
-                ${previousIcon()}
-            </button>
-            <button class="floating-listening-btn is-primary" type="button" data-listening-action="${isPlaying ? "pause" : "resume"}"
-                aria-label="${escapeHtml(isPlaying ? t("listeningPause") : t("listeningResume"))}" title="${escapeHtml(isPlaying ? t("listeningPause") : t("listeningResume"))}">
-                ${isPlaying ? pauseIcon() : playIcon()}
-            </button>
-            <button class="floating-listening-btn" type="button" data-listening-action="next"
-                aria-label="${escapeHtml(t("listeningNext"))}" title="${escapeHtml(t("listeningNext"))}" ${atEnd ? "disabled" : ""}>
-                ${nextIcon()}
-            </button>
+            <button class="floating-listening-btn" type="button" data-listening-action="previous"></button>
+            <button class="floating-listening-btn is-primary" type="button"></button>
+            <button class="floating-listening-btn" type="button" data-listening-action="next"></button>
         </div>
-    `;
+        `;
+        floatingListeningControls.querySelector('[data-listening-action="previous"]').innerHTML = previousIcon();
+        floatingListeningControls.querySelector('[data-listening-action="next"]').innerHTML = nextIcon();
+    }
+
+    const bar = floatingListeningControls.querySelector(".floating-listening-controls__bar");
+    const previous = bar.querySelector('[data-listening-action="previous"]');
+    const primary = bar.querySelector(".is-primary");
+    const next = bar.querySelector('[data-listening-action="next"]');
+    const primaryAction = isPlaying ? "pause" : "resume";
+    const primaryLabel = isPlaying ? t("listeningPause") : t("listeningResume");
+
+    bar.setAttribute("aria-label", t("listeningTitle"));
+    previous.disabled = atStart;
+    previous.setAttribute("aria-label", t("listeningPrevious"));
+    previous.title = t("listeningPrevious");
+    next.disabled = atEnd;
+    next.setAttribute("aria-label", t("listeningNext"));
+    next.title = t("listeningNext");
+    primary.setAttribute("aria-label", primaryLabel);
+    primary.title = primaryLabel;
+    if (primary.dataset.listeningAction !== primaryAction) {
+        primary.dataset.listeningAction = primaryAction;
+        primary.innerHTML = isPlaying ? pauseIcon() : playIcon();
+    }
 }
 
 function renderFloatingListeningControls() {
@@ -1782,7 +1799,12 @@ function setListeningPlayerVisible(visible) {
     renderFloatingListeningControls();
 }
 
+function setListeningPlayerVisibilityRatio(ratio) {
+    setListeningPlayerVisible(listeningFloatingApi.resolvePlayerVisible(ratio, listeningPlayerVisible));
+}
+
 function observeListeningPlayer() {
+    listeningPlayerObservationRunId += 1;
     listeningPlayerObserver?.disconnect();
     listeningPlayerObserver = null;
 
@@ -1793,21 +1815,33 @@ function observeListeningPlayer() {
         return;
     }
 
-    listeningPlayerVisible = listeningFloatingApi.isIntersecting(
+    listeningPlayerVisible = listeningFloatingApi.resolvePlayerVisible(listeningFloatingApi.visibleRatio(
         player.getBoundingClientRect(),
         mainContent.getBoundingClientRect()
-    );
+    ), listeningPlayerVisible);
     renderFloatingListeningControls();
 
     if (!("IntersectionObserver" in window)) return;
     listeningPlayerObserver = new IntersectionObserver(entries => {
         const entry = entries[0];
-        setListeningPlayerVisible(Boolean(entry?.isIntersecting && entry.intersectionRatio > 0));
+        setListeningPlayerVisibilityRatio(entry?.isIntersecting ? entry.intersectionRatio : 0);
     }, {
         root: mainContent,
-        threshold: [0, 0.01, 1]
+        threshold: [0, listeningFloatingApi.playerExitRatio, listeningFloatingApi.playerEnterRatio, 1]
     });
     listeningPlayerObserver.observe(player);
+}
+
+function observeListeningPlayerAfterLayout() {
+    const runId = ++listeningPlayerObservationRunId;
+    listeningPlayerObserver?.disconnect();
+    listeningPlayerObserver = null;
+    window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+            if (runId !== listeningPlayerObservationRunId) return;
+            observeListeningPlayer();
+        });
+    });
 }
 
 function applyListeningHighlight() {
@@ -1853,8 +1887,12 @@ function refreshListeningPlayer() {
     const player = document.querySelector("[data-listening-player]");
     if (!lesson || !player) return;
 
-    player.outerHTML = renderListeningPlayer(lesson);
-    observeListeningPlayer();
+    const template = document.createElement("template");
+    template.innerHTML = renderListeningPlayer(lesson).trim();
+    const nextPlayer = template.content.firstElementChild;
+    player.className = nextPlayer.className;
+    player.innerHTML = nextPlayer.innerHTML;
+    renderFloatingListeningControls();
     applyListeningHighlight();
 }
 
@@ -2231,6 +2269,8 @@ async function startWebListening(lesson, startIndex = 0) {
         return;
     }
 
+    const previousCurrentRef = listeningState.currentRef;
+    const previousFollowedRef = listeningState.lastFollowedRef;
     window.speechSynthesis.cancel();
     const runId = ++speechRunId;
     listeningState.status = "playing";
@@ -2238,11 +2278,15 @@ async function startWebListening(lesson, startIndex = 0) {
     listeningState.lessonId = lesson.id;
     listeningState.queue = queue;
     listeningState.index = Math.min(Math.max(startIndex, 0), queue.length - 1);
-    listeningState.currentRef = "";
+    listeningState.currentRef = queue[listeningState.index]?.ref || "";
     listeningState.error = "";
     listeningState.restartOnResume = false;
     listeningState.endReason = "";
-    listeningState.lastFollowedRef = "";
+    listeningState.lastFollowedRef = listeningFollowApi.continuedRef({
+        nextRef: listeningState.currentRef,
+        currentRef: previousCurrentRef,
+        lastFollowedRef: previousFollowedRef
+    });
     requestListeningWakeLock();
     startSleepTimerForPlayback();
     refreshListeningPlayer();
@@ -2815,11 +2859,11 @@ function renderLoadedLesson(lesson, scrollTarget) {
     }
     mobileTitle.textContent = `${level}-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
     mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
-    observeListeningPlayer();
     scrollMainContent(scrollTarget);
     window.requestAnimationFrame(() => {
         scrollActiveTabIntoView();
         applyListeningHighlight();
+        observeListeningPlayerAfterLayout();
     });
 }
 

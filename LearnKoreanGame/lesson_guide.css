@@ -600,6 +600,7 @@ button, input {
 }
 
 .listening-now {
+    min-height: 1.35em;
     margin-top: 4px;
     color: var(--soft);
     font-family: 'Noto Sans KR', sans-serif;
@@ -612,7 +613,7 @@ button, input {
 }
 
 .listening-now:empty {
-    display: none;
+    visibility: hidden;
 }
 
 .listening-now span {

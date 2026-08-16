@@ -189,6 +189,8 @@ test("listening follow changes tabs only when the playback reference changes", (
     assert.equal(listeningFollow.shouldFollow({ status: "playing", currentRef: "vocab-2", lastFollowedRef: "" }), true);
     assert.equal(listeningFollow.shouldFollow({ status: "playing", currentRef: "vocab-2", lastFollowedRef: "vocab-2" }), false);
     assert.equal(listeningFollow.shouldFollow({ status: "ended", currentRef: "vocab-2", lastFollowedRef: "" }), false);
+    assert.equal(listeningFollow.continuedRef({ nextRef: "vocab-2", currentRef: "vocab-2", lastFollowedRef: "vocab-2" }), "vocab-2");
+    assert.equal(listeningFollow.continuedRef({ nextRef: "vocab-3", currentRef: "vocab-2", lastFollowedRef: "vocab-2" }), "");
 });
 
 test("listening follow avoids long smooth scrolling when restoring a distant item", () => {
@@ -207,6 +209,19 @@ test("listening follow avoids long smooth scrolling when restoring a distant ite
     );
 });
 
+test("listening updates preserve player controls instead of replacing them each sentence", () => {
+    const app = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    const css = fs.readFileSync(path.join(root, "lesson_guide.css"), "utf8");
+    const refreshBlock = app.match(/function refreshListeningPlayer\(\)[\s\S]*?function updateSleepTimerDisplay/)?.[0] || "";
+    const floatingPaintBlock = app.match(/function paintFloatingListeningControls\(\)[\s\S]*?function renderFloatingListeningControls/)?.[0] || "";
+
+    assert.doesNotMatch(refreshBlock, /outerHTML\s*=/);
+    assert.match(refreshBlock, /player\.innerHTML = nextPlayer\.innerHTML/);
+    assert.match(floatingPaintBlock, /if \(!floatingListeningControls\.querySelector/);
+    assert.match(css, /\.listening-now\s*\{[^}]*min-height:\s*1\.35em/s);
+    assert.match(css, /\.listening-now:empty\s*\{[^}]*visibility:\s*hidden/s);
+});
+
 test("floating listening controls appear only for an offscreen active player", () => {
     const rootRect = { top: 0, right: 300, bottom: 600, left: 0, width: 300, height: 600 };
     const mostlyVisible = { top: -20, right: 300, bottom: 80, left: 0, width: 300, height: 120 };
@@ -219,6 +234,13 @@ test("floating listening controls appear only for an offscreen active player", (
     assert.equal(listeningFloating.shouldShow({ status: "idle", playerVisible: false, lessonMatches: true }), false);
     assert.equal(listeningFloating.shouldShow({ status: "playing", playerVisible: true, lessonMatches: true }), false);
     assert.equal(listeningFloating.shouldShow({ status: "playing", playerVisible: false, lessonMatches: false }), false);
+});
+
+test("floating player visibility ignores one-pixel layout jitter", () => {
+    assert.equal(listeningFloating.resolvePlayerVisible(0.004, false), false);
+    assert.equal(listeningFloating.resolvePlayerVisible(0.05, false), true);
+    assert.equal(listeningFloating.resolvePlayerVisible(0.02, true), true);
+    assert.equal(listeningFloating.resolvePlayerVisible(0.01, true), false);
 });
 
 test("floating listening controls stay for three seconds unless the main player is visible", () => {
