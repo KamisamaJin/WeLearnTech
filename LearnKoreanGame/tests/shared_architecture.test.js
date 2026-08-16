@@ -12,6 +12,7 @@ const schema = require(path.join(root, "lesson/schema.js"));
 const listeningQueue = require(path.join(root, "lesson/listening/queue.js"));
 const lessonDataLoader = require(path.join(root, "lesson/data-loader.js"));
 const listeningFollow = require(path.join(root, "lesson/listening/follow.js"));
+const listeningFloating = require(path.join(root, "lesson/listening/floating.js"));
 const sleepTimer = require(path.join(root, "lesson/listening/sleep-timer.js"));
 
 function memoryStorage(initial = {}) {
@@ -58,6 +59,19 @@ test("level pages are thin configuration entries backed by one shell", () => {
         assert.equal(config.dataScript, `lesson_data_l${number}.js`);
         assert.equal(config.translationChunkMode, level === "L3" ? "all" : "field");
     }
+});
+
+test("lesson and grammar mobile menus expose toggle state", () => {
+    const lessonShell = fs.readFileSync(path.join(root, "shared/lesson-page.js"), "utf8");
+    const lessonApp = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    const grammarHtml = fs.readFileSync(path.join(root, "grammar_wiki.html"), "utf8");
+    const grammarApp = fs.readFileSync(path.join(root, "grammar_wiki_app.js"), "utf8");
+
+    assert.match(lessonShell, /id="menu-toggle"[^>]*aria-controls="sidebar"[^>]*aria-expanded="false"/s);
+    assert.match(lessonApp, /function toggleSidebar\(force\)/);
+    assert.match(lessonApp, /menuToggle\.addEventListener\("click", \(\) => \{\s*toggleSidebar\(\);/s);
+    assert.match(grammarHtml, /id="menu-toggle"[^>]*aria-expanded="false"/s);
+    assert.match(grammarApp, /menuToggle\.addEventListener\("click", \(\) => toggleMenu\(\)\)/);
 });
 
 test("lesson and grammar pages keep styles and behavior outside HTML", () => {
@@ -175,6 +189,68 @@ test("listening follow changes tabs only when the playback reference changes", (
     assert.equal(listeningFollow.shouldFollow({ status: "playing", currentRef: "vocab-2", lastFollowedRef: "" }), true);
     assert.equal(listeningFollow.shouldFollow({ status: "playing", currentRef: "vocab-2", lastFollowedRef: "vocab-2" }), false);
     assert.equal(listeningFollow.shouldFollow({ status: "ended", currentRef: "vocab-2", lastFollowedRef: "" }), false);
+});
+
+test("listening follow avoids long smooth scrolling when restoring a distant item", () => {
+    const rootRect = { top: 100, bottom: 700, height: 600 };
+    assert.deepEqual(
+        listeningFollow.scrollPlan({ top: 260, bottom: 420 }, rootRect),
+        { shouldScroll: false, behavior: "auto" }
+    );
+    assert.deepEqual(
+        listeningFollow.scrollPlan({ top: 650, bottom: 790 }, rootRect),
+        { shouldScroll: true, behavior: "smooth" }
+    );
+    assert.deepEqual(
+        listeningFollow.scrollPlan({ top: 1800, bottom: 1940 }, rootRect),
+        { shouldScroll: true, behavior: "auto" }
+    );
+});
+
+test("floating listening controls appear only for an offscreen active player", () => {
+    const rootRect = { top: 0, right: 300, bottom: 600, left: 0, width: 300, height: 600 };
+    const mostlyVisible = { top: -20, right: 300, bottom: 80, left: 0, width: 300, height: 120 };
+    const offscreen = { top: -140, right: 300, bottom: -20, left: 0, width: 300, height: 120 };
+
+    assert.ok(listeningFloating.visibleRatio(mostlyVisible, rootRect) > 0.2);
+    assert.equal(listeningFloating.isVisible(offscreen, rootRect), false);
+    assert.equal(listeningFloating.shouldShow({ status: "playing", playerVisible: false, lessonMatches: true }), true);
+    assert.equal(listeningFloating.shouldShow({ status: "paused", playerVisible: false, lessonMatches: true }), true);
+    assert.equal(listeningFloating.shouldShow({ status: "idle", playerVisible: false, lessonMatches: true }), false);
+    assert.equal(listeningFloating.shouldShow({ status: "playing", playerVisible: true, lessonMatches: true }), false);
+    assert.equal(listeningFloating.shouldShow({ status: "playing", playerVisible: false, lessonMatches: false }), false);
+});
+
+test("floating listening controls stay for three seconds unless the main player is visible", () => {
+    let now = 1_000;
+    let scheduled;
+    let scheduledDelay;
+    let cancelled = 0;
+    const changes = [];
+    const latch = listeningFloating.createDisplayLatch({
+        now: () => now,
+        setTimeout: (callback, delay) => {
+            scheduled = callback;
+            scheduledDelay = delay;
+            return 7;
+        },
+        clearTimeout: () => { cancelled += 1; },
+        onChange: visible => changes.push(visible)
+    });
+
+    latch.update(true);
+    assert.deepEqual(changes, [true]);
+    now = 1_500;
+    latch.update(false);
+    assert.equal(scheduledDelay, 2_500);
+    latch.update(true);
+    assert.equal(cancelled, 1);
+    scheduled();
+    assert.deepEqual(changes, [true]);
+
+    latch.update(false, { immediate: true });
+    assert.deepEqual(changes, [true, false]);
+    assert.equal(listeningFloating.minimumVisibleMs, 3000);
 });
 
 test("sleep timer uses an absolute deadline and expires once", () => {

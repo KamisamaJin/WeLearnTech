@@ -697,6 +697,78 @@ button, input {
     cursor: not-allowed;
 }
 
+.main-content.has-floating-listening-controls {
+    padding-bottom: 104px;
+}
+
+.floating-listening-controls {
+    position: fixed;
+    right: clamp(14px, 2.5vw, 24px);
+    bottom: calc(var(--kiip-safe-area-bottom) + 16px);
+    z-index: 70;
+}
+
+.floating-listening-controls[hidden] {
+    display: none;
+}
+
+.floating-listening-controls__bar {
+    display: grid;
+    grid-template-columns: 36px 44px 36px;
+    align-items: center;
+    gap: 6px;
+    width: 140px;
+    height: 56px;
+    padding: 6px;
+    border: 1px solid rgba(var(--teal-rgb), 0.38);
+    border-radius: 8px;
+    background: rgba(20, 25, 31, 0.96);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
+    backdrop-filter: blur(14px);
+}
+
+.floating-listening-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid rgba(var(--teal-rgb), 0.24);
+    border-radius: 8px;
+    color: var(--teal);
+    background: rgba(var(--teal-rgb), 0.08);
+    cursor: pointer;
+}
+
+.floating-listening-btn.is-primary {
+    width: 44px;
+    height: 44px;
+    color: #0d1715;
+    border-color: var(--teal);
+    background: var(--teal);
+}
+
+.floating-listening-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.floating-listening-btn.is-primary svg {
+    width: 18px;
+    height: 18px;
+}
+
+.floating-listening-btn:disabled {
+    opacity: 0.36;
+    cursor: not-allowed;
+}
+
+.floating-listening-btn:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 2px;
+}
+
 .is-listening-current {
     border-color: rgba(var(--amber-rgb), 0.65) !important;
     background: rgba(var(--amber-rgb), 0.1) !important;

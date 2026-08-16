@@ -87,12 +87,14 @@
 
                 <div class="content-shell">
                     <header class="mobile-header">
-                        <button class="menu-toggle kiip-icon-button" id="menu-toggle" type="button" aria-label="打开课程菜单">${menuIcon}</button>
+                        <button class="menu-toggle kiip-icon-button" id="menu-toggle" type="button"
+                            aria-controls="sidebar" aria-expanded="false" aria-label="打开课程菜单">${menuIcon}</button>
                         <div class="mobile-title" id="mobile-title">${config.title}</div>
                         <a class="home-link kiip-icon-button" href="lesson_guide.html" title="返回首页" aria-label="返回首页">${homeIcon}</a>
                         <div class="language-switcher" data-language-switcher></div>
                     </header>
                     <main class="main-content" id="main-content"></main>
+                    <div class="floating-listening-controls" id="floating-listening-controls" hidden></div>
                 </div>
             </div>
         `;
@@ -128,6 +130,7 @@
             "lesson_listening_native.js",
             "lesson_grammar_links.js",
             "lesson/listening/follow.js",
+            "lesson/listening/floating.js",
             "lesson/listening/sleep-timer.js",
             "lesson/listening/queue.js",
             "lesson/data-loader.js",

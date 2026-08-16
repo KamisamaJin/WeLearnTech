@@ -22,5 +22,29 @@
         );
     }
 
-    return Object.freeze({ sectionTabs, tabForItem, shouldFollow });
+    function scrollPlan(targetRect, rootRect, options = {}) {
+        if (!targetRect || !rootRect || rootRect.height <= 0) {
+            return { shouldScroll: false, behavior: "auto" };
+        }
+
+        const comfortInset = Number.isFinite(options.comfortInset)
+            ? options.comfortInset
+            : Math.min(96, rootRect.height * 0.12);
+        const comfortablyVisible = targetRect.top >= rootRect.top + comfortInset
+            && targetRect.bottom <= rootRect.bottom - comfortInset;
+        if (comfortablyVisible) return { shouldScroll: false, behavior: "auto" };
+
+        const targetCenter = (targetRect.top + targetRect.bottom) / 2;
+        const rootCenter = (rootRect.top + rootRect.bottom) / 2;
+        const distance = Math.abs(targetCenter - rootCenter);
+        const maxSmoothDistance = Number.isFinite(options.maxSmoothDistance)
+            ? options.maxSmoothDistance
+            : rootRect.height * 0.85;
+        return {
+            shouldScroll: true,
+            behavior: distance <= maxSmoothDistance ? "smooth" : "auto"
+        };
+    }
+
+    return Object.freeze({ sectionTabs, tabForItem, shouldFollow, scrollPlan });
 });

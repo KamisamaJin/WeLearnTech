@@ -51,6 +51,7 @@ const messages = {
         sidebarSubtitle: "单词、对话、文化文章中文伴学",
         searchPlaceholder: "搜索课文、单词或中文...",
         openLessonMenu: "打开课程菜单",
+        closeLessonMenu: "关闭课程菜单",
         returnHome: "返回首页",
         switchToEnglish: "切换为英文",
         switchToChinese: "切换为中文",
@@ -138,6 +139,7 @@ const messages = {
         sidebarSubtitle: "Vocabulary, dialogues, and culture notes",
         searchPlaceholder: "Search lessons, words, or translations...",
         openLessonMenu: "Open lesson menu",
+        closeLessonMenu: "Close lesson menu",
         returnHome: "Back to home",
         switchToEnglish: "Switch to English",
         switchToChinese: "Switch to Chinese",
@@ -350,6 +352,7 @@ const listeningRepeats = [
 ];
 const sleepTimerApi = window.KIIPSleepTimer;
 const listeningFollowApi = window.KIIPListeningFollow;
+const listeningFloatingApi = window.KIIPListeningFloating;
 const listeningSleepDurations = sleepTimerApi.durationMinutes;
 
 const lessonList = document.getElementById("lesson-list");
@@ -359,6 +362,7 @@ const sidebar = document.getElementById("sidebar");
 const sidebarOverlay = document.getElementById("sidebar-overlay");
 const menuToggle = document.getElementById("menu-toggle");
 const mobileTitle = document.getElementById("mobile-title");
+const floatingListeningControls = document.getElementById("floating-listening-controls");
 
 const requestedLessonId = new URLSearchParams(window.location.search).get("lesson");
 let activeLessonId = lessons.some(lesson => lesson.id === requestedLessonId)
@@ -398,6 +402,15 @@ const sleepTimerScheduler = sleepTimerApi.createScheduler({
     onExpire: handleSleepTimerExpired
 });
 let nativeListeningReady = false;
+let listeningPlayerObserver = null;
+let listeningPlayerVisible = true;
+let floatingListeningVisible = false;
+const floatingListeningDisplayLatch = listeningFloatingApi.createDisplayLatch({
+    onChange: visible => {
+        floatingListeningVisible = visible;
+        paintFloatingListeningControls();
+    }
+});
 const nativeListeningDriver = window.lessonGuideNativeListening?.createDriver({
     onStateChanged: applyNativeListeningState
 }) || null;
@@ -1717,6 +1730,86 @@ function currentListeningItem() {
     return listeningState.queue[listeningState.index] || null;
 }
 
+function paintFloatingListeningControls() {
+    const visible = floatingListeningVisible;
+    floatingListeningControls.hidden = !visible;
+    mainContent.classList.toggle("has-floating-listening-controls", visible);
+    if (!visible) {
+        floatingListeningControls.innerHTML = "";
+        return;
+    }
+
+    const isPlaying = listeningState.status !== "paused";
+    const total = listeningState.queue.length;
+    const atStart = listeningState.index <= 0;
+    const atEnd = listeningState.index >= total - 1;
+    floatingListeningControls.innerHTML = `
+        <div class="floating-listening-controls__bar" role="group" aria-label="${escapeHtml(t("listeningTitle"))}">
+            <button class="floating-listening-btn" type="button" data-listening-action="previous"
+                aria-label="${escapeHtml(t("listeningPrevious"))}" title="${escapeHtml(t("listeningPrevious"))}" ${atStart ? "disabled" : ""}>
+                ${previousIcon()}
+            </button>
+            <button class="floating-listening-btn is-primary" type="button" data-listening-action="${isPlaying ? "pause" : "resume"}"
+                aria-label="${escapeHtml(isPlaying ? t("listeningPause") : t("listeningResume"))}" title="${escapeHtml(isPlaying ? t("listeningPause") : t("listeningResume"))}">
+                ${isPlaying ? pauseIcon() : playIcon()}
+            </button>
+            <button class="floating-listening-btn" type="button" data-listening-action="next"
+                aria-label="${escapeHtml(t("listeningNext"))}" title="${escapeHtml(t("listeningNext"))}" ${atEnd ? "disabled" : ""}>
+                ${nextIcon()}
+            </button>
+        </div>
+    `;
+}
+
+function renderFloatingListeningControls() {
+    const lesson = activeLoadedLesson();
+    const lessonMatches = Boolean(lesson && lesson.id === listeningState.lessonId);
+    const shouldShow = listeningFloatingApi.shouldShow({
+        status: listeningState.status,
+        playerVisible: listeningPlayerVisible,
+        lessonMatches
+    });
+    const immediate = listeningPlayerVisible
+        || !lessonMatches
+        || ["idle", "ended"].includes(listeningState.status);
+    floatingListeningDisplayLatch.update(shouldShow, { immediate });
+    paintFloatingListeningControls();
+}
+
+function setListeningPlayerVisible(visible) {
+    if (listeningPlayerVisible === visible) return;
+    listeningPlayerVisible = visible;
+    renderFloatingListeningControls();
+}
+
+function observeListeningPlayer() {
+    listeningPlayerObserver?.disconnect();
+    listeningPlayerObserver = null;
+
+    const player = mainContent.querySelector("[data-listening-player]");
+    if (!player) {
+        listeningPlayerVisible = true;
+        renderFloatingListeningControls();
+        return;
+    }
+
+    listeningPlayerVisible = listeningFloatingApi.isIntersecting(
+        player.getBoundingClientRect(),
+        mainContent.getBoundingClientRect()
+    );
+    renderFloatingListeningControls();
+
+    if (!("IntersectionObserver" in window)) return;
+    listeningPlayerObserver = new IntersectionObserver(entries => {
+        const entry = entries[0];
+        setListeningPlayerVisible(Boolean(entry?.isIntersecting && entry.intersectionRatio > 0));
+    }, {
+        root: mainContent,
+        threshold: [0, 0.01, 1]
+    });
+    listeningPlayerObserver.observe(player);
+}
+
 function applyListeningHighlight() {
     clearListeningHighlight();
     if (!listeningState.currentRef || ["idle", "ended"].includes(listeningState.status)) return;
@@ -1742,7 +1835,12 @@ function applyListeningHighlight() {
     if (!shouldFollow || !target) return;
     listeningState.lastFollowedRef = listeningState.currentRef;
     window.requestAnimationFrame(() => {
-        target.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+        const plan = listeningFollowApi.scrollPlan(
+            target.getBoundingClientRect(),
+            mainContent.getBoundingClientRect()
+        );
+        if (!plan.shouldScroll) return;
+        target.scrollIntoView({ behavior: plan.behavior, block: "center", inline: "nearest" });
     });
 }
 
@@ -1756,6 +1854,7 @@ function refreshListeningPlayer() {
     if (!lesson || !player) return;
 
     player.outerHTML = renderListeningPlayer(lesson);
+    observeListeningPlayer();
     applyListeningHighlight();
 }
 
@@ -2560,7 +2659,7 @@ function applyStaticLocale() {
         link.setAttribute("aria-label", t("returnHome"));
     });
     lessonSearch.placeholder = t("searchPlaceholder");
-    menuToggle.setAttribute("aria-label", t("openLessonMenu"));
+    menuToggle.setAttribute("aria-label", t(sidebar.classList.contains("open") ? "closeLessonMenu" : "openLessonMenu"));
     renderLanguageSwitchers();
 }
 
@@ -2716,6 +2815,7 @@ function renderLoadedLesson(lesson, scrollTarget) {
     }
     mobileTitle.textContent = `${level}-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
     mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
+    observeListeningPlayer();
     scrollMainContent(scrollTarget);
     window.requestAnimationFrame(() => {
         scrollActiveTabIntoView();
@@ -2738,6 +2838,7 @@ async function renderMain(options = {}) {
 
     mobileTitle.textContent = `${level}-${String(lessonMeta.number).padStart(2, "0")} ${lessonMeta.titleKo}`;
     mainContent.innerHTML = renderHero(lessonMeta) + lessonRenderers.renderLoading(lessonMeta, lessonTitleTranslation);
+    observeListeningPlayer();
     scrollMainContent(scrollTarget);
 
     try {
@@ -2748,6 +2849,7 @@ async function renderMain(options = {}) {
     } catch (error) {
         if (runId !== renderRunId) return;
         mainContent.innerHTML = renderHero(lessonMeta) + lessonRenderers.renderLoadError(lessonMeta);
+        observeListeningPlayer();
         scrollMainContent(scrollTarget);
     }
 }
@@ -2770,9 +2872,29 @@ function switchAdjacentTab(direction, options = {}) {
     switchTab(tabs[nextIndex].id, options);
 }
 
+function toggleSidebar(force) {
+    const open = typeof force === "boolean" ? force : !sidebar.classList.contains("open");
+    sidebar.classList.toggle("open", open);
+    sidebarOverlay.classList.toggle("open", open);
+    menuToggle.setAttribute("aria-expanded", String(open));
+    menuToggle.setAttribute("aria-label", t(open ? "closeLessonMenu" : "openLessonMenu"));
+}
+
 function closeSidebar() {
-    sidebar.classList.remove("open");
-    sidebarOverlay.classList.remove("open");
+    toggleSidebar(false);
+}
+
+function handleListeningAction(button) {
+    const lesson = activeLoadedLesson();
+    if (!lesson || !button) return;
+
+    const action = button.dataset.listeningAction;
+    if (action === "start") startListening(lesson);
+    if (action === "pause") pauseListening();
+    if (action === "resume") resumeListening();
+    if (action === "stop") stopListening();
+    if (action === "previous") jumpListening(lesson, -1);
+    if (action === "next") jumpListening(lesson, 1);
 }
 
 lessonList.addEventListener("click", event => {
@@ -2789,16 +2911,7 @@ lessonList.addEventListener("click", event => {
 mainContent.addEventListener("click", event => {
     const listeningActionButton = event.target.closest("[data-listening-action]");
     if (listeningActionButton) {
-        const lesson = activeLoadedLesson();
-        if (!lesson) return;
-
-        const action = listeningActionButton.dataset.listeningAction;
-        if (action === "start") startListening(lesson);
-        if (action === "pause") pauseListening();
-        if (action === "resume") resumeListening();
-        if (action === "stop") stopListening();
-        if (action === "previous") jumpListening(lesson, -1);
-        if (action === "next") jumpListening(lesson, 1);
+        handleListeningAction(listeningActionButton);
         return;
     }
 
@@ -2824,6 +2937,10 @@ mainContent.addEventListener("click", event => {
         localStorage.setItem(localeStorageKeys.showTranslation, String(showChinese));
         renderMain();
     }
+});
+
+floatingListeningControls.addEventListener("click", event => {
+    handleListeningAction(event.target.closest("[data-listening-action]"));
 });
 
 mainContent.addEventListener("change", event => {
@@ -2900,10 +3017,13 @@ mainContent.addEventListener("touchcancel", () => {
 
 lessonSearch.addEventListener("input", renderLessonList);
 menuToggle.addEventListener("click", () => {
-    sidebar.classList.add("open");
-    sidebarOverlay.classList.add("open");
+    toggleSidebar();
 });
 sidebarOverlay.addEventListener("click", closeSidebar);
+
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && sidebar.classList.contains("open")) closeSidebar();
+});
 
 document.addEventListener("click", event => {
     const toggle = event.target.closest("[data-language-toggle]");
