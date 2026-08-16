@@ -40,6 +40,11 @@
     --kiip-type-supporting: 0.82rem;
     --kiip-type-label: 0.78rem;
 
+    --kiip-safe-area-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+    --kiip-safe-area-right: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
+    --kiip-safe-area-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+    --kiip-safe-area-left: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
+
     --bg: var(--kiip-color-bg);
     --bg-color: var(--kiip-color-bg);
     --panel: var(--kiip-color-panel);
@@ -66,4 +71,11 @@
     --secondary: var(--kiip-color-violet);
     --green: var(--kiip-color-green);
     --shadow: var(--kiip-color-shadow);
+}
+
+html {
+    padding-top: var(--kiip-safe-area-top);
+    padding-right: var(--kiip-safe-area-right);
+    padding-bottom: var(--kiip-safe-area-bottom);
+    padding-left: var(--kiip-safe-area-left);
 }

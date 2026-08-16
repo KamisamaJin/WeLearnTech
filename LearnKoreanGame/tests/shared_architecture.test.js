@@ -78,11 +78,34 @@ test("lesson shell keeps the generated root constrained to the viewport", () => 
     assert.match(css, /\.main-content\s*\{[^}]*min-height:\s*0[^}]*overflow-y:\s*auto/s);
 });
 
+test("mobile lesson layout balances the drawer search and clears the bottom edge", () => {
+    const css = fs.readFileSync(path.join(root, "lesson_guide.css"), "utf8");
+    assert.match(css, /@media \(max-width: 920px\)[\s\S]*?\.sidebar-header\s*\{\s*padding:\s*12px 20px;/);
+    assert.match(css, /@media \(max-width: 920px\)[\s\S]*?\.sidebar-subtitle\s*\{\s*display:\s*none;/);
+    assert.match(css, /@media \(max-width: 920px\)[\s\S]*?\.search-box\s*\{\s*margin-top:\s*0;/);
+    assert.match(css, /@media \(max-width: 920px\)[\s\S]*?\.main-content\s*\{\s*padding:\s*0 18px 48px;/);
+});
+
 test("grammar sidebar language toggle is desktop-only", () => {
     const html = fs.readFileSync(path.join(root, "grammar_wiki.html"), "utf8");
     const css = fs.readFileSync(path.join(root, "grammar/wiki.css"), "utf8");
     assert.match(html, /class="language-switcher desktop-language-switcher"/);
     assert.match(css, /@media \(max-width: 768px\)[\s\S]*?\.desktop-language-switcher\s*\{\s*display:\s*none;\s*\}/);
+});
+
+test("shared styles consume Capacitor system bar safe-area variables", () => {
+    const css = fs.readFileSync(path.join(root, "shared/styles/tokens.css"), "utf8");
+    for (const side of ["top", "right", "bottom", "left"]) {
+        assert.match(css, new RegExp(`--kiip-safe-area-${side}:\\s*var\\(--safe-area-inset-${side},\\s*env\\(safe-area-inset-${side},\\s*0px\\)\\)`));
+        assert.match(css, new RegExp(`padding-${side}:\\s*var\\(--kiip-safe-area-${side}\\)`));
+    }
+});
+
+test("the lesson home uses a dedicated scroll container with a sticky header", () => {
+    const css = fs.readFileSync(path.join(root, "lesson/home.css"), "utf8");
+    assert.match(css, /body\s*\{[^}]*overflow:\s*hidden;/s);
+    assert.match(css, /\.page\s*\{[^}]*height:\s*100%;[^}]*overflow-y:\s*auto;/s);
+    assert.match(css, /\.topbar\s*\{[^}]*position:\s*sticky;[^}]*top:\s*0;[^}]*z-index:\s*100;/s);
 });
 
 test("all lesson guides satisfy the shared lesson schema", () => {

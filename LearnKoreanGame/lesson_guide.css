@@ -1210,16 +1210,15 @@ summary {
     }
 
     .sidebar-header {
-        padding: 12px 20px 13px;
+        padding: 12px 20px;
     }
 
     .sidebar-subtitle {
-        margin-top: 0;
-        line-height: 1.35;
+        display: none;
     }
 
     .search-box {
-        margin-top: 9px;
+        margin-top: 0;
     }
 
     .sidebar.open {
@@ -1235,7 +1234,7 @@ summary {
     }
 
     .main-content {
-        padding: 0 18px 18px;
+        padding: 0 18px 48px;
     }
 
     .tabs {
