@@ -488,6 +488,7 @@ body {
 }
 @media (max-width: 768px) {
     .mobile-header { display: flex; }
+    .desktop-language-switcher { display: none; }
     .sidebar-heading .lesson-return-button { display: none; }
     .sidebar {
         position: fixed;

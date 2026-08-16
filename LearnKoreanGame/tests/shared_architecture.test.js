@@ -71,6 +71,20 @@ test("lesson and grammar pages keep styles and behavior outside HTML", () => {
     assert.match(grammar, /grammar\/bootstrap\.js/);
 });
 
+test("lesson shell keeps the generated root constrained to the viewport", () => {
+    const css = fs.readFileSync(path.join(root, "lesson_guide.css"), "utf8");
+    assert.match(css, /#lesson-guide-root\s*\{[^}]*height:\s*100%/s);
+    assert.match(css, /\.content-shell\s*\{[^}]*min-height:\s*0/s);
+    assert.match(css, /\.main-content\s*\{[^}]*min-height:\s*0[^}]*overflow-y:\s*auto/s);
+});
+
+test("grammar sidebar language toggle is desktop-only", () => {
+    const html = fs.readFileSync(path.join(root, "grammar_wiki.html"), "utf8");
+    const css = fs.readFileSync(path.join(root, "grammar/wiki.css"), "utf8");
+    assert.match(html, /class="language-switcher desktop-language-switcher"/);
+    assert.match(css, /@media \(max-width: 768px\)[\s\S]*?\.desktop-language-switcher\s*\{\s*display:\s*none;\s*\}/);
+});
+
 test("all lesson guides satisfy the shared lesson schema", () => {
     for (let number = 1; number <= 4; number += 1) {
         const guide = readGlobal(`lesson_data_l${number}.js`, `lessonGuideL${number}`);
