@@ -20,24 +20,31 @@ const lessonTranslationChunkPaths = config.translationChunkPaths || {
         ? Object.fromEntries(lessons.map(lesson => [lesson.id, `lesson_translations/en/${lesson.id}.js`]))
         : Object.fromEntries(lessons.filter(lesson => lesson.translationChunk).map(lesson => [lesson.id, lesson.translationChunk]))
 };
-const lessonCache = new Map();
-const lessonLoadPromises = new Map();
-const lessonTranslationLoadPromises = new Map();
-const loadedLessonScripts = new Set();
+const localeApi = window.KIIPLocale || {
+    supportedLocales: ["zh-CN", "en"],
+    shortLabels: { "zh-CN": "中", en: "EN" },
+    normalize: locale => ["zh-CN", "en"].includes(locale) ? locale : "zh-CN",
+    read: storage => ["zh-CN", "en"].includes(storage?.getItem("lessonGuideLocale")) ? storage.getItem("lessonGuideLocale") : "zh-CN",
+    write: (storage, locale) => {
+        storage?.setItem("lessonGuideLocale", locale);
+        storage?.setItem("lessonGuideUiLocale", locale);
+        storage?.setItem("lessonGuideTranslationLocale", locale);
+        return locale;
+    }
+};
+const iconApi = window.KIIPIcons;
 const localeStorageKeys = {
-    language: "lessonGuideLocale",
-    ui: "lessonGuideUiLocale",
-    translation: "lessonGuideTranslationLocale",
+    language: localeApi.storageKeys?.language || "lessonGuideLocale",
+    ui: localeApi.storageKeys?.legacyUi || "lessonGuideUiLocale",
+    translation: localeApi.storageKeys?.legacyTranslation || "lessonGuideTranslationLocale",
     showTranslation: "lessonGuideShowTranslation",
     listeningMode: "lessonGuideListeningMode",
     listeningSpeed: "lessonGuideListeningSpeed",
-    listeningRepeat: "lessonGuideListeningRepeat"
+    listeningRepeat: "lessonGuideListeningRepeat",
+    listeningSleepTimer: "lessonGuideListeningSleepTimer"
 };
-const localeShortNames = {
-    "zh-CN": "中文",
-    en: "EN"
-};
-const appLocales = ["zh-CN", "en"];
+const localeShortNames = localeApi.shortLabels;
+const appLocales = localeApi.supportedLocales;
 const messages = {
     "zh-CN": {
         appTitle: config.title || `${level} Lesson Guide`,
@@ -101,9 +108,13 @@ const messages = {
         listeningPreparing: "正在准备语音 {current} / {total}",
         listeningPaused: "已暂停 {current} / {total}",
         listeningEnded: "已播放完成",
+        listeningTimerEnded: "定时播放已结束",
         listeningModeLabel: "范围",
         listeningSpeedLabel: "语速",
         listeningRepeatLabel: "重复",
+        listeningSleepTimerLabel: "定时",
+        listeningSleepTimerOff: "关闭",
+        listeningSleepTimerMinutes: "{minutes} 分钟",
         listeningStart: "开始",
         listeningPause: "暂停",
         listeningResume: "继续",
@@ -184,9 +195,13 @@ const messages = {
         listeningPreparing: "Preparing audio {current} / {total}",
         listeningPaused: "Paused {current} / {total}",
         listeningEnded: "Finished",
+        listeningTimerEnded: "Sleep timer ended playback",
         listeningModeLabel: "Range",
         listeningSpeedLabel: "Speed",
         listeningRepeatLabel: "Repeat",
+        listeningSleepTimerLabel: "Timer",
+        listeningSleepTimerOff: "Off",
+        listeningSleepTimerMinutes: "{minutes} min",
         listeningStart: "Start",
         listeningPause: "Pause",
         listeningResume: "Resume",
@@ -333,6 +348,9 @@ const listeningRepeats = [
     { value: 2, labelKey: "listeningRepeatTwice" },
     { value: 3, labelKey: "listeningRepeatThrice" }
 ];
+const sleepTimerApi = window.KIIPSleepTimer;
+const listeningFollowApi = window.KIIPListeningFollow;
+const listeningSleepDurations = sleepTimerApi.durationMinutes;
 
 const lessonList = document.getElementById("lesson-list");
 const mainContent = document.getElementById("main-content");
@@ -347,22 +365,14 @@ let activeLessonId = lessons.some(lesson => lesson.id === requestedLessonId)
     ? requestedLessonId
     : lessons[0].id;
 let activeTab = "overview";
-const storedLocale = localStorage.getItem(localeStorageKeys.language);
-const legacyTranslationLocale = localStorage.getItem(localeStorageKeys.translation);
-const legacyUiLocale = localStorage.getItem(localeStorageKeys.ui);
-const initialLocale = appLocales.includes(storedLocale)
-    ? storedLocale
-    : appLocales.includes(legacyTranslationLocale)
-        ? legacyTranslationLocale
-        : appLocales.includes(legacyUiLocale)
-            ? legacyUiLocale
-            : "zh-CN";
+const initialLocale = localeApi.read(localStorage);
 let uiLocale = initialLocale;
 let translationLocale = initialLocale;
 let showChinese = localStorage.getItem(localeStorageKeys.showTranslation) !== "false";
 const storedListeningMode = localStorage.getItem(localeStorageKeys.listeningMode);
 const storedListeningSpeed = localStorage.getItem(localeStorageKeys.listeningSpeed);
 const storedListeningRepeat = Number(localStorage.getItem(localeStorageKeys.listeningRepeat));
+const storedSleepTimerMinutes = sleepTimerApi.normalizeDuration(localStorage.getItem(localeStorageKeys.listeningSleepTimer));
 const listeningState = {
     status: "idle",
     lessonId: null,
@@ -375,8 +385,18 @@ const listeningState = {
     error: "",
     restartOnResume: false,
     engine: "web",
-    sessionId: ""
+    sessionId: "",
+    sleepTimerMinutes: storedSleepTimerMinutes,
+    sleepTimerEndsAt: 0,
+    endReason: "",
+    lastFollowedRef: ""
 };
+const sleepTimerScheduler = sleepTimerApi.createScheduler({
+    setTimeout: window.setTimeout.bind(window),
+    clearTimeout: window.clearTimeout.bind(window),
+    onTick: updateSleepTimerDisplay,
+    onExpire: handleSleepTimerExpired
+});
 let nativeListeningReady = false;
 const nativeListeningDriver = window.lessonGuideNativeListening?.createDriver({
     onStateChanged: applyNativeListeningState
@@ -1693,19 +1713,41 @@ function clearListeningHighlight() {
     });
 }
 
+function currentListeningItem() {
+    return listeningState.queue[listeningState.index] || null;
+}
+
 function applyListeningHighlight() {
     clearListeningHighlight();
-    if (!listeningState.currentRef || listeningState.status === "idle") return;
+    if (!listeningState.currentRef || ["idle", "ended"].includes(listeningState.status)) return;
 
-    document.querySelectorAll("[data-listening-ref]").forEach(element => {
-        if (element.dataset.listeningRef === listeningState.currentRef) {
-            element.classList.add("is-listening-current");
-        }
+    const shouldFollow = listeningFollowApi.shouldFollow({
+        status: listeningState.status,
+        currentRef: listeningState.currentRef,
+        lastFollowedRef: listeningState.lastFollowedRef
+    });
+    const targetTab = listeningFollowApi.tabForItem(currentListeningItem());
+    const lesson = activeLoadedLesson();
+    if (shouldFollow && targetTab && targetTab !== activeTab && lesson?.id === listeningState.lessonId) {
+        activeTab = targetTab;
+        renderLoadedLesson(lesson, "preserve");
+        return;
+    }
+
+    const targets = Array.from(document.querySelectorAll("[data-listening-ref]"))
+        .filter(element => element.dataset.listeningRef === listeningState.currentRef);
+    targets.forEach(element => element.classList.add("is-listening-current"));
+
+    const target = targets[0];
+    if (!shouldFollow || !target) return;
+    listeningState.lastFollowedRef = listeningState.currentRef;
+    window.requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
     });
 }
 
 function activeLoadedLesson() {
-    return lessonCache.get(activeLessonId);
+    return lessonDataLoader.getCached(activeLessonId);
 }
 
 function refreshListeningPlayer() {
@@ -1717,10 +1759,68 @@ function refreshListeningPlayer() {
     applyListeningHighlight();
 }
 
+function updateSleepTimerDisplay(endsAt = listeningState.sleepTimerEndsAt) {
+    document.querySelectorAll("[data-sleep-timer-countdown]").forEach(element => {
+        const activeEndsAt = sleepTimerApi.normalizeEndsAt(endsAt);
+        element.textContent = activeEndsAt ? sleepTimerApi.formatRemaining(activeEndsAt) : "";
+        element.hidden = !activeEndsAt;
+    });
+}
+
+function cancelActiveSleepTimer(options = {}) {
+    const { notifyNative = true } = options;
+    listeningState.sleepTimerEndsAt = 0;
+    sleepTimerScheduler.cancel();
+    if (notifyNative && nativeListeningIsActive()) {
+        nativeListeningDriver.cancelSleepTimer()
+            .catch(error => console.debug?.("Native sleep timer cancellation failed", error));
+    }
+}
+
+function startSleepTimerForPlayback() {
+    const minutes = sleepTimerApi.normalizeDuration(listeningState.sleepTimerMinutes);
+    if (!minutes) {
+        cancelActiveSleepTimer();
+        return;
+    }
+
+    const endsAt = Date.now() + minutes * 60 * 1000;
+    listeningState.sleepTimerEndsAt = endsAt;
+    listeningState.endReason = "";
+    sleepTimerScheduler.setEndsAt(endsAt);
+    if (nativeListeningIsActive()) {
+        nativeListeningDriver.setSleepTimer(endsAt)
+            .catch(error => console.debug?.("Native sleep timer setup failed", error));
+    }
+    refreshListeningPlayer();
+}
+
+function handleSleepTimerExpired() {
+    if (!listeningState.sleepTimerEndsAt) return;
+    listeningState.sleepTimerEndsAt = 0;
+    listeningState.endReason = "timer";
+    listeningState.status = "ended";
+    listeningState.currentRef = "";
+    listeningState.lastFollowedRef = "";
+    speechRunId += 1;
+    releaseListeningWakeLock();
+    clearListeningHighlight();
+
+    if (nativeListeningIsActive()) {
+        nativeListeningDriver.stop("timer")
+            .catch(error => console.debug?.("Native sleep timer stop failed", error));
+    } else if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+    }
+    refreshListeningPlayer();
+}
+
 function setListeningError(message) {
     listeningState.status = "idle";
     listeningState.error = message;
     listeningState.currentRef = "";
+    listeningState.lastFollowedRef = "";
+    cancelActiveSleepTimer();
     releaseListeningWakeLock();
     refreshListeningPlayer();
 }
@@ -1739,6 +1839,13 @@ function applyNativeListeningState(state) {
     listeningState.currentRef = state.ref;
     listeningState.error = state.error || "";
     listeningState.restartOnResume = false;
+    listeningState.endReason = state.endReason || "";
+    listeningState.sleepTimerEndsAt = sleepTimerApi.normalizeEndsAt(state.sleepTimerEndsAt);
+    if (listeningState.sleepTimerEndsAt) {
+        sleepTimerScheduler.setEndsAt(listeningState.sleepTimerEndsAt);
+    } else {
+        sleepTimerScheduler.cancel();
+    }
 
     const lesson = activeLoadedLesson();
     if (lesson && lesson.id === state.lessonId && !listeningState.queue.length) {
@@ -1749,7 +1856,10 @@ function applyNativeListeningState(state) {
     }
 
     releaseListeningWakeLock();
-    if (state.status === "idle") clearListeningHighlight();
+    if (["idle", "ended"].includes(state.status)) {
+        listeningState.lastFollowedRef = "";
+        clearListeningHighlight();
+    }
     refreshListeningPlayer();
     applyListeningHighlight();
 }
@@ -1810,6 +1920,7 @@ async function startNativeListening(lesson, startIndex, queue) {
     try {
         await nativeListeningDriver.loadQueue(payload);
         await nativeListeningDriver.play(boundedIndex);
+        startSleepTimerForPlayback();
     } catch (error) {
         setListeningError(error?.message || t("listeningUnavailable"));
     }
@@ -1842,9 +1953,9 @@ function releaseListeningWakeLock() {
 }
 
 function stopListening(options = {}) {
-    const { render = true, clearError = true } = options;
+    const { render = true, clearError = true, endReason = "" } = options;
     if (nativeListeningIsActive()) {
-        nativeListeningDriver.stop().catch(error => console.debug?.("Native listening stop failed", error));
+        nativeListeningDriver.stop(endReason).catch(error => console.debug?.("Native listening stop failed", error));
     } else if ("speechSynthesis" in window) {
         window.speechSynthesis.cancel();
     }
@@ -1852,8 +1963,11 @@ function stopListening(options = {}) {
     listeningState.status = "idle";
     listeningState.index = 0;
     listeningState.currentRef = "";
+    listeningState.lastFollowedRef = "";
     listeningState.restartOnResume = false;
     listeningState.sessionId = "";
+    listeningState.endReason = endReason;
+    cancelActiveSleepTimer({ notifyNative: false });
     if (clearError) listeningState.error = "";
     releaseListeningWakeLock();
     clearListeningHighlight();
@@ -1998,6 +2112,9 @@ async function playListeningLoop(runId) {
     if (runId !== speechRunId || listeningState.status === "idle") return;
     listeningState.status = "ended";
     listeningState.currentRef = "";
+    listeningState.lastFollowedRef = "";
+    listeningState.endReason = "queue";
+    cancelActiveSleepTimer();
     releaseListeningWakeLock();
     clearListeningHighlight();
     refreshListeningPlayer();
@@ -2025,7 +2142,10 @@ async function startWebListening(lesson, startIndex = 0) {
     listeningState.currentRef = "";
     listeningState.error = "";
     listeningState.restartOnResume = false;
+    listeningState.endReason = "";
+    listeningState.lastFollowedRef = "";
     requestListeningWakeLock();
+    startSleepTimerForPlayback();
     refreshListeningPlayer();
 
     const voice = await waitForKoreanVoice();
@@ -2139,6 +2259,7 @@ function suspendListeningForBackground() {
 }
 
 function repairListeningAfterForeground() {
+    sleepTimerScheduler.tick();
     if (nativeListeningIsActive()) {
         nativeListeningDriver.getState()
             .then(applyNativeListeningState)
@@ -2216,6 +2337,32 @@ function getLessonStats(lesson) {
     };
 }
 
+const listeningQueueBuilder = window.KIIPListeningQueue.create({
+    t,
+    getTranslationLocale: () => translationLocale,
+    normalizeKoreanSpeechText,
+    hasHangul,
+    lessonTitleTranslation,
+    wordMeaning,
+    wordExampleTranslation,
+    lessonDialogues,
+    lineTranslation,
+    cultureTitleTranslation,
+    cultureTranslation
+});
+
+const lessonDataLoader = window.KIIPLessonDataLoader.create({
+    root: window,
+    document,
+    lessons,
+    lessonChunksGlobal: config.lessonChunksGlobal,
+    translationChunkPaths: lessonTranslationChunkPaths,
+    getTranslationLocale: () => translationLocale,
+    getTranslationChunk: getLessonTranslationChunk,
+    applyTranslations: applyLessonTranslationPacks,
+    normalizeLesson
+});
+
 function listeningSpeedConfig() {
     return listeningSpeeds.find(speed => speed.id === listeningState.speed) || listeningSpeeds[1];
 }
@@ -2224,109 +2371,8 @@ function listeningLanguage() {
     return translationLocale === "en" ? "en-US" : "zh-CN";
 }
 
-function normalizeListeningText(text, lang) {
-    if (lang === "ko-KR") return normalizeKoreanSpeechText(text);
-    return String(text || "")
-        .replace(/\s+/g, " ")
-        .trim();
-}
-
-function listeningItem(id, ref, section, label, text, mode = "sentence", pauseAfterMs = 700, lang = "ko-KR") {
-    const normalizedText = normalizeListeningText(text, lang);
-    if (lang === "ko-KR" ? !hasHangul(normalizedText) : !normalizedText) return null;
-
-    return {
-        id,
-        ref,
-        section,
-        label,
-        text: normalizedText,
-        lang,
-        mode,
-        pauseAfterMs
-    };
-}
-
-function translationListeningItem(id, ref, section, label, text, pauseAfterMs = 760) {
-    return listeningItem(id, ref, section, label, text, "translation", pauseAfterMs, listeningLanguage());
-}
-
-function pushListeningPair(queue, koreanItem, translationItem) {
-    if (koreanItem) queue.push(koreanItem);
-    if (translationItem) queue.push(translationItem);
-}
-
 function buildListeningQueue(lesson, mode = listeningState.mode) {
-    const queue = [];
-    const include = section => mode === "lesson" || mode === section;
-    const titleItem = listeningItem("lesson-title", "lesson-title", "overview", t("listeningModeLesson"), lesson.titleKo, "sentence", 900);
-    const titleTranslationItem = translationListeningItem("lesson-title-translation", "lesson-title", "overview", t("listeningModeLesson"), lessonTitleTranslation(lesson), 900);
-
-    if (mode === "lesson") pushListeningPair(queue, titleItem, titleTranslationItem);
-
-    if (include("vocabulary")) {
-        (lesson.vocabulary || []).forEach((item, index) => {
-            const ref = `vocab-${index}`;
-            const word = listeningItem(`vocab-${index}-word`, ref, "vocabulary", t("tabsVocabulary"), item.ko, "word", 420);
-            const wordTranslation = translationListeningItem(`vocab-${index}-word-translation`, ref, "vocabulary", t("tabsVocabulary"), wordMeaning(item), 560);
-            const example = listeningItem(`vocab-${index}-example`, ref, "vocabulary", t("tabsVocabulary"), item.exampleKo, "sentence", 820);
-            const exampleTranslation = translationListeningItem(`vocab-${index}-example-translation`, ref, "vocabulary", t("tabsVocabulary"), wordExampleTranslation(item), 820);
-            pushListeningPair(queue, word, wordTranslation);
-            pushListeningPair(queue, example, exampleTranslation);
-        });
-    }
-
-    if (include("dialogue")) {
-        lessonDialogues(lesson).forEach((dialogue, dialogueIndex) => {
-            (dialogue.lines || []).forEach((line, lineIndex) => {
-                const ref = `dialogue-${dialogueIndex}-line-${lineIndex}`;
-                const lineItem = listeningItem(
-                    `dialogue-${dialogueIndex}-line-${lineIndex}`,
-                    ref,
-                    "dialogue",
-                    dialogue.title || t("tabsDialogue"),
-                    line.ko,
-                    "sentence",
-                    900
-                );
-                const lineTranslationItem = translationListeningItem(
-                    `dialogue-${dialogueIndex}-line-${lineIndex}-translation`,
-                    ref,
-                    "dialogue",
-                    dialogue.title || t("tabsDialogue"),
-                    lineTranslation(line),
-                    900
-                );
-                pushListeningPair(queue, lineItem, lineTranslationItem);
-            });
-        });
-    }
-
-    if (include("culture") && lesson.culture) {
-        (lesson.culture.paragraphs || []).forEach((paragraph, index) => {
-            const ref = `culture-paragraph-${index}`;
-            const paragraphItem = listeningItem(
-                `culture-paragraph-${index}`,
-                ref,
-                "culture",
-                cultureTitleTranslation(lesson.culture) || t("tabsCulture"),
-                paragraph.ko,
-                "sentence",
-                1100
-            );
-            const paragraphTranslationItem = translationListeningItem(
-                `culture-paragraph-${index}-translation`,
-                ref,
-                "culture",
-                cultureTitleTranslation(lesson.culture) || t("tabsCulture"),
-                cultureTranslation(paragraph, "translation"),
-                1100
-            );
-            pushListeningPair(queue, paragraphItem, paragraphTranslationItem);
-        });
-    }
-
-    return queue;
+    return listeningQueueBuilder.build(lesson, mode);
 }
 
 function listeningIsActiveForLesson(lesson) {
@@ -2342,8 +2388,14 @@ function listeningStatusText(total) {
     if (listeningState.status === "preparing") return tf("listeningPreparing", { current, total });
     if (listeningState.status === "playing") return tf("listeningPlaying", { current, total });
     if (listeningState.status === "paused") return tf("listeningPaused", { current, total });
-    if (listeningState.status === "ended") return t("listeningEnded");
+    if (listeningState.status === "ended") {
+        return t(listeningState.endReason === "timer" ? "listeningTimerEnded" : "listeningEnded");
+    }
     return t("listeningIdle");
+}
+
+function sleepTimerOptionLabel(minutes) {
+    return minutes ? tf("listeningSleepTimerMinutes", { minutes }) : t("listeningSleepTimerOff");
 }
 
 function playIcon() {
@@ -2407,6 +2459,13 @@ function renderListeningPlayer(lesson) {
                 <div class="listening-heading">
                     <span class="listening-kicker">${escapeHtml(t("listeningTitle"))}</span>
                     <span class="listening-status">${escapeHtml(active ? listeningStatusText(total) : listeningStatusText(buildListeningQueue(lesson).length))}</span>
+                    <label class="listening-sleep-timer" title="${escapeHtml(t("listeningSleepTimerLabel"))}">
+                        ${iconApi.render("clock")}
+                        <select data-listening-setting="sleepTimer" aria-label="${escapeHtml(t("listeningSleepTimerLabel"))}">
+                            ${listeningSleepDurations.map(minutes => `<option value="${minutes}" ${minutes === listeningState.sleepTimerMinutes ? "selected" : ""}>${escapeHtml(sleepTimerOptionLabel(minutes))}</option>`).join("")}
+                        </select>
+                        <span class="listening-sleep-countdown" data-sleep-timer-countdown ${listeningState.sleepTimerEndsAt ? "" : "hidden"}>${listeningState.sleepTimerEndsAt ? escapeHtml(sleepTimerApi.formatRemaining(listeningState.sleepTimerEndsAt)) : ""}</span>
+                    </label>
                 </div>
                 <div class="listening-now" title="${escapeHtml(currentItem?.text || "")}">
                     ${currentItem ? `<span>${escapeHtml(t("listeningNow"))}</span>${escapeHtml(currentItem.text)}` : ""}
@@ -2452,92 +2511,19 @@ function renderListeningPlayer(lesson) {
 }
 
 function getLessonMeta(lessonId = activeLessonId) {
-    return lessons.find(lesson => lesson.id === lessonId) || lessons[0];
-}
-
-function versionedScriptSrc(src) {
-    const url = new URL(src, window.location.href);
-    const pageVersion = new URLSearchParams(window.location.search).get("v");
-    if (pageVersion && !url.searchParams.has("v")) {
-        url.searchParams.set("v", pageVersion);
-    }
-    return url.href;
-}
-
-function loadScript(src) {
-    const absoluteSrc = versionedScriptSrc(src);
-    if (loadedLessonScripts.has(absoluteSrc)) return Promise.resolve();
-
-    return new Promise((resolve, reject) => {
-        const script = document.createElement("script");
-        script.src = absoluteSrc;
-        script.async = true;
-        script.onload = () => {
-            loadedLessonScripts.add(absoluteSrc);
-            resolve();
-        };
-        script.onerror = () => reject(new Error(`课程数据加载失败：${absoluteSrc}`));
-        document.head.appendChild(script);
-    });
-}
-
-async function loadLessonTranslation(locale, lessonId) {
-    if (locale === "zh-CN" || getLessonTranslationChunk(locale, lessonId)) return;
-
-    const src = lessonTranslationChunkPaths[locale]?.[lessonId];
-    if (!src) return;
-
-    const promiseKey = `${locale}:${lessonId}`;
-    if (!lessonTranslationLoadPromises.has(promiseKey)) {
-        lessonTranslationLoadPromises.set(promiseKey, loadScript(src).catch(error => {
-            console.warn(error);
-        }));
-    }
-
-    await lessonTranslationLoadPromises.get(promiseKey);
+    return lessonDataLoader.getLessonMeta(lessonId);
 }
 
 async function loadLesson(lessonId) {
-    const meta = getLessonMeta(lessonId);
-    if (lessonCache.has(meta.id)) {
-        await loadLessonTranslation(translationLocale, meta.id);
-        return applyLessonTranslationPacks(lessonCache.get(meta.id));
-    }
-
-    if (!meta.chunk) {
-        await loadLessonTranslation(translationLocale, meta.id);
-        const lesson = applyLessonTranslationPacks(normalizeLesson(meta));
-        lessonCache.set(meta.id, lesson);
-        return lesson;
-    }
-
-    if (!lessonLoadPromises.has(meta.id)) {
-        lessonLoadPromises.set(meta.id, (async () => {
-            await loadScript(meta.chunk);
-            await loadLessonTranslation(translationLocale, meta.id);
-            const chunk = window[config.lessonChunksGlobal]?.[meta.id];
-            if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
-
-            const lesson = applyLessonTranslationPacks(normalizeLesson({
-                ...meta,
-                ...chunk
-            }));
-            lessonCache.set(meta.id, lesson);
-            return lesson;
-        })());
-    }
-
-    return lessonLoadPromises.get(meta.id);
+    return lessonDataLoader.load(lessonId);
 }
 
 function preloadNextLesson(lessonId) {
-    const currentIndex = lessons.findIndex(lesson => lesson.id === lessonId);
-    const next = lessons[currentIndex + 1];
-    if (!next?.chunk || lessonCache.has(next.id) || lessonLoadPromises.has(next.id)) return;
-    loadLesson(next.id).catch(() => {});
+    lessonDataLoader.preloadNext(lessonId);
 }
 
 function languageIcon() {
+    if (iconApi) return iconApi.render("globe");
     return `
         <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="10"></circle>
@@ -2553,12 +2539,12 @@ function renderLanguageSwitchers() {
         const nextLocale = translationLocale === "zh-CN" ? "en" : "zh-CN";
         const switchLabel = nextLocale === "en" ? t("switchToEnglish") : t("switchToChinese");
         switcher.innerHTML = `
-            <button class="language-toggle" type="button" data-language-toggle
+            <button class="language-toggle kiip-language-toggle" type="button" data-language-toggle
                 data-next-locale="${nextLocale}"
                 aria-label="${escapeHtml(switchLabel)}"
                 title="${escapeHtml(switchLabel)}">
                 ${languageIcon()}
-                <span class="language-toggle-text">${escapeHtml(localeShortNames[translationLocale] || translationLocale)}</span>
+                <span class="language-toggle-text kiip-language-toggle__label">${escapeHtml(localeShortNames[translationLocale] || translationLocale)}</span>
             </button>
         `;
     });
@@ -2579,18 +2565,17 @@ function applyStaticLocale() {
 }
 
 function setLocale(locale) {
-    if (!appLocales.includes(locale)) return;
+    const selectedLocale = localeApi.normalize(locale);
+    if (!appLocales.includes(selectedLocale)) return;
 
     if (["preparing", "playing", "paused"].includes(listeningState.status)) {
         stopListening({ render: false });
     }
 
-    uiLocale = locale;
-    translationLocale = locale;
+    uiLocale = selectedLocale;
+    translationLocale = selectedLocale;
     showChinese = true;
-    localStorage.setItem(localeStorageKeys.language, locale);
-    localStorage.setItem(localeStorageKeys.ui, locale);
-    localStorage.setItem(localeStorageKeys.translation, locale);
+    localeApi.write(localStorage, selectedLocale);
     localStorage.setItem(localeStorageKeys.showTranslation, "true");
 
     applyStaticLocale();
@@ -2600,7 +2585,7 @@ function setLocale(locale) {
 
 function lessonMatches(lesson, query) {
     if (!query) return true;
-    const searchableLesson = lessonCache.get(lesson.id) || lesson;
+    const searchableLesson = lessonDataLoader.getCached(lesson.id) || lesson;
     const haystack = [
         searchableLesson.titleKo,
         searchableLesson.titleZh,
@@ -2667,293 +2652,44 @@ function renderHero(lesson) {
     `;
 }
 
-function renderOverview(lesson) {
-    const stats = getLessonStats(lesson);
-    const goals = localizedArray(lesson, "goals", "goals");
-
-    return `
-        <div class="section-grid">
-            <button class="stat-card" type="button" data-tab="vocabulary">
-                <div class="stat-value">${stats.vocabulary}</div>
-                <div class="stat-label">${escapeHtml(t("statVocabulary"))}</div>
-            </button>
-            <button class="stat-card" type="button" data-tab="dialogue">
-                <div class="stat-value">${stats.dialogues}</div>
-                <div class="stat-label">${escapeHtml(t("statDialogue"))}</div>
-            </button>
-            <button class="stat-card" type="button" data-tab="culture">
-                <div class="stat-value">${stats.culture}</div>
-                <div class="stat-label">${escapeHtml(t("statCulture"))}</div>
-            </button>
-        </div>
-
-        <section class="content-card">
-            <h2>${escapeHtml(t("learningGoals"))}</h2>
-            <ul class="guide-list">
-                ${goals.map(goal => `<li>${escapeHtml(goal)}</li>`).join("")}
-            </ul>
-        </section>
-
-        <section class="content-card">
-            <h2>${escapeHtml(t("grammarLinks"))}</h2>
-            ${(lesson.grammar || []).length ? lesson.grammar.map((item, grammarIndex) => `
-                <a class="grammar-row grammar-link" href="${escapeHtml(grammarWikiHref(lesson, grammarIndex))}"
-                    aria-label="${escapeHtml(tf("openGrammarDetail", { pattern: item.pattern }))}">
-                    <span class="grammar-link-copy">
-                        <span class="pattern">${escapeHtml(item.pattern)} · ${escapeHtml(grammarMeaning(item))}</span>
-                        <span class="muted">${escapeHtml(grammarGuide(item))}</span>
-                    </span>
-                    <svg class="grammar-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M5 12h14"></path>
-                        <path d="m13 6 6 6-6 6"></path>
-                    </svg>
-                </a>
-            `).join("") : `<p class="muted">${escapeHtml(t("grammarPending"))}</p>`}
-        </section>
-    `;
-}
-
-function renderVocabulary(lesson) {
-    if (!lesson.vocabulary?.length) return renderTodo(t("vocabularyPendingTitle"), t("vocabularyPendingBody"));
-
-    return `
-        <div class="toolbar">
-            <div class="muted">${escapeHtml(tf("vocabularyToolbar", { count: lesson.vocabulary.length }))}</div>
-            <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
-        </div>
-        <div class="vocab-grid">
-            ${lesson.vocabulary.map((item, index) => `
-                <article class="word-card" data-listening-ref="vocab-${index}">
-                    <div class="word-top">
-                        <div class="word-title-line">
-                            <div class="word-ko">${escapeHtml(item.ko)}</div>
-                            ${hasHangul(item.ko) ? `<span class="word-pron">발음 [${escapeHtml(koreanPronunciation(item.ko))}]</span>` : ""}
-                        </div>
-                        ${hasHangul(item.ko) ? `<button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="${escapeHtml(koreanSpeechLabel(item.ko))}" title="${escapeHtml(koreanSpeechLabel(item.ko))}">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8 5v14l11-7z"></path>
-                            </svg>
-                        </button>` : ""}
-                    </div>
-                    ${showChinese ? `<div class="word-zh">${escapeHtml(wordMeaning(item))}</div>` : ""}
-                    ${renderWordGuide(lesson, item)}
-                    <div class="example-ko">${escapeHtml(item.exampleKo)}</div>
-                    ${showChinese ? `<div class="example-zh">${escapeHtml(wordExampleTranslation(item))}</div>` : ""}
-                    <div class="word-meta">
-                        <span class="word-source">${escapeHtml(formatWordSource(item))}</span>
-                        <span class="word-pos">${escapeHtml(formatWordPos(item.pos))}</span>
-                    </div>
-                </article>
-            `).join("")}
-        </div>
-    `;
-}
-
-function renderDialogue(lesson) {
-    const dialogues = lessonDialogues(lesson);
-    if (!dialogues.length) return renderTodo(t("dialoguePendingTitle"), t("dialoguePendingBody"));
-
-    const lineCount = dialogues.reduce((total, dialogue) => total + (dialogue.lines?.length || 0), 0);
-
-    return `
-        <div class="toolbar">
-            <div class="muted">${escapeHtml(tf("dialogueToolbar", { dialogues: dialogues.length, lines: lineCount }))}</div>
-            <button class="tool-btn" data-toggle-zh>${escapeHtml(showChinese ? t("hideTranslation") : t("showTranslation"))}</button>
-        </div>
-        ${dialogues.map((dialogue, dialogueIndex) => {
-            const speakers = Array.from(new Set((dialogue.lines || []).map(line => line.speaker)));
-            const scene = dialogueScene(dialogue);
-            const learningPoints = dialogueLearningPoints(dialogue);
-            const rolePlays = dialogueRolePlays(dialogue);
-            const drills = dialogueSideDrills(dialogue, rolePlays);
-
-            return `
-                <section class="content-card dialogue-card">
-                    <div class="dialogue-header">
-                        <div class="dialogue-title">
-                            <h2>${escapeHtml(dialogue.title)}</h2>
-                            <div class="dialogue-meta">
-                                <span class="dialogue-focus">${escapeHtml(dialogue.focus)}</span>
-                                ${dialogue.page ? `<span class="page-badge">p.${escapeHtml(dialogue.page)}</span>` : ""}
-                                ${dialogue.source ? `<span class="word-source">${escapeHtml(dialogue.source)}</span>` : ""}
-                            </div>
-                        </div>
-                        ${speakers.length ? `
-                            <div class="speaker-list">
-                                ${speakers.map(speaker => `<span class="speaker-chip">${escapeHtml(speaker)}</span>`).join("")}
-                            </div>
-                        ` : ""}
-                        ${scene && showChinese ? `<p class="dialogue-scene">${escapeHtml(scene)}</p>` : ""}
-                    </div>
-                    <div class="dialogue-layout">
-                        <div class="dialogue-transcript">
-                            <div class="dialogue-panel-title">${escapeHtml(t("dialoguePanelTitle"))}</div>
-                            ${(dialogue.lines || []).map((line, index) => `
-                                <div class="line-card" data-listening-ref="dialogue-${dialogueIndex}-line-${index}">
-                                    <div class="line-index">${index + 1}</div>
-                                    <div class="line-body">
-                                        <div class="line-speaker-row">
-                                            <span class="speaker">${escapeHtml(line.speaker)}</span>
-                                        </div>
-                                        <div class="line-ko-row">
-                                            <div class="line-ko">${escapeHtml(line.ko)}</div>
-                                            ${hasHangul(line.ko) ? `<button class="speak-btn" type="button" data-speak-ko="${escapeHtml(line.ko)}" data-speak-mode="sentence" aria-label="${escapeHtml(koreanSpeechLabel(line.ko))}" title="${escapeHtml(koreanSpeechLabel(line.ko))}">
-                                                <svg viewBox="0 0 24 24" aria-hidden="true">
-                                                    <path d="M8 5v14l11-7z"></path>
-                                                </svg>
-                                            </button>` : ""}
-                                        </div>
-                                        ${showChinese ? `<div class="line-zh">${escapeHtml(lineTranslation(line))}</div>` : ""}
-                                        ${showChinese ? `<div class="line-guide">${escapeHtml(lineGuide(line))}</div>` : ""}
-                                    </div>
-                                </div>
-                            `).join("")}
-                        </div>
-                        <aside class="dialogue-side">
-                            ${learningPoints.length && showChinese ? `
-                                <section class="dialogue-mini-panel">
-                                    <h3>${escapeHtml(t("readingTips"))}</h3>
-                                    <ul class="dialogue-points">
-                                        ${learningPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
-                                    </ul>
-                                </section>
-                            ` : ""}
-                            ${rolePlays.length ? `
-                                <details class="dialogue-mini-panel" open>
-                                    <summary>${escapeHtml(t("rolePractice"))}</summary>
-                                    <div class="role-task-grid">
-                                        ${rolePlays.map(task => `
-                                            <div class="role-task">
-                                                <h3>${escapeHtml(taskTitle(task))}</h3>
-                                                ${showChinese ? `<div class="muted">${escapeHtml(taskPrompt(task))}</div>` : ""}
-                                                <div class="drill-answer">${escapeHtml(task.answerKo)}</div>
-                                            </div>
-                                        `).join("")}
-                                    </div>
-                                </details>
-                            ` : ""}
-                            ${drills.length ? `
-                                <details class="dialogue-mini-panel">
-                                    <summary>${escapeHtml(t("substitutionPractice"))}</summary>
-                                    ${drills.map(drill => `
-                                        <div class="drill">
-                                            ${showChinese ? `<div>${escapeHtml(taskPrompt(drill))}</div>` : ""}
-                                            <div class="muted">${escapeHtml(t("patternLabel"))}：${escapeHtml(drill.pattern)}</div>
-                                            <div class="drill-answer">${escapeHtml(drill.answerKo)}</div>
-                                        </div>
-                                    `).join("")}
-                                </details>
-                            ` : ""}
-                        </aside>
-                    </div>
-                </section>
-            `;
-        }).join("")}
-    `;
-}
-
-function renderCulture(lesson) {
-    if (!lesson.culture) return renderTodo(t("culturePendingTitle"), t("culturePendingBody"));
-
-    const culture = lesson.culture;
-    return `
-        <section class="content-card">
-            <div class="eyebrow">
-                <span class="level-badge">${escapeHtml(culture.titleKo)}</span>
-                <span class="page-badge">${escapeHtml(cultureTitleTranslation(culture))}</span>
-                ${culture.page ? `<span class="page-badge">p.${escapeHtml(culture.page)}</span>` : ""}
-            </div>
-            <div class="culture-summary">${escapeHtml(cultureSummary(culture))}</div>
-            <h2>${escapeHtml(t("originalAndTranslation"))}</h2>
-            ${(culture.paragraphs || []).map((paragraph, index) => `
-                <div class="paragraph-block" data-listening-ref="culture-paragraph-${index}">
-                    <span class="paragraph-label">${escapeHtml(t("originalLabel"))}</span>
-                    <div class="paragraph-ko">${escapeHtml(paragraph.ko)}</div>
-                    <span class="paragraph-label">${escapeHtml(t("translationLabel"))}</span>
-                    <div class="paragraph-zh">${escapeHtml(cultureTranslation(paragraph, "translation"))}</div>
-                    <p class="line-guide">${escapeHtml(cultureTranslation(paragraph, "guide"))}</p>
-                </div>
-            `).join("")}
-        </section>
-
-        <section class="content-card">
-            <h2>${escapeHtml(t("keyTerms"))}</h2>
-            ${(culture.keyTerms || []).map(term => `
-                <div class="term-row">
-                    <div class="pattern">${escapeHtml(term.ko)}</div>
-                    <div>${escapeHtml(cultureTranslation(term, "meaning"))}</div>
-                </div>
-            `).join("")}
-        </section>
-
-        <section class="content-card">
-            <h2>${escapeHtml(t("comprehensionQuestions"))}</h2>
-            ${(culture.questions || []).map(item => `
-                <div class="qa-row">
-                    <div class="line-ko">${escapeHtml(item.q)}</div>
-                    <div class="line-zh">${escapeHtml(cultureTranslation(item, "translation"))}</div>
-                    <div class="muted">${escapeHtml(cultureTranslation(item, "answer"))}</div>
-                </div>
-            `).join("")}
-        </section>
-    `;
-}
-
-function renderPractice(lesson) {
-    if (!lesson.practice?.length) return renderTodo(t("practicePendingTitle"), t("practicePendingBody"));
-
-    return lesson.practice.map(item => `
-        <article class="practice-card">
-            <span class="practice-type">${escapeHtml(formatPracticeType(item.type))}</span>
-            <h3>${escapeHtml(taskTitle(item))}</h3>
-            <p>${escapeHtml(practicePrompt(item))}</p>
-            <details>
-                <summary>${escapeHtml(t("answer"))}</summary>
-                <div class="drill-answer">${escapeHtml(practiceAnswer(item))}</div>
-            </details>
-        </article>
-    `).join("");
-}
-
-function renderTodo(title, body) {
-    return `
-        <div class="todo-panel">
-            <div>
-                <h2>${escapeHtml(title)}</h2>
-                <p>${escapeHtml(body)}</p>
-            </div>
-        </div>
-    `;
-}
-
-function renderLoading(lesson) {
-    return `
-        <div class="todo-panel">
-            <div>
-                <h2>${escapeHtml(t("loadingTitle"))}</h2>
-                <p>${escapeHtml(lesson.titleKo)} · ${escapeHtml(lessonTitleTranslation(lesson))}</p>
-            </div>
-        </div>
-    `;
-}
-
-function renderLoadError(lesson) {
-    return `
-        <div class="todo-panel">
-            <div>
-                <h2>${escapeHtml(t("loadErrorTitle"))}</h2>
-                <p>${escapeHtml(tf("loadErrorBody", { title: lesson.titleKo }))}</p>
-            </div>
-        </div>
-    `;
-}
+const lessonRenderers = window.KIIPLessonRenderers.create({
+    t,
+    tf,
+    escapeHtml,
+    getShowTranslation: () => showChinese,
+    getLessonStats,
+    localizedArray,
+    grammarWikiHref,
+    grammarMeaning,
+    grammarGuide,
+    wordMeaning,
+    renderWordGuide,
+    wordExampleTranslation,
+    hasHangul,
+    koreanPronunciation,
+    koreanSpeechLabel,
+    formatWordSource,
+    formatWordPos,
+    lessonDialogues,
+    dialogueScene,
+    dialogueLearningPoints,
+    dialogueRolePlays,
+    dialogueSideDrills,
+    lineTranslation,
+    lineGuide,
+    taskTitle,
+    taskPrompt,
+    cultureTitleTranslation,
+    cultureSummary,
+    cultureTranslation,
+    formatPracticeType,
+    practicePrompt,
+    practiceAnswer,
+    icons: iconApi
+});
 
 function renderActiveTab(lesson) {
-    if (activeTab === "vocabulary") return renderVocabulary(lesson);
-    if (activeTab === "dialogue") return renderDialogue(lesson);
-    if (activeTab === "culture") return renderCulture(lesson);
-    if (activeTab === "practice") return renderPractice(lesson);
-    return renderOverview(lesson);
+    return lessonRenderers.renderActiveTab(lesson, activeTab);
 }
 
 function getTabsElement() {
@@ -2992,7 +2728,7 @@ async function renderMain(options = {}) {
     const lessonMeta = getLessonMeta();
     const runId = ++renderRunId;
 
-    if (lessonCache.has(lessonMeta.id) || !lessonMeta.chunk) {
+    if (lessonDataLoader.hasCached(lessonMeta.id) || !lessonMeta.chunk) {
         const lesson = await loadLesson(lessonMeta.id);
         if (runId !== renderRunId || lesson.id !== activeLessonId) return;
         renderLoadedLesson(lesson, scrollTarget);
@@ -3001,7 +2737,7 @@ async function renderMain(options = {}) {
     }
 
     mobileTitle.textContent = `${level}-${String(lessonMeta.number).padStart(2, "0")} ${lessonMeta.titleKo}`;
-    mainContent.innerHTML = renderHero(lessonMeta) + renderLoading(lessonMeta);
+    mainContent.innerHTML = renderHero(lessonMeta) + lessonRenderers.renderLoading(lessonMeta, lessonTitleTranslation);
     scrollMainContent(scrollTarget);
 
     try {
@@ -3011,7 +2747,7 @@ async function renderMain(options = {}) {
         preloadNextLesson(lesson.id);
     } catch (error) {
         if (runId !== renderRunId) return;
-        mainContent.innerHTML = renderHero(lessonMeta) + renderLoadError(lessonMeta);
+        mainContent.innerHTML = renderHero(lessonMeta) + lessonRenderers.renderLoadError(lessonMeta);
         scrollMainContent(scrollTarget);
     }
 }
@@ -3111,6 +2847,15 @@ mainContent.addEventListener("change", event => {
             listeningState.repeat = repeat;
             localStorage.setItem(localeStorageKeys.listeningRepeat, String(listeningState.repeat));
             restartListeningAfterSettingChange();
+        }
+    }
+    if (key === "sleepTimer") {
+        listeningState.sleepTimerMinutes = sleepTimerApi.normalizeDuration(setting.value);
+        localStorage.setItem(localeStorageKeys.listeningSleepTimer, String(listeningState.sleepTimerMinutes));
+        if (["preparing", "playing", "paused"].includes(listeningState.status)) {
+            startSleepTimerForPlayback();
+        } else {
+            cancelActiveSleepTimer({ notifyNative: false });
         }
     }
 

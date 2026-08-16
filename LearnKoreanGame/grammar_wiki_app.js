@@ -6,9 +6,23 @@
         api.mount();
     }
 })(typeof window !== "undefined" ? window : globalThis, function createGrammarWiki(root) {
-    const appLocales = ["zh-CN", "en"];
-    const localeStorageKey = "lessonGuideLocale";
-    const localeShortNames = { "zh-CN": "中", en: "EN" };
+    const localeApi = root.KIIPLocale || {
+        supportedLocales: ["zh-CN", "en"],
+        storageKeys: { language: "lessonGuideLocale" },
+        shortLabels: { "zh-CN": "中", en: "EN" },
+        normalize: locale => ["zh-CN", "en"].includes(locale) ? locale : "zh-CN",
+        read: storage => ["zh-CN", "en"].includes(storage?.getItem("lessonGuideLocale")) ? storage.getItem("lessonGuideLocale") : "zh-CN",
+        write: (storage, locale) => {
+            storage?.setItem("lessonGuideLocale", locale);
+            storage?.setItem("lessonGuideUiLocale", locale);
+            storage?.setItem("lessonGuideTranslationLocale", locale);
+            return locale;
+        }
+    };
+    const iconApi = root.KIIPIcons;
+    const appLocales = localeApi.supportedLocales;
+    const localeStorageKey = localeApi.storageKeys.language;
+    const localeShortNames = localeApi.shortLabels;
     const messages = {
         "zh-CN": {
             pageTitle: "KIIP Gramma Wiki",
@@ -73,7 +87,7 @@
     };
 
     function normalizeLocale(locale) {
-        return appLocales.includes(locale) ? locale : "zh-CN";
+        return localeApi.normalize(locale);
     }
 
     function translationFor(item, locale) {
@@ -153,6 +167,7 @@
     }
 
     function languageIcon() {
+        if (iconApi) return iconApi.render("globe");
         return `
             <svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="9"></circle>
@@ -179,18 +194,24 @@
         const mobileDetailLevel = document.getElementById("mobile-detail-level");
         const mobileDetailText = document.getElementById("mobile-detail-text");
         const menuToggle = document.getElementById("menu-toggle");
+        if (iconApi && menuToggle) menuToggle.innerHTML = iconApi.render("menu");
         const btnPrev = document.getElementById("btn-prev");
         const btnNext = document.getElementById("btn-next");
         let currentLevel = "all";
         let currentItemId = null;
         let detailTitleObserver = null;
-        let currentLocale = normalizeLocale(root.localStorage?.getItem(localeStorageKey));
+        let currentLocale = localeApi.read(root.localStorage);
         const pageParams = new URLSearchParams(root.location?.search || "");
         const requestedGrammarId = pageParams.get("grammar");
         const sourceLessonId = pageParams.get("lesson") || "";
         const openedFromLessonGuide = pageParams.get("source") === "lesson-guide"
             && /^l[1-4]-\d{2}$/.test(sourceLessonId);
         const lessonReturnButtons = [...document.querySelectorAll("[data-lesson-return]")];
+        if (iconApi) {
+            lessonReturnButtons.forEach(button => { button.innerHTML = iconApi.render("chevronLeft"); });
+            const guideLink = document.querySelector(".mobile-guide-link");
+            if (guideLink) guideLink.innerHTML = iconApi.render("book");
+        }
 
         function t(key) {
             return messages[currentLocale]?.[key] || messages["zh-CN"][key] || key;
@@ -214,12 +235,12 @@
                 const nextLocale = currentLocale === "zh-CN" ? "en" : "zh-CN";
                 const switchLabel = nextLocale === "en" ? t("switchToEnglish") : t("switchToChinese");
                 switcher.innerHTML = `
-                    <button class="language-toggle" type="button" data-language-toggle
+                    <button class="language-toggle kiip-language-toggle" type="button" data-language-toggle
                         data-next-locale="${nextLocale}"
                         aria-label="${escapeHtml(switchLabel)}"
                         title="${escapeHtml(switchLabel)}">
                         ${languageIcon()}
-                        <span>${escapeHtml(localeShortNames[currentLocale])}</span>
+                        <span class="kiip-language-toggle__label">${escapeHtml(localeShortNames[currentLocale])}</span>
                     </button>
                 `;
             });
@@ -467,9 +488,7 @@
             const nextLocale = normalizeLocale(locale);
             if (nextLocale === currentLocale) return;
             currentLocale = nextLocale;
-            root.localStorage?.setItem(localeStorageKey, currentLocale);
-            root.localStorage?.setItem("lessonGuideUiLocale", currentLocale);
-            root.localStorage?.setItem("lessonGuideTranslationLocale", currentLocale);
+            localeApi.write(root.localStorage, currentLocale);
             const selectedItem = currentItem();
             applyStaticLocale();
             renderNav();

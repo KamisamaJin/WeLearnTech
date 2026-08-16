@@ -73,6 +73,8 @@
             durationMs: Math.max(0, Number(value.durationMs) || 0),
             speed: String(value.speed || "normal"),
             repeat: Math.min(3, Math.max(1, Number(value.repeat) || 1)),
+            sleepTimerEndsAt: Math.max(0, Number(value.sleepTimerEndsAt) || 0),
+            endReason: String(value.endReason || ""),
             error: value.error ? String(value.error) : ""
         };
     }
@@ -111,11 +113,13 @@
             play: startIndex => invoke("play", startIndex == null ? {} : { startIndex }),
             pause: () => invoke("pause", {}),
             resume: () => invoke("resume", {}),
-            stop: () => invoke("stop", {}),
+            stop: endReason => invoke("stop", endReason ? { endReason } : {}),
             skipTo: index => invoke("skipTo", { index }),
             skipNext: () => invoke("skipNext", {}),
             skipPrevious: () => invoke("skipPrevious", {}),
             updateSettings: settings => invoke("updateSettings", settings),
+            setSleepTimer: endsAt => invoke("setSleepTimer", { endsAt }),
+            cancelSleepTimer: () => invoke("cancelSleepTimer", {}),
             getState: async () => normalizeState(await invoke("getState", {})),
             disconnect: async () => {
                 await listenerHandle?.remove?.();

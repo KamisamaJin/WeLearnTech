@@ -5,79 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>KIIP L3 Lesson Guide</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <script>
-        (function loadVersionedLessonGuideStyles() {
-            const version = new URLSearchParams(window.location.search).get("v");
-            const suffix = version ? "?v=" + encodeURIComponent(version) : "";
-            document.write('<link rel="stylesheet" href="lesson_guide.css' + suffix + '">');
-        })();
-    </script>
 </head>
-<body>
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-    <div class="app-shell">
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <div class="sidebar-title-row">
-                    <h1 class="sidebar-title">L3 Lesson Guide</h1>
-                    <div class="title-actions">
-                        <a class="home-link" href="lesson_guide.html" title="返回首页" aria-label="返回首页">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="m3 10.5 9-7 9 7"></path>
-                                <path d="M5 10v10h14V10"></path>
-                                <path d="M9 20v-6h6v6"></path>
-                            </svg>
-                        </a>
-                        <div class="language-switcher" data-language-switcher></div>
-                    </div>
-                </div>
-                <p class="sidebar-subtitle">单词、对话、文化文章中文伴学</p>
-                <input class="search-box" id="lesson-search" type="search" placeholder="搜索课文、单词或中文...">
-            </div>
-            <div class="lesson-list" id="lesson-list"></div>
-        </aside>
-
-        <div class="content-shell">
-            <header class="mobile-header">
-                <button class="menu-toggle" id="menu-toggle" aria-label="Open lesson menu">☰</button>
-                <div class="mobile-title" id="mobile-title">L3 Lesson Guide</div>
-                <a class="home-link" href="lesson_guide.html" title="返回首页" aria-label="返回首页">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="m3 10.5 9-7 9 7"></path>
-                        <path d="M5 10v10h14V10"></path>
-                        <path d="M9 20v-6h6v6"></path>
-                    </svg>
-                </a>
-                <div class="language-switcher" data-language-switcher></div>
-            </header>
-            <main class="main-content" id="main-content"></main>
-        </div>
-    </div>
-
-    <script>
-        window.lessonGuideConfig = {
-            level: "L3",
-            title: "L3 Lesson Guide",
-            dataGlobal: "lessonGuideL3",
-            translationsGlobal: "lessonGuideL3Translations",
-            lessonChunksGlobal: "lessonGuideL3LessonChunks",
-            translationChunksGlobal: "lessonGuideL3TranslationChunks",
-            translationChunkMode: "all",
-            get pronunciationOverrides() { return window.lessonGuidePronunciationOverrides || {}; }
-        };
-    </script>
-    <script>
-        (function loadVersionedLessonGuideScripts() {
-            const version = new URLSearchParams(window.location.search).get("v");
-            const suffix = version ? "?v=" + encodeURIComponent(version) : "";
-            document.write('<script src="lesson_guide_shared_tabs.js' + suffix + '"><\/script>');
-            document.write('<script src="lesson_data_l3.js' + suffix + '"><\/script>');
-            document.write('<script src="lesson_translations_l3_en.js' + suffix + '"><\/script>');
-            document.write('<script src="lesson_pronunciation_l3.js' + suffix + '"><\/script>');
-            document.write('<script src="lesson_listening_native.js' + suffix + '"><\/script>');
-            document.write('<script src="lesson_grammar_links.js' + suffix + '"><\/script>');
-            document.write('<script src="lesson_guide_app.js' + suffix + '"><\/script>');
-        })();
-    </script>
+<body data-level="L3">
+    <div id="lesson-guide-root"></div>
+    <script src="shared/lesson-page.js"></script>
+    <script>window.KIIPLessonPage.mount().catch(console.error);</script>
 </body>
 </html>

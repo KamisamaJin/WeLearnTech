@@ -61,5 +61,12 @@ assert.equal(state.status, "playing");
 assert.equal(state.index, 3);
 assert.equal(state.repeat, 3);
 assert.equal(nativeListening.normalizeState({ status: "unknown" }).status, "idle");
+const timerState = nativeListening.normalizeState({
+    status: "ended",
+    sleepTimerEndsAt: 1_800_000_000_000,
+    endReason: "timer"
+});
+assert.equal(timerState.sleepTimerEndsAt, 1_800_000_000_000);
+assert.equal(timerState.endReason, "timer");
 
 console.log("lesson listening native tests passed");

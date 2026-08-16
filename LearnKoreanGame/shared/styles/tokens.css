@@ -1,0 +1,69 @@
+:root {
+    color-scheme: dark;
+
+    --kiip-color-bg: #0f1117;
+    --kiip-color-panel: rgba(23, 27, 34, 0.84);
+    --kiip-color-panel-solid: #171b22;
+    --kiip-color-panel-raised: #202632;
+    --kiip-color-border: rgba(226, 232, 240, 0.1);
+    --kiip-color-text: #f6f1e8;
+    --kiip-color-text-soft: #c9d2df;
+    --kiip-color-text-muted: #8f9aab;
+    --kiip-color-primary: #5fd2c6;
+    --kiip-color-primary-rgb: 95, 210, 198;
+    --kiip-color-amber: #cda45e;
+    --kiip-color-amber-rgb: 205, 164, 94;
+    --kiip-color-rose: #d9827a;
+    --kiip-color-violet: #9aa7c7;
+    --kiip-color-green: #8fbd9a;
+    --kiip-color-shadow: rgba(0, 0, 0, 0.32);
+
+    --kiip-font-ui: 'Outfit', 'Noto Sans KR', system-ui, sans-serif;
+    --kiip-font-korean: 'Noto Sans KR', sans-serif;
+
+    --kiip-radius-control: 8px;
+    --kiip-radius-card: 8px;
+    --kiip-control-height: 40px;
+    --kiip-icon-button-size: 40px;
+    --kiip-language-toggle-width-mobile: 52px;
+
+    --kiip-space-1: 4px;
+    --kiip-space-2: 8px;
+    --kiip-space-3: 12px;
+    --kiip-space-4: 16px;
+    --kiip-space-5: 20px;
+    --kiip-space-6: 24px;
+
+    --kiip-type-section-title: 1.15rem;
+    --kiip-type-korean: 0.95rem;
+    --kiip-type-translation: 0.88rem;
+    --kiip-type-supporting: 0.82rem;
+    --kiip-type-label: 0.78rem;
+
+    --bg: var(--kiip-color-bg);
+    --bg-color: var(--kiip-color-bg);
+    --panel: var(--kiip-color-panel);
+    --panel-bg: var(--kiip-color-panel);
+    --panel-solid: var(--kiip-color-panel-solid);
+    --panel-raised: var(--kiip-color-panel-raised);
+    --line: var(--kiip-color-border);
+    --border: var(--kiip-color-border);
+    --text: var(--kiip-color-text);
+    --text-main: var(--kiip-color-text);
+    --soft: var(--kiip-color-text-soft);
+    --text-soft: var(--kiip-color-text-soft);
+    --muted: var(--kiip-color-text-muted);
+    --text-muted: var(--kiip-color-text-muted);
+    --teal: var(--kiip-color-primary);
+    --primary: var(--kiip-color-primary);
+    --teal-rgb: var(--kiip-color-primary-rgb);
+    --primary-rgb: var(--kiip-color-primary-rgb);
+    --amber: var(--kiip-color-amber);
+    --amber-rgb: var(--kiip-color-amber-rgb);
+    --rose: var(--kiip-color-rose);
+    --accent: var(--kiip-color-rose);
+    --violet: var(--kiip-color-violet);
+    --secondary: var(--kiip-color-violet);
+    --green: var(--kiip-color-green);
+    --shadow: var(--kiip-color-shadow);
+}
