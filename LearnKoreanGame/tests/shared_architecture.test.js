@@ -11,6 +11,7 @@ const lessonPage = require(path.join(root, "shared/lesson-page.js"));
 const schema = require(path.join(root, "lesson/schema.js"));
 const listeningQueue = require(path.join(root, "lesson/listening/queue.js"));
 const lessonDataLoader = require(path.join(root, "lesson/data-loader.js"));
+const lessonLabels = require(path.join(root, "lesson/labels.js"));
 const listeningFollow = require(path.join(root, "lesson/listening/follow.js"));
 const listeningFloating = require(path.join(root, "lesson/listening/floating.js"));
 const sleepTimer = require(path.join(root, "lesson/listening/sleep-timer.js"));
@@ -29,6 +30,51 @@ function readGlobal(file, expression) {
     vm.createContext(context);
     vm.runInContext(`${fs.readFileSync(path.join(root, file), "utf8")}\nglobalThis.result = ${expression};`, context);
     return context.result;
+}
+
+function collectLessonLabelValues() {
+    const tipTypes = new Set();
+    const wordPartsOfSpeech = new Set();
+    const practiceTypes = new Set();
+    const chunksDirectory = path.join(root, "lesson_chunks");
+
+    for (const filename of fs.readdirSync(chunksDirectory).filter(name => name.endsWith(".js"))) {
+        const context = {};
+        context.window = context;
+        context.globalThis = context;
+        vm.createContext(context);
+        vm.runInContext(fs.readFileSync(path.join(chunksDirectory, filename), "utf8"), context);
+
+        const seen = new Set();
+        function visit(value) {
+            if (!value || typeof value !== "object" || seen.has(value)) return;
+            seen.add(value);
+
+            if (value.ko && typeof value.pos === "string") {
+                value.pos.split("/").map(part => part.trim()).filter(Boolean).forEach(part => wordPartsOfSpeech.add(part));
+            }
+            if (value.ko && Array.isArray(value.tips)) {
+                value.tips.forEach(tip => {
+                    const type = Array.isArray(tip) ? tip[0] : tip?.type || tip?.label;
+                    if (type) tipTypes.add(type);
+                });
+            }
+            if (Array.isArray(value.practice)) {
+                value.practice.forEach(item => {
+                    if (item?.type) practiceTypes.add(item.type);
+                });
+            }
+
+            if (Array.isArray(value)) value.forEach(visit);
+            else Object.values(value).forEach(visit);
+        }
+
+        Object.entries(context)
+            .filter(([key]) => !["window", "globalThis"].includes(key))
+            .forEach(([, value]) => visit(value));
+    }
+
+    return { tipTypes, wordPartsOfSpeech, practiceTypes };
 }
 
 test("shared locale preserves legacy settings and writes compatible keys", () => {
@@ -83,6 +129,24 @@ test("lesson and grammar pages keep styles and behavior outside HTML", () => {
     assert.match(home, /lesson\/home\.js/);
     assert.match(grammar, /grammar\/wiki\.css/);
     assert.match(grammar, /grammar\/bootstrap\.js/);
+});
+
+test("all lesson labels are localized in Chinese and English", () => {
+    const values = collectLessonLabelValues();
+
+    assert.equal(lessonLabels.tipLabel("zh-CN", "mistake"), "易错");
+    assert.equal(lessonLabels.tipLabel("en", "mistake"), "Pitfall");
+    assert.equal(lessonLabels.tipLabel("zh-CN", "honorific"), "敬语");
+    assert.equal(lessonLabels.practiceLabel("zh-CN", "dialogue"), "对话");
+
+    for (const type of values.tipTypes) assert.equal(lessonLabels.hasTipType(type), true, `tip: ${type}`);
+    for (const pos of values.wordPartsOfSpeech) assert.equal(lessonLabels.hasPos(pos), true, `pos: ${pos}`);
+    for (const type of values.practiceTypes) assert.equal(lessonLabels.hasPracticeType(type), true, `practice: ${type}`);
+
+    const shell = fs.readFileSync(path.join(root, "shared/lesson-page.js"), "utf8");
+    const renderers = fs.readFileSync(path.join(root, "lesson/renderers.js"), "utf8");
+    assert.match(shell, /"lesson\/labels\.js"[\s\S]*"lesson\/renderers\.js"[\s\S]*"lesson_guide_app\.js"/);
+    assert.doesNotMatch(renderers, />발음 \[/);
 });
 
 test("lesson shell keeps the generated root constrained to the viewport", () => {

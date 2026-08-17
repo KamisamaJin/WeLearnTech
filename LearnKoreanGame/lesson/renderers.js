@@ -55,7 +55,7 @@
                 <div class="toolbar"><div class="muted">${escapeHtml(tf("vocabularyToolbar", { count: lesson.vocabulary.length }))}</div><button class="tool-btn" data-toggle-zh>${escapeHtml(reveal ? t("hideTranslation") : t("showTranslation"))}</button></div>
                 <div class="vocab-grid">${lesson.vocabulary.map((item, index) => `
                     <article class="word-card" data-listening-ref="vocab-${index}">
-                        <div class="word-top"><div class="word-title-line"><div class="word-ko">${escapeHtml(item.ko)}</div>${hasHangul(item.ko) ? `<span class="word-pron">발음 [${escapeHtml(koreanPronunciation(item.ko))}]</span>` : ""}</div>
+                        <div class="word-top"><div class="word-title-line"><div class="word-ko">${escapeHtml(item.ko)}</div>${hasHangul(item.ko) ? `<span class="word-pron">${escapeHtml(t("pronunciationLabel"))} [${escapeHtml(koreanPronunciation(item.ko))}]</span>` : ""}</div>
                         ${hasHangul(item.ko) ? `<button class="speak-btn" type="button" data-speak-ko="${escapeHtml(item.ko)}" data-speak-mode="word" aria-label="${escapeHtml(koreanSpeechLabel(item.ko))}" title="${escapeHtml(koreanSpeechLabel(item.ko))}">${speakIcon}</button>` : ""}</div>
                         ${reveal ? `<div class="word-zh">${escapeHtml(wordMeaning(item))}</div>` : ""}
                         ${renderWordGuide(lesson, item)}

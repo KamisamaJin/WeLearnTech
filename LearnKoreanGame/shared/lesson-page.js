@@ -129,6 +129,7 @@
             "lesson/listening/sleep-timer.js",
             "lesson/listening/queue.js",
             "lesson/data-loader.js",
+            "lesson/labels.js",
             "lesson/renderers.js",
             "lesson_guide_app.js"
         ];

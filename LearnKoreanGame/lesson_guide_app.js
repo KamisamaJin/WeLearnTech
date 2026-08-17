@@ -33,6 +33,7 @@ const localeApi = window.KIIPLocale || {
     }
 };
 const iconApi = window.KIIPIcons;
+const labelApi = window.KIIPLessonLabels;
 const localeStorageKeys = {
     language: localeApi.storageKeys?.language || "lessonGuideLocale",
     ui: localeApi.storageKeys?.legacyUi || "lessonGuideUiLocale",
@@ -132,7 +133,9 @@ const messages = {
         listeningRepeatOnce: "1 次",
         listeningRepeatTwice: "2 次",
         listeningRepeatThrice: "3 次",
-        listeningNow: "正在收听"
+        listeningNow: "正在收听",
+        pronunciationLabel: "发音",
+        playKoreanPronunciation: "播放韩语发音：{text}"
     },
     en: {
         appTitle: config.title || `${level} Lesson Guide`,
@@ -220,111 +223,9 @@ const messages = {
         listeningRepeatOnce: "1x",
         listeningRepeatTwice: "2x",
         listeningRepeatThrice: "3x",
-        listeningNow: "Listening"
-    }
-};
-const wordPosLabels = {
-    "zh-CN": {
-        "名词": "名词",
-        "名词短语": "名词短语",
-        "动词": "动词",
-        "动词短语": "动词短语",
-        "动词表达": "动词表达",
-        "形容词": "形容词",
-        "副词": "副词",
-        "副词短语": "副词短语",
-        "表达": "表达",
-        "语法": "语法",
-        "语法表达": "语法表达",
-        "汉字成语": "汉字成语",
-        "冠形词": "冠形词",
-        "俗语型表达": "俗语型表达",
-        "问候语": "问候语",
-        "机构名": "机构名",
-        "告示表达": "告示表达",
-        "数量表达": "数量表达",
-        "敬语动词": "敬语动词",
-        "敬语表达": "敬语表达",
-        "依存名词": "依存名词",
-        "问候表达": "问候表达",
-        "请求表达": "请求表达",
-        "명사": "名词",
-        "명사구": "名词短语",
-        "동사": "动词",
-        "동사구": "动词短语",
-        "형용사": "形容词",
-        "부사": "副词",
-        "부사구": "副词短语",
-        "표현": "表达",
-        "문법": "语法",
-        "문법 표현": "语法表达",
-        "한자성어": "汉字成语",
-        "관형사": "冠形词",
-        "속담형 표현": "俗语型表达",
-        "인사말": "问候语"
-    },
-    en: {
-        "名词": "Noun",
-        "名词短语": "Noun phrase",
-        "动词": "Verb",
-        "动词短语": "Verb phrase",
-        "动词表达": "Verb phrase",
-        "形容词": "Adjective",
-        "副词": "Adverb",
-        "副词短语": "Adverb phrase",
-        "表达": "Expression",
-        "语法": "Grammar",
-        "语法表达": "Grammar expression",
-        "汉字成语": "Idiom",
-        "冠形词": "Determiner",
-        "俗语型表达": "Proverbial expression",
-        "问候语": "Greeting",
-        "机构名": "Institution",
-        "告示表达": "Notice phrase",
-        "数量表达": "Quantity",
-        "敬语动词": "Honorific verb",
-        "敬语表达": "Honorific expression",
-        "依存名词": "Bound noun",
-        "问候表达": "Greeting",
-        "请求表达": "Request",
-        "명사": "Noun",
-        "명사구": "Noun phrase",
-        "동사": "Verb",
-        "동사구": "Verb phrase",
-        "형용사": "Adjective",
-        "부사": "Adverb",
-        "부사구": "Adverb phrase",
-        "표현": "Expression",
-        "문법": "Grammar",
-        "문법 표현": "Grammar expression",
-        "한자성어": "Idiom",
-        "관형사": "Determiner",
-        "속담형 표현": "Proverbial expression",
-        "인사말": "Greeting"
-    }
-};
-const practiceTypeLabels = {
-    "zh-CN": {
-        grammar: "语法",
-        culture: "文化",
-        speaking: "口语",
-        reading: "阅读",
-        writing: "写作",
-        vocabulary: "词汇",
-        translation: "翻译",
-        pattern: "句型",
-        listening: "听力"
-    },
-    en: {
-        grammar: "Grammar",
-        culture: "Culture",
-        speaking: "Speaking",
-        reading: "Reading",
-        writing: "Writing",
-        vocabulary: "Vocabulary",
-        translation: "Translation",
-        pattern: "Pattern",
-        listening: "Listening"
+        listeningNow: "Listening",
+        pronunciationLabel: "Pronunciation",
+        playKoreanPronunciation: "Play Korean pronunciation: {text}"
     }
 };
 const tabs = [
@@ -474,33 +375,12 @@ function uniqueGuideTips(tips) {
     });
 }
 
-const wordGuideTipTypeByLabel = {
-    "搭配": "collocation",
-    "易错": "pitfall",
-    "变形": "form",
-    collocation: "collocation",
-    pitfall: "pitfall",
-    form: "form"
-};
-const wordGuideTipLabels = {
-    "zh-CN": {
-        collocation: "搭配",
-        pitfall: "易错",
-        form: "变形"
-    },
-    en: {
-        collocation: "Pattern",
-        pitfall: "Pitfall",
-        form: "Form"
-    }
-};
-
 function wordGuideTipType(tip) {
-    return tip?.type || wordGuideTipTypeByLabel[tip?.label] || "";
+    return labelApi.normalizeTipType(tip?.type || tip?.label);
 }
 
 function wordGuideTipLabel(type) {
-    return wordGuideTipLabels[uiLocale]?.[type] || wordGuideTipLabels["zh-CN"][type] || type;
+    return labelApi.tipLabel(uiLocale, type);
 }
 
 function normalizeWordGuideTips(tips = []) {
@@ -923,21 +803,11 @@ function formatWordSource(item) {
 }
 
 function formatWordPos(pos) {
-    const label = String(pos || "").trim();
-    if (!label) return t("posPending");
-    const posMap = wordPosLabels[uiLocale] || wordPosLabels["zh-CN"];
-
-    return label
-        .split("/")
-        .map(part => posMap[part.trim()] || part.trim())
-        .join("/");
+    return labelApi.posLabel(uiLocale, pos, t("posPending"));
 }
 
 function formatPracticeType(type) {
-    const label = String(type || "").trim();
-    const typeMap = practiceTypeLabels[uiLocale] || practiceTypeLabels["zh-CN"];
-
-    return typeMap[label] || label || t("practiceFallback");
+    return labelApi.practiceLabel(uiLocale, type, t("practiceFallback"));
 }
 
 function hasHangul(value) {
@@ -945,7 +815,7 @@ function hasHangul(value) {
 }
 
 function koreanSpeechLabel(text) {
-    return `한국어 발음 재생: ${text}`;
+    return tf("playKoreanPronunciation", { text });
 }
 
 function normalizeKoreanSpeechText(value) {
