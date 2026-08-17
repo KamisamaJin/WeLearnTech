@@ -384,14 +384,14 @@ function wordGuideTipLabel(type) {
     return labelApi.tipLabel(uiLocale, type);
 }
 
-function normalizeWordGuideTips(tips = []) {
+function normalizeWordGuideTips(tips = [], word = "") {
     if (!Array.isArray(tips)) return [];
     return uniqueGuideTips(tips
         .map(tip => ({
             type: wordGuideTipType(tip),
             text: String(tip.text || "").trim()
         }))
-        .filter(tip => tip.type && tip.text)
+        .filter(tip => tip.type && tip.text && !labelApi.isRedundantWordTip(word, tip))
         .map(tip => ({
             type: tip.type,
             text: tip.text
@@ -404,13 +404,13 @@ function lessonHasWordGuideTips(lesson) {
 
 function localizedWordGuideTips(item) {
     const preferred = item?.translations?.[translationLocale]?.tips;
-    if (Array.isArray(preferred) && preferred.length) return normalizeWordGuideTips(preferred);
+    if (Array.isArray(preferred) && preferred.length) return normalizeWordGuideTips(preferred, item.ko);
     if (translationLocale !== "zh-CN") return [];
 
     const fallbackTranslation = item?.translations?.["zh-CN"]?.tips;
-    if (Array.isArray(fallbackTranslation) && fallbackTranslation.length) return normalizeWordGuideTips(fallbackTranslation);
+    if (Array.isArray(fallbackTranslation) && fallbackTranslation.length) return normalizeWordGuideTips(fallbackTranslation, item.ko);
 
-    return normalizeWordGuideTips(item?.tips);
+    return normalizeWordGuideTips(item?.tips, item.ko);
 }
 
 function renderWordGuideTips(tips) {

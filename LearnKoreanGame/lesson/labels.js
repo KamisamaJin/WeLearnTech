@@ -234,6 +234,15 @@
         return tipLabels[localeKey(locale)][type] || tipLabels["zh-CN"][type] || type;
     }
 
+    function normalizeComparableText(value) {
+        return String(value || "").normalize("NFKC").trim().replace(/\s+/g, " ");
+    }
+
+    function isRedundantWordTip(word, tip) {
+        const normalizedWord = normalizeComparableText(word);
+        return normalizedWord && normalizedWord === normalizeComparableText(tip?.text);
+    }
+
     function hasPos(value) {
         const parts = String(value || "").split("/").map(part => part.trim()).filter(Boolean);
         return parts.length > 0 && parts.every(part => Object.prototype.hasOwnProperty.call(chinesePosLabels, part));
@@ -259,6 +268,7 @@
         normalizeTipType,
         hasTipType,
         tipLabel,
+        isRedundantWordTip,
         hasPos,
         posLabel,
         hasPracticeType,

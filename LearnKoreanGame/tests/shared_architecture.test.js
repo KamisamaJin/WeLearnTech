@@ -94,6 +94,14 @@ test("shared icons expose a fixed, escaped icon API", () => {
     assert.throws(() => icons.render("unknown"), /Unknown KIIP icon/);
 });
 
+test("word tips hide guidance that only repeats the vocabulary entry", () => {
+    assert.equal(lessonLabels.isRedundantWordTip("한강", { type: "collocation", text: "한강" }), true);
+    assert.equal(lessonLabels.isRedundantWordTip("손님을 맞이하다", { label: "搭配", text: "  손님을   맞이하다 " }), true);
+    assert.equal(lessonLabels.isRedundantWordTip("한 부모 가족", { type: "spacing", text: "한 부모 가족" }), true);
+    assert.equal(lessonLabels.isRedundantWordTip("한강", { type: "collocation", text: "한강을 건너다" }), false);
+    assert.equal(lessonLabels.isRedundantWordTip("한부모 가족", { type: "spacing", text: "한 부모 가족" }), false);
+});
+
 test("level pages are thin configuration entries backed by one shell", () => {
     for (let number = 1; number <= 4; number += 1) {
         const level = `L${number}`;
