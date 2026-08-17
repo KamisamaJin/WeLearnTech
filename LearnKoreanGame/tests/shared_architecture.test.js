@@ -116,10 +116,17 @@ test("shared styles consume Capacitor system bar safe-area variables", () => {
 });
 
 test("the lesson home uses a dedicated scroll container with a sticky header", () => {
+    const html = fs.readFileSync(path.join(root, "lesson_guide.html"), "utf8");
     const css = fs.readFileSync(path.join(root, "lesson/home.css"), "utf8");
     assert.match(css, /body\s*\{[^}]*overflow:\s*hidden;/s);
-    assert.match(css, /\.page\s*\{[^}]*height:\s*100%;[^}]*overflow-y:\s*auto;/s);
+    assert.match(css, /\.page\s*\{[^}]*height:\s*100dvh;[^}]*overflow-y:\s*auto;/s);
     assert.match(css, /\.topbar\s*\{[^}]*position:\s*sticky;[^}]*top:\s*0;[^}]*z-index:\s*100;/s);
+    assert.match(css, /\.main\s*\{[^}]*padding:[^;]*var\(--kiip-safe-area-bottom\)[^;]*56px/s);
+    assert.equal((html.match(/<a class="level-card is-ready"/g) || []).length, 4);
+    assert.equal((html.match(/href="lesson_guide_l[1-4]\.html"/g) || []).length, 4);
+    assert.doesNotMatch(html, /class="card-action"/);
+    assert.match(css, /\.level-card:focus-visible/);
+    assert.match(css, /@media \(hover:\s*hover\) and \(pointer:\s*fine\)[\s\S]*?\.level-card\.is-ready:hover/);
 });
 
 test("all lesson guides satisfy the shared lesson schema", () => {
@@ -180,7 +187,24 @@ test("lesson data loader caches normalized lessons without a chunk", async () =>
     assert.equal(lesson.translated, true);
     assert.equal(loader.hasCached("l1-01"), true);
     assert.equal(loader.getCached("l1-01").goals.length, 0);
-    assert.match(loader.versionedScriptSrc("chunks/l1.js"), /chunks\/l1\.js\?v=test$/);
+    assert.equal(loader.resolveScriptSrc("chunks/l1.js"), "https://example.test/chunks/l1.js");
+});
+
+test("navigation and asset references do not hardcode cache versions", () => {
+    const files = [
+        "lesson_guide.html",
+        "index.html",
+        "shared/lesson-page.js",
+        "lesson/data-loader.js",
+        "lesson_grammar_links.js",
+        "grammar/bootstrap.js",
+        "grammar_wiki_app.js",
+        "script.js"
+    ];
+    for (const file of files) {
+        const source = fs.readFileSync(path.join(root, file), "utf8");
+        assert.doesNotMatch(source, /[?&]v=|searchParams\.set\(["']v["']|\.get\(["']v["']\)/, file);
+    }
 });
 
 test("listening follow changes tabs only when the playback reference changes", () => {

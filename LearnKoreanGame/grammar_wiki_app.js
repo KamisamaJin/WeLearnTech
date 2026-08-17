@@ -276,7 +276,7 @@
         function lessonGuideReturnHref() {
             const levelMatch = sourceLessonId.match(/^l([1-4])-/);
             if (!levelMatch) return "lesson_guide.html";
-            const params = new URLSearchParams({ lesson: sourceLessonId, v: "grammar-links-2" });
+            const params = new URLSearchParams({ lesson: sourceLessonId });
             return `lesson_guide_l${levelMatch[1]}.html?${params.toString()}`;
         }
 

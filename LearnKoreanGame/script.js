@@ -48,13 +48,8 @@ function shuffleArray(array) {
     return arr;
 }
 
-function versionedAsset(src) {
-    const version = new URLSearchParams(window.location.search).get('v');
-    return version ? `${src}?v=${encodeURIComponent(version)}` : src;
-}
-
 function loadScriptOnce(src) {
-    const absoluteSrc = new URL(versionedAsset(src), window.location.href).href;
+    const absoluteSrc = new URL(src, window.location.href).href;
     if (loadedDataScripts.has(absoluteSrc)) return Promise.resolve();
 
     return new Promise((resolve, reject) => {

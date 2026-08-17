@@ -20,15 +20,12 @@
         const translationLoadPromises = new Map();
         const loadedScripts = new Set();
 
-        function versionedScriptSrc(src) {
-            const url = new URL(src, root.location.href);
-            const pageVersion = new URLSearchParams(root.location.search).get("v");
-            if (pageVersion && !url.searchParams.has("v")) url.searchParams.set("v", pageVersion);
-            return url.href;
+        function resolveScriptSrc(src) {
+            return new URL(src, root.location.href).href;
         }
 
         function loadScript(src) {
-            const absoluteSrc = versionedScriptSrc(src);
+            const absoluteSrc = resolveScriptSrc(src);
             if (loadedScripts.has(absoluteSrc)) return Promise.resolve();
 
             return new Promise((resolve, reject) => {
@@ -112,7 +109,7 @@
             load,
             loadTranslation,
             preloadNext,
-            versionedScriptSrc
+            resolveScriptSrc
         });
     }
 

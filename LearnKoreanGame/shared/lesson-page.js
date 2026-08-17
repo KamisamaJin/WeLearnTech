@@ -16,16 +16,11 @@
         return selected;
     }
 
-    function versioned(pathname, search = root.location?.search || "") {
-        const version = new URLSearchParams(search).get("v");
-        return version ? `${pathname}?v=${encodeURIComponent(version)}` : pathname;
-    }
-
     function loadStyle(document, href) {
         return new Promise((resolve, reject) => {
             const link = document.createElement("link");
             link.rel = "stylesheet";
-            link.href = versioned(href);
+            link.href = href;
             link.addEventListener("load", resolve, { once: true });
             link.addEventListener("error", () => reject(new Error(`Unable to load ${href}`)), { once: true });
             document.head.appendChild(link);
@@ -35,7 +30,7 @@
     function loadScript(document, src) {
         return new Promise((resolve, reject) => {
             const script = document.createElement("script");
-            script.src = versioned(src);
+            script.src = src;
             script.async = false;
             script.addEventListener("load", resolve, { once: true });
             script.addEventListener("error", () => reject(new Error(`Unable to load ${src}`)), { once: true });
@@ -140,5 +135,5 @@
         for (const script of scripts) await loadScript(document, script);
     }
 
-    return Object.freeze({ levelSettings, normalizeLevel, versioned, createConfig, renderShell, mount });
+    return Object.freeze({ levelSettings, normalizeLevel, createConfig, renderShell, mount });
 });

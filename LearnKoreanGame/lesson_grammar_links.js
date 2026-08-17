@@ -84,8 +84,7 @@
         const params = new URLSearchParams({
             grammar: grammarId,
             source: "lesson-guide",
-            lesson: lessonId,
-            v: "grammar-links-2"
+            lesson: lessonId
         });
         return `grammar_wiki.html?${params.toString()}`;
     }

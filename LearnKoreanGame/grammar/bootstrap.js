@@ -1,15 +1,8 @@
 (function bootstrapGrammarWiki(root) {
-    function versioned(src) {
-        const url = new URL(src, root.location.href);
-        const version = new URLSearchParams(root.location.search).get("v");
-        if (version) url.searchParams.set("v", version);
-        return url.href;
-    }
-
     function loadScript(src) {
         return new Promise((resolve, reject) => {
             const script = root.document.createElement("script");
-            script.src = versioned(src);
+            script.src = src;
             script.async = false;
             script.addEventListener("load", resolve, { once: true });
             script.addEventListener("error", () => reject(new Error(`Unable to load ${src}`)), { once: true });
