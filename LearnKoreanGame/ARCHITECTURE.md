@@ -20,6 +20,7 @@
 8. Load and cache lesson chunks through `lesson/data-loader.js`; do not append data scripts from page renderers.
 9. Keep native listening protocol changes backward compatible and cover them with Web, Android, and iOS tests. Background timers must run in the native playback service/controller, not in the WebView.
 10. Keep navigation URLs free of release or cache versions. Use only business parameters such as `lesson`, `grammar`, and `source`.
+11. Generate `lesson_manifest_l*.js` and `lesson_search_l*.js` from the canonical `lesson_data_l*.js` files. Load the generated full-text search index only after the user starts a search.
 
 ## Cache policy
 
@@ -31,3 +32,9 @@
 ## Validation
 
 Run the Node test suite before syncing Web assets. Mobile builds must call `pnpm sync:web`, which copies this source tree into Capacitor and verifies the same resources on Android and iOS.
+
+After changing top-level lesson metadata or search text, regenerate derived assets with:
+
+```sh
+node scripts/generate_lesson_manifests.mjs
+```

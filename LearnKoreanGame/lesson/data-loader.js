@@ -75,9 +75,10 @@
 
             if (!lessonLoadPromises.has(meta.id)) {
                 lessonLoadPromises.set(meta.id, (async () => {
-                    await loadScript(meta.chunk);
+                    let chunk = root[lessonChunksGlobal]?.[meta.id];
+                    if (!chunk) await loadScript(meta.chunk);
                     await loadTranslation(getTranslationLocale(), meta.id);
-                    const chunk = root[lessonChunksGlobal]?.[meta.id];
+                    chunk = root[lessonChunksGlobal]?.[meta.id];
                     if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
                     const lesson = applyTranslations(normalizeLesson({ ...meta, ...chunk }));
                     lessonCache.set(meta.id, lesson);

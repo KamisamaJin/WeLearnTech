@@ -31,7 +31,7 @@
         return new Promise((resolve, reject) => {
             const script = document.createElement("script");
             script.src = src;
-            script.async = false;
+            script.async = true;
             script.addEventListener("load", resolve, { once: true });
             script.addEventListener("error", () => reject(new Error(`Unable to load ${src}`)), { once: true });
             document.body.appendChild(script);
@@ -49,7 +49,9 @@
             lessonChunksGlobal: `lessonGuide${selected}LessonChunks`,
             translationChunksGlobal: `lessonGuide${selected}TranslationChunks`,
             translationChunkMode: levelSettings[selected].translationChunkMode,
-            dataScript: `lesson_data_l${number}.js`,
+            dataScript: `lesson_manifest_l${number}.js`,
+            searchScript: `lesson_search_l${number}.js`,
+            searchGlobal: `lessonGuide${selected}Search`,
             translationScript: `lesson_translations_l${number}_en.js`,
             pronunciationScript: `lesson_pronunciation_l${number}.js`
         };
@@ -61,6 +63,8 @@
         const menuIcon = icons.render("menu");
         const rootElement = document.getElementById("lesson-guide-root");
         if (!rootElement) throw new Error("Missing #lesson-guide-root");
+        const locale = root.KIIPLocale?.read(root.localStorage) || "zh-CN";
+        const loadingTitle = locale === "en" ? "Loading lesson" : "正在加载课程";
 
         rootElement.innerHTML = `
             <div class="sidebar-overlay" id="sidebar-overlay"></div>
@@ -88,7 +92,7 @@
                         <a class="home-link kiip-icon-button" href="lesson_guide.html" title="返回首页" aria-label="返回首页">${homeIcon}</a>
                         <div class="language-switcher" data-language-switcher></div>
                     </header>
-                    <main class="main-content" id="main-content"></main>
+                    <main class="main-content" id="main-content"><div class="todo-panel" role="status"><div><h2>${loadingTitle}</h2></div></div></main>
                     <div class="floating-listening-controls" id="floating-listening-controls" hidden></div>
                 </div>
             </div>
@@ -101,15 +105,6 @@
         const config = createConfig(options.level || document.body?.dataset.level);
 
         document.title = `KIIP ${config.title}`;
-        await Promise.all([
-            loadStyle(document, "shared/styles/tokens.css"),
-            loadStyle(document, "shared/styles/components.css"),
-            loadStyle(document, "lesson_guide.css")
-        ]);
-        await loadScript(document, "shared/icons.js");
-        await loadScript(document, "shared/locale.js");
-        renderShell(document, config);
-
         root.lessonGuideConfig = {
             ...config,
             get pronunciationOverrides() {
@@ -117,9 +112,27 @@
             }
         };
 
-        const scripts = [
+        const stylesReady = Promise.all([
+            loadStyle(document, "shared/styles/tokens.css"),
+            loadStyle(document, "shared/styles/components.css"),
+            loadStyle(document, "lesson_guide.css")
+        ]);
+        const coreReady = Promise.all([
+            loadScript(document, "shared/icons.js"),
+            loadScript(document, "shared/locale.js")
+        ]);
+        const dataReady = loadScript(document, config.dataScript);
+        const activeLessonReady = dataReady.then(() => {
+            const lessonData = root[config.dataGlobal];
+            const requestedLessonId = new URLSearchParams(root.location?.search || "").get("lesson");
+            const activeLesson = lessonData?.lessons?.find(lesson => lesson.id === requestedLessonId)
+                || lessonData?.lessons?.[0];
+            return activeLesson?.chunk ? loadScript(document, activeLesson.chunk) : undefined;
+        });
+        const dependenciesReady = Promise.all([
+            dataReady,
+            activeLessonReady,
             "lesson_guide_shared_tabs.js",
-            config.dataScript,
             config.translationScript,
             config.pronunciationScript,
             "lesson_listening_native.js",
@@ -130,10 +143,13 @@
             "lesson/listening/queue.js",
             "lesson/data-loader.js",
             "lesson/labels.js",
-            "lesson/renderers.js",
-            "lesson_guide_app.js"
-        ];
-        for (const script of scripts) await loadScript(document, script);
+            "lesson/renderers.js"
+        ].map(task => typeof task === "string" ? loadScript(document, task) : task));
+
+        await Promise.all([stylesReady, coreReady]);
+        renderShell(document, config);
+        await dependenciesReady;
+        await loadScript(document, "lesson_guide_app.js");
     }
 
     return Object.freeze({ levelSettings, normalizeLevel, createConfig, renderShell, mount });

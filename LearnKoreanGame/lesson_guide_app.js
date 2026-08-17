@@ -270,6 +270,7 @@ let activeLessonId = lessons.some(lesson => lesson.id === requestedLessonId)
     ? requestedLessonId
     : lessons[0].id;
 let activeTab = "overview";
+let lessonSearchLoadPromise = null;
 const initialLocale = localeApi.read(localStorage);
 let uiLocale = initialLocale;
 let translationLocale = initialLocale;
@@ -2596,6 +2597,29 @@ function setLocale(locale) {
     renderMain({ scrollTarget: "preserve" });
 }
 
+function lessonSearchIndex() {
+    return resolveGlobalValue(config.searchGlobal) || {};
+}
+
+function ensureLessonSearchIndex() {
+    if (!config.searchScript || resolveGlobalValue(config.searchGlobal)) return Promise.resolve();
+    if (lessonSearchLoadPromise) return lessonSearchLoadPromise;
+
+    lessonSearchLoadPromise = new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = config.searchScript;
+        script.async = true;
+        script.addEventListener("load", resolve, { once: true });
+        script.addEventListener("error", () => reject(new Error(`Unable to load ${config.searchScript}`)), { once: true });
+        document.body.appendChild(script);
+    }).catch(error => {
+        console.warn(error);
+        lessonSearchLoadPromise = null;
+    });
+
+    return lessonSearchLoadPromise;
+}
+
 function lessonMatches(lesson, query) {
     if (!query) return true;
     const searchableLesson = lessonDataLoader.getCached(lesson.id) || lesson;
@@ -2604,7 +2628,7 @@ function lessonMatches(lesson, query) {
         searchableLesson.titleZh,
         JSON.stringify(searchableLesson.translations || ""),
         searchableLesson.number,
-        searchableLesson.searchText,
+        searchableLesson.searchText || lessonSearchIndex()[lesson.id],
         ...(searchableLesson.goals || []),
         ...(searchableLesson.grammar || []).map(item => `${item.pattern} ${item.zh} ${item.guide}`),
         ...(searchableLesson.vocabulary || []).map(item => `${item.ko} ${item.zh} ${item.guide}`),
@@ -2642,6 +2666,16 @@ function renderLessonList() {
             </span>
         </button>
     `).join("") || `<div class="todo-panel">${escapeHtml(t("noResults"))}</div>`;
+}
+
+function handleLessonSearchInput() {
+    const query = lessonSearch.value.trim();
+    renderLessonList();
+    if (!query || resolveGlobalValue(config.searchGlobal)) return;
+
+    ensureLessonSearchIndex().then(() => {
+        if (lessonSearch.value.trim() === query) renderLessonList();
+    });
 }
 
 function renderHero(lesson) {
@@ -2929,7 +2963,7 @@ mainContent.addEventListener("touchcancel", () => {
     tabSwipeState.tracking = false;
 }, { passive: true });
 
-lessonSearch.addEventListener("input", renderLessonList);
+lessonSearch.addEventListener("input", handleLessonSearchInput);
 menuToggle.addEventListener("click", () => {
     toggleSidebar();
 });

@@ -102,8 +102,30 @@ test("level pages are thin configuration entries backed by one shell", () => {
         assert.match(html, new RegExp(`data-level="${level}"`));
         assert.match(html, /shared\/lesson-page\.js/);
         assert.doesNotMatch(html, /document\.write|class="app-shell"/);
-        assert.equal(config.dataScript, `lesson_data_l${number}.js`);
+        assert.equal(config.dataScript, `lesson_manifest_l${number}.js`);
+        assert.equal(config.searchScript, `lesson_search_l${number}.js`);
+        assert.equal(config.searchGlobal, `lessonGuideL${number}Search`);
         assert.equal(config.translationChunkMode, level === "L3" ? "all" : "field");
+    }
+});
+
+test("generated lesson manifests keep search data off the startup path", () => {
+    for (let number = 1; number <= 4; number += 1) {
+        const source = readGlobal(`lesson_data_l${number}.js`, `lessonGuideL${number}`);
+        const manifest = readGlobal(`lesson_manifest_l${number}.js`, `lessonGuideL${number}`);
+        const search = readGlobal(`lesson_search_l${number}.js`, `lessonGuideL${number}Search`);
+
+        assert.equal(manifest.lessons.length, source.lessons.length);
+        source.lessons.forEach((lesson, index) => {
+            const { searchText = "", ...metadata } = lesson;
+            assert.deepEqual(JSON.parse(JSON.stringify(manifest.lessons[index])), JSON.parse(JSON.stringify(metadata)));
+            assert.equal(search[lesson.id], searchText);
+            assert.equal("searchText" in manifest.lessons[index], false);
+        });
+
+        const sourceSize = fs.statSync(path.join(root, `lesson_data_l${number}.js`)).size;
+        const manifestSize = fs.statSync(path.join(root, `lesson_manifest_l${number}.js`)).size;
+        assert.ok(manifestSize < sourceSize, `L${number} manifest should be smaller than its source`);
     }
 });
 
@@ -252,6 +274,38 @@ test("lesson data loader caches normalized lessons without a chunk", async () =>
     assert.equal(loader.hasCached("l1-01"), true);
     assert.equal(loader.getCached("l1-01").goals.length, 0);
     assert.equal(loader.resolveScriptSrc("chunks/l1.js"), "https://example.test/chunks/l1.js");
+});
+
+test("lesson data loader reuses a chunk prefetched during bootstrap", async () => {
+    const rootContext = {
+        location: { href: "https://example.test/lesson.html", search: "" },
+        lessonChunks: { "l1-01": { id: "l1-01", titleKo: "안녕하세요", vocabulary: [] } }
+    };
+    const loader = lessonDataLoader.create({
+        root: rootContext,
+        document: { createElement: () => { throw new Error("prefetched chunks must not be requested twice"); } },
+        lessons: [{ id: "l1-01", titleKo: "안녕하세요", chunk: "chunks/l1.js" }],
+        lessonChunksGlobal: "lessonChunks",
+        translationChunkPaths: {},
+        getTranslationLocale: () => "zh-CN",
+        getTranslationChunk: () => undefined,
+        applyTranslations: lesson => lesson,
+        normalizeLesson: lesson => lesson
+    });
+
+    const lesson = await loader.load("l1-01");
+    assert.equal(lesson.id, "l1-01");
+    assert.equal(loader.hasCached("l1-01"), true);
+});
+
+test("lesson bootstrap fetches independent dependencies in parallel", () => {
+    const shell = fs.readFileSync(path.join(root, "shared/lesson-page.js"), "utf8");
+    const app = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    assert.match(shell, /const dependenciesReady = Promise\.all\(/);
+    assert.match(shell, /const activeLessonReady = dataReady\.then/);
+    assert.doesNotMatch(shell, /for \(const script of scripts\) await loadScript/);
+    assert.match(app, /function ensureLessonSearchIndex\(\)/);
+    assert.match(app, /lessonSearch\.addEventListener\("input", handleLessonSearchInput\)/);
 });
 
 test("navigation and asset references do not hardcode cache versions", () => {
