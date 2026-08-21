@@ -19,6 +19,12 @@ Thumbs.db
 # Dependency directories (for future expansion)
 node_modules/
 jspm_packages/
+LearnKoreanMobile/www/
+LearnKoreanMobile/android/.gradle/
+LearnKoreanMobile/android/local.properties
+
+# Local-only KIIP voice generation tools and generated audio
+/KIIPAudio/
 
 # Logs
 logs
@@ -32,6 +38,7 @@ lerna-debug.log*
 build/
 dist/
 out/
+LearnKoreanMobile/android/app/build/
 
 # Environment variables
 .env
