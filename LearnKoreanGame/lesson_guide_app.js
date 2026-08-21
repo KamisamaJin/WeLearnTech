@@ -242,9 +242,9 @@ const listeningModes = [
     { id: "culture", labelKey: "listeningModeCulture" }
 ];
 const listeningSpeeds = [
-    { id: "slow", labelKey: "listeningSpeedSlow", sentenceRate: 0.68, wordRate: 0.74 },
-    { id: "normal", labelKey: "listeningSpeedNormal", sentenceRate: 0.78, wordRate: 0.82 },
-    { id: "fast", labelKey: "listeningSpeedFast", sentenceRate: 0.88, wordRate: 0.92 }
+    { id: "slow", labelKey: "listeningSpeedSlow", sentenceRate: 0.82, wordRate: 0.86 },
+    { id: "normal", labelKey: "listeningSpeedNormal", sentenceRate: 1, wordRate: 1 },
+    { id: "fast", labelKey: "listeningSpeedFast", sentenceRate: 1.08, wordRate: 1.12 }
 ];
 const listeningRepeats = [
     { value: 1, labelKey: "listeningRepeatOnce" },
@@ -304,6 +304,9 @@ const sleepTimerScheduler = sleepTimerApi.createScheduler({
     onExpire: handleSleepTimerExpired
 });
 let nativeListeningReady = false;
+let nativeSpeechPreviewSessionId = "";
+let nativeSpeechPreviewButton = null;
+let nativeVoiceSetupPromptOpen = false;
 let listeningPlayerObserver = null;
 let listeningPlayerObservationRunId = 0;
 let listeningPlayerVisible = true;
@@ -812,7 +815,7 @@ function formatPracticeType(type) {
 }
 
 function hasHangul(value) {
-    return /[가-힣]/.test(String(value || ""));
+    return window.KIIPListeningContent.hasHangul(value);
 }
 
 function koreanSpeechLabel(text) {
@@ -820,10 +823,7 @@ function koreanSpeechLabel(text) {
 }
 
 function normalizeKoreanSpeechText(value) {
-    return String(value || "")
-        .split(/\s+\/\s+/)[0]
-        .replace(/\s+/g, " ")
-        .trim();
+    return window.KIIPListeningContent.normalizeKoreanSpeechText(value);
 }
 
 const hangulBase = 0xac00;
@@ -1545,20 +1545,77 @@ function splitKoreanSpeech(text, mode) {
     return chunks.map(chunk => chunk.trim()).filter(Boolean);
 }
 
+function clearNativeSpeechPreview() {
+    nativeSpeechPreviewButton?.classList.remove("speaking");
+    nativeSpeechPreviewButton = null;
+    nativeSpeechPreviewSessionId = "";
+}
+
+function maybeOfferNativeVoiceSetup(error) {
+    if (!String(error || "").includes("TTS_VOICE_UNAVAILABLE") || nativeVoiceSetupPromptOpen) return;
+    nativeVoiceSetupPromptOpen = true;
+    window.setTimeout(() => {
+        nativeListeningDriver?.promptVoiceSetup(uiLocale)
+            .catch(setupError => console.debug?.("Unable to open voice setup", setupError))
+            .finally(() => { nativeVoiceSetupPromptOpen = false; });
+    }, 0);
+}
+
+async function startNativeSpeechPreview(text, mode, button) {
+    const lesson = activeLoadedLesson() || lessons.find(item => item.id === activeLessonId);
+    if (!lesson) throw new Error("No active lesson is available");
+
+    const payload = window.lessonGuideNativeListening.buildPreviewPayload({
+        sessionId: `preview:${Date.now().toString(36)}:${speechRunId}`,
+        level,
+        lesson,
+        lessonTranslation: lessonTitleTranslation(lesson),
+        translationLocale: listeningLanguage(),
+        text,
+        mode
+    });
+    nativeSpeechPreviewSessionId = payload.sessionId;
+    nativeSpeechPreviewButton = button || null;
+    await nativeListeningDriver.loadQueue(payload);
+    await nativeListeningDriver.play(0);
+}
+
 async function speakKorean(text, options = {}) {
-    if (!("speechSynthesis" in window) || !text) return;
-
-    stopListening({ render: true });
-
+    if (!text) return;
     const mode = options.mode || "word";
     const normalizedText = normalizeKoreanSpeechText(text);
     if (!hasHangul(normalizedText)) return;
 
-    const runId = ++speechRunId;
-    window.speechSynthesis.cancel();
+    if (nativeListeningDriver) {
+        try {
+            nativeListeningReady = nativeListeningReady || await nativeListeningDriver.connect();
+        } catch (_) {
+            nativeListeningReady = false;
+        }
+    }
 
+    stopListening({ render: true, notifyNative: !nativeListeningReady });
+    const runId = ++speechRunId;
     document.querySelectorAll(".speak-btn.speaking").forEach(button => button.classList.remove("speaking"));
     options.button?.classList.add("speaking");
+
+    if (nativeListeningReady) {
+        try {
+            await startNativeSpeechPreview(normalizedText, mode, options.button);
+            return;
+        } catch (error) {
+            clearNativeSpeechPreview();
+            nativeListeningReady = false;
+            nativeListeningDriver.stop("preview").catch(() => {});
+            console.debug?.("Native speech preview unavailable", error);
+        }
+    }
+
+    if (!("speechSynthesis" in window)) {
+        options.button?.classList.remove("speaking");
+        return;
+    }
+    window.speechSynthesis.cancel();
 
     const voice = await waitForKoreanVoice();
     if (runId !== speechRunId) {
@@ -1580,7 +1637,7 @@ async function speakKorean(text, options = {}) {
 
         const utterance = new SpeechSynthesisUtterance(chunks[index]);
         utterance.lang = "ko-KR";
-        utterance.rate = mode === "sentence" ? 0.78 : 0.82;
+        utterance.rate = 1;
         utterance.pitch = mode === "sentence" ? 0.92 : 0.98;
         utterance.volume = 1;
         utterance.voice = voice;
@@ -1839,6 +1896,23 @@ function nativeListeningIsActive() {
 
 function applyNativeListeningState(state) {
     nativeListeningReady = true;
+    const isPreviewState = window.lessonGuideNativeListening.isPreviewSession(state.sessionId);
+    if (nativeSpeechPreviewSessionId && state.sessionId && !isPreviewState) return;
+    if (isPreviewState) {
+        if (state.sessionId !== nativeSpeechPreviewSessionId) {
+            nativeListeningDriver.stop("preview").catch(() => {});
+            return;
+        }
+        const active = ["preparing", "playing", "paused"].includes(state.status);
+        nativeSpeechPreviewButton?.classList.toggle("speaking", active);
+        if (!active) {
+            maybeOfferNativeVoiceSetup(state.error);
+            clearNativeSpeechPreview();
+            nativeListeningDriver.stop("preview").catch(() => {});
+        }
+        return;
+    }
+    clearNativeSpeechPreview();
     listeningState.engine = "native";
     listeningState.sessionId = state.sessionId || listeningState.sessionId;
     listeningState.status = state.status;
@@ -1846,6 +1920,7 @@ function applyNativeListeningState(state) {
     listeningState.index = state.index;
     listeningState.currentRef = state.ref;
     listeningState.error = state.error || "";
+    if (state.status === "error") maybeOfferNativeVoiceSetup(state.error);
     listeningState.restartOnResume = false;
     listeningState.endReason = state.endReason || "";
     listeningState.sleepTimerEndsAt = sleepTimerApi.normalizeEndsAt(state.sleepTimerEndsAt);
@@ -1912,6 +1987,7 @@ async function startNativeListening(lesson, startIndex, queue) {
     const boundedIndex = Math.min(Math.max(startIndex, 0), queue.length - 1);
     const payload = nativeListeningPayload(lesson, queue, boundedIndex);
 
+    clearNativeSpeechPreview();
     listeningState.engine = "native";
     listeningState.sessionId = payload.sessionId;
     listeningState.status = "preparing";
@@ -1961,8 +2037,8 @@ function releaseListeningWakeLock() {
 }
 
 function stopListening(options = {}) {
-    const { render = true, clearError = true, endReason = "" } = options;
-    if (nativeListeningIsActive()) {
+    const { render = true, clearError = true, endReason = "", notifyNative = true } = options;
+    if (notifyNative && nativeListeningIsActive()) {
         nativeListeningDriver.stop(endReason).catch(error => console.debug?.("Native listening stop failed", error));
     } else if ("speechSynthesis" in window) {
         window.speechSynthesis.cancel();
@@ -2328,17 +2404,11 @@ function normalizeLesson(lesson) {
 }
 
 function isLessonDialogue(dialogue) {
-    const sourceText = [
-        dialogue?.source,
-        dialogue?.focus,
-        dialogue?.title
-    ].filter(Boolean).join(" ");
-
-    return !/(읽기|쓰기|발음)/.test(sourceText);
+    return window.KIIPListeningContent.isLessonDialogue(dialogue);
 }
 
 function lessonDialogues(lesson) {
-    return (lesson.dialogues || []).filter(isLessonDialogue);
+    return window.KIIPListeningContent.lessonDialogues(lesson);
 }
 
 function getLessonStats(lesson) {

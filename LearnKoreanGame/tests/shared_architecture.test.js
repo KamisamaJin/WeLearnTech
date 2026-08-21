@@ -9,6 +9,7 @@ const locale = require(path.join(root, "shared/locale.js"));
 const icons = require(path.join(root, "shared/icons.js"));
 const lessonPage = require(path.join(root, "shared/lesson-page.js"));
 const schema = require(path.join(root, "lesson/schema.js"));
+const listeningContent = require(path.join(root, "lesson/listening/content.js"));
 const listeningQueue = require(path.join(root, "lesson/listening/queue.js"));
 const lessonDataLoader = require(path.join(root, "lesson/data-loader.js"));
 const lessonLabels = require(path.join(root, "lesson/labels.js"));
@@ -115,6 +116,15 @@ test("level pages are thin configuration entries backed by one shell", () => {
         assert.equal(config.searchGlobal, `lessonGuideL${number}Search`);
         assert.equal(config.translationChunkMode, level === "L3" ? "all" : "field");
     }
+});
+
+test("lesson pages and audio tooling share Korean listening content rules", () => {
+    const shell = fs.readFileSync(path.join(root, "shared/lesson-page.js"), "utf8");
+    const app = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    assert.match(shell, /"lesson\/listening\/content\.js"[\s\S]*"lesson\/listening\/queue\.js"/);
+    assert.equal(listeningContent.normalizeKoreanSpeechText("  한국어  / Korean "), "한국어");
+    assert.match(app, /KIIPListeningContent\.normalizeKoreanSpeechText/);
+    assert.match(app, /KIIPListeningContent\.lessonDialogues/);
 });
 
 test("generated lesson manifests keep search data off the startup path", () => {
@@ -314,6 +324,15 @@ test("lesson bootstrap fetches independent dependencies in parallel", () => {
     assert.doesNotMatch(shell, /for \(const script of scripts\) await loadScript/);
     assert.match(app, /function ensureLessonSearchIndex\(\)/);
     assert.match(app, /lessonSearch\.addEventListener\("input", handleLessonSearchInput\)/);
+});
+
+test("single pronunciation uses native preview playback when available", () => {
+    const app = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    assert.match(app, /buildPreviewPayload\(/);
+    assert.match(app, /isPreviewSession\(state\.sessionId\)/);
+    assert.match(app, /stopListening\(\{ render: true, notifyNative: !nativeListeningReady \}\)/);
+    assert.match(app, /maybeOfferNativeVoiceSetup\(state\.error\)/);
+    assert.match(app, /nativeListeningDriver\?\.promptVoiceSetup\(uiLocale\)/);
 });
 
 test("navigation and asset references do not hardcode cache versions", () => {

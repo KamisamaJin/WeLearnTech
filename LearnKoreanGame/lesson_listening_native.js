@@ -60,6 +60,37 @@
         };
     }
 
+    function buildPreviewPayload(options = {}) {
+        const mode = options.mode === "word" ? "word" : "sentence";
+        const sessionId = options.sessionId || `preview:${Date.now().toString(36)}`;
+        return buildQueuePayload({
+            sessionId,
+            level: options.level,
+            lesson: options.lesson,
+            lessonTranslation: options.lessonTranslation,
+            settings: {
+                mode: "vocabulary",
+                speed: "normal",
+                repeat: 1,
+                translationLocale: options.translationLocale || "zh-CN"
+            },
+            queue: [{
+                id: `${sessionId}:item`,
+                ref: "",
+                section: "preview",
+                label: "",
+                text: options.text,
+                lang: "ko-KR",
+                mode,
+                pauseAfterMs: 0
+            }]
+        });
+    }
+
+    function isPreviewSession(sessionId) {
+        return String(sessionId || "").startsWith("preview:");
+    }
+
     function normalizeState(value = {}) {
         const status = allowedStatuses.has(value.status) ? value.status : "idle";
         return {
@@ -120,6 +151,8 @@
             updateSettings: settings => invoke("updateSettings", settings),
             setSleepTimer: endsAt => invoke("setSleepTimer", { endsAt }),
             cancelSleepTimer: () => invoke("cancelSleepTimer", {}),
+            openVoiceSetup: () => invoke("openVoiceSetup", {}),
+            promptVoiceSetup: locale => invoke("promptVoiceSetup", { locale }),
             getState: async () => normalizeState(await invoke("getState", {})),
             disconnect: async () => {
                 await listenerHandle?.remove?.();
@@ -132,6 +165,8 @@
     return {
         protocolVersion,
         buildQueuePayload,
+        buildPreviewPayload,
+        isPreviewSession,
         normalizeState,
         createDriver
     };

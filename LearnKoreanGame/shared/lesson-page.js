@@ -140,6 +140,7 @@
             "lesson/listening/follow.js",
             "lesson/listening/floating.js",
             "lesson/listening/sleep-timer.js",
+            "lesson/listening/content.js",
             "lesson/listening/queue.js",
             "lesson/data-loader.js",
             "lesson/labels.js",

@@ -49,6 +49,24 @@ assert.equal(payload.items[0].text, "대인 관계");
 assert.equal(payload.items[0].voice, undefined);
 assert.equal(payload.settings.repeat, 2);
 
+const preview = nativeListening.buildPreviewPayload({
+    sessionId: "preview:test",
+    level: "L4",
+    lesson: { id: "l4-01", titleKo: "한국 생활 적응" },
+    lessonTranslation: "适应韩国生活",
+    translationLocale: "zh-CN",
+    text: "부푼 꿈",
+    mode: "word"
+});
+assert.equal(nativeListening.isPreviewSession(preview.sessionId), true);
+assert.equal(nativeListening.isPreviewSession("lesson:test"), false);
+assert.equal(preview.items.length, 1);
+assert.equal(preview.items[0].text, "부푼 꿈");
+assert.equal(preview.items[0].lang, "ko-KR");
+assert.equal(preview.items[0].mode, "word");
+assert.equal(preview.items[0].pauseAfterMs, 0);
+assert.equal(preview.settings.repeat, 1);
+
 const state = nativeListening.normalizeState({
     status: "playing",
     lessonId: "l3-01",
@@ -68,5 +86,7 @@ const timerState = nativeListening.normalizeState({
 });
 assert.equal(timerState.sleepTimerEndsAt, 1_800_000_000_000);
 assert.equal(timerState.endReason, "timer");
+assert.match(nativeListening.createDriver.toString(), /openVoiceSetup/);
+assert.match(nativeListening.createDriver.toString(), /promptVoiceSetup/);
 
 console.log("lesson listening native tests passed");
