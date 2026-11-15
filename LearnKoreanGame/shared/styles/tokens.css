@@ -39,6 +39,13 @@
     --kiip-type-translation: 0.88rem;
     --kiip-type-supporting: 0.82rem;
     --kiip-type-label: 0.78rem;
+    --kiip-type-body: 1rem;
+    --kiip-type-app-title: 1.08rem;
+    --kiip-type-page-title: 1.75rem;
+    --kiip-type-headword: 1.2rem;
+    --kiip-type-action: 0.88rem;
+    --kiip-type-stat: 1.8rem;
+    --kiip-type-nav: 0.95rem;
 
     --kiip-safe-area-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
     --kiip-safe-area-right: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
@@ -74,8 +81,32 @@
 }
 
 html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     padding-top: var(--kiip-safe-area-top);
     padding-right: var(--kiip-safe-area-right);
     padding-bottom: var(--kiip-safe-area-bottom);
     padding-left: var(--kiip-safe-area-left);
+}
+
+@media (max-width: 920px) {
+    :root {
+        --kiip-type-app-title: 1rem;
+        --kiip-type-page-title: 1.25rem;
+        --kiip-type-section-title: 1rem;
+        --kiip-type-headword: 1rem;
+        --kiip-type-body: 0.875rem;
+        --kiip-type-korean: 0.9375rem;
+        --kiip-type-translation: 0.8125rem;
+        --kiip-type-supporting: 0.75rem;
+        --kiip-type-label: 0.6875rem;
+        --kiip-type-action: 0.8125rem;
+        --kiip-type-stat: 1.25rem;
+        --kiip-type-nav: 0.875rem;
+    }
+
+    body {
+        font-size: var(--kiip-type-body);
+        line-height: 1.6;
+    }
 }

@@ -49,7 +49,7 @@ const appLocales = localeApi.supportedLocales;
 const messages = {
     "zh-CN": {
         appTitle: config.title || `${level} Lesson Guide`,
-        sidebarSubtitle: "单词、对话、文化文章中文伴学",
+        sidebarSubtitle: "单词、语法与文化文章",
         searchPlaceholder: "搜索课文、单词或中文...",
         openLessonMenu: "打开课程菜单",
         closeLessonMenu: "关闭课程菜单",
@@ -63,6 +63,25 @@ const messages = {
         noResults: "没有匹配的课文",
         tabsOverview: "总览",
         tabsVocabulary: "单词",
+        tabsGrammar: "语法",
+        statGrammar: "语法与运用",
+        grammarToolbar: "{count} 个语法点 · {dialogues} 段运用对话",
+        grammarNumber: "语法 {number}",
+        grammarDetail: "详细解析",
+        grammarApplication: "对话运用",
+        grammarIntegrated: "综合运用",
+        grammarDialogueCount: "{count} 段对话",
+        grammarQuickReview: "本课句型",
+        grammarStudyMode: "学习模式",
+        grammarReadMode: "阅读",
+        grammarRecallMode: "自测",
+        grammarUsage: "怎么用",
+        grammarExamples: "例句",
+        grammarPrevious: "上一语法",
+        grammarNext: "继续学习",
+        grammarRevealMeaning: "查看含义与用法",
+        grammarRevealTranslation: "查看译文",
+        grammarExpressionNote: "表达提示",
         tabsDialogue: "对话",
         tabsCulture: "文化",
         tabsPractice: "练习",
@@ -139,7 +158,7 @@ const messages = {
     },
     en: {
         appTitle: config.title || `${level} Lesson Guide`,
-        sidebarSubtitle: "Vocabulary, dialogues, and culture notes",
+        sidebarSubtitle: "Vocabulary, grammar, and culture notes",
         searchPlaceholder: "Search lessons, words, or translations...",
         openLessonMenu: "Open lesson menu",
         closeLessonMenu: "Close lesson menu",
@@ -153,6 +172,25 @@ const messages = {
         noResults: "No matching lessons",
         tabsOverview: "Overview",
         tabsVocabulary: "Words",
+        tabsGrammar: "Grammar",
+        statGrammar: "Grammar & usage",
+        grammarToolbar: "{count} grammar points · {dialogues} dialogues",
+        grammarNumber: "Grammar {number}",
+        grammarDetail: "Full guide",
+        grammarApplication: "In conversation",
+        grammarIntegrated: "Integrated practice",
+        grammarDialogueCount: "{count} dialogues",
+        grammarQuickReview: "Lesson patterns",
+        grammarStudyMode: "Study mode",
+        grammarReadMode: "Read",
+        grammarRecallMode: "Recall",
+        grammarUsage: "Usage",
+        grammarExamples: "Examples",
+        grammarPrevious: "Previous",
+        grammarNext: "Continue",
+        grammarRevealMeaning: "Reveal meaning & usage",
+        grammarRevealTranslation: "Reveal translation",
+        grammarExpressionNote: "Expression notes",
         tabsDialogue: "Dialogue",
         tabsCulture: "Culture",
         tabsPractice: "Practice",
@@ -215,7 +253,7 @@ const messages = {
         listeningNext: "Next",
         listeningModeLesson: "Lesson",
         listeningModeVocabulary: "Words",
-        listeningModeDialogue: "Dialogue",
+        listeningModeDialogue: "Dialog",
         listeningModeCulture: "Culture",
         listeningSpeedSlow: "Slow",
         listeningSpeedNormal: "Normal",
@@ -231,7 +269,7 @@ const messages = {
 const tabs = [
     { id: "overview", labelKey: "tabsOverview" },
     { id: "vocabulary", labelKey: "tabsVocabulary" },
-    { id: "dialogue", labelKey: "tabsDialogue" },
+    { id: "grammar", labelKey: "tabsGrammar" },
     { id: "culture", labelKey: "tabsCulture" },
     { id: "practice", labelKey: "tabsPractice" }
 ];
@@ -265,11 +303,22 @@ const menuToggle = document.getElementById("menu-toggle");
 const mobileTitle = document.getElementById("mobile-title");
 const floatingListeningControls = document.getElementById("floating-listening-controls");
 
-const requestedLessonId = new URLSearchParams(window.location.search).get("lesson");
+const lessonPageParams = new URLSearchParams(window.location.search);
+const savedLessonView = window.history.state?.kiipLessonView;
+const requestedLessonId = lessonPageParams.get("lesson") || savedLessonView?.lessonId;
 let activeLessonId = lessons.some(lesson => lesson.id === requestedLessonId)
     ? requestedLessonId
     : lessons[0].id;
-let activeTab = "overview";
+const requestedTab = lessonPageParams.get("tab") || savedLessonView?.tab;
+let activeTab = tabs.some(tab => tab.id === requestedTab) ? requestedTab : "overview";
+let pendingLessonView = savedLessonView?.lessonId === activeLessonId && savedLessonView?.tab === activeTab
+    ? savedLessonView : null;
+let initialGrammarAnchor = activeTab === "grammar" && /^#grammar-\d+$/.test(window.location.hash)
+    ? window.location.hash.slice(1) : "";
+let grammarStudyMode = localStorage.getItem("lessonGuideGrammarStudyMode") === "recall" ? "recall" : "read";
+const grammarSelections = new Map();
+grammarSelections.set(activeLessonId, String(pendingLessonView?.grammarSelection
+    ?? (initialGrammarAnchor ? initialGrammarAnchor.replace("grammar-", "") : "0")));
 let lessonSearchLoadPromise = null;
 const initialLocale = localeApi.read(localStorage);
 let uiLocale = initialLocale;
@@ -758,7 +807,15 @@ function lessonTitleTranslation(item) {
 }
 
 function grammarMeaning(item) {
-    return getLocalizedValue(item, "meaning", "zh");
+    return getLocalizedValue(item, "meaning", "zh") || item.meaning || "";
+}
+
+function grammarExampleTranslation(item) {
+    if (translationLocale === "en") {
+        const english = item?.translations?.en;
+        return english?.translation || english?.zh || english?.example || item.en || "";
+    }
+    return item.zh || item.exampleZh || "";
 }
 
 function grammarGuide(item) {
@@ -766,7 +823,7 @@ function grammarGuide(item) {
 }
 
 function grammarWikiHref(lesson, grammarIndex) {
-    return window.lessonGuideGrammarLinks?.hrefFor(lesson.id, grammarIndex) || "grammar_wiki.html";
+    return window.lessonGuideGrammarLinks?.hrefFor(lesson.id, grammarIndex, { tab: activeTab }) || "grammar_wiki.html";
 }
 
 function dialogueScene(dialogue) {
@@ -778,6 +835,7 @@ function taskTitle(item) {
 }
 
 function taskPrompt(item) {
+    if (translationLocale === "en") return item?.translations?.en?.prompt || item?.promptEn || "";
     return getLocalizedValue(item, "prompt", "promptZh");
 }
 
@@ -1795,6 +1853,8 @@ function applyListeningHighlight() {
 
     const target = targets[0];
     if (!shouldFollow || !target) return;
+    selectGrammarPanel(target.closest("[data-grammar-panel]")?.dataset.grammarPanel);
+    listeningFollowApi.revealTarget(target);
     listeningState.lastFollowedRef = listeningState.currentRef;
     window.requestAnimationFrame(() => {
         const plan = listeningFollowApi.scrollPlan(
@@ -2558,28 +2618,31 @@ function renderListeningPlayer(lesson) {
             <div class="listening-settings" aria-label="${escapeHtml(t("listeningTitle"))}">
                 <label>
                     <span>${escapeHtml(t("listeningModeLabel"))}</span>
-                    <select data-listening-setting="mode">
+                    <select data-listening-setting="mode" aria-label="${escapeHtml(t("listeningModeLabel"))}">
                         ${listeningModes.map(mode => `<option value="${escapeHtml(mode.id)}" ${mode.id === listeningState.mode ? "selected" : ""}>${escapeHtml(t(mode.labelKey))}</option>`).join("")}
                     </select>
+                    ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
                 </label>
                 <label>
                     <span>${escapeHtml(t("listeningSpeedLabel"))}</span>
-                    <select data-listening-setting="speed">
+                    <select data-listening-setting="speed" aria-label="${escapeHtml(t("listeningSpeedLabel"))}">
                         ${listeningSpeeds.map(speed => `<option value="${escapeHtml(speed.id)}" ${speed.id === listeningState.speed ? "selected" : ""}>${escapeHtml(t(speed.labelKey))}</option>`).join("")}
                     </select>
+                    ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
                 </label>
                 <label>
                     <span>${escapeHtml(t("listeningRepeatLabel"))}</span>
-                    <select data-listening-setting="repeat">
+                    <select data-listening-setting="repeat" aria-label="${escapeHtml(t("listeningRepeatLabel"))}">
                         ${listeningRepeats.map(repeat => `<option value="${repeat.value}" ${repeat.value === listeningState.repeat ? "selected" : ""}>${escapeHtml(t(repeat.labelKey))}</option>`).join("")}
                     </select>
+                    ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
                 </label>
             </div>
             <div class="listening-controls">
                 <button class="listening-icon-btn" type="button" data-listening-action="previous" aria-label="${escapeHtml(t("listeningPrevious"))}" title="${escapeHtml(t("listeningPrevious"))}" ${active && total ? "" : "disabled"}>
                     ${previousIcon()}
                 </button>
-                <button class="listening-primary-btn" type="button" data-listening-action="${isPlaying ? "pause" : isPaused ? "resume" : "start"}" ${canSpeak && total ? "" : "disabled"}>
+                <button class="listening-primary-btn" type="button" data-listening-action="${isPlaying ? "pause" : isPaused ? "resume" : "start"}" aria-label="${escapeHtml(isPlaying ? t("listeningPause") : isPaused ? t("listeningResume") : t("listeningStart"))}" ${canSpeak && total ? "" : "disabled"}>
                     ${isPlaying ? pauseIcon() : playIcon()}
                     <span>${escapeHtml(isPlaying ? t("listeningPause") : isPaused ? t("listeningResume") : t("listeningStart"))}</span>
                 </button>
@@ -2763,6 +2826,7 @@ function renderHero(lesson) {
                 ${renderListeningPlayer(lesson)}
             </div>
         </section>
+        <div data-tabs-anchor aria-hidden="true"></div>
         <nav class="tabs">
             ${tabs.map(tab => `<button class="tab-btn ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}">${escapeHtml(t(tab.labelKey))}</button>`).join("")}
         </nav>
@@ -2779,6 +2843,10 @@ const lessonRenderers = window.KIIPLessonRenderers.create({
     grammarWikiHref,
     grammarMeaning,
     grammarGuide,
+    grammarExampleTranslation,
+    highlightGrammar: window.KIIPGrammarHighlight.render,
+    getGrammarStudyMode: () => grammarStudyMode,
+    getSelectedGrammar: () => grammarSelections.get(activeLessonId),
     wordMeaning,
     renderWordGuide,
     wordExampleTranslation,
@@ -2832,10 +2900,24 @@ function renderLoadedLesson(lesson, scrollTarget) {
         listeningState.currentRef = listeningState.queue[listeningState.index]?.ref || listeningState.currentRef;
     }
     mobileTitle.textContent = `${level}-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
+    const previousScrollTop = mainContent.scrollTop;
     mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
-    scrollMainContent(scrollTarget);
+    const returnView = pendingLessonView;
+    const returnAnchor = initialGrammarAnchor;
+    pendingLessonView = null;
+    initialGrammarAnchor = "";
+    if (!returnView && !returnAnchor && scrollTarget === "preserve") {
+        mainContent.scrollTo({ top: previousScrollTop, behavior: "auto" });
+    } else {
+        scrollMainContent(returnView || returnAnchor ? "preserve" : scrollTarget);
+    }
+    scrollActiveTabIntoView();
     window.requestAnimationFrame(() => {
-        scrollActiveTabIntoView();
+        if (returnView && Number.isFinite(returnView.scrollTop)) {
+            mainContent.scrollTo({ top: Math.max(0, returnView.scrollTop), behavior: "auto" });
+        } else if (returnAnchor) {
+            document.getElementById(returnAnchor)?.scrollIntoView({ block: "start", behavior: "auto" });
+        }
         applyListeningHighlight();
         observeListeningPlayerAfterLayout();
     });
@@ -2877,7 +2959,7 @@ function switchTab(tabId, options = {}) {
 
     activeTab = tabId;
     renderMain({
-        scrollTarget: options.keepSticky ? "tabs" : "top"
+        scrollTarget: options.scrollTarget || "tabs"
     });
 }
 
@@ -2888,6 +2970,21 @@ function switchAdjacentTab(direction, options = {}) {
     const nextIndex = Math.min(Math.max(currentIndex + direction, 0), tabs.length - 1);
     if (nextIndex === currentIndex) return;
     switchTab(tabs[nextIndex].id, options);
+}
+
+function selectGrammarPanel(key, { scroll = false } = {}) {
+    if (key == null) return;
+    const panels = [...mainContent.querySelectorAll("[data-grammar-panel]")];
+    if (!panels.some(panel => panel.dataset.grammarPanel === key)) return;
+    grammarSelections.set(activeLessonId, key);
+    panels.forEach(panel => { panel.hidden = panel.dataset.grammarPanel !== key; });
+    mainContent.querySelectorAll('.grammar-selector [role="tab"]').forEach(button => {
+        const selected = button.dataset.grammarSelect === key;
+        button.setAttribute("aria-selected", String(selected));
+        button.tabIndex = selected ? 0 : -1;
+        if (selected && scroll) button.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "auto" });
+    });
+    if (scroll) mainContent.querySelector(".grammar-workspace")?.scrollIntoView({ block: "start", behavior: "auto" });
 }
 
 function toggleSidebar(force) {
@@ -2927,6 +3024,40 @@ lessonList.addEventListener("click", event => {
 });
 
 mainContent.addEventListener("click", event => {
+    const grammarLink = event.target.closest('a[href^="grammar_wiki.html"]');
+    if (grammarLink) {
+        const url = new URL(window.location.href);
+        url.searchParams.set("lesson", activeLessonId);
+        url.searchParams.set("tab", activeTab);
+        window.history.replaceState({
+            ...window.history.state,
+            kiipLessonView: {
+                lessonId: activeLessonId, tab: activeTab, scrollTop: mainContent.scrollTop,
+                grammarSelection: grammarSelections.get(activeLessonId)
+            }
+        }, "", url);
+        return;
+    }
+    const grammarChoice = event.target.closest("[data-grammar-select]");
+    if (grammarChoice) {
+        selectGrammarPanel(grammarChoice.dataset.grammarSelect, { scroll: true });
+        return;
+    }
+    const grammarJump = event.target.closest("[data-grammar-jump]");
+    if (grammarJump) {
+        event.preventDefault();
+        const target = document.getElementById(grammarJump.dataset.grammarJump);
+        listeningFollowApi.revealTarget(target);
+        target?.scrollIntoView({ block: "start", behavior: "auto" });
+        return;
+    }
+    const studyMode = event.target.closest("[data-grammar-study-mode]");
+    if (studyMode && ["read", "recall"].includes(studyMode.dataset.grammarStudyMode)) {
+        grammarStudyMode = studyMode.dataset.grammarStudyMode;
+        localStorage.setItem("lessonGuideGrammarStudyMode", grammarStudyMode);
+        renderMain({ scrollTarget: "preserve" });
+        return;
+    }
     const listeningActionButton = event.target.closest("[data-listening-action]");
     if (listeningActionButton) {
         handleListeningAction(listeningActionButton);
@@ -2936,7 +3067,7 @@ mainContent.addEventListener("click", event => {
     const tabButton = event.target.closest("[data-tab]");
     if (tabButton) {
         switchTab(tabButton.dataset.tab, {
-            keepSticky: Boolean(tabButton.closest(".tabs")) && mobileSwipeQuery.matches
+            scrollTarget: tabButton.closest(".tabs") && !tabsAreSticky() ? "preserve" : "tabs"
         });
         return;
     }
@@ -2953,8 +3084,20 @@ mainContent.addEventListener("click", event => {
     if (event.target.closest("[data-toggle-zh]")) {
         showChinese = !showChinese;
         localStorage.setItem(localeStorageKeys.showTranslation, String(showChinese));
-        renderMain();
+        renderMain({ scrollTarget: activeTab === "grammar" ? "preserve" : "top" });
     }
+});
+
+mainContent.addEventListener("keydown", event => {
+    const current = event.target.closest('.grammar-selector [role="tab"]');
+    if (!current || !["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+    const choices = [...current.parentElement.querySelectorAll('[role="tab"]')];
+    const index = choices.indexOf(current);
+    const next = event.key === "Home" ? 0 : event.key === "End" ? choices.length - 1
+        : (index + (event.key === "ArrowRight" ? 1 : -1) + choices.length) % choices.length;
+    event.preventDefault();
+    selectGrammarPanel(choices[next].dataset.grammarSelect, { scroll: true });
+    choices[next].focus({ preventScroll: true });
 });
 
 floatingListeningControls.addEventListener("click", event => {
@@ -2998,6 +3141,7 @@ mainContent.addEventListener("change", event => {
 });
 
 function canStartTabSwipe(event) {
+    if (event.target.closest(".grammar-selector")) return false;
     return lessonGuideStickyTabs.canStartTabSwipe(event, {
         mobileQuery: mobileSwipeQuery,
         sidebar
@@ -3025,7 +3169,7 @@ mainContent.addEventListener("touchend", event => {
     if (!direction) return;
 
     switchAdjacentTab(direction, {
-        keepSticky: true
+        scrollTarget: tabsAreSticky() ? "tabs" : "preserve"
     });
 }, { passive: true });
 

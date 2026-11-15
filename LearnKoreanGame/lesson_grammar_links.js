@@ -78,7 +78,7 @@
         return idsByLesson[lessonId]?.[grammarIndex] || null;
     }
 
-    function hrefFor(lessonId, grammarIndex) {
+    function hrefFor(lessonId, grammarIndex, options = {}) {
         const grammarId = idFor(lessonId, grammarIndex);
         if (!grammarId) return "grammar_wiki.html";
         const params = new URLSearchParams({
@@ -86,6 +86,10 @@
             source: "lesson-guide",
             lesson: lessonId
         });
+        if (["overview", "vocabulary", "grammar", "culture", "practice"].includes(options.tab)) {
+            params.set("returnTab", options.tab);
+            if (options.tab === "grammar") params.set("returnGrammar", String(grammarIndex));
+        }
         return `grammar_wiki.html?${params.toString()}`;
     }
 

@@ -38,3 +38,14 @@ test("every lesson grammar card has a valid wiki destination", () => {
 
     assert.equal(grammarCount, 145);
 });
+
+test("grammar links preserve the originating tab and grammar position", () => {
+    const grammar = new URL(links.hrefFor("l4-01", 1, { tab: "grammar" }), "https://example.test");
+    assert.equal(grammar.searchParams.get("returnTab"), "grammar");
+    assert.equal(grammar.searchParams.get("returnGrammar"), "1");
+    const overview = new URL(links.hrefFor("l4-01", 0, { tab: "overview" }), "https://example.test");
+    assert.equal(overview.searchParams.get("returnTab"), "overview");
+    assert.equal(overview.searchParams.get("returnGrammar"), null);
+    const invalid = new URL(links.hrefFor("l4-01", 0, { tab: "invalid" }), "https://example.test");
+    assert.equal(invalid.searchParams.get("returnTab"), null);
+});

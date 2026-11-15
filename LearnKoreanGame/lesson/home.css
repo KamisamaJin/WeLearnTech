@@ -228,8 +228,9 @@ a {
     }
 
     .brand-title {
-        font-size: 1.08rem;
-        line-height: 1.15;
+        font-size: var(--kiip-type-app-title);
+        font-weight: 600;
+        line-height: 1.4;
     }
 
     .top-actions {
@@ -245,8 +246,8 @@ a {
     }
 
     .summary-copy {
-        font-size: 0.88rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        line-height: 1.65;
     }
 
     .level-grid {
@@ -259,20 +260,23 @@ a {
     }
 
     .level-title {
-        font-size: 1.15rem;
-        line-height: 1.25;
+        font-size: var(--kiip-type-section-title);
+        font-weight: 600;
+        line-height: 1.5;
     }
 
     .level-subtitle {
         margin-top: 5px;
-        font-size: 0.88rem;
-        line-height: 1.4;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.6;
     }
 
     .level-note {
         margin-top: 8px;
-        font-size: 0.78rem;
-        line-height: 1.4;
+        font-size: var(--kiip-type-supporting);
+        font-weight: 400;
+        line-height: 1.5;
     }
 
 }

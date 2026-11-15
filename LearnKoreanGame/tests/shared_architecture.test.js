@@ -219,6 +219,21 @@ test("shared styles consume Capacitor system bar safe-area variables", () => {
     }
 });
 
+test("mobile pages share semantic typography without shrinking root text", () => {
+    const tokens = fs.readFileSync(path.join(root, "shared/styles/tokens.css"), "utf8");
+    const mobile = tokens.slice(tokens.indexOf("@media (max-width: 920px)"));
+    assert.match(mobile, /--kiip-type-body:\s*0\.875rem/);
+    assert.match(mobile, /--kiip-type-korean:\s*0\.9375rem/);
+    assert.match(mobile, /--kiip-type-page-title:\s*1\.25rem/);
+    assert.doesNotMatch(tokens, /html\s*\{[^}]*font-size:/s);
+    for (const file of ["lesson/home.css", "lesson_guide.css", "grammar/wiki.css"]) {
+        const css = fs.readFileSync(path.join(root, file), "utf8");
+        for (const token of ["app-title", "section-title", "translation", "supporting"]) {
+            assert.ok(css.includes(`var(--kiip-type-${token})`), `${file}: ${token}`);
+        }
+    }
+});
+
 test("the lesson home uses a dedicated scroll container with a sticky header", () => {
     const html = fs.readFileSync(path.join(root, "lesson_guide.html"), "utf8");
     const css = fs.readFileSync(path.join(root, "lesson/home.css"), "utf8");

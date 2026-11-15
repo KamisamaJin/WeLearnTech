@@ -277,7 +277,11 @@
             const levelMatch = sourceLessonId.match(/^l([1-4])-/);
             if (!levelMatch) return "lesson_guide.html";
             const params = new URLSearchParams({ lesson: sourceLessonId });
-            return `lesson_guide_l${levelMatch[1]}.html?${params.toString()}`;
+            const sourceTab = pageParams.get("returnTab");
+            if (["overview", "vocabulary", "grammar", "culture", "practice"].includes(sourceTab)) params.set("tab", sourceTab);
+            const grammarIndex = pageParams.get("returnGrammar");
+            const anchor = sourceTab === "grammar" && /^\d+$/.test(grammarIndex || "") ? `#grammar-${grammarIndex}` : "";
+            return `lesson_guide_l${levelMatch[1]}.html?${params.toString()}${anchor}`;
         }
 
         function hasLessonGuideReferrer() {
