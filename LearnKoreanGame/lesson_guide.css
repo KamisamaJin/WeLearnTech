@@ -299,7 +299,6 @@ button, input {
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-padding: 24px;
-    scroll-snap-type: x proximity;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x pan-y;
@@ -319,7 +318,6 @@ button, input {
     background: rgba(244, 239, 231, 0.04);
     cursor: pointer;
     font-weight: 800;
-    scroll-snap-align: start;
 }
 
 .tab-btn.active {
@@ -508,7 +506,7 @@ button, input {
 
 .listening-player {
     display: grid;
-    grid-template-columns: minmax(220px, 1fr) minmax(286px, auto) auto;
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
     gap: 10px;
     margin: 10px 0;
@@ -625,12 +623,14 @@ button, input {
 }
 
 .listening-settings {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: center;
     gap: 6px;
 }
 
 .listening-settings label {
+    position: relative;
     display: grid;
     gap: 4px;
     color: var(--muted);
@@ -639,7 +639,10 @@ button, input {
 }
 
 .listening-settings select {
-    min-width: 86px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    min-width: 0;
     height: 32px;
     padding: 0 24px 0 8px;
     border: 1px solid var(--line);
@@ -649,11 +652,25 @@ button, input {
     cursor: pointer;
     font: inherit;
     font-size: 0.78rem;
-    font-weight: 800;
+    font-weight: 500;
+}
+
+.listening-select-chevron {
+    position: absolute;
+    right: 4px;
+    bottom: 8px;
+    width: 12px;
+    height: 12px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    transform: rotate(90deg);
+    pointer-events: none;
 }
 
 .listening-controls {
-    display: flex;
+    display: grid;
+    grid-template-columns: 34px minmax(82px, 1fr) 34px 34px;
     align-items: center;
     gap: 6px;
 }
@@ -783,22 +800,6 @@ button, input {
         gap: 18px;
     }
 
-    .listening-player {
-        grid-template-columns: minmax(0, 1fr) auto;
-        align-items: end;
-    }
-
-    .listening-main {
-        grid-column: 1 / -1;
-    }
-
-    .listening-settings {
-        min-width: 0;
-    }
-
-    .listening-controls {
-        justify-content: flex-end;
-    }
 }
 
 .vocab-grid {
@@ -960,6 +961,100 @@ button, input {
     line-height: 1.55;
 }
 
+.grammar-workspace { max-width: 900px; margin: 0 auto; scroll-margin-top: 76px; }
+.grammar-selector { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--line); scroll-padding: 8px; }
+.grammar-selector button { display: inline-flex; align-items: center; flex: 0 0 auto; gap: 7px; min-height: 44px; padding: 10px 12px; border: 0; border-bottom: 2px solid transparent; background: none; color: var(--muted); font-size: var(--kiip-type-body); font-weight: 500; cursor: pointer; }
+.grammar-selector button > span { font-size: var(--kiip-type-label); opacity: 0.7; }
+.grammar-selector button[aria-selected="true"] { border-bottom-color: var(--teal); color: var(--teal); }
+.grammar-selector button:focus-visible,
+.grammar-pagination button:focus-visible,
+.grammar-detail-link:focus-visible,
+.grammar-study-modes button:focus-visible { outline: 2px solid var(--teal); outline-offset: -2px; }
+.grammar-toolbar { margin: 12px 0; }
+.grammar-study-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; width: 100%; }
+.grammar-study-modes { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.grammar-study-modes button { min-height: 40px; min-width: 58px; padding: 6px 12px; border: 0; color: var(--muted); background: transparent; font-size: var(--kiip-type-action); cursor: pointer; }
+.grammar-study-modes button[aria-pressed="true"] { background: rgba(var(--teal-rgb), 0.12); color: var(--teal); font-weight: 600; }
+.grammar-toolbar .tool-btn { width: auto; padding: 8px 10px; font-size: var(--kiip-type-action); font-weight: 500; min-height: 40px; }
+.grammar-panel { min-width: 0; padding: 12px 0 24px; }
+.grammar-panel[hidden] { display: none; }
+.grammar-unit { scroll-margin-top: 90px; }
+.grammar-unit-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.grammar-unit-header > div { min-width: 0; }
+.grammar-unit-header h2 { margin: 5px 0 6px; font-size: var(--kiip-type-page-title); font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+.grammar-unit-number { font-size: var(--kiip-type-label); font-weight: 500; color: var(--muted); }
+.grammar-meaning { font-size: var(--kiip-type-body); font-weight: 500; line-height: 1.6; }
+.grammar-step-heading { display: flex; align-items: baseline; gap: 8px; margin: 24px 0 10px; color: var(--text); font-size: var(--kiip-type-body); font-weight: 600; line-height: 1.5; }
+.grammar-step-heading > span { color: var(--muted); font-size: var(--kiip-type-label); font-weight: 400; }
+.grammar-step-heading small { margin-left: auto; color: var(--muted); font-size: var(--kiip-type-supporting); font-weight: 400; }
+.grammar-explanation { max-width: 68ch; margin: 0; color: var(--soft); font-size: var(--kiip-type-body); line-height: 1.75; }
+.grammar-detail-link { display: inline-flex; align-items: center; gap: 5px; flex-shrink: 0; min-height: 40px; padding: 6px 0; color: var(--teal); font-size: var(--kiip-type-supporting); text-decoration: none; }
+.grammar-detail-link .grammar-link-icon { width: 24px; height: 24px; padding: 4px; }
+.grammar-examples { display: grid; margin: 0 0 18px; border-left: 2px solid var(--grammar-accent, var(--teal)); padding-left: 12px; }
+.grammar-example { padding: 12px 0; min-width: 0; }
+.grammar-example + .grammar-example { border-top: 1px solid var(--line); }
+.grammar-example-line { display: grid; grid-template-columns: minmax(0, 1fr) var(--kiip-icon-button-size); gap: 8px; align-items: start; }
+.grammar-example-line > div { font-size: var(--kiip-type-korean); font-weight: 500; line-height: 1.75; overflow-wrap: anywhere; }
+.grammar-example-number { display: inline-block; margin-right: 8px; color: var(--muted); font-size: 0.78rem; font-weight: 400; }
+.grammar-example .muted { margin: 5px 0 0; font-size: var(--kiip-type-translation); line-height: 1.65; }
+.grammar-pagination { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px; padding: 20px 0 0; border-top: 1px solid var(--line); }
+.grammar-pagination > span { color: var(--muted); font-size: var(--kiip-type-supporting); }
+.grammar-pagination button { display: flex; gap: 6px; align-items: center; width: fit-content; min-height: 44px; border: 0; padding: 8px 0; background: none; color: var(--teal); font-size: var(--kiip-type-action); cursor: pointer; }
+.grammar-pagination button:last-child { justify-self: end; }
+.grammar-pagination .grammar-link-icon { width: 20px; height: 20px; padding: 2px; border: 0; background: none; }
+.grammar-recall-answer { margin: 8px 0; }
+.grammar-recall-answer > summary,
+.grammar-task-answer > summary,
+.line-note > summary { min-height: 40px; padding: 8px 0; color: var(--teal); font-size: 0.8rem; font-weight: 500; }
+.grammar-recall-answer[open] > summary { margin-bottom: 8px; color: var(--muted); }
+.grammar-example .grammar-recall-answer { margin-left: 20px; }
+.grammar-example .grammar-recall-answer .muted { margin-left: 0; }
+.grammar-tone-0,
+.grammar-highlight-0 { --grammar-accent: var(--amber); --grammar-highlight-bg: rgba(var(--kiip-color-amber-rgb), 0.12); }
+.grammar-tone-1,
+.grammar-highlight-1 { --grammar-accent: var(--teal); --grammar-highlight-bg: rgba(var(--teal-rgb), 0.12); }
+.grammar-tone-2,
+.grammar-highlight-2 { --grammar-accent: var(--rose); --grammar-highlight-bg: rgba(217, 130, 122, 0.12); }
+.grammar-unit .grammar-meaning { color: var(--grammar-accent, var(--teal)); }
+.grammar-highlight {
+    padding: 1px 0;
+    border-bottom: 1px solid currentColor;
+    border-radius: 2px;
+    color: var(--grammar-accent, var(--amber));
+    background: var(--grammar-highlight-bg);
+    font-weight: 700;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+.grammar-dialogue-group { margin-top: 20px; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
+.grammar-practice .dialogue-card { padding: 0; margin: 0 0 24px; border: 0; background: none; box-shadow: none; border-radius: 0; }
+.grammar-practice .dialogue-layout { grid-template-columns: minmax(0, 1fr); }
+.grammar-practice .dialogue-title { flex-wrap: wrap; }
+.grammar-practice .dialogue-title h2 { font-size: 1.05rem; line-height: 1.6; }
+.grammar-practice .dialogue-meta { min-width: 0; }
+.grammar-practice .dialogue-focus { white-space: normal; overflow-wrap: anywhere; background: transparent; border: 1px solid rgba(var(--teal-rgb), 0.25); color: var(--teal); }
+.grammar-practice .dialogue-header { padding: 8px 0 18px; background: none; }
+.grammar-practice .dialogue-transcript { padding: 8px 0 0; }
+.grammar-practice .line-card { padding: 18px 0; margin: 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: none; }
+.grammar-practice .line-ko-row { grid-template-columns: minmax(0, 1fr) var(--kiip-icon-button-size); }
+.grammar-practice .line-ko { font-size: var(--kiip-type-korean); font-weight: 500; line-height: 1.75; }
+.grammar-practice .line-zh { color: var(--soft); font-size: var(--kiip-type-translation); font-weight: 400; line-height: 1.65; }
+.grammar-practice .line-index { background: transparent; color: var(--muted); }
+.grammar-practice .speaker-chip { background: transparent; color: var(--rose); border: 1px solid var(--line); }
+.grammar-practice .dialogue-side { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--line); background: none; }
+.grammar-practice .dialogue-mini-panel > summary { min-height: 44px; padding: 10px 0; font-weight: 500; }
+.grammar-practice .dialogue-mini-panel { border: 0; border-radius: 0; border-bottom: 1px solid var(--line); padding: 0 0 14px; background: none; }
+.grammar-practice .role-task { background: none; }
+.grammar-practice .speak-btn,
+.grammar-example .speak-btn { width: var(--kiip-icon-button-size); height: var(--kiip-icon-button-size); }
+
+@media (max-width: 600px) {
+    .grammar-selector button { padding: 10px 8px; font-size: var(--kiip-type-translation); }
+    .grammar-unit-header { gap: 8px; }
+    .grammar-practice .dialogue-transcript { padding: 8px 0 0; }
+    .grammar-practice .dialogue-side { border-left: 0; border-top: 1px solid var(--line); padding: 18px 0 0; }
+}
+
 .dialogue-card {
     padding: 0;
     overflow: hidden;
@@ -1107,6 +1202,7 @@ button, input {
 
 .line-body {
     min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .line-speaker-row {
@@ -1270,6 +1366,22 @@ summary {
 }
 
 @media (max-width: 920px) {
+    .mobile-title {
+        font-size: var(--kiip-type-app-title);
+        font-weight: 600;
+    }
+
+    .tab-btn {
+        font-size: var(--kiip-type-nav);
+        font-weight: 600;
+        padding: 10px 14px;
+        min-height: 44px;
+    }
+
+    .lesson-name { font-size: var(--kiip-type-body); font-weight: 600; }
+    .lesson-sub { font-size: var(--kiip-type-supporting); font-weight: 400; }
+    .search-box { font-size: var(--kiip-type-body); min-height: 44px; }
+
     .sidebar {
         position: fixed;
         inset: 69px auto 0 0;
@@ -1323,13 +1435,13 @@ summary {
     }
 
     .hero {
-        grid-template-columns: minmax(170px, 0.42fr) minmax(0, 0.58fr);
+        grid-template-columns: minmax(170px, 42fr) minmax(0, 58fr);
         gap: 12px;
         padding-top: 18px;
     }
 
     .hero h1 {
-        font-size: 1.75rem;
+        font-size: var(--kiip-type-page-title);
         line-height: 1.1;
     }
 
@@ -1338,7 +1450,7 @@ summary {
     }
 
     .listening-player {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 8px;
         margin: 8px 0;
         padding: 9px;
@@ -1351,7 +1463,7 @@ summary {
 
     .listening-settings {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr) minmax(0, 0.8fr);
         gap: 6px;
     }
 
@@ -1400,7 +1512,7 @@ summary {
     }
 
     .hero {
-        grid-template-columns: minmax(132px, 0.38fr) minmax(0, 0.62fr);
+        grid-template-columns: minmax(132px, 38fr) minmax(0, 62fr);
         gap: 8px;
     }
 
@@ -1418,15 +1530,17 @@ summary {
     }
 
     .hero h1 {
-        font-size: 1.45rem;
-        line-height: 1.12;
+        font-size: var(--kiip-type-page-title);
+        font-weight: 600;
+        line-height: 1.4;
         overflow-wrap: anywhere;
     }
 
     .hero-zh {
         margin-top: 6px;
-        font-size: 0.88rem;
-        line-height: 1.25;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.5;
     }
 
     .section-grid {
@@ -1438,13 +1552,14 @@ summary {
     }
 
     .stat-value {
-        font-size: 1.35rem;
+        font-size: var(--kiip-type-stat);
+        font-weight: 600;
         line-height: 1.1;
     }
 
     .stat-label {
         margin-top: 3px;
-        font-size: 0.72rem;
+        font-size: var(--kiip-type-label);
         line-height: 1.25;
     }
 
@@ -1456,8 +1571,9 @@ summary {
     .content-card h2,
     .content-card h3 {
         margin-bottom: 10px;
-        font-size: 1.15rem;
-        line-height: 1.25;
+        font-size: var(--kiip-type-section-title);
+        font-weight: 600;
+        line-height: 1.5;
     }
 
     .guide-list {
@@ -1466,8 +1582,9 @@ summary {
 
     .guide-list li {
         padding: 9px 10px;
-        font-size: 0.88rem;
-        line-height: 1.45;
+        font-size: var(--kiip-type-body);
+        font-weight: 400;
+        line-height: 1.65;
     }
 
     .grammar-row,
@@ -1482,14 +1599,16 @@ summary {
     }
 
     .grammar-row .pattern {
-        font-size: 0.92rem;
-        line-height: 1.4;
+        font-size: var(--kiip-type-body);
+        font-weight: 600;
+        line-height: 1.6;
         overflow-wrap: anywhere;
     }
 
     .grammar-row .muted {
-        font-size: 0.82rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.65;
         overflow-wrap: anywhere;
     }
 
@@ -1500,45 +1619,52 @@ summary {
     }
 
     .toolbar .muted {
-        font-size: 0.78rem;
+        font-size: var(--kiip-type-supporting);
         line-height: 1.4;
     }
 
     .word-ko {
-        font-size: 1.05rem;
-        line-height: 1.35;
+        font-size: var(--kiip-type-headword);
+        font-weight: 600;
+        line-height: 1.5;
     }
 
     .word-pron {
-        font-size: 0.72rem;
+        font-size: var(--kiip-type-label);
+        font-weight: 400;
         line-height: 1.35;
     }
 
     .word-zh {
-        font-size: 0.88rem;
-        line-height: 1.45;
+        font-size: var(--kiip-type-body);
+        font-weight: 500;
+        line-height: 1.6;
     }
 
     .word-guide,
     .example-zh {
-        font-size: 0.82rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.65;
     }
 
     .word-guide-tip {
-        font-size: 0.78rem;
+        font-size: var(--kiip-type-supporting);
+        font-weight: 400;
         line-height: 1.45;
     }
 
     .word-guide-label,
     .word-pos,
     .word-source {
-        font-size: 0.7rem;
+        font-size: var(--kiip-type-label);
+        font-weight: 500;
     }
 
     .example-ko {
-        font-size: 0.95rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-korean);
+        font-weight: 500;
+        line-height: 1.7;
     }
 
     .dialogue-header,
@@ -1553,34 +1679,39 @@ summary {
     }
 
     .dialogue-scene {
-        font-size: 0.82rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        line-height: 1.65;
     }
 
     .dialogue-panel-title,
     .speaker {
-        font-size: 0.78rem;
+        font-size: var(--kiip-type-supporting);
+        font-weight: 500;
         line-height: 1.4;
     }
 
     .line-ko {
-        font-size: 0.95rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-korean);
+        font-weight: 500;
+        line-height: 1.7;
     }
 
     .line-zh {
-        font-size: 0.88rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.65;
     }
 
     .line-guide {
-        font-size: 0.82rem;
+        font-size: var(--kiip-type-supporting);
+        font-weight: 400;
         line-height: 1.5;
     }
 
     .dialogue-mini-panel h3,
     .role-task h3 {
-        font-size: 0.9rem;
+        font-size: var(--kiip-type-body);
+        font-weight: 500;
         line-height: 1.4;
     }
 
@@ -1590,8 +1721,9 @@ summary {
     .role-task .muted,
     .drill,
     .drill-answer {
-        font-size: 0.82rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.65;
     }
 
     .line-card {
@@ -1600,40 +1732,44 @@ summary {
     }
 
     .culture-summary {
-        font-size: 0.82rem;
-        line-height: 1.55;
+        font-size: var(--kiip-type-body);
+        line-height: 1.65;
     }
 
     .paragraph-label {
-        font-size: 0.7rem;
+        font-size: var(--kiip-type-label);
+        font-weight: 500;
         line-height: 1.35;
     }
 
     .paragraph-ko,
     .qa-row .line-ko {
-        font-size: 0.95rem;
-        line-height: 1.55;
+        font-size: var(--kiip-type-korean);
+        font-weight: 500;
+        line-height: 1.75;
     }
 
     .paragraph-zh,
     .qa-row .line-zh {
-        font-size: 0.88rem;
-        line-height: 1.55;
+        font-size: var(--kiip-type-translation);
+        font-weight: 400;
+        line-height: 1.65;
     }
 
     .paragraph-block .line-guide,
     .qa-row .muted {
-        font-size: 0.82rem;
+        font-size: var(--kiip-type-supporting);
         line-height: 1.5;
     }
 
     .term-row .pattern {
-        font-size: 0.9rem;
+        font-size: var(--kiip-type-body);
+        font-weight: 500;
         line-height: 1.45;
     }
 
     .term-row > div:last-child {
-        font-size: 0.82rem;
+        font-size: var(--kiip-type-translation);
         line-height: 1.5;
     }
 
@@ -1644,7 +1780,18 @@ summary {
 
     .tool-btn {
         width: 100%;
+        min-height: 40px;
+        font-size: var(--kiip-type-action);
+        font-weight: 500;
     }
+
+    .practice-card { padding: 14px; }
+    .practice-card h3 { font-size: var(--kiip-type-section-title); font-weight: 600; line-height: 1.5; }
+    .practice-card p { font-size: var(--kiip-type-body); line-height: 1.65; }
+    .practice-card summary { min-height: 40px; font-size: var(--kiip-type-action); font-weight: 500; }
+    .practice-type { font-size: var(--kiip-type-label); font-weight: 500; }
+    .listening-kicker { font-weight: 600; }
+    .listening-primary-btn { font-weight: 600; }
 
     .listening-player {
         gap: 5px;
@@ -1683,8 +1830,8 @@ summary {
     }
 
     .listening-controls {
-        grid-template-columns: 30px minmax(70px, 1fr) 30px 30px;
-        gap: 4px;
+        grid-template-columns: 30px minmax(30px, 1fr) 30px 30px;
+        gap: 3px;
     }
 
     .listening-primary-btn {
@@ -1730,4 +1877,11 @@ summary {
     .listening-now {
         white-space: nowrap;
     }
+}
+
+@media (max-width: 340px) {
+    .listening-primary-btn { grid-template-columns: 1fr; padding: 0; }
+    .listening-primary-btn span { display: none; }
+    .listening-settings select { padding: 0 4px; text-align: center; }
+    .listening-select-chevron { display: none; }
 }

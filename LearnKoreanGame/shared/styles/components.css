@@ -48,7 +48,7 @@
     border-radius: var(--kiip-radius-control);
     color: var(--kiip-color-text-soft);
     background: rgba(244, 239, 231, 0.05);
-    font: 900 0.82rem/1 var(--kiip-font-ui);
+    font: 600 var(--kiip-type-action)/1 var(--kiip-font-ui);
     cursor: pointer;
 }
 

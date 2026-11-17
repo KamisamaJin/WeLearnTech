@@ -9,6 +9,7 @@ const locale = require(path.join(root, "shared/locale.js"));
 const icons = require(path.join(root, "shared/icons.js"));
 const lessonPage = require(path.join(root, "shared/lesson-page.js"));
 const schema = require(path.join(root, "lesson/schema.js"));
+const listeningContent = require(path.join(root, "lesson/listening/content.js"));
 const listeningQueue = require(path.join(root, "lesson/listening/queue.js"));
 const lessonDataLoader = require(path.join(root, "lesson/data-loader.js"));
 const lessonLabels = require(path.join(root, "lesson/labels.js"));
@@ -117,6 +118,15 @@ test("level pages are thin configuration entries backed by one shell", () => {
     }
 });
 
+test("lesson pages and audio tooling share Korean listening content rules", () => {
+    const shell = fs.readFileSync(path.join(root, "shared/lesson-page.js"), "utf8");
+    const app = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    assert.match(shell, /"lesson\/listening\/content\.js"[\s\S]*"lesson\/listening\/queue\.js"/);
+    assert.equal(listeningContent.normalizeKoreanSpeechText("  한국어  / Korean "), "한국어");
+    assert.match(app, /KIIPListeningContent\.normalizeKoreanSpeechText/);
+    assert.match(app, /KIIPListeningContent\.lessonDialogues/);
+});
+
 test("generated lesson manifests keep search data off the startup path", () => {
     for (let number = 1; number <= 4; number += 1) {
         const source = readGlobal(`lesson_data_l${number}.js`, `lessonGuideL${number}`);
@@ -206,6 +216,21 @@ test("shared styles consume Capacitor system bar safe-area variables", () => {
     for (const side of ["top", "right", "bottom", "left"]) {
         assert.match(css, new RegExp(`--kiip-safe-area-${side}:\\s*var\\(--safe-area-inset-${side},\\s*env\\(safe-area-inset-${side},\\s*0px\\)\\)`));
         assert.match(css, new RegExp(`padding-${side}:\\s*var\\(--kiip-safe-area-${side}\\)`));
+    }
+});
+
+test("mobile pages share semantic typography without shrinking root text", () => {
+    const tokens = fs.readFileSync(path.join(root, "shared/styles/tokens.css"), "utf8");
+    const mobile = tokens.slice(tokens.indexOf("@media (max-width: 920px)"));
+    assert.match(mobile, /--kiip-type-body:\s*0\.875rem/);
+    assert.match(mobile, /--kiip-type-korean:\s*0\.9375rem/);
+    assert.match(mobile, /--kiip-type-page-title:\s*1\.25rem/);
+    assert.doesNotMatch(tokens, /html\s*\{[^}]*font-size:/s);
+    for (const file of ["lesson/home.css", "lesson_guide.css", "grammar/wiki.css"]) {
+        const css = fs.readFileSync(path.join(root, file), "utf8");
+        for (const token of ["app-title", "section-title", "translation", "supporting"]) {
+            assert.ok(css.includes(`var(--kiip-type-${token})`), `${file}: ${token}`);
+        }
     }
 });
 
@@ -314,6 +339,15 @@ test("lesson bootstrap fetches independent dependencies in parallel", () => {
     assert.doesNotMatch(shell, /for \(const script of scripts\) await loadScript/);
     assert.match(app, /function ensureLessonSearchIndex\(\)/);
     assert.match(app, /lessonSearch\.addEventListener\("input", handleLessonSearchInput\)/);
+});
+
+test("single pronunciation uses native preview playback when available", () => {
+    const app = fs.readFileSync(path.join(root, "lesson_guide_app.js"), "utf8");
+    assert.match(app, /buildPreviewPayload\(/);
+    assert.match(app, /isPreviewSession\(state\.sessionId\)/);
+    assert.match(app, /stopListening\(\{ render: true, notifyNative: !nativeListeningReady \}\)/);
+    assert.match(app, /maybeOfferNativeVoiceSetup\(state\.error\)/);
+    assert.match(app, /nativeListeningDriver\?\.promptVoiceSetup\(uiLocale\)/);
 });
 
 test("navigation and asset references do not hardcode cache versions", () => {

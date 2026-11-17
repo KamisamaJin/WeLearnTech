@@ -9,13 +9,19 @@
     return mainContent?.querySelector(".tabs") || null;
   }
 
+  function getTabsScrollTop(mainContent) {
+    const anchor = mainContent?.querySelector("[data-tabs-anchor]") || getTabsElement(mainContent);
+    if (!anchor || !mainContent) return 0;
+    // The sticky bar's offsetTop moves with scrolling; its flow anchor does not.
+    return Math.max(0, mainContent.scrollTop + anchor.getBoundingClientRect().top
+      - mainContent.getBoundingClientRect().top - (mainContent.clientTop || 0));
+  }
+
   function tabsAreSticky(mainContent) {
     const tabsElement = getTabsElement(mainContent);
     if (!tabsElement || !mainContent) return false;
 
-    const tabsTop = tabsElement.getBoundingClientRect().top;
-    const contentTop = mainContent.getBoundingClientRect().top;
-    return tabsTop <= contentTop + 1 || mainContent.scrollTop >= tabsElement.offsetTop - 1;
+    return mainContent.scrollTop >= getTabsScrollTop(mainContent) - 1;
   }
 
   function scrollMainContent(mainContent, target) {
@@ -23,9 +29,7 @@
 
     if (target === "tabs") {
       const tabsElement = getTabsElement(mainContent);
-      if (tabsElement && !tabsAreSticky(mainContent)) {
-        mainContent.scrollTo({ top: tabsElement.offsetTop, behavior: "auto" });
-      }
+      if (tabsElement) mainContent.scrollTo({ top: getTabsScrollTop(mainContent), behavior: "auto" });
       return;
     }
 
@@ -39,22 +43,15 @@
     const activeButton = tabsElement?.querySelector(".tab-btn.active");
     if (!tabsElement || !activeButton) return;
 
-    const padding = options.padding ?? 12;
-    const visibleLeft = tabsElement.scrollLeft;
-    const visibleRight = visibleLeft + tabsElement.clientWidth;
-    const activeLeft = activeButton.offsetLeft;
-    const activeRight = activeLeft + activeButton.offsetWidth;
-    let nextLeft = null;
-
-    if (activeLeft < visibleLeft + padding) {
-      nextLeft = Math.max(0, activeLeft - padding);
-    } else if (activeRight > visibleRight - padding) {
-      nextLeft = activeRight - tabsElement.clientWidth + padding;
-    }
-
-    if (nextLeft == null) return;
+    const buttonRect = activeButton.getBoundingClientRect();
+    const tabsRect = tabsElement.getBoundingClientRect();
+    const center = tabsElement.scrollLeft + buttonRect.left - tabsRect.left
+      - (tabsElement.clientLeft || 0) + buttonRect.width / 2;
+    const maxLeft = Math.max(0, tabsElement.scrollWidth - tabsElement.clientWidth);
+    const nextLeft = Math.min(maxLeft, Math.max(0, center - tabsElement.clientWidth / 2));
+    if (Math.abs(nextLeft - tabsElement.scrollLeft) < 1) return;
     tabsElement.scrollTo({
-      left: Math.max(0, nextLeft),
+      left: nextLeft,
       behavior: options.behavior || "auto"
     });
   }
@@ -89,6 +86,7 @@
   window.lessonGuideStickyTabs = {
     canStartTabSwipe,
     getTabsElement,
+    getTabsScrollTop,
     keepActiveTabVisible,
     scrollMainContent,
     shouldSwitchTabFromSwipe,

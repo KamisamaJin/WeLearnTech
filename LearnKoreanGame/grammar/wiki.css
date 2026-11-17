@@ -508,6 +508,14 @@ body {
     .sidebar-header { padding-top: 25px; }
 }
 @media (max-width: 560px) {
+    .mobile-title-brand { font-size: var(--kiip-type-app-title); font-weight: 600; }
+    .nav-item { font-size: var(--kiip-type-body); font-weight: 500; }
+    .nav-category { font-size: var(--kiip-type-supporting); font-weight: 500; }
+    .guide-copy strong { font-size: var(--kiip-type-body); font-weight: 600; }
+    .guide-copy small { font-size: var(--kiip-type-label); font-weight: 400; }
+    .search-box { min-height: 44px; font-size: var(--kiip-type-body); }
+    .filter-btn { font-size: var(--kiip-type-supporting); font-weight: 500; }
+
     .main-content {
         padding: 16px 14px calc(112px + env(safe-area-inset-bottom, 0px));
     }
@@ -519,14 +527,16 @@ body {
         gap: 8px;
     }
     .grammar-title {
-        font-size: 1.25rem;
-        line-height: 1.25;
+        font-size: var(--kiip-type-page-title);
+        font-weight: 600;
+        line-height: 1.5;
         overflow-wrap: anywhere;
     }
     .grammar-description,
     .localized-meaning {
-        font-size: 0.88rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-body);
+        font-weight: 400;
+        line-height: 1.65;
     }
     .localized-meaning {
         margin-bottom: 10px;
@@ -538,8 +548,9 @@ body {
     .grammar-section h3 {
         margin: 0 0 10px;
         padding-bottom: 9px;
-        font-size: 1.15rem;
-        line-height: 1.25;
+        font-size: var(--kiip-type-section-title);
+        font-weight: 600;
+        line-height: 1.5;
     }
     .rules-container,
     .examples-container {
@@ -553,23 +564,25 @@ body {
         padding: 10px;
     }
     .localized-rule {
-        font-size: 0.88rem;
-        line-height: 1.45;
+        font-size: var(--kiip-type-body);
+        font-weight: 500;
+        line-height: 1.65;
         overflow-wrap: anywhere;
     }
     .ex-ko {
-        font-size: 0.95rem;
-        line-height: 1.45;
+        font-size: var(--kiip-type-korean);
+        font-weight: 500;
+        line-height: 1.7;
         overflow-wrap: anywhere;
     }
     .ex-translation {
-        font-size: 0.82rem;
-        line-height: 1.5;
+        font-size: var(--kiip-type-translation);
+        line-height: 1.65;
     }
     .notes-list {
         padding-left: 1.1rem;
-        font-size: 0.85rem;
-        line-height: 1.55;
+        font-size: var(--kiip-type-body);
+        line-height: 1.75;
     }
     .knowledge-list {
         gap: 12px;
@@ -579,25 +592,27 @@ body {
     }
     .knowledge-topic h4 {
         margin-bottom: 6px;
-        font-size: 0.92rem;
-        line-height: 1.4;
+        font-size: var(--kiip-type-body);
+        font-weight: 600;
+        line-height: 1.6;
     }
     .knowledge-topic p {
-        font-size: 0.82rem;
-        line-height: 1.55;
+        font-size: var(--kiip-type-body);
+        line-height: 1.75;
     }
     .related-links {
         gap: 6px;
         margin-top: 9px;
     }
     .related-link {
-        min-height: 32px;
+        min-height: 40px;
         padding: 5px 8px;
-        font-size: 0.75rem;
+        font-size: var(--kiip-type-supporting);
     }
     .nav-float-btn {
+        min-height: 44px;
         padding: 8px 10px;
-        font-size: 0.78rem;
+        font-size: var(--kiip-type-action);
     }
     .nav-float-btn .btn-label {
         max-width: 74px;
@@ -605,7 +620,7 @@ body {
 }
 @media (max-width: 420px) {
     .mobile-header { padding: 12px 14px; }
-    .mobile-title-brand { font-size: 1.05rem; }
+    .mobile-title-brand { font-size: var(--kiip-type-app-title); }
     .mobile-header > .lesson-return-button { margin-right: 6px; }
     .mobile-guide-link { margin-right: 6px; }
     .mobile-language-switcher { margin-right: 4px; }

@@ -6,7 +6,7 @@
     const sectionTabs = Object.freeze({
         overview: "overview",
         vocabulary: "vocabulary",
-        dialogue: "dialogue",
+        dialogue: "grammar",
         culture: "culture"
     });
 
@@ -51,5 +51,11 @@
         };
     }
 
-    return Object.freeze({ sectionTabs, tabForItem, shouldFollow, continuedRef, scrollPlan });
+    function revealTarget(target) {
+        for (let element = target; element; element = element.parentElement) {
+            if (element.tagName === "DETAILS") element.open = true;
+        }
+    }
+
+    return Object.freeze({ sectionTabs, tabForItem, shouldFollow, continuedRef, scrollPlan, revealTarget });
 });

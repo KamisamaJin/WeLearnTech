@@ -15,12 +15,15 @@
 3. Use `shared/locale.js` for locale normalization and persistence. Preserve the legacy storage keys through its API.
 4. New Level pages must use `shared/lesson-page.js`; a Level entry should only declare its `data-level` value.
 5. Keep page-specific layout in `lesson/home.css`, `lesson_guide.css`, or `grammar/wiki.css`.
-6. Build listening content in `lesson/listening/queue.js`; keep playback state and the native bridge out of that pure module.
+6. Keep Korean speech normalization and dialogue eligibility in `lesson/listening/content.js`. Build listening content in `lesson/listening/queue.js`; keep playback state and the native bridge out of those pure modules.
 7. Keep playback following rules in `lesson/listening/follow.js` and absolute-deadline sleep timer utilities in `lesson/listening/sleep-timer.js`.
 8. Load and cache lesson chunks through `lesson/data-loader.js`; do not append data scripts from page renderers.
 9. Keep native listening protocol changes backward compatible and cover them with Web, Android, and iOS tests. Background timers must run in the native playback service/controller, not in the WebView.
-10. Keep navigation URLs free of release or cache versions. Use only business parameters such as `lesson`, `grammar`, and `source`.
-11. Generate `lesson_manifest_l*.js` and `lesson_search_l*.js` from the canonical `lesson_data_l*.js` files. Load the generated full-text search index only after the user starts a search.
+10. Keep sentence highlighting rules in `lesson/grammar-highlight.js`. Match ranges in raw Korean text and escape the output; pronunciation payloads must retain the original text.
+11. Keep navigation URLs free of release or cache versions. Use only business parameters such as `lesson`, `grammar`, and `source`.
+12. Generate `lesson_manifest_l*.js` and `lesson_search_l*.js` from the canonical `lesson_data_l*.js` files. Load the generated full-text search index only after the user starts a search.
+13. Render one selected grammar learning unit at a time: usage, examples, matching dialogue, then practice. Keep inactive panels in the DOM with their original listening references, and reveal the matching panel before following playback. Preserve the selection and scroll position when returning from the Wiki.
+14. Use the shared semantic typography tokens for mobile page titles, section headings, Korean text, translations, and metadata. Do not shrink the root font or WebView text zoom to compensate for oversized components.
 
 ## Cache policy
 

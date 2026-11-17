@@ -140,9 +140,11 @@
             "lesson/listening/follow.js",
             "lesson/listening/floating.js",
             "lesson/listening/sleep-timer.js",
+            "lesson/listening/content.js",
             "lesson/listening/queue.js",
             "lesson/data-loader.js",
             "lesson/labels.js",
+            "lesson/grammar-highlight.js",
             "lesson/renderers.js"
         ].map(task => typeof task === "string" ? loadScript(document, task) : task));
 
