@@ -1580,7 +1580,97 @@ window.lessonGuideL3LessonChunks["l3-10"] = {
             "guide": "名词，意思是“专业性”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "전문성이 있는 일을 하고 싶어요.",
             "exampleZh": "想做有专业性的工作。"
-        }
+        },
+      {
+          "ko": "시간제",
+          "zh": "计时工作制；非全日制",
+          "pos": "名词",
+          "page": 141,
+          "source": "배운 어휘 확인",
+          "exampleKo": "시간제로 일하면서 공부해요.",
+          "exampleZh": "一边做计时工作一边学习。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "hourly work; part-time work",
+                  "pos": "noun",
+                  "example": "I study while working part-time.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "안정적이다",
+          "zh": "稳定的",
+          "pos": "形容词",
+          "page": 141,
+          "source": "배운 어휘 확인",
+          "exampleKo": "안정적인 직장을 찾고 있어요.",
+          "exampleZh": "正在找稳定的工作。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "stable",
+                  "pos": "adjective",
+                  "example": "I am looking for a stable job.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "서류를 제출하다",
+          "zh": "提交材料；提交文件",
+          "pos": "动词短语",
+          "page": 141,
+          "source": "배운 어휘 확인",
+          "exampleKo": "지원 서류를 제출했어요.",
+          "exampleZh": "提交了申请材料。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to submit documents",
+                  "pos": "verb phrase",
+                  "example": "I submitted the application documents.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "제출",
+          "zh": "提交",
+          "pos": "名词",
+          "page": 141,
+          "source": "배운 어휘 확인",
+          "exampleKo": "서류 제출은 내일까지예요.",
+          "exampleZh": "材料提交截止到明天。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "submission",
+                  "pos": "noun",
+                  "example": "The deadline for document submission is tomorrow.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "지원",
+          "zh": "申请；应聘",
+          "pos": "名词",
+          "page": 141,
+          "source": "배운 어휘 확인",
+          "exampleKo": "채용 공고의 지원 자격을 확인했어요.",
+          "exampleZh": "确认了招聘启事中的应聘资格。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "application; applying",
+                  "pos": "noun",
+                  "example": "I checked the eligibility requirements in the job advertisement.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

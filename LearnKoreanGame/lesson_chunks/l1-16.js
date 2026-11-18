@@ -37,6 +37,11 @@ window.lessonGuideL1LessonChunks["l1-16"] = {
       "page": "180-181",
       "label": "문화와 정보 / 발음 / 배운 어휘 확인",
       "note": "韩国医院分级、就医顺序、科室发音和词汇复习。"
+    },
+    {
+      "page": 181,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -1140,6 +1145,42 @@ window.lessonGuideL1LessonChunks["l1-16"] = {
               "text": "Use 병원을 예약하다 or 진료를 예약하다."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "생강차",
+      "zh": "姜茶",
+      "pos": "名词",
+      "page": 181,
+      "source": "배운 어휘 확인",
+      "exampleKo": "따뜻한 생강차를 마셔요.",
+      "exampleZh": "我喝温热的姜茶。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "ginger tea",
+          "pos": "noun",
+          "example": "I drink warm ginger tea.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "비타민 C",
+      "zh": "维生素C",
+      "pos": "名词短语",
+      "page": 181,
+      "source": "배운 어휘 확인",
+      "exampleKo": "이 과일에는 비타민 C가 많아요.",
+      "exampleZh": "这种水果富含维生素C。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "vitamin C",
+          "pos": "noun phrase",
+          "example": "This fruit contains a lot of vitamin C.",
+          "tips": []
         }
       }
     }

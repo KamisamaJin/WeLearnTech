@@ -42,6 +42,16 @@ window.lessonGuideL1LessonChunks["l1-04"] = {
       "page": 51,
       "label": "배운 어휘 확인",
       "note": "本课场所与活动词汇复习"
+    },
+    {
+      "page": 48,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 49,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -781,6 +791,114 @@ window.lessonGuideL1LessonChunks["l1-04"] = {
               "text": "배우다 -> 배워요"
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "아주",
+      "zh": "非常",
+      "pos": "副词",
+      "page": 49,
+      "source": "단어장",
+      "exampleKo": "한국어 공부가 아주 재미있어요.",
+      "exampleZh": "学习韩语非常有趣。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "very",
+          "pos": "adverb",
+          "example": "Studying Korean is very interesting.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "남편",
+      "zh": "丈夫",
+      "pos": "名词",
+      "page": 49,
+      "source": "단어장",
+      "exampleKo": "남편은 회사에 가요.",
+      "exampleZh": "丈夫去公司。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "husband",
+          "pos": "noun",
+          "example": "My husband goes to work.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "기타",
+      "zh": "吉他",
+      "pos": "名词",
+      "page": 49,
+      "source": "단어장",
+      "exampleKo": "주말에 기타를 배워요.",
+      "exampleZh": "周末我学吉他。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "guitar",
+          "pos": "noun",
+          "example": "I learn guitar on weekends.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "주말",
+      "zh": "周末",
+      "pos": "名词",
+      "page": 49,
+      "source": "단어장",
+      "exampleKo": "주말에 일 안 해요.",
+      "exampleZh": "周末不工作。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "weekend",
+          "pos": "noun",
+          "example": "I do not work on the weekend.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "영화관",
+      "zh": "电影院",
+      "pos": "名词",
+      "page": 51,
+      "source": "배운 어휘 확인",
+      "exampleKo": "영화관에서 만날래요?",
+      "exampleZh": "要在电影院见吗？",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "movie theater",
+          "pos": "noun",
+          "example": "Do you want to meet at the movie theater?",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "극장",
+      "zh": "剧场",
+      "pos": "名词",
+      "page": 51,
+      "source": "배운 어휘 확인",
+      "exampleKo": "극장에 가요.",
+      "exampleZh": "我去剧场。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "theater",
+          "pos": "noun",
+          "example": "I go to the theater.",
+          "tips": []
         }
       }
     }

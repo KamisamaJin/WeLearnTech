@@ -108,7 +108,15 @@
     ["추월하다", "超车", "动词", "to overtake", "verb", "무리하게 추월하는 것은 위험해요.", "勉强超车很危险。", "Overtaking recklessly is dangerous.", "130", "문화와 정보", ["collocation:무리하게 추월하다"]],
     ["끼어들기", "插队，强行并线", "名词", "cutting in; merging abruptly", "noun", "끼어들기를 하는 것은 위험합니다.", "强行并线很危险。", "Cutting in is dangerous.", "130", "문화와 정보", ["collocation:끼어들기"]],
     ["안전거리", "安全距离", "名词", "safe distance", "noun", "사고 예방을 위해 안전거리를 유지하세요.", "为了预防事故，请保持安全距离。", "Maintain a safe distance to prevent accidents.", "130", "문화와 정보", ["collocation:안전거리를 유지하다"]],
-    ["보행자", "行人", "名词", "pedestrian", "noun", "보행자도 휴대 전화를 보면서 걸으면 위험해요.", "行人边看手机边走也很危险。", "It is dangerous for pedestrians to walk while looking at a phone.", "130", "문화와 정보", ["collocation:보행자"]]
+    ["보행자", "行人", "名词", "pedestrian", "noun", "보행자도 휴대 전화를 보면서 걸으면 위험해요.", "行人边看手机边走也很危险。", "It is dangerous for pedestrians to walk while looking at a phone.", "130", "문화와 정보", ["collocation:보행자"]],
+    ["방화", "纵火", "名词", "arson", "noun", "경찰이 방화 사건을 수사하고 있어요.", "警方正在调查纵火案件。", "The police are investigating an arson case.", "128", "단어장", []],
+    ["치이다", "被撞；被轧", "动词", "to be hit by a vehicle", "verb", "길을 건너다가 차에 치일 뻔했어요.", "过马路时差点被车撞到。", "I was almost hit by a car while crossing the road.", "131", "배운 어휘 확인", []],
+    ["부러지다", "折断；骨折", "动词", "to break; to fracture", "verb", "넘어져서 팔이 부러졌어요.", "摔倒后胳膊骨折了。", "I fell and broke my arm.", "131", "배운 어휘 확인", []],
+    ["찢어지다", "撕裂；裂开", "动词", "to tear; to be torn", "verb", "넘어지면서 바지가 찢어졌어요.", "摔倒时裤子撕破了。", "My trousers tore when I fell.", "131", "배운 어휘 확인", []],
+    ["깁스", "石膏固定", "名词", "cast", "noun", "다리가 부러져서 깁스를 했어요.", "腿骨折后打了石膏。", "I had a cast put on because my leg was broken.", "131", "배운 어휘 확인", []],
+    ["사기", "诈骗", "名词", "fraud; scam", "noun", "인터넷 사기를 당해서 경찰에 신고했어요.", "遭遇网络诈骗后向警方报了案。", "I reported an online scam to the police after falling victim to it.", "131", "배운 어휘 확인", []],
+    ["절도", "盗窃", "名词", "theft", "noun", "절도도 5대 범죄에 포함됩니다.", "盗窃也包含在五大犯罪中。", "Theft is also included among the five major crimes.", "131", "배운 어휘 확인", []],
+    ["뺑소니", "肇事逃逸", "名词", "hit-and-run", "noun", "경찰이 뺑소니 운전자를 찾고 있어요.", "警方正在寻找肇事逃逸的司机。", "The police are looking for the hit-and-run driver.", "131", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -146,13 +154,18 @@
       { page: 120, label: "단원 제목", note: "课题、活动目标和核心主题" },
       { page: 122, label: "어휘", note: "事故经过、受伤部位和治疗相关表达" },
       { page: 123, label: "문법 1", note: "V-(으)ㄹ 뻔하다 和险些发生的事故" },
+      { page: 123, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 124, label: "문법 2", note: "N(으)로 인해 和新闻式原因表达" },
+      { page: 124, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 125, label: "말하기", note: "事故说明和安慰表达" },
+      { page: 125, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 126, label: "듣기/발음", note: "交通事故说明与发音练习" },
+      { page: 126, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 127, label: "읽기 전", note: "事件类型与人物角色词汇" },
       { page: 128, label: "읽기", note: " 절도와 방화 사건 기사" },
+      { page: 128, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 130, label: "문화와 정보", note: "韩国常见事故和预防方法" },
-      { page: 131, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 131, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能讲述自己经历过的事件或事故。",

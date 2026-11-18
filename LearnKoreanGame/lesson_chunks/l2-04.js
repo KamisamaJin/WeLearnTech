@@ -100,6 +100,18 @@ window.lessonGuideL2LessonChunks["l2-04"] = {
       }
     }
   ],
+  "vocabularySources": [
+    {
+      "page": 49,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 51,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
+    }
+  ],
   "vocabulary": [
     {
       "ko": "전화",
@@ -2768,6 +2780,60 @@ window.lessonGuideL2LessonChunks["l2-04"] = {
           ]
         }
       }
+    },
+    {
+      "ko": "매너 모드로 하세요",
+      "zh": "请调成静音模式",
+      "pos": "表达",
+      "page": 51,
+      "source": "배운 어휘 확인",
+      "exampleKo": "공연 중에는 매너 모드로 하세요.",
+      "exampleZh": "演出期间请调成静音模式。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Please switch to silent mode",
+          "pos": "expression",
+          "example": "Please switch to silent mode during the performance.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "진동으로 하세요",
+      "zh": "请调成振动模式",
+      "pos": "表达",
+      "page": 51,
+      "source": "배운 어휘 확인",
+      "exampleKo": "회의 중에는 휴대 전화를 진동으로 하세요.",
+      "exampleZh": "开会时请把手机调成振动模式。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Please switch to vibrate",
+          "pos": "expression",
+          "example": "Please switch your phone to vibrate during the meeting.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "휴대 전화 배터리가 없어요",
+      "zh": "手机没电了",
+      "pos": "表达",
+      "page": 51,
+      "source": "배운 어휘 확인",
+      "exampleKo": "휴대 전화 배터리가 없어요. 충전기를 빌려 주세요.",
+      "exampleZh": "手机没电了，请借我充电器。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "My phone battery is dead",
+          "pos": "expression",
+          "example": "My phone battery is dead. Please lend me a charger.",
+          "tips": []
+        }
+      }
     }
   ],
   "dialogues": [
@@ -3616,7 +3682,7 @@ window.lessonGuideL2LessonChunks["l2-04"] = {
     }
   },
   "stats": {
-    "vocabulary": 109,
+    "vocabulary": 112,
     "dialogues": 5,
     "culture": 1,
     "practice": 5

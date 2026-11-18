@@ -47,6 +47,16 @@ window.lessonGuideL1LessonChunks["l1-03"] = {
       "page": 41,
       "label": "발음 / 배운 어휘 확인",
       "note": "읽어요, 재미있어요, 많아요 发音练习和本课词汇确认"
+    },
+    {
+      "page": 39,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 41,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [

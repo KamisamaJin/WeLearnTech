@@ -57,6 +57,16 @@ window.lessonGuideL1LessonChunks["l1-02"] = {
       "page": 31,
       "label": "발음/배운 어휘 확인",
       "note": "교실에[교시레], 없어요[업써요], 있어요[이써요] 和复习词表"
+    },
+    {
+      "page": 29,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 31,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -1079,6 +1089,132 @@ window.lessonGuideL1LessonChunks["l1-02"] = {
               "text": "성은 ...이에요/예요"
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "칠판",
+      "zh": "黑板",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "칠판에 이름을 써요.",
+      "exampleZh": "在黑板上写名字。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "blackboard",
+          "pos": "noun",
+          "example": "I write my name on the blackboard.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "필통",
+      "zh": "笔袋；文具盒",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "필통에 볼펜이 있어요.",
+      "exampleZh": "笔袋里有圆珠笔。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "pencil case",
+          "pos": "noun",
+          "example": "There is a pen in the pencil case.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "볼펜",
+      "zh": "圆珠笔",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "볼펜으로 써요.",
+      "exampleZh": "用圆珠笔写。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "ballpoint pen",
+          "pos": "noun",
+          "example": "I write with a ballpoint pen.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "수건",
+      "zh": "毛巾",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "수건은 화장실에 있어요.",
+      "exampleZh": "毛巾在洗手间。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "towel",
+          "pos": "noun",
+          "example": "The towel is in the bathroom.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "거울",
+      "zh": "镜子",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "거울을 봐요.",
+      "exampleZh": "我照镜子。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "mirror",
+          "pos": "noun",
+          "example": "I look in the mirror.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "휴지",
+      "zh": "卫生纸；纸巾",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "휴지는 10,320원입니다.",
+      "exampleZh": "卫生纸是10,320韩元。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "tissue; toilet paper",
+          "pos": "noun",
+          "example": "The tissue is 10,320 won.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "컵",
+      "zh": "杯子",
+      "pos": "名词",
+      "page": 31,
+      "source": "배운 어휘 확인",
+      "exampleKo": "책상 위에 컵이 있어요.",
+      "exampleZh": "桌上有杯子。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "cup",
+          "pos": "noun",
+          "example": "There is a cup on the desk.",
+          "tips": []
         }
       }
     }

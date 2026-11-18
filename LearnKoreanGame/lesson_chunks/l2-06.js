@@ -70,6 +70,13 @@ window.lessonGuideL2LessonChunks["l2-06"] = {
       }
     }
   ],
+  "vocabularySources": [
+    {
+      "page": 71,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
+    }
+  ],
   "vocabulary": [
     {
       "ko": "맛있는 음식",

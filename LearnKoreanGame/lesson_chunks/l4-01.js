@@ -29,9 +29,19 @@ window.lessonGuideL4LessonChunks["l4-01"] = {
       "note": "V-느라고 例句和练习词"
     },
     {
+      "page": 15,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
       "page": 16,
       "label": "문법 2",
       "note": "V/A-(으)ㄹ수록 例句和练习词"
+    },
+    {
+      "page": 16,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     },
     {
       "page": 17,
@@ -39,14 +49,29 @@ window.lessonGuideL4LessonChunks["l4-01"] = {
       "note": "韩国生活适应初期和现在生活对话"
     },
     {
+      "page": 17,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
       "page": 18,
       "label": "듣기/발음",
       "note": "学习初期回想表达和发音练习"
     },
     {
+      "page": 18,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
       "page": 20,
       "label": "읽기",
       "note": "韩国生活定居体验手记"
+    },
+    {
+      "page": 20,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     },
     {
       "page": 22,
@@ -56,7 +81,7 @@ window.lessonGuideL4LessonChunks["l4-01"] = {
     {
       "page": 23,
       "label": "배운 어휘 확인",
-      "note": "本课复习词汇补充"
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -1843,6 +1868,686 @@ window.lessonGuideL4LessonChunks["l4-01"] = {
               "text": "지원 정보를 보다"
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "환경",
+      "zh": "环境",
+      "pos": "名词",
+      "page": "15",
+      "source": "단어장",
+      "exampleKo": "새로운 환경에 적응하고 있어요.",
+      "exampleZh": "我正在适应新的环境。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "environment",
+          "pos": "noun",
+          "example": "I am adapting to a new environment.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "다행히",
+      "zh": "幸好；幸亏",
+      "pos": "副词",
+      "page": "15",
+      "source": "단어장",
+      "exampleKo": "다행히 좋은 이웃을 만났어요.",
+      "exampleZh": "幸好遇到了好邻居。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "fortunately",
+          "pos": "adverb",
+          "example": "Fortunately, I met good neighbors.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "챙겨 먹다",
+      "zh": "按时好好吃；记得吃",
+      "pos": "动词短语",
+      "page": "16",
+      "source": "단어장",
+      "exampleKo": "바빠도 아침을 챙겨 먹어요.",
+      "exampleZh": "即使忙也要记得吃早餐。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to make sure to eat",
+          "pos": "verb phrase",
+          "example": "I make sure to eat breakfast even when I am busy.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "어리다",
+      "zh": "年幼",
+      "pos": "形容词",
+      "page": "16",
+      "source": "단어장",
+      "exampleKo": "아이가 아직 어려요.",
+      "exampleZh": "孩子还小。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "young",
+          "pos": "adjective",
+          "example": "The child is still young.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "수요",
+      "zh": "需求",
+      "pos": "名词",
+      "page": "16",
+      "source": "단어장",
+      "exampleKo": "수요가 늘면 가격이 오를 수 있어요.",
+      "exampleZh": "需求增加的话，价格可能上涨。",
+      "tips": [
+        {
+          "type": "collocation",
+          "text": "수요가 늘다"
+        }
+      ],
+      "translations": {
+        "en": {
+          "meaning": "demand",
+          "pos": "noun",
+          "example": "If demand increases, prices may rise.",
+          "tips": [
+            {
+              "type": "collocation",
+              "text": "수요가 늘다"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ko": "긍정적이다",
+      "zh": "积极；乐观",
+      "pos": "形容词",
+      "page": "17",
+      "source": "단어장",
+      "exampleKo": "항상 긍정적으로 생각하려고 해요.",
+      "exampleZh": "我总是尽量积极思考。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "positive; optimistic",
+          "pos": "adjective",
+          "example": "I always try to think positively.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "사업",
+      "zh": "事业；生意",
+      "pos": "名词",
+      "page": "17",
+      "source": "단어장",
+      "exampleKo": "한국에서 작은 사업을 시작했어요.",
+      "exampleZh": "我在韩国开始做小生意。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "business",
+          "pos": "noun",
+          "example": "I started a small business in Korea.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "즐기다",
+      "zh": "享受；喜爱",
+      "pos": "动词",
+      "page": "17",
+      "source": "단어장",
+      "exampleKo": "요즘은 한국 생활을 즐기고 있어요.",
+      "exampleZh": "最近我很享受在韩国的生活。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to enjoy",
+          "pos": "verb",
+          "example": "These days, I am enjoying life in Korea.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "회상",
+      "zh": "回想；回忆",
+      "pos": "名词",
+      "page": "18",
+      "source": "단어장",
+      "exampleKo": "옛 사진을 보며 회상에 잠겼어요.",
+      "exampleZh": "看着旧照片，我沉浸在回忆中。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "recollection",
+          "pos": "noun",
+          "example": "I became lost in recollection while looking at old photos.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "엊그제",
+      "zh": "前两天；不久前",
+      "pos": "副词",
+      "page": "18",
+      "source": "단어장",
+      "exampleKo": "엊그제 한국에 온 것 같은데 벌써 십 년이 지났어요.",
+      "exampleZh": "感觉才刚来韩国，转眼已经十年了。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "a few days ago; just recently",
+          "pos": "adverb",
+          "example": "It feels like I arrived in Korea just recently, but ten years have already passed.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "고진감래",
+      "zh": "苦尽甘来",
+      "pos": "俗语",
+      "page": "18",
+      "source": "단어장",
+      "exampleKo": "고진감래라는 말처럼 노력 끝에 좋은 결과를 얻었어요.",
+      "exampleZh": "正如苦尽甘来这句话所说，努力之后取得了好结果。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "sweetness after hardship",
+          "pos": "idiom",
+          "example": "As the saying goes, sweetness follows hardship: my efforts finally paid off.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "옛말",
+      "zh": "古话；老话",
+      "pos": "名词",
+      "page": "18",
+      "source": "단어장",
+      "exampleKo": "옛말에 고생 끝에 낙이 온다고 해요.",
+      "exampleZh": "老话说，苦尽甘来。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "old saying",
+          "pos": "noun",
+          "example": "An old saying tells us that happiness comes after hardship.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "번역자",
+      "zh": "翻译者；译者",
+      "pos": "名词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "번역자는 두 나라의 문화를 잘 알아야 해요.",
+      "exampleZh": "译者应该充分了解两国文化。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "translator",
+          "pos": "noun",
+          "example": "A translator should understand the cultures of both countries well.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "이주",
+      "zh": "移居；迁移",
+      "pos": "名词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "한국으로의 이주는 제 삶의 큰 변화였어요.",
+      "exampleZh": "移居韩国是我人生中的重大变化。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "migration; relocation",
+          "pos": "noun",
+          "example": "Moving to Korea was a major change in my life.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "마음을 먹다",
+      "zh": "下决心",
+      "pos": "动词短语",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "한국어를 꾸준히 배우기로 마음을 먹었어요.",
+      "exampleZh": "我下决心坚持学习韩语。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to make up one's mind",
+          "pos": "verb phrase",
+          "example": "I made up my mind to study Korean consistently.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "기초",
+      "zh": "基础",
+      "pos": "名词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "한국어의 기초부터 배웠어요.",
+      "exampleZh": "我从韩语基础开始学起。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "basics; foundation",
+          "pos": "noun",
+          "example": "I learned Korean starting with the basics.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "꽤",
+      "zh": "相当；颇",
+      "pos": "副词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "한국 생활에 꽤 익숙해졌어요.",
+      "exampleZh": "我已经相当习惯韩国生活了。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "quite; fairly",
+          "pos": "adverb",
+          "example": "I have become quite used to life in Korea.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "적성에 맞다",
+      "zh": "适合自己的性格和能力",
+      "pos": "动词短语",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "이 일은 제 적성에 맞아요.",
+      "exampleZh": "这份工作很适合我。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to suit one's aptitude",
+          "pos": "verb phrase",
+          "example": "This job suits my aptitude.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "어쩌면",
+      "zh": "也许；说不定",
+      "pos": "副词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "어쩌면 좋은 기회가 될 수도 있어요.",
+      "exampleZh": "说不定会成为一个好机会。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "perhaps; maybe",
+          "pos": "adverb",
+          "example": "Perhaps it could become a good opportunity.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "당연하다",
+      "zh": "理所当然；自然",
+      "pos": "形容词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "처음에는 실수하는 것이 당연해요.",
+      "exampleZh": "刚开始犯错是很自然的。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "natural; to be expected",
+          "pos": "adjective",
+          "example": "It is natural to make mistakes at first.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "상황",
+      "zh": "情况；状况",
+      "pos": "名词",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "어려운 상황에서도 포기하지 않았어요.",
+      "exampleZh": "即使处境困难，我也没有放弃。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "situation",
+          "pos": "noun",
+          "example": "I did not give up even in a difficult situation.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "기회를 잡다",
+      "zh": "抓住机会",
+      "pos": "动词短语",
+      "page": "20",
+      "source": "단어장",
+      "exampleKo": "준비를 잘하면 기회를 잡을 수 있어요.",
+      "exampleZh": "准备充分就能抓住机会。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to seize an opportunity",
+          "pos": "verb phrase",
+          "example": "If you prepare well, you can seize an opportunity.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "뭐든 다 할 수 있을 것 같다",
+      "zh": "感觉什么都能做到",
+      "pos": "表达",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "자신감이 생겨서 뭐든 다 할 수 있을 것 같아요.",
+      "exampleZh": "有了自信，感觉什么都能做到。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to feel as though one can do anything",
+          "pos": "expression",
+          "example": "I have gained confidence and feel as though I can do anything.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "해내다",
+      "zh": "完成；成功做到",
+      "pos": "动词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "어려운 일을 끝까지 해냈어요.",
+      "exampleZh": "我坚持到最后，完成了困难的工作。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to accomplish; to pull off",
+          "pos": "verb",
+          "example": "I managed to complete the difficult task.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "자신이 있다",
+      "zh": "有信心",
+      "pos": "动词短语",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "이 일을 잘할 자신이 있어요.",
+      "exampleZh": "我有信心做好这件事。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to be confident",
+          "pos": "verb phrase",
+          "example": "I am confident that I can do this job well.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "낯설다",
+      "zh": "陌生、不熟悉",
+      "pos": "形容词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "처음에는 모든 것이 낯설었어요.",
+      "exampleZh": "一开始一切都很陌生。",
+      "tips": [
+        {
+          "label": "搭配",
+          "text": "장소가 낯설다 / 사람이 낯설다"
+        }
+      ],
+      "translations": {
+        "en": {
+          "tips": [
+            {
+              "type": "collocation",
+              "text": "장소가 낯설다 / 사람이 낯설다."
+            }
+          ],
+          "meaning": "unfamiliar; strange",
+          "pos": "adjective",
+          "example": "At first, everything was unfamiliar."
+        }
+      }
+    },
+    {
+      "ko": "주변을 돌아보다",
+      "zh": "看看周围；关心周围的人和事",
+      "pos": "动词短语",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "여유가 생겨서 주변을 돌아보게 됐어요.",
+      "exampleZh": "有了余裕后，我开始关注周围的人和事。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to look around; to pay attention to one's surroundings",
+          "pos": "verb phrase",
+          "example": "With more time to spare, I began paying attention to the people and things around me.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "여유",
+      "zh": "余裕；闲暇",
+      "pos": "名词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "이제는 생활에 여유가 생겼어요.",
+      "exampleZh": "现在生活有了余裕。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "spare time; breathing room",
+          "pos": "noun",
+          "example": "Now I have some breathing room in my life.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "편견",
+      "zh": "偏见",
+      "pos": "名词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "편견을 버리고 열린 마음을 가져야 해요.",
+      "exampleZh": "应该放下偏见，保持开放心态。",
+      "tips": [
+        {
+          "type": "pair",
+          "text": "편견과 선입견"
+        }
+      ],
+      "translations": {
+        "en": {
+          "meaning": "prejudice",
+          "pos": "noun",
+          "example": "We should let go of prejudice and keep an open mind.",
+          "tips": [
+            {
+              "type": "pair",
+              "text": "편견과 선입견"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ko": "초청하다",
+      "zh": "邀请；邀约",
+      "pos": "动词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "행사에 이웃들을 초청했어요.",
+      "exampleZh": "我邀请邻居们参加活动。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to invite",
+          "pos": "verb",
+          "example": "I invited my neighbors to the event.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "제2의 고향",
+      "zh": "第二故乡",
+      "pos": "名词短语",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "한국은 제2의 고향이 되었어요.",
+      "exampleZh": "韩国成了我的第二故乡。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "second hometown",
+          "pos": "noun phrase",
+          "example": "Korea has become my second hometown.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "봄날",
+      "zh": "春日；美好时光",
+      "pos": "名词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "힘든 시간을 지나 제 인생에도 봄날이 왔어요.",
+      "exampleZh": "熬过艰难的时光，我的人生也迎来了春天。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "spring day; happy days",
+          "pos": "noun",
+          "example": "After difficult times, happy days have come to my life too.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "기대감",
+      "zh": "期待感",
+      "pos": "名词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "꿈을 이룰 수 있을지도 모른다는 기대감이 있었어요.",
+      "exampleZh": "有也许能实现梦想的期待感。",
+      "tips": [
+        {
+          "type": "collocation",
+          "text": "기대감"
+        }
+      ],
+      "translations": {
+        "en": {
+          "meaning": "expectation; hope",
+          "pos": "noun",
+          "example": "I had the hope that I might achieve my dream.",
+          "tips": [
+            {
+              "type": "collocation",
+              "text": "기대감"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ko": "자신감",
+      "zh": "自信",
+      "pos": "名词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "할 수 있다는 자신감을 갖고 열심히 살았습니다.",
+      "exampleZh": "怀着能做到的自信努力生活。",
+      "tips": [
+        {
+          "type": "collocation",
+          "text": "자신감을 갖다"
+        }
+      ],
+      "translations": {
+        "en": {
+          "meaning": "confidence",
+          "pos": "noun",
+          "example": "I lived diligently with confidence that I could do it.",
+          "tips": [
+            {
+              "type": "collocation",
+              "text": "자신감을 갖다"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "ko": "생소함",
+      "zh": "陌生感",
+      "pos": "名词",
+      "page": "23",
+      "source": "배운 어휘 확인",
+      "exampleKo": "처음에는 음식의 생소함 때문에 힘들었어요.",
+      "exampleZh": "起初因为不熟悉食物而很不适应。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "unfamiliarity",
+          "pos": "noun",
+          "example": "At first, the unfamiliarity of the food made things difficult.",
+          "tips": []
         }
       }
     }

@@ -100,7 +100,15 @@
     ["호칭", "称呼", "名词", "title; form of address", "noun", "상황에 맞는 호칭을 써야 해요.", "应该使用符合情况的称呼。", "You should use a title appropriate to the situation.", "143", "배운 어휘 확인", ["collocation:호칭"]],
     ["파괴", "破坏", "名词", "destruction; damage", "noun", "신조어 사용이 언어 파괴로 이어질 수 있어요.", "使用新词可能导致语言破坏。", "Using new words can lead to damage to language.", "143", "배운 어휘 확인", ["collocation:언어 파괴"]],
     ["단절", "断绝，中断", "名词", "breakdown; disconnection", "noun", "세대 간의 소통 단절이 생길 수 있어요.", "可能产生代际沟通断绝。", "Communication breakdown between generations can occur.", "143", "배운 어휘 확인", ["collocation:소통 단절"]],
-    ["유발하다", "诱发，导致", "动词", "to cause; trigger", "verb", "혼란을 유발할 수 있어요.", "可能导致混乱。", "It can cause confusion.", "143", "배운 어휘 확인", ["collocation:유발하다"]]
+    ["유발하다", "诱发，导致", "动词", "to cause; trigger", "verb", "혼란을 유발할 수 있어요.", "可能导致混乱。", "It can cause confusion.", "143", "배운 어휘 확인", ["collocation:유발하다"]],
+    ["비속어", "粗俗语；粗话", "名词", "vulgar language; slang", "noun", "공식적인 자리에서는 비속어를 쓰지 않아요.", "正式场合不使用粗俗语。", "We do not use vulgar language on formal occasions.", "143", "배운 어휘 확인", []],
+    ["활용", "运用；活用", "名词", "use; application", "noun", "속담의 적절한 활용을 배웠어요.", "学习了谚语的恰当运用。", "I learned about the appropriate use of proverbs.", "143", "배운 어휘 확인", []],
+    ["모국어", "母语", "名词", "native language", "noun", "요즘 아이들은 모국어조차 제대로 말할 수 없다고 걱정해요.", "有人担心现在孩子连母语都说不好。", "Some worry that children cannot even speak their native language properly.", "143", "배운 어휘 확인", []],
+    ["섞다", "混合；掺杂", "动词", "to mix", "verb", "한국어에 모국어를 섞어서 말했어요.", "我把韩语和母语混在一起说了。", "I mixed my native language with Korean when speaking.", "143", "배운 어휘 확인", []],
+    ["의도하다", "意图；打算", "动词", "to intend", "verb", "제가 의도한 뜻이 잘 전달되지 않았어요.", "我想表达的意思没有很好地传达出去。", "My intended meaning did not come across well.", "143", "배운 어휘 확인", []],
+    ["재치", "机智", "名词", "wit", "noun", "그 사람은 재치 있는 말로 분위기를 바꿨어요.", "那个人用机智的话语改变了气氛。", "That person changed the mood with a witty remark.", "143", "배운 어휘 확인", []],
+    ["현상", "现象", "名词", "phenomenon", "noun", "지구 온난화는 기온이 상승하는 현상이에요.", "全球变暖是气温上升的现象。", "Global warming is a phenomenon of rising temperatures.", "143", "배운 어휘 확인", []],
+    ["무분별하다", "无分辨，盲目", "形容词", "indiscriminate; thoughtless", "adjective", "무분별한 조기 교육은 조심해야 해요.", "要小心盲目的早期教育。", "Indiscriminate early education should be approached carefully.", "143", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -138,13 +146,18 @@
       { page: 132, label: "단원 제목", note: "课题、学习目标和核心主题" },
       { page: 134, label: "어휘", note: "正确语言生活和韩语使用困难" },
       { page: 135, label: "문법 1", note: "V-고 말다 和非意图结果表达" },
+      { page: 135, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 136, label: "문법 2", note: "V-는 척하다 / A-(으)ㄴ 척하다 和假装表达" },
+      { page: 136, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 137, label: "말하기", note: "韩语使用困难对话" },
+      { page: 137, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 138, label: "듣기/발음", note: "会议沟通问题与发音练习" },
+      { page: 138, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 139, label: "읽기 전", note: "新词使用的正反观点" },
       { page: 140, label: "읽기", note: "신조어 사용 칼럼" },
+      { page: 140, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 142, label: "문화와 정보", note: "与语言相关的韩国俗语" },
-      { page: 143, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 143, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能说明使用韩语时遇到的困难。",

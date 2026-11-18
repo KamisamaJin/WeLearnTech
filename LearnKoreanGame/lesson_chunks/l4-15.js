@@ -102,7 +102,14 @@
     ["유튜브 채널", "YouTube 频道", "名词短语", "YouTube channel", "noun phrase", "유튜브 채널을 통해 법을 쉽게 이해할 수 있어요.", "通过 YouTube 频道可以轻松理解法律。", "You can understand laws easily through YouTube channels.", "202", "문화와 정보", ["collocation:유튜브 채널"]],
     ["이롭다", "有利，有益", "形容词", "beneficial", "adjective", "법을 알고 지키면 나에게 이로운 일이 많아요.", "了解并遵守法律，会有很多对自己有益的事。", "Knowing and following the law brings many benefits.", "202", "문화와 정보", ["collocation:이롭다"]],
     ["불이익", "不利，损失", "名词", "disadvantage; penalty", "noun", "법을 모르거나 지키지 않으면 불이익을 받을 수 있어요.", "不了解或不遵守法律可能会受到不利影响。", "If you do not know or follow the law, you may face disadvantages.", "202", "문화와 정보", ["collocation:불이익을 받다"]],
-    ["지혜", "智慧", "名词", "wisdom", "noun", "법을 잘 알아서 편리하게 살아가는 지혜가 필요해요.", "需要了解法律、便利生活的智慧。", "Wisdom is needed to know the law and live conveniently.", "202", "문화와 정보", ["collocation:지혜"]]
+    ["지혜", "智慧", "名词", "wisdom", "noun", "법을 잘 알아서 편리하게 살아가는 지혜가 필요해요.", "需要了解法律、便利生活的智慧。", "Wisdom is needed to know the law and live conveniently.", "202", "문화와 정보", ["collocation:지혜"]],
+    ["강산", "江山；山河", "名词", "rivers and mountains; landscape", "noun", "십 년이면 강산도 변한다는 말이 있어요.", "有句话说，十年足以改变山河。", "There is a saying that even the landscape changes in ten years.", "196", "단어장", []],
+    ["벼", "水稻", "名词", "rice plant", "noun", "논에서 벼가 자라고 있어요.", "水稻正在田里生长。", "Rice plants are growing in the paddy field.", "196", "단어장", []],
+    ["범죄를 저지르다", "犯罪", "动词短语", "to commit a crime", "verb phrase", "범죄를 저지르면 처벌을 받아요.", "犯罪就会受到处罚。", "If you commit a crime, you will be punished.", "203", "배운 어휘 확인", []],
+    ["법을 위반하다", "违法", "动词短语", "to violate the law", "verb phrase", "법을 위반하면 벌금을 낼 수 있어요.", "违法可能会被处以罚款。", "You may have to pay a fine if you violate the law.", "203", "배운 어휘 확인", []],
+    ["법규를 위반하다", "违反法规", "动词短语", "to violate regulations", "verb phrase", "교통 법규를 위반하지 마세요.", "请不要违反交通法规。", "Please do not violate traffic regulations.", "203", "배운 어휘 확인", []],
+    ["벌금을 내다", "缴纳罚金", "动词短语", "to pay a fine", "verb phrase", "법원에서 정한 벌금을 냈어요.", "缴纳了法院判定的罚金。", "I paid the fine imposed by the court.", "203", "배운 어휘 확인", []],
+    ["불법 투기 단속", "查处非法倾倒垃圾", "名词短语", "enforcement against illegal dumping", "noun phrase", "구청에서 불법 투기 단속을 강화했어요.", "区政府加强了对非法倾倒垃圾的查处。", "The district office stepped up enforcement against illegal dumping.", "203", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -141,13 +148,18 @@
       { page: 192, label: "단원 제목", note: "课题、语法和学习目标" },
       { page: 194, label: "어휘", note: "规则、法律、违法行为和处罚" },
       { page: 195, label: "문법 1", note: "V-다시피 与已知信息提示" },
+      { page: 195, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 196, label: "문법 2", note: "V-는 법이다 与常理表达" },
+      { page: 196, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 197, label: "말하기", note: "交通法规和紧急情况对话" },
+      { page: 197, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 198, label: "듣기/발음", note: "名誉毁损、著作权和发音" },
+      { page: 198, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 199, label: "읽기 전", note: "轻微犯罪种类和五大犯罪" },
       { page: 200, label: "읽기", note: "生活中的轻微犯罪新闻文章" },
+      { page: 200, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 202, label: "문화와 정보", note: "找法容易生活法令信息" },
-      { page: 203, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 203, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能说明遵守法规的日常生活。",

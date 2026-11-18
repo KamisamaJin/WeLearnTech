@@ -37,6 +37,16 @@ window.lessonGuideL1LessonChunks["l1-10"] = {
       "page": "120-121",
       "label": "문화와 정보 / 배운 어휘 확인",
       "note": "家族称谓文化与本课复习词汇"
+    },
+    {
+      "page": 119,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 121,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -857,6 +867,24 @@ window.lessonGuideL1LessonChunks["l1-10"] = {
               "text": "Korean uses 쓰다 for wearing glasses."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "나",
+      "zh": "我（非敬语）",
+      "pos": "代词",
+      "page": 121,
+      "source": "배운 어휘 확인",
+      "exampleKo": "나는 한국어를 배워.",
+      "exampleZh": "我在学韩语。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "I; me (informal)",
+          "pos": "pronoun",
+          "example": "I am learning Korean.",
+          "tips": []
         }
       }
     }

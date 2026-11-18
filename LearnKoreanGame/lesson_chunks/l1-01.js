@@ -47,6 +47,11 @@ window.lessonGuideL1LessonChunks["l1-01"] = {
       "page": 21,
       "label": "배운 어휘 확인",
       "note": "本课核心词汇复习。"
+    },
+    {
+      "page": 19,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -638,6 +643,78 @@ window.lessonGuideL1LessonChunks["l1-01"] = {
               "text": "Say 안녕히 가세요 to the person who is leaving."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "뉴욕",
+      "zh": "纽约",
+      "pos": "专有名词",
+      "page": 19,
+      "source": "단어장",
+      "exampleKo": "저는 미국 뉴욕에서 왔어요.",
+      "exampleZh": "我来自美国纽约。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "New York",
+          "pos": "proper noun",
+          "example": "I am from New York in the United States.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "영어",
+      "zh": "英语",
+      "pos": "名词",
+      "page": 19,
+      "source": "단어장",
+      "exampleKo": "영어를 배워요.",
+      "exampleZh": "我学习英语。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "English",
+          "pos": "noun",
+          "example": "I study English.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "이집트",
+      "zh": "埃及",
+      "pos": "专有名词",
+      "page": 21,
+      "source": "배운 어휘 확인",
+      "exampleKo": "이집트 사람이에요.",
+      "exampleZh": "我是埃及人。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Egypt",
+          "pos": "proper noun",
+          "example": "I am Egyptian.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "한국어",
+      "zh": "韩语",
+      "pos": "名词",
+      "page": 21,
+      "source": "배운 어휘 확인",
+      "exampleKo": "저는 한국어를 배워요.",
+      "exampleZh": "我学习韩语。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Korean language",
+          "pos": "noun",
+          "example": "I learn Korean.",
+          "tips": []
         }
       }
     }

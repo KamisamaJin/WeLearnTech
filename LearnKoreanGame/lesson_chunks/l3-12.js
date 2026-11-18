@@ -70,7 +70,17 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "page": 165,
             "label": "배운 어휘 확인",
             "note": "补充复习词表中的节日、风俗、问候和动作词。"
-        }
+        },
+      {
+          "page": 158,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 160,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1406,7 +1416,151 @@ window.lessonGuideL3LessonChunks["l3-12"] = {
             "tips": [
                 { "label": "搭配", "text": "감사와 행복이 가득한" }
             ]
-        }
+        },
+      {
+          "ko": "풍습",
+          "zh": "风俗",
+          "pos": "명사",
+          "page": 158,
+          "source": "단어장",
+          "exampleKo": "나쁜 일을 막는 풍습이 있어요.",
+          "exampleZh": "有阻挡坏事的风俗。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "customs",
+                  "pos": "noun",
+                  "example": "There is a custom of blocking bad things.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "생기다",
+          "zh": "产生；出现",
+          "pos": "动词",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "피부에 문제가 생겼어요.",
+          "exampleZh": "皮肤出现了问题。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to appear; to develop",
+                  "pos": "verb",
+                  "example": "I developed a skin problem.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "가족과 친척들이 모여 윷놀이를 하다",
+          "zh": "家人和亲戚聚在一起玩掷柶游戏",
+          "pos": "动词短语",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "설날에 가족과 친척들이 모여 윷놀이를 해요.",
+          "exampleZh": "春节时家人和亲戚聚在一起玩掷柶游戏。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "family and relatives gather to play yutnori",
+                  "pos": "verb phrase",
+                  "example": "At Lunar New Year, family and relatives gather to play yutnori.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "연날리기, 제기차기 놀이를 즐기다",
+          "zh": "玩放风筝、踢毽子等游戏",
+          "pos": "动词短语",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "명절에 연날리기, 제기차기 놀이를 즐겨요.",
+          "exampleZh": "节日里玩放风筝、踢毽子等游戏。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to enjoy kite flying and jegichagi",
+                  "pos": "verb phrase",
+                  "example": "We enjoy kite flying and jegichagi during the holiday.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "보름달을 보며 소원을 빌다",
+          "zh": "望着满月许愿",
+          "pos": "动词短语",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "추석에 보름달을 보며 소원을 빌어요.",
+          "exampleZh": "中秋节望着满月许愿。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to make a wish while looking at the full moon",
+                  "pos": "verb phrase",
+                  "example": "We make wishes while looking at the full moon at Chuseok.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "햇곡식과 햇과일로 차례를 지내다",
+          "zh": "用新收获的谷物和水果祭祖",
+          "pos": "动词短语",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "추석에 햇곡식과 햇과일로 차례를 지내요.",
+          "exampleZh": "中秋节用新收获的谷物和水果祭祖。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to hold ancestral rites with newly harvested grain and fruit",
+                  "pos": "verb phrase",
+                  "example": "At Chuseok, we hold ancestral rites with newly harvested grain and fruit.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "빌다",
+          "zh": "祈求；祝愿",
+          "pos": "动词",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "가족의 건강을 빌었어요.",
+          "exampleZh": "祈求了家人的健康。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to wish; to pray",
+                  "pos": "verb",
+                  "example": "I prayed for my family's health.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "넉넉하다",
+          "zh": "充裕；充足",
+          "pos": "形容词",
+          "page": 165,
+          "source": "배운 어휘 확인",
+          "exampleKo": "명절 음식을 넉넉하게 준비했어요.",
+          "exampleZh": "准备了充足的节日食物。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "ample; sufficient",
+                  "pos": "adjective",
+                  "example": "I prepared plenty of food for the holiday.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

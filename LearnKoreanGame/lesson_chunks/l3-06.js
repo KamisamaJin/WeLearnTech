@@ -127,7 +127,27 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "source": "배운 어휘 확인",
             "count": 18,
             "note": "复习表中再次出现或补足的词。"
-        }
+        },
+      {
+          "page": 75,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 77,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 80,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 83,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
+      }
     ],
     "vocabulary": [
         {
@@ -1556,7 +1576,349 @@ window.lessonGuideL3LessonChunks["l3-06"] = {
             "guide": "名词，意思是“公寓”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "아파트 후문으로 나가면 공원이 있어요.",
             "exampleZh": "从公寓后门出去就有公园。"
-        }
+        },
+      {
+          "ko": "지역",
+          "zh": "地区、地域",
+          "pos": "名词",
+          "page": 75,
+          "source": "단어장",
+          "exampleKo": "동호회는 보통 학교, 지역, 직장을 중심으로 만들어져요.",
+          "exampleZh": "同好会通常以学校、地区、职场为中心形成。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "region / area",
+                  "pos": "noun",
+                  "example": "Hobby clubs are usually formed around schools, regions, and workplaces.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "여쭤보다",
+          "zh": "请教；询问（敬语）",
+          "pos": "动词",
+          "page": 77,
+          "source": "단어장",
+          "exampleKo": "선생님께 모르는 것을 여쭤봤어요.",
+          "exampleZh": "向老师请教了不懂的问题。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to ask (honorific)",
+                  "pos": "verb",
+                  "example": "I asked the teacher about something I did not understand.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "정문",
+          "zh": "正门",
+          "pos": "名词",
+          "page": 77,
+          "source": "단어장",
+          "exampleKo": "학교 정문 앞에서 만나요.",
+          "exampleZh": "在学校正门前见。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "main gate",
+                  "pos": "noun",
+                  "example": "Let's meet in front of the school's main gate.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "빌딩 숲",
+          "zh": "高楼林立的区域",
+          "pos": "名词短语",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "우리 동네는 빌딩 숲으로 둘러싸여 있어요.",
+          "exampleZh": "我们社区被高楼群包围着。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "forest of buildings",
+                  "pos": "noun phrase",
+                  "example": "Our neighborhood is surrounded by a forest of buildings.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "안전하다",
+          "zh": "安全",
+          "pos": "형용사",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "동네가 안전해요.",
+          "exampleZh": "小区很安全。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "safe",
+                  "pos": "adjective",
+                  "example": "The community is very safe.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "산책로가 있다",
+          "zh": "有散步道",
+          "pos": "动词短语",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "아파트 뒤에 산책로가 있어요.",
+          "exampleZh": "公寓后面有散步道。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have a walking path",
+                  "pos": "verb phrase",
+                  "example": "There is a walking path behind the apartment building.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "문화 시설이 많다",
+          "zh": "文化设施多",
+          "pos": "表达",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "우리 동네는 문화 시설이 많아요.",
+          "exampleZh": "我们社区文化设施很多。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have many cultural facilities",
+                  "pos": "expression",
+                  "example": "Our neighborhood has many cultural facilities.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "걸어서 공원에 갈 수 있다",
+          "zh": "可以步行去公园",
+          "pos": "表达",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "집에서 걸어서 공원에 갈 수 있어요.",
+          "exampleZh": "可以从家里步行去公园。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to be able to walk to the park",
+                  "pos": "expression",
+                  "example": "I can walk to the park from home.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "논",
+          "zh": "水田；稻田",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "논에서 벼가 자라요.",
+          "exampleZh": "水稻在稻田里生长。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "rice paddy",
+                  "pos": "noun",
+                  "example": "Rice grows in the paddy field.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "밭",
+          "zh": "旱田；田地",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "밭에서 채소를 길러요.",
+          "exampleZh": "在田地里种蔬菜。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "field for dry crops",
+                  "pos": "noun",
+                  "example": "We grow vegetables in the field.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "과수원",
+          "zh": "果园",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "과수원에서 사과를 땄어요.",
+          "exampleZh": "在果园里摘了苹果。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "orchard",
+                  "pos": "noun",
+                  "example": "I picked apples in the orchard.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "직접 농사를 짓다",
+          "zh": "亲自种地；亲自务农",
+          "pos": "动词短语",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "고향에서는 직접 농사를 지어요.",
+          "exampleZh": "在家乡亲自种地。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to do one's own farming",
+                  "pos": "verb phrase",
+                  "example": "I do my own farming in my hometown.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "하천이 흐르다",
+          "zh": "溪河流经",
+          "pos": "动词短语",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "마을 옆으로 하천이 흘러요.",
+          "exampleZh": "村庄旁边有一条溪河流过。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have a stream flowing through",
+                  "pos": "verb phrase",
+                  "example": "A stream flows beside the village.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "자연환경이 좋다",
+          "zh": "自然环境好",
+          "pos": "表达",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "고향은 자연환경이 좋아요.",
+          "exampleZh": "家乡的自然环境很好。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have a good natural environment",
+                  "pos": "expression",
+                  "example": "My hometown has a good natural environment.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "최고급",
+          "zh": "最高档；最优质",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "이 가게는 최고급 재료를 사용해요.",
+          "exampleZh": "这家店使用最优质的材料。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "top quality; highest grade",
+                  "pos": "noun",
+                  "example": "This shop uses top-quality ingredients.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "현장",
+          "zh": "现场",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "직접 현장에 가서 확인했어요.",
+          "exampleZh": "亲自到现场确认了。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "site; scene",
+                  "pos": "noun",
+                  "example": "I went to the site to check in person.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "옛날",
+          "zh": "从前；古时候",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "옛날에는 이곳에 궁궐이 있었어요.",
+          "exampleZh": "从前这里有一座宫殿。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "old days; long ago",
+                  "pos": "noun",
+                  "example": "There used to be a palace here long ago.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "언덕",
+          "zh": "山坡；小丘",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "언덕 위에서 마을이 보여요.",
+          "exampleZh": "从山坡上能看到村庄。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "hill",
+                  "pos": "noun",
+                  "example": "You can see the village from the hill.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "일정",
+          "zh": "日程；行程",
+          "pos": "名词",
+          "page": 83,
+          "source": "배운 어휘 확인",
+          "exampleKo": "여행 일정을 확인했어요.",
+          "exampleZh": "确认了旅行行程。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "schedule; itinerary",
+                  "pos": "noun",
+                  "example": "I checked the travel itinerary.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "grammar": [
         {

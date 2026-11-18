@@ -70,7 +70,27 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "page": 129,
             "label": "배운 어휘 확인",
             "note": "补充复习词表中的故障、维修和保修词。"
-        }
+        },
+      {
+          "page": 121,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 122,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 124,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 126,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1590,7 +1610,97 @@ window.lessonGuideL3LessonChunks["l3-09"] = {
             "guide": "动词表达，意思是“结束、关闭”。复习时把前面的宾语或场景一起记，方便在口语中直接使用。",
             "exampleKo": "앱을 종료해 보세요.",
             "exampleZh": "试着关闭应用。"
-        }
+        },
+      {
+          "ko": "조절하다",
+          "zh": "调节；调整",
+          "pos": "动词",
+          "page": 122,
+          "source": "단어장",
+          "exampleKo": "에어컨 온도를 조절했어요.",
+          "exampleZh": "调节了空调温度。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to adjust; to regulate",
+                  "pos": "verb",
+                  "example": "I adjusted the air conditioner temperature.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "서비스 센터에 문의하다",
+          "zh": "向售后服务中心咨询",
+          "pos": "动词短语",
+          "page": 129,
+          "source": "배운 어휘 확인",
+          "exampleKo": "고장 원인을 서비스 센터에 문의했어요.",
+          "exampleZh": "向售后服务中心咨询了故障原因。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to contact a service center",
+                  "pos": "verb phrase",
+                  "example": "I contacted the service center about the cause of the fault.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "출장 서비스를 신청하다",
+          "zh": "申请上门服务",
+          "pos": "动词短语",
+          "page": 129,
+          "source": "배운 어휘 확인",
+          "exampleKo": "세탁기가 고장 나서 출장 서비스를 신청했어요.",
+          "exampleZh": "洗衣机坏了，所以申请了上门服务。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to request an on-site service",
+                  "pos": "verb phrase",
+                  "example": "I requested an on-site service because my washing machine broke down.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "서비스 센터에 방문하다",
+          "zh": "到访售后服务中心",
+          "pos": "动词短语",
+          "page": 129,
+          "source": "배운 어휘 확인",
+          "exampleKo": "휴대 전화를 수리하려고 서비스 센터에 방문했어요.",
+          "exampleZh": "为了修手机，去了售后服务中心。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to visit a service center",
+                  "pos": "verb phrase",
+                  "example": "I visited the service center to have my phone repaired.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "펌프질",
+          "zh": "抽打；泵压动作",
+          "pos": "名词",
+          "page": 129,
+          "source": "배운 어휘 확인",
+          "exampleKo": "펌프질을 해서 물을 끌어올렸어요.",
+          "exampleZh": "通过抽打把水抽了上来。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "pumping",
+                  "pos": "noun",
+                  "example": "I pumped the water up.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

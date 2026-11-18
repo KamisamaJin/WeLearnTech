@@ -57,6 +57,11 @@ window.lessonGuideL1LessonChunks["l1-07"] = {
       "page": 81,
       "label": "발음 / 배운 어휘 확인",
       "note": "发音练习和本课词汇复习"
+    },
+    {
+      "page": 81,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [

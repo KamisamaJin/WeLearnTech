@@ -65,7 +65,17 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "page": 201,
             "label": "배운 어휘 확인",
             "description": "本课复习词汇补充。"
-        }
+        },
+      {
+          "page": 196,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 198,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1258,7 +1268,259 @@ window.lessonGuideL3LessonChunks["l3-15"] = {
             "guide": "名词，意思是“婚姻移民者”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "결혼 이민자를 대상으로 상담합니다.",
             "exampleZh": "面向婚姻移民者咨询。"
-        }
+        },
+      {
+          "ko": "일시적",
+          "zh": "暂时的；一时的",
+          "pos": "名词",
+          "page": 198,
+          "source": "단어장",
+          "exampleKo": "이 문제는 일시적일 수 있어요.",
+          "exampleZh": "这个问题可能是暂时的。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "temporary",
+                  "pos": "noun",
+                  "example": "This problem may be temporary.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "성격이 안 맞다",
+          "zh": "性格不合",
+          "pos": "表达",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "동료와 성격이 안 맞아서 고민이에요.",
+          "exampleZh": "因和同事性格不合而苦恼。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have incompatible personalities",
+                  "pos": "expression",
+                  "example": "I am worried because my coworker and I have incompatible personalities.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "국적 취득",
+          "zh": "取得国籍",
+          "pos": "名词短语",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "국적 취득 필기시험을 보지 않아도 됩니다.",
+          "exampleZh": "可以不用参加取得国籍的笔试。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "acquiring nationality",
+                  "pos": "noun phrase",
+                  "example": "You do not have to take the written test for nationality acquisition.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "제자리걸음",
+          "zh": "原地踏步；没有进展",
+          "pos": "名词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "열심히 공부하는데 실력은 제자리걸음이에요.",
+          "exampleZh": "虽然努力学习，能力却原地踏步。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "lack of progress; marking time",
+                  "pos": "noun",
+                  "example": "I study hard, but my skills are not progressing.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "병행하다",
+          "zh": "同时进行",
+          "pos": "动词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "일과 공부를 병행하고 있어요.",
+          "exampleZh": "我一边工作一边学习。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to do in parallel; to combine",
+                  "pos": "verb",
+                  "example": "I am combining work and study.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "두렵다",
+          "zh": "害怕",
+          "pos": "形容词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "새로운 일을 시작하는 것이 두려워요.",
+          "exampleZh": "害怕开始新的工作。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "afraid; fearful",
+                  "pos": "adjective",
+                  "example": "I am afraid of starting something new.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "고부간",
+          "zh": "婆媳之间",
+          "pos": "名词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "고부간에 서로 이해하려고 노력해요.",
+          "exampleZh": "婆媳之间努力相互理解。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "between a mother-in-law and daughter-in-law",
+                  "pos": "noun",
+                  "example": "The mother-in-law and daughter-in-law try to understand each other.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "불투명하다",
+          "zh": "不明朗；不确定",
+          "pos": "形容词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "앞으로의 전망이 불투명해요.",
+          "exampleZh": "未来的前景不明朗。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "unclear; uncertain",
+                  "pos": "adjective",
+                  "example": "The outlook for the future is uncertain.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "되풀이하다",
+          "zh": "重复",
+          "pos": "动词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "같은 실수를 되풀이하지 않으려고 노력해요.",
+          "exampleZh": "努力不再重复同样的错误。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to repeat",
+                  "pos": "verb",
+                  "example": "I try not to repeat the same mistake.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "만성 피로",
+          "zh": "慢性疲劳",
+          "pos": "名词短语",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "만성 피로 때문에 생활이 힘들어요.",
+          "exampleZh": "慢性疲劳让生活很辛苦。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "chronic fatigue",
+                  "pos": "noun phrase",
+                  "example": "Chronic fatigue makes daily life difficult.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "불면증",
+          "zh": "失眠症",
+          "pos": "名词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "따뜻한 물로 샤워를 하면 불면증에 좋아요.",
+          "exampleZh": "用温水洗澡对失眠有好处。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "insomnia",
+                  "pos": "noun",
+                  "example": "Taking a warm shower is good for insomnia.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "일정하다",
+          "zh": "固定；一定；均匀",
+          "pos": "形容词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "매일 일정한 시간에 일어나요.",
+          "exampleZh": "每天在固定时间起床。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "regular; consistent",
+                  "pos": "adjective",
+                  "example": "I get up at a consistent time every day.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "재테크",
+          "zh": "个人理财",
+          "pos": "名词",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "재테크에 관심이 있어서 관련 책을 읽어요.",
+          "exampleZh": "因为对个人理财有兴趣，所以读相关书籍。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "personal financial management",
+                  "pos": "noun",
+                  "example": "I read related books because I am interested in personal financial management.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "발을 못 뻗고 자다",
+          "zh": "因担忧而不能安睡",
+          "pos": "俗语",
+          "page": 201,
+          "source": "배운 어휘 확인",
+          "exampleKo": "걱정 때문에 발을 못 뻗고 자요.",
+          "exampleZh": "因为担忧而不能安睡。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to be unable to sleep peacefully from worry",
+                  "pos": "idiom",
+                  "example": "I cannot sleep peacefully because of my worries.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

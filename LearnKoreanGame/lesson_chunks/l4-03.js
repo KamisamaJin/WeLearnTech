@@ -76,7 +76,13 @@
     ["견디다", "忍受，抵御", "动词", "to endure", "verb", "온돌 덕분에 긴 겨울밤에도 추위를 견딜 수 있었어요.", "多亏温突，漫长冬夜也能抵御寒冷。", "Thanks to ondol, people could endure cold winter nights.", "46", "문화와 정보", ["collocation:추위를 견디다"]],
     ["일석이조", "一石二鸟", "名词", "killing two birds with one stone", "noun", "온돌은 난방도 하고 요리도 할 수 있어서 일석이조예요.", "温突既能取暖又能做饭，所以是一石二鸟。", "Ondol both heats and helps cook, so it serves two purposes.", "46", "문화와 정보", ["usage:한 가지 일로 두 가지 이익"]],
     ["보일러", "锅炉", "名词", "boiler", "noun", "요즘은 보일러를 이용해서 방바닥을 데워요.", "现在用锅炉加热地板。", "Today people heat the floor using a boiler.", "46", "문화와 정보", ["collocation:보일러를 이용하다"]],
-    ["방바닥", "房间地板", "名词", "room floor", "noun", "한국 사람들은 방바닥을 데우는 방식으로 난방해요.", "韩国人用加热房间地板的方式取暖。", "Koreans heat rooms by warming the floor.", "46", "문화와 정보", ["collocation:방바닥을 데우다"]]
+    ["방바닥", "房间地板", "名词", "room floor", "noun", "한국 사람들은 방바닥을 데우는 방식으로 난방해요.", "韩国人用加热房间地板的方式取暖。", "Koreans heat rooms by warming the floor.", "46", "문화와 정보", ["collocation:방바닥을 데우다"]],
+    ["활용하다", "利用，活用", "动词", "to use; make use of", "verb", "원격 대학과 학점 은행제를 활용해 보세요.", "请利用远程大学和学分银行制。", "Make use of remote universities and the credit bank system.", "42", "단어장", []],
+    ["개발하다", "开发；研发", "动词", "to develop", "verb", "연구원들이 새로운 기술을 개발하고 있어요.", "研究人员正在研发新技术。", "Researchers are developing new technology.", "44", "단어장", []],
+    ["스리디(3D) 프린터", "3D打印机", "名词短语", "3D printer", "noun phrase", "스리디 프린터로 작은 모형을 만들었어요.", "我用3D打印机制作了小模型。", "I made a small model with a 3D printer.", "47", "배운 어휘 확인", []],
+    ["드론", "无人机", "名词", "drone", "noun", "드론으로 하늘에서 사진을 찍어요.", "用无人机从空中拍照。", "We take aerial photographs with a drone.", "47", "배운 어휘 확인", []],
+    ["모바일 앱", "手机应用程序", "名词短语", "mobile app", "noun phrase", "모바일 앱으로 청소기를 조종해요.", "用手机应用控制吸尘器。", "I control the vacuum cleaner with a mobile app.", "47", "배운 어휘 확인", []],
+    ["지능형", "智能型", "名词", "intelligent; smart type", "noun", "지능형 로봇이 사람의 말을 이해해요.", "智能机器人能理解人的话。", "An intelligent robot understands human speech.", "47", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -116,11 +122,14 @@
       { page: 39, label: "문법 1", note: "V/A-는 줄 알다 例句和练习词" },
       { page: 40, label: "문법 2", note: "V-곤 하다 例句和练习词" },
       { page: 41, label: "말하기", note: "扫地机器人和最新产品优点对话" },
+      { page: 41, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 42, label: "듣기/발음", note: "医院中的人工智能和外来语发音" },
+      { page: 42, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 43, label: "읽기 전", note: "科学技术带来的生活变化词汇" },
       { page: 44, label: "읽기", note: "科学技术发展与生活便利文章" },
+      { page: 44, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 46, label: "문화와 정보", note: "온돌" },
-      { page: 47, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 47, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能谈论生活中的最新产品和技术带来的便利。",

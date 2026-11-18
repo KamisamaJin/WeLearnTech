@@ -107,6 +107,18 @@ window.lessonGuideL2LessonChunks["l2-02"] = {
       }
     }
   ],
+  "vocabularySources": [
+    {
+      "page": 29,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 31,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
+    }
+  ],
   "vocabulary": [
     {
       "ko": "집안일",

@@ -75,7 +75,17 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "page": 153,
             "label": "배운 어휘 확인",
             "note": "补充复习词表中的房屋、合同和搬家词。"
-        }
+        },
+      {
+          "page": 146,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 147,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1580,7 +1590,97 @@ window.lessonGuideL3LessonChunks["l3-11"] = {
             "guide": "名词，意思是“楼层间噪音”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "층간소음을 확인하세요.",
             "exampleZh": "请确认楼层间噪音。"
-        }
+        },
+      {
+          "ko": "형태",
+          "zh": "形态；形式",
+          "pos": "名词",
+          "page": 146,
+          "source": "단어장",
+          "exampleKo": "여러 형태의 주택을 살펴봤어요.",
+          "exampleZh": "查看了各种形式的住宅。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "form; type",
+                  "pos": "noun",
+                  "example": "I looked at various types of housing.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "주택",
+          "zh": "住宅",
+          "pos": "名词",
+          "page": 153,
+          "source": "배운 어휘 확인",
+          "exampleKo": "조용한 동네의 주택을 찾고 있어요.",
+          "exampleZh": "正在安静的社区找住宅。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "house; housing",
+                  "pos": "noun",
+                  "example": "I am looking for a house in a quiet neighborhood.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "햇빛",
+          "zh": "阳光",
+          "pos": "名词",
+          "page": 153,
+          "source": "배운 어휘 확인",
+          "exampleKo": "이 방은 햇빛이 잘 들어와요.",
+          "exampleZh": "这个房间阳光充足。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "sunlight",
+                  "pos": "noun",
+                  "example": "This room gets plenty of sunlight.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "내부",
+          "zh": "内部",
+          "pos": "名词",
+          "page": 153,
+          "source": "배운 어휘 확인",
+          "exampleKo": "궁궐 내부가 매우 웅장해요.",
+          "exampleZh": "宫殿内部非常雄伟。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "interior",
+                  "pos": "noun",
+                  "example": "The palace interior is grand.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "환경",
+          "zh": "环境",
+          "pos": "名词",
+          "page": 153,
+          "source": "배운 어휘 확인",
+          "exampleKo": "새로운 환경에 적응하고 있어요.",
+          "exampleZh": "我正在适应新的环境。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "environment",
+                  "pos": "noun",
+                  "example": "I am adapting to a new environment.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

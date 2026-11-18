@@ -100,6 +100,16 @@
         page: 151,
         label: "발음/배운 어휘 확인",
         note: "发音练习和本课词汇复习"
+      },
+      {
+          "page": 149,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 151,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
       }
     ],
     goals: [
@@ -250,7 +260,12 @@
 
       vocab("택배", "快递", "名词", 151, "발음/배운 어휘 확인", "친구한테 택배를 보내요.", "给朋友寄快递。", "parcel delivery", "I send a delivery package to a friend.", [["collocation", "택배를 보내다"], ["pitfall", "教材发音是 [택빼]。", "The textbook pronunciation is [택빼]."]]),
       vocab("우편 번호", "邮政编码", "名词", 151, "발음/배운 어휘 확인", "우편 번호가 뭐예요?", "邮政编码是多少？", "postal code", "What is the postal code?", [["collocation", "우편 번호를 쓰다"], ["pitfall", "教材发音是 [우편 버노]。", "The textbook pronunciation is [우편 버노]."]]),
-      vocab("옷하고", "衣服和……", "名词短语", 151, "발음/배운 어휘 확인", "옷하고 화장품요.", "衣服和化妆品。", "clothes and ...", "Clothes and cosmetics.", [["collocation", "옷하고 화장품"], ["pitfall", "教材发音是 [오타고]。", "The textbook pronunciation is [오타고]."]])
+      vocab("옷하고", "衣服和……", "名词短语", 151, "발음/배운 어휘 확인", "옷하고 화장품요.", "衣服和化妆品。", "clothes and ...", "Clothes and cosmetics.", [["collocation", "옷하고 화장품"], ["pitfall", "教材发音是 [오타고]。", "The textbook pronunciation is [오타고]."]]),
+      vocab("우편 업무", "邮政业务", "名词短语", 149, "단어장", "우체국에서 우편 업무를 봐요.", "在邮局办理邮政业务。", "postal services", "I handle postal matters at the post office."),
+      vocab("금융", "金融", "名词", 149, "단어장", "가정, 금융, 교통 등 주제별로 법을 찾을 수 있어요.", "可以按家庭、金融、交通等主题查找法律。", "finance", "You can find laws by topics such as family, finance, and traffic."),
+      vocab("업무 시간", "办公时间；营业时间", "名词短语", 149, "단어장", "은행 업무 시간을 확인했어요.", "确认了银行的营业时间。", "business hours", "I checked the bank's business hours."),
+      vocab("소포를 보내다", "寄包裹", "动词短语", 151, "배운 어휘 확인", "고향에 소포를 보냈어요.", "给家乡寄了包裹。", "to send a parcel", "I sent a parcel to my hometown."),
+      vocab("주소", "地址", "名词", 151, "배운 어휘 확인", "주소와 전화번호를 씁니다.", "填写地址和电话号码。", "address", "Write the address and phone number.")
     ],
     dialogues: [
       {

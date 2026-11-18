@@ -52,6 +52,11 @@ window.lessonGuideL1LessonChunks["l1-15"] = {
       "page": 171,
       "label": "배운 어휘 확인",
       "note": "本课复习词汇"
+    },
+    {
+      "page": 169,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -1116,6 +1121,42 @@ window.lessonGuideL1LessonChunks["l1-15"] = {
               "text": "호우 경보 means heavy rain warning."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "바닷가",
+      "zh": "海边",
+      "pos": "名词",
+      "page": 171,
+      "source": "배운 어휘 확인",
+      "exampleKo": "바닷가에 간 적이 있어요.",
+      "exampleZh": "我去过海边。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "seaside; beach",
+          "pos": "noun",
+          "example": "I have been to the seaside.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "인구",
+      "zh": "人口",
+      "pos": "名词",
+      "page": 171,
+      "source": "배운 어휘 확인",
+      "exampleKo": "이 도시는 인구가 많아요.",
+      "exampleZh": "这座城市人口很多。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "population",
+          "pos": "noun",
+          "example": "This city has a large population.",
+          "tips": []
         }
       }
     }

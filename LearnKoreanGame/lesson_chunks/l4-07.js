@@ -109,7 +109,13 @@
     ["유통 기한", "保质期，有效期", "名词", "expiration date", "noun", "식품을 살 때 유통 기한을 확인하세요.", "买食品时请确认保质期。", "Check the expiration date when buying food.", "95", "배운 어휘 확인", ["collocation:유통 기한"]],
     ["급성", "急性", "名词/冠形词", "acute", "noun/modifier", "급성 장염이면 물을 자주 마셔야 해요.", "如果是急性肠炎，要经常喝水。", "If it is acute enteritis, you should drink water often.", "95", "배운 어휘 확인", ["collocation:급성 장염"]],
     ["금연하다", "戒烟", "动词", "to quit smoking", "verb", "건강을 위해 금연하는 것이 좋아요.", "为了健康最好戒烟。", "It is good to quit smoking for your health.", "95", "배운 어휘 확인", ["collocation:금연하다"]],
-    ["충분하다", "充分，足够", "形容词", "sufficient; enough", "adjective", "수면이 충분해야 건강을 지킬 수 있어요.", "睡眠充足才能保持健康。", "You can stay healthy when sleep is sufficient.", "95", "배운 어휘 확인", ["collocation:충분하다"]]
+    ["충분하다", "充分，足够", "形容词", "sufficient; enough", "adjective", "수면이 충분해야 건강을 지킬 수 있어요.", "睡眠充足才能保持健康。", "You can stay healthy when sleep is sufficient.", "95", "배운 어휘 확인", ["collocation:충분하다"]],
+    ["밀접하다", "密切", "形容词", "close; closely related", "adjective", "수면과 건강은 밀접한 관계가 있어요.", "睡眠与健康有密切关系。", "Sleep and health are closely related.", "92", "단어장", []],
+    ["차지하다", "占据，占比", "动词", "to account for; to occupy", "verb", "유학생이 큰 비율을 차지해요.", "留学生占很大比例。", "International students account for a large proportion.", "92", "단어장", []],
+    ["과도하다", "过度", "形容词", "excessive", "adjective", "과도한 스트레스는 건강에 좋지 않아요.", "过度的压力不利于健康。", "Excessive stress is not good for your health.", "92", "단어장", []],
+    ["권하다", "劝；建议", "动词", "to recommend; to advise", "verb", "의사는 충분한 휴식을 권했어요.", "医生建议充分休息。", "The doctor recommended getting enough rest.", "92", "단어장", []],
+    ["섭취하다", "摄取", "动词", "to take in; to consume", "verb", "감기가 빨리 나으려면 비타민을 섭취하세요.", "想感冒快点好，就摄取维生素。", "Take vitamins if you want to recover from a cold quickly.", "95", "배운 어휘 확인", []],
+    ["수면", "睡眠", "名词", "sleep", "noun", "충분한 수면이 건강에 중요해요.", "充足的睡眠对健康很重要。", "Sufficient sleep is important for your health.", "95", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -147,12 +153,17 @@
       { page: 84, label: "단원 제목", note: "课题、活动目标和核心主题" },
       { page: 86, label: "어휘", note: "疾病、症状和身体器官相关词汇" },
       { page: 87, label: "문법 1", note: "V-되 和肠炎就诊对话" },
+      { page: 87, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 88, label: "문법 2", note: "V-었더니 和症状结果表达" },
+      { page: 88, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 89, label: "말하기", note: "病症咨询和注意事项对话" },
+      { page: 89, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 90, label: "듣기/발음", note: "肠炎问诊、处方和发音练习" },
+      { page: 90, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 92, label: "읽기", note: "生活习惯病阅读" },
+      { page: 92, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 94, label: "문화와 정보", note: "韩国国民健康保险制度" },
-      { page: 95, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 95, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能说明身体不适时出现的症状和相关疾病。",

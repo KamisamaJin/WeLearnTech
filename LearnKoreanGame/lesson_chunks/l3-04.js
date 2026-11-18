@@ -76,7 +76,22 @@ window.lessonGuideL3LessonChunks["l3-04"] = {
             "page": 59,
             "label": "배운 어휘 확인",
             "note": "本课复习词表，补齐售后与消费权益词"
-        }
+        },
+      {
+          "page": 53,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 54,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 56,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "goals": [
         "能说明商品有什么问题，并选择 교환、환불 或 고객 센터 문의。",
@@ -1499,7 +1514,25 @@ window.lessonGuideL3LessonChunks["l3-04"] = {
             "guide": "名词，意思是“失误、错误”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "제가 실수로 다른 색상을 주문했어요.",
             "exampleZh": "我失误订了其他颜色。"
-        }
+        },
+      {
+          "ko": "포장하다",
+          "zh": "包装",
+          "pos": "动词",
+          "page": 59,
+          "source": "배운 어휘 확인",
+          "exampleKo": "선물을 예쁘게 포장했어요.",
+          "exampleZh": "把礼物包装得很漂亮。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to wrap; to package",
+                  "pos": "verb",
+                  "example": "I wrapped the gift nicely.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

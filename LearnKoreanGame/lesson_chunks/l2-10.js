@@ -104,6 +104,16 @@
         page: 121,
         label: "발음/배운 어휘 확인",
         note: "发音练习和本课词汇复习"
+      },
+      {
+          "page": 119,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 121,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
       }
     ],
     goals: [
@@ -262,7 +272,9 @@
       vocab("지나다", "经过", "动词", 121, "발음/배운 어휘 확인", "육교를 지나면 서점이 있어요.", "过了天桥就有书店。", "to pass", "If you pass the overpass, there is a bookstore.", [["collocation", "육교를 지나다"], ["collocation", "N을/를 지나면"]]),
       vocab("50m쯤 오다", "走/过来大约50米", "动词短语", 121, "발음/배운 어휘 확인", "똑바로 50m쯤 오세요.", "请直走大约50米过来。", "to come about 50 meters", "Come straight about 50 meters.", [["collocation", "50m쯤 오세요"], ["pitfall", "오세요 是让对方朝说话人的方向来。", "오세요 asks the listener to come toward the speaker."]]),
       vocab("있는데", "在/有，不过；在/有，所以", "语法表达", 121, "발음/배운 어휘 확인", "1번 출구 앞에 있는데 언제 와요?", "我在1号出口前，你什么时候来？", "is/exists, and/but ...", "I am in front of exit 1. When are you coming?", [["form", "있다 + -는데 → 있는데", "있다 + -는데 -> 있는데"], ["pitfall", "发音是 [인는데]。", "It is pronounced [인는데]."]]),
-      vocab("어떻게", "怎么；怎样", "副词", 121, "발음/배운 어휘 확인", "어떻게 가요?", "怎么去？", "how", "How do I get there?", [["collocation", "어떻게 가요?"], ["pitfall", "发音是 [어떠케]。", "It is pronounced [어떠케]."]])
+      vocab("어떻게", "怎么；怎样", "副词", 121, "발음/배운 어휘 확인", "어떻게 가요?", "怎么去？", "how", "How do I get there?", [["collocation", "어떻게 가요?"], ["pitfall", "发音是 [어떠케]。", "It is pronounced [어떠케]."]]),
+      vocab("방법", "方法", "名词", 119, "단어장", "말하는 방법을 잘 모르겠어요.", "不太知道说话的方法。", "method / way", "I do not really know how to speak."),
+      vocab("맞은편에 있다", "在对面", "动词短语", 121, "배운 어휘 확인", "은행은 우체국 맞은편에 있어요.", "银行在邮局对面。", "to be across from", "The bank is across from the post office.")
     ],
     dialogues: [
       {

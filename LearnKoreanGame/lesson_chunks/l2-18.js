@@ -61,7 +61,17 @@
       { page: 198, label: "말하기와 듣기", note: "文化中心课程建议对话和听力问题" },
       { page: 199, label: "읽기와 쓰기", note: "居民中心文化讲座招生表和写作提示" },
       { page: 200, label: "문화와 정보", note: "문화가 있는 날 原文、翻译、关键词和问题" },
-      { page: 201, label: "발음/배운 어휘 확인", note: "发音练习和本课词汇复习" }
+      { page: 201, label: "발음/배운 어휘 확인", note: "发音练习和本课词汇复习" },
+      {
+          "page": 199,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 201,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
+      }
     ],
     goals: [
       "能够说出文化中心课程名称，并说明想申请或想听的课程。",
@@ -227,7 +237,16 @@
       vocab("이용하다", "使用；利用", "动词", 200, "문화와 정보", "문화 시설을 이용합니다.", "使用文化设施。", "to use", "They use cultural facilities.", [["collocation", "시설을 이용하다"]]),
 
       vocab("행복해", "幸福；开心", "发音表达", 201, "발음/배운 어휘 확인", "오늘 행복해 보여요.", "今天看起来很开心。", "happy", "You look happy today.", [["form", "행복해[행보캐]"], ["pitfall", "ㄱ 后接 ㅎ 时会送气，读成 [ㅋ]。", "ㄱ followed by ㅎ becomes aspirated, [ㅋ]."]]),
-      vocab("천연 비누", "天然肥皂", "名词短语", 201, "발음/배운 어휘 확인", "천연 비누 만들기 수업을 듣고 싶어요.", "想上制作天然肥皂的课。", "natural soap", "I want to take a natural soap-making class.", [["form", "천연 비누[처년 비누]"], ["collocation", "천연 비누 만들기"]])
+      vocab("천연 비누", "天然肥皂", "名词短语", 201, "발음/배운 어휘 확인", "천연 비누 만들기 수업을 듣고 싶어요.", "想上制作天然肥皂的课。", "natural soap", "I want to take a natural soap-making class.", [["form", "천연 비누[처년 비누]"], ["collocation", "천연 비누 만들기"]]),
+      vocab("선착순", "先到先得；按先后顺序", "名词", 199, "단어장", "신청은 선착순으로 받아요.", "按先到先得的顺序接受申请。", "first come, first served", "Applications are accepted on a first-come, first-served basis."),
+      vocab("강좌", "讲座、课程", "名词", 199, "단어장", "강좌를 신청하기 전에 시간을 확인하세요.", "申请课程前请确认时间。", "Lectures, courses", "Please confirm the time before applying for the course."),
+      vocab("접수", "受理；报名登记", "名词", 199, "단어장", "강좌 접수가 시작됐어요.", "课程报名开始了。", "receipt; registration", "Registration for the course has begun."),
+      vocab("바리스타", "咖啡师", "名词", 199, "단어장", "바리스타 수업에서 커피 만드는 법을 배워요.", "在咖啡师课程中学习制作咖啡。", "barista", "I learn how to make coffee in a barista class."),
+      vocab("도자기", "陶瓷；陶艺制品", "名词", 201, "배운 어휘 확인", "도자기 만드는 수업을 신청했어요.", "报名了陶艺制作课。", "pottery; ceramics", "I signed up for a pottery class."),
+      vocab("어학", "语言学习", "名词", 201, "배운 어휘 확인", "어학 강좌를 알아보고 있어요.", "我正在了解语言课程。", "language study", "I am looking into language courses."),
+      vocab("자격증", "资格证", "명사", 201, "배운 어휘 확인", "자격증을 따 놓으세요.", "请提前考取资格证。", "Qualification certificate", "Please take the qualification certificate in advance."),
+      vocab("미용", "美容；美发", "名词", 201, "배운 어휘 확인", "미용 기술을 배우고 싶어요.", "我想学习美容美发技术。", "beauty care; hairdressing", "I want to learn beauty and hairdressing skills."),
+      vocab("수강 신청을 하다", "选课；报名课程", "动词短语", 201, "배운 어휘 확인", "인터넷으로 수강 신청을 했어요.", "在网上报名了课程。", "to register for a course", "I registered for a course online.")
     ],
     dialogues: [
       {

@@ -52,6 +52,11 @@ window.lessonGuideL1LessonChunks["l1-05"] = {
       "page": 61,
       "label": "배운 어휘 확인",
       "note": "本课复习词汇"
+    },
+    {
+      "page": 59,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -650,6 +655,402 @@ window.lessonGuideL1LessonChunks["l1-05"] = {
               "text": "Call 1345 when you need guidance for life in Korea."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "의사",
+      "zh": "医生",
+      "pos": "名词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "제 언니는 의사예요.",
+      "exampleZh": "我的姐姐是医生。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "doctor",
+          "pos": "noun",
+          "example": "My older sister is a doctor.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "빌딩",
+      "zh": "大楼",
+      "pos": "名词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "저 빌딩에 회사가 있어요.",
+      "exampleZh": "公司在那栋大楼里。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "building",
+          "pos": "noun",
+          "example": "The company is in that building.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "층",
+      "zh": "层（楼层）",
+      "pos": "量词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "우리 집은 삼 층이에요.",
+      "exampleZh": "我家在三楼。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "floor; story",
+          "pos": "counter",
+          "example": "My home is on the third floor.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "호",
+      "zh": "号（房间号码）",
+      "pos": "量词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "교실은 십칠 호예요.",
+      "exampleZh": "教室是十七号。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "room number",
+          "pos": "counter",
+          "example": "The classroom is room seventeen.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "명함",
+      "zh": "名片",
+      "pos": "名词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "제 명함이에요.",
+      "exampleZh": "这是我的名片。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "business card",
+          "pos": "noun",
+          "example": "This is my business card.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "영",
+      "zh": "零（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "영 점부터 시작해요.",
+      "exampleZh": "从零分开始。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "zero (Sino-Korean)",
+          "pos": "number",
+          "example": "We start from zero points.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "공",
+      "zh": "零（电话号码等中的读法）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "전화번호는 공일공으로 시작해요.",
+      "exampleZh": "电话号码以零一零开头。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "zero (in phone numbers)",
+          "pos": "number",
+          "example": "The phone number starts with zero-one-zero.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "일",
+      "zh": "一（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "일 더하기 일은 이예요.",
+      "exampleZh": "一加一等于二。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "one (Sino-Korean)",
+          "pos": "number",
+          "example": "One plus one is two.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "이",
+      "zh": "二（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "일 더하기 일은 이예요.",
+      "exampleZh": "一加一等于二。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "two (Sino-Korean)",
+          "pos": "number",
+          "example": "One plus one is two.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "삼",
+      "zh": "三（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "삼월에 학교에 가요.",
+      "exampleZh": "三月去上学。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "three (Sino-Korean)",
+          "pos": "number",
+          "example": "I go to school in March.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "사",
+      "zh": "四（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "오늘은 사월 사일이에요.",
+      "exampleZh": "今天是四月四日。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "four (Sino-Korean)",
+          "pos": "number",
+          "example": "Today is April fourth.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "오",
+      "zh": "五（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "오늘은 오월 오일이에요.",
+      "exampleZh": "今天是五月五日。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "five (Sino-Korean)",
+          "pos": "number",
+          "example": "Today is May fifth.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "육",
+      "zh": "六（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "육 더하기 일은 칠이에요.",
+      "exampleZh": "六加一等于七。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "six (Sino-Korean)",
+          "pos": "number",
+          "example": "Six plus one is seven.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "칠",
+      "zh": "七（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "칠월에 한국에 왔어요.",
+      "exampleZh": "我七月来到了韩国。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "seven (Sino-Korean)",
+          "pos": "number",
+          "example": "I came to Korea in July.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "팔",
+      "zh": "八（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "팔월에 휴가를 가요.",
+      "exampleZh": "八月去度假。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "eight (Sino-Korean)",
+          "pos": "number",
+          "example": "I go on vacation in August.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "구",
+      "zh": "九（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "구월에 수업이 시작돼요.",
+      "exampleZh": "九月开始上课。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "nine (Sino-Korean)",
+          "pos": "number",
+          "example": "Classes start in September.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "십",
+      "zh": "十（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "오 더하기 오는 십이에요.",
+      "exampleZh": "五加五等于十。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "ten (Sino-Korean)",
+          "pos": "number",
+          "example": "Five plus five is ten.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "이십",
+      "zh": "二十（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "오늘은 오월 이십일이에요.",
+      "exampleZh": "今天是五月二十日。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "twenty (Sino-Korean)",
+          "pos": "number",
+          "example": "Today is May twentieth.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "삼십",
+      "zh": "三十（汉字数词）",
+      "pos": "数量表达",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "삼십 분에 만나요.",
+      "exampleZh": "三十分时见。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "thirty (Sino-Korean)",
+          "pos": "number",
+          "example": "Let's meet at thirty minutes past the hour.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "화요일",
+      "zh": "星期二",
+      "pos": "名词",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "화요일에 한국어를 배워요.",
+      "exampleZh": "星期二学习韩语。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Tuesday",
+          "pos": "noun",
+          "example": "I study Korean on Tuesdays.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "목요일",
+      "zh": "星期四",
+      "pos": "名词",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "목요일에 만나요.",
+      "exampleZh": "星期四见。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Thursday",
+          "pos": "noun",
+          "example": "Let's meet on Thursday.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "일요일",
+      "zh": "星期天",
+      "pos": "名词",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "토요일이나 일요일에 시간이 있어요?",
+      "exampleZh": "星期六或者星期天有时间吗？",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Sunday",
+          "pos": "noun",
+          "example": "Do you have time on Saturday or Sunday?",
+          "tips": []
         }
       }
     }

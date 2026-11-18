@@ -101,6 +101,16 @@
         page: 131,
         label: "발음/배운 어휘 확인",
         note: "发音练习和本课词汇复习"
+      },
+      {
+          "page": 129,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 131,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
       }
     ],
     goals: [
@@ -249,7 +259,12 @@
       vocab("팥죽", "红豆粥", "名词", 130, "문화와 정보", "동지에는 팥죽을 먹습니다.", "冬至吃红豆粥。", "red bean porridge", "People eat red bean porridge on Dongji.", [["collocation", "팥죽을 먹다"], ["collocation", "동지 팥죽"]]),
 
       vocab("밝았지요", "很亮吧", "句型表达", 131, "발음/배운 어휘 확인", "어젯밤 보름달이 참 밝았지요?", "昨晚的圆月很亮吧？", "it was bright, right?", "The full moon last night was very bright, right?", [["form", "밝다 + -았지요 -> 밝았지요", "밝다 + -았지요 -> 밝았지요"], ["pitfall", "教材发音标为 [발갇찌요]。", "The textbook pronunciation is [발갇찌요]."]]),
-      vocab("끓여서 먹다", "煮了以后吃", "动词短语", 131, "발음/배운 어휘 확인", "떡국을 끓여서 먹어요.", "把年糕汤煮了吃。", "to boil/cook and eat", "People cook rice cake soup and eat it.", [["form", "끓이다 + -어서 -> 끓여서", "끓이다 + -어서 -> 끓여서"], ["pitfall", "教材发音标为 [끄려서]。", "The textbook pronunciation is [끄려서]."]])
+      vocab("끓여서 먹다", "煮了以后吃", "动词短语", 131, "발음/배운 어휘 확인", "떡국을 끓여서 먹어요.", "把年糕汤煮了吃。", "to boil/cook and eat", "People cook rice cake soup and eat it.", [["form", "끓이다 + -어서 -> 끓여서", "끓이다 + -어서 -> 끓여서"], ["pitfall", "教材发音标为 [끄려서]。", "The textbook pronunciation is [끄려서]."]]),
+      vocab("덕담", "祝福的话；吉祥话", "名词", 129, "단어장", "설날에 어른들께 덕담을 들었어요.", "春节时听到了长辈的祝福。", "words of blessing; good wishes", "I received good wishes from the elders at Lunar New Year."),
+      vocab("한 해", "一年", "名词短语", 129, "단어장", "한 해가 지나고 새해가 왔어요.", "一年过去，新的一年来了。", "one year", "A year has passed and a new year has begun."),
+      vocab("농사", "农耕；务农", "名词", 129, "단어장", "할아버지는 시골에서 농사를 지으세요.", "爷爷在乡下务农。", "farming", "My grandfather farms in the countryside."),
+      vocab("조상", "祖先", "명사", 129, "단어장", "추석에는 조상에게 차례를 지내요.", "秋夕向祖先举行祭礼。", "ancestors", "On Qiuxi, sacrifices are held to ancestors."),
+      vocab("서로 안부를 묻다", "互相问候近况", "动词短语", 131, "배운 어휘 확인", "오랜만에 만나서 서로 안부를 물었어요.", "久别重逢后互相问候近况。", "to ask after each other", "We asked after each other when we met after a long time.")
     ],
     dialogues: [
       {

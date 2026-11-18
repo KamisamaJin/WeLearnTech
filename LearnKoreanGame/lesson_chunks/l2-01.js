@@ -56,6 +56,16 @@ window.lessonGuideL2LessonChunks["l2-01"] = {
       "page": 21,
       "label": "발음/배운 어휘 확인",
       "note": "发音练习和本课复习词表"
+    },
+    {
+      "page": 19,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 21,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -1584,6 +1594,60 @@ window.lessonGuideL2LessonChunks["l2-01"] = {
           "text": "호수가 있다"
         }
       ]
+    },
+    {
+      "ko": "맥주",
+      "zh": "啤酒",
+      "pos": "名词",
+      "page": 21,
+      "source": "배운 어휘 확인",
+      "exampleKo": "친구하고 맥주를 마셔요.",
+      "exampleZh": "我和朋友喝啤酒。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "beer",
+          "pos": "noun",
+          "example": "I drink beer with a friend.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "벚꽃",
+      "zh": "樱花",
+      "pos": "名词",
+      "page": 21,
+      "source": "배운 어휘 확인",
+      "exampleKo": "봄에 벚꽃이 피어요.",
+      "exampleZh": "春天樱花开放。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "cherry blossoms",
+          "pos": "noun",
+          "example": "Cherry blossoms bloom in spring.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "교통",
+      "zh": "交通",
+      "pos": "名词",
+      "page": 21,
+      "source": "배운 어휘 확인",
+      "exampleKo": "이번 과의 주제는 교통이에요.",
+      "exampleZh": "这一课的主题是交通。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "transportation; traffic",
+          "pos": "noun",
+          "example": "The topic of this lesson is transportation.",
+          "tips": []
+        }
+      }
     }
   ],
   "dialogues": [
@@ -1912,7 +1976,7 @@ window.lessonGuideL2LessonChunks["l2-01"] = {
     }
   ],
   "stats": {
-    "vocabulary": 94,
+    "vocabulary": 97,
     "dialogues": 3,
     "culture": 1,
     "practice": 5

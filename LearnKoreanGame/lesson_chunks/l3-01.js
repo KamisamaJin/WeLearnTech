@@ -71,7 +71,37 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "page": 23,
             "label": "배운 어휘 확인",
             "note": "本课复习词表"
-        }
+        },
+      {
+          "page": 15,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 16,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 17,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 18,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 19,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 20,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "goals": [
         "能说明人际关系中的困难和原因。",
@@ -1246,7 +1276,25 @@ window.lessonGuideL3LessonChunks["l3-01"] = {
             "guide": "名词，意思是“不足、不够”。可以作为句子的主语或宾语来使用，复习时注意它常出现的生活场景。",
             "exampleKo": "한국어가 부족해서 걱정돼요.",
             "exampleZh": "因为韩语不足，所以很担心。"
-        }
+        },
+      {
+          "ko": "예의를 지키다",
+          "zh": "遵守礼节；有礼貌",
+          "pos": "动词短语",
+          "page": 23,
+          "source": "배운 어휘 확인",
+          "exampleKo": "처음 만난 사람에게 예의를 지켜요.",
+          "exampleZh": "对初次见面的人保持礼貌。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to observe good manners",
+                  "pos": "verb phrase",
+                  "example": "I observe good manners when meeting someone for the first time.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

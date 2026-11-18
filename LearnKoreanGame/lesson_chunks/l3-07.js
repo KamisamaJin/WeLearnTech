@@ -128,7 +128,32 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "source": "배운 어휘 확인",
             "count": 24,
             "note": "复习表补足词汇。"
-        }
+        },
+      {
+          "page": 87,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 88,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 89,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 92,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 95,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
+      }
     ],
     "vocabulary": [
         {
@@ -1546,7 +1571,277 @@ window.lessonGuideL3LessonChunks["l3-07"] = {
             "tips": [
                 { "label": "易错", "text": "회의/행사에 참석하다; 공연은 보다" }
             ]
-        }
+        },
+      {
+          "ko": "전원을 끄다",
+          "zh": "关闭电源",
+          "pos": "动词短语",
+          "page": 87,
+          "source": "단어장",
+          "exampleKo": "공연이 시작되기 전에 휴대 전화 전원을 꺼 주세요.",
+          "exampleZh": "演出开始前请关闭手机电源。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to turn off the power",
+                  "pos": "verb phrase",
+                  "example": "Please turn off your phone before the performance begins.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "작가",
+          "zh": "作家；创作者",
+          "pos": "名词",
+          "page": 88,
+          "source": "단어장",
+          "exampleKo": "작가가 작품을 소개했어요.",
+          "exampleZh": "创作者介绍了作品。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "writer; artist",
+                  "pos": "noun",
+                  "example": "The artist introduced the work.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "연주회",
+          "zh": "音乐演奏会",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "친구와 피아노 연주회에 갔어요.",
+          "exampleZh": "和朋友去了钢琴演奏会。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "concert; recital",
+                  "pos": "noun",
+                  "example": "I went to a piano recital with a friend.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "난타",
+          "zh": "乱打（韩国非语言打击乐演出）",
+          "pos": "专有名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "난타 공연을 재미있게 봤어요.",
+          "exampleZh": "愉快地观看了乱打演出。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "Nanta (Korean nonverbal percussion performance)",
+                  "pos": "proper noun",
+                  "example": "I enjoyed watching a Nanta performance.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "미술",
+          "zh": "美术",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "미술 전시회에 갔어요.",
+          "exampleZh": "去了美术展。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "visual arts; art",
+                  "pos": "noun",
+                  "example": "I went to an art exhibition.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "사진",
+          "zh": "照片",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "사진을 찍어요.",
+          "exampleZh": "我拍照片。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "photograph",
+                  "pos": "noun",
+                  "example": "I take photographs.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "공예",
+          "zh": "工艺；手工艺",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "공예 수업에서 작은 가방을 만들었어요.",
+          "exampleZh": "在手工艺课上做了小包。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "crafts",
+                  "pos": "noun",
+                  "example": "I made a small bag in a crafts class.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "콘서트",
+          "zh": "演唱会；音乐会",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "좋아하는 가수의 콘서트를 예매했어요.",
+          "exampleZh": "预订了喜欢的歌手的演唱会门票。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "concert",
+                  "pos": "noun",
+                  "example": "I booked a ticket for my favorite singer's concert.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "케이팝",
+          "zh": "韩国流行音乐",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "케이팝을 들으며 한국어를 공부해요.",
+          "exampleZh": "一边听韩国流行音乐一边学韩语。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "K-pop",
+                  "pos": "noun",
+                  "example": "I study Korean while listening to K-pop.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "정보를 검색하다",
+          "zh": "搜索信息",
+          "pos": "동사",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "저는 보통 인터넷으로 정보를 검색해요.",
+          "exampleZh": "我通常用互联网搜索信息。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "Search for information",
+                  "pos": "verb",
+                  "example": "I usually use the internet to search for information.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "찾다",
+          "zh": "领取；取回",
+          "pos": "动词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "매표소에서 예매한 표를 찾았어요.",
+          "exampleZh": "在售票处领取了预订的票。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to collect; to pick up",
+                  "pos": "verb",
+                  "example": "I picked up my reserved ticket at the box office.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "관람하다",
+          "zh": "观看；参观",
+          "pos": "动词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "가족과 함께 공연을 관람했어요.",
+          "exampleZh": "和家人一起观看了演出。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to watch; to view",
+                  "pos": "verb",
+                  "example": "I watched the performance with my family.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "할인",
+          "zh": "打折；折扣",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "이번 주 할인 상품은 칫솔하고 치약입니다.",
+          "exampleZh": "这周的折扣商品是牙刷和牙膏。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "discount",
+                  "pos": "noun",
+                  "example": "This week's discounted items are toothbrushes and toothpaste.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "연령",
+          "zh": "年龄",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "결혼하는 연령이 높아지고 있어요.",
+          "exampleZh": "结婚年龄正在提高。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "age",
+                  "pos": "noun",
+                  "example": "The age at which people marry is rising.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "무료",
+          "zh": "免费",
+          "pos": "名词",
+          "page": 95,
+          "source": "배운 어휘 확인",
+          "exampleKo": "이 행사는 무료예요.",
+          "exampleZh": "这个活动免费。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "free of charge",
+                  "pos": "noun",
+                  "example": "This event is free.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "grammar": [
         {

@@ -37,6 +37,16 @@ window.lessonGuideL1LessonChunks["l1-12"] = {
       "page": "140-141",
       "label": "문화와 정보 / 배운 어휘 확인",
       "note": "韩国热门旅行地与本课复习词汇"
+    },
+    {
+      "page": 139,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 141,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -966,6 +976,222 @@ window.lessonGuideL1LessonChunks["l1-12"] = {
               "text": "불국사 is pronounced [불국싸]."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "인삼차",
+      "zh": "人参茶",
+      "pos": "名词",
+      "page": 139,
+      "source": "단어장",
+      "exampleKo": "인삼차를 마셔요.",
+      "exampleZh": "我喝人参茶。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "ginseng tea",
+          "pos": "noun",
+          "example": "I drink ginseng tea.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "화장품",
+      "zh": "化妆品",
+      "pos": "名词",
+      "page": 139,
+      "source": "단어장",
+      "exampleKo": "제 일이 화장품을 판매하는 것이에요.",
+      "exampleZh": "我的工作是销售化妆品。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "cosmetics",
+          "pos": "noun",
+          "example": "My job is selling cosmetics.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "친척",
+      "zh": "亲戚",
+      "pos": "名词",
+      "page": 139,
+      "source": "단어장",
+      "exampleKo": "가족이나 친구, 친척들을 집으로 초대합니다.",
+      "exampleZh": "邀请家人、朋友、亲戚到家里。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "relative",
+          "pos": "noun",
+          "example": "They invite family, friends, and relatives to their home.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "빨리",
+      "zh": "快地，很快",
+      "pos": "副词",
+      "page": 139,
+      "source": "단어장",
+      "exampleKo": "땀도 빨리 마릅니다.",
+      "exampleZh": "汗也干得快。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "quickly",
+          "pos": "adverb",
+          "example": "Sweat also dries quickly.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "안산",
+      "zh": "安山（韩国城市）",
+      "pos": "专有名词",
+      "page": 139,
+      "source": "단어장",
+      "exampleKo": "안산에 살아요.",
+      "exampleZh": "我住在安山。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Ansan",
+          "pos": "proper noun",
+          "example": "I live in Ansan.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "공원에서 농구를 하다",
+      "zh": "在公园打篮球",
+      "pos": "动词短语",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "주말에 공원에서 농구를 해요.",
+      "exampleZh": "周末在公园打篮球。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to play basketball in the park",
+          "pos": "verb phrase",
+          "example": "I play basketball in the park on weekends.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "컴퓨터 게임을 하다",
+      "zh": "玩电脑游戏",
+      "pos": "动词短语",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "집에서 컴퓨터 게임을 해요.",
+      "exampleZh": "在家玩电脑游戏。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to play computer games",
+          "pos": "verb phrase",
+          "example": "I play computer games at home.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "아이하고 놀이공원에 가다",
+      "zh": "和孩子去游乐园",
+      "pos": "动词短语",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "휴일에 아이하고 놀이공원에 가요.",
+      "exampleZh": "休息日和孩子去游乐园。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to go to an amusement park with one's child",
+          "pos": "verb phrase",
+          "example": "I go to an amusement park with my child on holidays.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "한국어를 열심히 공부하다",
+      "zh": "努力学习韩语",
+      "pos": "动词短语",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "매일 한국어를 열심히 공부해요.",
+      "exampleZh": "每天努力学习韩语。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to study Korean hard",
+          "pos": "verb phrase",
+          "example": "I study Korean hard every day.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "낮잠을 자다",
+      "zh": "睡午觉",
+      "pos": "动词短语",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "오후에 낮잠을 자요.",
+      "exampleZh": "下午睡午觉。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to take a nap",
+          "pos": "verb phrase",
+          "example": "I take a nap in the afternoon.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "문화 센터",
+      "zh": "文化中心",
+      "pos": "名词",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "주말에 문화 센터에 가요.",
+      "exampleZh": "周末去文化中心。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "culture center",
+          "pos": "noun",
+          "example": "I go to the culture center on the weekend.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "동물을 구경하다",
+      "zh": "看动物",
+      "pos": "动词短语",
+      "page": 141,
+      "source": "배운 어휘 확인",
+      "exampleKo": "동물원에서 동물을 구경해요.",
+      "exampleZh": "在动物园看动物。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to look at animals",
+          "pos": "verb phrase",
+          "example": "I look at animals at the zoo.",
+          "tips": []
         }
       }
     }

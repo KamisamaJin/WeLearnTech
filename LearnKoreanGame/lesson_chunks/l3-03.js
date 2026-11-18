@@ -71,7 +71,12 @@ window.lessonGuideL3LessonChunks["l3-03"] = {
             "page": 47,
             "label": "배운 어휘 확인",
             "note": "本课复习词表，补齐主题词和阅读词"
-        }
+        },
+      {
+          "page": 44,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "goals": [
         "能说出地区福利服务的种类，并说明自己想使用的服务。",
@@ -1490,7 +1495,151 @@ window.lessonGuideL3LessonChunks["l3-03"] = {
                 { "label": "搭配", "text": "서비스가 점차 확대되다" },
                 { "label": "易错", "text": "확대하다主动，확대되다被动" }
             ]
-        }
+        },
+      {
+          "ko": "교류실",
+          "zh": "交流室",
+          "pos": "名词",
+          "page": 44,
+          "source": "단어장",
+          "exampleKo": "교류실에서 이웃들과 이야기를 나눠요.",
+          "exampleZh": "在交流室和邻居交谈。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "exchange room; meeting room",
+                  "pos": "noun",
+                  "example": "We talk with our neighbors in the meeting room.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "고충",
+          "zh": "困难、苦衷",
+          "pos": "名词",
+          "page": 44,
+          "source": "단어장",
+          "exampleKo": "센터는 소비자의 고충을 들어줍니다.",
+          "exampleZh": "中心倾听消费者的困难。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "Difficulties, hardships",
+                  "pos": "noun",
+                  "example": "The center listens to consumers’ difficulties.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "통번역 서비스를 받다",
+          "zh": "接受口笔译服务",
+          "pos": "动词短语",
+          "page": 47,
+          "source": "배운 어휘 확인",
+          "exampleKo": "센터에서 통번역 서비스를 받았어요.",
+          "exampleZh": "在中心接受了口笔译服务。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to receive interpreting and translation services",
+                  "pos": "verb phrase",
+                  "example": "I received interpreting and translation services at the center.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "구직 상담을 받다",
+          "zh": "接受求职咨询",
+          "pos": "动词短语",
+          "page": 47,
+          "source": "배운 어휘 확인",
+          "exampleKo": "취업을 준비하려고 구직 상담을 받았어요.",
+          "exampleZh": "为了准备就业，接受了求职咨询。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to receive job-seeking counseling",
+                  "pos": "verb phrase",
+                  "example": "I received job-seeking counseling to prepare for employment.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "창업 상담을 받다",
+          "zh": "接受创业咨询",
+          "pos": "动词短语",
+          "page": 47,
+          "source": "배운 어휘 확인",
+          "exampleKo": "가게를 열기 전에 창업 상담을 받았어요.",
+          "exampleZh": "开店之前接受了创业咨询。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to receive business-startup counseling",
+                  "pos": "verb phrase",
+                  "example": "I received business-startup counseling before opening a shop.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "육아 정보를 얻다",
+          "zh": "获取育儿信息",
+          "pos": "动词短语",
+          "page": 47,
+          "source": "배운 어휘 확인",
+          "exampleKo": "부모 모임에서 육아 정보를 얻었어요.",
+          "exampleZh": "在家长聚会中获取了育儿信息。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to obtain childcare information",
+                  "pos": "verb phrase",
+                  "example": "I obtained childcare information at a parents' gathering.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "건강 검진을 받다",
+          "zh": "接受健康检查；体检",
+          "pos": "动词短语",
+          "page": 47,
+          "source": "배운 어휘 확인",
+          "exampleKo": "보건소에서 건강 검진을 받았어요.",
+          "exampleZh": "在保健所做了体检。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have a health checkup",
+                  "pos": "verb phrase",
+                  "example": "I had a health checkup at the public health center.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "예방 접종을 받다",
+          "zh": "接种疫苗",
+          "pos": "动词短语",
+          "page": 47,
+          "source": "배운 어휘 확인",
+          "exampleKo": "보건소에서 예방 접종을 받았어요.",
+          "exampleZh": "在保健所接种了疫苗。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to receive a vaccination",
+                  "pos": "verb phrase",
+                  "example": "I received a vaccination at the public health center.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {
