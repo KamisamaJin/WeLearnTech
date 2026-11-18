@@ -130,7 +130,16 @@
     ["넷플릭스", "Netflix", "名词", "Netflix", "noun", "넷플릭스에서 드라마를 봐요.", "在 Netflix 上看电视剧。", "I watch dramas on Netflix.", "106", "문화와 정보", ["collocation:넷플릭스"]],
     ["돈을 내다", "付钱", "动词短语", "to pay money", "verb phrase", "예전에는 돈을 내고 동영상을 다운로드했어요.", "以前付钱下载视频。", "In the past, people paid money and downloaded videos.", "106", "문화와 정보", ["collocation:돈을 내다"]],
     ["키패드", "键盘，小键盘", "名词", "keypad", "noun", "스마트폰 키패드가 컴퓨터 키패드와 같아요.", "智能手机键盘和电脑键盘一样。", "The smartphone keypad is like a computer keyboard.", "107", "배운 어휘 확인", ["collocation:키패드"]],
-    ["해당되다", "符合，属于", "动词", "to apply; to correspond", "verb", "스마트폰 중독 진단에서 몇 개가 해당돼요?", "在智能手机成瘾诊断中有几项符合？", "How many items apply to you in the smartphone addiction checklist?", "107", "배운 어휘 확인", ["collocation:해당되다"]]
+    ["해당되다", "符合，属于", "动词", "to apply; to correspond", "verb", "스마트폰 중독 진단에서 몇 개가 해당돼요?", "在智能手机成瘾诊断中有几项符合？", "How many items apply to you in the smartphone addiction checklist?", "107", "배운 어휘 확인", ["collocation:해당되다"]],
+    ["따다", "取得；考取", "动词", "to obtain; to earn", "verb", "취업을 위해 자격증을 땄어요.", "为了就业，我考取了资格证。", "I earned a certificate to help me find a job.", "100", "단어장", []],
+    ["단절되다", "被切断；中断", "动词", "to be cut off", "verb", "스마트폰 때문에 가족 간의 대화가 단절되기도 해요.", "有时会因为智能手机而中断家人间的交流。", "Smartphones can sometimes cut off communication between family members.", "104", "단어장", []],
+    ["댓글", "评论；留言", "名词", "comment", "noun", "댓글을 써 보세요.", "请试着写评论。", "Try writing a comment.", "107", "배운 어휘 확인", []],
+    ["접속하다", "访问；连接", "动词", "to access; to connect", "verb", "홈페이지에 접속하면 약국을 찾을 수 있습니다.", "访问网站的话可以找到药店。", "If you access the website, you can find a pharmacy.", "107", "배운 어휘 확인", []],
+    ["동의하다", "同意", "动词", "to agree; to consent", "verb", "개인 정보 이용에 동의했어요.", "我同意了个人信息的使用。", "I consented to the use of my personal information.", "107", "배운 어휘 확인", []],
+    ["진단", "诊断", "名词", "diagnosis", "noun", "정확한 진단을 받으러 병원에 갔어요.", "为了获得准确诊断，我去了医院。", "I went to the hospital to get an accurate diagnosis.", "107", "배운 어휘 확인", []],
+    ["저하되다", "降低；下降", "动词", "to decline; to deteriorate", "verb", "피로 때문에 집중력이 저하됐어요.", "因为疲劳，注意力下降了。", "My concentration declined because of fatigue.", "107", "배운 어휘 확인", []],
+    ["무기력하다", "无力；无精打采", "形容词", "lethargic; lacking energy", "adjective", "잠을 못 자서 하루 종일 무기력했어요.", "因为没睡好，一整天都无精打采。", "I felt lethargic all day because I could not sleep well.", "107", "배운 어휘 확인", []],
+    ["시달리다", "受折磨，困扰", "动词", "to suffer from", "verb", "현대인들은 여러 질병에 시달리고 있어요.", "现代人正受多种疾病困扰。", "Modern people suffer from various illnesses.", "107", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -168,13 +177,18 @@
       { page: 96, label: "단원 제목", note: "课题、学习目标和核心主题" },
       { page: 98, label: "어휘", note: "互联网和智能手机常用行为" },
       { page: 99, label: "문법 1", note: "V/A-는다면서요? 和确认传闻表达" },
+      { page: 99, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 100, label: "문법 2", note: "V-(으)ㄹ 겸 V-(으)ㄹ 겸 和双重目的表达" },
+      { page: 100, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 101, label: "말하기", note: "互联网使用的问题和建议" },
+      { page: 101, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 102, label: "듣기/발음", note: "个人信息泄露与发音练习" },
+      { page: 102, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 103, label: "쓰기 전", note: "智能手机成瘾诊断和原因分析" },
       { page: 104, label: "읽기", note: "智能手机使用的优缺点" },
+      { page: 104, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 106, label: "문화와 정보", note: "智能手机与应用程序" },
-      { page: 107, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 107, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能说明互联网和智能手机使用中的问题。",

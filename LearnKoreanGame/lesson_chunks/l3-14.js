@@ -65,7 +65,27 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "page": 189,
             "label": "배운 어휘 확인",
             "description": "本课复习词汇补充。"
-        }
+        },
+      {
+          "page": 181,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 182,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 184,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 186,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1373,7 +1393,277 @@ window.lessonGuideL3LessonChunks["l3-14"] = {
             "tips": [
                 { "label": "搭配", "text": "휴대폰 요금을 내다" }
             ]
-        }
+        },
+      {
+          "ko": "간편하다",
+          "zh": "简便",
+          "pos": "形容词",
+          "page": 181,
+          "source": "단어장",
+          "exampleKo": "인터넷으로 신청하면 간편해요.",
+          "exampleZh": "通过网络申请很简便。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "simple; convenient",
+                  "pos": "adjective",
+                  "example": "Applying online is convenient.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "세계적",
+          "zh": "世界性的",
+          "pos": "名词",
+          "page": 181,
+          "source": "단어장",
+          "exampleKo": "그 가수는 세계적 인기를 얻었어요.",
+          "exampleZh": "那位歌手获得了世界范围的人气。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "worldwide; global",
+                  "pos": "noun",
+                  "example": "That singer gained worldwide popularity.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "출장을 가다",
+          "zh": "出差",
+          "pos": "动词短语",
+          "page": 181,
+          "source": "단어장",
+          "exampleKo": "내일 부산으로 출장을 가요.",
+          "exampleZh": "明天去釜山出差。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to go on a business trip",
+                  "pos": "verb phrase",
+                  "example": "I am going on a business trip to Busan tomorrow.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "홈페이지",
+          "zh": "网站；主页",
+          "pos": "名词",
+          "page": 182,
+          "source": "단어장",
+          "exampleKo": "휴일지킴이 약국 홈페이지에 접속하세요.",
+          "exampleZh": "请访问节假日值班药店网站。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "website; homepage",
+                  "pos": "noun",
+                  "example": "Access the holiday duty pharmacy website.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "회원 가입을 하다",
+          "zh": "注册会员",
+          "pos": "动词短语",
+          "page": 182,
+          "source": "단어장",
+          "exampleKo": "홈페이지에서 회원 가입을 해요.",
+          "exampleZh": "在官网注册会员。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to sign up as a member",
+                  "pos": "verb phrase",
+                  "example": "I sign up on the website.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "회원으로 가입하다",
+          "zh": "注册成为会员",
+          "pos": "动词短语",
+          "page": 182,
+          "source": "단어장",
+          "exampleKo": "도서관 홈페이지에 회원으로 가입했어요.",
+          "exampleZh": "在图书馆网站注册成为了会员。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to register as a member",
+                  "pos": "verb phrase",
+                  "example": "I registered as a member on the library website.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "개통하다",
+          "zh": "开通（通信服务等）",
+          "pos": "动词",
+          "page": 182,
+          "source": "단어장",
+          "exampleKo": "새 휴대 전화를 개통했어요.",
+          "exampleZh": "开通了新手机服务。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to activate (a phone service)",
+                  "pos": "verb",
+                  "example": "I activated my new phone service.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "신속하다",
+          "zh": "迅速",
+          "pos": "形容词",
+          "page": 186,
+          "source": "단어장",
+          "exampleKo": "주민들의 신속한 대피로 큰 피해를 막았어요.",
+          "exampleZh": "由于居民迅速疏散，避免了大损失。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "quick; prompt",
+                  "pos": "adjective",
+                  "example": "The residents' quick evacuation prevented major damage.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "보편화",
+          "zh": "普及",
+          "pos": "名词",
+          "page": 186,
+          "source": "단어장",
+          "exampleKo": "스마트폰의 보편화로 생활이 달라졌어요.",
+          "exampleZh": "智能手机的普及改变了生活。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "widespread adoption",
+                  "pos": "noun",
+                  "example": "The widespread adoption of smartphones changed everyday life.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "소통이 단절되다",
+          "zh": "沟通中断",
+          "pos": "动词短语",
+          "page": 186,
+          "source": "단어장",
+          "exampleKo": "대화를 하지 않으면 소통이 단절될 수 있어요.",
+          "exampleZh": "不交谈的话，沟通可能会中断。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "communication is cut off",
+                  "pos": "verb phrase",
+                  "example": "Communication can break down if people do not talk.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "유튜브를 보다",
+          "zh": "看YouTube视频",
+          "pos": "动词短语",
+          "page": 189,
+          "source": "배운 어휘 확인",
+          "exampleKo": "요리 방법을 배우려고 유튜브를 봐요.",
+          "exampleZh": "为了学习烹饪方法而看YouTube视频。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to watch YouTube",
+                  "pos": "verb phrase",
+                  "example": "I watch YouTube to learn how to cook.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "긍정적",
+          "zh": "积极的；正面的",
+          "pos": "名词",
+          "page": 189,
+          "source": "배운 어휘 확인",
+          "exampleKo": "인터넷의 긍정적 영향을 알아봤어요.",
+          "exampleZh": "了解了互联网的积极影响。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "positive",
+                  "pos": "noun",
+                  "example": "I looked into the positive effects of the internet.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "고립감",
+          "zh": "孤立感",
+          "pos": "名词",
+          "page": 189,
+          "source": "배운 어휘 확인",
+          "exampleKo": "사람들과 만나면서 고립감이 줄었어요.",
+          "exampleZh": "和人们见面后孤立感减轻了。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "sense of isolation",
+                  "pos": "noun",
+                  "example": "Meeting people reduced my sense of isolation.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "부정적",
+          "zh": "消极的；负面的",
+          "pos": "名词",
+          "page": 189,
+          "source": "배운 어휘 확인",
+          "exampleKo": "인터넷 중독은 생활에 부정적 영향을 줘요.",
+          "exampleZh": "网瘾会给生活带来负面影响。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "negative",
+                  "pos": "noun",
+                  "example": "Internet addiction has a negative effect on daily life.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "인터넷 중독",
+          "zh": "网络成瘾；网瘾",
+          "pos": "名词短语",
+          "page": 189,
+          "source": "배운 어휘 확인",
+          "exampleKo": "인터넷 중독 때문에 상담을 받았어요.",
+          "exampleZh": "因为网瘾接受了咨询。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "internet addiction",
+                  "pos": "noun phrase",
+                  "example": "I received counseling for internet addiction.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

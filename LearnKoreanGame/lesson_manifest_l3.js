@@ -38,7 +38,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 102,
+        "vocabulary": 103,
         "dialogues": 3,
         "culture": 1,
         "practice": 3
@@ -116,7 +116,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 121,
+        "vocabulary": 129,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -155,7 +155,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 121,
+        "vocabulary": 122,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -232,7 +232,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 124,
+        "vocabulary": 143,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -276,7 +276,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 122,
+        "vocabulary": 137,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -314,7 +314,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 123,
+        "vocabulary": 131,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -353,7 +353,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 128,
+        "vocabulary": 133,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -392,7 +392,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 128,
+        "vocabulary": 133,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -431,7 +431,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 126,
+        "vocabulary": 131,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -470,7 +470,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 112,
+        "vocabulary": 120,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -509,7 +509,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 125,
+        "vocabulary": 142,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -543,7 +543,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 107,
+        "vocabulary": 122,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -577,7 +577,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 97,
+        "vocabulary": 111,
         "dialogues": 3,
         "culture": 1,
         "practice": 7
@@ -611,7 +611,7 @@ window.lessonGuideL3 = {
         }
       ],
       "stats": {
-        "vocabulary": 99,
+        "vocabulary": 111,
         "dialogues": 3,
         "culture": 1,
         "practice": 7

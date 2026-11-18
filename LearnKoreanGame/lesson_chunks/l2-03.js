@@ -100,6 +100,18 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
       }
     }
   ],
+  "vocabularySources": [
+    {
+      "page": 39,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 41,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
+    }
+  ],
   "vocabulary": [
     {
       "ko": "물건",
@@ -3348,6 +3360,24 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
           ]
         }
       }
+    },
+    {
+      "ko": "하다",
+      "zh": "戴；佩戴（饰品等）",
+      "pos": "动词",
+      "page": 41,
+      "source": "배운 어휘 확인",
+      "exampleKo": "목걸이를 했어요.",
+      "exampleZh": "戴了项链。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to wear (accessories)",
+          "pos": "verb",
+          "example": "I wore a necklace.",
+          "tips": []
+        }
+      }
     }
   ],
   "dialogues": [
@@ -4065,7 +4095,7 @@ window.lessonGuideL2LessonChunks["l2-03"] = {
     }
   },
   "stats": {
-    "vocabulary": 116,
+    "vocabulary": 117,
     "dialogues": 4,
     "culture": 1,
     "practice": 5

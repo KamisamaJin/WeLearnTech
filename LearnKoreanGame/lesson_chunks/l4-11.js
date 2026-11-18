@@ -109,7 +109,24 @@
     ["사회 복지", "社会福利", "名词短语", "social welfare", "noun phrase", "사회 복지도 대표적인 분야예요.", "社会福利也是代表性领域。", "Social welfare is also a representative field.", "154", "문화와 정보", ["collocation:사회 복지"]],
     ["상담", "咨询，心理辅导", "名词", "counseling", "noun", "상담 분야를 배우는 사람도 많아요.", "学习咨询领域的人也很多。", "Many people study counseling.", "154", "문화와 정보", ["collocation:상담"]],
     ["보육", "保育，托育", "名词", "childcare", "noun", "보육은 실무 기술 분야 중 하나예요.", "托育是实务技术领域之一。", "Childcare is one practical work-skill field.", "154", "문화와 정보", ["collocation:보육"]],
-    ["레크리에이션", "娱乐活动，休闲活动", "名词", "recreation", "noun", "레크리에이션도 평생 교육에서 배울 수 있어요.", "休闲活动指导也可以在终身教育中学习。", "Recreation can also be studied through lifelong education.", "154", "문화와 정보", ["collocation:레크리에이션"]]
+    ["레크리에이션", "娱乐活动，休闲活动", "名词", "recreation", "noun", "레크리에이션도 평생 교육에서 배울 수 있어요.", "休闲活动指导也可以在终身教育中学习。", "Recreation can also be studied through lifelong education.", "154", "문화와 정보", ["collocation:레크리에이션"]],
+    ["늙다", "变老；年老", "动词", "to grow old", "verb", "나이가 들어 늙어도 계속 배우고 싶어요.", "即使年纪大了，我也想继续学习。", "I want to keep learning even as I grow old.", "148", "단어장", []],
+    ["경쟁", "竞争", "名词", "competition", "noun", "대학 입학 경쟁이 치열해요.", "大学入学竞争很激烈。", "Competition for university admission is intense.", "149", "단어장", []],
+    ["구성되다", "由……构成", "动词", "to be composed of", "verb", "모양, 색깔, 이미지, 글자로 구성됩니다.", "由形状、颜色、图像和文字构成。", "It is composed of shape, color, image, and writing.", "152", "단어장", []],
+    ["의미", "意思；意义", "名词", "meaning", "noun", "이 단어의 의미를 설명해 주세요.", "请解释这个单词的意思。", "Please explain the meaning of this word.", "152", "단어장", []],
+    ["무상", "免费；无偿", "名词", "free of charge", "noun", "이 학교는 급식을 무상으로 제공해요.", "这所学校免费提供餐食。", "This school provides meals free of charge.", "152", "단어장", []],
+    ["수시", "大学非定期招生；提前招生", "名词", "early university admission", "noun", "수시 모집에 지원했어요.", "我申请了大学提前招生。", "I applied through early university admissions.", "152", "단어장", []],
+    ["정시", "大学定期招生", "名词", "regular university admission", "noun", "정시 모집은 수능 성적이 중요해요.", "定期招生中高考成绩很重要。", "CSAT scores are important in regular university admissions.", "152", "단어장", []],
+    ["모집", "招收；招募", "名词", "recruitment; admissions", "noun", "신입생 모집이 시작됐어요.", "新生招生开始了。", "Admissions for new students have begun.", "152", "단어장", []],
+    ["전형", "选拔方式；招生选拔程序", "名词", "selection process; admission track", "noun", "이 대학의 입학 전형을 확인했어요.", "我查看了这所大学的招生选拔方式。", "I checked this university's admission process.", "152", "단어장", []],
+    ["조건", "条件", "名词", "condition; requirement", "noun", "지원 조건을 먼저 확인하세요.", "请先确认申请条件。", "Please check the application requirements first.", "152", "단어장", []],
+    ["국가", "国家", "名词", "state; nation", "noun", "국가가 학교 운영을 지원해요.", "国家支持学校运营。", "The state supports the operation of schools.", "155", "배운 어휘 확인", []],
+    ["지방 공공 단체", "地方公共团体；地方公共机构", "名词短语", "local public body", "noun phrase", "지방 공공 단체가 지역 교육을 지원해요.", "地方公共团体支持当地教育。", "Local public bodies support education in the region.", "155", "배운 어휘 확인", []],
+    ["운영하다", "经营、运营", "动词", "to run; to operate", "verb", "저희 아버지는 여행사를 운영하고 계십니다.", "我父亲经营旅行社。", "My father runs a travel agency.", "155", "배운 어휘 확인", []],
+    ["대안", "替代方案", "名词", "alternative", "noun", "새로운 교육 대안을 찾고 있어요.", "我们正在寻找新的教育替代方案。", "We are looking for new educational alternatives.", "155", "배운 어휘 확인", []],
+    ["자율적", "自主的；自主性", "名词", "autonomous; self-directed", "noun", "학생들의 자율적 참여를 권장해요.", "鼓励学生自主参与。", "We encourage students' voluntary, self-directed participation.", "155", "배운 어휘 확인", []],
+    ["암기하다", "记忆；背诵", "动词", "to memorize", "verb", "문장을 외우기 전에 단어의 뜻을 암기했어요.", "背句子之前先记住了单词的意思。", "I memorized the meanings of the words before learning the sentences by heart.", "155", "배운 어휘 확인", []],
+    ["강화되다", "加强", "动词", "to be strengthened", "verb", "학교에서 인성 교육이 강화됐어요.", "学校加强了品德教育。", "Character education has been strengthened at school.", "155", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -149,12 +166,16 @@
       { page: 146, label: "어휘", note: "教育制度、教育类型和教育观点" },
       { page: 147, label: "문법 1", note: "N조차 和强调最低限度" },
       { page: 148, label: "문법 2", note: "V/A-기 마련이다 和自然规律表达" },
+      { page: 148, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 149, label: "말하기", note: "关于私教育的讨论" },
+      { page: 149, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 150, label: "듣기/발음", note: "早期外语教育和发音规则" },
+      { page: 150, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 151, label: "읽기 전", note: "韩国学制和学习形式" },
       { page: 152, label: "읽기", note: "韩国教育课程和大学入学" },
+      { page: 152, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 154, label: "문화와 정보", note: "平生教育" },
-      { page: 155, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 155, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能表达对私教育的赞成或反对意见。",

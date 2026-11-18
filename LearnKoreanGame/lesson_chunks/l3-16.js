@@ -65,7 +65,27 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "page": 213,
             "label": "배운 어휘 확인",
             "description": "本课复习词汇补充。"
-        }
+        },
+      {
+          "page": 207,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 208,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 210,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 211,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1272,7 +1292,223 @@ window.lessonGuideL3LessonChunks["l3-16"] = {
             "guide": "固定表达，意思是“阻挡坏事”。建议按整块记忆，写作和口语里可以直接套用。",
             "exampleKo": "팥죽을 먹으며 나쁜 일을 막는다고 생각했어요.",
             "exampleZh": "人们认为吃红豆粥可以阻挡坏事。"
-        }
+        },
+      {
+          "ko": "옷차림",
+          "zh": "着装",
+          "pos": "名词",
+          "page": 208,
+          "source": "단어장",
+          "exampleKo": "경제 상황과 면접 옷차림은 관계가 있을까요?",
+          "exampleZh": "经济状况和面试着装有关吗？",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "clothing; attire",
+                  "pos": "noun",
+                  "example": "Is interview attire related to the economic situation?",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "일교차가 크다",
+          "zh": "昼夜温差大",
+          "pos": "表达",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "봄에는 일교차가 커요.",
+          "exampleZh": "春天昼夜温差大。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have a large daily temperature range",
+                  "pos": "expression",
+                  "example": "There is a large daily temperature range in spring.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "비가 그치다",
+          "zh": "雨停",
+          "pos": "动词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "오후에 비가 그쳤어요.",
+          "exampleZh": "下午雨停了。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to stop raining",
+                  "pos": "verb phrase",
+                  "example": "It stopped raining in the afternoon.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "날이 개다",
+          "zh": "天气放晴",
+          "pos": "动词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "비가 온 뒤 날이 갰어요.",
+          "exampleZh": "下雨后天气放晴了。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "the weather clears up",
+                  "pos": "verb phrase",
+                  "example": "The weather cleared up after the rain.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "기온이 영하로 떨어지다",
+          "zh": "气温降到零度以下",
+          "pos": "动词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "밤에는 기온이 영하로 떨어져요.",
+          "exampleZh": "晚上气温降到零度以下。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "the temperature falls below zero",
+                  "pos": "verb phrase",
+                  "example": "The temperature falls below zero at night.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "폭염 주의보",
+          "zh": "高温预警",
+          "pos": "名词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "오늘 폭염 주의보가 내려졌어요.",
+          "exampleZh": "今天发布了高温预警。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "heatwave advisory",
+                  "pos": "noun phrase",
+                  "example": "A heatwave advisory was issued today.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "호우 경보",
+          "zh": "暴雨警报",
+          "pos": "名词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "호우 경보가 내려서 행사가 취소됐어요.",
+          "exampleZh": "因发布暴雨警报，活动取消了。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "heavy rain warning",
+                  "pos": "noun phrase",
+                  "example": "The event was canceled because a heavy rain warning was issued.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "한파 경보",
+          "zh": "寒潮警报",
+          "pos": "名词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "한파 경보가 내려서 옷을 따뜻하게 입었어요.",
+          "exampleZh": "因发布寒潮警报，穿得很暖和。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "cold wave warning",
+                  "pos": "noun phrase",
+                  "example": "I dressed warmly because a cold wave warning was issued.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "소나기가 내리다",
+          "zh": "下阵雨",
+          "pos": "动词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "오후에 소나기가 내렸어요.",
+          "exampleZh": "下午下了阵雨。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to have a sudden shower",
+                  "pos": "verb phrase",
+                  "example": "There was a sudden shower in the afternoon.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "우울하다",
+          "zh": "忧郁；心情低落",
+          "pos": "形容词",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "혼자 있어서 우울했어요.",
+          "exampleZh": "一个人待着所以心情低落。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "depressed; gloomy",
+                  "pos": "adjective",
+                  "example": "I felt gloomy because I was alone.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "가을을 타다",
+          "zh": "因秋季而情绪低落；伤秋",
+          "pos": "动词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "저는 가을을 타서 요즘 외로워요.",
+          "exampleZh": "我容易伤秋，所以最近感到孤独。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to feel melancholic in autumn",
+                  "pos": "verb phrase",
+                  "example": "I feel lonely these days because autumn makes me melancholic.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "졸음이 오다",
+          "zh": "犯困；有睡意",
+          "pos": "动词短语",
+          "page": 213,
+          "source": "배운 어휘 확인",
+          "exampleKo": "점심을 먹고 나면 졸음이 와요.",
+          "exampleZh": "吃过午饭就犯困。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to feel drowsy",
+                  "pos": "verb phrase",
+                  "example": "I feel drowsy after lunch.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

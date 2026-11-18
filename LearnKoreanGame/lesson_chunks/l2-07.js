@@ -57,6 +57,16 @@ window.lessonGuideL2LessonChunks["l2-07"] = {
       "page": 81,
       "label": "발음/배운 어휘 확인",
       "note": "发音练习和本课词汇复习"
+    },
+    {
+      "page": 79,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 81,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -2738,6 +2748,42 @@ window.lessonGuideL2LessonChunks["l2-07"] = {
           ]
         }
       }
+    },
+    {
+      "ko": "원어민",
+      "zh": "母语使用者",
+      "pos": "名词",
+      "page": 79,
+      "source": "단어장",
+      "exampleKo": "원어민 선생님에게 발음을 배워요.",
+      "exampleZh": "向母语教师学习发音。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "native speaker",
+          "pos": "noun",
+          "example": "I learn pronunciation from a native-speaking teacher.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "확인",
+      "zh": "确认；核实",
+      "pos": "名词",
+      "page": 79,
+      "source": "단어장",
+      "exampleKo": "신청 내용을 확인한 다음에 보내세요.",
+      "exampleZh": "确认申请内容后再发送。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "confirmation; checking",
+          "pos": "noun",
+          "example": "Check the application details before sending them.",
+          "tips": []
+        }
+      }
     }
   ],
   "dialogues": [
@@ -3359,7 +3405,7 @@ window.lessonGuideL2LessonChunks["l2-07"] = {
     }
   },
   "stats": {
-    "vocabulary": 83,
+    "vocabulary": 85,
     "dialogues": 5,
     "culture": 1,
     "practice": 5

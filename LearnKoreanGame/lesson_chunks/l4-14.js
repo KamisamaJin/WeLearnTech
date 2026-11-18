@@ -90,7 +90,17 @@
     ["파견된 근로자", "派遣劳动者", "名词短语", "dispatched worker", "noun phrase", "파견된 근로자는 증명서를 제출해야 해요.", "派遣劳动者需要提交证明书。", "Dispatched workers must submit a certificate.", "190", "문화와 정보", ["collocation:파견된 근로자"]],
     ["증명서", "证明书", "名词", "certificate", "noun", "자기 나라에서 가입한 증명서를 제출하세요.", "请提交在自己国家加入的证明书。", "Submit a certificate showing enrollment in your home country.", "190", "문화와 정보", ["collocation:증명서를 제출하다"]],
     ["체류 자격", "滞留资格，签证资格", "名词短语", "status of stay", "noun phrase", "체류 자격에 따라 가입 대상이 달라질 수 있어요.", "根据滞留资格，加入对象可能不同。", "Eligibility may differ depending on status of stay.", "190", "문화와 정보", ["collocation:체류 자격"]],
-    ["국민연금공단", "国民年金公团", "名词", "National Pension Service", "noun", "국민연금공단 홈페이지에서 확인할 수 있어요.", "可以在国民年金公团官网确认。", "You can check on the National Pension Service website.", "190", "문화와 정보", ["collocation:국민연금공단"]]
+    ["국민연금공단", "国民年金公团", "名词", "National Pension Service", "noun", "국민연금공단 홈페이지에서 확인할 수 있어요.", "可以在国民年金公团官网确认。", "You can check on the National Pension Service website.", "190", "문화와 정보", ["collocation:국민연금공단"]],
+    ["숨기다", "隐藏；隐瞒", "动词", "to hide; to conceal", "verb", "이름을 숨기고 댓글을 썼어요.", "隐藏姓名后写了评论。", "I wrote a comment while concealing my name.", "183", "단어장", []],
+    ["적절하다", "恰当", "形容词", "appropriate", "adjective", "신조어는 새로운 현상을 적절하게 표현할 수 있어요.", "新词可以恰当地表达新现象。", "New words can appropriately express new phenomena.", "186", "단어장", []],
+    ["튀다", "显眼；突出", "动词", "to stand out", "verb", "면접에서는 너무 튀는 옷을 피하세요.", "面试时请避免穿过于显眼的衣服。", "Avoid clothes that stand out too much at an interview.", "186", "단어장", []],
+    ["경기", "经济景气；经济状况", "名词", "economic conditions", "noun", "경기가 좋아져서 소비가 늘었어요.", "经济好转后消费增加了。", "Consumption increased as economic conditions improved.", "191", "배운 어휘 확인", []],
+    ["원재료", "原材料", "名词", "raw material", "noun", "원재료 가격이 올라서 제품 가격도 올랐어요.", "原材料涨价，产品价格也上涨了。", "Product prices rose because raw material prices increased.", "191", "배운 어휘 확인", []],
+    ["인상", "提价；上调", "名词", "price increase; raise", "noun", "물가 인상으로 생활비가 늘었어요.", "物价上涨导致生活费增加了。", "Living costs rose because of price increases.", "191", "배운 어휘 확인", []],
+    ["변동", "变动；波动", "名词", "fluctuation; change", "noun", "환율 변동이 수입 가격에 영향을 줘요.", "汇率波动会影响进口价格。", "Exchange-rate fluctuations affect import prices.", "191", "배운 어휘 확인", []],
+    ["부동산", "房地产；不动产", "名词", "real estate", "noun", "부동산 가격이 지역마다 달라요.", "不同地区的房地产价格不同。", "Real estate prices vary by region.", "191", "배운 어휘 확인", []],
+    ["급등", "暴涨；急剧上涨", "名词", "sharp rise; surge", "noun", "물가 급등으로 가계 부담이 커졌어요.", "物价暴涨增加了家庭负担。", "The surge in prices increased the burden on households.", "191", "배운 어휘 확인", []],
+    ["침체", "低迷；萧条", "名词", "stagnation; downturn", "noun", "경기 침체로 소비가 줄었어요.", "经济低迷导致消费减少。", "Consumption fell because of the economic downturn.", "191", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -129,13 +139,17 @@
       { page: 180, label: "단원 제목", note: "课题、语法和学习目标" },
       { page: 182, label: "어휘", note: "经济状况、物价、失业率和汇率" },
       { page: 183, label: "문법 1", note: "V/A-(으)므로 和正式原因表达" },
+      { page: 183, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 184, label: "문법 2", note: "N은/는커녕 和强否定表达" },
       { page: 185, label: "말하기", note: "物价和经济影响对话" },
+      { page: 185, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 186, label: "듣기/발음", note: "经济状况与面试着装" },
+      { page: 186, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 187, label: "읽기 전", note: "新年希望新闻和经济展望" },
       { page: 188, label: "읽기", note: "物价稳定新闻文章" },
+      { page: 188, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 190, label: "문화와 정보", note: "国民年金" },
-      { page: 191, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 191, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能谈论经济状况和生活中的经济问题。",

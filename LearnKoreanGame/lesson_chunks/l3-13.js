@@ -75,7 +75,32 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "page": 177,
             "label": "배운 어휘 확인",
             "note": "补充复习词表中的 업무、직종、급여、성과、재충전等词。"
-        }
+        },
+      {
+          "page": 169,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 170,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 172,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 174,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 175,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1575,7 +1600,313 @@ window.lessonGuideL3LessonChunks["l3-13"] = {
             "tips": [
                 { "label": "搭配", "text": "상사에게 허락을 받다" }
             ]
-        }
+        },
+      {
+          "ko": "작업",
+          "zh": "作业；工作任务",
+          "pos": "名词",
+          "page": 169,
+          "source": "단어장",
+          "exampleKo": "오늘 작업은 3시까지예요.",
+          "exampleZh": "今天的作业到3点为止。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "work task; job",
+                  "pos": "noun",
+                  "example": "Today's work task is until 3 o'clock.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "스스로",
+          "zh": "自己，主动地",
+          "pos": "副词",
+          "page": 169,
+          "source": "단어장",
+          "exampleKo": "때가 되면 스스로 공부하기 마련이에요.",
+          "exampleZh": "到时候自然会自己学习。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "by oneself; on one's own",
+                  "pos": "adverb",
+                  "example": "When the time comes, children naturally study on their own.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "적응하다",
+          "zh": "适应",
+          "pos": "动词",
+          "page": 170,
+          "source": "단어장",
+          "exampleKo": "새 직장에 적응하려고 노력 중이에요.",
+          "exampleZh": "正在努力适应新工作。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to adapt",
+                  "pos": "verb",
+                  "example": "I am trying to adapt to my new workplace.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "방식",
+          "zh": "方式",
+          "pos": "名词",
+          "page": 170,
+          "source": "단어장",
+          "exampleKo": "회사마다 일하는 방식이 달라요.",
+          "exampleZh": "每家公司的工作方式不同。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "method; way",
+                  "pos": "noun",
+                  "example": "Each company has a different way of working.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "파악하다",
+          "zh": "掌握；了解",
+          "pos": "动词",
+          "page": 170,
+          "source": "단어장",
+          "exampleKo": "새로운 업무 내용을 파악하고 있어요.",
+          "exampleZh": "正在了解新的工作内容。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to grasp; to understand",
+                  "pos": "verb",
+                  "example": "I am getting to grips with my new duties.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "반반씩",
+          "zh": "各一半",
+          "pos": "副词",
+          "page": 172,
+          "source": "단어장",
+          "exampleKo": "일을 반반씩 나눠서 했어요.",
+          "exampleZh": "各自分担一半工作。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "half each",
+                  "pos": "adverb",
+                  "example": "We divided the work in half and each did a share.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "업무",
+          "zh": "业务，工作任务",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "회사 업무를 잘 수행하기 위해 공부하고 있어요.",
+          "exampleZh": "为了做好公司业务正在学习。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "work duties",
+                  "pos": "noun",
+                  "example": "I am studying to perform my work duties well.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "지시",
+          "zh": "指示、命令",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "상사의 지시를 잘 이해해야 해요.",
+          "exampleZh": "需要好好理解上司的指示。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "instruction / order",
+                  "pos": "noun",
+                  "example": "You need to understand your supervisor's instructions well.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "결재",
+          "zh": "审批；批准",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "서류를 작성한 뒤 상사의 결재를 받았어요.",
+          "exampleZh": "写好文件后获得了上司的批准。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "approval; authorization",
+                  "pos": "noun",
+                  "example": "I obtained my supervisor's approval after preparing the document.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "정비하다",
+          "zh": "检修；维护",
+          "pos": "动词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "작업 전에 기계를 정비했어요.",
+          "exampleZh": "作业前检修了机器。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to inspect and maintain",
+                  "pos": "verb",
+                  "example": "I inspected and maintained the machine before starting work.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "작동",
+          "zh": "运转；运行",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "기계의 작동 상태를 확인했어요.",
+          "exampleZh": "确认了机器的运转状态。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "operation; functioning",
+                  "pos": "noun",
+                  "example": "I checked the machine's operating condition.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "공구",
+          "zh": "工具",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "일할 때 공구를 많이 사용해요.",
+          "exampleZh": "工作时经常使用工具。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "tools",
+                  "pos": "noun",
+                  "example": "I use tools a lot while working.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "재고",
+          "zh": "库存",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "창고의 재고를 확인했어요.",
+          "exampleZh": "核对了仓库的库存。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "inventory; stock",
+                  "pos": "noun",
+                  "example": "I checked the stock in the warehouse.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "자재",
+          "zh": "材料；物资",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "공사에 필요한 자재를 주문했어요.",
+          "exampleZh": "订购了施工所需的材料。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "materials; supplies",
+                  "pos": "noun",
+                  "example": "I ordered the materials needed for construction.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "시급",
+          "zh": "时薪",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "시급은 얼마예요?",
+          "exampleZh": "时薪是多少？",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "hourly wage",
+                  "pos": "noun",
+                  "example": "How much is the hourly wage?",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "해소하다",
+          "zh": "消除；缓解",
+          "pos": "动词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "운동으로 스트레스를 해소해요.",
+          "exampleZh": "通过运动缓解压力。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to relieve; to resolve",
+                  "pos": "verb",
+                  "example": "I relieve stress through exercise.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "피로",
+          "zh": "疲劳",
+          "pos": "名词",
+          "page": 177,
+          "source": "배운 어휘 확인",
+          "exampleKo": "충분히 쉬어서 피로가 풀렸어요.",
+          "exampleZh": "充分休息后消除了疲劳。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "fatigue",
+                  "pos": "noun",
+                  "example": "My fatigue went away after I got enough rest.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

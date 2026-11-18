@@ -52,6 +52,11 @@ window.lessonGuideL1LessonChunks["l1-14"] = {
       "page": 161,
       "label": "배운 어휘 확인",
       "note": "本课词汇复习"
+    },
+    {
+      "page": 159,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -655,6 +660,60 @@ window.lessonGuideL1LessonChunks["l1-14"] = {
           "meaning": "mobile phone",
           "pos": "noun",
           "example": "These days people often contact each other by mobile phone first.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "새",
+      "zh": "新的",
+      "pos": "冠形词",
+      "page": 159,
+      "source": "단어장",
+      "exampleKo": "새 친구가 우리 반에 왔어요.",
+      "exampleZh": "新朋友来到了我们班。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "new",
+          "pos": "determiner",
+          "example": "A new friend joined our class.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "갑자기 일이 생기다",
+      "zh": "突然有事",
+      "pos": "动词短语",
+      "page": 161,
+      "source": "배운 어휘 확인",
+      "exampleKo": "갑자기 일이 생겨서 못 가요.",
+      "exampleZh": "突然有事，不能去了。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to have something come up unexpectedly",
+          "pos": "verb phrase",
+          "example": "Something came up unexpectedly, so I cannot go.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "회식을 하다",
+      "zh": "同事聚餐",
+      "pos": "动词短语",
+      "page": 161,
+      "source": "배운 어휘 확인",
+      "exampleKo": "금요일에 회사 사람들과 회식을 해요.",
+      "exampleZh": "星期五和同事聚餐。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to have a company dinner",
+          "pos": "verb phrase",
+          "example": "I have a company dinner with my coworkers on Friday.",
           "tips": []
         }
       }

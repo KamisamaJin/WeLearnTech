@@ -37,6 +37,16 @@ window.lessonGuideL1LessonChunks["l1-18"] = {
       "page": "200-201",
       "label": "문화와 정보 / 발음 / 배운 어휘 확인",
       "note": "韩国语缩略语、发音、本课词汇复习"
+    },
+    {
+      "page": 199,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 201,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -762,6 +772,42 @@ window.lessonGuideL1LessonChunks["l1-18"] = {
               "text": "Abbreviations are convenient, but they can be inconvenient if you do not know the meaning."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "의식주",
+      "zh": "衣食住",
+      "pos": "名词",
+      "page": 201,
+      "source": "배운 어휘 확인",
+      "exampleKo": "의식주는 생활에 꼭 필요해요.",
+      "exampleZh": "衣食住是生活必需。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "clothing, food and housing",
+          "pos": "noun",
+          "example": "Clothing, food and housing are essential for daily life.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "팥빙수",
+      "zh": "红豆刨冰",
+      "pos": "名词",
+      "page": 201,
+      "source": "배운 어휘 확인",
+      "exampleKo": "여름에 팥빙수를 먹어요.",
+      "exampleZh": "夏天吃红豆刨冰。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "shaved ice with sweet red beans",
+          "pos": "noun",
+          "example": "I eat shaved ice with sweet red beans in summer.",
+          "tips": []
         }
       }
     }

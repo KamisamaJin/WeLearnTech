@@ -100,6 +100,18 @@ window.lessonGuideL2LessonChunks["l2-05"] = {
       }
     }
   ],
+  "vocabularySources": [
+    {
+      "page": 59,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 61,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
+    }
+  ],
   "vocabulary": [
     {
       "ko": "약국",
@@ -1816,6 +1828,78 @@ window.lessonGuideL2LessonChunks["l2-05"] = {
           "pos": "quantity expression"
         }
       }
+    },
+    {
+      "ko": "식전",
+      "zh": "饭前",
+      "pos": "名词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "약봉지에 식전이라고 쓰여 있어요.",
+      "exampleZh": "药袋上写着饭前。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "before a meal",
+          "pos": "noun",
+          "example": "The medicine packet says to take it before a meal.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "식후",
+      "zh": "饭后",
+      "pos": "名词",
+      "page": 59,
+      "source": "단어장",
+      "exampleKo": "약봉지에 식후라고 쓰여 있어요.",
+      "exampleZh": "药袋上写着饭后。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "after a meal",
+          "pos": "noun",
+          "example": "The medicine packet says to take it after a meal.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "부러지다",
+      "zh": "折断；骨折",
+      "pos": "动词",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "넘어져서 팔이 부러졌어요.",
+      "exampleZh": "摔倒后胳膊骨折了。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to break; to fracture",
+          "pos": "verb",
+          "example": "I fell and broke my arm.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "다치다",
+      "zh": "受伤",
+      "pos": "动词",
+      "page": 61,
+      "source": "배운 어휘 확인",
+      "exampleKo": "넘어져서 무릎을 다쳤어요.",
+      "exampleZh": "摔倒后膝盖受伤了。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to get injured",
+          "pos": "verb",
+          "example": "I fell and hurt my knee.",
+          "tips": []
+        }
+      }
     }
   ],
   "dialogues": [
@@ -2641,7 +2725,7 @@ window.lessonGuideL2LessonChunks["l2-05"] = {
     }
   },
   "stats": {
-    "vocabulary": 93,
+    "vocabulary": 97,
     "dialogues": 5,
     "culture": 1,
     "practice": 5

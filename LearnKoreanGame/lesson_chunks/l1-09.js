@@ -47,6 +47,11 @@ window.lessonGuideL1LessonChunks["l1-09"] = {
       "page": 101,
       "label": "배운 어휘 확인",
       "note": "本课复习词汇"
+    },
+    {
+      "page": 99,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -833,6 +838,114 @@ window.lessonGuideL1LessonChunks["l1-09"] = {
           "meaning": "enjoyable; pleasant",
           "pos": "adjective",
           "example": "But it was really enjoyable.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "다리",
+      "zh": "桥",
+      "pos": "名词",
+      "page": 99,
+      "source": "단어장",
+      "exampleKo": "강 위에 다리가 있어요.",
+      "exampleZh": "河上有一座桥。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "bridge",
+          "pos": "noun",
+          "example": "There is a bridge over the river.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "그렇지만",
+      "zh": "但是",
+      "pos": "连接词",
+      "page": 99,
+      "source": "단어장",
+      "exampleKo": "한국어는 어려워요. 그렇지만 재미있어요.",
+      "exampleZh": "韩语很难，但是很有趣。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "however; but",
+          "pos": "conjunction",
+          "example": "Korean is difficult. However, it is interesting.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "집",
+      "zh": "家",
+      "pos": "名词",
+      "page": 101,
+      "source": "배운 어휘 확인",
+      "exampleKo": "여러분 집에 뭐가 있어요?",
+      "exampleZh": "你们家里有什么？",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "home; house",
+          "pos": "noun",
+          "example": "What is in your home?",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "식사를 하다",
+      "zh": "吃饭；用餐",
+      "pos": "动词短语",
+      "page": 101,
+      "source": "배운 어휘 확인",
+      "exampleKo": "가족하고 식사를 해요.",
+      "exampleZh": "我和家人一起吃饭。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to have a meal",
+          "pos": "verb phrase",
+          "example": "I have a meal with my family.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "회사",
+      "zh": "公司",
+      "pos": "名词",
+      "page": 101,
+      "source": "배운 어휘 확인",
+      "exampleKo": "여기는 회사예요.",
+      "exampleZh": "这里是公司。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "company; workplace",
+          "pos": "noun",
+          "example": "This is a company.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "일하다",
+      "zh": "工作",
+      "pos": "动词",
+      "page": 101,
+      "source": "배운 어휘 확인",
+      "exampleKo": "이링 씨가 일해요.",
+      "exampleZh": "怡玲在工作。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to work",
+          "pos": "verb",
+          "example": "Yiling works.",
           "tips": []
         }
       }

@@ -75,7 +75,14 @@
     ["책임", "责任", "名词", "responsibility", "noun", "법을 지키지 않았을 때의 책임도 커져요.", "不守法时的责任也会变大。", "The responsibility for not obeying the law also grows.", "58", "문화와 정보", ["collocation:책임이 커지다"]],
     ["음주", "饮酒", "名词", "drinking alcohol", "noun", "만 19세가 되면 음주가 가능해요.", "满19岁后可以饮酒。", "At age 19, drinking alcohol becomes allowed.", "58", "문화와 정보", ["contrast:음주 / 흡연"]],
     ["흡연", "吸烟", "名词", "smoking", "noun", "성인이 되면 흡연이 가능해요.", "成年后可以吸烟。", "Smoking becomes allowed after becoming an adult.", "58", "문화와 정보", ["contrast:음주 / 흡연"]],
-    ["사업자 등록", "营业者登记，商业登记", "名词", "business registration", "noun", "성인은 사업자 등록도 할 수 있어요.", "成年人也可以办理商业登记。", "Adults can also register a business.", "58", "문화와 정보", ["collocation:사업자 등록을 하다"]]
+    ["사업자 등록", "营业者登记，商业登记", "名词", "business registration", "noun", "성인은 사업자 등록도 할 수 있어요.", "成年人也可以办理商业登记。", "Adults can also register a business.", "58", "문화와 정보", ["collocation:사업자 등록을 하다"]],
+    ["무덥다", "闷热", "形容词", "hot and humid", "adjective", "여름에는 날씨가 무더워요.", "夏天天气闷热。", "The weather is hot and humid in summer.", "51", "단어장", []],
+    ["승진하다", "晋升；升职", "动词", "to be promoted", "verb", "친구가 과장으로 승진했어요.", "朋友晋升为科长了。", "My friend was promoted to section chief.", "51", "단어장", []],
+    ["촬영하다", "拍摄", "动词", "to photograph; to film", "verb", "결혼식 사진을 촬영했어요.", "拍摄了婚礼照片。", "We took wedding photographs.", "52", "단어장", []],
+    ["우울증", "抑郁症", "名词", "depression", "noun", "우울증 때문에 전문가에게 상담을 받았어요.", "因为抑郁症接受了专业人士的咨询。", "I received professional counseling for depression.", "52", "단어장", []],
+    ["회갑연", "六十大寿宴", "名词", "sixtieth-birthday celebration", "noun", "가족들이 할머니의 회갑연을 준비했어요.", "家人们筹备了奶奶的六十大寿宴。", "The family prepared a celebration for Grandma's sixtieth birthday.", "59", "배운 어휘 확인", []],
+    ["칠순 잔치", "七十大寿宴", "名词短语", "seventieth-birthday celebration", "noun phrase", "할아버지의 칠순 잔치에 친척들이 모였어요.", "亲戚们聚在一起庆祝爷爷七十大寿。", "Relatives gathered for Grandpa's seventieth-birthday celebration.", "59", "배운 어휘 확인", []],
+    ["돌잡이", "周岁抓周", "名词", "first-birthday object-picking ritual", "noun", "돌잡이에서 아기가 실을 잡았어요.", "抓周时宝宝抓住了线。", "The baby picked up thread in the first-birthday ritual.", "59", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -113,13 +120,18 @@
       { page: 48, label: "단원 제목", note: "课题、语法、活动和文化主题" },
       { page: 50, label: "어휘", note: "婚礼和葬礼场景词汇" },
       { page: 51, label: "문법 1", note: "V/A-더니 例句和变化表达" },
+      { page: 51, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 52, label: "문법 2", note: "V/A-(으)ㄴ 나머지 例句和结果表达" },
+      { page: 52, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 53, label: "말하기", note: "婚礼经历和婚礼流程对话" },
+      { page: 53, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 54, label: "듣기/발음", note: "부고、조문과 의 발音" },
+      { page: 54, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 55, label: "읽기 전", note: "百日宴、周岁宴、花甲宴和邀请函词汇" },
       { page: 56, label: "읽기", note: "家庭 행사 文章" },
+      { page: 56, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 58, label: "문화와 정보", note: "성년의 날" },
-      { page: 59, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 59, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能说明韩国结婚式和葬礼的基本流程与礼仪。",

@@ -66,7 +66,17 @@
       { page: 168, label: "말하기와 듣기", note: "工厂工作指示对话和听力问题" },
       { page: 169, label: "읽기와 쓰기", note: "업무 메일 阅读、问题和回复写作" },
       { page: 170, label: "문화와 정보", note: "韩国公司职位文化原文与问题" },
-      { page: 171, label: "발음/배운 어휘 확인", note: "发音练习和本课词汇复习" }
+      { page: 171, label: "발음/배운 어휘 확인", note: "发音练习和本课词汇复习" },
+      {
+          "page": 169,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 171,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
+      }
     ],
     goals: [
       "能够说出办公室和工厂里常见的物品、证件和设备。",
@@ -208,7 +218,20 @@
       vocab("읽고", "读并；读的时候", "发音表达", 171, "발음/배운 어휘 확인", "책 읽고 있어요.", "正在读书。", "reading and", "I am reading a book.", [["form", "읽고[일꼬]"], ["pitfall", "읽고 的自然发音是 [일꼬]。", "읽고 is naturally pronounced [일꼬]."]]),
       vocab("앉고", "坐并；坐的时候", "发音表达", 171, "발음/배운 어휘 확인", "학생들은 앞쪽에 앉고 선생님은 뒤쪽에 앉으세요.", "学生坐前面，老师请坐后面。", "sitting and", "Students sit in the front and teachers sit in the back.", [["form", "앉고[안꼬]"], ["pitfall", "앉고 的自然发音是 [안꼬]。", "앉고 is naturally pronounced [안꼬]."]]),
       vocab("앞쪽", "前面；前侧", "名词", 171, "발음/배운 어휘 확인", "학생들은 앞쪽에 앉으세요.", "学生请坐前面。", "front side", "Students, please sit in the front.", [["collocation", "앞쪽에 앉다"]]),
-      vocab("뒤쪽", "后面；后侧", "名词", 171, "발음/배운 어휘 확인", "선생님은 뒤쪽에 앉으세요.", "老师请坐后面。", "back side", "Teachers, please sit in the back.", [["collocation", "뒤쪽에 앉다"]])
+      vocab("뒤쪽", "后面；后侧", "名词", 171, "발음/배운 어휘 확인", "선생님은 뒤쪽에 앉으세요.", "老师请坐后面。", "back side", "Teachers, please sit in the back.", [["collocation", "뒤쪽에 앉다"]]),
+      vocab("작성하다", "填写；撰写", "동사", 171, "배운 어휘 확인", "지원서를 작성해야 해요.", "需要填写申请表。", "fill in; compose", "An application form needs to be filled out."),
+      vocab("번역하다", "翻译", "동사", 171, "배운 어휘 확인", "안젤라 씨에게 계약서를 번역하게 하셨어요.", "让Angela翻译合同。", "Translate", "Ask Angela to translate the contract."),
+      vocab("출력하다", "打印；输出", "动词", 171, "배운 어휘 확인", "서류를 프린터로 출력했어요.", "用打印机打印了文件。", "to print", "I printed the documents on the printer."),
+      vocab("복사하다", "复印；复制", "动词", 171, "배운 어휘 확인", "서류를 두 장 복사했어요.", "复印了两张文件。", "to copy; to photocopy", "I made two photocopies of the document."),
+      vocab("팩스", "传真", "名词", 171, "배운 어휘 확인", "팩스로 서류를 보냈어요.", "通过传真发送了文件。", "fax", "I sent the documents by fax."),
+      vocab("확인", "确认；核实", "名词", 171, "배운 어휘 확인", "신청 내용을 확인한 다음에 보내세요.", "确认申请内容后再发送。", "confirmation; checking", "Check the application details before sending them."),
+      vocab("켜다", "打开；开启（电源等）", "动词", 171, "배운 어휘 확인", "기계를 켜세요.", "请打开机器。", "to turn on", "Please turn on the machine."),
+      vocab("끄다", "关掉", "동사", 171, "배운 어휘 확인", "공연 전에 휴대 전화를 꺼요.", "演出前关掉手机。", "turn off", "Turn off your phone before the show."),
+      vocab("들다", "提；举", "动词", 171, "배운 어휘 확인", "상자를 두 손으로 들었어요.", "用双手举起了箱子。", "to lift; to hold", "I lifted the box with both hands."),
+      vocab("올리다", "抬高；放到上面", "动词", 171, "배운 어휘 확인", "짐을 선반 위에 올렸어요.", "把行李放到了架子上。", "to raise; to put up", "I put the luggage up on the shelf."),
+      vocab("싣다", "装载", "动词", 171, "배운 어휘 확인", "트럭에 짐을 실었어요.", "把货物装上了卡车。", "to load", "I loaded the cargo onto the truck."),
+      vocab("내리다", "卸下；放下", "动词", 171, "배운 어휘 확인", "트럭에서 짐을 내렸어요.", "从卡车上卸下了货物。", "to unload; to lower", "I unloaded the cargo from the truck."),
+      vocab("옮기다", "搬动；转移", "动词", 171, "배운 어휘 확인", "상자를 창고로 옮겼어요.", "把箱子搬到了仓库。", "to move; to transfer", "I moved the box to the warehouse.")
     ],
     dialogues: [
       {

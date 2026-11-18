@@ -64,7 +64,17 @@
       { page: 158, label: "말하기와 듣기", note: "签证延期申请窗口对话和听力问题" },
       { page: 159, label: "읽기와 쓰기", note: "통합신청서 阅读和填写练习" },
       { page: 160, label: "문화와 정보", note: "出入境外国人厅/事务所文化原文与问题" },
-      { page: 161, label: "발음/배운 어휘 확인", note: "发音练习和本课词汇复习" }
+      { page: 161, label: "발음/배운 어휘 확인", note: "发音练习和本课词汇复习" },
+      {
+          "page": 159,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 161,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
+      }
     ],
     goals: [
       "能够说出区厅、行政福利中心、居民中心、保健所和出入境外国人厅能办理的业务。",
@@ -205,7 +215,12 @@
       vocab("접속하다", "连接；访问网站", "动词", 160, "문화와 정보", "먼저 하이코리아에 접속해야 합니다.", "首先必须访问 Hi Korea 网站。", "to access; connect to", "First, you must access Hi Korea.", [["collocation", "사이트에 접속하다"], ["form", "접속하다 + -어야 하다 -> 접속해야 하다", "접속하다 + -어야 하다 -> 접속해야 하다"]]),
 
       vocab("외국인 등록증을 신청해요", "申请外国人登录证", "句型表达", 161, "발음/배운 어휘 확인", "외국인 등록증을 신청해요.", "申请外国人登录证。", "I apply for an alien registration card.", "I apply for an alien registration card.", [["pitfall", "외국인 등록증 发音 [외구긴 등록쯩]。", "외국인 등록증 is pronounced [외구긴 등록쯩]."]]),
-      vocab("신분증은 가져오셨어요?", "身份证件带来了吗？", "句型表达", 161, "발음/배운 어휘 확인", "신분증은 가져오셨어요?", "身份证件带来了吗？", "Did you bring your ID?", "Did you bring your ID?", [["pitfall", "신분증 发音 [신분쯩]。", "신분증 is pronounced [신분쯩]."]])
+      vocab("신분증은 가져오셨어요?", "身份证件带来了吗？", "句型表达", 161, "발음/배운 어휘 확인", "신분증은 가져오셨어요?", "身份证件带来了吗？", "Did you bring your ID?", "Did you bring your ID?", [["pitfall", "신분증 发音 [신분쯩]。", "신분증 is pronounced [신분쯩]."]]),
+      vocab("체류지", "居留地址；居住地点", "名词", 159, "단어장", "신청서에 체류지를 썼어요.", "在申请表上填写了居留地址。", "place of residence", "I wrote my place of residence on the application form."),
+      vocab("부여", "赋予；授予", "名词", 159, "단어장", "체류 자격 부여를 신청했어요.", "申请了居留资格的授予。", "granting; conferral", "I applied to be granted a status of stay."),
+      vocab("유효 기간", "有效期限", "名词短语", 159, "단어장", "여권의 유효 기간을 확인하세요.", "请确认护照的有效期限。", "validity period", "Please check your passport's validity period."),
+      vocab("서명", "签名", "名词", 159, "단어장", "신청서에 서명을 했어요.", "在申请表上签了名。", "signature", "I signed the application form."),
+      vocab("인", "印；盖章处", "名词", 159, "단어장", "서명 또는 인이라고 쓰여 있어요.", "上面写着签名或盖章。", "seal; stamp", "It says signature or seal.")
     ],
     dialogues: [
       {

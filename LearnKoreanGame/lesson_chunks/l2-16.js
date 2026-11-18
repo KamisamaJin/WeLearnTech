@@ -62,7 +62,17 @@
       { page: 178, label: "말하기와 듣기", note: "邀请朋友参加活动、听力问题和替换练习" },
       { page: 179, label: "읽기와 쓰기", note: "한가위 외국인 축제 阅读、海报信息和写作提示" },
       { page: 180, label: "문화와 정보", note: "세계인의 날 原文、翻译、关键词和问题" },
-      { page: 181, label: "발음/배운 어휘 확인", note: "걷기 发音练习和本课词汇复习" }
+      { page: 181, label: "발음/배운 어휘 확인", note: "걷기 发音练习和本课词汇复习" },
+      {
+          "page": 179,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 181,
+          "label": "배운 어휘 확인",
+          "note": "已对照教材课末词汇清单逐词核对"
+      }
     ],
     goals: [
       "能够读懂活动海报中的日期、对象、参加费、准备物、地点和咨询信息。",
@@ -228,7 +238,15 @@
       vocab("걷는 거", "走路这件事", "发音表达", 181, "발음/배운 어휘 확인", "참가자들이 함께 걷는 거예요.", "是参加者一起走路。", "the act of walking", "It is the participants walking together.", [["form", "걷는 거[건는 거]"], ["pitfall", "걷는 中 ㄷ 和 ㄴ 相连，读作 [건는]。", "In 걷는, ㄷ followed by ㄴ is pronounced [건는]."]]),
       vocab("걸었거든요", "因为走过了", "发音表达", 181, "발음/배운 어휘 확인", "하루 종일 걸었거든요.", "因为走了一整天。", "because I walked", "Because I walked all day.", [["form", "걷다 -> 걸었거든요[거러꺼든요]"], ["pitfall", "걷다 过去式是 걸었어요，不是 걷었어요。", "The past form of 걷다 is 걸었어요, not 걷었어요."]]),
       vocab("걷기 대회", "徒步大会", "名词短语", 181, "발음/배운 어휘 확인", "외국인 걷기 대회에 참가하려고 해요.", "我打算参加外国人徒步大会。", "walking event", "I plan to participate in the foreigners' walking event.", [["collocation", "걷기 대회에 참가하다"]]),
-      vocab("참가자", "参加者", "名词", 181, "발음/배운 어휘 확인", "참가자들이 함께 걷는 거예요.", "是参加者一起走路。", "participant", "The participants walk together.", [["collocation", "참가자들이 모이다"]])
+      vocab("참가자", "参加者", "名词", 181, "발음/배운 어휘 확인", "참가자들이 함께 걷는 거예요.", "是参加者一起走路。", "participant", "The participants walk together.", [["collocation", "참가자들이 모이다"]]),
+      vocab("노래 대회", "歌唱比赛", "名词短语", 179, "단어장", "친구와 노래 대회에 참가했어요.", "和朋友一起参加了歌唱比赛。", "singing contest", "I entered a singing contest with a friend."),
+      vocab("퀴즈 대회", "知识问答比赛", "名词短语", 179, "단어장", "축제에서 퀴즈 대회가 열려요.", "庆典上将举办知识问答比赛。", "quiz contest", "A quiz contest will be held at the festival."),
+      vocab("거주하다", "居住", "동사", 179, "단어장", "거주하는 사람들과 대화할 수 있어요.", "可以和居住的人交谈。", "live", "You can talk to the people who live there."),
+      vocab("참여하다", "参加、参与", "动词", 179, "단어장", "수업에 적극적으로 참여해요.", "积极参与课堂。", "to participate", "I actively participate in class."),
+      vocab("가능하다", "可能；可以", "形容词", 179, "단어장", "가능하다는 것을 나타냅니다.", "表示可以。", "possible; allowed", "It shows that something is allowed."),
+      vocab("문의", "咨询；询问", "名词", 181, "배운 어휘 확인", "문의 전화번호가 있어요.", "有咨询电话号码。", "inquiry", "There is an inquiry phone number."),
+      vocab("회원", "会员", "名词", 181, "배운 어휘 확인", "동호회 회원이 되었어요.", "成为了社团会员。", "member", "I became a member of the club."),
+      vocab("뽑다", "选拔；录用", "动词", 181, "배운 어휘 확인", "회사에서 새 직원을 뽑아요.", "公司招聘新员工。", "to select; to recruit", "The company is recruiting new employees.")
     ],
     dialogues: [
       {

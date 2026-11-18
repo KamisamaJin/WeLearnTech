@@ -116,7 +116,14 @@
     ["실태 조사", "实况调查", "名词短语", "fact-finding investigation", "noun phrase", "귀화 절차에는 실태 조사도 있습니다.", "归化程序也有实况调查。", "The naturalization process also includes a fact-finding investigation.", "214", "문화와 정보", ["collocation:실태 조사"]],
     ["기본 증명서", "基本证明书", "名词短语", "basic certificate", "noun phrase", "귀화 허가 통지서를 받으면 기본 증명서를 발급받아야 해요.", "收到归化许可通知书后要领取基本证明书。", "After receiving a naturalization permit notice, you must get a basic certificate.", "214", "문화와 정보", ["collocation:기본 증명서"]],
     ["발급받다", "领取，获得签发", "动词", "to be issued", "verb", "주민 등록증을 발급받을 수 있어요.", "可以领取居民登记证。", "You can be issued a resident registration card.", "214", "문화와 정보", ["collocation:발급받다"]],
-    ["주민 등록증", "居民登记证", "名词", "resident registration card", "noun", "주민 등록을 하면 주민 등록증을 발급받을 수 있어요.", "进行居民登记后可以领取居民登记证。", "If you register as a resident, you can receive a resident registration card.", "214", "문화와 정보", ["collocation:주민 등록증"]]
+    ["주민 등록증", "居民登记证", "名词", "resident registration card", "noun", "주민 등록을 하면 주민 등록증을 발급받을 수 있어요.", "进行居民登记后可以领取居民登记证。", "If you register as a resident, you can receive a resident registration card.", "214", "문화와 정보", ["collocation:주민 등록증"]],
+    ["비결", "秘诀", "名词", "secret; key to success", "noun", "한국어를 잘하는 비결이 뭐예요?", "学好韩语的秘诀是什么？", "What is your secret to speaking Korean well?", "210", "단어장", []],
+    ["마음먹다", "下决心", "动词", "to make up one's mind", "verb", "포기하지 않기로 마음먹었어요.", "我下决心不放弃。", "I made up my mind not to give up.", "210", "단어장", []],
+    ["직후", "刚刚……之后", "名词", "immediately after", "noun", "졸업 직후에 취직했어요.", "毕业后马上就找到了工作。", "I found a job immediately after graduation.", "212", "단어장", []],
+    ["나날", "一天天；每天", "名词", "each day; day after day", "noun", "한국어 실력이 나날이 좋아지고 있어요.", "韩语能力一天天提高。", "My Korean is improving day by day.", "212", "단어장", []],
+    ["전도사", "传播者；传道者", "名词", "promoter; advocate", "noun", "그는 한국 문화를 알리는 전도사가 됐어요.", "他成为了传播韩国文化的人。", "He became an advocate promoting Korean culture.", "215", "배운 어휘 확인", []],
+    ["자기 계발", "自我提升；自我开发", "名词短语", "self-development", "noun phrase", "자기 계발을 위해 매일 공부해요.", "为了自我提升，我每天学习。", "I study every day for self-development.", "215", "배운 어휘 확인", []],
+    ["고난을 이기다", "战胜苦难", "动词短语", "to overcome hardship", "verb phrase", "가족의 도움으로 고난을 이겼어요.", "在家人的帮助下战胜了苦难。", "I overcame hardship with my family's help.", "215", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -155,13 +162,18 @@
       { page: 204, label: "단원 제목", note: "课题、语法和学习目标" },
       { page: 206, label: "어휘", note: "外国人的困难、选择和解决方法" },
       { page: 207, label: "문법 1", note: "V/A-(으)ㄹ지도 모르다 与不确定推测" },
+      { page: 207, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 208, label: "문법 2", note: "N치고 与类别评价" },
+      { page: 208, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 209, label: "말하기", note: "社会통합프로그램 수료식 소감 발표" },
+      { page: 209, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 210, label: "듣기/발음", note: "成功移民采访与发音" },
+      { page: 210, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 211, label: "읽기 전", note: "移民者梦想和努力表达" },
       { page: 212, label: "읽기", note: "关于我的梦想的发表文" },
+      { page: 212, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 214, label: "문화와 정보", note: "社会통합프로그램与韩国国籍取得" },
-      { page: 215, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 215, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能讲述自己在韩国生活中的经验。",

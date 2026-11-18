@@ -64,7 +64,32 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             "page": 107,
             "label": "배운 어휘 확인",
             "note": "补充复习词表中的食品、动作和表达。"
-        }
+        },
+      {
+          "page": 99,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 100,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 101,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 102,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      },
+      {
+          "page": 104,
+          "label": "단어장",
+          "note": "已对照教材黄色词汇框逐词核对"
+      }
     ],
     "grammar": [
         {
@@ -1545,7 +1570,151 @@ window.lessonGuideL3LessonChunks["l3-08"] = {
             ],
             "exampleKo": "삶는 시간을 맞추는 것이 중요해요.",
             "exampleZh": "掌握煮的时间很重要。"
-        }
+        },
+      {
+          "ko": "토끼",
+          "zh": "兔子",
+          "pos": "名词",
+          "page": 99,
+          "source": "단어장",
+          "exampleKo": "토끼가 당근을 먹어요.",
+          "exampleZh": "兔子吃胡萝卜。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "rabbit",
+                  "pos": "noun",
+                  "example": "The rabbit eats a carrot.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "냉동실",
+          "zh": "冷冻室",
+          "pos": "명사",
+          "page": 100,
+          "source": "단어장",
+          "exampleKo": "냉동실에 음식물을 많이 넣었어요.",
+          "exampleZh": "冷冻室放了很多食物。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "Freezer",
+                  "pos": "noun",
+                  "example": "There is a lot of food in the freezer.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "환자",
+          "zh": "患者；病人",
+          "pos": "名词",
+          "page": 101,
+          "source": "단어장",
+          "exampleKo": "환자를 위해 죽을 끓였어요.",
+          "exampleZh": "为病人煮了粥。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "patient",
+                  "pos": "noun",
+                  "example": "I cooked porridge for the patient.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "뷔페",
+          "zh": "自助餐",
+          "pos": "名词",
+          "page": 102,
+          "source": "단어장",
+          "exampleKo": "뷔페에서 여러 음식을 먹었어요.",
+          "exampleZh": "在自助餐厅吃了多种食物。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "buffet",
+                  "pos": "noun",
+                  "example": "I tried various foods at the buffet.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "군침이 돌다",
+          "zh": "馋得流口水",
+          "pos": "动词短语",
+          "page": 102,
+          "source": "단어장",
+          "exampleKo": "음식 냄새를 맡으니 군침이 돌아요.",
+          "exampleZh": "闻到食物香味就馋得流口水。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to make one's mouth water",
+                  "pos": "verb phrase",
+                  "example": "The smell of the food makes my mouth water.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "둘이 먹다가 하나가 죽어도 모르다",
+          "zh": "好吃得忘乎所以（夸张说法）",
+          "pos": "俗语",
+          "page": 104,
+          "source": "단어장",
+          "exampleKo": "이 음식은 둘이 먹다가 하나가 죽어도 모를 만큼 맛있어요.",
+          "exampleZh": "这道菜好吃得让人忘乎所以。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to be so delicious that one notices nothing else",
+                  "pos": "idiom",
+                  "example": "This dish is so delicious that you forget everything else.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "식용유를 두르다",
+          "zh": "在锅里倒一圈食用油",
+          "pos": "动词短语",
+          "page": 104,
+          "source": "단어장",
+          "exampleKo": "프라이팬에 식용유를 두른 뒤 달걀을 넣어요.",
+          "exampleZh": "在平底锅里倒一圈食用油后放入鸡蛋。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to coat a pan with cooking oil",
+                  "pos": "verb phrase",
+                  "example": "Coat the frying pan with cooking oil, then add the egg.",
+                  "tips": []
+              }
+          }
+      },
+      {
+          "ko": "담다",
+          "zh": "盛；装",
+          "pos": "动词",
+          "page": 107,
+          "source": "배운 어휘 확인",
+          "exampleKo": "완성한 음식을 그릇에 담았어요.",
+          "exampleZh": "把做好的食物盛到了碗里。",
+          "tips": [],
+          "translations": {
+              "en": {
+                  "meaning": "to put into; to serve in",
+                  "pos": "verb",
+                  "example": "I served the finished dish in a bowl.",
+                  "tips": []
+              }
+          }
+      }
     ],
     "dialogues": [
         {

@@ -87,7 +87,20 @@
     ["변화", "变化", "名词", "change", "noun", "국제화 시대의 변화를 이해해야 해요.", "应该理解国际化时代的变化。", "We need to understand changes in the age of globalization.", "83", "배운 어휘 확인", ["collocation:변화를 이해하다"]],
     ["발전", "发展", "名词", "development", "noun", "국제 사회의 평화와 발전을 위해 노력해요.", "为国际社会的和平与发展而努力。", "They work for peace and development in international society.", "83", "배운 어휘 확인", ["collocation:평화와 발전"]],
     ["기회", "机会", "名词", "opportunity", "noun", "다른 문화와 만나는 것은 좋은 기회예요.", "接触不同文化是好机会。", "Meeting other cultures is a good opportunity.", "83", "배운 어휘 확인", ["collocation:좋은 기회"]],
-    ["정신없다", "忙乱，顾不上", "形容词", "hectic; chaotic", "adjective", "정신없이 바빴지만 재미있었어요.", "虽然忙得不可开交，但很有意思。", "It was hectic but interesting.", "83", "배운 어휘 확인", ["collocation:정신없이 바쁘다"]]
+    ["정신없다", "忙乱，顾不上", "形容词", "hectic; chaotic", "adjective", "정신없이 바빴지만 재미있었어요.", "虽然忙得不可开交，但很有意思。", "It was hectic but interesting.", "83", "배운 어휘 확인", ["collocation:정신없이 바쁘다"]],
+    ["신기하다", "新奇、神奇", "形容词", "amazing, fascinating", "adjective", "하나하나 다 새롭고 신기하게 느껴졌어요.", "每一样都觉得新鲜又新奇。", "Everything felt new and fascinating.", "75", "단어장", []],
+    ["증가", "增加；增长", "名词", "increase", "noun", "외국인 인구의 증가가 눈에 띄어요.", "外国人口的增长很明显。", "The increase in the foreign population is noticeable.", "78", "단어장", []],
+    ["국제 협력 단체가 늘어나다", "国际合作团体增加", "动词短语", "international cooperation organizations increase", "verb phrase", "국제 협력 단체가 늘어나고 있어요.", "国际合作团体正在增加。", "The number of international cooperation organizations is increasing.", "83", "배운 어휘 확인", []],
+    ["국제 교류가 활발해지다", "国际交流日益活跃", "动词短语", "international exchanges become more active", "verb phrase", "문화 분야의 국제 교류가 활발해졌어요.", "文化领域的国际交流更加活跃了。", "International exchanges in culture have become more active.", "83", "배운 어휘 확인", []],
+    ["다문화 사회가 되다", "成为多元文化社会", "动词短语", "to become a multicultural society", "verb phrase", "한국은 다문화 사회가 되어 가고 있어요.", "韩国正逐渐成为多元文化社会。", "Korea is becoming a multicultural society.", "83", "배운 어휘 확인", []],
+    ["국제 분쟁을 해결하다", "解决国际争端", "动词短语", "to resolve an international dispute", "verb phrase", "여러 나라가 국제 분쟁을 해결하려고 노력해요.", "多个国家努力解决国际争端。", "Several countries are working to resolve international disputes.", "83", "배운 어휘 확인", []],
+    ["국제기구에 가입하다", "加入国际组织", "动词短语", "to join an international organization", "verb phrase", "우리나라는 그 국제기구에 가입했어요.", "我国加入了那个国际组织。", "Our country joined that international organization.", "83", "배운 어휘 확인", []],
+    ["외교 관계를 맺다", "建立外交关系", "动词短语", "to establish diplomatic relations", "verb phrase", "두 나라가 외교 관계를 맺었어요.", "两国建立了外交关系。", "The two countries established diplomatic relations.", "83", "배운 어휘 확인", []],
+    ["세계 평화 유지에 힘쓰다", "致力于维护世界和平", "动词短语", "to work to maintain world peace", "verb phrase", "여러 나라가 세계 평화 유지에 힘쓰고 있어요.", "多个国家致力于维护世界和平。", "Many countries are working to maintain world peace.", "83", "배운 어휘 확인", []],
+    ["문화 교류를 추진하다", "推动文化交流", "动词短语", "to promote cultural exchange", "verb phrase", "두 도시가 문화 교류를 추진하고 있어요.", "两座城市正在推动文化交流。", "The two cities are promoting cultural exchange.", "83", "배운 어휘 확인", []],
+    ["다국적 기업이 증가하다", "跨国企业增加", "动词短语", "multinational companies increase", "verb phrase", "세계화로 다국적 기업이 증가하고 있어요.", "随着全球化，跨国企业正在增加。", "The number of multinational companies is increasing with globalization.", "83", "배운 어휘 확인", []],
+    ["해외 지사를 늘리다", "增加海外分支机构", "动词短语", "to expand overseas branches", "verb phrase", "회사는 해외 지사를 늘릴 계획이에요.", "公司计划增加海外分支机构。", "The company plans to expand its overseas branches.", "83", "배운 어휘 확인", []],
+    ["해외 봉사 단체에 지원하다", "申请加入海外志愿服务团体", "动词短语", "to apply to an overseas volunteer organization", "verb phrase", "여름에 해외 봉사 단체에 지원하려고 해요.", "我打算夏天申请加入海外志愿服务团体。", "I plan to apply to an overseas volunteer organization in the summer.", "83", "배운 어휘 확인", []]
   ].map(([ko, zh, pos, en, posEn, exampleKo, exampleZh, exampleEn, page, source, tips]) => ({
     ko,
     zh,
@@ -125,13 +138,18 @@
       { page: 72, label: "단원 제목", note: "课题和学习目标" },
       { page: 74, label: "어휘", note: "现代国际社会和国际化行动" },
       { page: 75, label: "문법 1", note: "V/A-던" },
+      { page: 75, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 76, label: "문법 2", note: "V/A-(으)ㄹ 정도로" },
+      { page: 76, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 77, label: "말하기", note: "海外派遣工作和国际化时代" },
+      { page: 77, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 78, label: "듣기/발음", note: "在韩外国人与发音练习" },
+      { page: 78, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 79, label: "말하기/쓰기 전", note: "国际化时代所需能力" },
       { page: 80, label: "읽기", note: "海外就业成功手记" },
+      { page: 80, label: "단어장", note: "已对照教材黄色词汇框逐词核对" },
       { page: 82, label: "문화와 정보", note: "国际组织" },
-      { page: 83, label: "배운 어휘 확인", note: "本课复习词汇补充" }
+      { page: 83, label: "배운 어휘 확인", note: "已对照教材课末词汇清单逐词核对" }
     ],
     goals: [
       "能说明现代国际社会中出现的国际化现象。",

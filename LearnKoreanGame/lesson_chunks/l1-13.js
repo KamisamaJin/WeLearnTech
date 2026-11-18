@@ -37,6 +37,21 @@ window.lessonGuideL1LessonChunks["l1-13"] = {
       "page": "150-151",
       "label": "문화와 정보 / 발음 / 배운 어휘 확인",
       "note": "韩国大众交通、发音练习、本课复习词汇"
+    },
+    {
+      "page": 148,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 149,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 151,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -907,6 +922,42 @@ window.lessonGuideL1LessonChunks["l1-13"] = {
               "text": "A 교통 카드 can be used for buses, subways, and taxis."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "힘들다",
+      "zh": "辛苦；吃力",
+      "pos": "形容词",
+      "page": 149,
+      "source": "단어장",
+      "exampleKo": "아직 한국 생활에 익숙하지 않아서 힘들어요.",
+      "exampleZh": "因为还不习惯韩国生活，所以很辛苦。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "hard; tiring",
+          "pos": "adjective",
+          "example": "It is hard because I am not used to life in Korea yet.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "남산 서울 타워",
+      "zh": "南山首尔塔",
+      "pos": "专有名词",
+      "page": 151,
+      "source": "배운 어휘 확인",
+      "exampleKo": "남산 서울 타워에 가요.",
+      "exampleZh": "我去南山首尔塔。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Namsan Seoul Tower",
+          "pos": "proper noun",
+          "example": "I go to Namsan Seoul Tower.",
+          "tips": []
         }
       }
     }

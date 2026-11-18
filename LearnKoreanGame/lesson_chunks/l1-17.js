@@ -57,6 +57,16 @@ window.lessonGuideL1LessonChunks["l1-17"] = {
       "page": 191,
       "label": "발음 / 배운 어휘 확인",
       "note": "发音练习和本课复习词汇"
+    },
+    {
+      "page": 189,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 191,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -811,6 +821,312 @@ window.lessonGuideL1LessonChunks["l1-17"] = {
               "text": "다른 사람을 배려하다 means to be considerate of others."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "캠핑",
+      "zh": "露营",
+      "pos": "名词",
+      "page": 189,
+      "source": "단어장",
+      "exampleKo": "주말에 캠핑을 해요.",
+      "exampleZh": "周末去露营。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "camping",
+          "pos": "noun",
+          "example": "I go camping on weekends.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "설악산 국립 공원",
+      "zh": "雪岳山国立公园",
+      "pos": "专有名词",
+      "page": 189,
+      "source": "단어장",
+      "exampleKo": "설악산 국립 공원에 가요.",
+      "exampleZh": "我去雪岳山国立公园。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "Seoraksan National Park",
+          "pos": "proper noun",
+          "example": "I go to Seoraksan National Park.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "동물원",
+      "zh": "动物园",
+      "pos": "名词",
+      "page": 189,
+      "source": "단어장",
+      "exampleKo": "아이하고 동물원에 가요.",
+      "exampleZh": "我和孩子去动物园。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "zoo",
+          "pos": "noun",
+          "example": "I go to the zoo with my child.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "환전하다",
+      "zh": "换钱；兑换货币",
+      "pos": "动词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "은행에 환전하러 가요.",
+      "exampleZh": "去银行换钱。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to exchange money",
+          "pos": "verb",
+          "example": "I go to the bank to exchange money.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "주차장",
+      "zh": "停车场",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "주차장에 차가 있어요.",
+      "exampleZh": "停车场里有汽车。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "parking lot",
+          "pos": "noun",
+          "example": "There is a car in the parking lot.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "역사 공부를 하다",
+      "zh": "学习历史",
+      "pos": "动词短语",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "박물관에서 역사 공부를 해요.",
+      "exampleZh": "在博物馆学习历史。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to study history",
+          "pos": "verb phrase",
+          "example": "I study history at the museum.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "경찰서",
+      "zh": "警察署",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "112는 경찰서 전화번호예요.",
+      "exampleZh": "112是警察署电话号码。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "police station",
+          "pos": "noun",
+          "example": "112 is the police station phone number.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "국제 운전면허증을 받다",
+      "zh": "领取国际驾驶许可证",
+      "pos": "动词短语",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "국제 운전면허증을 받으러 갔어요.",
+      "exampleZh": "我去领取国际驾驶许可证了。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to obtain an international driving permit",
+          "pos": "verb phrase",
+          "example": "I went to obtain an international driving permit.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "주민 센터",
+      "zh": "居民中心",
+      "pos": "名词短语",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "주민 센터에 가서 신고했어요.",
+      "exampleZh": "去了居民中心申报。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "community service center",
+          "pos": "noun phrase",
+          "example": "I went to the community service center and reported it.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "수영반",
+      "zh": "游泳班",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "수영반에 등록해요.",
+      "exampleZh": "我报名游泳班。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "swimming class",
+          "pos": "noun",
+          "example": "I enroll in a swimming class.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "등록하다",
+      "zh": "登记；报名",
+      "pos": "动词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "한국어 수업에 등록했어요.",
+      "exampleZh": "我报名了韩语课。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "to register; to enroll",
+          "pos": "verb",
+          "example": "I enrolled in a Korean class.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "센터 사무실",
+      "zh": "中心办公室",
+      "pos": "名词短语",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "센터 사무실은 이 층이에요.",
+      "exampleZh": "中心办公室在二楼。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "center office",
+          "pos": "noun phrase",
+          "example": "The center office is on the second floor.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "위층",
+      "zh": "楼上",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "위층에 교실이 있어요.",
+      "exampleZh": "楼上有教室。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "upstairs; upper floor",
+          "pos": "noun",
+          "example": "There is a classroom upstairs.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "아래층",
+      "zh": "楼下",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "아래층에 식당이 있어요.",
+      "exampleZh": "楼下有食堂。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "downstairs; lower floor",
+          "pos": "noun",
+          "example": "There is a cafeteria downstairs.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "오른쪽",
+      "zh": "右边",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "화장실은 오른쪽에 있어요.",
+      "exampleZh": "洗手间在右边。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "right side",
+          "pos": "noun",
+          "example": "The restroom is on the right.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "왼쪽",
+      "zh": "左边",
+      "pos": "名词",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "은행은 왼쪽에 있어요.",
+      "exampleZh": "银行在左边。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "left side",
+          "pos": "noun",
+          "example": "The bank is on the left.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "역사 박물관",
+      "zh": "历史博物馆",
+      "pos": "名词短语",
+      "page": 191,
+      "source": "배운 어휘 확인",
+      "exampleKo": "역사 박물관에 갔어요.",
+      "exampleZh": "我去了历史博物馆。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "history museum",
+          "pos": "noun phrase",
+          "example": "I went to the history museum.",
+          "tips": []
         }
       }
     }

@@ -57,6 +57,16 @@ window.lessonGuideL1LessonChunks["l1-08"] = {
       "page": 91,
       "label": "배운 어휘 확인",
       "note": "复习本课数量单位、物品和价格词。"
+    },
+    {
+      "page": 88,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
+    },
+    {
+      "page": 89,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -1131,6 +1141,240 @@ window.lessonGuideL1LessonChunks["l1-08"] = {
               "text": "신용 is pronounced [시뇽]."
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "닭",
+      "zh": "鸡",
+      "pos": "名词",
+      "page": 88,
+      "source": "단어장",
+      "exampleKo": "닭이 있어요.",
+      "exampleZh": "有一只鸡。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "chicken",
+          "pos": "noun",
+          "example": "There is a chicken.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "닭고기",
+      "zh": "鸡肉",
+      "pos": "名词",
+      "page": 88,
+      "source": "단어장",
+      "exampleKo": "닭고기를 사요.",
+      "exampleZh": "我买鸡肉。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "chicken meat",
+          "pos": "noun",
+          "example": "I buy chicken.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "계란",
+      "zh": "鸡蛋",
+      "pos": "名词",
+      "page": 88,
+      "source": "단어장",
+      "exampleKo": "계란을 세 개 샀어요.",
+      "exampleZh": "买了三个鸡蛋。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "egg",
+          "pos": "noun",
+          "example": "I bought three eggs.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "대",
+      "zh": "台；辆（机器、车辆的量词）",
+      "pos": "量词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "자동차가 두 대 있어요.",
+      "exampleZh": "有两辆汽车。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "counter for machines and vehicles",
+          "pos": "counter",
+          "example": "There are two cars.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "장",
+      "zh": "张（纸张、照片的量词）",
+      "pos": "量词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "사진을 세 장 찍었어요.",
+      "exampleZh": "拍了三张照片。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "counter for sheets and photographs",
+          "pos": "counter",
+          "example": "I took three photographs.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "권",
+      "zh": "本（书籍的量词）",
+      "pos": "量词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "책을 두 권 샀어요.",
+      "exampleZh": "买了两本书。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "counter for books",
+          "pos": "counter",
+          "example": "I bought two books.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "물",
+      "zh": "水",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "물이 깨끗한 곳이에요.",
+      "exampleZh": "是水很清澈的地方。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "water",
+          "pos": "noun",
+          "example": "Common usage for water.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "커피",
+      "zh": "咖啡",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "커피값도 모이면 큰돈이 돼요.",
+      "exampleZh": "咖啡钱积起来也会变成大钱。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "coffee",
+          "pos": "noun",
+          "example": "Coffee money can also turn into a lot of money when accumulated.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "강아지",
+      "zh": "小狗",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "강아지가 한 마리 있어요.",
+      "exampleZh": "有一只小狗。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "puppy",
+          "pos": "noun",
+          "example": "There is one puppy.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "잡지",
+      "zh": "杂志",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "잡지를 읽어요.",
+      "exampleZh": "我读杂志。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "magazine",
+          "pos": "noun",
+          "example": "I read a magazine.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "사진",
+      "zh": "照片",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "사진을 찍어요.",
+      "exampleZh": "我拍照片。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "photograph",
+          "pos": "noun",
+          "example": "I take photographs.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "노트북",
+      "zh": "笔记本电脑",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "노트북으로 공부해요.",
+      "exampleZh": "我用笔记本电脑学习。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "laptop",
+          "pos": "noun",
+          "example": "I study on a laptop.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "채소",
+      "zh": "蔬菜",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "마트에서 채소를 사요.",
+      "exampleZh": "在超市买蔬菜。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "vegetables",
+          "pos": "noun",
+          "example": "I buy vegetables at the supermarket.",
+          "tips": []
         }
       }
     }

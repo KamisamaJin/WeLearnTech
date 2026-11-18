@@ -57,6 +57,11 @@ window.lessonGuideL2LessonChunks["l2-08"] = {
       "page": 91,
       "label": "발음/배운 어휘 확인",
       "note": "发音练习和本课词汇复习"
+    },
+    {
+      "page": 91,
+      "label": "배운 어휘 확인",
+      "note": "已对照教材课末词汇清单逐词核对"
     }
   ],
   "goals": [
@@ -3384,6 +3389,114 @@ window.lessonGuideL2LessonChunks["l2-08"] = {
           ]
         }
       }
+    },
+    {
+      "ko": "단계",
+      "zh": "阶段；级别",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "다음 단계로 올라가고 싶어요.",
+      "exampleZh": "我想升到下一级。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "stage; level",
+          "pos": "noun",
+          "example": "I want to move up to the next level.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "출석",
+      "zh": "出席；到课",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "수업 출석이 중요해요.",
+      "exampleZh": "到课很重要。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "attendance",
+          "pos": "noun",
+          "example": "Class attendance is important.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "이상",
+      "zh": "以上（含该数值）",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "팔십 점 이상이면 합격이에요.",
+      "exampleZh": "八十分以上就合格。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "at least; or more",
+          "pos": "noun",
+          "example": "A score of eighty or more is a pass.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "평가",
+      "zh": "评价，考试",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "각 단계의 평가를 통과해야 해요.",
+      "exampleZh": "必须通过各阶段评价。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "evaluation",
+          "pos": "noun",
+          "example": "You must pass the evaluation for each stage.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "합격",
+      "zh": "合格；通过",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "시험 합격 소식을 들었어요.",
+      "exampleZh": "听到了考试通过的消息。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "passing an examination",
+          "pos": "noun",
+          "example": "I heard the news that I passed the exam.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "불합격",
+      "zh": "不合格；未通过",
+      "pos": "名词",
+      "page": 91,
+      "source": "배운 어휘 확인",
+      "exampleKo": "이번 시험은 불합격이지만 다시 도전할 거예요.",
+      "exampleZh": "这次考试没通过，但我会再试。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "failure to pass an examination",
+          "pos": "noun",
+          "example": "I did not pass this exam, but I will try again.",
+          "tips": []
+        }
+      }
     }
   ],
   "dialogues": [
@@ -3986,7 +4099,7 @@ window.lessonGuideL2LessonChunks["l2-08"] = {
     }
   },
   "stats": {
-    "vocabulary": 84,
+    "vocabulary": 90,
     "dialogues": 5,
     "culture": 1,
     "practice": 5

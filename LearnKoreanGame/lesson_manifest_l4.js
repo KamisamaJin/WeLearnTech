@@ -50,7 +50,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 62,
+        "vocabulary": 97,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -110,7 +110,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 80,
+        "vocabulary": 108,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -170,7 +170,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 72,
+        "vocabulary": 78,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -230,7 +230,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 71,
+        "vocabulary": 78,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -290,7 +290,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 91,
+        "vocabulary": 109,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -350,7 +350,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 83,
+        "vocabulary": 96,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -410,7 +410,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 105,
+        "vocabulary": 111,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -523,7 +523,7 @@ window.lessonGuideL4 = {
       ],
       "chunk": "lesson_chunks/l4-08.js",
       "stats": {
-        "vocabulary": 126,
+        "vocabulary": 135,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -635,7 +635,7 @@ window.lessonGuideL4 = {
       ],
       "chunk": "lesson_chunks/l4-09.js",
       "stats": {
-        "vocabulary": 104,
+        "vocabulary": 112,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -747,7 +747,7 @@ window.lessonGuideL4 = {
       ],
       "chunk": "lesson_chunks/l4-10.js",
       "stats": {
-        "vocabulary": 96,
+        "vocabulary": 104,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -858,7 +858,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 105,
+        "vocabulary": 122,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -970,7 +970,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 105,
+        "vocabulary": 141,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -1082,7 +1082,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 98,
+        "vocabulary": 119,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -1142,7 +1142,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 86,
+        "vocabulary": 96,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -1254,7 +1254,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 98,
+        "vocabulary": 105,
         "dialogues": 3,
         "culture": 1,
         "practice": 5
@@ -1366,7 +1366,7 @@ window.lessonGuideL4 = {
         }
       ],
       "stats": {
-        "vocabulary": 112,
+        "vocabulary": 119,
         "dialogues": 3,
         "culture": 1,
         "practice": 5

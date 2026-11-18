@@ -57,6 +57,11 @@ window.lessonGuideL1LessonChunks["l1-06"] = {
       "page": 71,
       "label": "배운 어휘 확인",
       "note": "本课时间、日常动作、工作相关复习词汇"
+    },
+    {
+      "page": 68,
+      "label": "단어장",
+      "note": "已对照教材黄色词汇框逐词核对"
     }
   ],
   "goals": [
@@ -765,6 +770,420 @@ window.lessonGuideL1LessonChunks["l1-06"] = {
               "text": "테니스를 배우다, 테니스를 치다"
             }
           ]
+        }
+      }
+    },
+    {
+      "ko": "영",
+      "zh": "零（汉字数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "영 점부터 시작해요.",
+      "exampleZh": "从零分开始。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "zero (Sino-Korean)",
+          "pos": "number",
+          "example": "We start from zero points.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "공",
+      "zh": "零（电话号码等中的读法）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "전화번호는 공일공으로 시작해요.",
+      "exampleZh": "电话号码以零一零开头。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "zero (in phone numbers)",
+          "pos": "number",
+          "example": "The phone number starts with zero-one-zero.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "하나",
+      "zh": "一（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "사과를 하나 샀어요.",
+      "exampleZh": "买了一个苹果。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "one (native Korean)",
+          "pos": "number",
+          "example": "I bought one apple.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "둘",
+      "zh": "二（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "사과를 둘 샀어요.",
+      "exampleZh": "买了两个苹果。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "two (native Korean)",
+          "pos": "number",
+          "example": "I bought two apples.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "셋",
+      "zh": "三（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "아이가 셋 있어요.",
+      "exampleZh": "有三个孩子。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "three (native Korean)",
+          "pos": "number",
+          "example": "I have three children.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "넷",
+      "zh": "四（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "사과가 넷 있어요.",
+      "exampleZh": "有四个苹果。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "four (native Korean)",
+          "pos": "number",
+          "example": "There are four apples.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "다섯",
+      "zh": "五（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "다섯 시에 만나요.",
+      "exampleZh": "五点见。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "five (native Korean)",
+          "pos": "number",
+          "example": "Let's meet at five o'clock.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "여섯",
+      "zh": "六（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "여섯 시에 일어나요.",
+      "exampleZh": "六点起床。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "six (native Korean)",
+          "pos": "number",
+          "example": "I get up at six o'clock.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "일곱",
+      "zh": "七（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "일곱 시에 아침을 먹어요.",
+      "exampleZh": "七点吃早饭。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "seven (native Korean)",
+          "pos": "number",
+          "example": "I eat breakfast at seven o'clock.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "여덟",
+      "zh": "八（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "여덟 시에 출근해요.",
+      "exampleZh": "八点上班。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "eight (native Korean)",
+          "pos": "number",
+          "example": "I go to work at eight o'clock.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "아홉",
+      "zh": "九（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "아홉 시부터 공부해요.",
+      "exampleZh": "从九点开始学习。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "nine (native Korean)",
+          "pos": "number",
+          "example": "I study from nine o'clock.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "열",
+      "zh": "十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "열 시에 자요.",
+      "exampleZh": "十点睡觉。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "ten (native Korean)",
+          "pos": "number",
+          "example": "I go to bed at ten o'clock.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "열하나",
+      "zh": "十一（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "사과가 열하나 있어요.",
+      "exampleZh": "有十一个苹果。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "eleven (native Korean)",
+          "pos": "number",
+          "example": "There are eleven apples.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "열둘",
+      "zh": "十二（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "아이가 열둘 있어요.",
+      "exampleZh": "有十二个孩子。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "twelve (native Korean)",
+          "pos": "number",
+          "example": "There are twelve children.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "스물",
+      "zh": "二十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "저는 스무 살이에요.",
+      "exampleZh": "我二十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "twenty (native Korean)",
+          "pos": "number",
+          "example": "I am twenty years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "서른",
+      "zh": "三十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "언니는 서른 살이에요.",
+      "exampleZh": "姐姐三十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "thirty (native Korean)",
+          "pos": "number",
+          "example": "My older sister is thirty years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "마흔",
+      "zh": "四十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "형은 마흔 살이에요.",
+      "exampleZh": "哥哥四十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "forty (native Korean)",
+          "pos": "number",
+          "example": "My older brother is forty years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "쉰",
+      "zh": "五十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "삼촌은 쉰 살이에요.",
+      "exampleZh": "叔叔五十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "fifty (native Korean)",
+          "pos": "number",
+          "example": "My uncle is fifty years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "예순",
+      "zh": "六十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "아버지는 예순 살이에요.",
+      "exampleZh": "父亲六十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "sixty (native Korean)",
+          "pos": "number",
+          "example": "My father is sixty years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "일흔",
+      "zh": "七十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "할머니는 일흔 살이에요.",
+      "exampleZh": "奶奶七十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "seventy (native Korean)",
+          "pos": "number",
+          "example": "My grandmother is seventy years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "여든",
+      "zh": "八十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "할아버지는 여든 살이에요.",
+      "exampleZh": "爷爷八十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "eighty (native Korean)",
+          "pos": "number",
+          "example": "My grandfather is eighty years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "아흔",
+      "zh": "九十（固有数词）",
+      "pos": "数量表达",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "할머니는 아흔 살이에요.",
+      "exampleZh": "奶奶九十岁。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "ninety (native Korean)",
+          "pos": "number",
+          "example": "My grandmother is ninety years old.",
+          "tips": []
+        }
+      }
+    },
+    {
+      "ko": "반",
+      "zh": "半；半小时",
+      "pos": "名词",
+      "page": 71,
+      "source": "배운 어휘 확인",
+      "exampleKo": "여섯 시 반에 일어나요.",
+      "exampleZh": "六点半起床。",
+      "tips": [],
+      "translations": {
+        "en": {
+          "meaning": "half; half an hour",
+          "pos": "noun",
+          "example": "I get up at half past six.",
+          "tips": []
         }
       }
     }
