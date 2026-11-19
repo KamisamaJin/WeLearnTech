@@ -36,7 +36,7 @@
 
         const showTranslation = () => Boolean(getShowTranslation());
         const translationControl = reveal => `<button class="tool-btn" type="button" data-toggle-zh>${escapeHtml(reveal ? t("hideTranslation") : t("showTranslation"))}</button>`;
-        const speakIcon = icons?.render("volume") || "";
+        const speakIcon = icons?.paths?.volume ? icons.render("volume") : '<span aria-hidden="true">&#9654;</span>';
 
         function renderTodo(title, body) {
             return `<div class="todo-panel"><div><h2>${escapeHtml(title)}</h2><p>${escapeHtml(body)}</p></div></div>`;
