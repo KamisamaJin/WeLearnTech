@@ -27,6 +27,23 @@ const dependencies = {
 };
 const renderer = renderers.create(dependencies);
 
+test("lesson speech buttons survive a cached icon registry without volume", () => {
+    const current = require("../shared/icons.js");
+    const legacy = {
+        paths: { chevronRight: current.paths.chevronRight },
+        render(name, options) {
+            assert.ok(this.paths[name], `Unknown KIIP icon: ${name}`);
+            return current.render(name, options);
+        }
+    };
+    const lesson = lessons.find(item => item.id === "l4-01");
+    for (const icons of [legacy, current]) {
+        const html = renderers.create({ ...dependencies, icons }).renderGrammar(lesson);
+        assert.ok(html.includes(lesson.grammar[0].guide));
+        assert.ok(html.includes(icons === legacy ? "&#9654;" : current.render("volume")));
+    }
+});
+
 test("hiding word translations never hides grammar usage or prevents per-sentence recall", () => {
     const lesson = lessons.find(lesson => lesson.id === "l4-01");
     for (const mode of ["read", "recall"]) {

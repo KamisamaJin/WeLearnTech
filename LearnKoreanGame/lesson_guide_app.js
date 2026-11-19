@@ -2667,7 +2667,7 @@ function renderListeningSettings() {
 function openPlayerOptions() {
     playerOptions.innerHTML = `
         <header><h2 id="player-options-title">${escapeHtml(t("listeningOptions"))}</h2>
-            <button class="kiip-icon-button" type="button" data-options-close aria-label="${escapeHtml(t("closeOptions"))}">${iconApi.render("close")}</button></header>
+            <button class="kiip-icon-button" type="button" data-options-close aria-label="${escapeHtml(t("closeOptions"))}">${iconApi.paths.close ? iconApi.render("close") : '<span aria-hidden="true">&times;</span>'}</button></header>
         ${renderListeningSettings()}
         ${renderSleepTimer(true)}
         <button type="button" data-listening-action="stop">${escapeHtml(t("listeningStop"))}</button>`;
@@ -2696,7 +2696,7 @@ function renderListeningPlayer(lesson) {
                 <div class="listening-heading">
                     <span class="listening-kicker">${escapeHtml(t("listeningTitle"))}</span>
                     <span class="listening-status">${escapeHtml(listeningStatusText(total))}</span>
-                    ${compactPlayer.matches ? `<button type="button" class="kiip-icon-button player-options-toggle" data-player-options aria-haspopup="dialog" aria-controls="player-options" aria-label="${escapeHtml(t("listeningOptions"))}" title="${escapeHtml(t("listeningOptions"))}">${iconApi.render("sliders")}</button>` : renderSleepTimer()}
+                    ${compactPlayer.matches ? `<button type="button" class="kiip-icon-button player-options-toggle" data-player-options aria-haspopup="dialog" aria-controls="player-options" aria-label="${escapeHtml(t("listeningOptions"))}" title="${escapeHtml(t("listeningOptions"))}">${iconApi.paths.sliders ? iconApi.render("sliders") : '<span aria-hidden="true">&hellip;</span>'}</button>` : renderSleepTimer()}
                 </div>
                 ${compactPlayer.matches ? renderSleepCountdown() : ""}
                 <div class="listening-now" title="${escapeHtml(caption)}">${escapeHtml(caption)}</div>
