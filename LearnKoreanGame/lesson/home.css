@@ -212,22 +212,29 @@ a {
 }
 
 @media (max-width: 560px) {
+    body, .topbar { background: var(--bg); }
+
     .topbar {
         gap: 10px;
-        padding: 12px 14px;
+        height: var(--kiip-phone-bar-height);
+        padding: 2px var(--kiip-space-4);
     }
 
     .brand {
         gap: 9px;
     }
+    .top-actions .kiip-icon-button, .top-actions .kiip-language-toggle { min-width: 44px; height: 48px; border-color: transparent; background: transparent; }
 
     .brand-mark {
+        color: var(--kiip-color-on-primary);
+        background: var(--primary);
         width: 38px;
         height: 38px;
         font-size: 0.88rem;
     }
 
     .brand-title {
+        color: var(--text);
         font-size: var(--kiip-type-app-title);
         font-weight: 600;
         line-height: 1.4;
@@ -238,7 +245,7 @@ a {
     }
 
     .main {
-        padding: 18px 14px calc(28px + var(--kiip-safe-area-bottom) + 56px);
+        padding: 18px var(--kiip-space-4) calc(28px + var(--kiip-safe-area-bottom) + 56px);
     }
 
     .summary-row {

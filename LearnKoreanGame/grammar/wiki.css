@@ -157,10 +157,16 @@ body {
     margin-top: 6px;
 }
 .nav-item {
+    width: 100%;
+    appearance: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    text-align: start;
     padding: 10px 11px;
     margin-bottom: 6px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     font-size: 0.92rem;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -193,9 +199,11 @@ body {
 .nav-level.l3 { background: rgba(205,164,94,0.18); color: var(--amber); }
 .nav-level.l4 { background: rgba(217,130,122,0.18); color: var(--accent); }
 .nav-title { flex: 1; }
+.nav-item:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
 .main-content {
     flex: 1;
-    padding: 20px 24px calc(112px + env(safe-area-inset-bottom, 0px));
+    min-height: 0;
+    padding: 20px 24px 24px;
     overflow-y: auto;
     background: transparent;
 }
@@ -361,14 +369,15 @@ body {
     background: rgba(143, 189, 154, 0.15);
 }
 .related-link .nav-level { font-size: 0.64rem; }
-/* Floating prev/next nav buttons */
+/* Outside the scroll region so neither button covers a line of text. */
 .nav-float-btns {
-    position: fixed;
-    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
-    right: 20px;
+    flex: none;
+    justify-content: space-between;
+    padding: 4px var(--kiip-space-4);
+    border-top: 1px solid var(--border);
+    background: var(--bg);
     display: none;
     gap: 8px;
-    z-index: 100;
     align-items: center;
 }
 .nav-float-btns.visible { display: flex; }
@@ -401,6 +410,7 @@ body {
 }
 .nav-float-btn:active { transform: translateY(0); }
 .nav-float-btn:focus { outline: none; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+.nav-float-btn:focus-visible { outline: 2px solid var(--primary); }
 .nav-float-btn.disabled {
     opacity: 0.3;
     pointer-events: none;
@@ -487,27 +497,36 @@ body {
     backdrop-filter: blur(3px);
 }
 @media (max-width: 768px) {
-    .mobile-header { display: flex; }
+    .mobile-header { display: flex; position: relative; z-index: 210; flex: none; }
     .desktop-language-switcher { display: none; }
     .sidebar-heading .lesson-return-button { display: none; }
     .sidebar {
         position: fixed;
-        top: 0; left: 0; bottom: 0;
+        top: var(--drawer-top, 65px); left: 0; bottom: 0;
         width: 280px;
         z-index: 200;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
     }
+    .sidebar:not(.open) { visibility: hidden; }
     .sidebar.open { transform: translateX(0); }
     .sidebar-overlay.open { display: block; }
     .main-content {
-        padding: 20px 20px calc(120px + env(safe-area-inset-bottom, 0px));
+        padding: 20px;
         background: transparent;
     }
     .sidebar-header h1 { display: none; }
     .sidebar-header { padding-top: 25px; }
 }
 @media (max-width: 560px) {
+    body, .mobile-header { background: var(--bg); }
+    .sidebar, .nav-float-btn { background: var(--panel-solid); }
+    .mobile-title-brand, .mobile-detail-text { color: var(--text); }
+    .level-filter-btn.active { color: var(--kiip-color-on-primary); }
+    .deep-dive-section, .knowledge-section { border-color: var(--border); }
+    .rule-card, .example-box { background: var(--panel-raised); border-left-color: var(--border); }
+    .related-link { color: var(--primary); border-color: var(--border); background: var(--panel-solid); }
+    .related-link:hover { border-color: var(--primary); background: var(--panel-raised); }
     .mobile-title-brand { font-size: var(--kiip-type-app-title); font-weight: 600; }
     .nav-item { font-size: var(--kiip-type-body); font-weight: 500; }
     .nav-category { font-size: var(--kiip-type-supporting); font-weight: 500; }
@@ -517,7 +536,7 @@ body {
     .filter-btn { font-size: var(--kiip-type-supporting); font-weight: 500; }
 
     .main-content {
-        padding: 16px 14px calc(112px + env(safe-area-inset-bottom, 0px));
+        padding: 16px var(--kiip-space-4);
     }
     .grammar-header {
         margin-bottom: 12px;
@@ -546,6 +565,7 @@ body {
         padding: 14px;
     }
     .grammar-section h3 {
+        color: var(--text);
         margin: 0 0 10px;
         padding-bottom: 9px;
         font-size: var(--kiip-type-section-title);
@@ -576,6 +596,7 @@ body {
         overflow-wrap: anywhere;
     }
     .ex-translation {
+        color: var(--soft);
         font-size: var(--kiip-type-translation);
         line-height: 1.65;
     }
@@ -618,10 +639,10 @@ body {
         max-width: 74px;
     }
 }
-@media (max-width: 420px) {
-    .mobile-header { padding: 12px 14px; }
-    .mobile-title-brand { font-size: var(--kiip-type-app-title); }
-    .mobile-header > .lesson-return-button { margin-right: 6px; }
-    .mobile-guide-link { margin-right: 6px; }
-    .mobile-language-switcher { margin-right: 4px; }
+@media (max-width: 560px) {
+    .mobile-header { height: var(--kiip-phone-bar-height); padding: 2px 8px; gap: 4px; }
+    .mobile-header > .lesson-return-button, .mobile-guide-link, .mobile-language-switcher { margin: 0; }
+    .mobile-header .kiip-icon-button, .mobile-header .kiip-language-toggle {
+        min-width: 44px; height: 48px; border-color: transparent; background: transparent;
+    }
 }

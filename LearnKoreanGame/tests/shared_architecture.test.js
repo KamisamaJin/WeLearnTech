@@ -154,10 +154,9 @@ test("lesson and grammar mobile menus expose toggle state", () => {
     const grammarApp = fs.readFileSync(path.join(root, "grammar_wiki_app.js"), "utf8");
 
     assert.match(lessonShell, /id="menu-toggle"[^>]*aria-controls="sidebar"[^>]*aria-expanded="false"/s);
-    assert.match(lessonApp, /function toggleSidebar\(force\)/);
-    assert.match(lessonApp, /menuToggle\.addEventListener\("click", \(\) => \{\s*toggleSidebar\(\);/s);
-    assert.match(grammarHtml, /id="menu-toggle"[^>]*aria-expanded="false"/s);
-    assert.match(grammarApp, /menuToggle\.addEventListener\("click", \(\) => toggleMenu\(\)\)/);
+    assert.match(lessonApp, /const toggleSidebar = window\.KIIPDrawer\(/);
+    assert.match(grammarHtml, /id="menu-toggle"[^>]*aria-controls="sidebar"[^>]*aria-expanded="false"/s);
+    assert.match(grammarApp, /const toggleMenu = root\.KIIPDrawer\(/);
 });
 
 test("lesson and grammar pages keep styles and behavior outside HTML", () => {
@@ -339,6 +338,27 @@ test("lesson bootstrap fetches independent dependencies in parallel", () => {
     assert.doesNotMatch(shell, /for \(const script of scripts\) await loadScript/);
     assert.match(app, /function ensureLessonSearchIndex\(\)/);
     assert.match(app, /lessonSearch\.addEventListener\("input", handleLessonSearchInput\)/);
+});
+
+test("native course JSON replaces chunks and never loads stale indexed translations", async () => {
+    let reads = 0;
+    const rootContext = {
+        location: { href: "https://localhost/lesson.html" },
+        KIIPContentProvider: { getLesson: async id => { reads++; return { id, vocabulary: [{ ko: "새 단어" }] }; } }
+    };
+    const loader = lessonDataLoader.create({
+        root: rootContext,
+        document: { createElement: () => { throw new Error("Updated data must not load legacy scripts"); } },
+        lessons: [{ id: "l4-01", chunk: "old-chunk.js" }],
+        lessonChunksGlobal: "chunks", translationChunkPaths: { en: { "l4-01": "old-translations.js" } },
+        getTranslationLocale: () => "en", getTranslationChunk: () => undefined,
+        applyTranslations: lesson => lesson, normalizeLesson: lesson => lesson
+    });
+    const lesson = await loader.load("l4-01");
+    assert.equal(lesson.__nativeContent, true);
+    assert.equal(lesson.vocabulary[0].ko, "새 단어");
+    assert.equal(await loader.load("l4-01"), lesson);
+    assert.equal(reads, 1);
 });
 
 test("single pronunciation uses native preview playback when available", () => {

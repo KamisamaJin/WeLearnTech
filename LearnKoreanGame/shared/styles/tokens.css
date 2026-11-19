@@ -11,6 +11,7 @@
     --kiip-color-text-muted: #8f9aab;
     --kiip-color-primary: #5fd2c6;
     --kiip-color-primary-rgb: 95, 210, 198;
+    --kiip-color-on-primary: #0d1715;
     --kiip-color-amber: #cda45e;
     --kiip-color-amber-rgb: 205, 164, 94;
     --kiip-color-rose: #d9827a;
@@ -51,7 +52,9 @@
     --kiip-safe-area-right: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
     --kiip-safe-area-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
     --kiip-safe-area-left: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
+}
 
+:root {
     --bg: var(--kiip-color-bg);
     --bg-color: var(--kiip-color-bg);
     --panel: var(--kiip-color-panel);
@@ -78,6 +81,30 @@
     --secondary: var(--kiip-color-violet);
     --green: var(--kiip-color-green);
     --shadow: var(--kiip-color-shadow);
+}
+
+@media (max-width: 560px) {
+    :root {
+        color-scheme: light;
+        --kiip-phone-bar-height: 53px;
+        --kiip-color-bg: #fbfcfe;
+        --kiip-color-panel-solid: #fff;
+        --kiip-color-panel: var(--kiip-color-panel-solid);
+        --kiip-color-panel-raised: #edf2f9;
+        --kiip-color-border: #ced8e5;
+        --kiip-color-text: #182432;
+        --kiip-color-text-soft: #46556a;
+        --kiip-color-text-muted: #586779;
+        --kiip-color-primary: #204ec3;
+        --kiip-color-primary-rgb: 32, 78, 195;
+        --kiip-color-on-primary: #fff;
+        --kiip-color-amber: #725018;
+        --kiip-color-amber-rgb: 114, 80, 24;
+        --kiip-color-rose: #8b3b42;
+        --kiip-color-green: #2a6145;
+        --kiip-color-shadow: rgba(24, 36, 50, 0.06);
+        --kiip-color-grammar-highlight-bg: #fff09b;
+    }
 }
 
 html {

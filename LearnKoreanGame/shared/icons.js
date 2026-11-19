@@ -8,12 +8,16 @@
         chevronLeft: '<path d="m15 18-6-6 6-6"></path>',
         chevronRight: '<path d="m9 18 6-6-6-6"></path>',
         clock: '<circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>',
+        close: '<path d="m18 6-12 12"></path><path d="m6 6 12 12"></path>',
+        download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path><path d="M12 15V3"></path>',
         globe: '<circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 0 20"></path><path d="M12 2a15.3 15.3 0 0 0 0 20"></path>',
         home: '<path d="m3 10.5 9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M9 20v-6h6v6"></path>',
         menu: '<path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h16"></path>',
         next: '<path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>',
         previous: '<path d="M19 12H5"></path><path d="m11 18-6-6 6-6"></path>',
-        stop: '<rect x="7" y="7" width="10" height="10" rx="1"></rect>'
+        sliders: '<path d="M4 7h9m4 0h3M4 17h3m4 0h9M13 4v6M8 14v6"></path>',
+        stop: '<rect x="7" y="7" width="10" height="10" rx="1"></rect>',
+        volume: '<path d="m11 5-6 4H2v6h3l6 4z"></path><path d="M15 9a4 4 0 0 1 0 6m3-9a8 8 0 0 1 0 12"></path>'
     });
 
     function render(name, options = {}) {
