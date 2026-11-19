@@ -62,8 +62,9 @@
             if (!meta) throw new Error("没有可加载的课程数据");
 
             if (lessonCache.has(meta.id)) {
-                await loadTranslation(getTranslationLocale(), meta.id);
-                return applyTranslations(lessonCache.get(meta.id));
+                const cached = lessonCache.get(meta.id);
+                if (!cached.__nativeContent) await loadTranslation(getTranslationLocale(), meta.id);
+                return applyTranslations(cached);
             }
 
             if (!meta.chunk) {
@@ -76,8 +77,15 @@
             if (!lessonLoadPromises.has(meta.id)) {
                 lessonLoadPromises.set(meta.id, (async () => {
                     let chunk = root[lessonChunksGlobal]?.[meta.id];
+                    if (!chunk && root.KIIPContentProvider) {
+                        const updated = await root.KIIPContentProvider.getLesson(meta.id);
+                        if (updated) {
+                            root[lessonChunksGlobal] ||= {};
+                            chunk = root[lessonChunksGlobal][meta.id] = { ...updated, __nativeContent: true };
+                        }
+                    }
                     if (!chunk) await loadScript(meta.chunk);
-                    await loadTranslation(getTranslationLocale(), meta.id);
+                    if (!chunk?.__nativeContent) await loadTranslation(getTranslationLocale(), meta.id);
                     chunk = root[lessonChunksGlobal]?.[meta.id];
                     if (!chunk) throw new Error(`没有找到课程分片：${meta.id}`);
                     const lesson = applyTranslations(normalizeLesson({ ...meta, ...chunk }));

@@ -94,6 +94,7 @@
                     </header>
                     <main class="main-content" id="main-content"><div class="todo-panel" role="status"><div><h2>${loadingTitle}</h2></div></div></main>
                     <div class="floating-listening-controls" id="floating-listening-controls" hidden></div>
+                    <dialog class="player-options" id="player-options" aria-labelledby="player-options-title"></dialog>
                 </div>
             </div>
         `;
@@ -118,16 +119,28 @@
             loadStyle(document, "lesson_guide.css")
         ]);
         const coreReady = Promise.all([
+            loadScript(document, "shared/drawer.js"),
             loadScript(document, "shared/icons.js"),
             loadScript(document, "shared/locale.js")
         ]);
-        const dataReady = loadScript(document, config.dataScript);
-        const activeLessonReady = dataReady.then(() => {
+        const dataReady = (async () => {
+            const catalog = await root.KIIPContentProvider?.getCatalog(config.level);
+            if (catalog) {
+                root[config.dataGlobal] = catalog.manifest;
+                root[config.dataGlobal].lessons = catalog.manifest.lessons.map(lesson => ({ ...lesson, __nativeContent: true }));
+                root[config.searchGlobal] = catalog.search;
+            } else await loadScript(document, config.dataScript);
+        })();
+        const activeLessonReady = dataReady.then(async () => {
             const lessonData = root[config.dataGlobal];
             const requestedLessonId = new URLSearchParams(root.location?.search || "").get("lesson");
             const activeLesson = lessonData?.lessons?.find(lesson => lesson.id === requestedLessonId)
                 || lessonData?.lessons?.[0];
-            return activeLesson?.chunk ? loadScript(document, activeLesson.chunk) : undefined;
+            const updated = activeLesson && await root.KIIPContentProvider?.getLesson(activeLesson.id);
+            if (updated) {
+                root[config.lessonChunksGlobal] ||= {};
+                root[config.lessonChunksGlobal][activeLesson.id] = { ...updated, __nativeContent: true };
+            } else if (activeLesson?.chunk) await loadScript(document, activeLesson.chunk);
         });
         const dependenciesReady = Promise.all([
             dataReady,
@@ -145,6 +158,7 @@
             "lesson/data-loader.js",
             "lesson/labels.js",
             "lesson/grammar-highlight.js",
+            "lesson/grammar-example-translations.js",
             "lesson/renderers.js"
         ].map(task => typeof task === "string" ? loadScript(document, task) : task));
 

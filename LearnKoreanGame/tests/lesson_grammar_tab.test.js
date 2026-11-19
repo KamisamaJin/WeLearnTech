@@ -27,6 +27,27 @@ const dependencies = {
 };
 const renderer = renderers.create(dependencies);
 
+test("hiding word translations never hides grammar usage or prevents per-sentence recall", () => {
+    const lesson = lessons.find(lesson => lesson.id === "l4-01");
+    for (const mode of ["read", "recall"]) {
+        const html = renderers.create({ ...dependencies, getShowTranslation: () => false,
+            getGrammarStudyMode: () => mode }).renderGrammar(lesson);
+        assert.ok(html.includes(lesson.grammar[0].guide));
+        assert.ok(html.includes(lesson.grammar[0].examples[0].zh));
+        assert.doesNotMatch(html, /data-toggle-zh/);
+        assert.equal(html.includes('<details class="grammar-recall-answer">'), mode === "recall");
+    }
+});
+
+test("legacy example translations match exact Korean text and respect downloaded corrections", () => {
+    const { translate } = require("../lesson/grammar-example-translations.js");
+    const example = { ko: "한국 문화는 알수록 매력적인 것 같아요.", zh: "韩国文化越了解越有魅力。" };
+    assert.match(translate(example, "en"), /more.*Korean culture.*more fascinating/);
+    assert.equal(translate(example, "zh-CN"), example.zh);
+    assert.equal(translate({ ...example, translations: { en: { translation: "Updated." } } }, "en"), "Updated.");
+    assert.equal(translate({ ...example, ko: "다른 문장이에요." }, "en"), "");
+});
+
 test("all lesson dialogues render exactly once under grammar while preserving playback references", () => {
     assert.equal(lessons.length, 68);
     for (const lesson of lessons) {

@@ -71,6 +71,7 @@ const messages = {
         grammarApplication: "对话运用",
         grammarIntegrated: "综合运用",
         grammarDialogueCount: "{count} 段对话",
+        grammarDialogueSingle: "1 段对话",
         grammarQuickReview: "本课句型",
         grammarStudyMode: "学习模式",
         grammarReadMode: "阅读",
@@ -89,7 +90,7 @@ const messages = {
         statDialogue: "对话练习",
         statCulture: "文化文章",
         learningGoals: "学习目标",
-        grammarLinks: "本课语法连接",
+        grammarLinks: "本课语法",
         openGrammarDetail: "打开语法知识：{pattern}",
         grammarPending: "语法点会在该课 OCR 校对后补充。",
         sourcePending: "来源待补",
@@ -97,7 +98,10 @@ const messages = {
         practiceFallback: "练习",
         hideTranslation: "隐藏翻译",
         showTranslation: "显示翻译",
-        vocabularyToolbar: "{count} 个词条，翻译和例句可用于复习。",
+        vocabularyToolbar: "{count} 个词条",
+        listeningTranslation: "译文",
+        previewUnavailable: "未找到可用的韩语语音，请检查系统语音设置。",
+        previewFailed: "这次发音没能播放，请再试一次。",
         vocabularyPendingTitle: "单词表待抽取",
         vocabularyPendingBody: "后续会从该课 어휘 页面抽取韩语词、翻译、例句和使用提示。",
         dialogueToolbar: "{dialogues} 段对话 / {lines} 句台词",
@@ -122,6 +126,8 @@ const messages = {
         loadErrorTitle: "课程数据加载失败",
         loadErrorBody: "{title} 的分片文件没有加载成功，请刷新页面后再试。",
         listeningTitle: "收听模式",
+        listeningOptions: "播放设置",
+        closeOptions: "关闭播放设置",
         listeningUnavailable: "当前浏览器没有可用韩语语音。",
         listeningEmpty: "当前模式没有可播放的韩语内容。",
         listeningIdle: "选择模式后开始连续收听本课内容。",
@@ -180,6 +186,7 @@ const messages = {
         grammarApplication: "In conversation",
         grammarIntegrated: "Integrated practice",
         grammarDialogueCount: "{count} dialogues",
+        grammarDialogueSingle: "1 dialogue",
         grammarQuickReview: "Lesson patterns",
         grammarStudyMode: "Study mode",
         grammarReadMode: "Read",
@@ -198,7 +205,7 @@ const messages = {
         statDialogue: "Dialogues",
         statCulture: "Culture texts",
         learningGoals: "Learning Goals",
-        grammarLinks: "Grammar Links",
+        grammarLinks: "Lesson grammar",
         openGrammarDetail: "Open grammar guide: {pattern}",
         grammarPending: "Grammar notes will be added after OCR review.",
         sourcePending: "Source pending",
@@ -206,7 +213,10 @@ const messages = {
         practiceFallback: "Practice",
         hideTranslation: "Hide translation",
         showTranslation: "Show translation",
-        vocabularyToolbar: "{count} entries with translations and examples.",
+        vocabularyToolbar: "{count} entries",
+        listeningTranslation: "Translation",
+        previewUnavailable: "No Korean voice is available. Check your system speech settings.",
+        previewFailed: "This pronunciation could not be played. Try again.",
         vocabularyPendingTitle: "Vocabulary pending",
         vocabularyPendingBody: "Korean words, translations, examples, and notes will be extracted from this lesson.",
         dialogueToolbar: "{dialogues} dialogues / {lines} lines",
@@ -231,6 +241,8 @@ const messages = {
         loadErrorTitle: "Lesson data failed to load",
         loadErrorBody: "{title}'s chunk file did not load. Please refresh and try again.",
         listeningTitle: "Listening Mode",
+        listeningOptions: "Playback settings",
+        closeOptions: "Close playback settings",
         listeningUnavailable: "No Korean voice is available in this browser.",
         listeningEmpty: "This mode has no playable Korean content.",
         listeningIdle: "Choose a range and start listening through this lesson.",
@@ -372,6 +384,8 @@ const nativeListeningDriver = window.lessonGuideNativeListening?.createDriver({
 let listeningWakeLock = null;
 let renderRunId = 0;
 const mobileSwipeQuery = window.matchMedia("(max-width: 920px)");
+const compactPlayer = window.matchMedia("(max-width: 560px)");
+const playerOptions = document.getElementById("player-options");
 const tabSwipeState = {
     tracking: false,
     startX: 0,
@@ -491,7 +505,7 @@ function wordExampleTranslation(item) {
 }
 
 function lineTranslation(line) {
-    if (translationLocale === "en" && line?.en) return line.en;
+    if (translationLocale === "en") return line?.en || line?.translations?.en?.translation || "";
     return getLocalizedValue(line, "translation", "zh");
 }
 
@@ -792,6 +806,7 @@ function getLessonTranslationChunk(locale, lessonId) {
 }
 
 function applyLessonTranslationPacks(lesson) {
+    if (lesson.__nativeContent) return lesson;
     applyEmbeddedNestedTranslations(lesson);
 
     Object.entries(lessonTranslationPacks).forEach(([locale, pack]) => {
@@ -811,11 +826,7 @@ function grammarMeaning(item) {
 }
 
 function grammarExampleTranslation(item) {
-    if (translationLocale === "en") {
-        const english = item?.translations?.en;
-        return english?.translation || english?.zh || english?.example || item.en || "";
-    }
-    return item.zh || item.exampleZh || "";
+    return window.KIIPGrammarExamples.translate(item, translationLocale);
 }
 
 function grammarGuide(item) {
@@ -1603,6 +1614,16 @@ function splitKoreanSpeech(text, mode) {
     return chunks.map(chunk => chunk.trim()).filter(Boolean);
 }
 
+function showPreviewError(button, key) {
+    const row = button?.closest(".word-card, .grammar-example, .line-card");
+    if (!row || row.querySelector(".preview-error")) return;
+    const message = document.createElement("p");
+    message.className = "preview-error";
+    message.setAttribute("role", "alert");
+    message.textContent = t(key);
+    row.append(message);
+}
+
 function clearNativeSpeechPreview() {
     nativeSpeechPreviewButton?.classList.remove("speaking");
     nativeSpeechPreviewButton = null;
@@ -1643,6 +1664,7 @@ async function speakKorean(text, options = {}) {
     const mode = options.mode || "word";
     const normalizedText = normalizeKoreanSpeechText(text);
     if (!hasHangul(normalizedText)) return;
+    document.querySelectorAll(".preview-error").forEach(message => message.remove());
 
     if (nativeListeningDriver) {
         try {
@@ -1671,6 +1693,7 @@ async function speakKorean(text, options = {}) {
 
     if (!("speechSynthesis" in window)) {
         options.button?.classList.remove("speaking");
+        showPreviewError(options.button, "previewUnavailable");
         return;
     }
     window.speechSynthesis.cancel();
@@ -1682,6 +1705,7 @@ async function speakKorean(text, options = {}) {
     }
     if (!voice) {
         options.button?.classList.remove("speaking");
+        showPreviewError(options.button, "previewUnavailable");
         return;
     }
 
@@ -1700,7 +1724,12 @@ async function speakKorean(text, options = {}) {
         utterance.volume = 1;
         utterance.voice = voice;
         utterance.onend = () => window.setTimeout(() => speakChunk(index + 1), mode === "sentence" ? 90 : 0);
-        utterance.onerror = () => options.button?.classList.remove("speaking");
+        utterance.onerror = event => {
+            options.button?.classList.remove("speaking");
+            if (runId === speechRunId && !["interrupted", "canceled"].includes(event.error)) {
+                showPreviewError(options.button, "previewFailed");
+            }
+        };
         window.speechSynthesis.speak(utterance);
     };
 
@@ -1874,6 +1903,9 @@ function refreshListeningPlayer() {
     const lesson = activeLoadedLesson();
     const player = document.querySelector("[data-listening-player]");
     if (!lesson || !player) return;
+    if (playerOptions.open) {
+        playerOptions.querySelector('[data-listening-action="stop"]').hidden = !hasStoppableSession(lesson);
+    }
 
     const template = document.createElement("template");
     template.innerHTML = renderListeningPlayer(lesson).trim();
@@ -1966,6 +1998,7 @@ function applyNativeListeningState(state) {
         const active = ["preparing", "playing", "paused"].includes(state.status);
         nativeSpeechPreviewButton?.classList.toggle("speaking", active);
         if (!active) {
+            if (state.error) showPreviewError(nativeSpeechPreviewButton, String(state.error).includes("TTS_VOICE_UNAVAILABLE") ? "previewUnavailable" : "previewFailed");
             maybeOfferNativeVoiceSetup(state.error);
             clearNativeSpeechPreview();
             nativeListeningDriver.stop("preview").catch(() => {});
@@ -2519,6 +2552,10 @@ function buildListeningQueue(lesson, mode = listeningState.mode) {
     return listeningQueueBuilder.build(lesson, mode);
 }
 
+function hasStoppableSession(lesson) {
+    return lesson && listeningState.lessonId === lesson.id && ["preparing", "playing", "paused"].includes(listeningState.status);
+}
+
 function listeningIsActiveForLesson(lesson) {
     return listeningState.lessonId === lesson.id && ["preparing", "playing", "paused", "ended"].includes(listeningState.status);
 }
@@ -2535,7 +2572,7 @@ function listeningStatusText(total) {
     if (listeningState.status === "ended") {
         return t(listeningState.endReason === "timer" ? "listeningTimerEnded" : "listeningEnded");
     }
-    return t("listeningIdle");
+    return t(listeningModes.find(mode => mode.id === listeningState.mode).labelKey);
 }
 
 function sleepTimerOptionLabel(minutes) {
@@ -2585,6 +2622,59 @@ function nextIcon() {
     `;
 }
 
+function renderSleepCountdown() {
+    return `<span class="listening-sleep-countdown" data-sleep-timer-countdown ${listeningState.sleepTimerEndsAt ? "" : "hidden"}>${listeningState.sleepTimerEndsAt ? escapeHtml(sleepTimerApi.formatRemaining(listeningState.sleepTimerEndsAt)) : ""}</span>`;
+}
+
+function renderSleepTimer(inDialog = false) {
+    return `
+        <label class="listening-sleep-timer" title="${escapeHtml(t("listeningSleepTimerLabel"))}">
+            ${inDialog ? `<span>${escapeHtml(t("listeningSleepTimerLabel"))}</span>` : iconApi.render("clock")}
+            <select data-listening-setting="sleepTimer" aria-label="${escapeHtml(t("listeningSleepTimerLabel"))}">
+                ${listeningSleepDurations.map(minutes => `<option value="${minutes}" ${minutes === listeningState.sleepTimerMinutes ? "selected" : ""}>${escapeHtml(sleepTimerOptionLabel(minutes))}</option>`).join("")}
+            </select>
+            ${inDialog ? "" : renderSleepCountdown()}
+        </label>`;
+}
+
+function renderListeningSettings() {
+    return `
+    <div class="listening-settings" aria-label="${escapeHtml(t("listeningTitle"))}">
+        <label>
+            <span>${escapeHtml(t("listeningModeLabel"))}</span>
+            <select data-listening-setting="mode" aria-label="${escapeHtml(t("listeningModeLabel"))}">
+                ${listeningModes.map(mode => `<option value="${escapeHtml(mode.id)}" ${mode.id === listeningState.mode ? "selected" : ""}>${escapeHtml(t(mode.labelKey))}</option>`).join("")}
+            </select>
+            ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
+        </label>
+        <label>
+            <span>${escapeHtml(t("listeningSpeedLabel"))}</span>
+            <select data-listening-setting="speed" aria-label="${escapeHtml(t("listeningSpeedLabel"))}">
+                ${listeningSpeeds.map(speed => `<option value="${escapeHtml(speed.id)}" ${speed.id === listeningState.speed ? "selected" : ""}>${escapeHtml(t(speed.labelKey))}</option>`).join("")}
+            </select>
+            ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
+        </label>
+        <label>
+            <span>${escapeHtml(t("listeningRepeatLabel"))}</span>
+            <select data-listening-setting="repeat" aria-label="${escapeHtml(t("listeningRepeatLabel"))}">
+                ${listeningRepeats.map(repeat => `<option value="${repeat.value}" ${repeat.value === listeningState.repeat ? "selected" : ""}>${escapeHtml(t(repeat.labelKey))}</option>`).join("")}
+            </select>
+            ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
+        </label>
+    </div>`;
+}
+
+function openPlayerOptions() {
+    playerOptions.innerHTML = `
+        <header><h2 id="player-options-title">${escapeHtml(t("listeningOptions"))}</h2>
+            <button class="kiip-icon-button" type="button" data-options-close aria-label="${escapeHtml(t("closeOptions"))}">${iconApi.render("close")}</button></header>
+        ${renderListeningSettings()}
+        ${renderSleepTimer(true)}
+        <button type="button" data-listening-action="stop">${escapeHtml(t("listeningStop"))}</button>`;
+    playerOptions.querySelector('[data-listening-action="stop"]').hidden = !hasStoppableSession(activeLoadedLesson());
+    playerOptions.showModal();
+}
+
 function renderListeningPlayer(lesson) {
     const queue = listeningIsActiveForLesson(lesson)
         ? listeningState.queue
@@ -2596,48 +2686,22 @@ function renderListeningPlayer(lesson) {
     const canSpeak = "speechSynthesis" in window || nativeListeningReady;
     const isPlaying = status === "playing";
     const isPaused = status === "paused";
+    const concealTranslation = currentItem && currentItem.lang !== "ko-KR" &&
+        ((currentItem.section === "vocabulary" && !showChinese) || (currentItem.section === "dialogue" && grammarStudyMode === "recall"));
+    const caption = currentItem && status !== "ended" ? (concealTranslation ? t("listeningTranslation") : currentItem.text) : "";
 
     return `
         <section class="listening-player ${isPlaying ? "is-playing" : ""}" data-listening-player>
             <div class="listening-main">
                 <div class="listening-heading">
                     <span class="listening-kicker">${escapeHtml(t("listeningTitle"))}</span>
-                    <span class="listening-status">${escapeHtml(active ? listeningStatusText(total) : listeningStatusText(buildListeningQueue(lesson).length))}</span>
-                    <label class="listening-sleep-timer" title="${escapeHtml(t("listeningSleepTimerLabel"))}">
-                        ${iconApi.render("clock")}
-                        <select data-listening-setting="sleepTimer" aria-label="${escapeHtml(t("listeningSleepTimerLabel"))}">
-                            ${listeningSleepDurations.map(minutes => `<option value="${minutes}" ${minutes === listeningState.sleepTimerMinutes ? "selected" : ""}>${escapeHtml(sleepTimerOptionLabel(minutes))}</option>`).join("")}
-                        </select>
-                        <span class="listening-sleep-countdown" data-sleep-timer-countdown ${listeningState.sleepTimerEndsAt ? "" : "hidden"}>${listeningState.sleepTimerEndsAt ? escapeHtml(sleepTimerApi.formatRemaining(listeningState.sleepTimerEndsAt)) : ""}</span>
-                    </label>
+                    <span class="listening-status">${escapeHtml(listeningStatusText(total))}</span>
+                    ${compactPlayer.matches ? `<button type="button" class="kiip-icon-button player-options-toggle" data-player-options aria-haspopup="dialog" aria-controls="player-options" aria-label="${escapeHtml(t("listeningOptions"))}" title="${escapeHtml(t("listeningOptions"))}">${iconApi.render("sliders")}</button>` : renderSleepTimer()}
                 </div>
-                <div class="listening-now" title="${escapeHtml(currentItem?.text || "")}">
-                    ${currentItem ? `<span>${escapeHtml(t("listeningNow"))}</span>${escapeHtml(currentItem.text)}` : ""}
-                </div>
+                ${compactPlayer.matches ? renderSleepCountdown() : ""}
+                <div class="listening-now" title="${escapeHtml(caption)}">${escapeHtml(caption)}</div>
             </div>
-            <div class="listening-settings" aria-label="${escapeHtml(t("listeningTitle"))}">
-                <label>
-                    <span>${escapeHtml(t("listeningModeLabel"))}</span>
-                    <select data-listening-setting="mode" aria-label="${escapeHtml(t("listeningModeLabel"))}">
-                        ${listeningModes.map(mode => `<option value="${escapeHtml(mode.id)}" ${mode.id === listeningState.mode ? "selected" : ""}>${escapeHtml(t(mode.labelKey))}</option>`).join("")}
-                    </select>
-                    ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
-                </label>
-                <label>
-                    <span>${escapeHtml(t("listeningSpeedLabel"))}</span>
-                    <select data-listening-setting="speed" aria-label="${escapeHtml(t("listeningSpeedLabel"))}">
-                        ${listeningSpeeds.map(speed => `<option value="${escapeHtml(speed.id)}" ${speed.id === listeningState.speed ? "selected" : ""}>${escapeHtml(t(speed.labelKey))}</option>`).join("")}
-                    </select>
-                    ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
-                </label>
-                <label>
-                    <span>${escapeHtml(t("listeningRepeatLabel"))}</span>
-                    <select data-listening-setting="repeat" aria-label="${escapeHtml(t("listeningRepeatLabel"))}">
-                        ${listeningRepeats.map(repeat => `<option value="${repeat.value}" ${repeat.value === listeningState.repeat ? "selected" : ""}>${escapeHtml(t(repeat.labelKey))}</option>`).join("")}
-                    </select>
-                    ${iconApi.render("chevronRight", { className: "listening-select-chevron" })}
-                </label>
-            </div>
+            ${compactPlayer.matches ? "" : renderListeningSettings()}
             <div class="listening-controls">
                 <button class="listening-icon-btn" type="button" data-listening-action="previous" aria-label="${escapeHtml(t("listeningPrevious"))}" title="${escapeHtml(t("listeningPrevious"))}" ${active && total ? "" : "disabled"}>
                     ${previousIcon()}
@@ -2649,9 +2713,9 @@ function renderListeningPlayer(lesson) {
                 <button class="listening-icon-btn" type="button" data-listening-action="next" aria-label="${escapeHtml(t("listeningNext"))}" title="${escapeHtml(t("listeningNext"))}" ${active && total ? "" : "disabled"}>
                     ${nextIcon()}
                 </button>
-                <button class="listening-icon-btn" type="button" data-listening-action="stop" aria-label="${escapeHtml(t("listeningStop"))}" title="${escapeHtml(t("listeningStop"))}" ${active ? "" : "disabled"}>
+                ${compactPlayer.matches ? "" : `<button class="listening-icon-btn" type="button" data-listening-action="stop" aria-label="${escapeHtml(t("listeningStop"))}" title="${escapeHtml(t("listeningStop"))}" ${active ? "" : "disabled"}>
                     ${stopIcon()}
-                </button>
+                </button>`}
             </div>
         </section>
     `;
@@ -2721,9 +2785,7 @@ function setLocale(locale) {
 
     uiLocale = selectedLocale;
     translationLocale = selectedLocale;
-    showChinese = true;
     localeApi.write(localStorage, selectedLocale);
-    localStorage.setItem(localeStorageKeys.showTranslation, "true");
 
     applyStaticLocale();
     renderLessonList();
@@ -2791,7 +2853,7 @@ function renderLessonList() {
     const filtered = lessons.filter(lesson => lessonMatches(lesson, query));
 
     lessonList.innerHTML = filtered.map(lesson => `
-        <button class="lesson-item ${lesson.id === activeLessonId ? "active" : ""} ${lesson.status === "todo" ? "todo" : ""}" data-lesson-id="${escapeHtml(lesson.id)}" aria-label="${escapeHtml(tf("lessonAriaLabel", { number: lesson.number, title: lesson.titleKo }))}">
+        <button class="lesson-item ${lesson.id === activeLessonId ? "active" : ""} ${lesson.status === "todo" ? "todo" : ""}" data-lesson-id="${escapeHtml(lesson.id)}" ${lesson.id === activeLessonId ? 'aria-current="page"' : ""} aria-label="${escapeHtml(tf("lessonAriaLabel", { number: lesson.number, title: lesson.titleKo }))}">
             <span class="lesson-number" title="${escapeHtml(`${level}-${String(lesson.number).padStart(2, "0")}`)}">${String(lesson.number).padStart(2, "0")}</span>
             <span class="lesson-name">
                 <span class="lesson-ko">${escapeHtml(lesson.titleKo)}</span>
@@ -2902,6 +2964,7 @@ function renderLoadedLesson(lesson, scrollTarget) {
     mobileTitle.textContent = `${level}-${String(lesson.number).padStart(2, "0")} ${lesson.titleKo}`;
     const previousScrollTop = mainContent.scrollTop;
     mainContent.innerHTML = renderHero(lesson) + renderActiveTab(lesson);
+    if (lesson.__nativeContent) window.KIIPContentProvider?.confirm();
     const returnView = pendingLessonView;
     const returnAnchor = initialGrammarAnchor;
     pendingLessonView = null;
@@ -2987,13 +3050,11 @@ function selectGrammarPanel(key, { scroll = false } = {}) {
     if (scroll) mainContent.querySelector(".grammar-workspace")?.scrollIntoView({ block: "start", behavior: "auto" });
 }
 
-function toggleSidebar(force) {
-    const open = typeof force === "boolean" ? force : !sidebar.classList.contains("open");
-    sidebar.classList.toggle("open", open);
-    sidebarOverlay.classList.toggle("open", open);
-    menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.setAttribute("aria-label", t(open ? "closeLessonMenu" : "openLessonMenu"));
-}
+const toggleSidebar = window.KIIPDrawer({
+    panel: sidebar, overlay: sidebarOverlay, trigger: menuToggle, media: mobileSwipeQuery,
+    background: [mainContent, floatingListeningControls],
+    label: open => t(open ? "closeLessonMenu" : "openLessonMenu")
+});
 
 function closeSidebar() {
     toggleSidebar(false);
@@ -3024,6 +3085,10 @@ lessonList.addEventListener("click", event => {
 });
 
 mainContent.addEventListener("click", event => {
+    if (event.target.closest("[data-player-options]")) {
+        openPlayerOptions();
+        return;
+    }
     const grammarLink = event.target.closest('a[href^="grammar_wiki.html"]');
     if (grammarLink) {
         const url = new URL(window.location.href);
@@ -3104,7 +3169,7 @@ floatingListeningControls.addEventListener("click", event => {
     handleListeningAction(event.target.closest("[data-listening-action]"));
 });
 
-mainContent.addEventListener("change", event => {
+function changeListeningSetting(event) {
     const setting = event.target.closest("[data-listening-setting]");
     if (!setting) return;
 
@@ -3137,6 +3202,25 @@ mainContent.addEventListener("change", event => {
         }
     }
 
+    refreshListeningPlayer();
+}
+
+mainContent.addEventListener("change", changeListeningSetting);
+playerOptions.addEventListener("change", changeListeningSetting);
+playerOptions.addEventListener("click", event => {
+    if (event.target.closest("[data-options-close]")) playerOptions.close();
+    else if (event.target.closest('[data-listening-action="stop"]')) {
+        stopListening();
+        playerOptions.close();
+    }
+});
+playerOptions.addEventListener("close", () => {
+    if (playerOptions.open) return;
+    playerOptions.replaceChildren();
+    mainContent.querySelector("[data-player-options]")?.focus({ preventScroll: true });
+});
+compactPlayer.addEventListener("change", () => {
+    if (playerOptions.open) playerOptions.close();
     refreshListeningPlayer();
 });
 
@@ -3178,14 +3262,6 @@ mainContent.addEventListener("touchcancel", () => {
 }, { passive: true });
 
 lessonSearch.addEventListener("input", handleLessonSearchInput);
-menuToggle.addEventListener("click", () => {
-    toggleSidebar();
-});
-sidebarOverlay.addEventListener("click", closeSidebar);
-
-document.addEventListener("keydown", event => {
-    if (event.key === "Escape" && sidebar.classList.contains("open")) closeSidebar();
-});
 
 document.addEventListener("click", event => {
     const toggle = event.target.closest("[data-language-toggle]");

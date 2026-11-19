@@ -24,6 +24,8 @@
 12. Generate `lesson_manifest_l*.js` and `lesson_search_l*.js` from the canonical `lesson_data_l*.js` files. Load the generated full-text search index only after the user starts a search.
 13. Render one selected grammar learning unit at a time: usage, examples, matching dialogue, then practice. Keep inactive panels in the DOM with their original listening references, and reveal the matching panel before following playback. Preserve the selection and scroll position when returning from the Wiki.
 14. Use the shared semantic typography tokens for mobile page titles, section headings, Korean text, translations, and metadata. Do not shrink the root font or WebView text zoom to compensate for oversized components.
+15. On phone-sized lesson pages, align the five tabs to the same `--kiip-space-4` content gutter. Use shared spacing tokens for label, row, and section spacing; use separators for continuous reading and reserve framed surfaces for distinct interactive tools such as the listening player. Keep the reading toolbar and playback hit areas consistent between vocabulary and grammar.
+16. The phone Lesson Guide and Grammar Wiki share a light paper surface, ink text, and blue controls. Distinguish Korean reading text, translations, and metadata using the neutral text roles in that order. Mark only the target Korean grammar ranges with a pale yellow background and dark text. Keep palette values in the shared tokens.
 
 ## Cache policy
 

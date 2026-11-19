@@ -179,8 +179,8 @@
     }
 
     function mount(
-        items = typeof grammarDB !== "undefined" ? grammarDB : [],
-        enrichment = root.grammarEnrichment || {},
+        items = root.KIIPUpdatedWiki?.items || (typeof grammarDB !== "undefined" ? grammarDB : []),
+        enrichment = root.KIIPUpdatedWiki?.enrichment || root.grammarEnrichment || {},
     ) {
         const document = root.document;
         if (!document || !Array.isArray(items)) return;
@@ -333,7 +333,9 @@
                 navList.appendChild(category);
 
                 categoryItems.forEach(item => {
-                    const entry = document.createElement("li");
+                    const row = document.createElement("li");
+                    const entry = document.createElement("button");
+                    entry.type = "button";
                     entry.className = `nav-item${item.id === currentItemId ? " active" : ""}`;
                     entry.dataset.grammarId = item.id;
                     if (item.id === currentItemId) entry.setAttribute("aria-current", "page");
@@ -345,9 +347,11 @@
                         currentItemId = item.id;
                         renderNav();
                         renderContent(item);
-                        if (root.innerWidth <= 768) toggleMenu(false);
+                        if (drawerMedia.matches) toggleMenu(false);
+                        else navList.querySelector('[aria-current="page"]')?.focus({ preventScroll: true });
                     });
-                    navList.appendChild(entry);
+                    row.appendChild(entry);
+                    navList.appendChild(row);
                 });
             });
         }
@@ -437,6 +441,7 @@
             else mainContent.scrollTo({ top: 0, behavior: "smooth" });
             updateNavButtons();
             watchDetailTitle(item);
+            if (root.KIIPUpdatedWiki) root.KIIPContentProvider?.confirm();
         }
 
         function navigateDelta(delta) {
@@ -480,13 +485,12 @@
             detailTitleObserver.observe(detailHeader);
         }
 
-        function toggleMenu(force) {
-            const open = typeof force === "boolean" ? force : !sidebar.classList.contains("open");
-            sidebar.classList.toggle("open", open);
-            sidebarOverlay.classList.toggle("open", open);
-            menuToggle.setAttribute("aria-expanded", String(open));
-            menuToggle.setAttribute("aria-label", open ? t("closeMenu") : t("openMenu"));
-        }
+        const drawerMedia = root.matchMedia("(max-width: 768px)");
+        const toggleMenu = root.KIIPDrawer({
+            panel: sidebar, overlay: sidebarOverlay, trigger: menuToggle, media: drawerMedia,
+            background: [mainContent, document.getElementById("nav-float-btns")],
+            label: open => t(open ? "closeMenu" : "openMenu")
+        });
 
         function setLocale(locale) {
             const nextLocale = normalizeLocale(locale);
@@ -507,8 +511,6 @@
         document.querySelectorAll(".level-filter-btn").forEach(button => {
             button.addEventListener("click", () => setLevelFilter(button.dataset.level));
         });
-        menuToggle.addEventListener("click", () => toggleMenu());
-        sidebarOverlay.addEventListener("click", () => toggleMenu(false));
         btnPrev.addEventListener("click", () => navigateDelta(-1));
         btnNext.addEventListener("click", () => navigateDelta(1));
         lessonReturnButtons.forEach(button => {
@@ -535,11 +537,6 @@
             if (toggle) {
                 setLocale(toggle.dataset.nextLocale);
                 return;
-            }
-        });
-        document.addEventListener("keydown", event => {
-            if (event.key === "Escape") {
-                if (sidebar.classList.contains("open") && root.innerWidth <= 768) toggleMenu(false);
             }
         });
         root.addEventListener("resize", () => {

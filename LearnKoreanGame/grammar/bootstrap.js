@@ -11,13 +11,18 @@
     }
 
     async function start() {
+        root.KIIPUpdatedWiki = await root.KIIPContentProvider?.getWiki();
         for (const script of [
             "shared/icons.js",
+            "shared/drawer.js",
             "shared/locale.js",
             "grammar_data.js",
             "grammar_enrichment.js",
             "grammar_wiki_app.js"
-        ]) await loadScript(script);
+        ]) {
+            if (root.KIIPUpdatedWiki && ["grammar_data.js", "grammar_enrichment.js"].includes(script)) continue;
+            await loadScript(script);
+        }
     }
 
     start().catch(error => {
